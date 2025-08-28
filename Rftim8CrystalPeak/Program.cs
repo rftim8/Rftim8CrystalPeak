@@ -6,7 +6,7 @@
         {
             ArgumentNullException.ThrowIfNull(args);
 
-            Console.WriteLine("Hello, World!");
+
         }
     }
 }
