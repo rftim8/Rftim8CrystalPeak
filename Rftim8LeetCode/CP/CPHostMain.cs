@@ -16,6 +16,7 @@ namespace Rftim8LeetCode.CP
 
             #region LeetCode
             builder.Services.AddSingleton<I_00001_TwoSum, _00001_TwoSum>();
+            builder.Services.AddSingleton<I_00036_ValidSudoku, _00036_ValidSudoku>();
             #endregion
 
             IHost host = builder.Build();

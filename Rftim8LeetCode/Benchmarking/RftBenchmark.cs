@@ -10,9 +10,11 @@ namespace Rftim8LeetCode.Benchmarking
         public static async Task InitBenchmark()
         {
             ManualConfig config = new();
-            config.Add(DefaultConfig.Instance.AddExporter(JsonExporter.Brief));
+            config.Add(DefaultConfig.Instance
+                .AddExporter(JsonExporter.Brief));
 
-            BenchmarkRunner.Run<_00001_TwoSum>(config);
+            //BenchmarkRunner.Run<_00001_TwoSum>(config);
+            BenchmarkRunner.Run<_00036_ValidSudoku>(config);
 
             await Task.Run(() => Console.WriteLine("Benchmark Finished Successfully!"));
         }

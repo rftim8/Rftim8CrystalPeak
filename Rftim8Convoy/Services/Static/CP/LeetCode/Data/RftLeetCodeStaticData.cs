@@ -8,22 +8,13 @@
 
         private static List<string> GetFileContentToList(bool testType, bool direction, string problemName)
         {
-            string path = Directory.GetCurrentDirectory();
+            string? goBack = testType ? string.Concat(Enumerable.Repeat("..\\", 4)) : string.Concat(Enumerable.Repeat("..\\", 8));
+            string projectDir = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, goBack!));
 
-            List<int> indexes = [];
+            string path = direction ?
+                $"{projectDir}\\Rftim8Atlas\\CP\\LeetCode\\IO\\{problemName}_Input.txt" :
+                $"{projectDir}\\Rftim8Atlas\\CP\\LeetCode\\IO\\{problemName}_Output.txt";
 
-            for (int i = 0; i < path.Length; i++)
-            {
-                if (path[i] == '\\')
-                    indexes.Add(i);
-            }
-
-            // true = unittest, false = benchmark
-            int subfolderLevel = testType ? 4 : 8;
-
-            path = direction ?
-                $"{path[..indexes[^subfolderLevel]]}\\Rftim8Atlas\\CP\\LeetCode\\IO\\{problemName}_Input.txt" :
-                $"{path[..indexes[^subfolderLevel]]}\\Rftim8Atlas\\CP\\LeetCode\\IO\\{problemName}_Output.txt";
             List<string> list = [];
 
             using (FileStream fileStream = new(path, FileMode.Open, FileAccess.Read, FileShare.None))

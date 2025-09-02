@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="CP\LeetCode\IO\_00036_ValidSudoku_Input.txt" />
+    <None Remove="CP\LeetCode\IO\_00036_ValidSudoku_Output.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CP\LeetCode\IO\_00036_ValidSudoku_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="CP\LeetCode\IO\_00036_ValidSudoku_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

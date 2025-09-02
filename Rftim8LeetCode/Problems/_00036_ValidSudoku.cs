@@ -9,40 +9,98 @@ namespace Rftim8LeetCode.Problems
     public class _00036_ValidSudoku : I_00036_ValidSudoku
     {
         #region Static
-        private readonly List<string>? data;
+        private readonly List<string>? Input;
+        private readonly List<char[][]>? boards = [];
+        private readonly List<bool>? results = [];
 
         public _00036_ValidSudoku()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00036_ValidSudoku));
+            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(_00036_ValidSudoku));
+            Input = [.. RftResource._00036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            DataCollector();
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        [Benchmark]
-        public int PartOne() => PartOne0(data!);
-
-        private static int PartOne0(List<string> input)
+        public void DataCollector()
         {
-            return 0;
+            int _n = int.Parse(Input![0]);
+            int _m = int.Parse(Input[1]);
+
+            for (int i = 2; i < _n * _m + 2; i += _m)
+            {
+                char[][] board = new char[9][];
+                string test = Input[i];
+                results!.Add(bool.Parse(Input[i + 1]));
+                test = test.Replace("\"", "");
+
+                List<string> rows = [.. test.Split("],[")];
+                for (int j = 0; j < rows.Count; j++)
+                {
+                    string s = rows[j].Replace("[", "").Replace("]", "").Replace(",", "");
+                    board[j] = s.ToCharArray();
+                }
+                boards!.Add(board);
+            }
         }
 
-        /// <summary>
-        ///
-        /// </summary>        
-        [Benchmark]
-        public int PartTwo() => PartTwo0(data!);
+        [ParamsSource(nameof(BoardDataSets))]
+        public char[][]? Board { get; set; }
 
-        private static int PartTwo0(List<string> input)
+        public IEnumerable<char[][]> BoardDataSets() => boards!;
+
+        [Benchmark]
+        public bool PartOne() => PartOne0(Board!);
+
+        private static bool PartOne0(char[][] board)
         {
-            return 0;
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (board[i][j] != '.')
+                    {
+                        // Check row
+                        for (int k = 0; k < 9; k++)
+                        {
+                            if (k != j && board[i][k] == board[i][j]) return false;
+                        }
+                        // Check column
+                        for (int k = 0; k < 9; k++)
+                        {
+                            if (k != i && board[k][j] == board[i][j]) return false;
+                        }
+
+                        if (i >= 0 && i < 3 && j >= 0 && j < 3) if (SudokuSubArray(board, board[i][j], 0, 3, 0, 3, i, j) == false) return false;
+                        if (i >= 3 && i < 6 && j >= 0 && j < 3) if (SudokuSubArray(board, board[i][j], 3, 6, 0, 3, i, j) == false) return false;
+                        if (i >= 6 && i < 9 && j >= 0 && j < 3) if (SudokuSubArray(board, board[i][j], 6, 9, 0, 3, i, j) == false) return false;
+                        if (i >= 0 && i < 3 && j >= 3 && j < 6) if (SudokuSubArray(board, board[i][j], 0, 3, 3, 6, i, j) == false) return false;
+                        if (i >= 3 && i < 6 && j >= 3 && j < 6) if (SudokuSubArray(board, board[i][j], 3, 6, 3, 6, i, j) == false) return false;
+                        if (i >= 6 && i < 9 && j >= 3 && j < 6) if (SudokuSubArray(board, board[i][j], 6, 9, 3, 6, i, j) == false) return false;
+                        if (i >= 0 && i < 3 && j >= 6 && j < 9) if (SudokuSubArray(board, board[i][j], 0, 3, 6, 9, i, j) == false) return false;
+                        if (i >= 3 && i < 6 && j >= 6 && j < 9) if (SudokuSubArray(board, board[i][j], 3, 6, 6, 9, i, j) == false) return false;
+                        if (i >= 6 && i < 9 && j >= 6 && j < 9) if (SudokuSubArray(board, board[i][j], 6, 9, 6, 9, i, j) == false) return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        private static bool SudokuSubArray(char[][] board, char x, int n, int m, int o, int p, int q, int r)
+        {
+            for (int i = n; i < m; i++)
+            {
+                for (int j = o; j < p; j++)
+                {
+                    if (q != i && r != j && board[i][j] == x) return false;
+                }
+            }
+
+            return true;
         }
         #endregion
 
         #region UnitTest
-        public static int PartOne_Test(List<string> data) => PartOne0(data);
-
-        public static int PartTwo_Test(List<string> data) => PartTwo0(data);
+        public static bool PartOne_Test(char[][] board) => PartOne0(board);
         #endregion
 
         #region Host
@@ -51,13 +109,17 @@ namespace Rftim8LeetCode.Problems
         public _00036_ValidSudoku(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00036_ValidSudoku));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00036_ValidSudoku));
+            DataCollector();
         }
 
         public void PrintSolution()
         {
-            Console.WriteLine(PartOne());
-            Console.WriteLine(PartTwo());
+            for (int i = 0; i < boards!.Count; i++)
+            {
+                bool actual = PartOne0(boards[i]);
+                Console.WriteLine($"Testcase {i + 1}: Expected = {results![i]} => Actual: {actual}");
+            }
         }
         #endregion
     }

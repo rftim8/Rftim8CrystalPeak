@@ -1,0 +1,45 @@
+{
+   "Title":"Rftim8LeetCode.Problems._00036_ValidSudoku-20250902-090259",
+   "HostEnvironmentInfo":{
+      "BenchmarkDotNetCaption":"BenchmarkDotNet",
+      "BenchmarkDotNetVersion":"0.15.2",
+      "OsVersion":"Windows 11 (10.0.26100.4946/24H2/2024Update/HudsonValley)",
+      "ProcessorName":"Unknown processor",
+      "PhysicalProcessorCount":null,
+      "PhysicalCoreCount":null,
+      "LogicalCoreCount":null,
+      "RuntimeVersion":".NET 8.0.19 (8.0.1925.36514)",
+      "Architecture":"X64",
+      "HasAttachedDebugger":true,
+      "HasRyuJit":true,
+      "Configuration":"RELEASE",
+      "DotNetCliVersion":"9.0.304",
+      "ChronometerFrequency":{
+         "Hertz":10000000
+      },
+      "HardwareTimerKind":"Unknown"
+   },
+   "Benchmarks":[
+      {
+         "DisplayInfo":"_00036_ValidSudoku.PartOne: DefaultJob [Board=Char[][9]]",
+         "Namespace":"Rftim8LeetCode.Problems",
+         "Type":"_00036_ValidSudoku",
+         "Method":"PartOne",
+         "MethodTitle":"PartOne",
+         "Parameters":"Board=Char[][9]",
+         "FullName":"Rftim8LeetCode.Problems._00036_ValidSudoku.PartOne(Board: [['5', '3', '.', '.', '7', ...], ['6', '.', '.', '1', '9', ...], ['.', '9', '8', '.', '.', ...], ['8', '.', '.', '.', '6', ...], ['4', '.', '.', '8', '.', ...], ...])",
+         "HardwareIntrinsics":"",
+         "Statistics":null
+      },{
+         "DisplayInfo":"_00036_ValidSudoku.PartOne: DefaultJob [Board=Char[][9]]",
+         "Namespace":"Rftim8LeetCode.Problems",
+         "Type":"_00036_ValidSudoku",
+         "Method":"PartOne",
+         "MethodTitle":"PartOne",
+         "Parameters":"Board=Char[][9]",
+         "FullName":"Rftim8LeetCode.Problems._00036_ValidSudoku.PartOne(Board: [['8', '3', '.', '.', '7', ...], ['6', '.', '.', '1', '9', ...], ['.', '9', '8', '.', '.', ...], ['8', '.', '.', '.', '6', ...], ['4', '.', '.', '8', '.', ...], ...])",
+         "HardwareIntrinsics":"",
+         "Statistics":null
+      }
+   ]
+}
