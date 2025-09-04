@@ -4,23 +4,31 @@ using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
 using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
+
 namespace Rftim8LeetCode.Problems
 {
-    public class _01693_DailyLeadsandPartners : I_01693_DailyLeadsandPartners
+    public class _01693_DailyLeadsAndPartners : I_01693_DailyLeadsAndPartners
     {
         #region Static
-        private readonly List<string>? data;
+        private readonly List<string>? Input;
 
-        public _01693_DailyLeadsandPartners()
+        public _01693_DailyLeadsAndPartners()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01693_DailyLeadsandPartners));
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01693_DailyLeadsAndPartners));
+            Input = [.. RftResource._01693_DailyLeadsAndPartners_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            DataCollector();
+        }
+
+        public void DataCollector()
+        {
+
         }
 
         /// <summary>
         ///
         /// </summary>
         [Benchmark]
-        public int PartOne() => PartOne0(data!);
+        public int PartOne() => PartOne0(Input!);
 
         private static int PartOne0(List<string> input)
         {
@@ -31,7 +39,7 @@ namespace Rftim8LeetCode.Problems
         ///
         /// </summary>        
         [Benchmark]
-        public int PartTwo() => PartTwo0(data!);
+        public int PartTwo() => PartTwo0(Input!);
 
         private static int PartTwo0(List<string> input)
         {
@@ -40,18 +48,19 @@ namespace Rftim8LeetCode.Problems
         #endregion
 
         #region UnitTest
-        public static int PartOne_Test(List<string> data) => PartOne0(data);
+        public static int PartOne_Test(List<string> input) => PartOne0(input);
 
-        public static int PartTwo_Test(List<string> data) => PartTwo0(data);
+        public static int PartTwo_Test(List<string> input) => PartTwo0(input);
         #endregion
 
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01693_DailyLeadsandPartners(IHost host)
+        public _01693_DailyLeadsAndPartners(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01693_DailyLeadsandPartners));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01693_DailyLeadsAndPartners));
+            DataCollector();
         }
 
         public void PrintSolution()
@@ -62,3 +71,4 @@ namespace Rftim8LeetCode.Problems
         #endregion
     }
 }
+

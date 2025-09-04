@@ -4,23 +4,31 @@ using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
 using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
+
 namespace Rftim8LeetCode.Problems
 {
-    public class _01444_NumberOfWaysOfCuttingaPizza : I_01444_NumberOfWaysOfCuttingaPizza
+    public class _01444_NumberOfWaysOfCuttingAPizza : I_01444_NumberOfWaysOfCuttingAPizza
     {
         #region Static
-        private readonly List<string>? data;
+        private readonly List<string>? Input;
 
-        public _01444_NumberOfWaysOfCuttingaPizza()
+        public _01444_NumberOfWaysOfCuttingAPizza()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01444_NumberOfWaysOfCuttingaPizza));
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01444_NumberOfWaysOfCuttingAPizza));
+            Input = [.. RftResource._01444_NumberOfWaysOfCuttingAPizza_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            DataCollector();
+        }
+
+        public void DataCollector()
+        {
+
         }
 
         /// <summary>
         ///
         /// </summary>
         [Benchmark]
-        public int PartOne() => PartOne0(data!);
+        public int PartOne() => PartOne0(Input!);
 
         private static int PartOne0(List<string> input)
         {
@@ -31,7 +39,7 @@ namespace Rftim8LeetCode.Problems
         ///
         /// </summary>        
         [Benchmark]
-        public int PartTwo() => PartTwo0(data!);
+        public int PartTwo() => PartTwo0(Input!);
 
         private static int PartTwo0(List<string> input)
         {
@@ -40,18 +48,19 @@ namespace Rftim8LeetCode.Problems
         #endregion
 
         #region UnitTest
-        public static int PartOne_Test(List<string> data) => PartOne0(data);
+        public static int PartOne_Test(List<string> input) => PartOne0(input);
 
-        public static int PartTwo_Test(List<string> data) => PartTwo0(data);
+        public static int PartTwo_Test(List<string> input) => PartTwo0(input);
         #endregion
 
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01444_NumberOfWaysOfCuttingaPizza(IHost host)
+        public _01444_NumberOfWaysOfCuttingAPizza(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01444_NumberOfWaysOfCuttingaPizza));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01444_NumberOfWaysOfCuttingAPizza));
+            DataCollector();
         }
 
         public void PrintSolution()
@@ -62,3 +71,4 @@ namespace Rftim8LeetCode.Problems
         #endregion
     }
 }
+
