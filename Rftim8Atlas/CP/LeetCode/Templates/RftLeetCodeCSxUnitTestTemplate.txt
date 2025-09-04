@@ -1,7 +1,7 @@
 ﻿using RftAPI.Services.Static.CP.LeetCode.Data;
 using RftCP.LeetCode;
 
-namespace RftCSxUnit.UnitTests.CP.LeetCode
+namespace Rftim8xUnitLeetCode.Unit
 {
     public class [x]_Test(ITestOutputHelper testOutputHelper)
     {

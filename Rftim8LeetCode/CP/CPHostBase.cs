@@ -17,7 +17,7 @@ namespace Rftim8LeetCode.CP
             //RftFileContentManager.GetLeetCodeProblemNames();
             //RftFileContentManager.CreateLeetCodeDataFiles(RftFileContentManager.GetLeetCodeProblemNames());
             //RftFileContentManager.CreateLeetCodeCodeInterfaceFiles(RftFileContentManager.GetLeetCodeProblemNames());
-            //RftFileContentManager.CreateLeetCodeCodeFiles(RftFileContentManager.GetLeetCodeProblemNames());
+            RftFileContentManager.CreateLeetCodeCodeFiles(RftFileContentManager.GetLeetCodeProblemNames());
             //RftFileContentManager.CreateLeetCodexUnitTestFiles(RftFileContentManager.GetLeetCodeProblemNames());
 
             #region LeetCode
