@@ -1,4 +1,5 @@
 using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+using Rftim8Convoy.Services.Static.Generic;
 using Rftim8LeetCode.Problems;
 using Xunit.Abstractions;
 
@@ -10,28 +11,11 @@ namespace Rftim8xUnitLeetCode.Unit
         private static readonly List<char[][]> Boards = [];
         private static readonly List<bool> Results = [];
 
-        public static TheoryData<List<char[][]>, List<bool>> _00036_ValidSudokuPartOne_Data =>
+        public static TheoryData<List<char[][]>, List<bool>> _00036_ValidSudokuPartOne_Input =>
             new()
             {
                 { Boards, Results }
             };
-
-        [Theory]
-        [MemberData(nameof(_00036_ValidSudokuPartOne_Data))]
-        public void RftPartOne(List<char[][]> boards, List<bool> results)
-        {
-            // Arrange
-            DataCollector();
-            
-            for (int i = 0; i < boards.Count; i++)
-            {
-                // Act
-                bool actual = _00036_ValidSudoku.PartOne_Test(boards[i]);
-
-                // Assert
-                Assert.Equal(results[i], actual);
-            }
-        }
 
         [Fact]
         public void DataCollector()
@@ -55,6 +39,25 @@ namespace Rftim8xUnitLeetCode.Unit
 
                 }
                 Boards.Add(board);
+            }
+        }
+
+        [Theory]
+        [MemberData(nameof(_00036_ValidSudokuPartOne_Input))]
+        public void RftPartOne(List<char[][]> boards, List<bool> results)
+        {
+            // Arrange
+            DataCollector();
+
+            testOutputHelper.WriteLine(RftConsole.ListChar2DArrayToString(boards));
+
+            for (int i = 0; i < boards.Count; i++)
+            {
+                // Act
+                bool actual = _00036_ValidSudoku.PartOne_Test(boards[i]);
+
+                // Assert
+                Assert.Equal(results[i], actual);
             }
         }
     }

@@ -3,29 +3,35 @@ using RftCP.LeetCode;
 
 namespace RftCSxUnit.UnitTests.CP.LeetCode
 {
-    public class [x]_Test
+    public class [x]_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
         private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof([x]))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof([x]))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof([x]))![1]);
-
-        public static TheoryData<List<string>, int> [x]PartOne_Data =>
+        
+        public static TheoryData<List<string>> [x]PartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> [x]PartTwo_Data =>
+        public static TheoryData<List<string>> [x]PartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof([x]PartOne_Data))]
+        [MemberData(nameof([x]PartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
             int actual = [x].PartOne_Test(a0);
 
@@ -34,9 +40,12 @@ namespace RftCSxUnit.UnitTests.CP.LeetCode
         }
 
         [Theory]
-        [MemberData(nameof([x]PartTwo_Data))]
+        [MemberData(nameof([x]PartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
             int actual = [x].PartTwo_Test(a0);
 

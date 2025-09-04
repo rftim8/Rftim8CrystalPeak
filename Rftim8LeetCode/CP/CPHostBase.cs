@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rftim8Convoy.Services.Static.IO;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8LeetCode.CP
@@ -23,8 +24,8 @@ namespace Rftim8LeetCode.CP
             //I_00001_TwoSum i_00001_TwoSum = serviceProvider.GetRequiredService<I_00001_TwoSum>();
             //i_00001_TwoSum.PrintSolution();
 
-            I_00036_ValidSudoku i_00036_ValidSudoku = serviceProvider.GetRequiredService<I_00036_ValidSudoku>();
-            i_00036_ValidSudoku.PrintSolution();
+            //I_00036_ValidSudoku i_00036_ValidSudoku = serviceProvider.GetRequiredService<I_00036_ValidSudoku>();
+            //i_00036_ValidSudoku.PrintSolution();
             #endregion
 
         }

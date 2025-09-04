@@ -1,4 +1,4 @@
-﻿namespace RftCP.LeetCode
+﻿namespace Rftim8LeetCode.Problems
 {
     public interface I[x]
     {

@@ -525,7 +525,7 @@
                     indexes.Add(i);
             }
 
-            string cpPath = $"{executablePath[..indexes[^4]]}\\Rftim3CP\\LeetCode\\";
+            string cpPath = $"{executablePath[..indexes[^4]]}\\Rftim8LeetCode\\Problems\\";
             IEnumerable<string> dir = Directory.EnumerateFiles(cpPath);
             List<string> dirFiles = [.. dir.Select(o => o.Split('\\').Last().Replace(".cs", ""))];
 
@@ -556,7 +556,7 @@
                     indexes.Add(i);
             }
 
-            string cpPath = $"{executablePath[..indexes[^4]]}\\Rftim3CP\\LeetCode\\";
+            string cpPath = $"{executablePath[..indexes[^4]]}\\Rftim8LeetCode\\Problems\\";
             IEnumerable<string> dir = Directory.EnumerateFiles(cpPath);
             List<string> dirFiles = [.. dir.Select(o => o.Split('\\').Last().Replace(".cs", ""))];
 
@@ -587,7 +587,7 @@
                     indexes.Add(i);
             }
 
-            string cpPath = $"{executablePath[..indexes[^4]]}\\Rftim3xUnit\\UnitTests\\CP\\LeetCode\\";
+            string cpPath = $"{executablePath[..indexes[^4]]}\\Rftim8xUnitLeetCode\\Unit\\";
             IEnumerable<string> dir = Directory.EnumerateFiles(cpPath);
             List<string> dirFiles = [.. dir.Select(o => o.Split('\\').Last().Replace(".cs", ""))];
 
