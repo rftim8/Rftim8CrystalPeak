@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01409_QueriesonaPermutationWithKey_Test
+    public class _01409_QueriesOnAPermutationWithKey_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01409_QueriesonaPermutationWithKey))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01409_QueriesonaPermutationWithKey))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01409_QueriesonaPermutationWithKey))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01409_QueriesOnAPermutationWithKey))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01409_QueriesOnAPermutationWithKey))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01409_QueriesOnAPermutationWithKey))![1]);
 
-        public static TheoryData<List<string>, int> _01409_QueriesonaPermutationWithKeyPartOne_Data =>
+        public static TheoryData<List<string>, int> _01409_QueriesOnAPermutationWithKeyPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01409_QueriesonaPermutationWithKeyPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01409_QueriesOnAPermutationWithKeyPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01409_QueriesonaPermutationWithKeyPartOne_Data))]
+        [MemberData(nameof(_01409_QueriesOnAPermutationWithKeyPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01409_QueriesonaPermutationWithKey.PartOne_Test(a0);
+            int actual = _01409_QueriesOnAPermutationWithKey.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01409_QueriesonaPermutationWithKeyPartTwo_Data))]
+        [MemberData(nameof(_01409_QueriesOnAPermutationWithKeyPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01409_QueriesonaPermutationWithKey.PartTwo_Test(a0);
+            int actual = _01409_QueriesOnAPermutationWithKey.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

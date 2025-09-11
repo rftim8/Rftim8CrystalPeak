@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02894_DivisibleAndNondivisibleSumsDifference : I_02894_DivisibleAndNondivisibleSumsDifference
+    public class _02894_DivisibleAndNonDivisibleSumsDifference : I_02894_DivisibleAndNonDivisibleSumsDifference
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02894_DivisibleAndNondivisibleSumsDifference()
+        public _02894_DivisibleAndNonDivisibleSumsDifference()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02894_DivisibleAndNondivisibleSumsDifference));
-            Input = [.. RftResource._02894_DivisibleAndNondivisibleSumsDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02894_DivisibleAndNonDivisibleSumsDifference));
+            Input = [.. RftResource._02894_DivisibleAndNonDivisibleSumsDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02894_DivisibleAndNondivisibleSumsDifference(IHost host)
+        public _02894_DivisibleAndNonDivisibleSumsDifference(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02894_DivisibleAndNondivisibleSumsDifference));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02894_DivisibleAndNonDivisibleSumsDifference));
             DataCollector();
         }
 

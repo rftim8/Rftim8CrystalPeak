@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02135_CountWordsObtainedAfterAddingaLetter_Test
+    public class _02135_CountWordsObtainedAfterAddingALetter_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02135_CountWordsObtainedAfterAddingaLetter))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02135_CountWordsObtainedAfterAddingaLetter))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02135_CountWordsObtainedAfterAddingaLetter))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02135_CountWordsObtainedAfterAddingALetter))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02135_CountWordsObtainedAfterAddingALetter))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02135_CountWordsObtainedAfterAddingALetter))![1]);
 
-        public static TheoryData<List<string>, int> _02135_CountWordsObtainedAfterAddingaLetterPartOne_Data =>
+        public static TheoryData<List<string>, int> _02135_CountWordsObtainedAfterAddingALetterPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02135_CountWordsObtainedAfterAddingaLetterPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02135_CountWordsObtainedAfterAddingALetterPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02135_CountWordsObtainedAfterAddingaLetterPartOne_Data))]
+        [MemberData(nameof(_02135_CountWordsObtainedAfterAddingALetterPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02135_CountWordsObtainedAfterAddingaLetter.PartOne_Test(a0);
+            int actual = _02135_CountWordsObtainedAfterAddingALetter.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02135_CountWordsObtainedAfterAddingaLetterPartTwo_Data))]
+        [MemberData(nameof(_02135_CountWordsObtainedAfterAddingALetterPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02135_CountWordsObtainedAfterAddingaLetter.PartTwo_Test(a0);
+            int actual = _02135_CountWordsObtainedAfterAddingALetter.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

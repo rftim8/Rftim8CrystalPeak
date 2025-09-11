@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01010_PairsofSongsWithTotalDurationsDivisibleBy60_Test
+    public class _01010_PairsOfSongsWithTotalDurationsDivisibleBy60_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01010_PairsofSongsWithTotalDurationsDivisibleBy60))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01010_PairsofSongsWithTotalDurationsDivisibleBy60))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01010_PairsofSongsWithTotalDurationsDivisibleBy60))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60))![1]);
 
-        public static TheoryData<List<string>, int> _01010_PairsofSongsWithTotalDurationsDivisibleBy60PartOne_Data =>
+        public static TheoryData<List<string>, int> _01010_PairsOfSongsWithTotalDurationsDivisibleBy60PartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01010_PairsofSongsWithTotalDurationsDivisibleBy60PartTwo_Data =>
+        public static TheoryData<List<string>, int> _01010_PairsOfSongsWithTotalDurationsDivisibleBy60PartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01010_PairsofSongsWithTotalDurationsDivisibleBy60PartOne_Data))]
+        [MemberData(nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60PartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01010_PairsofSongsWithTotalDurationsDivisibleBy60.PartOne_Test(a0);
+            int actual = _01010_PairsOfSongsWithTotalDurationsDivisibleBy60.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01010_PairsofSongsWithTotalDurationsDivisibleBy60PartTwo_Data))]
+        [MemberData(nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60PartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01010_PairsofSongsWithTotalDurationsDivisibleBy60.PartTwo_Test(a0);
+            int actual = _01010_PairsOfSongsWithTotalDurationsDivisibleBy60.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

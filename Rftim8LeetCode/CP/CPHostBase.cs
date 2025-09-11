@@ -17,15 +17,15 @@ namespace Rftim8LeetCode.CP
             //RftFileContentManager.GetLeetCodeProblemNames();
             //RftFileContentManager.CreateLeetCodeDataFiles(RftFileContentManager.GetLeetCodeProblemNames());
             //RftFileContentManager.CreateLeetCodeCodeInterfaceFiles(RftFileContentManager.GetLeetCodeProblemNames());
-            RftFileContentManager.CreateLeetCodeCodeFiles(RftFileContentManager.GetLeetCodeProblemNames());
+            //RftFileContentManager.CreateLeetCodeCodeFiles(RftFileContentManager.GetLeetCodeProblemNames());
             //RftFileContentManager.CreateLeetCodexUnitTestFiles(RftFileContentManager.GetLeetCodeProblemNames());
 
             #region LeetCode
             //I_00001_TwoSum i_00001_TwoSum = serviceProvider.GetRequiredService<I_00001_TwoSum>();
             //i_00001_TwoSum.PrintSolution();
 
-            //I_00036_ValidSudoku i_00036_ValidSudoku = serviceProvider.GetRequiredService<I_00036_ValidSudoku>();
-            //i_00036_ValidSudoku.PrintSolution();
+            I_00036_ValidSudoku i_00036_ValidSudoku = serviceProvider.GetRequiredService<I_00036_ValidSudoku>();
+            i_00036_ValidSudoku.PrintSolution();
             #endregion
 
         }

@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01067_DigitCountinRange_Test
+    public class _01067_DigitCountInRange_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01067_DigitCountinRange))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01067_DigitCountinRange))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01067_DigitCountinRange))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01067_DigitCountInRange))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01067_DigitCountInRange))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01067_DigitCountInRange))![1]);
 
-        public static TheoryData<List<string>, int> _01067_DigitCountinRangePartOne_Data =>
+        public static TheoryData<List<string>, int> _01067_DigitCountInRangePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01067_DigitCountinRangePartTwo_Data =>
+        public static TheoryData<List<string>, int> _01067_DigitCountInRangePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01067_DigitCountinRangePartOne_Data))]
+        [MemberData(nameof(_01067_DigitCountInRangePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01067_DigitCountinRange.PartOne_Test(a0);
+            int actual = _01067_DigitCountInRange.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01067_DigitCountinRangePartTwo_Data))]
+        [MemberData(nameof(_01067_DigitCountInRangePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01067_DigitCountinRange.PartTwo_Test(a0);
+            int actual = _01067_DigitCountInRange.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

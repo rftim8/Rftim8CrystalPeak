@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00435_NonoverlappingIntervals : I_00435_NonoverlappingIntervals
+    public class _00435_NonOverlappingIntervals : I_00435_NonOverlappingIntervals
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00435_NonoverlappingIntervals()
+        public _00435_NonOverlappingIntervals()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00435_NonoverlappingIntervals));
-            Input = [.. RftResource._00435_NonoverlappingIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00435_NonOverlappingIntervals));
+            Input = [.. RftResource._00435_NonOverlappingIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00435_NonoverlappingIntervals(IHost host)
+        public _00435_NonOverlappingIntervals(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00435_NonoverlappingIntervals));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00435_NonOverlappingIntervals));
             DataCollector();
         }
 

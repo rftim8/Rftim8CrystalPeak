@@ -1,6 +1,6 @@
 namespace Rftim8LeetCode.Problems
 {
-    public interface I_00271_EncodeandDecodeStrings
+    public interface I_00271_EncodeAndDecodeStrings
     {
         public void PrintSolution();
     }

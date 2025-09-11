@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02911_MinimumChangesToMakeKSemipalindromes : I_02911_MinimumChangesToMakeKSemipalindromes
+    public class _02911_MinimumChangesToMakeKSemiPalindromes : I_02911_MinimumChangesToMakeKSemiPalindromes
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02911_MinimumChangesToMakeKSemipalindromes()
+        public _02911_MinimumChangesToMakeKSemiPalindromes()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02911_MinimumChangesToMakeKSemipalindromes));
-            Input = [.. RftResource._02911_MinimumChangesToMakeKSemipalindromes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02911_MinimumChangesToMakeKSemiPalindromes));
+            Input = [.. RftResource._02911_MinimumChangesToMakeKSemiPalindromes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02911_MinimumChangesToMakeKSemipalindromes(IHost host)
+        public _02911_MinimumChangesToMakeKSemiPalindromes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02911_MinimumChangesToMakeKSemipalindromes));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02911_MinimumChangesToMakeKSemiPalindromes));
             DataCollector();
         }
 

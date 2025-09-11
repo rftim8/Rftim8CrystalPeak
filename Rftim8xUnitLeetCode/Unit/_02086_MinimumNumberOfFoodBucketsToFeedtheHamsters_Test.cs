@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02086_MinimumNumberOfFoodBucketsToFeedtheHamsters_Test
+    public class _02086_MinimumNumberOfFoodBucketsToFeedTheHamsters_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02086_MinimumNumberOfFoodBucketsToFeedtheHamsters))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02086_MinimumNumberOfFoodBucketsToFeedtheHamsters))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02086_MinimumNumberOfFoodBucketsToFeedtheHamsters))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters))![1]);
 
-        public static TheoryData<List<string>, int> _02086_MinimumNumberOfFoodBucketsToFeedtheHamstersPartOne_Data =>
+        public static TheoryData<List<string>, int> _02086_MinimumNumberOfFoodBucketsToFeedTheHamstersPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02086_MinimumNumberOfFoodBucketsToFeedtheHamstersPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02086_MinimumNumberOfFoodBucketsToFeedTheHamstersPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02086_MinimumNumberOfFoodBucketsToFeedtheHamstersPartOne_Data))]
+        [MemberData(nameof(_02086_MinimumNumberOfFoodBucketsToFeedTheHamstersPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02086_MinimumNumberOfFoodBucketsToFeedtheHamsters.PartOne_Test(a0);
+            int actual = _02086_MinimumNumberOfFoodBucketsToFeedTheHamsters.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02086_MinimumNumberOfFoodBucketsToFeedtheHamstersPartTwo_Data))]
+        [MemberData(nameof(_02086_MinimumNumberOfFoodBucketsToFeedTheHamstersPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02086_MinimumNumberOfFoodBucketsToFeedtheHamsters.PartTwo_Test(a0);
+            int actual = _02086_MinimumNumberOfFoodBucketsToFeedTheHamsters.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

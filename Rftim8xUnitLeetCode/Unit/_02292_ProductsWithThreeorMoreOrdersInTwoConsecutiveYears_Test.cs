@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYears_Test
+    public class _02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYears))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYears))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYears))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears))![1]);
 
-        public static TheoryData<List<string>, int> _02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYearsPartOne_Data =>
+        public static TheoryData<List<string>, int> _02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYearsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYearsPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYearsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYearsPartOne_Data))]
+        [MemberData(nameof(_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYearsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYears.PartOne_Test(a0);
+            int actual = _02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYearsPartTwo_Data))]
+        [MemberData(nameof(_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYearsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02292_ProductsWithThreeorMoreOrdersInTwoConsecutiveYears.PartTwo_Test(a0);
+            int actual = _02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

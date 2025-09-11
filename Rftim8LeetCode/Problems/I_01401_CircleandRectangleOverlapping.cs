@@ -1,6 +1,6 @@
 namespace Rftim8LeetCode.Problems
 {
-    public interface I_01401_CircleandRectangleOverlapping
+    public interface I_01401_CircleAndRectangleOverlapping
     {
         public void PrintSolution();
     }

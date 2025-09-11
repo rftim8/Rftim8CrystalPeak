@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02096_StepByStepDirectionsFromaBinaryTreeNodeToAnother_Test
+    public class _02096_StepByStepDirectionsFromABinaryTreeNodeToAnother_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02096_StepByStepDirectionsFromaBinaryTreeNodeToAnother))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02096_StepByStepDirectionsFromaBinaryTreeNodeToAnother))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02096_StepByStepDirectionsFromaBinaryTreeNodeToAnother))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother))![1]);
 
-        public static TheoryData<List<string>, int> _02096_StepByStepDirectionsFromaBinaryTreeNodeToAnotherPartOne_Data =>
+        public static TheoryData<List<string>, int> _02096_StepByStepDirectionsFromABinaryTreeNodeToAnotherPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02096_StepByStepDirectionsFromaBinaryTreeNodeToAnotherPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02096_StepByStepDirectionsFromABinaryTreeNodeToAnotherPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02096_StepByStepDirectionsFromaBinaryTreeNodeToAnotherPartOne_Data))]
+        [MemberData(nameof(_02096_StepByStepDirectionsFromABinaryTreeNodeToAnotherPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02096_StepByStepDirectionsFromaBinaryTreeNodeToAnother.PartOne_Test(a0);
+            int actual = _02096_StepByStepDirectionsFromABinaryTreeNodeToAnother.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02096_StepByStepDirectionsFromaBinaryTreeNodeToAnotherPartTwo_Data))]
+        [MemberData(nameof(_02096_StepByStepDirectionsFromABinaryTreeNodeToAnotherPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02096_StepByStepDirectionsFromaBinaryTreeNodeToAnother.PartTwo_Test(a0);
+            int actual = _02096_StepByStepDirectionsFromABinaryTreeNodeToAnother.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01023_CamelcaseMatching : I_01023_CamelcaseMatching
+    public class _01023_CamelCaseMatching : I_01023_CamelCaseMatching
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01023_CamelcaseMatching()
+        public _01023_CamelCaseMatching()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01023_CamelcaseMatching));
-            Input = [.. RftResource._01023_CamelcaseMatching_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01023_CamelCaseMatching));
+            Input = [.. RftResource._01023_CamelCaseMatching_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01023_CamelcaseMatching(IHost host)
+        public _01023_CamelCaseMatching(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01023_CamelcaseMatching));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01023_CamelCaseMatching));
             DataCollector();
         }
 

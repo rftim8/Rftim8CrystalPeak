@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02516_TakeKOfEachCharacterFromLeftandRight_Test
+    public class _02516_TakeKOfEachCharacterFromLeftAndRight_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftandRight))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftandRight))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftandRight))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftAndRight))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftAndRight))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftAndRight))![1]);
 
-        public static TheoryData<List<string>, int> _02516_TakeKOfEachCharacterFromLeftandRightPartOne_Data =>
+        public static TheoryData<List<string>, int> _02516_TakeKOfEachCharacterFromLeftAndRightPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02516_TakeKOfEachCharacterFromLeftandRightPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02516_TakeKOfEachCharacterFromLeftAndRightPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02516_TakeKOfEachCharacterFromLeftandRightPartOne_Data))]
+        [MemberData(nameof(_02516_TakeKOfEachCharacterFromLeftAndRightPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02516_TakeKOfEachCharacterFromLeftandRight.PartOne_Test(a0);
+            int actual = _02516_TakeKOfEachCharacterFromLeftAndRight.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02516_TakeKOfEachCharacterFromLeftandRightPartTwo_Data))]
+        [MemberData(nameof(_02516_TakeKOfEachCharacterFromLeftAndRightPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02516_TakeKOfEachCharacterFromLeftandRight.PartTwo_Test(a0);
+            int actual = _02516_TakeKOfEachCharacterFromLeftAndRight.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

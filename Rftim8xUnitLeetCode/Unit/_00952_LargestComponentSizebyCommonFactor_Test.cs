@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00952_LargestComponentSizebyCommonFactor_Test
+    public class _00952_LargestComponentSizeByCommonFactor_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00952_LargestComponentSizebyCommonFactor))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00952_LargestComponentSizebyCommonFactor))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00952_LargestComponentSizebyCommonFactor))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00952_LargestComponentSizeByCommonFactor))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00952_LargestComponentSizeByCommonFactor))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00952_LargestComponentSizeByCommonFactor))![1]);
 
-        public static TheoryData<List<string>, int> _00952_LargestComponentSizebyCommonFactorPartOne_Data =>
+        public static TheoryData<List<string>, int> _00952_LargestComponentSizeByCommonFactorPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00952_LargestComponentSizebyCommonFactorPartTwo_Data =>
+        public static TheoryData<List<string>, int> _00952_LargestComponentSizeByCommonFactorPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00952_LargestComponentSizebyCommonFactorPartOne_Data))]
+        [MemberData(nameof(_00952_LargestComponentSizeByCommonFactorPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00952_LargestComponentSizebyCommonFactor.PartOne_Test(a0);
+            int actual = _00952_LargestComponentSizeByCommonFactor.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00952_LargestComponentSizebyCommonFactorPartTwo_Data))]
+        [MemberData(nameof(_00952_LargestComponentSizeByCommonFactorPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00952_LargestComponentSizebyCommonFactor.PartTwo_Test(a0);
+            int actual = _00952_LargestComponentSizeByCommonFactor.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

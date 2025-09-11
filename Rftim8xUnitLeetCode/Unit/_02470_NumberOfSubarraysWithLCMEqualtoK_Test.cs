@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02470_NumberOfSubarraysWithLCMEqualtoK_Test
+    public class _02470_NumberOfSubarraysWithLCMEqualToK_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02470_NumberOfSubarraysWithLCMEqualtoK))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02470_NumberOfSubarraysWithLCMEqualtoK))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02470_NumberOfSubarraysWithLCMEqualtoK))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02470_NumberOfSubarraysWithLCMEqualToK))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02470_NumberOfSubarraysWithLCMEqualToK))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02470_NumberOfSubarraysWithLCMEqualToK))![1]);
 
-        public static TheoryData<List<string>, int> _02470_NumberOfSubarraysWithLCMEqualtoKPartOne_Data =>
+        public static TheoryData<List<string>, int> _02470_NumberOfSubarraysWithLCMEqualToKPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02470_NumberOfSubarraysWithLCMEqualtoKPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02470_NumberOfSubarraysWithLCMEqualToKPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02470_NumberOfSubarraysWithLCMEqualtoKPartOne_Data))]
+        [MemberData(nameof(_02470_NumberOfSubarraysWithLCMEqualToKPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02470_NumberOfSubarraysWithLCMEqualtoK.PartOne_Test(a0);
+            int actual = _02470_NumberOfSubarraysWithLCMEqualToK.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02470_NumberOfSubarraysWithLCMEqualtoKPartTwo_Data))]
+        [MemberData(nameof(_02470_NumberOfSubarraysWithLCMEqualToKPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02470_NumberOfSubarraysWithLCMEqualtoK.PartTwo_Test(a0);
+            int actual = _02470_NumberOfSubarraysWithLCMEqualToK.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

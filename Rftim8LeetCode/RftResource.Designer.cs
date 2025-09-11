@@ -70,5 +70,1292 @@ namespace Rftim8LeetCode {
                 return ResourceManager.GetString("_00036_ValidSudoku_Input", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00081_SearchInRotatedSortedArrayII_Input {
+            get {
+                return ResourceManager.GetString("_00081_SearchInRotatedSortedArrayII_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00188_BestTimeToBuyAndSellStockIV_Input {
+            get {
+                return ResourceManager.GetString("_00188_BestTimeToBuyAndSellStockIV_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00211_DesignAddAndSearchWordsDataStructure_Input {
+            get {
+                return ResourceManager.GetString("_00211_DesignAddAndSearchWordsDataStructure_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00271_EncodeAndDecodeStrings_Input {
+            get {
+                return ResourceManager.GetString("_00271_EncodeAndDecodeStrings_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00325_MaximumSizeSubarraySumEqualsK_Input {
+            get {
+                return ResourceManager.GetString("_00325_MaximumSizeSubarraySumEqualsK_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00327_CountOfRangeSum_Input {
+            get {
+                return ResourceManager.GetString("_00327_CountOfRangeSum_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00340_LongestSubstringWithAtMostKDistinctCharacters_Input {
+            get {
+                return ResourceManager.GetString("_00340_LongestSubstringWithAtMostKDistinctCharacters_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00346_MovingAverageFromDataStream_Input {
+            get {
+                return ResourceManager.GetString("_00346_MovingAverageFromDataStream_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00352_DataStreamAsDisjointIntervals_Input {
+            get {
+                return ResourceManager.GetString("_00352_DataStreamAsDisjointIntervals_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00358_RearrangeStringKDistanceApart_Input {
+            get {
+                return ResourceManager.GetString("_00358_RearrangeStringKDistanceApart_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00366_FindLeavesOfBinaryTree_Input {
+            get {
+                return ResourceManager.GetString("_00366_FindLeavesOfBinaryTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00373_FindKPairsWithSmallestSums_Input {
+            get {
+                return ResourceManager.GetString("_00373_FindKPairsWithSmallestSums_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00421_MaximumXOROfTwoNumbersInAnArray_Input {
+            get {
+                return ResourceManager.GetString("_00421_MaximumXOROfTwoNumbersInAnArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00432_AllOOneDataStructure_Input {
+            get {
+                return ResourceManager.GetString("_00432_AllOOneDataStructure_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00435_NonOverlappingIntervals_Input {
+            get {
+                return ResourceManager.GetString("_00435_NonOverlappingIntervals_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00453_MinimumMovesToEqualArrayElements_Input {
+            get {
+                return ResourceManager.GetString("_00453_MinimumMovesToEqualArrayElements_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00462_MinimumMovesToEqualArrayElementsII_Input {
+            get {
+                return ResourceManager.GetString("_00462_MinimumMovesToEqualArrayElementsII_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00491_NonDecreasingSubsequences_Input {
+            get {
+                return ResourceManager.GetString("_00491_NonDecreasingSubsequences_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00497_RandomPointInNonOverlappingRectangles_Input {
+            get {
+                return ResourceManager.GetString("_00497_RandomPointInNonOverlappingRectangles_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00524_LongestWordInDictionaryThroughDeleting_Input {
+            get {
+                return ResourceManager.GetString("_00524_LongestWordInDictionaryThroughDeleting_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00532_KDiffPairsInAnArray_Input {
+            get {
+                return ResourceManager.GetString("_00532_KDiffPairsInAnArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00535_EncodeAndDecodeTinyURL_Input {
+            get {
+                return ResourceManager.GetString("_00535_EncodeAndDecodeTinyURL_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00538_ConvertBSTToGreaterTree_Input {
+            get {
+                return ResourceManager.GetString("_00538_ConvertBSTToGreaterTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00576_OutOfBoundaryPaths_Input {
+            get {
+                return ResourceManager.GetString("_00576_OutOfBoundaryPaths_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00602_FriendRequestsIIWhoHasTheMostFriends_Input {
+            get {
+                return ResourceManager.GetString("_00602_FriendRequestsIIWhoHasTheMostFriends_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00616_AddBoldTagInString_Input {
+            get {
+                return ResourceManager.GetString("_00616_AddBoldTagInString_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00623_AddOneRowToTree_Input {
+            get {
+                return ResourceManager.GetString("_00623_AddOneRowToTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00653_TwoSumIVInputIsABST_Input {
+            get {
+                return ResourceManager.GetString("_00653_TwoSumIVInputIsABST_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00665_NonDecreasingArray_Input {
+            get {
+                return ResourceManager.GetString("_00665_NonDecreasingArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00668_KthSmallestNumberInMultiplicationTable_Input {
+            get {
+                return ResourceManager.GetString("_00668_KthSmallestNumberInMultiplicationTable_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00669_TrimABinarySearchTree_Input {
+            get {
+                return ResourceManager.GetString("_00669_TrimABinarySearchTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00742_ClosestLeafInABinaryTree_Input {
+            get {
+                return ResourceManager.GetString("_00742_ClosestLeafInABinaryTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00745_PrefixAndSuffixSearch_Input {
+            get {
+                return ResourceManager.GetString("_00745_PrefixAndSuffixSearch_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00751_IPToCIDR_Input {
+            get {
+                return ResourceManager.GetString("_00751_IPToCIDR_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00758_BoldWordsInString_Input {
+            get {
+                return ResourceManager.GetString("_00758_BoldWordsInString_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00774_MinimizeMaxDistanceToGasStation_Input {
+            get {
+                return ResourceManager.GetString("_00774_MinimizeMaxDistanceToGasStation_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00807_MaxIncreaseToKeepCitySkyline_Input {
+            get {
+                return ResourceManager.GetString("_00807_MaxIncreaseToKeepCitySkyline_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00828_CountUniqueCharactersOfAllSubstringsOfAGivenString_Input {
+            get {
+                return ResourceManager.GetString("_00828_CountUniqueCharactersOfAllSubstringsOfAGivenString_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00846_HandOfStraights_Input {
+            get {
+                return ResourceManager.GetString("_00846_HandOfStraights_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00851_LoudAndRich_Input {
+            get {
+                return ResourceManager.GetString("_00851_LoudAndRich_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00862_ShortestSubarrayWithSumAtLeastK_Input {
+            get {
+                return ResourceManager.GetString("_00862_ShortestSubarrayWithSumAtLeastK_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00865_SmallestSubtreeWithAllTheDeepestNodes_Input {
+            get {
+                return ResourceManager.GetString("_00865_SmallestSubtreeWithAllTheDeepestNodes_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00890_FindAndReplacePattern_Input {
+            get {
+                return ResourceManager.GetString("_00890_FindAndReplacePattern_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00913_CatAndMouse_Input {
+            get {
+                return ResourceManager.GetString("_00913_CatAndMouse_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00921_MinimumAddToMakeParenthesesValid_Input {
+            get {
+                return ResourceManager.GetString("_00921_MinimumAddToMakeParenthesesValid_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00952_LargestComponentSizeByCommonFactor_Input {
+            get {
+                return ResourceManager.GetString("_00952_LargestComponentSizeByCommonFactor_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00960_DeleteColumnsToMakeSortedIII_Input {
+            get {
+                return ResourceManager.GetString("_00960_DeleteColumnsToMakeSortedIII_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00974_SubarraySumsDivisibleByK_Input {
+            get {
+                return ResourceManager.GetString("_00974_SubarraySumsDivisibleByK_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00979_DistributeCoinsInBinaryTree_Input {
+            get {
+                return ResourceManager.GetString("_00979_DistributeCoinsInBinaryTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _00984_StringWithoutAAAOrBBB_Input {
+            get {
+                return ResourceManager.GetString("_00984_StringWithoutAAAOrBBB_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input {
+            get {
+                return ResourceManager.GetString("_01010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01014_BestSightSeeingPair_Input {
+            get {
+                return ResourceManager.GetString("_01014_BestSightSeeingPair_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01017_ConvertToBase2_Input {
+            get {
+                return ResourceManager.GetString("_01017_ConvertToBase2_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01023_CamelCaseMatching_Input {
+            get {
+                return ResourceManager.GetString("_01023_CamelCaseMatching_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01028_RecoverATreeFromPreorderTraversal_Input {
+            get {
+                return ResourceManager.GetString("_01028_RecoverATreeFromPreorderTraversal_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01036_EscapeALargeMaze_Input {
+            get {
+                return ResourceManager.GetString("_01036_EscapeALargeMaze_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01050_ActorsAndDirectorsWhoCooperatedAtLeastThreeTimes_Input {
+            get {
+                return ResourceManager.GetString("_01050_ActorsAndDirectorsWhoCooperatedAtLeastThreeTimes_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01055_ShortestWayToFormString_Input {
+            get {
+                return ResourceManager.GetString("_01055_ShortestWayToFormString_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01067_DigitCountInRange_Input {
+            get {
+                return ResourceManager.GetString("_01067_DigitCountInRange_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01118_NumberOfDaysInAMonth_Input {
+            get {
+                return ResourceManager.GetString("_01118_NumberOfDaysInAMonth_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01167_MinimumCostToConnectSticks_Input {
+            get {
+                return ResourceManager.GetString("_01167_MinimumCostToConnectSticks_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01204_LastPersonToFitInTheBus_Input {
+            get {
+                return ResourceManager.GetString("_01204_LastPersonToFitInTheBus_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01222_QueensThatCanAttackTheKing_Input {
+            get {
+                return ResourceManager.GetString("_01222_QueensThatCanAttackTheKing_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01240_TilingARectangleWithTheFewestSquares_Input {
+            get {
+                return ResourceManager.GetString("_01240_TilingARectangleWithTheFewestSquares_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01250_CheckIfItIsAGoodArray_Input {
+            get {
+                return ResourceManager.GetString("_01250_CheckIfItIsAGoodArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01253_ReconstructATwoRowBinaryMatrix_Input {
+            get {
+                return ResourceManager.GetString("_01253_ReconstructATwoRowBinaryMatrix_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01255_MaximumScoreWordsFormedByLetters_Input {
+            get {
+                return ResourceManager.GetString("_01255_MaximumScoreWordsFormedByLetters_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix_Input {
+            get {
+                return ResourceManager.GetString("_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01294_WeatherTypeInEachCountry_Input {
+            get {
+                return ResourceManager.GetString("_01294_WeatherTypeInEachCountry_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01320_MinimumDistanceToTypeAWordUsingTwoFingers_Input {
+            get {
+                return ResourceManager.GetString("_01320_MinimumDistanceToTypeAWordUsingTwoFingers_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01325_DeleteLeavesWithAGivenValue_Input {
+            get {
+                return ResourceManager.GetString("_01325_DeleteLeavesWithAGivenValue_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01333_FilterRestaurantsByVeganFriendlyPriceAndDistance_Input {
+            get {
+                return ResourceManager.GetString("_01333_FilterRestaurantsByVeganFriendlyPriceAndDistance_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01334_FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance_Input {
+            get {
+                return ResourceManager.GetString("_01334_FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01343_NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold_Input {
+            get {
+                return ResourceManager.GetString("_01343_NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01357_ApplyDiscountEveryNOrders_Input {
+            get {
+                return ResourceManager.GetString("_01357_ApplyDiscountEveryNOrders_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01363_LargestMultipleOfThree_Input {
+            get {
+                return ResourceManager.GetString("_01363_LargestMultipleOfThree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01382_BalanceABinarySearchTree_Input {
+            get {
+                return ResourceManager.GetString("_01382_BalanceABinarySearchTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01398_CustomersWhoBoughtProductsAAndBButNotC_Input {
+            get {
+                return ResourceManager.GetString("_01398_CustomersWhoBoughtProductsAAndBButNotC_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01401_CircleAndRectangleOverlapping_Input {
+            get {
+                return ResourceManager.GetString("_01401_CircleAndRectangleOverlapping_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne_Input {
+            get {
+                return ResourceManager.GetString("_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01409_QueriesOnAPermutationWithKey_Input {
+            get {
+                return ResourceManager.GetString("_01409_QueriesOnAPermutationWithKey_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01411_NumberOfWaysToPaintN3Grid_Input {
+            get {
+                return ResourceManager.GetString("_01411_NumberOfWaysToPaintN3Grid_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01415_TheKthLexicographicalStringOfAllHappyStringsOfLengthN_Input {
+            get {
+                return ResourceManager.GetString("_01415_TheKthLexicographicalStringOfAllHappyStringsOfLengthN_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01423_MaximumPointsYouCanObtainFromCards_Input {
+            get {
+                return ResourceManager.GetString("_01423_MaximumPointsYouCanObtainFromCards_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01428_LeftmostColumnWithAtLeastAOne_Input {
+            get {
+                return ResourceManager.GetString("_01428_LeftmostColumnWithAtLeastAOne_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01430_CheckIfAStringIsAValidSequenceFromRootToLeavesPathInABinaryTree_Input {
+            get {
+                return ResourceManager.GetString("_01430_CheckIfAStringIsAValidSequenceFromRootToLeavesPathInABinaryTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01943_DescribeThePainting_Input {
+            get {
+                return ResourceManager.GetString("_01943_DescribeThePainting_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01954_MinimumGardenPerimeterToCollectEnoughApples_Input {
+            get {
+                return ResourceManager.GetString("_01954_MinimumGardenPerimeterToCollectEnoughApples_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01968_ArrayWithElementsNotEqualToAverageOfNeighbors_Input {
+            get {
+                return ResourceManager.GetString("_01968_ArrayWithElementsNotEqualToAverageOfNeighbors_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _01997_FirstDayWhereYouHaveBeenInAllTheRooms_Input {
+            get {
+                return ResourceManager.GetString("_01997_FirstDayWhereYouHaveBeenInAllTheRooms_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02014_LongestSubsequenceRepeatedKTimes_Input {
+            get {
+                return ResourceManager.GetString("_02014_LongestSubsequenceRepeatedKTimes_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02039_TheTimeWhenTheNetworkBecomesIdle_Input {
+            get {
+                return ResourceManager.GetString("_02039_TheTimeWhenTheNetworkBecomesIdle_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02040_KthSmallestProductOfTwoSortedArrays_Input {
+            get {
+                return ResourceManager.GetString("_02040_KthSmallestProductOfTwoSortedArrays_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02045_SecondMinimumTimeToReachDestination_Input {
+            get {
+                return ResourceManager.GetString("_02045_SecondMinimumTimeToReachDestination_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02049_CountNodesWithTheHighestScore_Input {
+            get {
+                return ResourceManager.GetString("_02049_CountNodesWithTheHighestScore_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02058_FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_Input {
+            get {
+                return ResourceManager.GetString("_02058_FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02083_SubstringsThatBeginAndEndWithTheSameLetter_Input {
+            get {
+                return ResourceManager.GetString("_02083_SubstringsThatBeginAndEndWithTheSameLetter_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02085_CountCommonWordsWithOneOccurrence_Output {
+            get {
+                return ResourceManager.GetString("_02085_CountCommonWordsWithOneOccurrence_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02086_MinimumNumberOfFoodBucketsToFeedTheHamsters_Input {
+            get {
+                return ResourceManager.GetString("_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02091_RemovingMinimumAndMaximumFromArray_Input {
+            get {
+                return ResourceManager.GetString("_02091_RemovingMinimumAndMaximumFromArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02096_StepByStepDirectionsFromABinaryTreeNodeToAnother_Input {
+            get {
+                return ResourceManager.GetString("_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02097_ValidArrangementOfPairs_Input {
+            get {
+                return ResourceManager.GetString("_02097_ValidArrangementOfPairs_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02111_MinimumOperationsToMakeTheArrayKIncreasing_Input {
+            get {
+                return ResourceManager.GetString("_02111_MinimumOperationsToMakeTheArrayKIncreasing_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02135_CountWordsObtainedAfterAddingALetter_Input {
+            get {
+                return ResourceManager.GetString("_02135_CountWordsObtainedAfterAddingALetter_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02174_RemoveAllOnesWithRowAndColumnFlipsII_Input {
+            get {
+                return ResourceManager.GetString("_02174_RemoveAllOnesWithRowAndColumnFlipsII_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber_Input {
+            get {
+                return ResourceManager.GetString("_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02204_DistanceToACycleInUndirectedGraph_Input {
+            get {
+                return ResourceManager.GetString("_02204_DistanceToACycleInUndirectedGraph_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02227_EncryptAndDecryptStrings_Input {
+            get {
+                return ResourceManager.GetString("_02227_EncryptAndDecryptStrings_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02238_NumberOfTimesADriverWasAPassenger_Input {
+            get {
+                return ResourceManager.GetString("_02238_NumberOfTimesADriverWasAPassenger_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02240_NumberOfWaysToBuyPensAndPencils_Input {
+            get {
+                return ResourceManager.GetString("_02240_NumberOfWaysToBuyPensAndPencils_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02263_MakeArrayNonDecreasingOrNonIncreasing_Input {
+            get {
+                return ResourceManager.GetString("_02263_MakeArrayNonDecreasingOrNonIncreasing_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02276_CountIntegersInIntervals_Input {
+            get {
+                return ResourceManager.GetString("_02276_CountIntegersInIntervals_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02277_ClosestNodeToPathInTree_Input {
+            get {
+                return ResourceManager.GetString("_02277_ClosestNodeToPathInTree_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02289_StepsToMakeArrayNonDecreasing_Input {
+            get {
+                return ResourceManager.GetString("_02289_StepsToMakeArrayNonDecreasing_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears_Input {
+            get {
+                return ResourceManager.GetString("_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02332_TheLatestTimeToCatchABus_Input {
+            get {
+                return ResourceManager.GetString("_02332_TheLatestTimeToCatchABus_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02397_MaximumRowsCoveredByColumns_Input {
+            get {
+                return ResourceManager.GetString("_02397_MaximumRowsCoveredByColumns_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02400_NumberOfWaysToReachAPositionAfterExactlyKSteps_Input {
+            get {
+                return ResourceManager.GetString("_02400_NumberOfWaysToReachAPositionAfterExactlyKSteps_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02425_BitwiseXOROfAllPairings_Input {
+            get {
+                return ResourceManager.GetString("_02425_BitwiseXOROfAllPairings_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02434_UsingARobotToPrintTheLexicographicallySmallestString_Input {
+            get {
+                return ResourceManager.GetString("_02434_UsingARobotToPrintTheLexicographicallySmallestString_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02447_NumberOfSubarraysWithGCDEqualToK_Input {
+            get {
+                return ResourceManager.GetString("_02447_NumberOfSubarraysWithGCDEqualToK_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02459_SortArrayByMovingItemsToEmptySpace_Input {
+            get {
+                return ResourceManager.GetString("_02459_SortArrayByMovingItemsToEmptySpace_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02470_NumberOfSubarraysWithLCMEqualToK_Input {
+            get {
+                return ResourceManager.GetString("_02470_NumberOfSubarraysWithLCMEqualToK_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel_Input {
+            get {
+                return ResourceManager.GetString("_02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input {
+            get {
+                return ResourceManager.GetString("_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02486_AppendCharactersToStringToMakeSubsequence_Input {
+            get {
+                return ResourceManager.GetString("_02486_AppendCharactersToStringToMakeSubsequence_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02493_DivideNodesIntoTheMaximumNumberOfGroups_Input {
+            get {
+                return ResourceManager.GetString("_02493_DivideNodesIntoTheMaximumNumberOfGroups_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02516_TakeKOfEachCharacterFromLeftAndRight_Input {
+            get {
+                return ResourceManager.GetString("_02516_TakeKOfEachCharacterFromLeftAndRight_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02538_DifferenceBetweenMaximumAndMinimumPriceSum_Input {
+            get {
+                return ResourceManager.GetString("_02538_DifferenceBetweenMaximumAndMinimumPriceSum_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02589_MinimumTimeToCompleteAllTasks_Input {
+            get {
+                return ResourceManager.GetString("_02589_MinimumTimeToCompleteAllTasks_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02590_DesignATodoList_Input {
+            get {
+                return ResourceManager.GetString("_02590_DesignATodoList_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02598_SmallestMissingNonNegativeIntegerAfterOperations_Input {
+            get {
+                return ResourceManager.GetString("_02598_SmallestMissingNonNegativeIntegerAfterOperations_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02599_MakeThePrefixSumNonNegative_Input {
+            get {
+                return ResourceManager.GetString("_02599_MakeThePrefixSumNonNegative_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02702_MinimumOperationsToMakeNumbersNonPositive_Input {
+            get {
+                return ResourceManager.GetString("_02702_MinimumOperationsToMakeNumbersNonPositive_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02771_LongestNonDecreasingSubarrayFromTwoArrays_Input {
+            get {
+                return ResourceManager.GetString("_02771_LongestNonDecreasingSubarrayFromTwoArrays_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02802_FindTheKThLuckyNumber_Input {
+            get {
+                return ResourceManager.GetString("_02802_FindTheKThLuckyNumber_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02829_DetermineTheMinimumSumOfAKAvoidingArray_Input {
+            get {
+                return ResourceManager.GetString("_02829_DetermineTheMinimumSumOfAKAvoidingArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02894_DivisibleAndNonDivisibleSumsDifference_Input {
+            get {
+                return ResourceManager.GetString("_02894_DivisibleAndNonDivisibleSumsDifference_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02911_MinimumChangesToMakeKSemiPalindromes_Input {
+            get {
+                return ResourceManager.GetString("_02911_MinimumChangesToMakeKSemiPalindromes_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02917_FindTheKOrOfAnArray_Input {
+            get {
+                return ResourceManager.GetString("_02917_FindTheKOrOfAnArray_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _02945_FindMaximumNonDecreasingArrayLength_Input {
+            get {
+                return ResourceManager.GetString("_02945_FindMaximumNonDecreasingArrayLength_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _03022_MinimizeOROfRemainingElementsUsingOperations_Input {
+            get {
+                return ResourceManager.GetString("_03022_MinimizeOROfRemainingElementsUsingOperations_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string _03572_MaximizeYSumByPickingATripletOfDistinctXValues_Input {
+            get {
+                return ResourceManager.GetString("_03572_MaximizeYSumByPickingATripletOfDistinctXValues_Input", resourceCulture);
+            }
+        }
     }
 }

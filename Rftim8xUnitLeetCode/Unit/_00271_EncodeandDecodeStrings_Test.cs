@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00271_EncodeandDecodeStrings_Test
+    public class _00271_EncodeAndDecodeStrings_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00271_EncodeandDecodeStrings))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00271_EncodeandDecodeStrings))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00271_EncodeandDecodeStrings))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00271_EncodeAndDecodeStrings))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00271_EncodeAndDecodeStrings))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00271_EncodeAndDecodeStrings))![1]);
 
-        public static TheoryData<List<string>, int> _00271_EncodeandDecodeStringsPartOne_Data =>
+        public static TheoryData<List<string>, int> _00271_EncodeAndDecodeStringsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00271_EncodeandDecodeStringsPartTwo_Data =>
+        public static TheoryData<List<string>, int> _00271_EncodeAndDecodeStringsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00271_EncodeandDecodeStringsPartOne_Data))]
+        [MemberData(nameof(_00271_EncodeAndDecodeStringsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00271_EncodeandDecodeStrings.PartOne_Test(a0);
+            int actual = _00271_EncodeAndDecodeStrings.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00271_EncodeandDecodeStringsPartTwo_Data))]
+        [MemberData(nameof(_00271_EncodeAndDecodeStringsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00271_EncodeandDecodeStrings.PartTwo_Test(a0);
+            int actual = _00271_EncodeAndDecodeStrings.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

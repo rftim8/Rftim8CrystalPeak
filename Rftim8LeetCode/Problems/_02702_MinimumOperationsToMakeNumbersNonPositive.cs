@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02702_MinimumOperationsToMakeNumbersNonpositive : I_02702_MinimumOperationsToMakeNumbersNonpositive
+    public class _02702_MinimumOperationsToMakeNumbersNonPositive : I_02702_MinimumOperationsToMakeNumbersNonPositive
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02702_MinimumOperationsToMakeNumbersNonpositive()
+        public _02702_MinimumOperationsToMakeNumbersNonPositive()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonpositive));
-            Input = [.. RftResource._02702_MinimumOperationsToMakeNumbersNonpositive_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonPositive));
+            Input = [.. RftResource._02702_MinimumOperationsToMakeNumbersNonPositive_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02702_MinimumOperationsToMakeNumbersNonpositive(IHost host)
+        public _02702_MinimumOperationsToMakeNumbersNonPositive(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonpositive));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonPositive));
             DataCollector();
         }
 

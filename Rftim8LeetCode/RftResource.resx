@@ -121,4 +121,433 @@
   <data name="_00036_ValidSudoku_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\_00036_ValidSudoku_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="_00081_SearchInRotatedSortedArrayII_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00081_SearchInRotatedSortedArrayII_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00188_BestTimeToBuyAndSellStockIV_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00188_BestTimeToBuyAndSellStockIV_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00211_DesignAddAndSearchWordsDataStructure_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00211_DesignAddAndSearchWordsDataStructure_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00271_EncodeAndDecodeStrings_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00271_EncodeAndDecodeStrings_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00325_MaximumSizeSubarraySumEqualsK_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00325_MaximumSizeSubarraySumEqualsK_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00327_CountOfRangeSum_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00327_CountOfRangeSum_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00340_LongestSubstringWithAtMostKDistinctCharacters_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00340_LongestSubstringWithAtMostKDistinctCharacters_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00346_MovingAverageFromDataStream_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00346_MovingAverageFromDataStream_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00352_DataStreamAsDisjointIntervals_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00352_DataStreamAsDisjointIntervals_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00358_RearrangeStringKDistanceApart_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00358_RearrangeStringKDistanceApart_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00366_FindLeavesOfBinaryTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00366_FindLeavesOfBinaryTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00373_FindKPairsWithSmallestSums_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00373_FindKPairsWithSmallestSums_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00421_MaximumXOROfTwoNumbersInAnArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00421_MaximumXOROfTwoNumbersInAnArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00432_AllOOneDataStructure_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00432_AllOOneDataStructure_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00435_NonOverlappingIntervals_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00435_NonOverlappingIntervals_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00453_MinimumMovesToEqualArrayElements_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00453_MinimumMovesToEqualArrayElements_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00462_MinimumMovesToEqualArrayElementsII_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00462_MinimumMovesToEqualArrayElementsII_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00491_NonDecreasingSubsequences_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00491_NonDecreasingSubsequences_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00497_RandomPointInNonOverlappingRectangles_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00497_RandomPointInNonOverlappingRectangles_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00524_LongestWordInDictionaryThroughDeleting_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00524_LongestWordInDictionaryThroughDeleting_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00532_KDiffPairsInAnArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00532_KDiffPairsInAnArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00535_EncodeAndDecodeTinyURL_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00535_EncodeAndDecodeTinyURL_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00538_ConvertBSTToGreaterTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00538_ConvertBSTToGreaterTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00576_OutOfBoundaryPaths_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00576_OutOfBoundaryPaths_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00602_FriendRequestsIIWhoHasTheMostFriends_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00602_FriendRequestsIIWhoHasTheMostFriends_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00616_AddBoldTagInString_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00616_AddBoldTagInString_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00623_AddOneRowToTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00623_AddOneRowToTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00653_TwoSumIVInputIsABST_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00653_TwoSumIVInputIsABST_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00665_NonDecreasingArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00665_NonDecreasingArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00668_KthSmallestNumberInMultiplicationTable_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00668_KthSmallestNumberInMultiplicationTable_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00669_TrimABinarySearchTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00669_TrimABinarySearchTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00742_ClosestLeafInABinaryTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00742_ClosestLeafInABinaryTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00745_PrefixAndSuffixSearch_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00745_PrefixAndSuffixSearch_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00751_IPToCIDR_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00751_IPToCIDR_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00758_BoldWordsInString_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00758_BoldWordsInString_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00774_MinimizeMaxDistanceToGasStation_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00774_MinimizeMaxDistanceToGasStation_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00807_MaxIncreaseToKeepCitySkyline_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00807_MaxIncreaseToKeepCitySkyline_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00828_CountUniqueCharactersOfAllSubstringsOfAGivenString_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00828_CountUniqueCharactersOfAllSubstringsOfAGivenString_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00846_HandOfStraights_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00846_HandOfStraights_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00851_LoudAndRich_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00851_LoudAndRich_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00862_ShortestSubarrayWithSumAtLeastK_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00862_ShortestSubarrayWithSumAtLeastK_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00865_SmallestSubtreeWithAllTheDeepestNodes_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00865_SmallestSubtreeWithAllTheDeepestNodes_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00890_FindAndReplacePattern_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00890_FindAndReplacePattern_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00913_CatAndMouse_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00913_CatAndMouse_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00921_MinimumAddToMakeParenthesesValid_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00921_MinimumAddToMakeParenthesesValid_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00952_LargestComponentSizeByCommonFactor_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00952_LargestComponentSizeByCommonFactor_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00960_DeleteColumnsToMakeSortedIII_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00960_DeleteColumnsToMakeSortedIII_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00974_SubarraySumsDivisibleByK_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00974_SubarraySumsDivisibleByK_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00979_DistributeCoinsInBinaryTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00979_DistributeCoinsInBinaryTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_00984_StringWithoutAAAOrBBB_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_00984_StringWithoutAAAOrBBB_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01014_BestSightSeeingPair_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01014_BestSightSeeingPair_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01017_ConvertToBase2_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01017_ConvertToBase2_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01023_CamelCaseMatching_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01023_CamelCaseMatching_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01028_RecoverATreeFromPreorderTraversal_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01028_RecoverATreeFromPreorderTraversal_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01036_EscapeALargeMaze_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01036_EscapeALargeMaze_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01050_ActorsAndDirectorsWhoCooperatedAtLeastThreeTimes_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01050_ActorsAndDirectorsWhoCooperatedAtLeastThreeTimes_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01055_ShortestWayToFormString_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01055_ShortestWayToFormString_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01067_DigitCountInRange_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01067_DigitCountInRange_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01118_NumberOfDaysInAMonth_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01118_NumberOfDaysInAMonth_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01167_MinimumCostToConnectSticks_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01167_MinimumCostToConnectSticks_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01204_LastPersonToFitInTheBus_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01204_LastPersonToFitInTheBus_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01222_QueensThatCanAttackTheKing_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01222_QueensThatCanAttackTheKing_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01240_TilingARectangleWithTheFewestSquares_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01240_TilingARectangleWithTheFewestSquares_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01250_CheckIfItIsAGoodArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01250_CheckIfItIsAGoodArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01253_ReconstructATwoRowBinaryMatrix_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01253_ReconstructATwoRowBinaryMatrix_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01255_MaximumScoreWordsFormedByLetters_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01255_MaximumScoreWordsFormedByLetters_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01294_WeatherTypeInEachCountry_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01294_WeatherTypeInEachCountry_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01320_MinimumDistanceToTypeAWordUsingTwoFingers_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01320_MinimumDistanceToTypeAWordUsingTwoFingers_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01325_DeleteLeavesWithAGivenValue_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01325_DeleteLeavesWithAGivenValue_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01333_FilterRestaurantsByVeganFriendlyPriceAndDistance_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01333_FilterRestaurantsByVeganFriendlyPriceAndDistance_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01334_FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01334_FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01343_NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01343_NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01357_ApplyDiscountEveryNOrders_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01357_ApplyDiscountEveryNOrders_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01363_LargestMultipleOfThree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01363_LargestMultipleOfThree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01382_BalanceABinarySearchTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01382_BalanceABinarySearchTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01398_CustomersWhoBoughtProductsAAndBButNotC_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01398_CustomersWhoBoughtProductsAAndBButNotC_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01401_CircleAndRectangleOverlapping_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01401_CircleAndRectangleOverlapping_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01409_QueriesOnAPermutationWithKey_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01409_QueriesOnAPermutationWithKey_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01411_NumberOfWaysToPaintN3Grid_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01411_NumberOfWaysToPaintN3Grid_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01415_TheKthLexicographicalStringOfAllHappyStringsOfLengthN_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01415_TheKthLexicographicalStringOfAllHappyStringsOfLengthN_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01423_MaximumPointsYouCanObtainFromCards_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01423_MaximumPointsYouCanObtainFromCards_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01428_LeftmostColumnWithAtLeastAOne_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01428_LeftmostColumnWithAtLeastAOne_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01430_CheckIfAStringIsAValidSequenceFromRootToLeavesPathInABinaryTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01430_CheckIfAStringIsAValidSequenceFromRootToLeavesPathInABinaryTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01943_DescribeThePainting_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01943_DescribeThePainting_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01954_MinimumGardenPerimeterToCollectEnoughApples_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01954_MinimumGardenPerimeterToCollectEnoughApples_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01968_ArrayWithElementsNotEqualToAverageOfNeighbors_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01968_ArrayWithElementsNotEqualToAverageOfNeighbors_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_01997_FirstDayWhereYouHaveBeenInAllTheRooms_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_01997_FirstDayWhereYouHaveBeenInAllTheRooms_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02014_LongestSubsequenceRepeatedKTimes_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02014_LongestSubsequenceRepeatedKTimes_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02039_TheTimeWhenTheNetworkBecomesIdle_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02039_TheTimeWhenTheNetworkBecomesIdle_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02040_KthSmallestProductOfTwoSortedArrays_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02040_KthSmallestProductOfTwoSortedArrays_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02045_SecondMinimumTimeToReachDestination_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02045_SecondMinimumTimeToReachDestination_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02049_CountNodesWithTheHighestScore_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02049_CountNodesWithTheHighestScore_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02058_FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02058_FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02083_SubstringsThatBeginAndEndWithTheSameLetter_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02083_SubstringsThatBeginAndEndWithTheSameLetter_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02085_CountCommonWordsWithOneOccurrence_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02085_CountCommonWordsWithOneOccurrence_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02091_RemovingMinimumAndMaximumFromArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02091_RemovingMinimumAndMaximumFromArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02097_ValidArrangementOfPairs_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02097_ValidArrangementOfPairs_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02111_MinimumOperationsToMakeTheArrayKIncreasing_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02111_MinimumOperationsToMakeTheArrayKIncreasing_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02135_CountWordsObtainedAfterAddingALetter_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02135_CountWordsObtainedAfterAddingALetter_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02174_RemoveAllOnesWithRowAndColumnFlipsII_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02174_RemoveAllOnesWithRowAndColumnFlipsII_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02204_DistanceToACycleInUndirectedGraph_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02204_DistanceToACycleInUndirectedGraph_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02227_EncryptAndDecryptStrings_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02227_EncryptAndDecryptStrings_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02238_NumberOfTimesADriverWasAPassenger_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02238_NumberOfTimesADriverWasAPassenger_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02240_NumberOfWaysToBuyPensAndPencils_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02240_NumberOfWaysToBuyPensAndPencils_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02263_MakeArrayNonDecreasingOrNonIncreasing_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02263_MakeArrayNonDecreasingOrNonIncreasing_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02276_CountIntegersInIntervals_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02276_CountIntegersInIntervals_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02277_ClosestNodeToPathInTree_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02277_ClosestNodeToPathInTree_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02289_StepsToMakeArrayNonDecreasing_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02289_StepsToMakeArrayNonDecreasing_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02332_TheLatestTimeToCatchABus_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02332_TheLatestTimeToCatchABus_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02397_MaximumRowsCoveredByColumns_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02397_MaximumRowsCoveredByColumns_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02400_NumberOfWaysToReachAPositionAfterExactlyKSteps_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02400_NumberOfWaysToReachAPositionAfterExactlyKSteps_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02425_BitwiseXOROfAllPairings_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02425_BitwiseXOROfAllPairings_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02434_UsingARobotToPrintTheLexicographicallySmallestString_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02434_UsingARobotToPrintTheLexicographicallySmallestString_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02447_NumberOfSubarraysWithGCDEqualToK_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02447_NumberOfSubarraysWithGCDEqualToK_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02459_SortArrayByMovingItemsToEmptySpace_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02459_SortArrayByMovingItemsToEmptySpace_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02470_NumberOfSubarraysWithLCMEqualToK_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02470_NumberOfSubarraysWithLCMEqualToK_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02486_AppendCharactersToStringToMakeSubsequence_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02486_AppendCharactersToStringToMakeSubsequence_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02493_DivideNodesIntoTheMaximumNumberOfGroups_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02493_DivideNodesIntoTheMaximumNumberOfGroups_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02516_TakeKOfEachCharacterFromLeftAndRight_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02516_TakeKOfEachCharacterFromLeftAndRight_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02538_DifferenceBetweenMaximumAndMinimumPriceSum_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02538_DifferenceBetweenMaximumAndMinimumPriceSum_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02589_MinimumTimeToCompleteAllTasks_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02589_MinimumTimeToCompleteAllTasks_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02590_DesignATodoList_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02590_DesignATodoList_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02598_SmallestMissingNonNegativeIntegerAfterOperations_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02598_SmallestMissingNonNegativeIntegerAfterOperations_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02599_MakeThePrefixSumNonNegative_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02599_MakeThePrefixSumNonNegative_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02702_MinimumOperationsToMakeNumbersNonPositive_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02702_MinimumOperationsToMakeNumbersNonPositive_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02771_LongestNonDecreasingSubarrayFromTwoArrays_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02771_LongestNonDecreasingSubarrayFromTwoArrays_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02802_FindTheKThLuckyNumber_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02802_FindTheKThLuckyNumber_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02829_DetermineTheMinimumSumOfAKAvoidingArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02829_DetermineTheMinimumSumOfAKAvoidingArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02894_DivisibleAndNonDivisibleSumsDifference_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02894_DivisibleAndNonDivisibleSumsDifference_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02911_MinimumChangesToMakeKSemiPalindromes_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02911_MinimumChangesToMakeKSemiPalindromes_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02917_FindTheKOrOfAnArray_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02917_FindTheKOrOfAnArray_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_02945_FindMaximumNonDecreasingArrayLength_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_02945_FindMaximumNonDecreasingArrayLength_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_03022_MinimizeOROfRemainingElementsUsingOperations_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_03022_MinimizeOROfRemainingElementsUsingOperations_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="_03572_MaximizeYSumByPickingATripletOfDistinctXValues_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\_03572_MaximizeYSumByPickingATripletOfDistinctXValues_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

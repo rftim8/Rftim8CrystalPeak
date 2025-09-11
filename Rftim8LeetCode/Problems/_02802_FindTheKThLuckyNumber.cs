@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02802_FindTheKthLuckyNumber : I_02802_FindTheKthLuckyNumber
+    public class _02802_FindTheKThLuckyNumber : I_02802_FindTheKThLuckyNumber
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02802_FindTheKthLuckyNumber()
+        public _02802_FindTheKThLuckyNumber()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02802_FindTheKthLuckyNumber));
-            Input = [.. RftResource._02802_FindTheKthLuckyNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02802_FindTheKThLuckyNumber));
+            Input = [.. RftResource._02802_FindTheKThLuckyNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02802_FindTheKthLuckyNumber(IHost host)
+        public _02802_FindTheKThLuckyNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02802_FindTheKthLuckyNumber));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02802_FindTheKThLuckyNumber));
             DataCollector();
         }
 

@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01014_BestSightseeingPair : I_01014_BestSightseeingPair
+    public class _01014_BestSightSeeingPair : I_01014_BestSightSeeingPair
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01014_BestSightseeingPair()
+        public _01014_BestSightSeeingPair()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01014_BestSightseeingPair));
-            Input = [.. RftResource._01014_BestSightseeingPair_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01014_BestSightSeeingPair));
+            Input = [.. RftResource._01014_BestSightSeeingPair_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01014_BestSightseeingPair(IHost host)
+        public _01014_BestSightSeeingPair(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01014_BestSightseeingPair));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01014_BestSightSeeingPair));
             DataCollector();
         }
 

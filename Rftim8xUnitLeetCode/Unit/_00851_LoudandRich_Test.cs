@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00851_LoudandRich_Test
+    public class _00851_LoudAndRich_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00851_LoudandRich))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00851_LoudandRich))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00851_LoudandRich))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00851_LoudAndRich))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00851_LoudAndRich))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00851_LoudAndRich))![1]);
 
-        public static TheoryData<List<string>, int> _00851_LoudandRichPartOne_Data =>
+        public static TheoryData<List<string>, int> _00851_LoudAndRichPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00851_LoudandRichPartTwo_Data =>
+        public static TheoryData<List<string>, int> _00851_LoudAndRichPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00851_LoudandRichPartOne_Data))]
+        [MemberData(nameof(_00851_LoudAndRichPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00851_LoudandRich.PartOne_Test(a0);
+            int actual = _00851_LoudAndRich.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00851_LoudandRichPartTwo_Data))]
+        [MemberData(nameof(_00851_LoudAndRichPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00851_LoudandRich.PartTwo_Test(a0);
+            int actual = _00851_LoudAndRich.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

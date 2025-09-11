@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02771_LongestNondecreasingSubarrayFromTwoArrays : I_02771_LongestNondecreasingSubarrayFromTwoArrays
+    public class _02771_LongestNonDecreasingSubarrayFromTwoArrays : I_02771_LongestNonDecreasingSubarrayFromTwoArrays
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02771_LongestNondecreasingSubarrayFromTwoArrays()
+        public _02771_LongestNonDecreasingSubarrayFromTwoArrays()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02771_LongestNondecreasingSubarrayFromTwoArrays));
-            Input = [.. RftResource._02771_LongestNondecreasingSubarrayFromTwoArrays_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02771_LongestNonDecreasingSubarrayFromTwoArrays));
+            Input = [.. RftResource._02771_LongestNonDecreasingSubarrayFromTwoArrays_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02771_LongestNondecreasingSubarrayFromTwoArrays(IHost host)
+        public _02771_LongestNonDecreasingSubarrayFromTwoArrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02771_LongestNondecreasingSubarrayFromTwoArrays));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02771_LongestNonDecreasingSubarrayFromTwoArrays));
             DataCollector();
         }
 

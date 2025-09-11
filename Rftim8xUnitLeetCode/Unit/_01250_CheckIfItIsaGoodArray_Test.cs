@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01250_CheckIfItIsaGoodArray_Test
+    public class _01250_CheckIfItIsAGoodArray_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01250_CheckIfItIsaGoodArray))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01250_CheckIfItIsaGoodArray))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01250_CheckIfItIsaGoodArray))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01250_CheckIfItIsAGoodArray))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01250_CheckIfItIsAGoodArray))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01250_CheckIfItIsAGoodArray))![1]);
 
-        public static TheoryData<List<string>, int> _01250_CheckIfItIsaGoodArrayPartOne_Data =>
+        public static TheoryData<List<string>, int> _01250_CheckIfItIsAGoodArrayPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01250_CheckIfItIsaGoodArrayPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01250_CheckIfItIsAGoodArrayPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01250_CheckIfItIsaGoodArrayPartOne_Data))]
+        [MemberData(nameof(_01250_CheckIfItIsAGoodArrayPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01250_CheckIfItIsaGoodArray.PartOne_Test(a0);
+            int actual = _01250_CheckIfItIsAGoodArray.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01250_CheckIfItIsaGoodArrayPartTwo_Data))]
+        [MemberData(nameof(_01250_CheckIfItIsAGoodArrayPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01250_CheckIfItIsaGoodArray.PartTwo_Test(a0);
+            int actual = _01250_CheckIfItIsAGoodArray.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

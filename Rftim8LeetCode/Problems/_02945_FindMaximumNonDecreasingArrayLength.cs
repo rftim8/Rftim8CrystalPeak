@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02945_FindMaximumNondecreasingArrayLength : I_02945_FindMaximumNondecreasingArrayLength
+    public class _02945_FindMaximumNonDecreasingArrayLength : I_02945_FindMaximumNonDecreasingArrayLength
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02945_FindMaximumNondecreasingArrayLength()
+        public _02945_FindMaximumNonDecreasingArrayLength()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02945_FindMaximumNondecreasingArrayLength));
-            Input = [.. RftResource._02945_FindMaximumNondecreasingArrayLength_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02945_FindMaximumNonDecreasingArrayLength));
+            Input = [.. RftResource._02945_FindMaximumNonDecreasingArrayLength_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02945_FindMaximumNondecreasingArrayLength(IHost host)
+        public _02945_FindMaximumNonDecreasingArrayLength(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02945_FindMaximumNondecreasingArrayLength));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02945_FindMaximumNonDecreasingArrayLength));
             DataCollector();
         }
 

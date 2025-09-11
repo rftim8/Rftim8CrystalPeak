@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02538_DifferenceBetweenMaximumandMinimumPriceSum_Test
+    public class _02538_DifferenceBetweenMaximumAndMinimumPriceSum_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02538_DifferenceBetweenMaximumandMinimumPriceSum))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02538_DifferenceBetweenMaximumandMinimumPriceSum))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02538_DifferenceBetweenMaximumandMinimumPriceSum))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSum))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSum))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSum))![1]);
 
-        public static TheoryData<List<string>, int> _02538_DifferenceBetweenMaximumandMinimumPriceSumPartOne_Data =>
+        public static TheoryData<List<string>, int> _02538_DifferenceBetweenMaximumAndMinimumPriceSumPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02538_DifferenceBetweenMaximumandMinimumPriceSumPartTwo_Data =>
+        public static TheoryData<List<string>, int> _02538_DifferenceBetweenMaximumAndMinimumPriceSumPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02538_DifferenceBetweenMaximumandMinimumPriceSumPartOne_Data))]
+        [MemberData(nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSumPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02538_DifferenceBetweenMaximumandMinimumPriceSum.PartOne_Test(a0);
+            int actual = _02538_DifferenceBetweenMaximumAndMinimumPriceSum.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02538_DifferenceBetweenMaximumandMinimumPriceSumPartTwo_Data))]
+        [MemberData(nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSumPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02538_DifferenceBetweenMaximumandMinimumPriceSum.PartTwo_Test(a0);
+            int actual = _02538_DifferenceBetweenMaximumAndMinimumPriceSum.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02472_MaximumNumberOfNonoverlappingPalindromeSubstrings : I_02472_MaximumNumberOfNonoverlappingPalindromeSubstrings
+    public class _02472_MaximumNumberOfNonOverlappingPalindromeSubstrings : I_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02472_MaximumNumberOfNonoverlappingPalindromeSubstrings()
+        public _02472_MaximumNumberOfNonOverlappingPalindromeSubstrings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02472_MaximumNumberOfNonoverlappingPalindromeSubstrings));
-            Input = [.. RftResource._02472_MaximumNumberOfNonoverlappingPalindromeSubstrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings));
+            Input = [.. RftResource._02472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02472_MaximumNumberOfNonoverlappingPalindromeSubstrings(IHost host)
+        public _02472_MaximumNumberOfNonOverlappingPalindromeSubstrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02472_MaximumNumberOfNonoverlappingPalindromeSubstrings));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings));
             DataCollector();
         }
 

@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02917_FindTheKorOfAnArray : I_02917_FindTheKorOfAnArray
+    public class _02917_FindTheKOrOfAnArray : I_02917_FindTheKOrOfAnArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02917_FindTheKorOfAnArray()
+        public _02917_FindTheKOrOfAnArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02917_FindTheKorOfAnArray));
-            Input = [.. RftResource._02917_FindTheKorOfAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02917_FindTheKOrOfAnArray));
+            Input = [.. RftResource._02917_FindTheKOrOfAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02917_FindTheKorOfAnArray(IHost host)
+        public _02917_FindTheKOrOfAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02917_FindTheKorOfAnArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02917_FindTheKOrOfAnArray));
             DataCollector();
         }
 

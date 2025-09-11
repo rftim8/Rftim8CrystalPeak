@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02829_DetermineTheMinimumSumOfAKavoidingArray : I_02829_DetermineTheMinimumSumOfAKavoidingArray
+    public class _02829_DetermineTheMinimumSumOfAKAvoidingArray : I_02829_DetermineTheMinimumSumOfAKAvoidingArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02829_DetermineTheMinimumSumOfAKavoidingArray()
+        public _02829_DetermineTheMinimumSumOfAKAvoidingArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02829_DetermineTheMinimumSumOfAKavoidingArray));
-            Input = [.. RftResource._02829_DetermineTheMinimumSumOfAKavoidingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02829_DetermineTheMinimumSumOfAKAvoidingArray));
+            Input = [.. RftResource._02829_DetermineTheMinimumSumOfAKAvoidingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02829_DetermineTheMinimumSumOfAKavoidingArray(IHost host)
+        public _02829_DetermineTheMinimumSumOfAKAvoidingArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02829_DetermineTheMinimumSumOfAKavoidingArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02829_DetermineTheMinimumSumOfAKAvoidingArray));
             DataCollector();
         }
 

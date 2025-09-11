@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00497_RandomPointInNonoverlappingRectangles : I_00497_RandomPointInNonoverlappingRectangles
+    public class _00497_RandomPointInNonOverlappingRectangles : I_00497_RandomPointInNonOverlappingRectangles
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00497_RandomPointInNonoverlappingRectangles()
+        public _00497_RandomPointInNonOverlappingRectangles()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00497_RandomPointInNonoverlappingRectangles));
-            Input = [.. RftResource._00497_RandomPointInNonoverlappingRectangles_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00497_RandomPointInNonOverlappingRectangles));
+            Input = [.. RftResource._00497_RandomPointInNonOverlappingRectangles_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00497_RandomPointInNonoverlappingRectangles(IHost host)
+        public _00497_RandomPointInNonOverlappingRectangles(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00497_RandomPointInNonoverlappingRectangles));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00497_RandomPointInNonOverlappingRectangles));
             DataCollector();
         }
 

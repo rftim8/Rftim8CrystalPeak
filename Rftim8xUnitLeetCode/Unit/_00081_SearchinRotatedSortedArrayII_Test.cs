@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00081_SearchinRotatedSortedArrayII_Test
+    public class _00081_SearchInRotatedSortedArrayII_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00081_SearchinRotatedSortedArrayII))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00081_SearchinRotatedSortedArrayII))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00081_SearchinRotatedSortedArrayII))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00081_SearchInRotatedSortedArrayII))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00081_SearchInRotatedSortedArrayII))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00081_SearchInRotatedSortedArrayII))![1]);
 
-        public static TheoryData<List<string>, int> _00081_SearchinRotatedSortedArrayIIPartOne_Data =>
+        public static TheoryData<List<string>, int> _00081_SearchInRotatedSortedArrayIIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00081_SearchinRotatedSortedArrayIIPartTwo_Data =>
+        public static TheoryData<List<string>, int> _00081_SearchInRotatedSortedArrayIIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00081_SearchinRotatedSortedArrayIIPartOne_Data))]
+        [MemberData(nameof(_00081_SearchInRotatedSortedArrayIIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00081_SearchinRotatedSortedArrayII.PartOne_Test(a0);
+            int actual = _00081_SearchInRotatedSortedArrayII.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00081_SearchinRotatedSortedArrayIIPartTwo_Data))]
+        [MemberData(nameof(_00081_SearchInRotatedSortedArrayIIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00081_SearchinRotatedSortedArrayII.PartTwo_Test(a0);
+            int actual = _00081_SearchInRotatedSortedArrayII.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

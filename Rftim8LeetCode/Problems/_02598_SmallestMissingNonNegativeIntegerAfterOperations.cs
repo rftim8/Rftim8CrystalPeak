@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02598_SmallestMissingNonnegativeIntegerAfterOperations : I_02598_SmallestMissingNonnegativeIntegerAfterOperations
+    public class _02598_SmallestMissingNonNegativeIntegerAfterOperations : I_02598_SmallestMissingNonNegativeIntegerAfterOperations
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02598_SmallestMissingNonnegativeIntegerAfterOperations()
+        public _02598_SmallestMissingNonNegativeIntegerAfterOperations()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02598_SmallestMissingNonnegativeIntegerAfterOperations));
-            Input = [.. RftResource._02598_SmallestMissingNonnegativeIntegerAfterOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperations));
+            Input = [.. RftResource._02598_SmallestMissingNonNegativeIntegerAfterOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02598_SmallestMissingNonnegativeIntegerAfterOperations(IHost host)
+        public _02598_SmallestMissingNonNegativeIntegerAfterOperations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02598_SmallestMissingNonnegativeIntegerAfterOperations));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperations));
             DataCollector();
         }
 

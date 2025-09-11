@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOne_Test
+    public class _01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOne))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOne))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOne))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne))![1]);
 
-        public static TheoryData<List<string>, int> _01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOnePartOne_Data =>
+        public static TheoryData<List<string>, int> _01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOnePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOnePartTwo_Data =>
+        public static TheoryData<List<string>, int> _01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOnePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOnePartOne_Data))]
+        [MemberData(nameof(_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOnePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOne.PartOne_Test(a0);
+            int actual = _01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOnePartTwo_Data))]
+        [MemberData(nameof(_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOnePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01404_NumberOfStepsToReduceaNumberInBinaryRepresentationToOne.PartTwo_Test(a0);
+            int actual = _01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

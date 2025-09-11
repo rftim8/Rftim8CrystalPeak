@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01943_DescribethePainting_Test
+    public class _01943_DescribeThePainting_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01943_DescribethePainting))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01943_DescribethePainting))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01943_DescribethePainting))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01943_DescribeThePainting))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01943_DescribeThePainting))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01943_DescribeThePainting))![1]);
 
-        public static TheoryData<List<string>, int> _01943_DescribethePaintingPartOne_Data =>
+        public static TheoryData<List<string>, int> _01943_DescribeThePaintingPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01943_DescribethePaintingPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01943_DescribeThePaintingPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01943_DescribethePaintingPartOne_Data))]
+        [MemberData(nameof(_01943_DescribeThePaintingPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01943_DescribethePainting.PartOne_Test(a0);
+            int actual = _01943_DescribeThePainting.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01943_DescribethePaintingPartTwo_Data))]
+        [MemberData(nameof(_01943_DescribeThePaintingPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01943_DescribethePainting.PartTwo_Test(a0);
+            int actual = _01943_DescribeThePainting.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrix_Test
+    public class _01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrix))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrix))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrix))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix))![1]);
 
-        public static TheoryData<List<string>, int> _01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrixPartOne_Data =>
+        public static TheoryData<List<string>, int> _01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrixPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrixPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrixPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrixPartOne_Data))]
+        [MemberData(nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrixPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrix.PartOne_Test(a0);
+            int actual = _01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrixPartTwo_Data))]
+        [MemberData(nameof(_01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrixPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01284_MinimumNumberOfFlipsToConvertBinaryMatrixtoZeroMatrix.PartTwo_Test(a0);
+            int actual = _01284_MinimumNumberOfFlipsToConvertBinaryMatrixToZeroMatrix.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

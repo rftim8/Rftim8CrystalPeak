@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02599_MakeThePrefixSumNonnegative : I_02599_MakeThePrefixSumNonnegative
+    public class _02599_MakeThePrefixSumNonNegative : I_02599_MakeThePrefixSumNonNegative
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02599_MakeThePrefixSumNonnegative()
+        public _02599_MakeThePrefixSumNonNegative()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02599_MakeThePrefixSumNonnegative));
-            Input = [.. RftResource._02599_MakeThePrefixSumNonnegative_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02599_MakeThePrefixSumNonNegative));
+            Input = [.. RftResource._02599_MakeThePrefixSumNonNegative_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02599_MakeThePrefixSumNonnegative(IHost host)
+        public _02599_MakeThePrefixSumNonNegative(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02599_MakeThePrefixSumNonnegative));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02599_MakeThePrefixSumNonNegative));
             DataCollector();
         }
 

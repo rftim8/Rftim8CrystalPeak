@@ -7,17 +7,19 @@ map
 inventory
 
 
-winforms - maui - wpf
-blazor - js, ts
-tsql - efcore
+0. CI/CD workflow
+	- console -> wpf -> asp/net, blazor
+	
+1. Azure Static Web App
+	- blazor wasm
+	- azure functions (http trigger)
+	- github actions
+	- generated images
+	- CP
 
+2. Docker
 
-threads - cross: openfiledialog, listbox, printdialog
-
-
-
-Benchmarks - check
-Host - check
-UnitTests - check
-
-
+3. Kubernetes
+	- AKS
+	- k3s
+	- minikube

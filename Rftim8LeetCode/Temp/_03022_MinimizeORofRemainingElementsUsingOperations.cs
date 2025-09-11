@@ -1,18 +1,18 @@
 namespace Rftim8LeetCode.Temp
 {
-    public class _03022_MinimizeORofRemainingElementsUsingOperations
+    public class _03022_MinimizeOROfRemainingElementsUsingOperations
     {
         /// <summary>
         ///
         /// </summary>
-        public _03022_MinimizeORofRemainingElementsUsingOperations()
+        public _03022_MinimizeOROfRemainingElementsUsingOperations()
         {
 
         }
 
-        public static int MinimizeORofRemainingElementsUsingOperations0(int[] a0) => RftMinimizeORofRemainingElementsUsingOperations0(a0);
+        public static int MinimizeOROfRemainingElementsUsingOperations0(int[] a0) => RftMinimizeOROfRemainingElementsUsingOperations0(a0);
 
-        private static int RftMinimizeORofRemainingElementsUsingOperations0(int[] a0)
+        private static int RftMinimizeOROfRemainingElementsUsingOperations0(int[] a0)
         {
             int res = 0;
 

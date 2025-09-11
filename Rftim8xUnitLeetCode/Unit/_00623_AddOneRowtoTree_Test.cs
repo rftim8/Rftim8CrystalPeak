@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00623_AddOneRowtoTree_Test
+    public class _00623_AddOneRowToTree_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00623_AddOneRowtoTree))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00623_AddOneRowtoTree))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00623_AddOneRowtoTree))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00623_AddOneRowToTree))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00623_AddOneRowToTree))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00623_AddOneRowToTree))![1]);
 
-        public static TheoryData<List<string>, int> _00623_AddOneRowtoTreePartOne_Data =>
+        public static TheoryData<List<string>, int> _00623_AddOneRowToTreePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00623_AddOneRowtoTreePartTwo_Data =>
+        public static TheoryData<List<string>, int> _00623_AddOneRowToTreePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00623_AddOneRowtoTreePartOne_Data))]
+        [MemberData(nameof(_00623_AddOneRowToTreePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00623_AddOneRowtoTree.PartOne_Test(a0);
+            int actual = _00623_AddOneRowToTree.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00623_AddOneRowtoTreePartTwo_Data))]
+        [MemberData(nameof(_00623_AddOneRowToTreePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00623_AddOneRowtoTree.PartTwo_Test(a0);
+            int actual = _00623_AddOneRowToTree.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

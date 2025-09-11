@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00432_AllOoneDataStructure : I_00432_AllOoneDataStructure
+    public class _00432_AllOOneDataStructure : I_00432_AllOOneDataStructure
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00432_AllOoneDataStructure()
+        public _00432_AllOOneDataStructure()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00432_AllOoneDataStructure));
-            Input = [.. RftResource._00432_AllOoneDataStructure_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00432_AllOOneDataStructure));
+            Input = [.. RftResource._00432_AllOOneDataStructure_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00432_AllOoneDataStructure(IHost host)
+        public _00432_AllOOneDataStructure(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00432_AllOoneDataStructure));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00432_AllOOneDataStructure));
             DataCollector();
         }
 

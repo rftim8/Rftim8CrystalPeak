@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00532_KdiffPairsInAnArray : I_00532_KdiffPairsInAnArray
+    public class _00532_KDiffPairsInAnArray : I_00532_KDiffPairsInAnArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00532_KdiffPairsInAnArray()
+        public _00532_KDiffPairsInAnArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00532_KdiffPairsInAnArray));
-            Input = [.. RftResource._00532_KdiffPairsInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00532_KDiffPairsInAnArray));
+            Input = [.. RftResource._00532_KDiffPairsInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00532_KdiffPairsInAnArray(IHost host)
+        public _00532_KDiffPairsInAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00532_KdiffPairsInAnArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00532_KDiffPairsInAnArray));
             DataCollector();
         }
 

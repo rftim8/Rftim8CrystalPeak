@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01320_MinimumDistanceToTypeaWordUsingTwoFingers_Test
+    public class _01320_MinimumDistanceToTypeAWordUsingTwoFingers_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01320_MinimumDistanceToTypeaWordUsingTwoFingers))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01320_MinimumDistanceToTypeaWordUsingTwoFingers))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01320_MinimumDistanceToTypeaWordUsingTwoFingers))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01320_MinimumDistanceToTypeAWordUsingTwoFingers))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01320_MinimumDistanceToTypeAWordUsingTwoFingers))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01320_MinimumDistanceToTypeAWordUsingTwoFingers))![1]);
 
-        public static TheoryData<List<string>, int> _01320_MinimumDistanceToTypeaWordUsingTwoFingersPartOne_Data =>
+        public static TheoryData<List<string>, int> _01320_MinimumDistanceToTypeAWordUsingTwoFingersPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01320_MinimumDistanceToTypeaWordUsingTwoFingersPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01320_MinimumDistanceToTypeAWordUsingTwoFingersPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01320_MinimumDistanceToTypeaWordUsingTwoFingersPartOne_Data))]
+        [MemberData(nameof(_01320_MinimumDistanceToTypeAWordUsingTwoFingersPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01320_MinimumDistanceToTypeaWordUsingTwoFingers.PartOne_Test(a0);
+            int actual = _01320_MinimumDistanceToTypeAWordUsingTwoFingers.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01320_MinimumDistanceToTypeaWordUsingTwoFingersPartTwo_Data))]
+        [MemberData(nameof(_01320_MinimumDistanceToTypeAWordUsingTwoFingersPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01320_MinimumDistanceToTypeaWordUsingTwoFingers.PartTwo_Test(a0);
+            int actual = _01320_MinimumDistanceToTypeAWordUsingTwoFingers.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
