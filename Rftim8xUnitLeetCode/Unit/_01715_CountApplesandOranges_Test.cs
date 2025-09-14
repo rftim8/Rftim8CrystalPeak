@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01715_CountApplesandOranges_Test
+    public class _01715_CountApplesAndOranges_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01715_CountApplesandOranges))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01715_CountApplesandOranges))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01715_CountApplesandOranges))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01715_CountApplesAndOranges))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01715_CountApplesAndOranges))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01715_CountApplesAndOranges))![1]);
 
-        public static TheoryData<List<string>, int> _01715_CountApplesandOrangesPartOne_Data =>
+        public static TheoryData<List<string>, int> _01715_CountApplesAndOrangesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01715_CountApplesandOrangesPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01715_CountApplesAndOrangesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01715_CountApplesandOrangesPartOne_Data))]
+        [MemberData(nameof(_01715_CountApplesAndOrangesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01715_CountApplesandOranges.PartOne_Test(a0);
+            int actual = _01715_CountApplesAndOranges.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01715_CountApplesandOrangesPartTwo_Data))]
+        [MemberData(nameof(_01715_CountApplesAndOrangesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01715_CountApplesandOranges.PartTwo_Test(a0);
+            int actual = _01715_CountApplesAndOranges.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

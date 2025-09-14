@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01730_ShortestPathtoGetFood_Test
+    public class _01730_ShortestPathToGetFood_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01730_ShortestPathtoGetFood))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01730_ShortestPathtoGetFood))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01730_ShortestPathtoGetFood))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01730_ShortestPathToGetFood))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01730_ShortestPathToGetFood))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01730_ShortestPathToGetFood))![1]);
 
-        public static TheoryData<List<string>, int> _01730_ShortestPathtoGetFoodPartOne_Data =>
+        public static TheoryData<List<string>, int> _01730_ShortestPathToGetFoodPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01730_ShortestPathtoGetFoodPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01730_ShortestPathToGetFoodPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01730_ShortestPathtoGetFoodPartOne_Data))]
+        [MemberData(nameof(_01730_ShortestPathToGetFoodPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01730_ShortestPathtoGetFood.PartOne_Test(a0);
+            int actual = _01730_ShortestPathToGetFood.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01730_ShortestPathtoGetFoodPartTwo_Data))]
+        [MemberData(nameof(_01730_ShortestPathToGetFoodPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01730_ShortestPathtoGetFood.PartTwo_Test(a0);
+            int actual = _01730_ShortestPathToGetFood.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

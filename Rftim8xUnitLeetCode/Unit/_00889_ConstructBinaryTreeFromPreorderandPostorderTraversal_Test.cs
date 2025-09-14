@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00889_ConstructBinaryTreeFromPreorderandPostorderTraversal_Test
+    public class _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderandPostorderTraversal))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderandPostorderTraversal))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderandPostorderTraversal))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal))![1]);
 
-        public static TheoryData<List<string>, int> _00889_ConstructBinaryTreeFromPreorderandPostorderTraversalPartOne_Data =>
+        public static TheoryData<List<string>, int> _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversalPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00889_ConstructBinaryTreeFromPreorderandPostorderTraversalPartTwo_Data =>
+        public static TheoryData<List<string>, int> _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversalPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00889_ConstructBinaryTreeFromPreorderandPostorderTraversalPartOne_Data))]
+        [MemberData(nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversalPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00889_ConstructBinaryTreeFromPreorderandPostorderTraversal.PartOne_Test(a0);
+            int actual = _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00889_ConstructBinaryTreeFromPreorderandPostorderTraversalPartTwo_Data))]
+        [MemberData(nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversalPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00889_ConstructBinaryTreeFromPreorderandPostorderTraversal.PartTwo_Test(a0);
+            int actual = _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8xUnitLeetCode", "Rfti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8xUnit", "Rftim8xUnit\Rftim8xUnit.csproj", "{38F7045D-590A-4256-BC2E-03CEF32DA7E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8Trek", "Rftim8Trek\Rftim8Trek.csproj", "{C66E3E56-33D6-4B11-B522-AC2F166FD47D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{38F7045D-590A-4256-BC2E-03CEF32DA7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38F7045D-590A-4256-BC2E-03CEF32DA7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38F7045D-590A-4256-BC2E-03CEF32DA7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

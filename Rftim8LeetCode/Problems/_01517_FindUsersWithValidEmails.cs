@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01517_FindUsersWithValidEMails : I_01517_FindUsersWithValidEMails
+    public class _01517_FindUsersWithValidEmails : I_01517_FindUsersWithValidEmails
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01517_FindUsersWithValidEMails()
+        public _01517_FindUsersWithValidEmails()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01517_FindUsersWithValidEMails));
-            Input = [.. RftResource._01517_FindUsersWithValidEMails_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01517_FindUsersWithValidEmails));
+            Input = [.. RftResource._01517_FindUsersWithValidEmails_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01517_FindUsersWithValidEMails(IHost host)
+        public _01517_FindUsersWithValidEmails(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01517_FindUsersWithValidEMails));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01517_FindUsersWithValidEmails));
             DataCollector();
         }
 

@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01599_MaximumProfitOfOperatingaCentennialWheel_Test
+    public class _01599_MaximumProfitOfOperatingACentennialWheel_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01599_MaximumProfitOfOperatingaCentennialWheel))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01599_MaximumProfitOfOperatingaCentennialWheel))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01599_MaximumProfitOfOperatingaCentennialWheel))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01599_MaximumProfitOfOperatingACentennialWheel))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01599_MaximumProfitOfOperatingACentennialWheel))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01599_MaximumProfitOfOperatingACentennialWheel))![1]);
 
-        public static TheoryData<List<string>, int> _01599_MaximumProfitOfOperatingaCentennialWheelPartOne_Data =>
+        public static TheoryData<List<string>, int> _01599_MaximumProfitOfOperatingACentennialWheelPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01599_MaximumProfitOfOperatingaCentennialWheelPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01599_MaximumProfitOfOperatingACentennialWheelPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01599_MaximumProfitOfOperatingaCentennialWheelPartOne_Data))]
+        [MemberData(nameof(_01599_MaximumProfitOfOperatingACentennialWheelPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01599_MaximumProfitOfOperatingaCentennialWheel.PartOne_Test(a0);
+            int actual = _01599_MaximumProfitOfOperatingACentennialWheel.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01599_MaximumProfitOfOperatingaCentennialWheelPartTwo_Data))]
+        [MemberData(nameof(_01599_MaximumProfitOfOperatingACentennialWheelPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01599_MaximumProfitOfOperatingaCentennialWheel.PartTwo_Test(a0);
+            int actual = _01599_MaximumProfitOfOperatingACentennialWheel.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

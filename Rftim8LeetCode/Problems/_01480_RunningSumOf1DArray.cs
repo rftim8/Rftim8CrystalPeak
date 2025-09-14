@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01480_RunningSumOf1dArray : I_01480_RunningSumOf1dArray
+    public class _01480_RunningSumOfOneDArray : I_01480_RunningSumOfOneDArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01480_RunningSumOf1dArray()
+        public _01480_RunningSumOfOneDArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01480_RunningSumOf1dArray));
-            Input = [.. RftResource._01480_RunningSumOf1dArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01480_RunningSumOfOneDArray));
+            Input = [.. RftResource._01480_RunningSumOfOneDArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01480_RunningSumOf1dArray(IHost host)
+        public _01480_RunningSumOfOneDArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01480_RunningSumOf1dArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01480_RunningSumOfOneDArray));
             DataCollector();
         }
 

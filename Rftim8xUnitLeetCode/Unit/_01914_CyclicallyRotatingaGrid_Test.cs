@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01914_CyclicallyRotatingaGrid_Test
+    public class _01914_CyclicallyRotatingAGrid_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01914_CyclicallyRotatingaGrid))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01914_CyclicallyRotatingaGrid))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01914_CyclicallyRotatingaGrid))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01914_CyclicallyRotatingAGrid))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01914_CyclicallyRotatingAGrid))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01914_CyclicallyRotatingAGrid))![1]);
 
-        public static TheoryData<List<string>, int> _01914_CyclicallyRotatingaGridPartOne_Data =>
+        public static TheoryData<List<string>, int> _01914_CyclicallyRotatingAGridPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01914_CyclicallyRotatingaGridPartTwo_Data =>
+        public static TheoryData<List<string>, int> _01914_CyclicallyRotatingAGridPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01914_CyclicallyRotatingaGridPartOne_Data))]
+        [MemberData(nameof(_01914_CyclicallyRotatingAGridPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01914_CyclicallyRotatingaGrid.PartOne_Test(a0);
+            int actual = _01914_CyclicallyRotatingAGrid.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01914_CyclicallyRotatingaGridPartTwo_Data))]
+        [MemberData(nameof(_01914_CyclicallyRotatingAGridPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01914_CyclicallyRotatingaGrid.PartTwo_Test(a0);
+            int actual = _01914_CyclicallyRotatingAGrid.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
