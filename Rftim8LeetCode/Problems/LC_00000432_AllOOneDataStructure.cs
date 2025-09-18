@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00432_AllOOneDataStructure()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00432_AllOOneDataStructure));
-            Input = [.. RftResource._00432_AllOOneDataStructure_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000432_AllOOneDataStructure));
+            Input = [.. RftResource.LC_00000432_AllOOneDataStructure_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

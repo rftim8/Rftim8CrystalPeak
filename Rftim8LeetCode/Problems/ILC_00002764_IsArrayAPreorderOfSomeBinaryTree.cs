@@ -1,6 +1,6 @@
 ﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02764_IsArrayAPreorderOfSomeBinaryTree
+    public interface ILC_00002764_IsArrayAPreorderOfSomeBinaryTree
     {
         public void PrintSolution();
     }

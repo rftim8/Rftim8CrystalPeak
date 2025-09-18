@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _03572_MaximizeYSumByPickingATripletOfDistinctXValues()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03572_MaximizeYSumByPickingATripletOfDistinctXValues));
-            Input = [.. RftResource._03572_MaximizeYSumByPickingATripletOfDistinctXValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues));
+            Input = [.. RftResource.LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

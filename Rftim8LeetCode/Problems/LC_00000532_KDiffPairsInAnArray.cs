@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00532_KDiffPairsInAnArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00532_KDiffPairsInAnArray));
-            Input = [.. RftResource._00532_KDiffPairsInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000532_KDiffPairsInAnArray));
+            Input = [.. RftResource.LC_00000532_KDiffPairsInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02945_FindMaximumNonDecreasingArrayLength()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02945_FindMaximumNonDecreasingArrayLength));
-            Input = [.. RftResource._02945_FindMaximumNonDecreasingArrayLength_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002945_FindMaximumNonDecreasingArrayLength));
+            Input = [.. RftResource.LC_00002945_FindMaximumNonDecreasingArrayLength_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

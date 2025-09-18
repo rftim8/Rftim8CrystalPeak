@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00665_NonDecreasingArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00665_NonDecreasingArray));
-            Input = [.. RftResource._00665_NonDecreasingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000665_NonDecreasingArray));
+            Input = [.. RftResource.LC_00000665_NonDecreasingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

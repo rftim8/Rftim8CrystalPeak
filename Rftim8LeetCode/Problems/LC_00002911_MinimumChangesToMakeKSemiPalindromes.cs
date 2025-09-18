@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02911_MinimumChangesToMakeKSemiPalindromes()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02911_MinimumChangesToMakeKSemiPalindromes));
-            Input = [.. RftResource._02911_MinimumChangesToMakeKSemiPalindromes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002911_MinimumChangesToMakeKSemiPalindromes));
+            Input = [.. RftResource.LC_00002911_MinimumChangesToMakeKSemiPalindromes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

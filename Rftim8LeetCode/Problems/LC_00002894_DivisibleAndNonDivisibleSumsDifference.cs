@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02894_DivisibleAndNonDivisibleSumsDifference()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02894_DivisibleAndNonDivisibleSumsDifference));
-            Input = [.. RftResource._02894_DivisibleAndNonDivisibleSumsDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002894_DivisibleAndNonDivisibleSumsDifference));
+            Input = [.. RftResource.LC_00002894_DivisibleAndNonDivisibleSumsDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

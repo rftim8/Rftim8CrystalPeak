@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00497_RandomPointInNonOverlappingRectangles()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00497_RandomPointInNonOverlappingRectangles));
-            Input = [.. RftResource._00497_RandomPointInNonOverlappingRectangles_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000497_RandomPointInNonOverlappingRectangles));
+            Input = [.. RftResource.LC_00000497_RandomPointInNonOverlappingRectangles_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

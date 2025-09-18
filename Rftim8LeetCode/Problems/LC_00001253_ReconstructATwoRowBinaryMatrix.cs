@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public _01253_ReconstructATwoRowBinaryMatrix()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001253_ReconstructA2RowBinaryMatrix));
-            Input = [.. RftResource._01253_ReconstructATwoRowBinaryMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftResource.LC_00001253_ReconstructATwoRowBinaryMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

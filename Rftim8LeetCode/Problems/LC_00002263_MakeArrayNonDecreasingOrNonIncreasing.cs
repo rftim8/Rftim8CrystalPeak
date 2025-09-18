@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02263_MakeArrayNonDecreasingOrNonIncreasing()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02263_MakeArrayNonDecreasingOrNonIncreasing));
-            Input = [.. RftResource._02263_MakeArrayNonDecreasingOrNonIncreasing_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002263_MakeArrayNonDecreasingOrNonIncreasing));
+            Input = [.. RftResource.LC_00002263_MakeArrayNonDecreasingOrNonIncreasing_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

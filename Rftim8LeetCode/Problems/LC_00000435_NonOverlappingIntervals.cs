@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00435_NonOverlappingIntervals()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00435_NonOverlappingIntervals));
-            Input = [.. RftResource._00435_NonOverlappingIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000435_NonOverlappingIntervals));
+            Input = [.. RftResource.LC_00000435_NonOverlappingIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

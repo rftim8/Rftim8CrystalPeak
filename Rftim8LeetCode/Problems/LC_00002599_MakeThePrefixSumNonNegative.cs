@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02599_MakeThePrefixSumNonNegative()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02599_MakeThePrefixSumNonNegative));
-            Input = [.. RftResource._02599_MakeThePrefixSumNonNegative_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002599_MakeThePrefixSumNonNegative));
+            Input = [.. RftResource.LC_00002599_MakeThePrefixSumNonNegative_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

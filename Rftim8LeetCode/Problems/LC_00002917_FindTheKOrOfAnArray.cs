@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02917_FindTheKOrOfAnArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02917_FindTheKOrOfAnArray));
-            Input = [.. RftResource._02917_FindTheKOrOfAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002917_FindTheKOrOfAnArray));
+            Input = [.. RftResource.LC_00002917_FindTheKOrOfAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

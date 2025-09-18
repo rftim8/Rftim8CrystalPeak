@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02702_MinimumOperationsToMakeNumbersNonPositive()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonPositive));
-            Input = [.. RftResource._02702_MinimumOperationsToMakeNumbersNonPositive_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002702_MinimumOperationsToMakeNumbersNonPositive));
+            Input = [.. RftResource.LC_00002702_MinimumOperationsToMakeNumbersNonPositive_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

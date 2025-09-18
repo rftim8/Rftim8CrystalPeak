@@ -21,11 +21,11 @@ namespace Rftim8LeetCode.CP
             //RftFileContentManager.CreateLeetCodexUnitTestFiles(RftFileContentManager.GetLeetCodeProblemNames());
 
             #region LeetCode
-            //I_00001_TwoSum i_00001_TwoSum = serviceProvider.GetRequiredService<I_00001_TwoSum>();
+            //ILC_00000001_TwoSum i_00001_TwoSum = serviceProvider.GetRequiredService<ILC_00000001_TwoSum>();
             //i_00001_TwoSum.PrintSolution();
 
-            I_00036_ValidSudoku i_00036_ValidSudoku = serviceProvider.GetRequiredService<I_00036_ValidSudoku>();
-            i_00036_ValidSudoku.PrintSolution();
+            ILC_00000036_ValidSudoku lC_00000036_ValidSudoku = serviceProvider.GetRequiredService<ILC_00000036_ValidSudoku>();
+            lC_00000036_ValidSudoku.PrintSolution();
             #endregion
 
         }

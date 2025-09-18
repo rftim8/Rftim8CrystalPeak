@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02598_SmallestMissingNonNegativeIntegerAfterOperations()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperations));
-            Input = [.. RftResource._02598_SmallestMissingNonNegativeIntegerAfterOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002598_SmallestMissingNonNegativeIntegerAfterOperations));
+            Input = [.. RftResource.LC_00002598_SmallestMissingNonNegativeIntegerAfterOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00869_ReorderedPowerOfTwo()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00869_ReorderedPowerOfTwo));
-            Input = [.. RftResource._00869_ReorderedPowerOfTwo_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000869_ReorderedPowerOfTwo));
+            Input = [.. RftResource.LC_00000869_ReorderedPowerOfTwo_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

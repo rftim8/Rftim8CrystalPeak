@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02802_FindTheKThLuckyNumber()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02802_FindTheKThLuckyNumber));
-            Input = [.. RftResource._02802_FindTheKThLuckyNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002802_FindTheKThLuckyNumber));
+            Input = [.. RftResource.LC_00002802_FindTheKThLuckyNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

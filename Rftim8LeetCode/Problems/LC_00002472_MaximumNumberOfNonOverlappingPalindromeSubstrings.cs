@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02472_MaximumNumberOfNonOverlappingPalindromeSubstrings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02472_MaximumNumberOfNonOverlappingPalindromeSubstrings));
-            Input = [.. RftResource._02472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings));
+            Input = [.. RftResource.LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

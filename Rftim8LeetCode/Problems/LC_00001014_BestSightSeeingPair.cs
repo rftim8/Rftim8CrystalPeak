@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _01014_BestSightSeeingPair()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01014_BestSightSeeingPair));
-            Input = [.. RftResource._01014_BestSightSeeingPair_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001014_BestSightSeeingPair));
+            Input = [.. RftResource.LC_00001014_BestSightSeeingPair_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

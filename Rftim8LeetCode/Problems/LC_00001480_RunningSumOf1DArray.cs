@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _01480_RunningSumOfOneDArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01480_RunningSumOfOneDArray));
-            Input = [.. RftResource._01480_RunningSumOfOneDArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001480_RunningSumOfOneDArray));
+            Input = [.. RftResource.LC_00001480_RunningSumOfOneDArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

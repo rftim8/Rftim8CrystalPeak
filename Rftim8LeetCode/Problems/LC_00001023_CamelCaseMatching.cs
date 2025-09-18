@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _01023_CamelCaseMatching()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01023_CamelCaseMatching));
-            Input = [.. RftResource._01023_CamelCaseMatching_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001023_CamelCaseMatching));
+            Input = [.. RftResource.LC_00001023_CamelCaseMatching_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

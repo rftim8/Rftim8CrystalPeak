@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _01411_NumberOfWaysToPaintN3Grid()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01411_NumberOfWaysToPaintN3Grid));
-            Input = [.. RftResource._01411_NumberOfWaysToPaintN3Grid_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001411_NumberOfWaysToPaintN3Grid));
+            Input = [.. RftResource.LC_00001411_NumberOfWaysToPaintN3Grid_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

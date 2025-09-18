@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _02829_DetermineTheMinimumSumOfAKAvoidingArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02829_DetermineTheMinimumSumOfAKAvoidingArray));
-            Input = [.. RftResource._02829_DetermineTheMinimumSumOfAKAvoidingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002829_DetermineTheMinimumSumOfAKAvoidingArray));
+            Input = [.. RftResource.LC_00002829_DetermineTheMinimumSumOfAKAvoidingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

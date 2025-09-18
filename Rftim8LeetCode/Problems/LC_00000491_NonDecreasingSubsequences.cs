@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _00491_NonDecreasingSubsequences()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00491_NonDecreasingSubsequences));
-            Input = [.. RftResource._00491_NonDecreasingSubsequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000491_NonDecreasingSubsequences));
+            Input = [.. RftResource.LC_00000491_NonDecreasingSubsequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

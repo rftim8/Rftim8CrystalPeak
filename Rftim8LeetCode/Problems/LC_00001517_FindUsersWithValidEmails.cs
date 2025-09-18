@@ -14,8 +14,8 @@ namespace Rftim8LeetCode.Problems
 
         public _01517_FindUsersWithValidEmails()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01517_FindUsersWithValidEmails));
-            Input = [.. RftResource._01517_FindUsersWithValidEmails_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001517_FindUsersWithValidEmails));
+            Input = [.. RftResource.LC_00001517_FindUsersWithValidEmails_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
