@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_01014_BestSightSeeingPair
+    public interface ILC_00001014_BestSightseeingPair
     {
         public void PrintSolution();
     }

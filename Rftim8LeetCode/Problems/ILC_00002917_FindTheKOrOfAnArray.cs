@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_02917_FindTheKOrOfAnArray
+    public interface ILC_00002917_FindTheKorOfAnArray
     {
         public void PrintSolution();
     }

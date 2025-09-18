@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_01517_FindUsersWithValidEmails
+    public interface ILC_00001517_FindUsersWithValidEMails
     {
         public void PrintSolution();
     }

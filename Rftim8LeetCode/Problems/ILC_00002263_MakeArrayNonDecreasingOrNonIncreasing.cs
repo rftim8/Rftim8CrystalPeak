@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_02263_MakeArrayNonDecreasingOrNonIncreasing
+    public interface ILC_00002263_MakeArrayNondecreasingOrNonincreasing
     {
         public void PrintSolution();
     }

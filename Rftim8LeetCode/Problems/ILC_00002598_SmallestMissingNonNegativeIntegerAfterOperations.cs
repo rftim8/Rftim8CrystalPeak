@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_02598_SmallestMissingNonNegativeIntegerAfterOperations
+    public interface ILC_00002598_SmallestMissingNonnegativeIntegerAfterOperations
     {
         public void PrintSolution();
     }

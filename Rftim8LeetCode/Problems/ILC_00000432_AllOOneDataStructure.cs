@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_00432_AllOOneDataStructure
+    public interface ILC_00000432_AllOoneDataStructure
     {
         public void PrintSolution();
     }

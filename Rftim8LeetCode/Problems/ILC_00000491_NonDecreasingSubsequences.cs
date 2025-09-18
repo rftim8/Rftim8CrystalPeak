@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_00491_NonDecreasingSubsequences
+    public interface ILC_00000491_NondecreasingSubsequences
     {
         public void PrintSolution();
     }

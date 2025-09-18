@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_02599_MakeThePrefixSumNonNegative
+    public interface ILC_00002599_MakeThePrefixSumNonnegative
     {
         public void PrintSolution();
     }

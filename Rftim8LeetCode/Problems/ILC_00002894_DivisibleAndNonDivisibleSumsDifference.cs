@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_02894_DivisibleAndNonDivisibleSumsDifference
+    public interface ILC_00002894_DivisibleAndNondivisibleSumsDifference
     {
         public void PrintSolution();
     }

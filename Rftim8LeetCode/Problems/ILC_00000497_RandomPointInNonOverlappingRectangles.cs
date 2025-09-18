@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_00497_RandomPointInNonOverlappingRectangles
+    public interface ILC_00000497_RandomPointInNonoverlappingRectangles
     {
         public void PrintSolution();
     }

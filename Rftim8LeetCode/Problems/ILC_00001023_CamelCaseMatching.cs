@@ -1,6 +1,6 @@
-﻿namespace Rftim8LeetCode.Problems
+namespace Rftim8LeetCode.Problems
 {
-    public interface I_01023_CamelCaseMatching
+    public interface ILC_00001023_CamelcaseMatching
     {
         public void PrintSolution();
     }

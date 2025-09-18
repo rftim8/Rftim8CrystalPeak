@@ -1,0 +1,7 @@
+namespace Rftim8LeetCode.Problems
+{
+    public interface ILC_00003653_XORAfterRangeMultiplicationQueriesI
+    {
+        public void PrintSolution();
+    }
+}
