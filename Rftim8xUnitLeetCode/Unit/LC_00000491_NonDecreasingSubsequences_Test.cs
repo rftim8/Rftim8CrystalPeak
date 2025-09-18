@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00491_NonDecreasingSubsequences_Test
+    public class LC_00000491_NondecreasingSubsequences_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00491_NonDecreasingSubsequences))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00491_NonDecreasingSubsequences))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00491_NonDecreasingSubsequences))![1]);
-
-        public static TheoryData<List<string>, int> _00491_NonDecreasingSubsequencesPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000491_NondecreasingSubsequences))!;
+        
+        public static TheoryData<List<string>> LC_00000491_NondecreasingSubsequencesPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _00491_NonDecreasingSubsequencesPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00000491_NondecreasingSubsequencesPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_00491_NonDecreasingSubsequencesPartOne_Data))]
+        [MemberData(nameof(LC_00000491_NondecreasingSubsequencesPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _00491_NonDecreasingSubsequences.PartOne_Test(a0);
+            int actual = LC_00000491_NondecreasingSubsequences.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00491_NonDecreasingSubsequencesPartTwo_Data))]
+        [MemberData(nameof(LC_00000491_NondecreasingSubsequencesPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _00491_NonDecreasingSubsequences.PartTwo_Test(a0);
+            int actual = LC_00000491_NondecreasingSubsequences.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

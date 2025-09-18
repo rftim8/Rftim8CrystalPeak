@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00532_KDiffPairsInAnArray_Test
+    public class LC_00000532_KdiffPairsInAnArray_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00532_KDiffPairsInAnArray))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00532_KDiffPairsInAnArray))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00532_KDiffPairsInAnArray))![1]);
-
-        public static TheoryData<List<string>, int> _00532_KDiffPairsInAnArrayPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000532_KdiffPairsInAnArray))!;
+        
+        public static TheoryData<List<string>> LC_00000532_KdiffPairsInAnArrayPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _00532_KDiffPairsInAnArrayPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00000532_KdiffPairsInAnArrayPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_00532_KDiffPairsInAnArrayPartOne_Data))]
+        [MemberData(nameof(LC_00000532_KdiffPairsInAnArrayPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _00532_KDiffPairsInAnArray.PartOne_Test(a0);
+            int actual = LC_00000532_KdiffPairsInAnArray.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00532_KDiffPairsInAnArrayPartTwo_Data))]
+        [MemberData(nameof(LC_00000532_KdiffPairsInAnArrayPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _00532_KDiffPairsInAnArray.PartTwo_Test(a0);
+            int actual = LC_00000532_KdiffPairsInAnArray.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

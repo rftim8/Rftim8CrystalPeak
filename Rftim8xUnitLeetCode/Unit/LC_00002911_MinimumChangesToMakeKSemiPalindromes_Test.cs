@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02911_MinimumChangesToMakeKSemiPalindromes_Test
+    public class LC_00002911_MinimumChangesToMakeKSemipalindromes_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02911_MinimumChangesToMakeKSemiPalindromes))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02911_MinimumChangesToMakeKSemiPalindromes))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02911_MinimumChangesToMakeKSemiPalindromes))![1]);
-
-        public static TheoryData<List<string>, int> _02911_MinimumChangesToMakeKSemiPalindromesPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002911_MinimumChangesToMakeKSemipalindromes))!;
+        
+        public static TheoryData<List<string>> LC_00002911_MinimumChangesToMakeKSemipalindromesPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _02911_MinimumChangesToMakeKSemiPalindromesPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00002911_MinimumChangesToMakeKSemipalindromesPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_02911_MinimumChangesToMakeKSemiPalindromesPartOne_Data))]
+        [MemberData(nameof(LC_00002911_MinimumChangesToMakeKSemipalindromesPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02911_MinimumChangesToMakeKSemiPalindromes.PartOne_Test(a0);
+            int actual = LC_00002911_MinimumChangesToMakeKSemipalindromes.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02911_MinimumChangesToMakeKSemiPalindromesPartTwo_Data))]
+        [MemberData(nameof(LC_00002911_MinimumChangesToMakeKSemipalindromesPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02911_MinimumChangesToMakeKSemiPalindromes.PartTwo_Test(a0);
+            int actual = LC_00002911_MinimumChangesToMakeKSemipalindromes.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

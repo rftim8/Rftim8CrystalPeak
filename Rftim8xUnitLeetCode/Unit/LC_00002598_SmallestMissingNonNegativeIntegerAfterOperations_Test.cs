@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02598_SmallestMissingNonNegativeIntegerAfterOperations_Test
+    public class LC_00002598_SmallestMissingNonnegativeIntegerAfterOperations_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperations))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperations))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperations))![1]);
-
-        public static TheoryData<List<string>, int> _02598_SmallestMissingNonNegativeIntegerAfterOperationsPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002598_SmallestMissingNonnegativeIntegerAfterOperations))!;
+        
+        public static TheoryData<List<string>> LC_00002598_SmallestMissingNonnegativeIntegerAfterOperationsPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _02598_SmallestMissingNonNegativeIntegerAfterOperationsPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00002598_SmallestMissingNonnegativeIntegerAfterOperationsPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperationsPartOne_Data))]
+        [MemberData(nameof(LC_00002598_SmallestMissingNonnegativeIntegerAfterOperationsPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02598_SmallestMissingNonNegativeIntegerAfterOperations.PartOne_Test(a0);
+            int actual = LC_00002598_SmallestMissingNonnegativeIntegerAfterOperations.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02598_SmallestMissingNonNegativeIntegerAfterOperationsPartTwo_Data))]
+        [MemberData(nameof(LC_00002598_SmallestMissingNonnegativeIntegerAfterOperationsPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02598_SmallestMissingNonNegativeIntegerAfterOperations.PartTwo_Test(a0);
+            int actual = LC_00002598_SmallestMissingNonnegativeIntegerAfterOperations.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

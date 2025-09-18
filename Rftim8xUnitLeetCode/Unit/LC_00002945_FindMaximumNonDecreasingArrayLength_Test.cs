@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02945_FindMaximumNonDecreasingArrayLength_Test
+    public class LC_00002945_FindMaximumNondecreasingArrayLength_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02945_FindMaximumNonDecreasingArrayLength))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02945_FindMaximumNonDecreasingArrayLength))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02945_FindMaximumNonDecreasingArrayLength))![1]);
-
-        public static TheoryData<List<string>, int> _02945_FindMaximumNonDecreasingArrayLengthPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002945_FindMaximumNondecreasingArrayLength))!;
+        
+        public static TheoryData<List<string>> LC_00002945_FindMaximumNondecreasingArrayLengthPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _02945_FindMaximumNonDecreasingArrayLengthPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00002945_FindMaximumNondecreasingArrayLengthPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_02945_FindMaximumNonDecreasingArrayLengthPartOne_Data))]
+        [MemberData(nameof(LC_00002945_FindMaximumNondecreasingArrayLengthPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02945_FindMaximumNonDecreasingArrayLength.PartOne_Test(a0);
+            int actual = LC_00002945_FindMaximumNondecreasingArrayLength.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02945_FindMaximumNonDecreasingArrayLengthPartTwo_Data))]
+        [MemberData(nameof(LC_00002945_FindMaximumNondecreasingArrayLengthPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02945_FindMaximumNonDecreasingArrayLength.PartTwo_Test(a0);
+            int actual = LC_00002945_FindMaximumNondecreasingArrayLength.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

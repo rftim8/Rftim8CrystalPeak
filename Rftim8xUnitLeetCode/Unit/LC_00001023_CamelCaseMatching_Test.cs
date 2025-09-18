@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01023_CamelCaseMatching_Test
+    public class LC_00001023_CamelcaseMatching_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01023_CamelCaseMatching))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01023_CamelCaseMatching))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01023_CamelCaseMatching))![1]);
-
-        public static TheoryData<List<string>, int> _01023_CamelCaseMatchingPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001023_CamelcaseMatching))!;
+        
+        public static TheoryData<List<string>> LC_00001023_CamelcaseMatchingPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _01023_CamelCaseMatchingPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00001023_CamelcaseMatchingPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_01023_CamelCaseMatchingPartOne_Data))]
+        [MemberData(nameof(LC_00001023_CamelcaseMatchingPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _01023_CamelCaseMatching.PartOne_Test(a0);
+            int actual = LC_00001023_CamelcaseMatching.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01023_CamelCaseMatchingPartTwo_Data))]
+        [MemberData(nameof(LC_00001023_CamelcaseMatchingPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _01023_CamelCaseMatching.PartTwo_Test(a0);
+            int actual = LC_00001023_CamelcaseMatching.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

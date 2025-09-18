@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02599_MakeThePrefixSumNonNegative_Test
+    public class LC_00002599_MakeThePrefixSumNonnegative_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02599_MakeThePrefixSumNonNegative))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02599_MakeThePrefixSumNonNegative))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02599_MakeThePrefixSumNonNegative))![1]);
-
-        public static TheoryData<List<string>, int> _02599_MakeThePrefixSumNonNegativePartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002599_MakeThePrefixSumNonnegative))!;
+        
+        public static TheoryData<List<string>> LC_00002599_MakeThePrefixSumNonnegativePartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _02599_MakeThePrefixSumNonNegativePartTwo_Data =>
+        public static TheoryData<List<string>> LC_00002599_MakeThePrefixSumNonnegativePartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_02599_MakeThePrefixSumNonNegativePartOne_Data))]
+        [MemberData(nameof(LC_00002599_MakeThePrefixSumNonnegativePartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02599_MakeThePrefixSumNonNegative.PartOne_Test(a0);
+            int actual = LC_00002599_MakeThePrefixSumNonnegative.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02599_MakeThePrefixSumNonNegativePartTwo_Data))]
+        [MemberData(nameof(LC_00002599_MakeThePrefixSumNonnegativePartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02599_MakeThePrefixSumNonNegative.PartTwo_Test(a0);
+            int actual = LC_00002599_MakeThePrefixSumNonnegative.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

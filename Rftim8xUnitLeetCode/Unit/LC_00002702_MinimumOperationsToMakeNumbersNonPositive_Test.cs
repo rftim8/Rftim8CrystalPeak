@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02702_MinimumOperationsToMakeNumbersNonPositive_Test
+    public class LC_00002702_MinimumOperationsToMakeNumbersNonpositive_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonPositive))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonPositive))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02702_MinimumOperationsToMakeNumbersNonPositive))![1]);
-
-        public static TheoryData<List<string>, int> _02702_MinimumOperationsToMakeNumbersNonPositivePartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002702_MinimumOperationsToMakeNumbersNonpositive))!;
+        
+        public static TheoryData<List<string>> LC_00002702_MinimumOperationsToMakeNumbersNonpositivePartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _02702_MinimumOperationsToMakeNumbersNonPositivePartTwo_Data =>
+        public static TheoryData<List<string>> LC_00002702_MinimumOperationsToMakeNumbersNonpositivePartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_02702_MinimumOperationsToMakeNumbersNonPositivePartOne_Data))]
+        [MemberData(nameof(LC_00002702_MinimumOperationsToMakeNumbersNonpositivePartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02702_MinimumOperationsToMakeNumbersNonPositive.PartOne_Test(a0);
+            int actual = LC_00002702_MinimumOperationsToMakeNumbersNonpositive.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02702_MinimumOperationsToMakeNumbersNonPositivePartTwo_Data))]
+        [MemberData(nameof(LC_00002702_MinimumOperationsToMakeNumbersNonpositivePartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _02702_MinimumOperationsToMakeNumbersNonPositive.PartTwo_Test(a0);
+            int actual = LC_00002702_MinimumOperationsToMakeNumbersNonpositive.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

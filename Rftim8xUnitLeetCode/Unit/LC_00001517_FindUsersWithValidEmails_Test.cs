@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01517_FindUsersWithValidEmails_Test
+    public class LC_00001517_FindUsersWithValidEMails_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01517_FindUsersWithValidEmails))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01517_FindUsersWithValidEmails))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01517_FindUsersWithValidEmails))![1]);
-
-        public static TheoryData<List<string>, int> _01517_FindUsersWithValidEmailsPartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001517_FindUsersWithValidEMails))!;
+        
+        public static TheoryData<List<string>> LC_00001517_FindUsersWithValidEMailsPartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _01517_FindUsersWithValidEmailsPartTwo_Data =>
+        public static TheoryData<List<string>> LC_00001517_FindUsersWithValidEMailsPartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_01517_FindUsersWithValidEmailsPartOne_Data))]
+        [MemberData(nameof(LC_00001517_FindUsersWithValidEMailsPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _01517_FindUsersWithValidEmails.PartOne_Test(a0);
+            int actual = LC_00001517_FindUsersWithValidEMails.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01517_FindUsersWithValidEmailsPartTwo_Data))]
+        [MemberData(nameof(LC_00001517_FindUsersWithValidEMailsPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _01517_FindUsersWithValidEmails.PartTwo_Test(a0);
+            int actual = LC_00001517_FindUsersWithValidEMails.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

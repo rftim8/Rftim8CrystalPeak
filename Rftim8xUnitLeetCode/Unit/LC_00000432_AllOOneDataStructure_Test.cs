@@ -1,44 +1,53 @@
-﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
-using Rftim8LeetCode.Problems;
+using RftAPI.Services.Static.CP.LeetCode.Data;
+using RftCP.LeetCode;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00432_AllOOneDataStructure_Test
+    public class LC_00000432_AllOoneDataStructure_Test(ITestOutputHelper testOutputHelper)
     {
-        // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00432_AllOOneDataStructure))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00432_AllOOneDataStructure))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00432_AllOOneDataStructure))![1]);
-
-        public static TheoryData<List<string>, int> _00432_AllOOneDataStructurePartOne_Data =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000432_AllOoneDataStructure))!;
+        
+        public static TheoryData<List<string>> LC_00000432_AllOoneDataStructurePartOne_Input =>
             new()
             {
-                { Input, ExpectedPartOne }
+                { Input }
             };
 
-        public static TheoryData<List<string>, int> _00432_AllOOneDataStructurePartTwo_Data =>
+        public static TheoryData<List<string>> LC_00000432_AllOoneDataStructurePartTwo_Input =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
+        [Fact]
+        public void DataCollector()
+        {
+
+        }
+
         [Theory]
-        [MemberData(nameof(_00432_AllOOneDataStructurePartOne_Data))]
+        [MemberData(nameof(LC_00000432_AllOoneDataStructurePartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _00432_AllOOneDataStructure.PartOne_Test(a0);
+            int actual = LC_00000432_AllOoneDataStructure.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00432_AllOOneDataStructurePartTwo_Data))]
+        [MemberData(nameof(LC_00000432_AllOoneDataStructurePartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
+            // Arrange
+            DataCollector();
+
             // Act
-            int actual = _00432_AllOOneDataStructure.PartTwo_Test(a0);
+            int actual = LC_00000432_AllOoneDataStructure.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
