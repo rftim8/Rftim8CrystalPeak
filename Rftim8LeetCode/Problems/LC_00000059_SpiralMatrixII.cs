@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00059_SpiralMatrixII : I_00059_SpiralMatrixII
+    public class LC_00000059_SpiralMatrixII : ILC_00000059_SpiralMatrixII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00059_SpiralMatrixII()
+        public LC_00000059_SpiralMatrixII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00059_SpiralMatrixII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000059_SpiralMatrixII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00059_SpiralMatrixII(IHost host)
+        public LC_00000059_SpiralMatrixII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00059_SpiralMatrixII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000059_SpiralMatrixII));
         }
 
         public void PrintSolution()

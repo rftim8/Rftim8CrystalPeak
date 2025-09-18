@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02285_MaximumTotalImportanceOfRoads
+    public interface ILC_00002285_MaximumTotalImportanceOfRoads
     {
         public void PrintSolution();
     }

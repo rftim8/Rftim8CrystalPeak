@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02580_CountWaysToGroupOverlappingRanges
+    public interface ILC_00002580_CountWaysToGroupOverlappingRanges
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00634_FindTheDerangementOfAnArray
+    public interface ILC_00000634_FindTheDerangementOfAnArray
     {
         public void PrintSolution();
     }

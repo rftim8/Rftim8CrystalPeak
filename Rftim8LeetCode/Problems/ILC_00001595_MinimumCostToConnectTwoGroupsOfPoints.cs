@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01595_MinimumCostToConnectTwoGroupsOfPoints
+    public interface ILC_00001595_MinimumCostToConnectTwoGroupsOfPoints
     {
         public void PrintSolution();
     }

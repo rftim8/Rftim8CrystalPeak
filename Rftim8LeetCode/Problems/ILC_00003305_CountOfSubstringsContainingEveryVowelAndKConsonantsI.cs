@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03305_CountOfSubstringsContainingEveryVowelAndKConsonantsI
+    public interface ILC_00003305_CountOfSubstringsContainingEveryVowelAndKConsonantsI
     {
         public void PrintSolution();
     }

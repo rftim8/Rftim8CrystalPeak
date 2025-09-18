@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02267_CheckIfThereIsAValidParenthesesStringPath
+    public interface ILC_00002267_CheckIfThereIsAValidParenthesesStringPath
     {
         public void PrintSolution();
     }

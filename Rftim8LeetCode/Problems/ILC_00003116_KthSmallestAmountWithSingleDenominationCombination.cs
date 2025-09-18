@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03116_KthSmallestAmountWithSingleDenominationCombination
+    public interface ILC_00003116_KthSmallestAmountWithSingleDenominationCombination
     {
         public void PrintSolution();
     }

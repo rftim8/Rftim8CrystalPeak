@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01558_MinimumNumbersOfFunctionCallsToMakeTargetArray
+    public interface ILC_00001558_MinimumNumbersOfFunctionCallsToMakeTargetArray
     {
         public void PrintSolution();
     }

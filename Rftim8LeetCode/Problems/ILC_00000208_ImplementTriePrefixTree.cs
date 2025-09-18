@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00208_ImplementTriePrefixTree
+    public interface ILC_00000208_ImplementTriePrefixTree
     {
         public void PrintSolution();
     }

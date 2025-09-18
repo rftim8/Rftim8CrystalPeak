@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00263_UglyNumber : I_00263_UglyNumber
+    public class LC_00000263_UglyNumber : ILC_00000263_UglyNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00263_UglyNumber()
+        public LC_00000263_UglyNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00263_UglyNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000263_UglyNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00263_UglyNumber(IHost host)
+        public LC_00000263_UglyNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00263_UglyNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000263_UglyNumber));
         }
 
         public void PrintSolution()

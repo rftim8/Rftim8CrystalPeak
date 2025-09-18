@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02844_MinimumOperationsToMakeASpecialNumber
+    public interface ILC_00002844_MinimumOperationsToMakeASpecialNumber
     {
         public void PrintSolution();
     }

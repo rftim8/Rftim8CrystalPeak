@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02282_NumberOfPeopleThatCanBeSeenInAGrid : I_02282_NumberOfPeopleThatCanBeSeenInAGrid
+    public class LC_00002282_NumberOfPeopleThatCanBeSeenInAGrid : ILC_00002282_NumberOfPeopleThatCanBeSeenInAGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02282_NumberOfPeopleThatCanBeSeenInAGrid()
+        public LC_00002282_NumberOfPeopleThatCanBeSeenInAGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02282_NumberOfPeopleThatCanBeSeenInAGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002282_NumberOfPeopleThatCanBeSeenInAGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02282_NumberOfPeopleThatCanBeSeenInAGrid(IHost host)
+        public LC_00002282_NumberOfPeopleThatCanBeSeenInAGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02282_NumberOfPeopleThatCanBeSeenInAGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002282_NumberOfPeopleThatCanBeSeenInAGrid));
         }
 
         public void PrintSolution()

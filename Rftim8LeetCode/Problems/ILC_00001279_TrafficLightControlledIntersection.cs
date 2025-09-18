@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01279_TrafficLightControlledIntersection
+    public interface ILC_00001279_TrafficLightControlledIntersection
     {
         public void PrintSolution();
     }

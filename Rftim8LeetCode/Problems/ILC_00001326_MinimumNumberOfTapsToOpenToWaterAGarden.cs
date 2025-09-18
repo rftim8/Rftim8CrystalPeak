@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01326_MinimumNumberOfTapsToOpenToWaterAGarden
+    public interface ILC_00001326_MinimumNumberOfTapsToOpenToWaterAGarden
     {
         public void PrintSolution();
     }

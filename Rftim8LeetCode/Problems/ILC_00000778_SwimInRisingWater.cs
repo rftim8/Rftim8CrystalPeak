@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00778_SwimInRisingWater
+    public interface ILC_00000778_SwimInRisingWater
     {
         public void PrintSolution();
     }

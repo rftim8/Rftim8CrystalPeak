@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01961_CheckIfStringIsAPrefixOfArray : I_01961_CheckIfStringIsAPrefixOfArray
+    public class LC_00001961_CheckIfStringIsAPrefixOfArray : ILC_00001961_CheckIfStringIsAPrefixOfArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01961_CheckIfStringIsAPrefixOfArray()
+        public LC_00001961_CheckIfStringIsAPrefixOfArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01961_CheckIfStringIsAPrefixOfArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001961_CheckIfStringIsAPrefixOfArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01961_CheckIfStringIsAPrefixOfArray(IHost host)
+        public LC_00001961_CheckIfStringIsAPrefixOfArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01961_CheckIfStringIsAPrefixOfArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001961_CheckIfStringIsAPrefixOfArray));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00081_SearchInRotatedSortedArrayII
+    public interface ILC_00000081_SearchInRotatedSortedArrayII
     {
         public void PrintSolution();
     }

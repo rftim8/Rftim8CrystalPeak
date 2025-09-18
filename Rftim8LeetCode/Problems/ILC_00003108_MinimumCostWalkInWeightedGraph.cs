@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03108_MinimumCostWalkInWeightedGraph
+    public interface ILC_00003108_MinimumCostWalkInWeightedGraph
     {
         public void PrintSolution();
     }

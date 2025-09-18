@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03371_IdentifyTheLargestOutlierInAnArray
+    public interface ILC_00003371_IdentifyTheLargestOutlierInAnArray
     {
         public void PrintSolution();
     }

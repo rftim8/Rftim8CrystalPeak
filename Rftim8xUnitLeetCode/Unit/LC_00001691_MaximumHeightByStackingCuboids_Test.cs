@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01691_MaximumHeightByStackingCuboids_Test
+    public class LC_00001691_MaximumHeightByStackingCuboids_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01691_MaximumHeightByStackingCuboids))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01691_MaximumHeightByStackingCuboids))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01691_MaximumHeightByStackingCuboids))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001691_MaximumHeightByStackingCuboids))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001691_MaximumHeightByStackingCuboids))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001691_MaximumHeightByStackingCuboids))![1]);
 
-        public static TheoryData<List<string>, int> _01691_MaximumHeightByStackingCuboidsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001691_MaximumHeightByStackingCuboidsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01691_MaximumHeightByStackingCuboidsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001691_MaximumHeightByStackingCuboidsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01691_MaximumHeightByStackingCuboidsPartOne_Data))]
+        [MemberData(nameof(LC_00001691_MaximumHeightByStackingCuboidsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01691_MaximumHeightByStackingCuboids.PartOne_Test(a0);
+            int actual = LC_00001691_MaximumHeightByStackingCuboids.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01691_MaximumHeightByStackingCuboidsPartTwo_Data))]
+        [MemberData(nameof(LC_00001691_MaximumHeightByStackingCuboidsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01691_MaximumHeightByStackingCuboids.PartTwo_Test(a0);
+            int actual = LC_00001691_MaximumHeightByStackingCuboids.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

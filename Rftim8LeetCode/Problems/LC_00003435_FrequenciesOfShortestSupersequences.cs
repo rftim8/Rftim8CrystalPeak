@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03435_FrequenciesOfShortestSupersequences : I_03435_FrequenciesOfShortestSupersequences
+    public class LC_00003435_FrequenciesOfShortestSupersequences : ILC_00003435_FrequenciesOfShortestSupersequences
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03435_FrequenciesOfShortestSupersequences()
+        public LC_00003435_FrequenciesOfShortestSupersequences()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03435_FrequenciesOfShortestSupersequences));
-            Input = [.. RftResource._03435_FrequenciesOfShortestSupersequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003435_FrequenciesOfShortestSupersequences));
+            Input = [.. RftResource.LC_00003435_FrequenciesOfShortestSupersequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03435_FrequenciesOfShortestSupersequences(IHost host)
+        public LC_00003435_FrequenciesOfShortestSupersequences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03435_FrequenciesOfShortestSupersequences));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003435_FrequenciesOfShortestSupersequences));
             DataCollector();
         }
 

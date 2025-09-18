@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01491_AverageSalaryExcludingTheMinimumAndMaximumSalary
+    public interface ILC_00001491_AverageSalaryExcludingTheMinimumAndMaximumSalary
     {
         public void PrintSolution();
     }

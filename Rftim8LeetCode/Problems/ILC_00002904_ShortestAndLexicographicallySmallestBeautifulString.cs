@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02904_ShortestAndLexicographicallySmallestBeautifulString
+    public interface ILC_00002904_ShortestAndLexicographicallySmallestBeautifulString
     {
         public void PrintSolution();
     }

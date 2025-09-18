@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02850_MinimumMovesToSpreadStonesOverGrid
+    public interface ILC_00002850_MinimumMovesToSpreadStonesOverGrid
     {
         public void PrintSolution();
     }

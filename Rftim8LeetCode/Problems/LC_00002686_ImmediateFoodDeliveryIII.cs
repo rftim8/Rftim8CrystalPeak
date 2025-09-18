@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02686_ImmediateFoodDeliveryIII : I_02686_ImmediateFoodDeliveryIII
+    public class LC_00002686_ImmediateFoodDeliveryIII : ILC_00002686_ImmediateFoodDeliveryIII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02686_ImmediateFoodDeliveryIII()
+        public LC_00002686_ImmediateFoodDeliveryIII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02686_ImmediateFoodDeliveryIII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002686_ImmediateFoodDeliveryIII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02686_ImmediateFoodDeliveryIII(IHost host)
+        public LC_00002686_ImmediateFoodDeliveryIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02686_ImmediateFoodDeliveryIII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002686_ImmediateFoodDeliveryIII));
         }
 
         public void PrintSolution()

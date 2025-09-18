@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03315_ConstructTheMinimumBitwiseArrayII
+    public interface ILC_00003315_ConstructTheMinimumBitwiseArrayII
     {
         public void PrintSolution();
     }

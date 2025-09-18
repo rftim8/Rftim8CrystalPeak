@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03125_MaximumNumberThatMakesResultOfBitwiseANDZero
+    public interface ILC_00003125_MaximumNumberThatMakesResultOfBitwiseANDZero
     {
         public void PrintSolution();
     }

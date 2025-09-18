@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00068_TextJustification
+    public interface ILC_00000068_TextJustification
     {
         public void PrintSolution();
     }

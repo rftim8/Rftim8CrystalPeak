@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01588_SumOfAllOddLengthSubarrays
+    public interface ILC_00001588_SumOfAllOddLengthSubarrays
     {
         public void PrintSolution();
     }

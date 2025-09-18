@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01992_FindAllGroupsOfFarmland : I_01992_FindAllGroupsOfFarmland
+    public class LC_00001992_FindAllGroupsOfFarmland : ILC_00001992_FindAllGroupsOfFarmland
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01992_FindAllGroupsOfFarmland()
+        public LC_00001992_FindAllGroupsOfFarmland()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01992_FindAllGroupsOfFarmland));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001992_FindAllGroupsOfFarmland));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01992_FindAllGroupsOfFarmland(IHost host)
+        public LC_00001992_FindAllGroupsOfFarmland(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01992_FindAllGroupsOfFarmland));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001992_FindAllGroupsOfFarmland));
         }
 
         public void PrintSolution()

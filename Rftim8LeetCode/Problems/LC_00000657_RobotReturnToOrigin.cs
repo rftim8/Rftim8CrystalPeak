@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00657_RobotReturnToOrigin : I_00657_RobotReturnToOrigin
+    public class LC_00000657_RobotReturnToOrigin : ILC_00000657_RobotReturnToOrigin
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00657_RobotReturnToOrigin()
+        public LC_00000657_RobotReturnToOrigin()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00657_RobotReturnToOrigin));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000657_RobotReturnToOrigin));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00657_RobotReturnToOrigin(IHost host)
+        public LC_00000657_RobotReturnToOrigin(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00657_RobotReturnToOrigin));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000657_RobotReturnToOrigin));
         }
 
         public void PrintSolution()

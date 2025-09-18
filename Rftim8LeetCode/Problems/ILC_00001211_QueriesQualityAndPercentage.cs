@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01211_QueriesQualityAndPercentage
+    public interface ILC_00001211_QueriesQualityAndPercentage
     {
         public void PrintSolution();
     }

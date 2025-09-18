@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02641_CousinsInBinaryTreeII
+    public interface ILC_00002641_CousinsInBinaryTreeII
     {
         public void PrintSolution();
     }

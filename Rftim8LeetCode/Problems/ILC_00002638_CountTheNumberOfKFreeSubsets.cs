@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02638_CountTheNumberOfKFreeSubsets
+    public interface ILC_00002638_CountTheNumberOfKFreeSubsets
     {
         public void PrintSolution();
     }

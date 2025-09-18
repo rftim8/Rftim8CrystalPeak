@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01354_ConstructTargetArrayWithMultipleSums
+    public interface ILC_00001354_ConstructTargetArrayWithMultipleSums
     {
         public void PrintSolution();
     }

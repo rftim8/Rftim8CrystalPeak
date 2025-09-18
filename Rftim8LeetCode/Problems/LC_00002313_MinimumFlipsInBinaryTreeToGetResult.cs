@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02313_MinimumFlipsInBinaryTreeToGetResult : I_02313_MinimumFlipsInBinaryTreeToGetResult
+    public class LC_00002313_MinimumFlipsInBinaryTreeToGetResult : ILC_00002313_MinimumFlipsInBinaryTreeToGetResult
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02313_MinimumFlipsInBinaryTreeToGetResult()
+        public LC_00002313_MinimumFlipsInBinaryTreeToGetResult()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02313_MinimumFlipsInBinaryTreeToGetResult));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002313_MinimumFlipsInBinaryTreeToGetResult));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02313_MinimumFlipsInBinaryTreeToGetResult(IHost host)
+        public LC_00002313_MinimumFlipsInBinaryTreeToGetResult(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02313_MinimumFlipsInBinaryTreeToGetResult));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002313_MinimumFlipsInBinaryTreeToGetResult));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02574_LeftAndRightSumDifferences
+    public interface ILC_00002574_LeftAndRightSumDifferences
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00977_SquaresOfASortedArray : I_00977_SquaresOfASortedArray
+    public class LC_00000977_SquaresOfASortedArray : ILC_00000977_SquaresOfASortedArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00977_SquaresOfASortedArray()
+        public LC_00000977_SquaresOfASortedArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00977_SquaresOfASortedArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000977_SquaresOfASortedArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00977_SquaresOfASortedArray(IHost host)
+        public LC_00000977_SquaresOfASortedArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00977_SquaresOfASortedArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000977_SquaresOfASortedArray));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02603_CollectCoinsInATree : I_02603_CollectCoinsInATree
+    public class LC_00002603_CollectCoinsInATree : ILC_00002603_CollectCoinsInATree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02603_CollectCoinsInATree()
+        public LC_00002603_CollectCoinsInATree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02603_CollectCoinsInATree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002603_CollectCoinsInATree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02603_CollectCoinsInATree(IHost host)
+        public LC_00002603_CollectCoinsInATree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02603_CollectCoinsInATree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002603_CollectCoinsInATree));
         }
 
         public void PrintSolution()

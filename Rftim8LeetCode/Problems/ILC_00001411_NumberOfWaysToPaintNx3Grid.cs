@@ -1,4 +1,4 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
     public interface I_01411_NumberOfWaysToPaintNx3Grid
     {

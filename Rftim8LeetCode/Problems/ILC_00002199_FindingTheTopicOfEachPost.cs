@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02199_FindingTheTopicOfEachPost
+    public interface ILC_00002199_FindingTheTopicOfEachPost
     {
         public void PrintSolution();
     }

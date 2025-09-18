@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01717_MaximumScoreFromRemovingSubstrings : I_01717_MaximumScoreFromRemovingSubstrings
+    public class LC_00001717_MaximumScoreFromRemovingSubstrings : ILC_00001717_MaximumScoreFromRemovingSubstrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01717_MaximumScoreFromRemovingSubstrings()
+        public LC_00001717_MaximumScoreFromRemovingSubstrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01717_MaximumScoreFromRemovingSubstrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001717_MaximumScoreFromRemovingSubstrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01717_MaximumScoreFromRemovingSubstrings(IHost host)
+        public LC_00001717_MaximumScoreFromRemovingSubstrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01717_MaximumScoreFromRemovingSubstrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001717_MaximumScoreFromRemovingSubstrings));
         }
 
         public void PrintSolution()

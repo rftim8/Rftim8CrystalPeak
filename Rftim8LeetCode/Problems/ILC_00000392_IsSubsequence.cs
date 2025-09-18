@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00392_IsSubsequence
+    public interface ILC_00000392_IsSubsequence
     {
         public void PrintSolution();
     }

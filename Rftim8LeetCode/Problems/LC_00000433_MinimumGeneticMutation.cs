@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00433_MinimumGeneticMutation : I_00433_MinimumGeneticMutation
+    public class LC_00000433_MinimumGeneticMutation : ILC_00000433_MinimumGeneticMutation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00433_MinimumGeneticMutation()
+        public LC_00000433_MinimumGeneticMutation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00433_MinimumGeneticMutation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000433_MinimumGeneticMutation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00433_MinimumGeneticMutation(IHost host)
+        public LC_00000433_MinimumGeneticMutation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00433_MinimumGeneticMutation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000433_MinimumGeneticMutation));
         }
 
         public void PrintSolution()

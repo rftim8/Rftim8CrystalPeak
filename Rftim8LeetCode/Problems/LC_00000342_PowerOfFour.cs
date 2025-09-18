@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00342_PowerOfFour : I_00342_PowerOfFour
+    public class LC_00000342_PowerOfFour : ILC_00000342_PowerOfFour
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00342_PowerOfFour()
+        public LC_00000342_PowerOfFour()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00342_PowerOfFour));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000342_PowerOfFour));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00342_PowerOfFour(IHost host)
+        public LC_00000342_PowerOfFour(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00342_PowerOfFour));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000342_PowerOfFour));
         }
 
         public void PrintSolution()

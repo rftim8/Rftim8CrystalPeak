@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03272_FindTheCountOfGoodIntegers : I_03272_FindTheCountOfGoodIntegers
+    public class LC_00003272_FindTheCountOfGoodIntegers : ILC_00003272_FindTheCountOfGoodIntegers
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03272_FindTheCountOfGoodIntegers()
+        public LC_00003272_FindTheCountOfGoodIntegers()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03272_FindTheCountOfGoodIntegers));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003272_FindTheCountOfGoodIntegers));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03272_FindTheCountOfGoodIntegers(IHost host)
+        public LC_00003272_FindTheCountOfGoodIntegers(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03272_FindTheCountOfGoodIntegers));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003272_FindTheCountOfGoodIntegers));
         }
 
         public void PrintSolution()

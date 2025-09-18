@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02994_FridayPurchasesII
+    public interface ILC_00002994_FridayPurchasesII
     {
         public void PrintSolution();
     }

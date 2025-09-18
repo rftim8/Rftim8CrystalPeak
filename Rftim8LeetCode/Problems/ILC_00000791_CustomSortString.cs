@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00791_CustomSortString
+    public interface ILC_00000791_CustomSortString
     {
         public void PrintSolution();
     }

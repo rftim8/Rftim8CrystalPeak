@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01097_GamePlayAnalysisV
+    public interface ILC_00001097_GamePlayAnalysisV
     {
         public void PrintSolution();
     }

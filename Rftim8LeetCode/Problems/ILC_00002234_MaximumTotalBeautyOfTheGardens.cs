@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02234_MaximumTotalBeautyOfTheGardens
+    public interface ILC_00002234_MaximumTotalBeautyOfTheGardens
     {
         public void PrintSolution();
     }

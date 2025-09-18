@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01937_MaximumNumberOfPointsWithCost : I_01937_MaximumNumberOfPointsWithCost
+    public class LC_00001937_MaximumNumberOfPointsWithCost : ILC_00001937_MaximumNumberOfPointsWithCost
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01937_MaximumNumberOfPointsWithCost()
+        public LC_00001937_MaximumNumberOfPointsWithCost()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01937_MaximumNumberOfPointsWithCost));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001937_MaximumNumberOfPointsWithCost));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01937_MaximumNumberOfPointsWithCost(IHost host)
+        public LC_00001937_MaximumNumberOfPointsWithCost(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01937_MaximumNumberOfPointsWithCost));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001937_MaximumNumberOfPointsWithCost));
         }
 
         public void PrintSolution()

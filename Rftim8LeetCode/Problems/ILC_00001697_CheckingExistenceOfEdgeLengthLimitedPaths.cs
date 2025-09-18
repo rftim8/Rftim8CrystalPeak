@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01697_CheckingExistenceOfEdgeLengthLimitedPaths
+    public interface ILC_00001697_CheckingExistenceOfEdgeLengthLimitedPaths
     {
         public void PrintSolution();
     }

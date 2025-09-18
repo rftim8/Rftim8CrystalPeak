@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02751_RobotCollisions : I_02751_RobotCollisions
+    public class LC_00002751_RobotCollisions : ILC_00002751_RobotCollisions
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02751_RobotCollisions()
+        public LC_00002751_RobotCollisions()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02751_RobotCollisions));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002751_RobotCollisions));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02751_RobotCollisions(IHost host)
+        public LC_00002751_RobotCollisions(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02751_RobotCollisions));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002751_RobotCollisions));
         }
 
         public void PrintSolution()

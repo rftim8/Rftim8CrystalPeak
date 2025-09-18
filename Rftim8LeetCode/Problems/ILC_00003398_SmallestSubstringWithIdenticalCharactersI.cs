@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03398_SmallestSubstringWithIdenticalCharactersI
+    public interface ILC_00003398_SmallestSubstringWithIdenticalCharactersI
     {
         public void PrintSolution();
     }

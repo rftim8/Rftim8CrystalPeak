@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03594_MinimumTimeToTransportAllIndividuals
+    public interface ILC_00003594_MinimumTimeToTransportAllIndividuals
     {
         public void PrintSolution();
     }

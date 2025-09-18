@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01165_SingleRowKeyboard
+    public interface ILC_00001165_SingleRowKeyboard
     {
         public void PrintSolution();
     }

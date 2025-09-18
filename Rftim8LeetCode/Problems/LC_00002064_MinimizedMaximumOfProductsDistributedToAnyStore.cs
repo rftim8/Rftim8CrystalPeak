@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02064_MinimizedMaximumOfProductsDistributedToAnyStore : I_02064_MinimizedMaximumOfProductsDistributedToAnyStore
+    public class LC_00002064_MinimizedMaximumOfProductsDistributedToAnyStore : ILC_00002064_MinimizedMaximumOfProductsDistributedToAnyStore
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02064_MinimizedMaximumOfProductsDistributedToAnyStore()
+        public LC_00002064_MinimizedMaximumOfProductsDistributedToAnyStore()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02064_MinimizedMaximumOfProductsDistributedToAnyStore));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002064_MinimizedMaximumOfProductsDistributedToAnyStore));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02064_MinimizedMaximumOfProductsDistributedToAnyStore(IHost host)
+        public LC_00002064_MinimizedMaximumOfProductsDistributedToAnyStore(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02064_MinimizedMaximumOfProductsDistributedToAnyStore));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002064_MinimizedMaximumOfProductsDistributedToAnyStore));
         }
 
         public void PrintSolution()

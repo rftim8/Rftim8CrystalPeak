@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00183_CustomersWhoNeverOrder
+    public interface ILC_00000183_CustomersWhoNeverOrder
     {
         public void PrintSolution();
     }

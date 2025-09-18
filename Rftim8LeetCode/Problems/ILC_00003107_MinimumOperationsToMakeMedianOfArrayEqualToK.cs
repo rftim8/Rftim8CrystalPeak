@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03107_MinimumOperationsToMakeMedianOfArrayEqualToK
+    public interface ILC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK
     {
         public void PrintSolution();
     }

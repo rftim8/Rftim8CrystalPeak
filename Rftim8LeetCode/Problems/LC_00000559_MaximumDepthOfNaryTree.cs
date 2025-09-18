@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00559_MaximumDepthOfNaryTree : I_00559_MaximumDepthOfNaryTree
+    public class LC_00000559_MaximumDepthOfNaryTree : ILC_00000559_MaximumDepthOfNaryTree
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00559_MaximumDepthOfNaryTree()
+        public LC_00000559_MaximumDepthOfNaryTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00559_MaximumDepthOfNaryTree));
-            Input = [.. RftResource._00559_MaximumDepthOfNaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000559_MaximumDepthOfNaryTree));
+            Input = [.. RftResource.LC_00000559_MaximumDepthOfNaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00559_MaximumDepthOfNaryTree(IHost host)
+        public LC_00000559_MaximumDepthOfNaryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00559_MaximumDepthOfNaryTree));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000559_MaximumDepthOfNaryTree));
             DataCollector();
         }
 

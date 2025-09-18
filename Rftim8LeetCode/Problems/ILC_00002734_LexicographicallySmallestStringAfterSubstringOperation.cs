@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02734_LexicographicallySmallestStringAfterSubstringOperation
+    public interface ILC_00002734_LexicographicallySmallestStringAfterSubstringOperation
     {
         public void PrintSolution();
     }

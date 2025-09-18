@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01210_MinimumMovesToReachTargetWithRotations : I_01210_MinimumMovesToReachTargetWithRotations
+    public class LC_00001210_MinimumMovesToReachTargetWithRotations : ILC_00001210_MinimumMovesToReachTargetWithRotations
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01210_MinimumMovesToReachTargetWithRotations()
+        public LC_00001210_MinimumMovesToReachTargetWithRotations()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01210_MinimumMovesToReachTargetWithRotations));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001210_MinimumMovesToReachTargetWithRotations));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01210_MinimumMovesToReachTargetWithRotations(IHost host)
+        public LC_00001210_MinimumMovesToReachTargetWithRotations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01210_MinimumMovesToReachTargetWithRotations));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001210_MinimumMovesToReachTargetWithRotations));
         }
 
         public void PrintSolution()

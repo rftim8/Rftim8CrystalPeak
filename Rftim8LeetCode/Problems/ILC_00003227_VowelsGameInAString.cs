@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03227_VowelsGameInAString
+    public interface ILC_00003227_VowelsGameInAString
     {
         public void PrintSolution();
     }

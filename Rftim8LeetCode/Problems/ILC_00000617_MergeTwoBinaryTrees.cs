@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00617_MergeTwoBinaryTrees
+    public interface ILC_00000617_MergeTwoBinaryTrees
     {
         public void PrintSolution();
     }

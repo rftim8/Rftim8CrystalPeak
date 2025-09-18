@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03197_FindTheMinimumAreaToCoverAllOnesII : I_03197_FindTheMinimumAreaToCoverAllOnesII
+    public class LC_00003197_FindTheMinimumAreaToCoverAllOnesII : ILC_00003197_FindTheMinimumAreaToCoverAllOnesII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03197_FindTheMinimumAreaToCoverAllOnesII()
+        public LC_00003197_FindTheMinimumAreaToCoverAllOnesII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03197_FindTheMinimumAreaToCoverAllOnesII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003197_FindTheMinimumAreaToCoverAllOnesII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03197_FindTheMinimumAreaToCoverAllOnesII(IHost host)
+        public LC_00003197_FindTheMinimumAreaToCoverAllOnesII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03197_FindTheMinimumAreaToCoverAllOnesII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003197_FindTheMinimumAreaToCoverAllOnesII));
         }
 
         public void PrintSolution()

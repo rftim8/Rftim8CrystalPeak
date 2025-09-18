@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01255_MaximumScoreWordsFormedByLetters
+    public interface ILC_00001255_MaximumScoreWordsFormedByLetters
     {
         public void PrintSolution();
     }

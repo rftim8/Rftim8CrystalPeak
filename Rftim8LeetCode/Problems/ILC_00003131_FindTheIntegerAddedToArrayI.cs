@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03131_FindTheIntegerAddedToArrayI
+    public interface ILC_00003131_FindTheIntegerAddedToArrayI
     {
         public void PrintSolution();
     }

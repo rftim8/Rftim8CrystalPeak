@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03525_FindXValueOfArrayII
+    public interface ILC_00003525_FindXValueOfArrayII
     {
         public void PrintSolution();
     }

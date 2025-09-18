@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03205_MaximumArrayHoppingScoreI
+    public interface ILC_00003205_MaximumArrayHoppingScoreI
     {
         public void PrintSolution();
     }

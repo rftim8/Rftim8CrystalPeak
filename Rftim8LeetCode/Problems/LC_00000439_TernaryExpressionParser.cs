@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00439_TernaryExpressionParser : I_00439_TernaryExpressionParser
+    public class LC_00000439_TernaryExpressionParser : ILC_00000439_TernaryExpressionParser
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00439_TernaryExpressionParser()
+        public LC_00000439_TernaryExpressionParser()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00439_TernaryExpressionParser));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000439_TernaryExpressionParser));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00439_TernaryExpressionParser(IHost host)
+        public LC_00000439_TernaryExpressionParser(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00439_TernaryExpressionParser));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000439_TernaryExpressionParser));
         }
 
         public void PrintSolution()

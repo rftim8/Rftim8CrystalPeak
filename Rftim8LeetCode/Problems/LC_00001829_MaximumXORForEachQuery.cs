@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01829_MaximumXORForEachQuery : I_01829_MaximumXORForEachQuery
+    public class LC_00001829_MaximumXORForEachQuery : ILC_00001829_MaximumXORForEachQuery
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01829_MaximumXORForEachQuery()
+        public LC_00001829_MaximumXORForEachQuery()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01829_MaximumXORForEachQuery));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001829_MaximumXORForEachQuery));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01829_MaximumXORForEachQuery(IHost host)
+        public LC_00001829_MaximumXORForEachQuery(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01829_MaximumXORForEachQuery));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001829_MaximumXORForEachQuery));
         }
 
         public void PrintSolution()

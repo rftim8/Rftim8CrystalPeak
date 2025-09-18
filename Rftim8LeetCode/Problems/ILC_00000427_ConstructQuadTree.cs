@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00427_ConstructQuadTree
+    public interface ILC_00000427_ConstructQuadTree
     {
         public void PrintSolution();
     }

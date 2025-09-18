@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00710_RandomPickWithBlacklist
+    public interface ILC_00000710_RandomPickWithBlacklist
     {
         public void PrintSolution();
     }

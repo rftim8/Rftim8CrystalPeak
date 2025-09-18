@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01768_MergeStringsAlternately
+    public interface ILC_00001768_MergeStringsAlternately
     {
         public void PrintSolution();
     }

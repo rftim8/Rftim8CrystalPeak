@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02503_MaximumNumberOfPointsFromGridQueries
+    public interface ILC_00002503_MaximumNumberOfPointsFromGridQueries
     {
         public void PrintSolution();
     }

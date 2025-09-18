@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02767_PartitionStringIntoMinimumBeautifulSubstrings
+    public interface ILC_00002767_PartitionStringIntoMinimumBeautifulSubstrings
     {
         public void PrintSolution();
     }

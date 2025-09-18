@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01086_HighFive
+    public interface ILC_00001086_HighFive
     {
         public void PrintSolution();
     }

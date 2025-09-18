@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02921_MaximumProfitableTripletsWithIncreasingPricesII
+    public interface ILC_00002921_MaximumProfitableTripletsWithIncreasingPricesII
     {
         public void PrintSolution();
     }

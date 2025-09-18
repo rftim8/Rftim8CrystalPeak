@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01246_PalindromeRemoval
+    public interface ILC_00001246_PalindromeRemoval
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01299_ReplaceElementsWithGreatestElementOnRightSide
+    public interface ILC_00001299_ReplaceElementsWithGreatestElementOnRightSide
     {
         public void PrintSolution();
     }

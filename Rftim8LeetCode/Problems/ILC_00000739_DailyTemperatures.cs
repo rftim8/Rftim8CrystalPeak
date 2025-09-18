@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00739_DailyTemperatures
+    public interface ILC_00000739_DailyTemperatures
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03520_MinimumThresholdForInversionPairsCount
+    public interface ILC_00003520_MinimumThresholdForInversionPairsCount
     {
         public void PrintSolution();
     }

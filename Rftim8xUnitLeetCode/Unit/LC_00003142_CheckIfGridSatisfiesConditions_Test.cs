@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03142_CheckIfGridSatisfiesConditions_Test
+    public class LC_00003142_CheckIfGridSatisfiesConditions_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03142_CheckIfGridSatisfiesConditions))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03142_CheckIfGridSatisfiesConditions))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03142_CheckIfGridSatisfiesConditions))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003142_CheckIfGridSatisfiesConditions))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003142_CheckIfGridSatisfiesConditions))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003142_CheckIfGridSatisfiesConditions))![1]);
 
-        public static TheoryData<List<string>, int> _03142_CheckIfGridSatisfiesConditionsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003142_CheckIfGridSatisfiesConditionsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03142_CheckIfGridSatisfiesConditionsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003142_CheckIfGridSatisfiesConditionsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03142_CheckIfGridSatisfiesConditionsPartOne_Data))]
+        [MemberData(nameof(LC_00003142_CheckIfGridSatisfiesConditionsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03142_CheckIfGridSatisfiesConditions.PartOne_Test(a0);
+            int actual = LC_00003142_CheckIfGridSatisfiesConditions.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03142_CheckIfGridSatisfiesConditionsPartTwo_Data))]
+        [MemberData(nameof(LC_00003142_CheckIfGridSatisfiesConditionsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03142_CheckIfGridSatisfiesConditions.PartTwo_Test(a0);
+            int actual = LC_00003142_CheckIfGridSatisfiesConditions.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

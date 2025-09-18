@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01206_DesignSkiplist
+    public interface ILC_00001206_DesignSkiplist
     {
         public void PrintSolution();
     }

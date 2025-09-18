@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02972_CountTheNumberOfIncremovableSubarraysII : I_02972_CountTheNumberOfIncremovableSubarraysII
+    public class LC_00002972_CountTheNumberOfIncremovableSubarraysII : ILC_00002972_CountTheNumberOfIncremovableSubarraysII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02972_CountTheNumberOfIncremovableSubarraysII()
+        public LC_00002972_CountTheNumberOfIncremovableSubarraysII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02972_CountTheNumberOfIncremovableSubarraysII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002972_CountTheNumberOfIncremovableSubarraysII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02972_CountTheNumberOfIncremovableSubarraysII(IHost host)
+        public LC_00002972_CountTheNumberOfIncremovableSubarraysII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02972_CountTheNumberOfIncremovableSubarraysII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002972_CountTheNumberOfIncremovableSubarraysII));
         }
 
         public void PrintSolution()

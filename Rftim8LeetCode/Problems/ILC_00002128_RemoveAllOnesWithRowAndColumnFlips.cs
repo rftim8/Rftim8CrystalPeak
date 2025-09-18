@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02128_RemoveAllOnesWithRowAndColumnFlips
+    public interface ILC_00002128_RemoveAllOnesWithRowAndColumnFlips
     {
         public void PrintSolution();
     }

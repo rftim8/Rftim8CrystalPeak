@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02136_EarliestPossibleDayOfFullBloom
+    public interface ILC_00002136_EarliestPossibleDayOfFullBloom
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03221_MaximumArrayHoppingScoreII : I_03221_MaximumArrayHoppingScoreII
+    public class LC_00003221_MaximumArrayHoppingScoreII : ILC_00003221_MaximumArrayHoppingScoreII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03221_MaximumArrayHoppingScoreII()
+        public LC_00003221_MaximumArrayHoppingScoreII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03221_MaximumArrayHoppingScoreII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003221_MaximumArrayHoppingScoreII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03221_MaximumArrayHoppingScoreII(IHost host)
+        public LC_00003221_MaximumArrayHoppingScoreII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03221_MaximumArrayHoppingScoreII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003221_MaximumArrayHoppingScoreII));
         }
 
         public void PrintSolution()

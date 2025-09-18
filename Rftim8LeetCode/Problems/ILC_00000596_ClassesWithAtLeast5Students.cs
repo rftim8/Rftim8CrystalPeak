@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00596_ClassesWithAtLeast5Students
+    public interface ILC_00000596_ClassesWithAtLeast5Students
     {
         public void PrintSolution();
     }

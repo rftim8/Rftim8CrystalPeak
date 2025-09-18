@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01487_MakingFileNamesUnique
+    public interface ILC_00001487_MakingFileNamesUnique
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03588_FindMaximumAreaOfATriangle
+    public interface ILC_00003588_FindMaximumAreaOfATriangle
     {
         public void PrintSolution();
     }

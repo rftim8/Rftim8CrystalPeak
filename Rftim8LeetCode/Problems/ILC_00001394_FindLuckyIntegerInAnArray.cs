@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01394_FindLuckyIntegerInAnArray
+    public interface ILC_00001394_FindLuckyIntegerInAnArray
     {
         public void PrintSolution();
     }

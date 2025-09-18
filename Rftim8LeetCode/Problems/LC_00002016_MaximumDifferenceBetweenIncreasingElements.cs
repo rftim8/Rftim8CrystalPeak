@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02016_MaximumDifferenceBetweenIncreasingElements : I_02016_MaximumDifferenceBetweenIncreasingElements
+    public class LC_00002016_MaximumDifferenceBetweenIncreasingElements : ILC_00002016_MaximumDifferenceBetweenIncreasingElements
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02016_MaximumDifferenceBetweenIncreasingElements()
+        public LC_00002016_MaximumDifferenceBetweenIncreasingElements()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02016_MaximumDifferenceBetweenIncreasingElements));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002016_MaximumDifferenceBetweenIncreasingElements));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02016_MaximumDifferenceBetweenIncreasingElements(IHost host)
+        public LC_00002016_MaximumDifferenceBetweenIncreasingElements(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02016_MaximumDifferenceBetweenIncreasingElements));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002016_MaximumDifferenceBetweenIncreasingElements));
         }
 
         public void PrintSolution()

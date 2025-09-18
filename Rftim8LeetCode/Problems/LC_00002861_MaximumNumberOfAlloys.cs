@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02861_MaximumNumberOfAlloys : I_02861_MaximumNumberOfAlloys
+    public class LC_00002861_MaximumNumberOfAlloys : ILC_00002861_MaximumNumberOfAlloys
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02861_MaximumNumberOfAlloys()
+        public LC_00002861_MaximumNumberOfAlloys()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02861_MaximumNumberOfAlloys));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002861_MaximumNumberOfAlloys));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02861_MaximumNumberOfAlloys(IHost host)
+        public LC_00002861_MaximumNumberOfAlloys(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02861_MaximumNumberOfAlloys));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002861_MaximumNumberOfAlloys));
         }
 
         public void PrintSolution()

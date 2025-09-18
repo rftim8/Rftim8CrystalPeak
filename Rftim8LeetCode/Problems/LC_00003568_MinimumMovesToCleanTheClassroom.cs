@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03568_MinimumMovesToCleanTheClassroom : I_03568_MinimumMovesToCleanTheClassroom
+    public class LC_00003568_MinimumMovesToCleanTheClassroom : ILC_00003568_MinimumMovesToCleanTheClassroom
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03568_MinimumMovesToCleanTheClassroom()
+        public LC_00003568_MinimumMovesToCleanTheClassroom()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03568_MinimumMovesToCleanTheClassroom));
-            Input = [.. RftResource._03568_MinimumMovesToCleanTheClassroom_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003568_MinimumMovesToCleanTheClassroom));
+            Input = [.. RftResource.LC_00003568_MinimumMovesToCleanTheClassroom_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03568_MinimumMovesToCleanTheClassroom(IHost host)
+        public LC_00003568_MinimumMovesToCleanTheClassroom(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03568_MinimumMovesToCleanTheClassroom));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003568_MinimumMovesToCleanTheClassroom));
             DataCollector();
         }
 

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00319_BulbSwitcher : I_00319_BulbSwitcher
+    public class LC_00000319_BulbSwitcher : ILC_00000319_BulbSwitcher
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00319_BulbSwitcher()
+        public LC_00000319_BulbSwitcher()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00319_BulbSwitcher));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000319_BulbSwitcher));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00319_BulbSwitcher(IHost host)
+        public LC_00000319_BulbSwitcher(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00319_BulbSwitcher));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000319_BulbSwitcher));
         }
 
         public void PrintSolution()

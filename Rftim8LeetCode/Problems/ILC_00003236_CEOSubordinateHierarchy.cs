@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03236_CEOSubordinateHierarchy
+    public interface ILC_00003236_CEOSubordinateHierarchy
     {
         public void PrintSolution();
     }

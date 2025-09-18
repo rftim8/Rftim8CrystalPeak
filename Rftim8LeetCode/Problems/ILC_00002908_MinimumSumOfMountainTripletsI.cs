@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02908_MinimumSumOfMountainTripletsI
+    public interface ILC_00002908_MinimumSumOfMountainTripletsI
     {
         public void PrintSolution();
     }

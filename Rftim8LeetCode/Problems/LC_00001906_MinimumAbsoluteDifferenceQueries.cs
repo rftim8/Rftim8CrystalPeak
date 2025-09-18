@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01906_MinimumAbsoluteDifferenceQueries : I_01906_MinimumAbsoluteDifferenceQueries
+    public class LC_00001906_MinimumAbsoluteDifferenceQueries : ILC_00001906_MinimumAbsoluteDifferenceQueries
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01906_MinimumAbsoluteDifferenceQueries()
+        public LC_00001906_MinimumAbsoluteDifferenceQueries()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01906_MinimumAbsoluteDifferenceQueries));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001906_MinimumAbsoluteDifferenceQueries));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01906_MinimumAbsoluteDifferenceQueries(IHost host)
+        public LC_00001906_MinimumAbsoluteDifferenceQueries(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01906_MinimumAbsoluteDifferenceQueries));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001906_MinimumAbsoluteDifferenceQueries));
         }
 
         public void PrintSolution()

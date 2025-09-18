@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01386_CinemaSeatAllocation
+    public interface ILC_00001386_CinemaSeatAllocation
     {
         public void PrintSolution();
     }

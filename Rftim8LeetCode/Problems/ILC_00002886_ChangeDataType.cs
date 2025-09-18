@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02886_ChangeDataType
+    public interface ILC_00002886_ChangeDataType
     {
         public void PrintSolution();
     }

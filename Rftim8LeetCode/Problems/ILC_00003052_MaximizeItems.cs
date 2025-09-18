@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03052_MaximizeItems
+    public interface ILC_00003052_MaximizeItems
     {
         public void PrintSolution();
     }

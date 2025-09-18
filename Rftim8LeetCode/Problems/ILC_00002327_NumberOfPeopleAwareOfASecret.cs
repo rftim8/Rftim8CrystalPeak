@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02327_NumberOfPeopleAwareOfASecret
+    public interface ILC_00002327_NumberOfPeopleAwareOfASecret
     {
         public void PrintSolution();
     }

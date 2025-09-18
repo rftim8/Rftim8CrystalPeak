@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02741_SpecialPermutations : I_02741_SpecialPermutations
+    public class LC_00002741_SpecialPermutations : ILC_00002741_SpecialPermutations
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02741_SpecialPermutations()
+        public LC_00002741_SpecialPermutations()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02741_SpecialPermutations));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002741_SpecialPermutations));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02741_SpecialPermutations(IHost host)
+        public LC_00002741_SpecialPermutations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02741_SpecialPermutations));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002741_SpecialPermutations));
         }
 
         public void PrintSolution()

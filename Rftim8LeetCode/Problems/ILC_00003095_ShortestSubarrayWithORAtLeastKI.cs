@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03095_ShortestSubarrayWithORAtLeastKI
+    public interface ILC_00003095_ShortestSubarrayWithORAtLeastKI
     {
         public void PrintSolution();
     }

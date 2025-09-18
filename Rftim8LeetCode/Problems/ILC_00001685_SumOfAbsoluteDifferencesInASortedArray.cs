@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01685_SumOfAbsoluteDifferencesInASortedArray
+    public interface ILC_00001685_SumOfAbsoluteDifferencesInASortedArray
     {
         public void PrintSolution();
     }

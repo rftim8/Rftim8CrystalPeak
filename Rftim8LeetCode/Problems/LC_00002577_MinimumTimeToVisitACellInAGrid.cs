@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02577_MinimumTimeToVisitACellInAGrid : I_02577_MinimumTimeToVisitACellInAGrid
+    public class LC_00002577_MinimumTimeToVisitACellInAGrid : ILC_00002577_MinimumTimeToVisitACellInAGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02577_MinimumTimeToVisitACellInAGrid()
+        public LC_00002577_MinimumTimeToVisitACellInAGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02577_MinimumTimeToVisitACellInAGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002577_MinimumTimeToVisitACellInAGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02577_MinimumTimeToVisitACellInAGrid(IHost host)
+        public LC_00002577_MinimumTimeToVisitACellInAGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02577_MinimumTimeToVisitACellInAGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002577_MinimumTimeToVisitACellInAGrid));
         }
 
         public void PrintSolution()

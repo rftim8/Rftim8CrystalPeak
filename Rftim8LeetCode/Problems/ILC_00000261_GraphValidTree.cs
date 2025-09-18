@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00261_GraphValidTree
+    public interface ILC_00000261_GraphValidTree
     {
         public void PrintSolution();
     }

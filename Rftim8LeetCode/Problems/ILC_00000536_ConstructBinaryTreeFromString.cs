@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00536_ConstructBinaryTreeFromString
+    public interface ILC_00000536_ConstructBinaryTreeFromString
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02419_LongestSubarrayWithMaximumBitwiseAND : I_02419_LongestSubarrayWithMaximumBitwiseAND
+    public class LC_00002419_LongestSubarrayWithMaximumBitwiseAND : ILC_00002419_LongestSubarrayWithMaximumBitwiseAND
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02419_LongestSubarrayWithMaximumBitwiseAND()
+        public LC_00002419_LongestSubarrayWithMaximumBitwiseAND()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02419_LongestSubarrayWithMaximumBitwiseAND));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002419_LongestSubarrayWithMaximumBitwiseAND));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02419_LongestSubarrayWithMaximumBitwiseAND(IHost host)
+        public LC_00002419_LongestSubarrayWithMaximumBitwiseAND(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02419_LongestSubarrayWithMaximumBitwiseAND));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002419_LongestSubarrayWithMaximumBitwiseAND));
         }
 
         public void PrintSolution()

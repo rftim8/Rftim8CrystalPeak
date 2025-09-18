@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02943_MaximizeAreaOfSquareHoleInGrid : I_02943_MaximizeAreaOfSquareHoleInGrid
+    public class LC_00002943_MaximizeAreaOfSquareHoleInGrid : ILC_00002943_MaximizeAreaOfSquareHoleInGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02943_MaximizeAreaOfSquareHoleInGrid()
+        public LC_00002943_MaximizeAreaOfSquareHoleInGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02943_MaximizeAreaOfSquareHoleInGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002943_MaximizeAreaOfSquareHoleInGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02943_MaximizeAreaOfSquareHoleInGrid(IHost host)
+        public LC_00002943_MaximizeAreaOfSquareHoleInGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02943_MaximizeAreaOfSquareHoleInGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002943_MaximizeAreaOfSquareHoleInGrid));
         }
 
         public void PrintSolution()

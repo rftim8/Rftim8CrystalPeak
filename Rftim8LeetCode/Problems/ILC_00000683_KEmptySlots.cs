@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00683_KEmptySlots
+    public interface ILC_00000683_KEmptySlots
     {
         public void PrintSolution();
     }

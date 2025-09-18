@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01803_CountPairsWithXORInARange
+    public interface ILC_00001803_CountPairsWithXORInARange
     {
         public void PrintSolution();
     }

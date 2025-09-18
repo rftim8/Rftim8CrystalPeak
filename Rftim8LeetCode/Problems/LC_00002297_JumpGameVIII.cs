@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02297_JumpGameVIII : I_02297_JumpGameVIII
+    public class LC_00002297_JumpGameVIII : ILC_00002297_JumpGameVIII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02297_JumpGameVIII()
+        public LC_00002297_JumpGameVIII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02297_JumpGameVIII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002297_JumpGameVIII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02297_JumpGameVIII(IHost host)
+        public LC_00002297_JumpGameVIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02297_JumpGameVIII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002297_JumpGameVIII));
         }
 
         public void PrintSolution()

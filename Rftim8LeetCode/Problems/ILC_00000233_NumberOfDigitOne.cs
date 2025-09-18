@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00233_NumberOfDigitOne
+    public interface ILC_00000233_NumberOfDigitOne
     {
         public void PrintSolution();
     }

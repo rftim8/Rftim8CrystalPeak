@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00627_SwapSalary
+    public interface ILC_00000627_SwapSalary
     {
         public void PrintSolution();
     }

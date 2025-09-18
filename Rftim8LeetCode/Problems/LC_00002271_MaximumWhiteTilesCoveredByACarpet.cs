@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02271_MaximumWhiteTilesCoveredByACarpet : I_02271_MaximumWhiteTilesCoveredByACarpet
+    public class LC_00002271_MaximumWhiteTilesCoveredByACarpet : ILC_00002271_MaximumWhiteTilesCoveredByACarpet
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02271_MaximumWhiteTilesCoveredByACarpet()
+        public LC_00002271_MaximumWhiteTilesCoveredByACarpet()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02271_MaximumWhiteTilesCoveredByACarpet));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002271_MaximumWhiteTilesCoveredByACarpet));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02271_MaximumWhiteTilesCoveredByACarpet(IHost host)
+        public LC_00002271_MaximumWhiteTilesCoveredByACarpet(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02271_MaximumWhiteTilesCoveredByACarpet));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002271_MaximumWhiteTilesCoveredByACarpet));
         }
 
         public void PrintSolution()

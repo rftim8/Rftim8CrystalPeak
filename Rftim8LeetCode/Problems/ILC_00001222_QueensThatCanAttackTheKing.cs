@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01222_QueensThatCanAttackTheKing
+    public interface ILC_00001222_QueensThatCanAttackTheKing
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01056_ConfusingNumber : I_01056_ConfusingNumber
+    public class LC_00001056_ConfusingNumber : ILC_00001056_ConfusingNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01056_ConfusingNumber()
+        public LC_00001056_ConfusingNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01056_ConfusingNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001056_ConfusingNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01056_ConfusingNumber(IHost host)
+        public LC_00001056_ConfusingNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01056_ConfusingNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001056_ConfusingNumber));
         }
 
         public void PrintSolution()

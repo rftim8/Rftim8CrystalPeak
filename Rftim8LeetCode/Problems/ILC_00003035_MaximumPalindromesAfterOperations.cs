@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03035_MaximumPalindromesAfterOperations
+    public interface ILC_00003035_MaximumPalindromesAfterOperations
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00787_CheapestFlightsWithinKStops
+    public interface ILC_00000787_CheapestFlightsWithinKStops
     {
         public void PrintSolution();
     }

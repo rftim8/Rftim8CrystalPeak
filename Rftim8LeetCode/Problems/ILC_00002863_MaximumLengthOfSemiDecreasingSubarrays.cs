@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02863_MaximumLengthOfSemiDecreasingSubarrays
+    public interface ILC_00002863_MaximumLengthOfSemiDecreasingSubarrays
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01867_OrdersWithMaximumQuantityAboveAverage
+    public interface ILC_00001867_OrdersWithMaximumQuantityAboveAverage
     {
         public void PrintSolution();
     }

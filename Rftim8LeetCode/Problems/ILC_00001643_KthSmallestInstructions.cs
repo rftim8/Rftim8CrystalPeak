@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01643_KthSmallestInstructions
+    public interface ILC_00001643_KthSmallestInstructions
     {
         public void PrintSolution();
     }

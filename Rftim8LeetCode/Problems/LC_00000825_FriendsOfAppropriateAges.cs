@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00825_FriendsOfAppropriateAges : I_00825_FriendsOfAppropriateAges
+    public class LC_00000825_FriendsOfAppropriateAges : ILC_00000825_FriendsOfAppropriateAges
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00825_FriendsOfAppropriateAges()
+        public LC_00000825_FriendsOfAppropriateAges()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00825_FriendsOfAppropriateAges));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000825_FriendsOfAppropriateAges));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00825_FriendsOfAppropriateAges(IHost host)
+        public LC_00000825_FriendsOfAppropriateAges(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00825_FriendsOfAppropriateAges));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000825_FriendsOfAppropriateAges));
         }
 
         public void PrintSolution()

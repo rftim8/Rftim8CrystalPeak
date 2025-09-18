@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01612_CheckIfTwoExpressionTreesAreEquivalent
+    public interface ILC_00001612_CheckIfTwoExpressionTreesAreEquivalent
     {
         public void PrintSolution();
     }

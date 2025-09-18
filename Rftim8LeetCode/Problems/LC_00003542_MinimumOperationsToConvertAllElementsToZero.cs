@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03542_MinimumOperationsToConvertAllElementsToZero : I_03542_MinimumOperationsToConvertAllElementsToZero
+    public class LC_00003542_MinimumOperationsToConvertAllElementsToZero : ILC_00003542_MinimumOperationsToConvertAllElementsToZero
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03542_MinimumOperationsToConvertAllElementsToZero()
+        public LC_00003542_MinimumOperationsToConvertAllElementsToZero()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03542_MinimumOperationsToConvertAllElementsToZero));
-            Input = [.. RftResource._03542_MinimumOperationsToConvertAllElementsToZero_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003542_MinimumOperationsToConvertAllElementsToZero));
+            Input = [.. RftResource.LC_00003542_MinimumOperationsToConvertAllElementsToZero_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03542_MinimumOperationsToConvertAllElementsToZero(IHost host)
+        public LC_00003542_MinimumOperationsToConvertAllElementsToZero(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03542_MinimumOperationsToConvertAllElementsToZero));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003542_MinimumOperationsToConvertAllElementsToZero));
             DataCollector();
         }
 

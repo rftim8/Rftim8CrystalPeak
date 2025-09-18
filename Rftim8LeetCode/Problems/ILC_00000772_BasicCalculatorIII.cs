@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00772_BasicCalculatorIII
+    public interface ILC_00000772_BasicCalculatorIII
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02857_CountPairsOfPointsWithDistanceK
+    public interface ILC_00002857_CountPairsOfPointsWithDistanceK
     {
         public void PrintSolution();
     }

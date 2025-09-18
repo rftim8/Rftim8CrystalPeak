@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03264_FinalArrayStateAfterKMultiplicationOperationsI
+    public interface ILC_00003264_FinalArrayStateAfterKMultiplicationOperationsI
     {
         public void PrintSolution();
     }

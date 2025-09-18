@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01175_PrimeArrangements
+    public interface ILC_00001175_PrimeArrangements
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03268_FindOverlappingShiftsII : I_03268_FindOverlappingShiftsII
+    public class LC_00003268_FindOverlappingShiftsII : ILC_00003268_FindOverlappingShiftsII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03268_FindOverlappingShiftsII()
+        public LC_00003268_FindOverlappingShiftsII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03268_FindOverlappingShiftsII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003268_FindOverlappingShiftsII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03268_FindOverlappingShiftsII(IHost host)
+        public LC_00003268_FindOverlappingShiftsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03268_FindOverlappingShiftsII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003268_FindOverlappingShiftsII));
         }
 
         public void PrintSolution()

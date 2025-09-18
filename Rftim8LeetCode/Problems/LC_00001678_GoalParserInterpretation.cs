@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01678_GoalParserInterpretation : I_01678_GoalParserInterpretation
+    public class LC_00001678_GoalParserInterpretation : ILC_00001678_GoalParserInterpretation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01678_GoalParserInterpretation()
+        public LC_00001678_GoalParserInterpretation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01678_GoalParserInterpretation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001678_GoalParserInterpretation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01678_GoalParserInterpretation(IHost host)
+        public LC_00001678_GoalParserInterpretation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01678_GoalParserInterpretation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001678_GoalParserInterpretation));
         }
 
         public void PrintSolution()

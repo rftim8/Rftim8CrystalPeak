@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03195_FindTheMinimumAreaToCoverAllOnesI
+    public interface ILC_00003195_FindTheMinimumAreaToCoverAllOnesI
     {
         public void PrintSolution();
     }

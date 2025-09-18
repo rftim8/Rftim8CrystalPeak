@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00391_PerfectRectangle
+    public interface ILC_00000391_PerfectRectangle
     {
         public void PrintSolution();
     }

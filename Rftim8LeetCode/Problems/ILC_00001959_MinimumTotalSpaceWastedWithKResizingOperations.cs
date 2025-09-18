@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01959_MinimumTotalSpaceWastedWithKResizingOperations
+    public interface ILC_00001959_MinimumTotalSpaceWastedWithKResizingOperations
     {
         public void PrintSolution();
     }

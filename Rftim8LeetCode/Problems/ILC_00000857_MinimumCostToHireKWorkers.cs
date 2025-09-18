@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00857_MinimumCostToHireKWorkers
+    public interface ILC_00000857_MinimumCostToHireKWorkers
     {
         public void PrintSolution();
     }

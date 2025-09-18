@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03356_ZeroArrayTransformationII : I_03356_ZeroArrayTransformationII
+    public class LC_00003356_ZeroArrayTransformationII : ILC_00003356_ZeroArrayTransformationII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03356_ZeroArrayTransformationII()
+        public LC_00003356_ZeroArrayTransformationII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03356_ZeroArrayTransformationII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003356_ZeroArrayTransformationII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03356_ZeroArrayTransformationII(IHost host)
+        public LC_00003356_ZeroArrayTransformationII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03356_ZeroArrayTransformationII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003356_ZeroArrayTransformationII));
         }
 
         public void PrintSolution()

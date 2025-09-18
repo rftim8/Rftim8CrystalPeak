@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00356_LineReflection
+    public interface ILC_00000356_LineReflection
     {
         public void PrintSolution();
     }

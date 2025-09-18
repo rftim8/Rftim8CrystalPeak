@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03578_CountPartitionsWithMaxMinDifferenceAtMostK : I_03578_CountPartitionsWithMaxMinDifferenceAtMostK
+    public class LC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK : ILC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03578_CountPartitionsWithMaxMinDifferenceAtMostK()
+        public LC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03578_CountPartitionsWithMaxMinDifferenceAtMostK));
-            Input = [.. RftResource._03578_CountPartitionsWithMaxMinDifferenceAtMostK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK));
+            Input = [.. RftResource.LC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03578_CountPartitionsWithMaxMinDifferenceAtMostK(IHost host)
+        public LC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03578_CountPartitionsWithMaxMinDifferenceAtMostK));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003578_CountPartitionsWithMaxMinDifferenceAtMostK));
             DataCollector();
         }
 

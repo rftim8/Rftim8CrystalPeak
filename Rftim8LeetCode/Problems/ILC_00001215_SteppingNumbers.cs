@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01215_SteppingNumbers
+    public interface ILC_00001215_SteppingNumbers
     {
         public void PrintSolution();
     }

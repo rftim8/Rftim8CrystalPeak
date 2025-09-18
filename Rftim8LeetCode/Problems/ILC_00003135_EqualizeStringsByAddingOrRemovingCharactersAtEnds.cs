@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03135_EqualizeStringsByAddingOrRemovingCharactersAtEnds
+    public interface ILC_00003135_EqualizeStringsByAddingOrRemovingCharactersAtEnds
     {
         public void PrintSolution();
     }

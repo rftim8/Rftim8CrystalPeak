@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02319_CheckIfMatrixIsXMatrix : I_02319_CheckIfMatrixIsXMatrix
+    public class LC_00002319_CheckIfMatrixIsXMatrix : ILC_00002319_CheckIfMatrixIsXMatrix
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02319_CheckIfMatrixIsXMatrix()
+        public LC_00002319_CheckIfMatrixIsXMatrix()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02319_CheckIfMatrixIsXMatrix));
-            Input = [.. RftResource._02319_CheckIfMatrixIsXMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002319_CheckIfMatrixIsXMatrix));
+            Input = [.. RftResource.LC_00002319_CheckIfMatrixIsXMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02319_CheckIfMatrixIsXMatrix(IHost host)
+        public LC_00002319_CheckIfMatrixIsXMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02319_CheckIfMatrixIsXMatrix));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002319_CheckIfMatrixIsXMatrix));
             DataCollector();
         }
 

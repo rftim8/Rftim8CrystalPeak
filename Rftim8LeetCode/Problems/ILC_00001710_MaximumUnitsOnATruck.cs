@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01710_MaximumUnitsOnATruck
+    public interface ILC_00001710_MaximumUnitsOnATruck
     {
         public void PrintSolution();
     }

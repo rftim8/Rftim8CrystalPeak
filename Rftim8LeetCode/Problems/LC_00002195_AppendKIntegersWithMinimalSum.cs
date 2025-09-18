@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02195_AppendKIntegersWithMinimalSum : I_02195_AppendKIntegersWithMinimalSum
+    public class LC_00002195_AppendKIntegersWithMinimalSum : ILC_00002195_AppendKIntegersWithMinimalSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02195_AppendKIntegersWithMinimalSum()
+        public LC_00002195_AppendKIntegersWithMinimalSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02195_AppendKIntegersWithMinimalSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002195_AppendKIntegersWithMinimalSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02195_AppendKIntegersWithMinimalSum(IHost host)
+        public LC_00002195_AppendKIntegersWithMinimalSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02195_AppendKIntegersWithMinimalSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002195_AppendKIntegersWithMinimalSum));
         }
 
         public void PrintSolution()

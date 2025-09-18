@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00809_ExpressiveWords
+    public interface ILC_00000809_ExpressiveWords
     {
         public void PrintSolution();
     }

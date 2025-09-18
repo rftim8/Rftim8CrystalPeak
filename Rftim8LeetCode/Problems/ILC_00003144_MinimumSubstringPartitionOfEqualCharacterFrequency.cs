@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03144_MinimumSubstringPartitionOfEqualCharacterFrequency
+    public interface ILC_00003144_MinimumSubstringPartitionOfEqualCharacterFrequency
     {
         public void PrintSolution();
     }

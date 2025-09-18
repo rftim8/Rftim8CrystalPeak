@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01488_AvoidFloodInTheCity
+    public interface ILC_00001488_AvoidFloodInTheCity
     {
         public void PrintSolution();
     }

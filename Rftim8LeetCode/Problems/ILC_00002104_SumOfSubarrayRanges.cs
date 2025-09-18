@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02104_SumOfSubarrayRanges
+    public interface ILC_00002104_SumOfSubarrayRanges
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03595_OnceTwice
+    public interface ILC_00003595_OnceTwice
     {
         public void PrintSolution();
     }

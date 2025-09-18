@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01351_CountNegativeNumbersInASortedMatrix
+    public interface ILC_00001351_CountNegativeNumbersInASortedMatrix
     {
         public void PrintSolution();
     }

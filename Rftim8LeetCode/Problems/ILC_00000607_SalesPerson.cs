@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00607_SalesPerson
+    public interface ILC_00000607_SalesPerson
     {
         public void PrintSolution();
     }

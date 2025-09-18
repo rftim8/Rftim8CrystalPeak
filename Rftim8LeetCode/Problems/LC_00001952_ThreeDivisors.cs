@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01952_ThreeDivisors : I_01952_ThreeDivisors
+    public class LC_00001952_ThreeDivisors : ILC_00001952_ThreeDivisors
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01952_ThreeDivisors()
+        public LC_00001952_ThreeDivisors()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01952_ThreeDivisors));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001952_ThreeDivisors));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01952_ThreeDivisors(IHost host)
+        public LC_00001952_ThreeDivisors(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01952_ThreeDivisors));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001952_ThreeDivisors));
         }
 
         public void PrintSolution()

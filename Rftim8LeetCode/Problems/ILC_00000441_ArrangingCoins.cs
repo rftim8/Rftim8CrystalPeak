@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00441_ArrangingCoins
+    public interface ILC_00000441_ArrangingCoins
     {
         public void PrintSolution();
     }

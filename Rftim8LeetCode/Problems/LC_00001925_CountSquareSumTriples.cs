@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01925_CountSquareSumTriples : I_01925_CountSquareSumTriples
+    public class LC_00001925_CountSquareSumTriples : ILC_00001925_CountSquareSumTriples
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01925_CountSquareSumTriples()
+        public LC_00001925_CountSquareSumTriples()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01925_CountSquareSumTriples));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001925_CountSquareSumTriples));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01925_CountSquareSumTriples(IHost host)
+        public LC_00001925_CountSquareSumTriples(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01925_CountSquareSumTriples));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001925_CountSquareSumTriples));
         }
 
         public void PrintSolution()

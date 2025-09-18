@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01399_CountLargestGroup
+    public interface ILC_00001399_CountLargestGroup
     {
         public void PrintSolution();
     }

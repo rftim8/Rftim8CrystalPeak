@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02017_GridGame
+    public interface ILC_00002017_GridGame
     {
         public void PrintSolution();
     }

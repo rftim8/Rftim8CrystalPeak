@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01481_LeastNumberOfUniqueIntegersAfterKRemovals
+    public interface ILC_00001481_LeastNumberOfUniqueIntegersAfterKRemovals
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01593_SplitAStringIntoTheMaxNumberOfUniqueSubstrings
+    public interface ILC_00001593_SplitAStringIntoTheMaxNumberOfUniqueSubstrings
     {
         public void PrintSolution();
     }

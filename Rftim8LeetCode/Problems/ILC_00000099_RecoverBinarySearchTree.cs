@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00099_RecoverBinarySearchTree
+    public interface ILC_00000099_RecoverBinarySearchTree
     {
         public void PrintSolution();
     }

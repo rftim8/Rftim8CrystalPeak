@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01496_PathCrossing
+    public interface ILC_00001496_PathCrossing
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00848_ShiftingLetters
+    public interface ILC_00000848_ShiftingLetters
     {
         public void PrintSolution();
     }

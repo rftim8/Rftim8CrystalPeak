@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00771_JewelsAndStones
+    public interface ILC_00000771_JewelsAndStones
     {
         public void PrintSolution();
     }

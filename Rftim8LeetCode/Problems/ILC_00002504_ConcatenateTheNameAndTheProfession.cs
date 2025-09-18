@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02504_ConcatenateTheNameAndTheProfession
+    public interface ILC_00002504_ConcatenateTheNameAndTheProfession
     {
         public void PrintSolution();
     }

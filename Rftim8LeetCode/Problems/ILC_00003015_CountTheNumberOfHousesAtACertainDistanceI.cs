@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03015_CountTheNumberOfHousesAtACertainDistanceI
+    public interface ILC_00003015_CountTheNumberOfHousesAtACertainDistanceI
     {
         public void PrintSolution();
     }

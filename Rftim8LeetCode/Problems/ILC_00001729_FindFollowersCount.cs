@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01729_FindFollowersCount
+    public interface ILC_00001729_FindFollowersCount
     {
         public void PrintSolution();
     }

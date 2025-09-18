@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00950_RevealCardsInIncreasingOrder
+    public interface ILC_00000950_RevealCardsInIncreasingOrder
     {
         public void PrintSolution();
     }

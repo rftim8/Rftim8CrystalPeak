@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03241_TimeTakenToMarkAllNodes
+    public interface ILC_00003241_TimeTakenToMarkAllNodes
     {
         public void PrintSolution();
     }

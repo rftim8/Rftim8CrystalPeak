@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01035_UncrossedLines
+    public interface ILC_00001035_UncrossedLines
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02157_GroupsOfStrings : I_02157_GroupsOfStrings
+    public class LC_00002157_GroupsOfStrings : ILC_00002157_GroupsOfStrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02157_GroupsOfStrings()
+        public LC_00002157_GroupsOfStrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02157_GroupsOfStrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002157_GroupsOfStrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02157_GroupsOfStrings(IHost host)
+        public LC_00002157_GroupsOfStrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02157_GroupsOfStrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002157_GroupsOfStrings));
         }
 
         public void PrintSolution()

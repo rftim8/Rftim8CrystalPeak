@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03541_FindMostFrequentVowelAndConsonant
+    public interface ILC_00003541_FindMostFrequentVowelAndConsonant
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01523_CountOddNumbersInAnIntervalRange
+    public interface ILC_00001523_CountOddNumbersInAnIntervalRange
     {
         public void PrintSolution();
     }

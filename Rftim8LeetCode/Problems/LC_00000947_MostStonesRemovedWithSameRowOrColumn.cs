@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00947_MostStonesRemovedWithSameRowOrColumn : I_00947_MostStonesRemovedWithSameRowOrColumn
+    public class LC_00000947_MostStonesRemovedWithSameRowOrColumn : ILC_00000947_MostStonesRemovedWithSameRowOrColumn
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00947_MostStonesRemovedWithSameRowOrColumn()
+        public LC_00000947_MostStonesRemovedWithSameRowOrColumn()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00947_MostStonesRemovedWithSameRowOrColumn));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000947_MostStonesRemovedWithSameRowOrColumn));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00947_MostStonesRemovedWithSameRowOrColumn(IHost host)
+        public LC_00000947_MostStonesRemovedWithSameRowOrColumn(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00947_MostStonesRemovedWithSameRowOrColumn));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000947_MostStonesRemovedWithSameRowOrColumn));
         }
 
         public void PrintSolution()

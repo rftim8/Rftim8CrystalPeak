@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03563_LexicographicallySmallestStringAfterAdjacentRemovals
+    public interface ILC_00003563_LexicographicallySmallestStringAfterAdjacentRemovals
     {
         public void PrintSolution();
     }

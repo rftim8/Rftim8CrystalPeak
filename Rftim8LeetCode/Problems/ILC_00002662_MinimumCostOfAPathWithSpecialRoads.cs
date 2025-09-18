@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02662_MinimumCostOfAPathWithSpecialRoads
+    public interface ILC_00002662_MinimumCostOfAPathWithSpecialRoads
     {
         public void PrintSolution();
     }

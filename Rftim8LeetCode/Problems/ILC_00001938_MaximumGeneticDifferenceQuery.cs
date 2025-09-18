@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01938_MaximumGeneticDifferenceQuery
+    public interface ILC_00001938_MaximumGeneticDifferenceQuery
     {
         public void PrintSolution();
     }

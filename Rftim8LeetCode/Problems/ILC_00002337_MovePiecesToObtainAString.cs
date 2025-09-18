@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02337_MovePiecesToObtainAString
+    public interface ILC_00002337_MovePiecesToObtainAString
     {
         public void PrintSolution();
     }

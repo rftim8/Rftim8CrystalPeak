@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01571_WarehouseManager
+    public interface ILC_00001571_WarehouseManager
     {
         public void PrintSolution();
     }

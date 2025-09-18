@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01131_MaximumOfAbsoluteValueExpression
+    public interface ILC_00001131_MaximumOfAbsoluteValueExpression
     {
         public void PrintSolution();
     }

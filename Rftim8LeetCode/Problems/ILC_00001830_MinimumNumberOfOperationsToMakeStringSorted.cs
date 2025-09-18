@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01830_MinimumNumberOfOperationsToMakeStringSorted
+    public interface ILC_00001830_MinimumNumberOfOperationsToMakeStringSorted
     {
         public void PrintSolution();
     }

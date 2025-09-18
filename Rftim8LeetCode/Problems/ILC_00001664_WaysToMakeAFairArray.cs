@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01664_WaysToMakeAFairArray
+    public interface ILC_00001664_WaysToMakeAFairArray
     {
         public void PrintSolution();
     }

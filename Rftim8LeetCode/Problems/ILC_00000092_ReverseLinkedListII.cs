@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00092_ReverseLinkedListII
+    public interface ILC_00000092_ReverseLinkedListII
     {
         public void PrintSolution();
     }

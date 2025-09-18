@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00167_TwoSumIIInputArrayIsSorted
+    public interface ILC_00000167_TwoSumIIInputArrayIsSorted
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01415_TheKthLexicographicalStringOfAllHappyStringsOfLengthN
+    public interface ILC_00001415_TheKthLexicographicalStringOfAllHappyStringsOfLengthN
     {
         public void PrintSolution();
     }

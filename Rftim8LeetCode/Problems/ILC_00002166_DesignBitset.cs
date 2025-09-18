@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02166_DesignBitset
+    public interface ILC_00002166_DesignBitset
     {
         public void PrintSolution();
     }

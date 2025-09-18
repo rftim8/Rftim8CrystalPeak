@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00531_LonelyPixelI
+    public interface ILC_00000531_LonelyPixelI
     {
         public void PrintSolution();
     }

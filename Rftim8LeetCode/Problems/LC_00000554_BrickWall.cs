@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00554_BrickWall : I_00554_BrickWall
+    public class LC_00000554_BrickWall : ILC_00000554_BrickWall
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00554_BrickWall()
+        public LC_00000554_BrickWall()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00554_BrickWall));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000554_BrickWall));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00554_BrickWall(IHost host)
+        public LC_00000554_BrickWall(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00554_BrickWall));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000554_BrickWall));
         }
 
         public void PrintSolution()

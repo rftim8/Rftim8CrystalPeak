@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02751_RobotCollisions
+    public interface ILC_00002751_RobotCollisions
     {
         public void PrintSolution();
     }

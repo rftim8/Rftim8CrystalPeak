@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01752_CheckIfArrayIsSortedAndRotated
+    public interface ILC_00001752_CheckIfArrayIsSortedAndRotated
     {
         public void PrintSolution();
     }

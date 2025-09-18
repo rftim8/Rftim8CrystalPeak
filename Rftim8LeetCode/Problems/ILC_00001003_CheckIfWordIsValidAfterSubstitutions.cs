@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01003_CheckIfWordIsValidAfterSubstitutions
+    public interface ILC_00001003_CheckIfWordIsValidAfterSubstitutions
     {
         public void PrintSolution();
     }

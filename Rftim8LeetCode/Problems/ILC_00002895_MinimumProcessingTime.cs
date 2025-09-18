@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02895_MinimumProcessingTime
+    public interface ILC_00002895_MinimumProcessingTime
     {
         public void PrintSolution();
     }

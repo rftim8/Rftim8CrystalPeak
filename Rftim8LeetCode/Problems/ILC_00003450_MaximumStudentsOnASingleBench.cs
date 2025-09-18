@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03450_MaximumStudentsOnASingleBench
+    public interface ILC_00003450_MaximumStudentsOnASingleBench
     {
         public void PrintSolution();
     }

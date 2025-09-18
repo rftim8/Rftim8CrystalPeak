@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02290_MinimumObstacleRemovalToReachCorner
+    public interface ILC_00002290_MinimumObstacleRemovalToReachCorner
     {
         public void PrintSolution();
     }

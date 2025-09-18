@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01631_PathWithMinimumEffort
+    public interface ILC_00001631_PathWithMinimumEffort
     {
         public void PrintSolution();
     }

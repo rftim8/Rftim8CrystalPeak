@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01311_GetWatchedVideosByYourFriends
+    public interface ILC_00001311_GetWatchedVideosByYourFriends
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00072_EditDistance
+    public interface ILC_00000072_EditDistance
     {
         public void PrintSolution();
     }

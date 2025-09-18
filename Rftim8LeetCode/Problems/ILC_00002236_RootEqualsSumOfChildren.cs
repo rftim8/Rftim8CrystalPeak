@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02236_RootEqualsSumOfChildren
+    public interface ILC_00002236_RootEqualsSumOfChildren
     {
         public void PrintSolution();
     }

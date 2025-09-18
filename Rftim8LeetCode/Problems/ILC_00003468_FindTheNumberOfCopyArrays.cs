@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03468_FindTheNumberOfCopyArrays
+    public interface ILC_00003468_FindTheNumberOfCopyArrays
     {
         public void PrintSolution();
     }

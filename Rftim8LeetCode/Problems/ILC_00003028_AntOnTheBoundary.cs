@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03028_AntOnTheBoundary
+    public interface ILC_00003028_AntOnTheBoundary
     {
         public void PrintSolution();
     }

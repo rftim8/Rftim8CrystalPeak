@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00295_FindMedianFromDataStream
+    public interface ILC_00000295_FindMedianFromDataStream
     {
         public void PrintSolution();
     }

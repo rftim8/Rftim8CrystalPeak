@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00186_ReverseWordsInAStringII : I_00186_ReverseWordsInAStringII
+    public class LC_00000186_ReverseWordsInAStringII : ILC_00000186_ReverseWordsInAStringII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00186_ReverseWordsInAStringII()
+        public LC_00000186_ReverseWordsInAStringII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00186_ReverseWordsInAStringII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000186_ReverseWordsInAStringII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00186_ReverseWordsInAStringII(IHost host)
+        public LC_00000186_ReverseWordsInAStringII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00186_ReverseWordsInAStringII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000186_ReverseWordsInAStringII));
         }
 
         public void PrintSolution()

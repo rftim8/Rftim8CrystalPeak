@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01983_WidestPairOfIndicesWithEqualRangeSum
+    public interface ILC_00001983_WidestPairOfIndicesWithEqualRangeSum
     {
         public void PrintSolution();
     }

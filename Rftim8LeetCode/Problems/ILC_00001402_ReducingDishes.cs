@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01402_ReducingDishes
+    public interface ILC_00001402_ReducingDishes
     {
         public void PrintSolution();
     }

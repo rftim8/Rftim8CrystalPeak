@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03263_ConvertDoublyLinkedListToArrayI
+    public interface ILC_00003263_ConvertDoublyLinkedListToArrayI
     {
         public void PrintSolution();
     }

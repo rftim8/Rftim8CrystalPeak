@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02280_MinimumLinesToRepresentALineChart : I_02280_MinimumLinesToRepresentALineChart
+    public class LC_00002280_MinimumLinesToRepresentALineChart : ILC_00002280_MinimumLinesToRepresentALineChart
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02280_MinimumLinesToRepresentALineChart()
+        public LC_00002280_MinimumLinesToRepresentALineChart()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02280_MinimumLinesToRepresentALineChart));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002280_MinimumLinesToRepresentALineChart));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02280_MinimumLinesToRepresentALineChart(IHost host)
+        public LC_00002280_MinimumLinesToRepresentALineChart(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02280_MinimumLinesToRepresentALineChart));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002280_MinimumLinesToRepresentALineChart));
         }
 
         public void PrintSolution()

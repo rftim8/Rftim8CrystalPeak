@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01137_NthTribonacciNumber
+    public interface ILC_00001137_NthTribonacciNumber
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00742_ClosestLeafInABinaryTree
+    public interface ILC_00000742_ClosestLeafInABinaryTree
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01674_MinimumMovesToMakeArrayComplementary
+    public interface ILC_00001674_MinimumMovesToMakeArrayComplementary
     {
         public void PrintSolution();
     }

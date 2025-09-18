@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02918_MinimumEqualSumOfTwoArraysAfterReplacingZeros_Test
+    public class LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZeros_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02918_MinimumEqualSumOfTwoArraysAfterReplacingZeros))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02918_MinimumEqualSumOfTwoArraysAfterReplacingZeros))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02918_MinimumEqualSumOfTwoArraysAfterReplacingZeros))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZeros))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZeros))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZeros))![1]);
 
-        public static TheoryData<List<string>, int> _02918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartOne_Data))]
+        [MemberData(nameof(LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02918_MinimumEqualSumOfTwoArraysAfterReplacingZeros.PartOne_Test(a0);
+            int actual = LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZeros.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartTwo_Data))]
+        [MemberData(nameof(LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZerosPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02918_MinimumEqualSumOfTwoArraysAfterReplacingZeros.PartTwo_Test(a0);
+            int actual = LC_00002918_MinimumEqualSumOfTwoArraysAfterReplacingZeros.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00843_GuessTheWord
+    public interface ILC_00000843_GuessTheWord
     {
         public void PrintSolution();
     }

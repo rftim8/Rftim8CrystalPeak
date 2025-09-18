@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02305_FairDistributionOfCookies : I_02305_FairDistributionOfCookies
+    public class LC_00002305_FairDistributionOfCookies : ILC_00002305_FairDistributionOfCookies
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02305_FairDistributionOfCookies()
+        public LC_00002305_FairDistributionOfCookies()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02305_FairDistributionOfCookies));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002305_FairDistributionOfCookies));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02305_FairDistributionOfCookies(IHost host)
+        public LC_00002305_FairDistributionOfCookies(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02305_FairDistributionOfCookies));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002305_FairDistributionOfCookies));
         }
 
         public void PrintSolution()

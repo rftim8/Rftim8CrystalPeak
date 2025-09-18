@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02074_ReverseNodesInEvenLengthGroups
+    public interface ILC_00002074_ReverseNodesInEvenLengthGroups
     {
         public void PrintSolution();
     }

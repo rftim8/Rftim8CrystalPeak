@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00675_CutOffTreesForGolfEvent : I_00675_CutOffTreesForGolfEvent
+    public class LC_00000675_CutOffTreesForGolfEvent : ILC_00000675_CutOffTreesForGolfEvent
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00675_CutOffTreesForGolfEvent()
+        public LC_00000675_CutOffTreesForGolfEvent()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00675_CutOffTreesForGolfEvent));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000675_CutOffTreesForGolfEvent));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00675_CutOffTreesForGolfEvent(IHost host)
+        public LC_00000675_CutOffTreesForGolfEvent(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00675_CutOffTreesForGolfEvent));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000675_CutOffTreesForGolfEvent));
         }
 
         public void PrintSolution()

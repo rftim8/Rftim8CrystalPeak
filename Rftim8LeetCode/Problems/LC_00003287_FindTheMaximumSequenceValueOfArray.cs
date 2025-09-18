@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03287_FindTheMaximumSequenceValueOfArray : I_03287_FindTheMaximumSequenceValueOfArray
+    public class LC_00003287_FindTheMaximumSequenceValueOfArray : ILC_00003287_FindTheMaximumSequenceValueOfArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03287_FindTheMaximumSequenceValueOfArray()
+        public LC_00003287_FindTheMaximumSequenceValueOfArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03287_FindTheMaximumSequenceValueOfArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003287_FindTheMaximumSequenceValueOfArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03287_FindTheMaximumSequenceValueOfArray(IHost host)
+        public LC_00003287_FindTheMaximumSequenceValueOfArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03287_FindTheMaximumSequenceValueOfArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003287_FindTheMaximumSequenceValueOfArray));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00239_SlidingWindowMaximum
+    public interface ILC_00000239_SlidingWindowMaximum
     {
         public void PrintSolution();
     }

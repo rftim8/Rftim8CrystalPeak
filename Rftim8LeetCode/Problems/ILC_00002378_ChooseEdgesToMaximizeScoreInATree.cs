@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02378_ChooseEdgesToMaximizeScoreInATree
+    public interface ILC_00002378_ChooseEdgesToMaximizeScoreInATree
     {
         public void PrintSolution();
     }

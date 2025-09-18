@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02295_ReplaceElementsInAnArray
+    public interface ILC_00002295_ReplaceElementsInAnArray
     {
         public void PrintSolution();
     }

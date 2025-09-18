@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03089_FindBurstyBehavior
+    public interface ILC_00003089_FindBurstyBehavior
     {
         public void PrintSolution();
     }

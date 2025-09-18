@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02583_KthLargestSumInABinaryTree : I_02583_KthLargestSumInABinaryTree
+    public class LC_00002583_KthLargestSumInABinaryTree : ILC_00002583_KthLargestSumInABinaryTree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02583_KthLargestSumInABinaryTree()
+        public LC_00002583_KthLargestSumInABinaryTree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02583_KthLargestSumInABinaryTree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002583_KthLargestSumInABinaryTree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02583_KthLargestSumInABinaryTree(IHost host)
+        public LC_00002583_KthLargestSumInABinaryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02583_KthLargestSumInABinaryTree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002583_KthLargestSumInABinaryTree));
         }
 
         public void PrintSolution()

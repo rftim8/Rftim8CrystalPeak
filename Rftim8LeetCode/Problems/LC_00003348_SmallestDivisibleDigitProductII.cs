@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03348_SmallestDivisibleDigitProductII : I_03348_SmallestDivisibleDigitProductII
+    public class LC_00003348_SmallestDivisibleDigitProductII : ILC_00003348_SmallestDivisibleDigitProductII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03348_SmallestDivisibleDigitProductII()
+        public LC_00003348_SmallestDivisibleDigitProductII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03348_SmallestDivisibleDigitProductII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003348_SmallestDivisibleDigitProductII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03348_SmallestDivisibleDigitProductII(IHost host)
+        public LC_00003348_SmallestDivisibleDigitProductII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03348_SmallestDivisibleDigitProductII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003348_SmallestDivisibleDigitProductII));
         }
 
         public void PrintSolution()

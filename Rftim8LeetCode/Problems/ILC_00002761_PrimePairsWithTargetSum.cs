@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02761_PrimePairsWithTargetSum
+    public interface ILC_00002761_PrimePairsWithTargetSum
     {
         public void PrintSolution();
     }

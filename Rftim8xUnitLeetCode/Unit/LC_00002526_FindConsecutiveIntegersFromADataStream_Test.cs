@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02526_FindConsecutiveIntegersFromADataStream_Test
+    public class LC_00002526_FindConsecutiveIntegersFromADataStream_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02526_FindConsecutiveIntegersFromADataStream))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02526_FindConsecutiveIntegersFromADataStream))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02526_FindConsecutiveIntegersFromADataStream))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002526_FindConsecutiveIntegersFromADataStream))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002526_FindConsecutiveIntegersFromADataStream))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002526_FindConsecutiveIntegersFromADataStream))![1]);
 
-        public static TheoryData<List<string>, int> _02526_FindConsecutiveIntegersFromADataStreamPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002526_FindConsecutiveIntegersFromADataStreamPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02526_FindConsecutiveIntegersFromADataStreamPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002526_FindConsecutiveIntegersFromADataStreamPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02526_FindConsecutiveIntegersFromADataStreamPartOne_Data))]
+        [MemberData(nameof(LC_00002526_FindConsecutiveIntegersFromADataStreamPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02526_FindConsecutiveIntegersFromADataStream.PartOne_Test(a0);
+            int actual = LC_00002526_FindConsecutiveIntegersFromADataStream.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02526_FindConsecutiveIntegersFromADataStreamPartTwo_Data))]
+        [MemberData(nameof(LC_00002526_FindConsecutiveIntegersFromADataStreamPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02526_FindConsecutiveIntegersFromADataStream.PartTwo_Test(a0);
+            int actual = LC_00002526_FindConsecutiveIntegersFromADataStream.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

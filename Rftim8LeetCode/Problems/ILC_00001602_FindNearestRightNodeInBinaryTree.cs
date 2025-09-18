@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01602_FindNearestRightNodeInBinaryTree
+    public interface ILC_00001602_FindNearestRightNodeInBinaryTree
     {
         public void PrintSolution();
     }

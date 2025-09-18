@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00486_PredictTheWinner
+    public interface ILC_00000486_PredictTheWinner
     {
         public void PrintSolution();
     }

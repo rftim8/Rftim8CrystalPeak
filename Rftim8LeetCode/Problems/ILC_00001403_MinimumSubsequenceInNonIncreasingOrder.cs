@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01403_MinimumSubsequenceInNonIncreasingOrder
+    public interface ILC_00001403_MinimumSubsequenceInNonIncreasingOrder
     {
         public void PrintSolution();
     }

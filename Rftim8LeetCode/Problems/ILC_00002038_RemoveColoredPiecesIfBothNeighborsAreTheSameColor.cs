@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02038_RemoveColoredPiecesIfBothNeighborsAreTheSameColor
+    public interface ILC_00002038_RemoveColoredPiecesIfBothNeighborsAreTheSameColor
     {
         public void PrintSolution();
     }

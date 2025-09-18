@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02014_LongestSubsequenceRepeatedKTimes
+    public interface ILC_00002014_LongestSubsequenceRepeatedKTimes
     {
         public void PrintSolution();
     }

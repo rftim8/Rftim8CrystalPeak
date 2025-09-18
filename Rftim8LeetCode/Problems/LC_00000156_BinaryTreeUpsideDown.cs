@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00156_BinaryTreeUpsideDown : I_00156_BinaryTreeUpsideDown
+    public class LC_00000156_BinaryTreeUpsideDown : ILC_00000156_BinaryTreeUpsideDown
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00156_BinaryTreeUpsideDown()
+        public LC_00000156_BinaryTreeUpsideDown()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00156_BinaryTreeUpsideDown));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000156_BinaryTreeUpsideDown));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00156_BinaryTreeUpsideDown(IHost host)
+        public LC_00000156_BinaryTreeUpsideDown(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00156_BinaryTreeUpsideDown));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000156_BinaryTreeUpsideDown));
         }
 
         public void PrintSolution()

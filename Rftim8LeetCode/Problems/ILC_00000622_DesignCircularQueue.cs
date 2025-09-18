@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00622_DesignCircularQueue
+    public interface ILC_00000622_DesignCircularQueue
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00200_NumberOfIslands : I_00200_NumberOfIslands
+    public class LC_00000200_NumberOfIslands : ILC_00000200_NumberOfIslands
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00200_NumberOfIslands()
+        public LC_00000200_NumberOfIslands()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00200_NumberOfIslands));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000200_NumberOfIslands));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00200_NumberOfIslands(IHost host)
+        public LC_00000200_NumberOfIslands(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00200_NumberOfIslands));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000200_NumberOfIslands));
         }
 
         public void PrintSolution()

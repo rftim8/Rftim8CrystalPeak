@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03020_FindTheMaximumNumberOfElementsInSubset
+    public interface ILC_00003020_FindTheMaximumNumberOfElementsInSubset
     {
         public void PrintSolution();
     }

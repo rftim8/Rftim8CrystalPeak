@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01350_StudentsWithInvalidDepartments
+    public interface ILC_00001350_StudentsWithInvalidDepartments
     {
         public void PrintSolution();
     }

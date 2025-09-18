@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03533_ConcatenatedDivisibility
+    public interface ILC_00003533_ConcatenatedDivisibility
     {
         public void PrintSolution();
     }

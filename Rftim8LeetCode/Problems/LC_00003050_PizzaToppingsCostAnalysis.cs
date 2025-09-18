@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03050_PizzaToppingsCostAnalysis : I_03050_PizzaToppingsCostAnalysis
+    public class LC_00003050_PizzaToppingsCostAnalysis : ILC_00003050_PizzaToppingsCostAnalysis
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03050_PizzaToppingsCostAnalysis()
+        public LC_00003050_PizzaToppingsCostAnalysis()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03050_PizzaToppingsCostAnalysis));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003050_PizzaToppingsCostAnalysis));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03050_PizzaToppingsCostAnalysis(IHost host)
+        public LC_00003050_PizzaToppingsCostAnalysis(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03050_PizzaToppingsCostAnalysis));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003050_PizzaToppingsCostAnalysis));
         }
 
         public void PrintSolution()

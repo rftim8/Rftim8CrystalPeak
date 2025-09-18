@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00326_PowerOfThree : I_00326_PowerOfThree
+    public class LC_00000326_PowerOfThree : ILC_00000326_PowerOfThree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00326_PowerOfThree()
+        public LC_00000326_PowerOfThree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00326_PowerOfThree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000326_PowerOfThree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00326_PowerOfThree(IHost host)
+        public LC_00000326_PowerOfThree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00326_PowerOfThree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000326_PowerOfThree));
         }
 
         public void PrintSolution()

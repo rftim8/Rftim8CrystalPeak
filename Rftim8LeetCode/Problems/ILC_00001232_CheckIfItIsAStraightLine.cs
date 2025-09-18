@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01232_CheckIfItIsAStraightLine
+    public interface ILC_00001232_CheckIfItIsAStraightLine
     {
         public void PrintSolution();
     }

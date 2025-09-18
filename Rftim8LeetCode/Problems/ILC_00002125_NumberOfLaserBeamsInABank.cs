@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02125_NumberOfLaserBeamsInABank
+    public interface ILC_00002125_NumberOfLaserBeamsInABank
     {
         public void PrintSolution();
     }

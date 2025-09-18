@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02137_PourWaterBetweenBucketsToMakeWaterLevelsEqual
+    public interface ILC_00002137_PourWaterBetweenBucketsToMakeWaterLevelsEqual
     {
         public void PrintSolution();
     }

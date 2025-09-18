@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00425_WordSquares : I_00425_WordSquares
+    public class LC_00000425_WordSquares : ILC_00000425_WordSquares
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00425_WordSquares()
+        public LC_00000425_WordSquares()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00425_WordSquares));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000425_WordSquares));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00425_WordSquares(IHost host)
+        public LC_00000425_WordSquares(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00425_WordSquares));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000425_WordSquares));
         }
 
         public void PrintSolution()

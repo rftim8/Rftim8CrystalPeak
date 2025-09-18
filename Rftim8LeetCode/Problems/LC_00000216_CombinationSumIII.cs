@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00216_CombinationSumIII : I_00216_CombinationSumIII
+    public class LC_00000216_CombinationSumIII : ILC_00000216_CombinationSumIII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00216_CombinationSumIII()
+        public LC_00000216_CombinationSumIII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00216_CombinationSumIII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000216_CombinationSumIII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00216_CombinationSumIII(IHost host)
+        public LC_00000216_CombinationSumIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00216_CombinationSumIII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000216_CombinationSumIII));
         }
 
         public void PrintSolution()

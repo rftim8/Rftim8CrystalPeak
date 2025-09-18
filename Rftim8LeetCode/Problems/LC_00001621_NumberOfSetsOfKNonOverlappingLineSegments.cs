@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01621_NumberOfSetsOfKNonOverlappingLineSegments : I_01621_NumberOfSetsOfKNonOverlappingLineSegments
+    public class LC_00001621_NumberOfSetsOfKNonOverlappingLineSegments : ILC_00001621_NumberOfSetsOfKNonOverlappingLineSegments
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01621_NumberOfSetsOfKNonOverlappingLineSegments()
+        public LC_00001621_NumberOfSetsOfKNonOverlappingLineSegments()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01621_NumberOfSetsOfKNonOverlappingLineSegments));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001621_NumberOfSetsOfKNonOverlappingLineSegments));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01621_NumberOfSetsOfKNonOverlappingLineSegments(IHost host)
+        public LC_00001621_NumberOfSetsOfKNonOverlappingLineSegments(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01621_NumberOfSetsOfKNonOverlappingLineSegments));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001621_NumberOfSetsOfKNonOverlappingLineSegments));
         }
 
         public void PrintSolution()

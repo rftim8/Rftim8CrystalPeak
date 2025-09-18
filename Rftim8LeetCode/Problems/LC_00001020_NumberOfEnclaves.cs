@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01020_NumberOfEnclaves : I_01020_NumberOfEnclaves
+    public class LC_00001020_NumberOfEnclaves : ILC_00001020_NumberOfEnclaves
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01020_NumberOfEnclaves()
+        public LC_00001020_NumberOfEnclaves()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01020_NumberOfEnclaves));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001020_NumberOfEnclaves));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01020_NumberOfEnclaves(IHost host)
+        public LC_00001020_NumberOfEnclaves(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01020_NumberOfEnclaves));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001020_NumberOfEnclaves));
         }
 
         public void PrintSolution()

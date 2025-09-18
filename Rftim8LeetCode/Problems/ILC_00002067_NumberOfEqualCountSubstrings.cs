@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02067_NumberOfEqualCountSubstrings
+    public interface ILC_00002067_NumberOfEqualCountSubstrings
     {
         public void PrintSolution();
     }

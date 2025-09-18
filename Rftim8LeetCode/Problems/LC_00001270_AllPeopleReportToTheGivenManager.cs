@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01270_AllPeopleReportToTheGivenManager : I_01270_AllPeopleReportToTheGivenManager
+    public class LC_00001270_AllPeopleReportToTheGivenManager : ILC_00001270_AllPeopleReportToTheGivenManager
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01270_AllPeopleReportToTheGivenManager()
+        public LC_00001270_AllPeopleReportToTheGivenManager()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01270_AllPeopleReportToTheGivenManager));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001270_AllPeopleReportToTheGivenManager));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01270_AllPeopleReportToTheGivenManager(IHost host)
+        public LC_00001270_AllPeopleReportToTheGivenManager(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01270_AllPeopleReportToTheGivenManager));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001270_AllPeopleReportToTheGivenManager));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00137_SingleNumberII
+    public interface ILC_00000137_SingleNumberII
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00163_MissingRanges : I_00163_MissingRanges
+    public class LC_00000163_MissingRanges : ILC_00000163_MissingRanges
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00163_MissingRanges()
+        public LC_00000163_MissingRanges()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00163_MissingRanges));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000163_MissingRanges));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00163_MissingRanges(IHost host)
+        public LC_00000163_MissingRanges(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00163_MissingRanges));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000163_MissingRanges));
         }
 
         public void PrintSolution()

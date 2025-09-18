@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02258_EscapeTheSpreadingFire
+    public interface ILC_00002258_EscapeTheSpreadingFire
     {
         public void PrintSolution();
     }

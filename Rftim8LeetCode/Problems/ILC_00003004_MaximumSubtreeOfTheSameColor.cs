@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03004_MaximumSubtreeOfTheSameColor
+    public interface ILC_00003004_MaximumSubtreeOfTheSameColor
     {
         public void PrintSolution();
     }

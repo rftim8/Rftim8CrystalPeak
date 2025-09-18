@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02025_MaximumNumberOfWaysToPartitionAnArray
+    public interface ILC_00002025_MaximumNumberOfWaysToPartitionAnArray
     {
         public void PrintSolution();
     }

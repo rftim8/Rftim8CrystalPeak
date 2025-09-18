@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03024_TypeOfTriangle
+    public interface ILC_00003024_TypeOfTriangle
     {
         public void PrintSolution();
     }

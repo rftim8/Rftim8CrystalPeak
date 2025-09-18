@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02088_CountFertilePyramidsInALand
+    public interface ILC_00002088_CountFertilePyramidsInALand
     {
         public void PrintSolution();
     }

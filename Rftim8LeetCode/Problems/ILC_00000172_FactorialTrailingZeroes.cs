@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00172_FactorialTrailingZeroes
+    public interface ILC_00000172_FactorialTrailingZeroes
     {
         public void PrintSolution();
     }

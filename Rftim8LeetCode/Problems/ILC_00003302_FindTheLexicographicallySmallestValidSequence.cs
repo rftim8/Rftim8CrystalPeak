@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03302_FindTheLexicographicallySmallestValidSequence
+    public interface ILC_00003302_FindTheLexicographicallySmallestValidSequence
     {
         public void PrintSolution();
     }

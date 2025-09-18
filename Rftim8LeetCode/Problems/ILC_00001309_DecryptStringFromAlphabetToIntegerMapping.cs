@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01309_DecryptStringFromAlphabetToIntegerMapping
+    public interface ILC_00001309_DecryptStringFromAlphabetToIntegerMapping
     {
         public void PrintSolution();
     }

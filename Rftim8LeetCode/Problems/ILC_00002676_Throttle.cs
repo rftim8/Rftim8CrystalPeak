@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02676_Throttle
+    public interface ILC_00002676_Throttle
     {
         public void PrintSolution();
     }

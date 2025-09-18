@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01757_RecyclableAndLowFatProducts : I_01757_RecyclableAndLowFatProducts
+    public class LC_00001757_RecyclableAndLowFatProducts : ILC_00001757_RecyclableAndLowFatProducts
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01757_RecyclableAndLowFatProducts()
+        public LC_00001757_RecyclableAndLowFatProducts()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01757_RecyclableAndLowFatProducts));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001757_RecyclableAndLowFatProducts));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01757_RecyclableAndLowFatProducts(IHost host)
+        public LC_00001757_RecyclableAndLowFatProducts(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01757_RecyclableAndLowFatProducts));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001757_RecyclableAndLowFatProducts));
         }
 
         public void PrintSolution()

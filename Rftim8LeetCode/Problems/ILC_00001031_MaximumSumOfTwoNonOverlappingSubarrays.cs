@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01031_MaximumSumOfTwoNonOverlappingSubarrays
+    public interface ILC_00001031_MaximumSumOfTwoNonOverlappingSubarrays
     {
         public void PrintSolution();
     }

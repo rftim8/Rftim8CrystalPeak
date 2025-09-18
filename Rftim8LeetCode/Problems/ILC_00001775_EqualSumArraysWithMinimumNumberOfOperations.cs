@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01775_EqualSumArraysWithMinimumNumberOfOperations
+    public interface ILC_00001775_EqualSumArraysWithMinimumNumberOfOperations
     {
         public void PrintSolution();
     }

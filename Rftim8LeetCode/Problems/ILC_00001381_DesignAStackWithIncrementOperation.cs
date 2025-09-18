@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01381_DesignAStackWithIncrementOperation
+    public interface ILC_00001381_DesignAStackWithIncrementOperation
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00992_SubarraysWithKDifferentIntegers
+    public interface ILC_00000992_SubarraysWithKDifferentIntegers
     {
         public void PrintSolution();
     }

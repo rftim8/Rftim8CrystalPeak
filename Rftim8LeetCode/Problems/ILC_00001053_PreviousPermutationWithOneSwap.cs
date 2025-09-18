@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01053_PreviousPermutationWithOneSwap
+    public interface ILC_00001053_PreviousPermutationWithOneSwap
     {
         public void PrintSolution();
     }

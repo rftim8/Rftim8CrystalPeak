@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00414_ThirdMaximumNumber
+    public interface ILC_00000414_ThirdMaximumNumber
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03353_MinimumTotalOperations
+    public interface ILC_00003353_MinimumTotalOperations
     {
         public void PrintSolution();
     }

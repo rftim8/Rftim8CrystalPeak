@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02117_AbbreviatingTheProductOfARange
+    public interface ILC_00002117_AbbreviatingTheProductOfARange
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01028_RecoverATreeFromPreorderTraversal : I_01028_RecoverATreeFromPreorderTraversal
+    public class LC_00001028_RecoverATreeFromPreorderTraversal : ILC_00001028_RecoverATreeFromPreorderTraversal
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01028_RecoverATreeFromPreorderTraversal()
+        public LC_00001028_RecoverATreeFromPreorderTraversal()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01028_RecoverATreeFromPreorderTraversal));
-            Input = [.. RftResource._01028_RecoverATreeFromPreorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001028_RecoverATreeFromPreorderTraversal));
+            Input = [.. RftResource.LC_00001028_RecoverATreeFromPreorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01028_RecoverATreeFromPreorderTraversal(IHost host)
+        public LC_00001028_RecoverATreeFromPreorderTraversal(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01028_RecoverATreeFromPreorderTraversal));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001028_RecoverATreeFromPreorderTraversal));
             DataCollector();
         }
 

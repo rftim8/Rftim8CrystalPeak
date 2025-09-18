@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01048_LongestStringChain
+    public interface ILC_00001048_LongestStringChain
     {
         public void PrintSolution();
     }

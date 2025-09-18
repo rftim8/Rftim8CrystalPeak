@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01614_MaximumNestingDepthOfTheParentheses
+    public interface ILC_00001614_MaximumNestingDepthOfTheParentheses
     {
         public void PrintSolution();
     }

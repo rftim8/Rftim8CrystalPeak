@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03266_FinalArrayStateAfterKMultiplicationOperationsII : I_03266_FinalArrayStateAfterKMultiplicationOperationsII
+    public class LC_00003266_FinalArrayStateAfterKMultiplicationOperationsII : ILC_00003266_FinalArrayStateAfterKMultiplicationOperationsII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03266_FinalArrayStateAfterKMultiplicationOperationsII()
+        public LC_00003266_FinalArrayStateAfterKMultiplicationOperationsII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03266_FinalArrayStateAfterKMultiplicationOperationsII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003266_FinalArrayStateAfterKMultiplicationOperationsII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03266_FinalArrayStateAfterKMultiplicationOperationsII(IHost host)
+        public LC_00003266_FinalArrayStateAfterKMultiplicationOperationsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03266_FinalArrayStateAfterKMultiplicationOperationsII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003266_FinalArrayStateAfterKMultiplicationOperationsII));
         }
 
         public void PrintSolution()

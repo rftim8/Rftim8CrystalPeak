@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01760_MinimumLimitOfBallsInABag
+    public interface ILC_00001760_MinimumLimitOfBallsInABag
     {
         public void PrintSolution();
     }

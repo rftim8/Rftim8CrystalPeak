@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02509_CycleLengthQueriesInATree
+    public interface ILC_00002509_CycleLengthQueriesInATree
     {
         public void PrintSolution();
     }

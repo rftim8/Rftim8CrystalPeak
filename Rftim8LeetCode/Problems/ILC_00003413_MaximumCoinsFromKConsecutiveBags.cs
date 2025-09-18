@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03413_MaximumCoinsFromKConsecutiveBags
+    public interface ILC_00003413_MaximumCoinsFromKConsecutiveBags
     {
         public void PrintSolution();
     }

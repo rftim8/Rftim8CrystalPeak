@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01469_FindAllTheLonelyNodes
+    public interface ILC_00001469_FindAllTheLonelyNodes
     {
         public void PrintSolution();
     }

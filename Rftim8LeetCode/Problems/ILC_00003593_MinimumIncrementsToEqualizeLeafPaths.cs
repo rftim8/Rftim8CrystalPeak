@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03593_MinimumIncrementsToEqualizeLeafPaths
+    public interface ILC_00003593_MinimumIncrementsToEqualizeLeafPaths
     {
         public void PrintSolution();
     }

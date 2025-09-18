@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01920_BuildArrayFromPermutation
+    public interface ILC_00001920_BuildArrayFromPermutation
     {
         public void PrintSolution();
     }

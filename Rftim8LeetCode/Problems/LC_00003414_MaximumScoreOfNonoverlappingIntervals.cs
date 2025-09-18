@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03414_MaximumScoreOfNonoverlappingIntervals : I_03414_MaximumScoreOfNonoverlappingIntervals
+    public class LC_00003414_MaximumScoreOfNonoverlappingIntervals : ILC_00003414_MaximumScoreOfNonoverlappingIntervals
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03414_MaximumScoreOfNonoverlappingIntervals()
+        public LC_00003414_MaximumScoreOfNonoverlappingIntervals()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03414_MaximumScoreOfNonoverlappingIntervals));
-            Input = [.. RftResource._03414_MaximumScoreOfNonoverlappingIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003414_MaximumScoreOfNonoverlappingIntervals));
+            Input = [.. RftResource.LC_00003414_MaximumScoreOfNonoverlappingIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03414_MaximumScoreOfNonoverlappingIntervals(IHost host)
+        public LC_00003414_MaximumScoreOfNonoverlappingIntervals(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03414_MaximumScoreOfNonoverlappingIntervals));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003414_MaximumScoreOfNonoverlappingIntervals));
             DataCollector();
         }
 

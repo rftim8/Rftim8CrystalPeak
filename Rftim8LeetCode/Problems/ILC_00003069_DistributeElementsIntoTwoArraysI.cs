@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03069_DistributeElementsIntoTwoArraysI
+    public interface ILC_00003069_DistributeElementsIntoTwoArraysI
     {
         public void PrintSolution();
     }

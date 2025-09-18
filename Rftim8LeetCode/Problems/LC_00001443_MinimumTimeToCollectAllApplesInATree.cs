@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01443_MinimumTimeToCollectAllApplesInATree : I_01443_MinimumTimeToCollectAllApplesInATree
+    public class LC_00001443_MinimumTimeToCollectAllApplesInATree : ILC_00001443_MinimumTimeToCollectAllApplesInATree
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01443_MinimumTimeToCollectAllApplesInATree()
+        public LC_00001443_MinimumTimeToCollectAllApplesInATree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01443_MinimumTimeToCollectAllApplesInATree));
-            Input = [.. RftResource._01443_MinimumTimeToCollectAllApplesInATree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001443_MinimumTimeToCollectAllApplesInATree));
+            Input = [.. RftResource.LC_00001443_MinimumTimeToCollectAllApplesInATree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01443_MinimumTimeToCollectAllApplesInATree(IHost host)
+        public LC_00001443_MinimumTimeToCollectAllApplesInATree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01443_MinimumTimeToCollectAllApplesInATree));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001443_MinimumTimeToCollectAllApplesInATree));
             DataCollector();
         }
 

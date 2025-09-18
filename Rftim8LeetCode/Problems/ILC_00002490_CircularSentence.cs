@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02490_CircularSentence
+    public interface ILC_00002490_CircularSentence
     {
         public void PrintSolution();
     }

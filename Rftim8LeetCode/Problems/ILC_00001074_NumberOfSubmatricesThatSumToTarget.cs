@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01074_NumberOfSubmatricesThatSumToTarget
+    public interface ILC_00001074_NumberOfSubmatricesThatSumToTarget
     {
         public void PrintSolution();
     }

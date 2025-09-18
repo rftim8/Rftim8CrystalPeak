@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01144_DecreaseElementsToMakeArrayZigzag
+    public interface ILC_00001144_DecreaseElementsToMakeArrayZigzag
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01358_NumberOfSubstringsContainingAllThreeCharacters : I_01358_NumberOfSubstringsContainingAllThreeCharacters
+    public class LC_00001358_NumberOfSubstringsContainingAllThreeCharacters : ILC_00001358_NumberOfSubstringsContainingAllThreeCharacters
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01358_NumberOfSubstringsContainingAllThreeCharacters()
+        public LC_00001358_NumberOfSubstringsContainingAllThreeCharacters()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01358_NumberOfSubstringsContainingAllThreeCharacters));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001358_NumberOfSubstringsContainingAllThreeCharacters));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01358_NumberOfSubstringsContainingAllThreeCharacters(IHost host)
+        public LC_00001358_NumberOfSubstringsContainingAllThreeCharacters(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01358_NumberOfSubstringsContainingAllThreeCharacters));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001358_NumberOfSubstringsContainingAllThreeCharacters));
         }
 
         public void PrintSolution()

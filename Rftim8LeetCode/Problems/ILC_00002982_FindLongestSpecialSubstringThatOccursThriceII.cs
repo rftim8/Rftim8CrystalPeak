@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02982_FindLongestSpecialSubstringThatOccursThriceII
+    public interface ILC_00002982_FindLongestSpecialSubstringThatOccursThriceII
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02045_SecondMinimumTimeToReachDestination
+    public interface ILC_00002045_SecondMinimumTimeToReachDestination
     {
         public void PrintSolution();
     }

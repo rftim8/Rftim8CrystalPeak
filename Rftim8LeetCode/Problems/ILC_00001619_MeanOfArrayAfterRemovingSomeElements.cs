@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01619_MeanOfArrayAfterRemovingSomeElements
+    public interface ILC_00001619_MeanOfArrayAfterRemovingSomeElements
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01413_MinimumValueToGetPositiveStepByStepSum
+    public interface ILC_00001413_MinimumValueToGetPositiveStepByStepSum
     {
         public void PrintSolution();
     }

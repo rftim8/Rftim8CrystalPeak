@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01289_MinimumFallingPathSumII
+    public interface ILC_00001289_MinimumFallingPathSumII
     {
         public void PrintSolution();
     }

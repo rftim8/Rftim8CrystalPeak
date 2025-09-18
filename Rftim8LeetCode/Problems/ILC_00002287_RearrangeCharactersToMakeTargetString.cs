@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02287_RearrangeCharactersToMakeTargetString
+    public interface ILC_00002287_RearrangeCharactersToMakeTargetString
     {
         public void PrintSolution();
     }

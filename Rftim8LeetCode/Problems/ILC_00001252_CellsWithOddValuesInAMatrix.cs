@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01252_CellsWithOddValuesInAMatrix
+    public interface ILC_00001252_CellsWithOddValuesInAMatrix
     {
         public void PrintSolution();
     }

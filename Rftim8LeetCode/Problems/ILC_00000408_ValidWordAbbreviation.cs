@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00408_ValidWordAbbreviation
+    public interface ILC_00000408_ValidWordAbbreviation
     {
         public void PrintSolution();
     }

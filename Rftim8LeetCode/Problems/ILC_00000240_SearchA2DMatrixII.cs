@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00240_SearchA2DMatrixII
+    public interface ILC_00000240_SearchA2DMatrixII
     {
         public void PrintSolution();
     }

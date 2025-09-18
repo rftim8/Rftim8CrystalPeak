@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02457_MinimumAdditionToMakeIntegerBeautiful
+    public interface ILC_00002457_MinimumAdditionToMakeIntegerBeautiful
     {
         public void PrintSolution();
     }

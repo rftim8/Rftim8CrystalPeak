@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01139_Largest1BorderedSquare
+    public interface ILC_00001139_Largest1BorderedSquare
     {
         public void PrintSolution();
     }

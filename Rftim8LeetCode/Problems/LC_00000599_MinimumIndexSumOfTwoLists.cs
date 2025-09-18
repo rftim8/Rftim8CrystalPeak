@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00599_MinimumIndexSumOfTwoLists : I_00599_MinimumIndexSumOfTwoLists
+    public class LC_00000599_MinimumIndexSumOfTwoLists : ILC_00000599_MinimumIndexSumOfTwoLists
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00599_MinimumIndexSumOfTwoLists()
+        public LC_00000599_MinimumIndexSumOfTwoLists()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00599_MinimumIndexSumOfTwoLists));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000599_MinimumIndexSumOfTwoLists));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00599_MinimumIndexSumOfTwoLists(IHost host)
+        public LC_00000599_MinimumIndexSumOfTwoLists(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00599_MinimumIndexSumOfTwoLists));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000599_MinimumIndexSumOfTwoLists));
         }
 
         public void PrintSolution()

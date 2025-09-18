@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01142_UserActivityForThePast30DaysII
+    public interface ILC_00001142_UserActivityForThePast30DaysII
     {
         public void PrintSolution();
     }

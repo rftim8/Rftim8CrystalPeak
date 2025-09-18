@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01497_CheckIfArrayPairsAreDivisibleByK
+    public interface ILC_00001497_CheckIfArrayPairsAreDivisibleByK
     {
         public void PrintSolution();
     }

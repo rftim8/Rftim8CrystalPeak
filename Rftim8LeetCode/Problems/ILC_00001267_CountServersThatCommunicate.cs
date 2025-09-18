@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01267_CountServersThatCommunicate
+    public interface ILC_00001267_CountServersThatCommunicate
     {
         public void PrintSolution();
     }

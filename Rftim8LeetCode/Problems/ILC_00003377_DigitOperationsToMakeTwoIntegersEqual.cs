@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03377_DigitOperationsToMakeTwoIntegersEqual
+    public interface ILC_00003377_DigitOperationsToMakeTwoIntegersEqual
     {
         public void PrintSolution();
     }

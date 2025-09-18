@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03247_NumberOfSubsequencesWithOddSum : I_03247_NumberOfSubsequencesWithOddSum
+    public class LC_00003247_NumberOfSubsequencesWithOddSum : ILC_00003247_NumberOfSubsequencesWithOddSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03247_NumberOfSubsequencesWithOddSum()
+        public LC_00003247_NumberOfSubsequencesWithOddSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03247_NumberOfSubsequencesWithOddSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003247_NumberOfSubsequencesWithOddSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03247_NumberOfSubsequencesWithOddSum(IHost host)
+        public LC_00003247_NumberOfSubsequencesWithOddSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03247_NumberOfSubsequencesWithOddSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003247_NumberOfSubsequencesWithOddSum));
         }
 
         public void PrintSolution()

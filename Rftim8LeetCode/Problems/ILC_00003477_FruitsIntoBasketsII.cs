@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03477_FruitsIntoBasketsII
+    public interface ILC_00003477_FruitsIntoBasketsII
     {
         public void PrintSolution();
     }

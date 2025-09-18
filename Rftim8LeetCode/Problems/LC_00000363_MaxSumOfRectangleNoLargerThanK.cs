@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00363_MaxSumOfRectangleNoLargerThanK : I_00363_MaxSumOfRectangleNoLargerThanK
+    public class LC_00000363_MaxSumOfRectangleNoLargerThanK : ILC_00000363_MaxSumOfRectangleNoLargerThanK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00363_MaxSumOfRectangleNoLargerThanK()
+        public LC_00000363_MaxSumOfRectangleNoLargerThanK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00363_MaxSumOfRectangleNoLargerThanK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000363_MaxSumOfRectangleNoLargerThanK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00363_MaxSumOfRectangleNoLargerThanK(IHost host)
+        public LC_00000363_MaxSumOfRectangleNoLargerThanK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00363_MaxSumOfRectangleNoLargerThanK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000363_MaxSumOfRectangleNoLargerThanK));
         }
 
         public void PrintSolution()

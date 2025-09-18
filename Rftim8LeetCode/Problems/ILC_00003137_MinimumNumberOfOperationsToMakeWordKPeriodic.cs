@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03137_MinimumNumberOfOperationsToMakeWordKPeriodic
+    public interface ILC_00003137_MinimumNumberOfOperationsToMakeWordKPeriodic
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03169_CountDaysWithoutMeetings
+    public interface ILC_00003169_CountDaysWithoutMeetings
     {
         public void PrintSolution();
     }

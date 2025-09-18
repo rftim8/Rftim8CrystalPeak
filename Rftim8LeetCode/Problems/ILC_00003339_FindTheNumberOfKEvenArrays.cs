@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03339_FindTheNumberOfKEvenArrays
+    public interface ILC_00003339_FindTheNumberOfKEvenArrays
     {
         public void PrintSolution();
     }

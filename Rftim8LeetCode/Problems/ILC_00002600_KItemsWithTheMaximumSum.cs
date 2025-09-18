@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02600_KItemsWithTheMaximumSum
+    public interface ILC_00002600_KItemsWithTheMaximumSum
     {
         public void PrintSolution();
     }

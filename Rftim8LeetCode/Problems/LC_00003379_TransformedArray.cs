@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03379_TransformedArray : I_03379_TransformedArray
+    public class LC_00003379_TransformedArray : ILC_00003379_TransformedArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03379_TransformedArray()
+        public LC_00003379_TransformedArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03379_TransformedArray));
-            Input = [.. RftResource._03379_TransformedArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003379_TransformedArray));
+            Input = [.. RftResource.LC_00003379_TransformedArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03379_TransformedArray(IHost host)
+        public LC_00003379_TransformedArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03379_TransformedArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003379_TransformedArray));
             DataCollector();
         }
 

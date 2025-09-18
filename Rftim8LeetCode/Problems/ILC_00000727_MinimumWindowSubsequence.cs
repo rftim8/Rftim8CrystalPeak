@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00727_MinimumWindowSubsequence
+    public interface ILC_00000727_MinimumWindowSubsequence
     {
         public void PrintSolution();
     }

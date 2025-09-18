@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01502_CanMakeArithmeticProgressionFromSequence : I_01502_CanMakeArithmeticProgressionFromSequence
+    public class LC_00001502_CanMakeArithmeticProgressionFromSequence : ILC_00001502_CanMakeArithmeticProgressionFromSequence
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01502_CanMakeArithmeticProgressionFromSequence()
+        public LC_00001502_CanMakeArithmeticProgressionFromSequence()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01502_CanMakeArithmeticProgressionFromSequence));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001502_CanMakeArithmeticProgressionFromSequence));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01502_CanMakeArithmeticProgressionFromSequence(IHost host)
+        public LC_00001502_CanMakeArithmeticProgressionFromSequence(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01502_CanMakeArithmeticProgressionFromSequence));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001502_CanMakeArithmeticProgressionFromSequence));
         }
 
         public void PrintSolution()

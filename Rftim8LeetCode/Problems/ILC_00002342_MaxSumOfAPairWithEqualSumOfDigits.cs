@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02342_MaxSumOfAPairWithEqualSumOfDigits
+    public interface ILC_00002342_MaxSumOfAPairWithEqualSumOfDigits
     {
         public void PrintSolution();
     }

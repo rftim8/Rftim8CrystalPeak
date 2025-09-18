@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00661_ImageSmoother
+    public interface ILC_00000661_ImageSmoother
     {
         public void PrintSolution();
     }

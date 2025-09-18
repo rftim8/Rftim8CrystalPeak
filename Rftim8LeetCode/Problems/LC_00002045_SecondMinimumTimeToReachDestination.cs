@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02045_SecondMinimumTimeToReachDestination : I_02045_SecondMinimumTimeToReachDestination
+    public class LC_00002045_SecondMinimumTimeToReachDestination : ILC_00002045_SecondMinimumTimeToReachDestination
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02045_SecondMinimumTimeToReachDestination()
+        public LC_00002045_SecondMinimumTimeToReachDestination()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02045_SecondMinimumTimeToReachDestination));
-            Input = [.. RftResource._02045_SecondMinimumTimeToReachDestination_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002045_SecondMinimumTimeToReachDestination));
+            Input = [.. RftResource.LC_00002045_SecondMinimumTimeToReachDestination_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02045_SecondMinimumTimeToReachDestination(IHost host)
+        public LC_00002045_SecondMinimumTimeToReachDestination(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02045_SecondMinimumTimeToReachDestination));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002045_SecondMinimumTimeToReachDestination));
             DataCollector();
         }
 

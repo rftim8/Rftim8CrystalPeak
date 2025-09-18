@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01320_MinimumDistanceToTypeAWordUsingTwoFingers
+    public interface ILC_00001320_MinimumDistanceToTypeAWordUsingTwoFingers
     {
         public void PrintSolution();
     }

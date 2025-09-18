@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02522_PartitionStringIntoSubstringsWithValuesAtMostK
+    public interface ILC_00002522_PartitionStringIntoSubstringsWithValuesAtMostK
     {
         public void PrintSolution();
     }

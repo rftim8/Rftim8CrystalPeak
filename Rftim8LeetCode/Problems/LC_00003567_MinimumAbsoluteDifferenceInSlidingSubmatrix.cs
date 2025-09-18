@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03567_MinimumAbsoluteDifferenceInSlidingSubmatrix : I_03567_MinimumAbsoluteDifferenceInSlidingSubmatrix
+    public class LC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix : ILC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03567_MinimumAbsoluteDifferenceInSlidingSubmatrix()
+        public LC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03567_MinimumAbsoluteDifferenceInSlidingSubmatrix));
-            Input = [.. RftResource._03567_MinimumAbsoluteDifferenceInSlidingSubmatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix));
+            Input = [.. RftResource.LC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03567_MinimumAbsoluteDifferenceInSlidingSubmatrix(IHost host)
+        public LC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03567_MinimumAbsoluteDifferenceInSlidingSubmatrix));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix));
             DataCollector();
         }
 

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01054_DistantBarcodes : I_01054_DistantBarcodes
+    public class LC_00001054_DistantBarcodes : ILC_00001054_DistantBarcodes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01054_DistantBarcodes()
+        public LC_00001054_DistantBarcodes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01054_DistantBarcodes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001054_DistantBarcodes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01054_DistantBarcodes(IHost host)
+        public LC_00001054_DistantBarcodes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01054_DistantBarcodes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001054_DistantBarcodes));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01594_MaximumNonNegativeProductInAMatrix
+    public interface ILC_00001594_MaximumNonNegativeProductInAMatrix
     {
         public void PrintSolution();
     }

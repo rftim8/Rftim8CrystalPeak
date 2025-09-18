@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01524_NumberOfSubarraysWithOddSum
+    public interface ILC_00001524_NumberOfSubarraysWithOddSum
     {
         public void PrintSolution();
     }

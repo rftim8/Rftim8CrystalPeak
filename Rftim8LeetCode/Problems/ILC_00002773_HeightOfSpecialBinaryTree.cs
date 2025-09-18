@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02773_HeightOfSpecialBinaryTree
+    public interface ILC_00002773_HeightOfSpecialBinaryTree
     {
         public void PrintSolution();
     }

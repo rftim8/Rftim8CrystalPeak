@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00730_CountDifferentPalindromicSubsequences : I_00730_CountDifferentPalindromicSubsequences
+    public class LC_00000730_CountDifferentPalindromicSubsequences : ILC_00000730_CountDifferentPalindromicSubsequences
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00730_CountDifferentPalindromicSubsequences()
+        public LC_00000730_CountDifferentPalindromicSubsequences()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00730_CountDifferentPalindromicSubsequences));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000730_CountDifferentPalindromicSubsequences));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00730_CountDifferentPalindromicSubsequences(IHost host)
+        public LC_00000730_CountDifferentPalindromicSubsequences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00730_CountDifferentPalindromicSubsequences));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000730_CountDifferentPalindromicSubsequences));
         }
 
         public void PrintSolution()

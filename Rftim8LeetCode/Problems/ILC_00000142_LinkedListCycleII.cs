@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00142_LinkedListCycleII
+    public interface ILC_00000142_LinkedListCycleII
     {
         public void PrintSolution();
     }

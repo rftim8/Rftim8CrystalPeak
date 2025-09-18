@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01699_NumberOfCallsBetweenTwoPersons
+    public interface ILC_00001699_NumberOfCallsBetweenTwoPersons
     {
         public void PrintSolution();
     }

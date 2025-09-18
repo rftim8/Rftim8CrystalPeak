@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02627_Debounce
+    public interface ILC_00002627_Debounce
     {
         public void PrintSolution();
     }

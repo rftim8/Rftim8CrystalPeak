@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02436_MinimumSplitIntoSubarraysWithGCDGreaterThanOne
+    public interface ILC_00002436_MinimumSplitIntoSubarraysWithGCDGreaterThanOne
     {
         public void PrintSolution();
     }

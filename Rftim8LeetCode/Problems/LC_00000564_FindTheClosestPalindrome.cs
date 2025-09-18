@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00564_FindTheClosestPalindrome : I_00564_FindTheClosestPalindrome
+    public class LC_00000564_FindTheClosestPalindrome : ILC_00000564_FindTheClosestPalindrome
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00564_FindTheClosestPalindrome()
+        public LC_00000564_FindTheClosestPalindrome()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00564_FindTheClosestPalindrome));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000564_FindTheClosestPalindrome));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00564_FindTheClosestPalindrome(IHost host)
+        public LC_00000564_FindTheClosestPalindrome(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00564_FindTheClosestPalindrome));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000564_FindTheClosestPalindrome));
         }
 
         public void PrintSolution()

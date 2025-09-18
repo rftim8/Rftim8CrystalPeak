@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02359_FindClosestNodeToGivenTwoNodes : I_02359_FindClosestNodeToGivenTwoNodes
+    public class LC_00002359_FindClosestNodeToGivenTwoNodes : ILC_00002359_FindClosestNodeToGivenTwoNodes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02359_FindClosestNodeToGivenTwoNodes()
+        public LC_00002359_FindClosestNodeToGivenTwoNodes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02359_FindClosestNodeToGivenTwoNodes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002359_FindClosestNodeToGivenTwoNodes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02359_FindClosestNodeToGivenTwoNodes(IHost host)
+        public LC_00002359_FindClosestNodeToGivenTwoNodes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02359_FindClosestNodeToGivenTwoNodes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002359_FindClosestNodeToGivenTwoNodes));
         }
 
         public void PrintSolution()

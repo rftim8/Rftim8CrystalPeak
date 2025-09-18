@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02649_NestedArrayGenerator : I_02649_NestedArrayGenerator
+    public class LC_00002649_NestedArrayGenerator : ILC_00002649_NestedArrayGenerator
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02649_NestedArrayGenerator()
+        public LC_00002649_NestedArrayGenerator()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02649_NestedArrayGenerator));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002649_NestedArrayGenerator));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02649_NestedArrayGenerator(IHost host)
+        public LC_00002649_NestedArrayGenerator(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02649_NestedArrayGenerator));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002649_NestedArrayGenerator));
         }
 
         public void PrintSolution()

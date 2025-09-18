@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02633_ConvertObjectToJSONString : I_02633_ConvertObjectToJSONString
+    public class LC_00002633_ConvertObjectToJSONString : ILC_00002633_ConvertObjectToJSONString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02633_ConvertObjectToJSONString()
+        public LC_00002633_ConvertObjectToJSONString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02633_ConvertObjectToJSONString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002633_ConvertObjectToJSONString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02633_ConvertObjectToJSONString(IHost host)
+        public LC_00002633_ConvertObjectToJSONString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02633_ConvertObjectToJSONString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002633_ConvertObjectToJSONString));
         }
 
         public void PrintSolution()

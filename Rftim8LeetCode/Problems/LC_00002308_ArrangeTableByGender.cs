@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02308_ArrangeTableByGender : I_02308_ArrangeTableByGender
+    public class LC_00002308_ArrangeTableByGender : ILC_00002308_ArrangeTableByGender
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02308_ArrangeTableByGender()
+        public LC_00002308_ArrangeTableByGender()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02308_ArrangeTableByGender));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002308_ArrangeTableByGender));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02308_ArrangeTableByGender(IHost host)
+        public LC_00002308_ArrangeTableByGender(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02308_ArrangeTableByGender));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002308_ArrangeTableByGender));
         }
 
         public void PrintSolution()

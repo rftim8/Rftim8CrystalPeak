@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01145_BinaryTreeColoringGame
+    public interface ILC_00001145_BinaryTreeColoringGame
     {
         public void PrintSolution();
     }

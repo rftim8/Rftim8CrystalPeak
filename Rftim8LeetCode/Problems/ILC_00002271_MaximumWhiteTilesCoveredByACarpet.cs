@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02271_MaximumWhiteTilesCoveredByACarpet
+    public interface ILC_00002271_MaximumWhiteTilesCoveredByACarpet
     {
         public void PrintSolution();
     }

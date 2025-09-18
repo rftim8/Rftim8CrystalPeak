@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00736_ParseLispExpression
+    public interface ILC_00000736_ParseLispExpression
     {
         public void PrintSolution();
     }

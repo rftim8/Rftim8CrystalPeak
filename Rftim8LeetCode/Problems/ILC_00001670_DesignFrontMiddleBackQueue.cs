@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01670_DesignFrontMiddleBackQueue
+    public interface ILC_00001670_DesignFrontMiddleBackQueue
     {
         public void PrintSolution();
     }

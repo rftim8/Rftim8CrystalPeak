@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI : I_03239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI
+    public class LC_00003239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI : ILC_00003239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI()
+        public LC_00003239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI(IHost host)
+        public LC_00003239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003239_MinimumNumberOfFlipsToMakeBinaryGridPalindromicI));
         }
 
         public void PrintSolution()

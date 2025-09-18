@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02544_AlternatingDigitSum : I_02544_AlternatingDigitSum
+    public class LC_00002544_AlternatingDigitSum : ILC_00002544_AlternatingDigitSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02544_AlternatingDigitSum()
+        public LC_00002544_AlternatingDigitSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02544_AlternatingDigitSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002544_AlternatingDigitSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02544_AlternatingDigitSum(IHost host)
+        public LC_00002544_AlternatingDigitSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02544_AlternatingDigitSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002544_AlternatingDigitSum));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01128_NumberOfEquivalentDominoPairs
+    public interface ILC_00001128_NumberOfEquivalentDominoPairs
     {
         public void PrintSolution();
     }

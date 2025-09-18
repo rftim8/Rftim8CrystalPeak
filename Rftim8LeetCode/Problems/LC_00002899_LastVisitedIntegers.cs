@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02899_LastVisitedIntegers : I_02899_LastVisitedIntegers
+    public class LC_00002899_LastVisitedIntegers : ILC_00002899_LastVisitedIntegers
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02899_LastVisitedIntegers()
+        public LC_00002899_LastVisitedIntegers()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02899_LastVisitedIntegers));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002899_LastVisitedIntegers));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02899_LastVisitedIntegers(IHost host)
+        public LC_00002899_LastVisitedIntegers(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02899_LastVisitedIntegers));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002899_LastVisitedIntegers));
         }
 
         public void PrintSolution()

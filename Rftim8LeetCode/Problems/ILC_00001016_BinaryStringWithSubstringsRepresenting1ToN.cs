@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01016_BinaryStringWithSubstringsRepresenting1ToN
+    public interface ILC_00001016_BinaryStringWithSubstringsRepresenting1ToN
     {
         public void PrintSolution();
     }

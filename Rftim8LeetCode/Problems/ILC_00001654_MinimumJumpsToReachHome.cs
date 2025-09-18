@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01654_MinimumJumpsToReachHome
+    public interface ILC_00001654_MinimumJumpsToReachHome
     {
         public void PrintSolution();
     }

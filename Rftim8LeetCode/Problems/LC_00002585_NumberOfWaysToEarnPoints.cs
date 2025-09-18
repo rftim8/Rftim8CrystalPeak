@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02585_NumberOfWaysToEarnPoints : I_02585_NumberOfWaysToEarnPoints
+    public class LC_00002585_NumberOfWaysToEarnPoints : ILC_00002585_NumberOfWaysToEarnPoints
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02585_NumberOfWaysToEarnPoints()
+        public LC_00002585_NumberOfWaysToEarnPoints()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02585_NumberOfWaysToEarnPoints));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002585_NumberOfWaysToEarnPoints));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02585_NumberOfWaysToEarnPoints(IHost host)
+        public LC_00002585_NumberOfWaysToEarnPoints(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02585_NumberOfWaysToEarnPoints));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002585_NumberOfWaysToEarnPoints));
         }
 
         public void PrintSolution()

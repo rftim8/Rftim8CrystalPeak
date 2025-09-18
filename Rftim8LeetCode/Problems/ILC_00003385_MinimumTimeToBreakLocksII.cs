@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03385_MinimumTimeToBreakLocksII
+    public interface ILC_00003385_MinimumTimeToBreakLocksII
     {
         public void PrintSolution();
     }

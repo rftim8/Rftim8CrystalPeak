@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02344_MinimumDeletionsToMakeArrayDivisible
+    public interface ILC_00002344_MinimumDeletionsToMakeArrayDivisible
     {
         public void PrintSolution();
     }

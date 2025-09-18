@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00346_MovingAverageFromDataStream
+    public interface ILC_00000346_MovingAverageFromDataStream
     {
         public void PrintSolution();
     }

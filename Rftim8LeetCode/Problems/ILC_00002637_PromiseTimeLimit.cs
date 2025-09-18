@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02637_PromiseTimeLimit
+    public interface ILC_00002637_PromiseTimeLimit
     {
         public void PrintSolution();
     }

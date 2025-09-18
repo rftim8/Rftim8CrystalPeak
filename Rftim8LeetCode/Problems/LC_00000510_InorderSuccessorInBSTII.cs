@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00510_InorderSuccessorInBSTII : I_00510_InorderSuccessorInBSTII
+    public class LC_00000510_InorderSuccessorInBSTII : ILC_00000510_InorderSuccessorInBSTII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00510_InorderSuccessorInBSTII()
+        public LC_00000510_InorderSuccessorInBSTII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00510_InorderSuccessorInBSTII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000510_InorderSuccessorInBSTII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00510_InorderSuccessorInBSTII(IHost host)
+        public LC_00000510_InorderSuccessorInBSTII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00510_InorderSuccessorInBSTII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000510_InorderSuccessorInBSTII));
         }
 
         public void PrintSolution()

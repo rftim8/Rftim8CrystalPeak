@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03057_EmployeesProjectAllocation
+    public interface ILC_00003057_EmployeesProjectAllocation
     {
         public void PrintSolution();
     }

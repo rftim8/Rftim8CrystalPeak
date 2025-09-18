@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01262_GreatestSumDivisibleByThree : I_01262_GreatestSumDivisibleByThree
+    public class LC_00001262_GreatestSumDivisibleByThree : ILC_00001262_GreatestSumDivisibleByThree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01262_GreatestSumDivisibleByThree()
+        public LC_00001262_GreatestSumDivisibleByThree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01262_GreatestSumDivisibleByThree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001262_GreatestSumDivisibleByThree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01262_GreatestSumDivisibleByThree(IHost host)
+        public LC_00001262_GreatestSumDivisibleByThree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01262_GreatestSumDivisibleByThree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001262_GreatestSumDivisibleByThree));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02835_MinimumOperationsToFormSubsequenceWithTargetSum : I_02835_MinimumOperationsToFormSubsequenceWithTargetSum
+    public class LC_00002835_MinimumOperationsToFormSubsequenceWithTargetSum : ILC_00002835_MinimumOperationsToFormSubsequenceWithTargetSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02835_MinimumOperationsToFormSubsequenceWithTargetSum()
+        public LC_00002835_MinimumOperationsToFormSubsequenceWithTargetSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02835_MinimumOperationsToFormSubsequenceWithTargetSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002835_MinimumOperationsToFormSubsequenceWithTargetSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02835_MinimumOperationsToFormSubsequenceWithTargetSum(IHost host)
+        public LC_00002835_MinimumOperationsToFormSubsequenceWithTargetSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02835_MinimumOperationsToFormSubsequenceWithTargetSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002835_MinimumOperationsToFormSubsequenceWithTargetSum));
         }
 
         public void PrintSolution()

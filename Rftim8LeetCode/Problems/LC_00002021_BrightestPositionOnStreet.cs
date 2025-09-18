@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02021_BrightestPositionOnStreet : I_02021_BrightestPositionOnStreet
+    public class LC_00002021_BrightestPositionOnStreet : ILC_00002021_BrightestPositionOnStreet
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02021_BrightestPositionOnStreet()
+        public LC_00002021_BrightestPositionOnStreet()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02021_BrightestPositionOnStreet));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002021_BrightestPositionOnStreet));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02021_BrightestPositionOnStreet(IHost host)
+        public LC_00002021_BrightestPositionOnStreet(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02021_BrightestPositionOnStreet));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002021_BrightestPositionOnStreet));
         }
 
         public void PrintSolution()

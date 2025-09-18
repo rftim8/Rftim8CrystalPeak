@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00695_MaxAreaOfIsland : I_00695_MaxAreaOfIsland
+    public class LC_00000695_MaxAreaOfIsland : ILC_00000695_MaxAreaOfIsland
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00695_MaxAreaOfIsland()
+        public LC_00000695_MaxAreaOfIsland()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00695_MaxAreaOfIsland));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000695_MaxAreaOfIsland));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00695_MaxAreaOfIsland(IHost host)
+        public LC_00000695_MaxAreaOfIsland(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00695_MaxAreaOfIsland));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000695_MaxAreaOfIsland));
         }
 
         public void PrintSolution()

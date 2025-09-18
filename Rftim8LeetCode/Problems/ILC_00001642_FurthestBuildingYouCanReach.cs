@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01642_FurthestBuildingYouCanReach
+    public interface ILC_00001642_FurthestBuildingYouCanReach
     {
         public void PrintSolution();
     }

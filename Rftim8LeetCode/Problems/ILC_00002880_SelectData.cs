@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02880_SelectData
+    public interface ILC_00002880_SelectData
     {
         public void PrintSolution();
     }

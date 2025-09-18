@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01278_PalindromePartitioningIII
+    public interface ILC_00001278_PalindromePartitioningIII
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02836_MaximizeValueOfFunctionInABallPassingGame
+    public interface ILC_00002836_MaximizeValueOfFunctionInABallPassingGame
     {
         public void PrintSolution();
     }

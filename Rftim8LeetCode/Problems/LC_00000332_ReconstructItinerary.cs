@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00332_ReconstructItinerary : I_00332_ReconstructItinerary
+    public class LC_00000332_ReconstructItinerary : ILC_00000332_ReconstructItinerary
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00332_ReconstructItinerary()
+        public LC_00000332_ReconstructItinerary()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00332_ReconstructItinerary));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000332_ReconstructItinerary));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00332_ReconstructItinerary(IHost host)
+        public LC_00000332_ReconstructItinerary(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00332_ReconstructItinerary));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000332_ReconstructItinerary));
         }
 
         public void PrintSolution()

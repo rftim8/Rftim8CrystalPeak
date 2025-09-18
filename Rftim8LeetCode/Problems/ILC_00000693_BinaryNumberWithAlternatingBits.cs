@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00693_BinaryNumberWithAlternatingBits
+    public interface ILC_00000693_BinaryNumberWithAlternatingBits
     {
         public void PrintSolution();
     }

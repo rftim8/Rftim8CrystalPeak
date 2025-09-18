@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00849_MaximizeDistanceToClosestPerson : I_00849_MaximizeDistanceToClosestPerson
+    public class LC_00000849_MaximizeDistanceToClosestPerson : ILC_00000849_MaximizeDistanceToClosestPerson
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00849_MaximizeDistanceToClosestPerson()
+        public LC_00000849_MaximizeDistanceToClosestPerson()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00849_MaximizeDistanceToClosestPerson));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000849_MaximizeDistanceToClosestPerson));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00849_MaximizeDistanceToClosestPerson(IHost host)
+        public LC_00000849_MaximizeDistanceToClosestPerson(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00849_MaximizeDistanceToClosestPerson));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000849_MaximizeDistanceToClosestPerson));
         }
 
         public void PrintSolution()

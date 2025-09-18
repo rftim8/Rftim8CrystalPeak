@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00265_PaintHouseII
+    public interface ILC_00000265_PaintHouseII
     {
         public void PrintSolution();
     }

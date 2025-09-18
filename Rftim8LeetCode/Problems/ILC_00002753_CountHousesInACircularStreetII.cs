@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02753_CountHousesInACircularStreetII
+    public interface ILC_00002753_CountHousesInACircularStreetII
     {
         public void PrintSolution();
     }

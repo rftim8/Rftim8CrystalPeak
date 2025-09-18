@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03210_FindTheEncryptedString
+    public interface ILC_00003210_FindTheEncryptedString
     {
         public void PrintSolution();
     }

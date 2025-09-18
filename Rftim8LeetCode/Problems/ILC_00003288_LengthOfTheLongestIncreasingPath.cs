@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03288_LengthOfTheLongestIncreasingPath
+    public interface ILC_00003288_LengthOfTheLongestIncreasingPath
     {
         public void PrintSolution();
     }

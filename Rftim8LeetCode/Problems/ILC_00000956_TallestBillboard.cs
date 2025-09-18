@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00956_TallestBillboard
+    public interface ILC_00000956_TallestBillboard
     {
         public void PrintSolution();
     }

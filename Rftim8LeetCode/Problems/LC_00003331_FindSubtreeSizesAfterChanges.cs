@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03331_FindSubtreeSizesAfterChanges : I_03331_FindSubtreeSizesAfterChanges
+    public class LC_00003331_FindSubtreeSizesAfterChanges : ILC_00003331_FindSubtreeSizesAfterChanges
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03331_FindSubtreeSizesAfterChanges()
+        public LC_00003331_FindSubtreeSizesAfterChanges()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03331_FindSubtreeSizesAfterChanges));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003331_FindSubtreeSizesAfterChanges));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03331_FindSubtreeSizesAfterChanges(IHost host)
+        public LC_00003331_FindSubtreeSizesAfterChanges(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03331_FindSubtreeSizesAfterChanges));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003331_FindSubtreeSizesAfterChanges));
         }
 
         public void PrintSolution()

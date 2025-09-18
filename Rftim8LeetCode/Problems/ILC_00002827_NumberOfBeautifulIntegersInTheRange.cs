@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02827_NumberOfBeautifulIntegersInTheRange
+    public interface ILC_00002827_NumberOfBeautifulIntegersInTheRange
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02977_MinimumCostToConvertStringII
+    public interface ILC_00002977_MinimumCostToConvertStringII
     {
         public void PrintSolution();
     }

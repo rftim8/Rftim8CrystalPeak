@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01291_SequentialDigits
+    public interface ILC_00001291_SequentialDigits
     {
         public void PrintSolution();
     }

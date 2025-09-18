@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00341_FlattenNestedListIterator
+    public interface ILC_00000341_FlattenNestedListIterator
     {
         public void PrintSolution();
     }

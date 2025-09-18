@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01439_FindTheKthSmallestSumOfAMatrixWithSortedRows
+    public interface ILC_00001439_FindTheKthSmallestSumOfAMatrixWithSortedRows
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02849_DetermineIfACellIsReachableAtAGivenTime
+    public interface ILC_00002849_DetermineIfACellIsReachableAtAGivenTime
     {
         public void PrintSolution();
     }

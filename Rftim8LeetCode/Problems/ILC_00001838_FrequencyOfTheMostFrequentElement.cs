@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01838_FrequencyOfTheMostFrequentElement
+    public interface ILC_00001838_FrequencyOfTheMostFrequentElement
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01054_DistantBarcodes
+    public interface ILC_00001054_DistantBarcodes
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00406_QueueReconstructionByHeight : I_00406_QueueReconstructionByHeight
+    public class LC_00000406_QueueReconstructionByHeight : ILC_00000406_QueueReconstructionByHeight
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00406_QueueReconstructionByHeight()
+        public LC_00000406_QueueReconstructionByHeight()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00406_QueueReconstructionByHeight));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000406_QueueReconstructionByHeight));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00406_QueueReconstructionByHeight(IHost host)
+        public LC_00000406_QueueReconstructionByHeight(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00406_QueueReconstructionByHeight));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000406_QueueReconstructionByHeight));
         }
 
         public void PrintSolution()

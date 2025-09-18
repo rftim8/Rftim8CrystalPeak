@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03016_MinimumNumberOfPushesToTypeWordII
+    public interface ILC_00003016_MinimumNumberOfPushesToTypeWordII
     {
         public void PrintSolution();
     }

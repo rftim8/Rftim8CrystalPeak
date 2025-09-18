@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01200_MinimumAbsoluteDifference
+    public interface ILC_00001200_MinimumAbsoluteDifference
     {
         public void PrintSolution();
     }

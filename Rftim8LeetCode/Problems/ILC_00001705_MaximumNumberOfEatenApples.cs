@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01705_MaximumNumberOfEatenApples
+    public interface ILC_00001705_MaximumNumberOfEatenApples
     {
         public void PrintSolution();
     }

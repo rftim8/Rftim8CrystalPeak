@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01783_GrandSlamTitles
+    public interface ILC_00001783_GrandSlamTitles
     {
         public void PrintSolution();
     }

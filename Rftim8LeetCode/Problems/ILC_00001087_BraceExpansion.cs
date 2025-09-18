@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01087_BraceExpansion
+    public interface ILC_00001087_BraceExpansion
     {
         public void PrintSolution();
     }

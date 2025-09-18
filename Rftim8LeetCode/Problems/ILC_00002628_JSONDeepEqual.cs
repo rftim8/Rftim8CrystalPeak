@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02628_JSONDeepEqual
+    public interface ILC_00002628_JSONDeepEqual
     {
         public void PrintSolution();
     }

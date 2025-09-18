@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01248_CountNumberOfNiceSubarrays
+    public interface ILC_00001248_CountNumberOfNiceSubarrays
     {
         public void PrintSolution();
     }

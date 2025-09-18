@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02754_BindFunctionToContext : I_02754_BindFunctionToContext
+    public class LC_00002754_BindFunctionToContext : ILC_00002754_BindFunctionToContext
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02754_BindFunctionToContext()
+        public LC_00002754_BindFunctionToContext()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02754_BindFunctionToContext));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002754_BindFunctionToContext));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02754_BindFunctionToContext(IHost host)
+        public LC_00002754_BindFunctionToContext(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02754_BindFunctionToContext));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002754_BindFunctionToContext));
         }
 
         public void PrintSolution()

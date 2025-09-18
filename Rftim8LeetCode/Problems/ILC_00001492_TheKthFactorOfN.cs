@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01492_TheKthFactorOfN
+    public interface ILC_00001492_TheKthFactorOfN
     {
         public void PrintSolution();
     }

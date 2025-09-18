@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02482_DifferenceBetweenOnesAndZerosInRowAndColumn
+    public interface ILC_00002482_DifferenceBetweenOnesAndZerosInRowAndColumn
     {
         public void PrintSolution();
     }

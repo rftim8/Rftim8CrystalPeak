@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00626_ExchangeSeats
+    public interface ILC_00000626_ExchangeSeats
     {
         public void PrintSolution();
     }

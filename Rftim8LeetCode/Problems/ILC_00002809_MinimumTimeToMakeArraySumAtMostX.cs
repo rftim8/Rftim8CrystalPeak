@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02809_MinimumTimeToMakeArraySumAtMostX
+    public interface ILC_00002809_MinimumTimeToMakeArraySumAtMostX
     {
         public void PrintSolution();
     }

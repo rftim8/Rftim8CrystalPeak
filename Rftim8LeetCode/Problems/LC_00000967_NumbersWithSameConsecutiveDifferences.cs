@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00967_NumbersWithSameConsecutiveDifferences : I_00967_NumbersWithSameConsecutiveDifferences
+    public class LC_00000967_NumbersWithSameConsecutiveDifferences : ILC_00000967_NumbersWithSameConsecutiveDifferences
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00967_NumbersWithSameConsecutiveDifferences()
+        public LC_00000967_NumbersWithSameConsecutiveDifferences()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00967_NumbersWithSameConsecutiveDifferences));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000967_NumbersWithSameConsecutiveDifferences));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00967_NumbersWithSameConsecutiveDifferences(IHost host)
+        public LC_00000967_NumbersWithSameConsecutiveDifferences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00967_NumbersWithSameConsecutiveDifferences));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000967_NumbersWithSameConsecutiveDifferences));
         }
 
         public void PrintSolution()

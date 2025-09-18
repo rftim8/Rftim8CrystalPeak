@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02286_BookingConcertTicketsInGroups : I_02286_BookingConcertTicketsInGroups
+    public class LC_00002286_BookingConcertTicketsInGroups : ILC_00002286_BookingConcertTicketsInGroups
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02286_BookingConcertTicketsInGroups()
+        public LC_00002286_BookingConcertTicketsInGroups()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02286_BookingConcertTicketsInGroups));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002286_BookingConcertTicketsInGroups));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02286_BookingConcertTicketsInGroups(IHost host)
+        public LC_00002286_BookingConcertTicketsInGroups(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02286_BookingConcertTicketsInGroups));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002286_BookingConcertTicketsInGroups));
         }
 
         public void PrintSolution()

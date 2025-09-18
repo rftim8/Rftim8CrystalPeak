@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00959_RegionsCutBySlashes
+    public interface ILC_00000959_RegionsCutBySlashes
     {
         public void PrintSolution();
     }

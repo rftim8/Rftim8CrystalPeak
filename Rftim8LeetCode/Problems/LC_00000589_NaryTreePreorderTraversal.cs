@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00589_NaryTreePreorderTraversal : I_00589_NaryTreePreorderTraversal
+    public class LC_00000589_NaryTreePreorderTraversal : ILC_00000589_NaryTreePreorderTraversal
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00589_NaryTreePreorderTraversal()
+        public LC_00000589_NaryTreePreorderTraversal()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00589_NaryTreePreorderTraversal));
-            Input = [.. RftResource._00589_NaryTreePreorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000589_NaryTreePreorderTraversal));
+            Input = [.. RftResource.LC_00000589_NaryTreePreorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00589_NaryTreePreorderTraversal(IHost host)
+        public LC_00000589_NaryTreePreorderTraversal(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00589_NaryTreePreorderTraversal));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000589_NaryTreePreorderTraversal));
             DataCollector();
         }
 

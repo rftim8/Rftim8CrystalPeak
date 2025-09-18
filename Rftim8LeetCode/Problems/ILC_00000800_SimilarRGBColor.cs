@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00800_SimilarRGBColor
+    public interface ILC_00000800_SimilarRGBColor
     {
         public void PrintSolution();
     }

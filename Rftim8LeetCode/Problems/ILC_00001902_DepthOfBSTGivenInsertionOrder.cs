@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01902_DepthOfBSTGivenInsertionOrder
+    public interface ILC_00001902_DepthOfBSTGivenInsertionOrder
     {
         public void PrintSolution();
     }

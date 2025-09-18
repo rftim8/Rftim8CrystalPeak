@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01506_FindRootOfNAryTree
+    public interface ILC_00001506_FindRootOfNAryTree
     {
         public void PrintSolution();
     }

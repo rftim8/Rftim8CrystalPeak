@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02629_FunctionComposition
+    public interface ILC_00002629_FunctionComposition
     {
         public void PrintSolution();
     }

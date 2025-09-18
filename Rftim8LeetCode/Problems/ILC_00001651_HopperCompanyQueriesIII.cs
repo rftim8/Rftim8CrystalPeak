@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01651_HopperCompanyQueriesIII
+    public interface ILC_00001651_HopperCompanyQueriesIII
     {
         public void PrintSolution();
     }

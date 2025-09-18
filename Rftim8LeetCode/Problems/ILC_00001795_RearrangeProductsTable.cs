@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01795_RearrangeProductsTable
+    public interface ILC_00001795_RearrangeProductsTable
     {
         public void PrintSolution();
     }

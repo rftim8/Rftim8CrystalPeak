@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02374_NodeWithHighestEdgeScore
+    public interface ILC_00002374_NodeWithHighestEdgeScore
     {
         public void PrintSolution();
     }

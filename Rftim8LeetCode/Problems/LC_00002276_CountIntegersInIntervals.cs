@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02276_CountIntegersInIntervals : I_02276_CountIntegersInIntervals
+    public class LC_00002276_CountIntegersInIntervals : ILC_00002276_CountIntegersInIntervals
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02276_CountIntegersInIntervals()
+        public LC_00002276_CountIntegersInIntervals()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02276_CountIntegersInIntervals));
-            Input = [.. RftResource._02276_CountIntegersInIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002276_CountIntegersInIntervals));
+            Input = [.. RftResource.LC_00002276_CountIntegersInIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02276_CountIntegersInIntervals(IHost host)
+        public LC_00002276_CountIntegersInIntervals(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02276_CountIntegersInIntervals));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002276_CountIntegersInIntervals));
             DataCollector();
         }
 

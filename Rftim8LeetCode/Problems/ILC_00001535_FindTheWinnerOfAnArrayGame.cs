@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01535_FindTheWinnerOfAnArrayGame
+    public interface ILC_00001535_FindTheWinnerOfAnArrayGame
     {
         public void PrintSolution();
     }

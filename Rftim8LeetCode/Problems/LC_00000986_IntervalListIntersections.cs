@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00986_IntervalListIntersections : I_00986_IntervalListIntersections
+    public class LC_00000986_IntervalListIntersections : ILC_00000986_IntervalListIntersections
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00986_IntervalListIntersections()
+        public LC_00000986_IntervalListIntersections()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00986_IntervalListIntersections));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000986_IntervalListIntersections));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00986_IntervalListIntersections(IHost host)
+        public LC_00000986_IntervalListIntersections(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00986_IntervalListIntersections));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000986_IntervalListIntersections));
         }
 
         public void PrintSolution()

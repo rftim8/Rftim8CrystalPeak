@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00179_LargestNumber : I_00179_LargestNumber
+    public class LC_00000179_LargestNumber : ILC_00000179_LargestNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00179_LargestNumber()
+        public LC_00000179_LargestNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00179_LargestNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000179_LargestNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00179_LargestNumber(IHost host)
+        public LC_00000179_LargestNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00179_LargestNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000179_LargestNumber));
         }
 
         public void PrintSolution()

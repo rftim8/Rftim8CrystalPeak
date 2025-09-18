@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02536_IncrementSubmatricesByOne
+    public interface ILC_00002536_IncrementSubmatricesByOne
     {
         public void PrintSolution();
     }

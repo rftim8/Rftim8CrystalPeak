@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00034_FindFirstAndLastPositionOfElementInSortedArray : I_00034_FindFirstAndLastPositionOfElementInSortedArray
+    public class LC_00000034_FindFirstAndLastPositionOfElementInSortedArray : ILC_00000034_FindFirstAndLastPositionOfElementInSortedArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00034_FindFirstAndLastPositionOfElementInSortedArray()
+        public LC_00000034_FindFirstAndLastPositionOfElementInSortedArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00034_FindFirstAndLastPositionOfElementInSortedArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000034_FindFirstAndLastPositionOfElementInSortedArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00034_FindFirstAndLastPositionOfElementInSortedArray(IHost host)
+        public LC_00000034_FindFirstAndLastPositionOfElementInSortedArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00034_FindFirstAndLastPositionOfElementInSortedArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000034_FindFirstAndLastPositionOfElementInSortedArray));
         }
 
         public void PrintSolution()

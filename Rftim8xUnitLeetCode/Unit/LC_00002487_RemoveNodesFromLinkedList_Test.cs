@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02487_RemoveNodesFromLinkedList_Test
+    public class LC_00002487_RemoveNodesFromLinkedList_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02487_RemoveNodesFromLinkedList))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02487_RemoveNodesFromLinkedList))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02487_RemoveNodesFromLinkedList))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002487_RemoveNodesFromLinkedList))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002487_RemoveNodesFromLinkedList))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002487_RemoveNodesFromLinkedList))![1]);
 
-        public static TheoryData<List<string>, int> _02487_RemoveNodesFromLinkedListPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002487_RemoveNodesFromLinkedListPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02487_RemoveNodesFromLinkedListPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002487_RemoveNodesFromLinkedListPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02487_RemoveNodesFromLinkedListPartOne_Data))]
+        [MemberData(nameof(LC_00002487_RemoveNodesFromLinkedListPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02487_RemoveNodesFromLinkedList.PartOne_Test(a0);
+            int actual = LC_00002487_RemoveNodesFromLinkedList.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02487_RemoveNodesFromLinkedListPartTwo_Data))]
+        [MemberData(nameof(LC_00002487_RemoveNodesFromLinkedListPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02487_RemoveNodesFromLinkedList.PartTwo_Test(a0);
+            int actual = LC_00002487_RemoveNodesFromLinkedList.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

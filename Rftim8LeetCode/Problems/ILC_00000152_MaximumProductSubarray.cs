@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00152_MaximumProductSubarray
+    public interface ILC_00000152_MaximumProductSubarray
     {
         public void PrintSolution();
     }

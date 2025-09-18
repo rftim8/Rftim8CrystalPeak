@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00207_CourseSchedule : I_00207_CourseSchedule
+    public class LC_00000207_CourseSchedule : ILC_00000207_CourseSchedule
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00207_CourseSchedule()
+        public LC_00000207_CourseSchedule()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00207_CourseSchedule));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000207_CourseSchedule));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00207_CourseSchedule(IHost host)
+        public LC_00000207_CourseSchedule(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00207_CourseSchedule));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000207_CourseSchedule));
         }
 
         public void PrintSolution()

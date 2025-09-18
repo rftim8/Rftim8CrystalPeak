@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03041_MaximizeConsecutiveElementsInAnArrayAfterModification
+    public interface ILC_00003041_MaximizeConsecutiveElementsInAnArrayAfterModification
     {
         public void PrintSolution();
     }

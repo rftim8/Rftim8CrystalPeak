@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01145_BinaryTreeColoringGame : I_01145_BinaryTreeColoringGame
+    public class LC_00001145_BinaryTreeColoringGame : ILC_00001145_BinaryTreeColoringGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01145_BinaryTreeColoringGame()
+        public LC_00001145_BinaryTreeColoringGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01145_BinaryTreeColoringGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001145_BinaryTreeColoringGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01145_BinaryTreeColoringGame(IHost host)
+        public LC_00001145_BinaryTreeColoringGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01145_BinaryTreeColoringGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001145_BinaryTreeColoringGame));
         }
 
         public void PrintSolution()

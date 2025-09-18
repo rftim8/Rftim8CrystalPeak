@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01408_StringMatchingInAnArray
+    public interface ILC_00001408_StringMatchingInAnArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02178_MaximumSplitOfPositiveEvenIntegers
+    public interface ILC_00002178_MaximumSplitOfPositiveEvenIntegers
     {
         public void PrintSolution();
     }

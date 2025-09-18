@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00307_RangeSumQueryMutable
+    public interface ILC_00000307_RangeSumQueryMutable
     {
         public void PrintSolution();
     }

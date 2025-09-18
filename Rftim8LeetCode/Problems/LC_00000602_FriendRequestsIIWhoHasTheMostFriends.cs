@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00602_FriendRequestsIIWhoHasTheMostFriends : I_00602_FriendRequestsIIWhoHasTheMostFriends
+    public class LC_00000602_FriendRequestsIIWhoHasTheMostFriends : ILC_00000602_FriendRequestsIIWhoHasTheMostFriends
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00602_FriendRequestsIIWhoHasTheMostFriends()
+        public LC_00000602_FriendRequestsIIWhoHasTheMostFriends()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00602_FriendRequestsIIWhoHasTheMostFriends));
-            Input = [.. RftResource._00602_FriendRequestsIIWhoHasTheMostFriends_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000602_FriendRequestsIIWhoHasTheMostFriends));
+            Input = [.. RftResource.LC_00000602_FriendRequestsIIWhoHasTheMostFriends_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00602_FriendRequestsIIWhoHasTheMostFriends(IHost host)
+        public LC_00000602_FriendRequestsIIWhoHasTheMostFriends(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00602_FriendRequestsIIWhoHasTheMostFriends));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000602_FriendRequestsIIWhoHasTheMostFriends));
             DataCollector();
         }
 

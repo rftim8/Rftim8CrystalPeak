@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00228_SummaryRanges
+    public interface ILC_00000228_SummaryRanges
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00267_PalindromePermutationII : I_00267_PalindromePermutationII
+    public class LC_00000267_PalindromePermutationII : ILC_00000267_PalindromePermutationII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00267_PalindromePermutationII()
+        public LC_00000267_PalindromePermutationII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00267_PalindromePermutationII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000267_PalindromePermutationII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00267_PalindromePermutationII(IHost host)
+        public LC_00000267_PalindromePermutationII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00267_PalindromePermutationII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000267_PalindromePermutationII));
         }
 
         public void PrintSolution()

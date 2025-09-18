@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00383_RansomNote
+    public interface ILC_00000383_RansomNote
     {
         public void PrintSolution();
     }

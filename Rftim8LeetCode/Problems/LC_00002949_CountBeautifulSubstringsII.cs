@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02949_CountBeautifulSubstringsII : I_02949_CountBeautifulSubstringsII
+    public class LC_00002949_CountBeautifulSubstringsII : ILC_00002949_CountBeautifulSubstringsII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02949_CountBeautifulSubstringsII()
+        public LC_00002949_CountBeautifulSubstringsII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02949_CountBeautifulSubstringsII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002949_CountBeautifulSubstringsII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02949_CountBeautifulSubstringsII(IHost host)
+        public LC_00002949_CountBeautifulSubstringsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02949_CountBeautifulSubstringsII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002949_CountBeautifulSubstringsII));
         }
 
         public void PrintSolution()

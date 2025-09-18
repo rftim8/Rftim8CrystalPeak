@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03539_FindSumOfArrayProductOfMagicalSequences
+    public interface ILC_00003539_FindSumOfArrayProductOfMagicalSequences
     {
         public void PrintSolution();
     }

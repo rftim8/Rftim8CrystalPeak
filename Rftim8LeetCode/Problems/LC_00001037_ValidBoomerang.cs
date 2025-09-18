@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01037_ValidBoomerang : I_01037_ValidBoomerang
+    public class LC_00001037_ValidBoomerang : ILC_00001037_ValidBoomerang
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01037_ValidBoomerang()
+        public LC_00001037_ValidBoomerang()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01037_ValidBoomerang));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001037_ValidBoomerang));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01037_ValidBoomerang(IHost host)
+        public LC_00001037_ValidBoomerang(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01037_ValidBoomerang));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001037_ValidBoomerang));
         }
 
         public void PrintSolution()

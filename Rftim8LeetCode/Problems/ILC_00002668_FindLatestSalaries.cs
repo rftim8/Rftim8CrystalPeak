@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02668_FindLatestSalaries
+    public interface ILC_00002668_FindLatestSalaries
     {
         public void PrintSolution();
     }

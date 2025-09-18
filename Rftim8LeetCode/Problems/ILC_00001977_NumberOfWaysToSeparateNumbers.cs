@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01977_NumberOfWaysToSeparateNumbers
+    public interface ILC_00001977_NumberOfWaysToSeparateNumbers
     {
         public void PrintSolution();
     }

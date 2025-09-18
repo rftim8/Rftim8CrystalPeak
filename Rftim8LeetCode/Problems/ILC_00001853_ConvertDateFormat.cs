@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01853_ConvertDateFormat
+    public interface ILC_00001853_ConvertDateFormat
     {
         public void PrintSolution();
     }

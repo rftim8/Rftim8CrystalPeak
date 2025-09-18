@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02159_OrderTwoColumnsIndependently : I_02159_OrderTwoColumnsIndependently
+    public class LC_00002159_OrderTwoColumnsIndependently : ILC_00002159_OrderTwoColumnsIndependently
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02159_OrderTwoColumnsIndependently()
+        public LC_00002159_OrderTwoColumnsIndependently()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02159_OrderTwoColumnsIndependently));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002159_OrderTwoColumnsIndependently));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02159_OrderTwoColumnsIndependently(IHost host)
+        public LC_00002159_OrderTwoColumnsIndependently(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02159_OrderTwoColumnsIndependently));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002159_OrderTwoColumnsIndependently));
         }
 
         public void PrintSolution()

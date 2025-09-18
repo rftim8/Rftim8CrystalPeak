@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02373_LargestLocalValuesInAMatrix
+    public interface ILC_00002373_LargestLocalValuesInAMatrix
     {
         public void PrintSolution();
     }

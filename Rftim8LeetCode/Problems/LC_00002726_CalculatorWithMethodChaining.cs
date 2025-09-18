@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02726_CalculatorWithMethodChaining : I_02726_CalculatorWithMethodChaining
+    public class LC_00002726_CalculatorWithMethodChaining : ILC_00002726_CalculatorWithMethodChaining
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02726_CalculatorWithMethodChaining()
+        public LC_00002726_CalculatorWithMethodChaining()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02726_CalculatorWithMethodChaining));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002726_CalculatorWithMethodChaining));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02726_CalculatorWithMethodChaining(IHost host)
+        public LC_00002726_CalculatorWithMethodChaining(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02726_CalculatorWithMethodChaining));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002726_CalculatorWithMethodChaining));
         }
 
         public void PrintSolution()

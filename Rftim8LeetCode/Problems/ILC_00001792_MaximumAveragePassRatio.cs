@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01792_MaximumAveragePassRatio
+    public interface ILC_00001792_MaximumAveragePassRatio
     {
         public void PrintSolution();
     }

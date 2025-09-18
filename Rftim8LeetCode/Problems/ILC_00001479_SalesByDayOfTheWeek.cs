@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01479_SalesByDayOfTheWeek
+    public interface ILC_00001479_SalesByDayOfTheWeek
     {
         public void PrintSolution();
     }

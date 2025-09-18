@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00296_BestMeetingPoint
+    public interface ILC_00000296_BestMeetingPoint
     {
         public void PrintSolution();
     }

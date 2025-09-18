@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03153_SumOfDigitDifferencesOfAllPairs
+    public interface ILC_00003153_SumOfDigitDifferencesOfAllPairs
     {
         public void PrintSolution();
     }

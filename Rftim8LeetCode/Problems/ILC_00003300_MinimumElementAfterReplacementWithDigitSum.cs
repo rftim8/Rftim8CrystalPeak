@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03300_MinimumElementAfterReplacementWithDigitSum
+    public interface ILC_00003300_MinimumElementAfterReplacementWithDigitSum
     {
         public void PrintSolution();
     }

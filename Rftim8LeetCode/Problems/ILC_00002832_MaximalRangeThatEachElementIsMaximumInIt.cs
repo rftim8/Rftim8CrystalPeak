@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02832_MaximalRangeThatEachElementIsMaximumInIt
+    public interface ILC_00002832_MaximalRangeThatEachElementIsMaximumInIt
     {
         public void PrintSolution();
     }

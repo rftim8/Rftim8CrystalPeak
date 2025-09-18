@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00420_StrongPasswordChecker
+    public interface ILC_00000420_StrongPasswordChecker
     {
         public void PrintSolution();
     }

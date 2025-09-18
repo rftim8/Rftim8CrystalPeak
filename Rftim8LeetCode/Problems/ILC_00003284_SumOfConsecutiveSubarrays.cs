@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03284_SumOfConsecutiveSubarrays
+    public interface ILC_00003284_SumOfConsecutiveSubarrays
     {
         public void PrintSolution();
     }

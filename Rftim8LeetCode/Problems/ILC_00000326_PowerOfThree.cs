@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00326_PowerOfThree
+    public interface ILC_00000326_PowerOfThree
     {
         public void PrintSolution();
     }

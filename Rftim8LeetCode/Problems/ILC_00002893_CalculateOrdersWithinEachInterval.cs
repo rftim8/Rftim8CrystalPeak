@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02893_CalculateOrdersWithinEachInterval
+    public interface ILC_00002893_CalculateOrdersWithinEachInterval
     {
         public void PrintSolution();
     }

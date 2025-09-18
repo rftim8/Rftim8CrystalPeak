@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00577_EmployeeBonus_Test
+    public class LC_00000577_EmployeeBonus_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00577_EmployeeBonus))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00577_EmployeeBonus))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00577_EmployeeBonus))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000577_EmployeeBonus))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000577_EmployeeBonus))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000577_EmployeeBonus))![1]);
 
-        public static TheoryData<List<string>, int> _00577_EmployeeBonusPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000577_EmployeeBonusPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00577_EmployeeBonusPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000577_EmployeeBonusPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00577_EmployeeBonusPartOne_Data))]
+        [MemberData(nameof(LC_00000577_EmployeeBonusPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00577_EmployeeBonus.PartOne_Test(a0);
+            int actual = LC_00000577_EmployeeBonus.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00577_EmployeeBonusPartTwo_Data))]
+        [MemberData(nameof(LC_00000577_EmployeeBonusPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00577_EmployeeBonus.PartTwo_Test(a0);
+            int actual = LC_00000577_EmployeeBonus.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

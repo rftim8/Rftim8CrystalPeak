@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01625_LexicographicallySmallestStringAfterApplyingOperations : I_01625_LexicographicallySmallestStringAfterApplyingOperations
+    public class LC_00001625_LexicographicallySmallestStringAfterApplyingOperations : ILC_00001625_LexicographicallySmallestStringAfterApplyingOperations
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01625_LexicographicallySmallestStringAfterApplyingOperations()
+        public LC_00001625_LexicographicallySmallestStringAfterApplyingOperations()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01625_LexicographicallySmallestStringAfterApplyingOperations));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001625_LexicographicallySmallestStringAfterApplyingOperations));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01625_LexicographicallySmallestStringAfterApplyingOperations(IHost host)
+        public LC_00001625_LexicographicallySmallestStringAfterApplyingOperations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01625_LexicographicallySmallestStringAfterApplyingOperations));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001625_LexicographicallySmallestStringAfterApplyingOperations));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00106_ConstructBinaryTreeFromInorderAndPostorderTraversal
+    public interface ILC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal
     {
         public void PrintSolution();
     }

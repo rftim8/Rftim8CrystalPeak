@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00595_BigCountries
+    public interface ILC_00000595_BigCountries
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02564_SubstringXORQueries
+    public interface ILC_00002564_SubstringXORQueries
     {
         public void PrintSolution();
     }

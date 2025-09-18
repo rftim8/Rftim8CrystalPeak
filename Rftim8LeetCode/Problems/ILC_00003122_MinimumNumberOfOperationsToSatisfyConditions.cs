@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03122_MinimumNumberOfOperationsToSatisfyConditions
+    public interface ILC_00003122_MinimumNumberOfOperationsToSatisfyConditions
     {
         public void PrintSolution();
     }

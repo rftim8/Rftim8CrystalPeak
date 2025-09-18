@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00306_AdditiveNumber : I_00306_AdditiveNumber
+    public class LC_00000306_AdditiveNumber : ILC_00000306_AdditiveNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00306_AdditiveNumber()
+        public LC_00000306_AdditiveNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00306_AdditiveNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000306_AdditiveNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00306_AdditiveNumber(IHost host)
+        public LC_00000306_AdditiveNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00306_AdditiveNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000306_AdditiveNumber));
         }
 
         public void PrintSolution()

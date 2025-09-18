@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03324_FindTheSequenceOfStringsAppearedOnTheScreen
+    public interface ILC_00003324_FindTheSequenceOfStringsAppearedOnTheScreen
     {
         public void PrintSolution();
     }

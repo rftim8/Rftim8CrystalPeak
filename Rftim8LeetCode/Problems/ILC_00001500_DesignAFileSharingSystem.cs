@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01500_DesignAFileSharingSystem
+    public interface ILC_00001500_DesignAFileSharingSystem
     {
         public void PrintSolution();
     }

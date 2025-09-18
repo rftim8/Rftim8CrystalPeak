@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01958_CheckIfMoveIsLegal
+    public interface ILC_00001958_CheckIfMoveIsLegal
     {
         public void PrintSolution();
     }

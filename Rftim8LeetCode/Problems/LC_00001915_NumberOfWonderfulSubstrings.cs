@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01915_NumberOfWonderfulSubstrings : I_01915_NumberOfWonderfulSubstrings
+    public class LC_00001915_NumberOfWonderfulSubstrings : ILC_00001915_NumberOfWonderfulSubstrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01915_NumberOfWonderfulSubstrings()
+        public LC_00001915_NumberOfWonderfulSubstrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01915_NumberOfWonderfulSubstrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001915_NumberOfWonderfulSubstrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01915_NumberOfWonderfulSubstrings(IHost host)
+        public LC_00001915_NumberOfWonderfulSubstrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01915_NumberOfWonderfulSubstrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001915_NumberOfWonderfulSubstrings));
         }
 
         public void PrintSolution()

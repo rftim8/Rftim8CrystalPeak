@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02725_IntervalCancellation
+    public interface ILC_00002725_IntervalCancellation
     {
         public void PrintSolution();
     }

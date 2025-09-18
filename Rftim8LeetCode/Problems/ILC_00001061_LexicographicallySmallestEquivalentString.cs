@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01061_LexicographicallySmallestEquivalentString
+    public interface ILC_00001061_LexicographicallySmallestEquivalentString
     {
         public void PrintSolution();
     }

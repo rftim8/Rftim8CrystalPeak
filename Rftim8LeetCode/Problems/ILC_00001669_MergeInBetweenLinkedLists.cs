@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01669_MergeInBetweenLinkedLists
+    public interface ILC_00001669_MergeInBetweenLinkedLists
     {
         public void PrintSolution();
     }

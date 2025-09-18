@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02426_NumberOfPairsSatisfyingInequality : I_02426_NumberOfPairsSatisfyingInequality
+    public class LC_00002426_NumberOfPairsSatisfyingInequality : ILC_00002426_NumberOfPairsSatisfyingInequality
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02426_NumberOfPairsSatisfyingInequality()
+        public LC_00002426_NumberOfPairsSatisfyingInequality()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02426_NumberOfPairsSatisfyingInequality));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002426_NumberOfPairsSatisfyingInequality));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02426_NumberOfPairsSatisfyingInequality(IHost host)
+        public LC_00002426_NumberOfPairsSatisfyingInequality(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02426_NumberOfPairsSatisfyingInequality));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002426_NumberOfPairsSatisfyingInequality));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02385_AmountOfTimeForBinaryTreeToBeInfected
+    public interface ILC_00002385_AmountOfTimeForBinaryTreeToBeInfected
     {
         public void PrintSolution();
     }

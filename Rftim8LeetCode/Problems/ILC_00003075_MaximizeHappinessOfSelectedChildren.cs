@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03075_MaximizeHappinessOfSelectedChildren
+    public interface ILC_00003075_MaximizeHappinessOfSelectedChildren
     {
         public void PrintSolution();
     }

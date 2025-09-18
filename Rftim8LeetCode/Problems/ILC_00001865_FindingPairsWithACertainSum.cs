@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01865_FindingPairsWithACertainSum
+    public interface ILC_00001865_FindingPairsWithACertainSum
     {
         public void PrintSolution();
     }

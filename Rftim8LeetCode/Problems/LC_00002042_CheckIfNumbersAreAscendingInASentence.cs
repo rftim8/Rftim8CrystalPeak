@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02042_CheckIfNumbersAreAscendingInASentence : I_02042_CheckIfNumbersAreAscendingInASentence
+    public class LC_00002042_CheckIfNumbersAreAscendingInASentence : ILC_00002042_CheckIfNumbersAreAscendingInASentence
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02042_CheckIfNumbersAreAscendingInASentence()
+        public LC_00002042_CheckIfNumbersAreAscendingInASentence()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02042_CheckIfNumbersAreAscendingInASentence));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002042_CheckIfNumbersAreAscendingInASentence));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02042_CheckIfNumbersAreAscendingInASentence(IHost host)
+        public LC_00002042_CheckIfNumbersAreAscendingInASentence(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02042_CheckIfNumbersAreAscendingInASentence));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002042_CheckIfNumbersAreAscendingInASentence));
         }
 
         public void PrintSolution()

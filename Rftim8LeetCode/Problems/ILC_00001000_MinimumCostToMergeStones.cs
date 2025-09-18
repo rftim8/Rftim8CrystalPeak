@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01000_MinimumCostToMergeStones
+    public interface ILC_00001000_MinimumCostToMergeStones
     {
         public void PrintSolution();
     }

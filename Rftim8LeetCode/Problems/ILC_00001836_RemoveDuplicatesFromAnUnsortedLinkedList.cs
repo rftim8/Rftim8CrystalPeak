@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01836_RemoveDuplicatesFromAnUnsortedLinkedList
+    public interface ILC_00001836_RemoveDuplicatesFromAnUnsortedLinkedList
     {
         public void PrintSolution();
     }

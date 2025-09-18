@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01889_MinimumSpaceWastedFromPackaging
+    public interface ILC_00001889_MinimumSpaceWastedFromPackaging
     {
         public void PrintSolution();
     }

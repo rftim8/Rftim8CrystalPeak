@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01661_AverageTimeOfProcessPerMachine
+    public interface ILC_00001661_AverageTimeOfProcessPerMachine
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03346_MaximumFrequencyOfAnElementAfterPerformingOperationsI : I_03346_MaximumFrequencyOfAnElementAfterPerformingOperationsI
+    public class LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI : ILC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03346_MaximumFrequencyOfAnElementAfterPerformingOperationsI()
+        public LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03346_MaximumFrequencyOfAnElementAfterPerformingOperationsI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03346_MaximumFrequencyOfAnElementAfterPerformingOperationsI(IHost host)
+        public LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03346_MaximumFrequencyOfAnElementAfterPerformingOperationsI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03352_CountKReducibleNumbersLessThanN : I_03352_CountKReducibleNumbersLessThanN
+    public class LC_00003352_CountKReducibleNumbersLessThanN : ILC_00003352_CountKReducibleNumbersLessThanN
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03352_CountKReducibleNumbersLessThanN()
+        public LC_00003352_CountKReducibleNumbersLessThanN()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03352_CountKReducibleNumbersLessThanN));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003352_CountKReducibleNumbersLessThanN));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03352_CountKReducibleNumbersLessThanN(IHost host)
+        public LC_00003352_CountKReducibleNumbersLessThanN(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03352_CountKReducibleNumbersLessThanN));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003352_CountKReducibleNumbersLessThanN));
         }
 
         public void PrintSolution()

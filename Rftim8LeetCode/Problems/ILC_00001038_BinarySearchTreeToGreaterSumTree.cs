@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01038_BinarySearchTreeToGreaterSumTree
+    public interface ILC_00001038_BinarySearchTreeToGreaterSumTree
     {
         public void PrintSolution();
     }

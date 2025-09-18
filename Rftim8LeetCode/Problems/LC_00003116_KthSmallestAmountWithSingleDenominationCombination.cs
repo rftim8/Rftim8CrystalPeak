@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03116_KthSmallestAmountWithSingleDenominationCombination : I_03116_KthSmallestAmountWithSingleDenominationCombination
+    public class LC_00003116_KthSmallestAmountWithSingleDenominationCombination : ILC_00003116_KthSmallestAmountWithSingleDenominationCombination
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03116_KthSmallestAmountWithSingleDenominationCombination()
+        public LC_00003116_KthSmallestAmountWithSingleDenominationCombination()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03116_KthSmallestAmountWithSingleDenominationCombination));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003116_KthSmallestAmountWithSingleDenominationCombination));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03116_KthSmallestAmountWithSingleDenominationCombination(IHost host)
+        public LC_00003116_KthSmallestAmountWithSingleDenominationCombination(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03116_KthSmallestAmountWithSingleDenominationCombination));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003116_KthSmallestAmountWithSingleDenominationCombination));
         }
 
         public void PrintSolution()

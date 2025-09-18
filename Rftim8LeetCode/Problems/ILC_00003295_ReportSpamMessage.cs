@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03295_ReportSpamMessage
+    public interface ILC_00003295_ReportSpamMessage
     {
         public void PrintSolution();
     }

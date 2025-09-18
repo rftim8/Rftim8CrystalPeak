@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01541_MinimumInsertionsToBalanceAParenthesesString
+    public interface ILC_00001541_MinimumInsertionsToBalanceAParenthesesString
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02912_NumberOfWaysToReachDestinationInTheGrid : I_02912_NumberOfWaysToReachDestinationInTheGrid
+    public class LC_00002912_NumberOfWaysToReachDestinationInTheGrid : ILC_00002912_NumberOfWaysToReachDestinationInTheGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02912_NumberOfWaysToReachDestinationInTheGrid()
+        public LC_00002912_NumberOfWaysToReachDestinationInTheGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02912_NumberOfWaysToReachDestinationInTheGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002912_NumberOfWaysToReachDestinationInTheGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02912_NumberOfWaysToReachDestinationInTheGrid(IHost host)
+        public LC_00002912_NumberOfWaysToReachDestinationInTheGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02912_NumberOfWaysToReachDestinationInTheGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002912_NumberOfWaysToReachDestinationInTheGrid));
         }
 
         public void PrintSolution()

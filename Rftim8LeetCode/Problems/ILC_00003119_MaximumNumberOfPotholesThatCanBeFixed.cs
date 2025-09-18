@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03119_MaximumNumberOfPotholesThatCanBeFixed
+    public interface ILC_00003119_MaximumNumberOfPotholesThatCanBeFixed
     {
         public void PrintSolution();
     }

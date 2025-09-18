@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01944_NumberOfVisiblePeopleInAQueue
+    public interface ILC_00001944_NumberOfVisiblePeopleInAQueue
     {
         public void PrintSolution();
     }

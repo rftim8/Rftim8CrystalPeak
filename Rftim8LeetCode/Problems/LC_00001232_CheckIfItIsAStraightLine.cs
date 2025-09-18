@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01232_CheckIfItIsAStraightLine : I_01232_CheckIfItIsAStraightLine
+    public class LC_00001232_CheckIfItIsAStraightLine : ILC_00001232_CheckIfItIsAStraightLine
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01232_CheckIfItIsAStraightLine()
+        public LC_00001232_CheckIfItIsAStraightLine()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01232_CheckIfItIsAStraightLine));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001232_CheckIfItIsAStraightLine));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01232_CheckIfItIsAStraightLine(IHost host)
+        public LC_00001232_CheckIfItIsAStraightLine(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01232_CheckIfItIsAStraightLine));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001232_CheckIfItIsAStraightLine));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01152_AnalyzeUserWebsiteVisitPattern
+    public interface ILC_00001152_AnalyzeUserWebsiteVisitPattern
     {
         public void PrintSolution();
     }

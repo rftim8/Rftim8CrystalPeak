@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02597_TheNumberOfBeautifulSubsets
+    public interface ILC_00002597_TheNumberOfBeautifulSubsets
     {
         public void PrintSolution();
     }

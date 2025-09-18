@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01817_FindingTheUsersActiveMinutes
+    public interface ILC_00001817_FindingTheUsersActiveMinutes
     {
         public void PrintSolution();
     }

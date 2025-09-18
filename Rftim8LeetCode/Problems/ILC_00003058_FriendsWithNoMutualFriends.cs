@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03058_FriendsWithNoMutualFriends
+    public interface ILC_00003058_FriendsWithNoMutualFriends
     {
         public void PrintSolution();
     }

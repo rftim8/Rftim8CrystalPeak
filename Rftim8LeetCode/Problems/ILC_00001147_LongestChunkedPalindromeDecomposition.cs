@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01147_LongestChunkedPalindromeDecomposition
+    public interface ILC_00001147_LongestChunkedPalindromeDecomposition
     {
         public void PrintSolution();
     }

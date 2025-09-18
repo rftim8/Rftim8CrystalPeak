@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03549_MultiplyTwoPolynomials
+    public interface ILC_00003549_MultiplyTwoPolynomials
     {
         public void PrintSolution();
     }

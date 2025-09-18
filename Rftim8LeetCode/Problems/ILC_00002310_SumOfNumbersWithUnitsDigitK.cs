@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02310_SumOfNumbersWithUnitsDigitK
+    public interface ILC_00002310_SumOfNumbersWithUnitsDigitK
     {
         public void PrintSolution();
     }

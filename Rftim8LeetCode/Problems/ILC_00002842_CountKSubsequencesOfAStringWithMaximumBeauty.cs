@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02842_CountKSubsequencesOfAStringWithMaximumBeauty
+    public interface ILC_00002842_CountKSubsequencesOfAStringWithMaximumBeauty
     {
         public void PrintSolution();
     }

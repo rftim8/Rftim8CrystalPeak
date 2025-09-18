@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00188_BestTimeToBuyAndSellStockIV : I_00188_BestTimeToBuyAndSellStockIV
+    public class LC_00000188_BestTimeToBuyAndSellStockIV : ILC_00000188_BestTimeToBuyAndSellStockIV
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00188_BestTimeToBuyAndSellStockIV()
+        public LC_00000188_BestTimeToBuyAndSellStockIV()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00188_BestTimeToBuyAndSellStockIV));
-            Input = [.. RftResource._00188_BestTimeToBuyAndSellStockIV_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000188_BestTimeToBuyAndSellStockIV));
+            Input = [.. RftResource.LC_00000188_BestTimeToBuyAndSellStockIV_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00188_BestTimeToBuyAndSellStockIV(IHost host)
+        public LC_00000188_BestTimeToBuyAndSellStockIV(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00188_BestTimeToBuyAndSellStockIV));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000188_BestTimeToBuyAndSellStockIV));
             DataCollector();
         }
 

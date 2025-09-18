@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01730_ShortestPathToGetFood
+    public interface ILC_00001730_ShortestPathToGetFood
     {
         public void PrintSolution();
     }

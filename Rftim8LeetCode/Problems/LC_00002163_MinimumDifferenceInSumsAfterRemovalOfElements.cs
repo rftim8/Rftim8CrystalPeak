@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02163_MinimumDifferenceInSumsAfterRemovalOfElements : I_02163_MinimumDifferenceInSumsAfterRemovalOfElements
+    public class LC_00002163_MinimumDifferenceInSumsAfterRemovalOfElements : ILC_00002163_MinimumDifferenceInSumsAfterRemovalOfElements
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02163_MinimumDifferenceInSumsAfterRemovalOfElements()
+        public LC_00002163_MinimumDifferenceInSumsAfterRemovalOfElements()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02163_MinimumDifferenceInSumsAfterRemovalOfElements));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002163_MinimumDifferenceInSumsAfterRemovalOfElements));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02163_MinimumDifferenceInSumsAfterRemovalOfElements(IHost host)
+        public LC_00002163_MinimumDifferenceInSumsAfterRemovalOfElements(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02163_MinimumDifferenceInSumsAfterRemovalOfElements));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002163_MinimumDifferenceInSumsAfterRemovalOfElements));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00713_SubarrayProductLessThanK
+    public interface ILC_00000713_SubarrayProductLessThanK
     {
         public void PrintSolution();
     }

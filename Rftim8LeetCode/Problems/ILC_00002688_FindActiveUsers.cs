@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02688_FindActiveUsers
+    public interface ILC_00002688_FindActiveUsers
     {
         public void PrintSolution();
     }

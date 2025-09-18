@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01316_DistinctEchoSubstrings
+    public interface ILC_00001316_DistinctEchoSubstrings
     {
         public void PrintSolution();
     }

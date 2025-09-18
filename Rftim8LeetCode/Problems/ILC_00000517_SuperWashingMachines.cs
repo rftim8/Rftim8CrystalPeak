@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00517_SuperWashingMachines
+    public interface ILC_00000517_SuperWashingMachines
     {
         public void PrintSolution();
     }

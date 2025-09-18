@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00611_ValidTriangleNumber
+    public interface ILC_00000611_ValidTriangleNumber
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03481_ApplySubstitutions
+    public interface ILC_00003481_ApplySubstitutions
     {
         public void PrintSolution();
     }

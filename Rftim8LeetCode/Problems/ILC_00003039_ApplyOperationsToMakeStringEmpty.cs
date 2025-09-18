@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03039_ApplyOperationsToMakeStringEmpty
+    public interface ILC_00003039_ApplyOperationsToMakeStringEmpty
     {
         public void PrintSolution();
     }

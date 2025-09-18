@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03111_MinimumRectanglesToCoverPoints
+    public interface ILC_00003111_MinimumRectanglesToCoverPoints
     {
         public void PrintSolution();
     }

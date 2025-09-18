@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01819_NumberOfDifferentSubsequencesGCDs
+    public interface ILC_00001819_NumberOfDifferentSubsequencesGCDs
     {
         public void PrintSolution();
     }

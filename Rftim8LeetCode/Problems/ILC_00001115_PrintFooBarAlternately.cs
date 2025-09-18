@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01115_PrintFooBarAlternately
+    public interface ILC_00001115_PrintFooBarAlternately
     {
         public void PrintSolution();
     }

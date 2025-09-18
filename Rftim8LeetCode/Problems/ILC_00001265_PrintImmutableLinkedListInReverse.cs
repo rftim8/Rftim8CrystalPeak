@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01265_PrintImmutableLinkedListInReverse
+    public interface ILC_00001265_PrintImmutableLinkedListInReverse
     {
         public void PrintSolution();
     }

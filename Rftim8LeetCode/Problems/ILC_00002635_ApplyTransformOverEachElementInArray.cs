@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02635_ApplyTransformOverEachElementInArray
+    public interface ILC_00002635_ApplyTransformOverEachElementInArray
     {
         public void PrintSolution();
     }

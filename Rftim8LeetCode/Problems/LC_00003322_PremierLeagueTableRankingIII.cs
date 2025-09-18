@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03322_PremierLeagueTableRankingIII : I_03322_PremierLeagueTableRankingIII
+    public class LC_00003322_PremierLeagueTableRankingIII : ILC_00003322_PremierLeagueTableRankingIII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03322_PremierLeagueTableRankingIII()
+        public LC_00003322_PremierLeagueTableRankingIII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03322_PremierLeagueTableRankingIII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003322_PremierLeagueTableRankingIII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03322_PremierLeagueTableRankingIII(IHost host)
+        public LC_00003322_PremierLeagueTableRankingIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03322_PremierLeagueTableRankingIII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003322_PremierLeagueTableRankingIII));
         }
 
         public void PrintSolution()

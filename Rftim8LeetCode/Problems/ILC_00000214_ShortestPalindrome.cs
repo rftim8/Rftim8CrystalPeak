@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00214_ShortestPalindrome
+    public interface ILC_00000214_ShortestPalindrome
     {
         public void PrintSolution();
     }

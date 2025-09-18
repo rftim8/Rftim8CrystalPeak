@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00744_FindSmallestLetterGreaterThanTarget
+    public interface ILC_00000744_FindSmallestLetterGreaterThanTarget
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02625_FlattenDeeplyNestedArray
+    public interface ILC_00002625_FlattenDeeplyNestedArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI
+    public interface ILC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI
     {
         public void PrintSolution();
     }

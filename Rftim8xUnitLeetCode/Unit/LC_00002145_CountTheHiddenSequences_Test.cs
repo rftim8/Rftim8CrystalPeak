@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02145_CountTheHiddenSequences_Test
+    public class LC_00002145_CountTheHiddenSequences_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02145_CountTheHiddenSequences))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02145_CountTheHiddenSequences))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02145_CountTheHiddenSequences))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002145_CountTheHiddenSequences))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002145_CountTheHiddenSequences))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002145_CountTheHiddenSequences))![1]);
 
-        public static TheoryData<List<string>, int> _02145_CountTheHiddenSequencesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002145_CountTheHiddenSequencesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02145_CountTheHiddenSequencesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002145_CountTheHiddenSequencesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02145_CountTheHiddenSequencesPartOne_Data))]
+        [MemberData(nameof(LC_00002145_CountTheHiddenSequencesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02145_CountTheHiddenSequences.PartOne_Test(a0);
+            int actual = LC_00002145_CountTheHiddenSequences.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02145_CountTheHiddenSequencesPartTwo_Data))]
+        [MemberData(nameof(LC_00002145_CountTheHiddenSequencesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02145_CountTheHiddenSequences.PartTwo_Test(a0);
+            int actual = LC_00002145_CountTheHiddenSequences.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

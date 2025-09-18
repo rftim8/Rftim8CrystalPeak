@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00111_MinimumDepthOfBinaryTree
+    public interface ILC_00000111_MinimumDepthOfBinaryTree
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01352_ProductOfTheLastKNumbers
+    public interface ILC_00001352_ProductOfTheLastKNumbers
     {
         public void PrintSolution();
     }

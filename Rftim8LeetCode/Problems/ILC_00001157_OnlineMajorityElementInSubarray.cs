@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01157_OnlineMajorityElementInSubarray
+    public interface ILC_00001157_OnlineMajorityElementInSubarray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01953_MaximumNumberOfWeeksForWhichYouCanWork
+    public interface ILC_00001953_MaximumNumberOfWeeksForWhichYouCanWork
     {
         public void PrintSolution();
     }

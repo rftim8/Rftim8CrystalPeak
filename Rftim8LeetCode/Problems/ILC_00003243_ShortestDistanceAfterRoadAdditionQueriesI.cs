@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03243_ShortestDistanceAfterRoadAdditionQueriesI
+    public interface ILC_00003243_ShortestDistanceAfterRoadAdditionQueriesI
     {
         public void PrintSolution();
     }

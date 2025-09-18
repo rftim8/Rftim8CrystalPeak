@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03571_FindTheShortestSuperstringII
+    public interface ILC_00003571_FindTheShortestSuperstringII
     {
         public void PrintSolution();
     }

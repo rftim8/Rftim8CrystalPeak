@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00067_AddBinary
+    public interface ILC_00000067_AddBinary
     {
         public void PrintSolution();
     }

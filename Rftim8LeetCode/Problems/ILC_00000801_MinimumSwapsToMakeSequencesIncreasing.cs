@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00801_MinimumSwapsToMakeSequencesIncreasing
+    public interface ILC_00000801_MinimumSwapsToMakeSequencesIncreasing
     {
         public void PrintSolution();
     }

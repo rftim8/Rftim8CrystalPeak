@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02341_MaximumNumberOfPairsInArray
+    public interface ILC_00002341_MaximumNumberOfPairsInArray
     {
         public void PrintSolution();
     }

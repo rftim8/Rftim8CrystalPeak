@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01049_LastStoneWeightII
+    public interface ILC_00001049_LastStoneWeightII
     {
         public void PrintSolution();
     }

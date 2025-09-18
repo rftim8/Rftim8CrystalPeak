@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00721_AccountsMerge
+    public interface ILC_00000721_AccountsMerge
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02261_KDivisibleElementsSubarrays
+    public interface ILC_00002261_KDivisibleElementsSubarrays
     {
         public void PrintSolution();
     }

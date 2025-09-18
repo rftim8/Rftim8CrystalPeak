@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02469_ConvertTheTemperature : I_02469_ConvertTheTemperature
+    public class LC_00002469_ConvertTheTemperature : ILC_00002469_ConvertTheTemperature
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02469_ConvertTheTemperature()
+        public LC_00002469_ConvertTheTemperature()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02469_ConvertTheTemperature));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002469_ConvertTheTemperature));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02469_ConvertTheTemperature(IHost host)
+        public LC_00002469_ConvertTheTemperature(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02469_ConvertTheTemperature));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002469_ConvertTheTemperature));
         }
 
         public void PrintSolution()

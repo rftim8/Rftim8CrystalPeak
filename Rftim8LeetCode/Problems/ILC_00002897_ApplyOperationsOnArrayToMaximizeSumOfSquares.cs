@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02897_ApplyOperationsOnArrayToMaximizeSumOfSquares
+    public interface ILC_00002897_ApplyOperationsOnArrayToMaximizeSumOfSquares
     {
         public void PrintSolution();
     }

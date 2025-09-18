@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01689_PartitioningIntoMinimumNumberOfDeciBinaryNumbers
+    public interface ILC_00001689_PartitioningIntoMinimumNumberOfDeciBinaryNumbers
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01350_StudentsWithInvalidDepartments : I_01350_StudentsWithInvalidDepartments
+    public class LC_00001350_StudentsWithInvalidDepartments : ILC_00001350_StudentsWithInvalidDepartments
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01350_StudentsWithInvalidDepartments()
+        public LC_00001350_StudentsWithInvalidDepartments()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01350_StudentsWithInvalidDepartments));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001350_StudentsWithInvalidDepartments));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01350_StudentsWithInvalidDepartments(IHost host)
+        public LC_00001350_StudentsWithInvalidDepartments(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01350_StudentsWithInvalidDepartments));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001350_StudentsWithInvalidDepartments));
         }
 
         public void PrintSolution()

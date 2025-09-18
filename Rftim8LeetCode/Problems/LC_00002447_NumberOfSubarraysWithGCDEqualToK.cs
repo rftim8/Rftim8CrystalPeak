@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02447_NumberOfSubarraysWithGCDEqualToK : I_02447_NumberOfSubarraysWithGCDEqualToK
+    public class LC_00002447_NumberOfSubarraysWithGCDEqualToK : ILC_00002447_NumberOfSubarraysWithGCDEqualToK
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02447_NumberOfSubarraysWithGCDEqualToK()
+        public LC_00002447_NumberOfSubarraysWithGCDEqualToK()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02447_NumberOfSubarraysWithGCDEqualToK));
-            Input = [.. RftResource._02447_NumberOfSubarraysWithGCDEqualToK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002447_NumberOfSubarraysWithGCDEqualToK));
+            Input = [.. RftResource.LC_00002447_NumberOfSubarraysWithGCDEqualToK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02447_NumberOfSubarraysWithGCDEqualToK(IHost host)
+        public LC_00002447_NumberOfSubarraysWithGCDEqualToK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02447_NumberOfSubarraysWithGCDEqualToK));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002447_NumberOfSubarraysWithGCDEqualToK));
             DataCollector();
         }
 

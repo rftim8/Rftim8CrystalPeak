@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02282_NumberOfPeopleThatCanBeSeenInAGrid
+    public interface ILC_00002282_NumberOfPeopleThatCanBeSeenInAGrid
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03401_FindCircularGiftExchangeChains
+    public interface ILC_00003401_FindCircularGiftExchangeChains
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02077_PathsInMazeThatLeadToSameRoom
+    public interface ILC_00002077_PathsInMazeThatLeadToSameRoom
     {
         public void PrintSolution();
     }

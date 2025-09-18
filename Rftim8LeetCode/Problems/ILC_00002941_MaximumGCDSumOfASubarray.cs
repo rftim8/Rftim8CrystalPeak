@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02941_MaximumGCDSumOfASubarray
+    public interface ILC_00002941_MaximumGCDSumOfASubarray
     {
         public void PrintSolution();
     }

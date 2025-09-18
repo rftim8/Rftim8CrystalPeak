@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00091_DecodeWays : I_00091_DecodeWays
+    public class LC_00000091_DecodeWays : ILC_00000091_DecodeWays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00091_DecodeWays()
+        public LC_00000091_DecodeWays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00091_DecodeWays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000091_DecodeWays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00091_DecodeWays(IHost host)
+        public LC_00000091_DecodeWays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00091_DecodeWays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000091_DecodeWays));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02975_MaximumSquareAreaByRemovingFencesFromAField
+    public interface ILC_00002975_MaximumSquareAreaByRemovingFencesFromAField
     {
         public void PrintSolution();
     }

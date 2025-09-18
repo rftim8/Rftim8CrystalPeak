@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00583_DeleteOperationForTwoStrings
+    public interface ILC_00000583_DeleteOperationForTwoStrings
     {
         public void PrintSolution();
     }

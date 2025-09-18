@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02681_PowerOfHeroes
+    public interface ILC_00002681_PowerOfHeroes
     {
         public void PrintSolution();
     }

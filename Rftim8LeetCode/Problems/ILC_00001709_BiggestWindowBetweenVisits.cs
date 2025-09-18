@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01709_BiggestWindowBetweenVisits
+    public interface ILC_00001709_BiggestWindowBetweenVisits
     {
         public void PrintSolution();
     }

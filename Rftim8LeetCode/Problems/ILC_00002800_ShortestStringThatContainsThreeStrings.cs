@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02800_ShortestStringThatContainsThreeStrings
+    public interface ILC_00002800_ShortestStringThatContainsThreeStrings
     {
         public void PrintSolution();
     }

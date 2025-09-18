@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02464_MinimumSubarraysInAValidSplit
+    public interface ILC_00002464_MinimumSubarraysInAValidSplit
     {
         public void PrintSolution();
     }

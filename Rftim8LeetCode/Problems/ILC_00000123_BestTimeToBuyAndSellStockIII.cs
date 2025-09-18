@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00123_BestTimeToBuyAndSellStockIII
+    public interface ILC_00000123_BestTimeToBuyAndSellStockIII
     {
         public void PrintSolution();
     }

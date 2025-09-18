@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03022_MinimizeOROfRemainingElementsUsingOperations
+    public interface ILC_00003022_MinimizeOROfRemainingElementsUsingOperations
     {
         public void PrintSolution();
     }

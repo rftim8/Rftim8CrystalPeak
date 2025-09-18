@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02798_NumberOfEmployeesWhoMetTheTarget
+    public interface ILC_00002798_NumberOfEmployeesWhoMetTheTarget
     {
         public void PrintSolution();
     }

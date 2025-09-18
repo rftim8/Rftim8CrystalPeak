@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03434_MaximumFrequencyAfterSubarrayOperation : I_03434_MaximumFrequencyAfterSubarrayOperation
+    public class LC_00003434_MaximumFrequencyAfterSubarrayOperation : ILC_00003434_MaximumFrequencyAfterSubarrayOperation
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03434_MaximumFrequencyAfterSubarrayOperation()
+        public LC_00003434_MaximumFrequencyAfterSubarrayOperation()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03434_MaximumFrequencyAfterSubarrayOperation));
-            Input = [.. RftResource._03434_MaximumFrequencyAfterSubarrayOperation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003434_MaximumFrequencyAfterSubarrayOperation));
+            Input = [.. RftResource.LC_00003434_MaximumFrequencyAfterSubarrayOperation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03434_MaximumFrequencyAfterSubarrayOperation(IHost host)
+        public LC_00003434_MaximumFrequencyAfterSubarrayOperation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03434_MaximumFrequencyAfterSubarrayOperation));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003434_MaximumFrequencyAfterSubarrayOperation));
             DataCollector();
         }
 

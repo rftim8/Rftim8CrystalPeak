@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00378_KthSmallestElementInASortedMatrix : I_00378_KthSmallestElementInASortedMatrix
+    public class LC_00000378_KthSmallestElementInASortedMatrix : ILC_00000378_KthSmallestElementInASortedMatrix
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00378_KthSmallestElementInASortedMatrix()
+        public LC_00000378_KthSmallestElementInASortedMatrix()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00378_KthSmallestElementInASortedMatrix));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000378_KthSmallestElementInASortedMatrix));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00378_KthSmallestElementInASortedMatrix(IHost host)
+        public LC_00000378_KthSmallestElementInASortedMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00378_KthSmallestElementInASortedMatrix));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000378_KthSmallestElementInASortedMatrix));
         }
 
         public void PrintSolution()

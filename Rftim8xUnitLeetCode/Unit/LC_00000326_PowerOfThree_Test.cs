@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00326_PowerOfThree_Test
+    public class LC_00000326_PowerOfThree_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00326_PowerOfThree))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00326_PowerOfThree))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00326_PowerOfThree))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000326_PowerOfThree))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000326_PowerOfThree))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000326_PowerOfThree))![1]);
 
-        public static TheoryData<List<string>, int> _00326_PowerOfThreePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000326_PowerOfThreePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00326_PowerOfThreePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000326_PowerOfThreePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00326_PowerOfThreePartOne_Data))]
+        [MemberData(nameof(LC_00000326_PowerOfThreePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00326_PowerOfThree.PartOne_Test(a0);
+            int actual = LC_00000326_PowerOfThree.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00326_PowerOfThreePartTwo_Data))]
+        [MemberData(nameof(LC_00000326_PowerOfThreePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00326_PowerOfThree.PartTwo_Test(a0);
+            int actual = LC_00000326_PowerOfThree.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01581_CustomerWhoVisitedButDidNotMakeAnyTransactions_Test
+    public class LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactions_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01581_CustomerWhoVisitedButDidNotMakeAnyTransactions))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01581_CustomerWhoVisitedButDidNotMakeAnyTransactions))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01581_CustomerWhoVisitedButDidNotMakeAnyTransactions))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactions))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactions))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactions))![1]);
 
-        public static TheoryData<List<string>, int> _01581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartOne_Data))]
+        [MemberData(nameof(LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01581_CustomerWhoVisitedButDidNotMakeAnyTransactions.PartOne_Test(a0);
+            int actual = LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactions.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartTwo_Data))]
+        [MemberData(nameof(LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactionsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01581_CustomerWhoVisitedButDidNotMakeAnyTransactions.PartTwo_Test(a0);
+            int actual = LC_00001581_CustomerWhoVisitedButDidNotMakeAnyTransactions.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

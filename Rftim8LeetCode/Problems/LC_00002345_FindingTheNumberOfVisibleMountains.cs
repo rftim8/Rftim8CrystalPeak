@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02345_FindingTheNumberOfVisibleMountains : I_02345_FindingTheNumberOfVisibleMountains
+    public class LC_00002345_FindingTheNumberOfVisibleMountains : ILC_00002345_FindingTheNumberOfVisibleMountains
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02345_FindingTheNumberOfVisibleMountains()
+        public LC_00002345_FindingTheNumberOfVisibleMountains()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02345_FindingTheNumberOfVisibleMountains));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002345_FindingTheNumberOfVisibleMountains));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02345_FindingTheNumberOfVisibleMountains(IHost host)
+        public LC_00002345_FindingTheNumberOfVisibleMountains(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02345_FindingTheNumberOfVisibleMountains));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002345_FindingTheNumberOfVisibleMountains));
         }
 
         public void PrintSolution()

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01213_IntersectionOfThreeSortedArrays_Test
+    public class LC_00001213_IntersectionOfThreeSortedArrays_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01213_IntersectionOfThreeSortedArrays))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01213_IntersectionOfThreeSortedArrays))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01213_IntersectionOfThreeSortedArrays))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001213_IntersectionOfThreeSortedArrays))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001213_IntersectionOfThreeSortedArrays))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001213_IntersectionOfThreeSortedArrays))![1]);
 
-        public static TheoryData<List<string>, int> _01213_IntersectionOfThreeSortedArraysPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001213_IntersectionOfThreeSortedArraysPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01213_IntersectionOfThreeSortedArraysPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001213_IntersectionOfThreeSortedArraysPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01213_IntersectionOfThreeSortedArraysPartOne_Data))]
+        [MemberData(nameof(LC_00001213_IntersectionOfThreeSortedArraysPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01213_IntersectionOfThreeSortedArrays.PartOne_Test(a0);
+            int actual = LC_00001213_IntersectionOfThreeSortedArrays.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01213_IntersectionOfThreeSortedArraysPartTwo_Data))]
+        [MemberData(nameof(LC_00001213_IntersectionOfThreeSortedArraysPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01213_IntersectionOfThreeSortedArrays.PartTwo_Test(a0);
+            int actual = LC_00001213_IntersectionOfThreeSortedArrays.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

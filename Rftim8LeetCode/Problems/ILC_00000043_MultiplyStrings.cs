@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00043_MultiplyStrings
+    public interface ILC_00000043_MultiplyStrings
     {
         public void PrintSolution();
     }

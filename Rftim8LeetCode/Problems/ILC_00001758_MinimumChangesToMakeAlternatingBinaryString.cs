@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01758_MinimumChangesToMakeAlternatingBinaryString
+    public interface ILC_00001758_MinimumChangesToMakeAlternatingBinaryString
     {
         public void PrintSolution();
     }

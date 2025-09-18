@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02690_InfiniteMethodObject : I_02690_InfiniteMethodObject
+    public class LC_00002690_InfiniteMethodObject : ILC_00002690_InfiniteMethodObject
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02690_InfiniteMethodObject()
+        public LC_00002690_InfiniteMethodObject()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02690_InfiniteMethodObject));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002690_InfiniteMethodObject));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02690_InfiniteMethodObject(IHost host)
+        public LC_00002690_InfiniteMethodObject(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02690_InfiniteMethodObject));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002690_InfiniteMethodObject));
         }
 
         public void PrintSolution()

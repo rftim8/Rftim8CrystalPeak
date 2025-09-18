@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03537_FillASpecialGrid
+    public interface ILC_00003537_FillASpecialGrid
     {
         public void PrintSolution();
     }

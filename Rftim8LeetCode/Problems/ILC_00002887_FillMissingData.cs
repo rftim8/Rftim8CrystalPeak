@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02887_FillMissingData
+    public interface ILC_00002887_FillMissingData
     {
         public void PrintSolution();
     }

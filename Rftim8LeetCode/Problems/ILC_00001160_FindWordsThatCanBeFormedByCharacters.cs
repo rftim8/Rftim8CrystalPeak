@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01160_FindWordsThatCanBeFormedByCharacters
+    public interface ILC_00001160_FindWordsThatCanBeFormedByCharacters
     {
         public void PrintSolution();
     }

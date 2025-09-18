@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00880_DecodedStringAtIndex : I_00880_DecodedStringAtIndex
+    public class LC_00000880_DecodedStringAtIndex : ILC_00000880_DecodedStringAtIndex
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00880_DecodedStringAtIndex()
+        public LC_00000880_DecodedStringAtIndex()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00880_DecodedStringAtIndex));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000880_DecodedStringAtIndex));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00880_DecodedStringAtIndex(IHost host)
+        public LC_00000880_DecodedStringAtIndex(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00880_DecodedStringAtIndex));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000880_DecodedStringAtIndex));
         }
 
         public void PrintSolution()

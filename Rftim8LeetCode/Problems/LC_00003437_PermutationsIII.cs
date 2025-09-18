@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03437_PermutationsIII : I_03437_PermutationsIII
+    public class LC_00003437_PermutationsIII : ILC_00003437_PermutationsIII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03437_PermutationsIII()
+        public LC_00003437_PermutationsIII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03437_PermutationsIII));
-            Input = [.. RftResource._03437_PermutationsIII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003437_PermutationsIII));
+            Input = [.. RftResource.LC_00003437_PermutationsIII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03437_PermutationsIII(IHost host)
+        public LC_00003437_PermutationsIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03437_PermutationsIII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003437_PermutationsIII));
             DataCollector();
         }
 

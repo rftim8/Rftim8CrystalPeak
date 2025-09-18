@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01104_PathInZigzagLabelledBinaryTree
+    public interface ILC_00001104_PathInZigzagLabelledBinaryTree
     {
         public void PrintSolution();
     }

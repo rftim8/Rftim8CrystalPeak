@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00946_ValidateStackSequences
+    public interface ILC_00000946_ValidateStackSequences
     {
         public void PrintSolution();
     }

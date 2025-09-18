@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01478_AllocateMailboxes
+    public interface ILC_00001478_AllocateMailboxes
     {
         public void PrintSolution();
     }

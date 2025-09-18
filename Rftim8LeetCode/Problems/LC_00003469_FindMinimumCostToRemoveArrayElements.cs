@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03469_FindMinimumCostToRemoveArrayElements : I_03469_FindMinimumCostToRemoveArrayElements
+    public class LC_00003469_FindMinimumCostToRemoveArrayElements : ILC_00003469_FindMinimumCostToRemoveArrayElements
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03469_FindMinimumCostToRemoveArrayElements()
+        public LC_00003469_FindMinimumCostToRemoveArrayElements()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03469_FindMinimumCostToRemoveArrayElements));
-            Input = [.. RftResource._03469_FindMinimumCostToRemoveArrayElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003469_FindMinimumCostToRemoveArrayElements));
+            Input = [.. RftResource.LC_00003469_FindMinimumCostToRemoveArrayElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03469_FindMinimumCostToRemoveArrayElements(IHost host)
+        public LC_00003469_FindMinimumCostToRemoveArrayElements(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03469_FindMinimumCostToRemoveArrayElements));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003469_FindMinimumCostToRemoveArrayElements));
             DataCollector();
         }
 

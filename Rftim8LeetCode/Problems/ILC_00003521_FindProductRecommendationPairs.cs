@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03521_FindProductRecommendationPairs
+    public interface ILC_00003521_FindProductRecommendationPairs
     {
         public void PrintSolution();
     }

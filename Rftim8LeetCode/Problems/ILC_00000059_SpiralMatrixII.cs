@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00059_SpiralMatrixII
+    public interface ILC_00000059_SpiralMatrixII
     {
         public void PrintSolution();
     }

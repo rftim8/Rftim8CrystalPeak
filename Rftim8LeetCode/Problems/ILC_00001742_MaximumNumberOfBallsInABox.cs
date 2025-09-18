@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01742_MaximumNumberOfBallsInABox
+    public interface ILC_00001742_MaximumNumberOfBallsInABox
     {
         public void PrintSolution();
     }

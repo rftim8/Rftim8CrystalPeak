@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02516_TakeKOfEachCharacterFromLeftAndRight : I_02516_TakeKOfEachCharacterFromLeftAndRight
+    public class LC_00002516_TakeKOfEachCharacterFromLeftAndRight : ILC_00002516_TakeKOfEachCharacterFromLeftAndRight
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02516_TakeKOfEachCharacterFromLeftAndRight()
+        public LC_00002516_TakeKOfEachCharacterFromLeftAndRight()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02516_TakeKOfEachCharacterFromLeftAndRight));
-            Input = [.. RftResource._02516_TakeKOfEachCharacterFromLeftAndRight_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002516_TakeKOfEachCharacterFromLeftAndRight));
+            Input = [.. RftResource.LC_00002516_TakeKOfEachCharacterFromLeftAndRight_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02516_TakeKOfEachCharacterFromLeftAndRight(IHost host)
+        public LC_00002516_TakeKOfEachCharacterFromLeftAndRight(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02516_TakeKOfEachCharacterFromLeftAndRight));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002516_TakeKOfEachCharacterFromLeftAndRight));
             DataCollector();
         }
 

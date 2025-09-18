@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01592_RearrangeSpacesBetweenWords
+    public interface ILC_00001592_RearrangeSpacesBetweenWords
     {
         public void PrintSolution();
     }

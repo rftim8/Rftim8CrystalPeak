@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00338_CountingBits_Test
+    public class LC_00000338_CountingBits_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00338_CountingBits))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00338_CountingBits))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00338_CountingBits))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000338_CountingBits))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000338_CountingBits))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000338_CountingBits))![1]);
 
-        public static TheoryData<List<string>, int> _00338_CountingBitsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000338_CountingBitsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00338_CountingBitsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000338_CountingBitsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00338_CountingBitsPartOne_Data))]
+        [MemberData(nameof(LC_00000338_CountingBitsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00338_CountingBits.PartOne_Test(a0);
+            int actual = LC_00000338_CountingBits.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00338_CountingBitsPartTwo_Data))]
+        [MemberData(nameof(LC_00000338_CountingBitsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00338_CountingBits.PartTwo_Test(a0);
+            int actual = LC_00000338_CountingBits.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

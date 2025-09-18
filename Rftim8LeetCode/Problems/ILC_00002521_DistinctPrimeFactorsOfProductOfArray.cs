@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02521_DistinctPrimeFactorsOfProductOfArray
+    public interface ILC_00002521_DistinctPrimeFactorsOfProductOfArray
     {
         public void PrintSolution();
     }

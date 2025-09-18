@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00514_FreedomTrail : I_00514_FreedomTrail
+    public class LC_00000514_FreedomTrail : ILC_00000514_FreedomTrail
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00514_FreedomTrail()
+        public LC_00000514_FreedomTrail()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00514_FreedomTrail));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000514_FreedomTrail));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00514_FreedomTrail(IHost host)
+        public LC_00000514_FreedomTrail(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00514_FreedomTrail));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000514_FreedomTrail));
         }
 
         public void PrintSolution()

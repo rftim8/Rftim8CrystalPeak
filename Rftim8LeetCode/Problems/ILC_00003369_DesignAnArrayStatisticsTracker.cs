@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03369_DesignAnArrayStatisticsTracker
+    public interface ILC_00003369_DesignAnArrayStatisticsTracker
     {
         public void PrintSolution();
     }

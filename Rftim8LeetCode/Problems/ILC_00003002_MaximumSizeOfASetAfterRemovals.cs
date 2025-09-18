@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03002_MaximumSizeOfASetAfterRemovals
+    public interface ILC_00003002_MaximumSizeOfASetAfterRemovals
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02783_FlightOccupancyAndWaitlistAnalysis : I_02783_FlightOccupancyAndWaitlistAnalysis
+    public class LC_00002783_FlightOccupancyAndWaitlistAnalysis : ILC_00002783_FlightOccupancyAndWaitlistAnalysis
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02783_FlightOccupancyAndWaitlistAnalysis()
+        public LC_00002783_FlightOccupancyAndWaitlistAnalysis()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02783_FlightOccupancyAndWaitlistAnalysis));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002783_FlightOccupancyAndWaitlistAnalysis));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02783_FlightOccupancyAndWaitlistAnalysis(IHost host)
+        public LC_00002783_FlightOccupancyAndWaitlistAnalysis(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02783_FlightOccupancyAndWaitlistAnalysis));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002783_FlightOccupancyAndWaitlistAnalysis));
         }
 
         public void PrintSolution()

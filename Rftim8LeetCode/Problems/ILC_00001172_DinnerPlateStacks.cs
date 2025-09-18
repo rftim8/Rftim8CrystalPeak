@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01172_DinnerPlateStacks
+    public interface ILC_00001172_DinnerPlateStacks
     {
         public void PrintSolution();
     }

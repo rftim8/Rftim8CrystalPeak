@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01374_GenerateAStringWithCharactersThatHaveOddCounts
+    public interface ILC_00001374_GenerateAStringWithCharactersThatHaveOddCounts
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00520_DetectCapital : I_00520_DetectCapital
+    public class LC_00000520_DetectCapital : ILC_00000520_DetectCapital
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00520_DetectCapital()
+        public LC_00000520_DetectCapital()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00520_DetectCapital));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000520_DetectCapital));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00520_DetectCapital(IHost host)
+        public LC_00000520_DetectCapital(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00520_DetectCapital));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000520_DetectCapital));
         }
 
         public void PrintSolution()

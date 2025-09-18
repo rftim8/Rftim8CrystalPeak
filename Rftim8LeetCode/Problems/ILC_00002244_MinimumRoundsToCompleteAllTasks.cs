@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02244_MinimumRoundsToCompleteAllTasks
+    public interface ILC_00002244_MinimumRoundsToCompleteAllTasks
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03498_ReverseDegreeOfAString : I_03498_ReverseDegreeOfAString
+    public class LC_00003498_ReverseDegreeOfAString : ILC_00003498_ReverseDegreeOfAString
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03498_ReverseDegreeOfAString()
+        public LC_00003498_ReverseDegreeOfAString()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03498_ReverseDegreeOfAString));
-            Input = [.. RftResource._03498_ReverseDegreeOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003498_ReverseDegreeOfAString));
+            Input = [.. RftResource.LC_00003498_ReverseDegreeOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03498_ReverseDegreeOfAString(IHost host)
+        public LC_00003498_ReverseDegreeOfAString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03498_ReverseDegreeOfAString));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003498_ReverseDegreeOfAString));
             DataCollector();
         }
 

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03235_CheckIfTheRectangleCornerIsReachable : I_03235_CheckIfTheRectangleCornerIsReachable
+    public class LC_00003235_CheckIfTheRectangleCornerIsReachable : ILC_00003235_CheckIfTheRectangleCornerIsReachable
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03235_CheckIfTheRectangleCornerIsReachable()
+        public LC_00003235_CheckIfTheRectangleCornerIsReachable()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03235_CheckIfTheRectangleCornerIsReachable));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003235_CheckIfTheRectangleCornerIsReachable));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03235_CheckIfTheRectangleCornerIsReachable(IHost host)
+        public LC_00003235_CheckIfTheRectangleCornerIsReachable(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03235_CheckIfTheRectangleCornerIsReachable));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003235_CheckIfTheRectangleCornerIsReachable));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00463_IslandPerimeter
+    public interface ILC_00000463_IslandPerimeter
     {
         public void PrintSolution();
     }

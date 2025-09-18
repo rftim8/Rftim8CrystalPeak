@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02333_MinimumSumOfSquaredDifference
+    public interface ILC_00002333_MinimumSumOfSquaredDifference
     {
         public void PrintSolution();
     }

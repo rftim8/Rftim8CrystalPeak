@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02777_DateRangeGenerator
+    public interface ILC_00002777_DateRangeGenerator
     {
         public void PrintSolution();
     }

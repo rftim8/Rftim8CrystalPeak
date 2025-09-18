@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01791_FindCenterOfStarGraph : I_01791_FindCenterOfStarGraph
+    public class LC_00001791_FindCenterOfStarGraph : ILC_00001791_FindCenterOfStarGraph
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01791_FindCenterOfStarGraph()
+        public LC_00001791_FindCenterOfStarGraph()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01791_FindCenterOfStarGraph));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001791_FindCenterOfStarGraph));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01791_FindCenterOfStarGraph(IHost host)
+        public LC_00001791_FindCenterOfStarGraph(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01791_FindCenterOfStarGraph));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001791_FindCenterOfStarGraph));
         }
 
         public void PrintSolution()

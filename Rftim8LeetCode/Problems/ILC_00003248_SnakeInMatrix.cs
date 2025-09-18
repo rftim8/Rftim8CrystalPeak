@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03248_SnakeInMatrix
+    public interface ILC_00003248_SnakeInMatrix
     {
         public void PrintSolution();
     }

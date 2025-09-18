@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02642_DesignGraphWithShortestPathCalculator : I_02642_DesignGraphWithShortestPathCalculator
+    public class LC_00002642_DesignGraphWithShortestPathCalculator : ILC_00002642_DesignGraphWithShortestPathCalculator
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02642_DesignGraphWithShortestPathCalculator()
+        public LC_00002642_DesignGraphWithShortestPathCalculator()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02642_DesignGraphWithShortestPathCalculator));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002642_DesignGraphWithShortestPathCalculator));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02642_DesignGraphWithShortestPathCalculator(IHost host)
+        public LC_00002642_DesignGraphWithShortestPathCalculator(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02642_DesignGraphWithShortestPathCalculator));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002642_DesignGraphWithShortestPathCalculator));
         }
 
         public void PrintSolution()

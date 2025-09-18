@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02012_SumOfBeautyInTheArray : I_02012_SumOfBeautyInTheArray
+    public class LC_00002012_SumOfBeautyInTheArray : ILC_00002012_SumOfBeautyInTheArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02012_SumOfBeautyInTheArray()
+        public LC_00002012_SumOfBeautyInTheArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02012_SumOfBeautyInTheArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002012_SumOfBeautyInTheArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02012_SumOfBeautyInTheArray(IHost host)
+        public LC_00002012_SumOfBeautyInTheArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02012_SumOfBeautyInTheArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002012_SumOfBeautyInTheArray));
         }
 
         public void PrintSolution()

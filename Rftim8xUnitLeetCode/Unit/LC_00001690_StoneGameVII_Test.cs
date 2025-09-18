@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01690_StoneGameVII_Test
+    public class LC_00001690_StoneGameVII_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01690_StoneGameVII))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01690_StoneGameVII))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01690_StoneGameVII))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001690_StoneGameVII))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001690_StoneGameVII))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001690_StoneGameVII))![1]);
 
-        public static TheoryData<List<string>, int> _01690_StoneGameVIIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001690_StoneGameVIIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01690_StoneGameVIIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001690_StoneGameVIIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01690_StoneGameVIIPartOne_Data))]
+        [MemberData(nameof(LC_00001690_StoneGameVIIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01690_StoneGameVII.PartOne_Test(a0);
+            int actual = LC_00001690_StoneGameVII.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01690_StoneGameVIIPartTwo_Data))]
+        [MemberData(nameof(LC_00001690_StoneGameVIIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01690_StoneGameVII.PartTwo_Test(a0);
+            int actual = LC_00001690_StoneGameVII.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

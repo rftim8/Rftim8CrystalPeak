@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01695_MaximumErasureValue
+    public interface ILC_00001695_MaximumErasureValue
     {
         public void PrintSolution();
     }

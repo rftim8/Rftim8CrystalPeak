@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01312_MinimumInsertionStepsToMakeAStringPalindrome
+    public interface ILC_00001312_MinimumInsertionStepsToMakeAStringPalindrome
     {
         public void PrintSolution();
     }

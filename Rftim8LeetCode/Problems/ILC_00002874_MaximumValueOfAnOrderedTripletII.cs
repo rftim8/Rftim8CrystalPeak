@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02874_MaximumValueOfAnOrderedTripletII
+    public interface ILC_00002874_MaximumValueOfAnOrderedTripletII
     {
         public void PrintSolution();
     }

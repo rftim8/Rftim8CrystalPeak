@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00872_LeafSimilarTrees : I_00872_LeafSimilarTrees
+    public class LC_00000872_LeafSimilarTrees : ILC_00000872_LeafSimilarTrees
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00872_LeafSimilarTrees()
+        public LC_00000872_LeafSimilarTrees()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00872_LeafSimilarTrees));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000872_LeafSimilarTrees));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00872_LeafSimilarTrees(IHost host)
+        public LC_00000872_LeafSimilarTrees(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00872_LeafSimilarTrees));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000872_LeafSimilarTrees));
         }
 
         public void PrintSolution()

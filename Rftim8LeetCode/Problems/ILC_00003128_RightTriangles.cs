@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03128_RightTriangles
+    public interface ILC_00003128_RightTriangles
     {
         public void PrintSolution();
     }

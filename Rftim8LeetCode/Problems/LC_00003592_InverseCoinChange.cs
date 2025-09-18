@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03592_InverseCoinChange : I_03592_InverseCoinChange
+    public class LC_00003592_InverseCoinChange : ILC_00003592_InverseCoinChange
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03592_InverseCoinChange()
+        public LC_00003592_InverseCoinChange()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03592_InverseCoinChange));
-            Input = [.. RftResource._03592_InverseCoinChange_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003592_InverseCoinChange));
+            Input = [.. RftResource.LC_00003592_InverseCoinChange_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03592_InverseCoinChange(IHost host)
+        public LC_00003592_InverseCoinChange(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03592_InverseCoinChange));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003592_InverseCoinChange));
             DataCollector();
         }
 

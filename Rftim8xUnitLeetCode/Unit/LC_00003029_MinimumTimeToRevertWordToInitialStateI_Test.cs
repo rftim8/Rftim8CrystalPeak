@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03029_MinimumTimeToRevertWordToInitialStateI_Test
+    public class LC_00003029_MinimumTimeToRevertWordToInitialStateI_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03029_MinimumTimeToRevertWordToInitialStateI))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03029_MinimumTimeToRevertWordToInitialStateI))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03029_MinimumTimeToRevertWordToInitialStateI))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateI))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateI))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateI))![1]);
 
-        public static TheoryData<List<string>, int> _03029_MinimumTimeToRevertWordToInitialStateIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003029_MinimumTimeToRevertWordToInitialStateIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03029_MinimumTimeToRevertWordToInitialStateIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003029_MinimumTimeToRevertWordToInitialStateIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03029_MinimumTimeToRevertWordToInitialStateIPartOne_Data))]
+        [MemberData(nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03029_MinimumTimeToRevertWordToInitialStateI.PartOne_Test(a0);
+            int actual = LC_00003029_MinimumTimeToRevertWordToInitialStateI.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03029_MinimumTimeToRevertWordToInitialStateIPartTwo_Data))]
+        [MemberData(nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03029_MinimumTimeToRevertWordToInitialStateI.PartTwo_Test(a0);
+            int actual = LC_00003029_MinimumTimeToRevertWordToInitialStateI.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01932_MergeBSTsToCreateSingleBST
+    public interface ILC_00001932_MergeBSTsToCreateSingleBST
     {
         public void PrintSolution();
     }

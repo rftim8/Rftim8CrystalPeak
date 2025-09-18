@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00511_GamePlayAnalysisI : I_00511_GamePlayAnalysisI
+    public class LC_00000511_GamePlayAnalysisI : ILC_00000511_GamePlayAnalysisI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00511_GamePlayAnalysisI()
+        public LC_00000511_GamePlayAnalysisI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00511_GamePlayAnalysisI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000511_GamePlayAnalysisI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00511_GamePlayAnalysisI(IHost host)
+        public LC_00000511_GamePlayAnalysisI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00511_GamePlayAnalysisI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000511_GamePlayAnalysisI));
         }
 
         public void PrintSolution()

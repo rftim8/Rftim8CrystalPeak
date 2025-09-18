@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02311_LongestBinarySubsequenceLessThanOrEqualToK
+    public interface ILC_00002311_LongestBinarySubsequenceLessThanOrEqualToK
     {
         public void PrintSolution();
     }

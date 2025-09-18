@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02478_NumberOfBeautifulPartitions
+    public interface ILC_00002478_NumberOfBeautifulPartitions
     {
         public void PrintSolution();
     }

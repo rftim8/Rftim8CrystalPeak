@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03021_AliceAndBobPlayingFlowerGame : I_03021_AliceAndBobPlayingFlowerGame
+    public class LC_00003021_AliceAndBobPlayingFlowerGame : ILC_00003021_AliceAndBobPlayingFlowerGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03021_AliceAndBobPlayingFlowerGame()
+        public LC_00003021_AliceAndBobPlayingFlowerGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03021_AliceAndBobPlayingFlowerGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003021_AliceAndBobPlayingFlowerGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03021_AliceAndBobPlayingFlowerGame(IHost host)
+        public LC_00003021_AliceAndBobPlayingFlowerGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03021_AliceAndBobPlayingFlowerGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003021_AliceAndBobPlayingFlowerGame));
         }
 
         public void PrintSolution()

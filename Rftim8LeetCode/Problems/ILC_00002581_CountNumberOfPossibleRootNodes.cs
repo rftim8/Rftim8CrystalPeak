@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02581_CountNumberOfPossibleRootNodes
+    public interface ILC_00002581_CountNumberOfPossibleRootNodes
     {
         public void PrintSolution();
     }

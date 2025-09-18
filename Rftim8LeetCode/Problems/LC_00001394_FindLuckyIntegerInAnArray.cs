@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01394_FindLuckyIntegerInAnArray : I_01394_FindLuckyIntegerInAnArray
+    public class LC_00001394_FindLuckyIntegerInAnArray : ILC_00001394_FindLuckyIntegerInAnArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01394_FindLuckyIntegerInAnArray()
+        public LC_00001394_FindLuckyIntegerInAnArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01394_FindLuckyIntegerInAnArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001394_FindLuckyIntegerInAnArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01394_FindLuckyIntegerInAnArray(IHost host)
+        public LC_00001394_FindLuckyIntegerInAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01394_FindLuckyIntegerInAnArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001394_FindLuckyIntegerInAnArray));
         }
 
         public void PrintSolution()

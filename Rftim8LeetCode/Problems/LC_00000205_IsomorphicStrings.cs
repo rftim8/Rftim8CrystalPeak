@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00205_IsomorphicStrings : I_00205_IsomorphicStrings
+    public class LC_00000205_IsomorphicStrings : ILC_00000205_IsomorphicStrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00205_IsomorphicStrings()
+        public LC_00000205_IsomorphicStrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00205_IsomorphicStrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000205_IsomorphicStrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00205_IsomorphicStrings(IHost host)
+        public LC_00000205_IsomorphicStrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00205_IsomorphicStrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000205_IsomorphicStrings));
         }
 
         public void PrintSolution()

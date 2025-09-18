@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02977_MinimumCostToConvertStringII : I_02977_MinimumCostToConvertStringII
+    public class LC_00002977_MinimumCostToConvertStringII : ILC_00002977_MinimumCostToConvertStringII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02977_MinimumCostToConvertStringII()
+        public LC_00002977_MinimumCostToConvertStringII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02977_MinimumCostToConvertStringII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002977_MinimumCostToConvertStringII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02977_MinimumCostToConvertStringII(IHost host)
+        public LC_00002977_MinimumCostToConvertStringII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02977_MinimumCostToConvertStringII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002977_MinimumCostToConvertStringII));
         }
 
         public void PrintSolution()

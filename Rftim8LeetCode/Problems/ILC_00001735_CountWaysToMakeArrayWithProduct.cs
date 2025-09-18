@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01735_CountWaysToMakeArrayWithProduct
+    public interface ILC_00001735_CountWaysToMakeArrayWithProduct
     {
         public void PrintSolution();
     }

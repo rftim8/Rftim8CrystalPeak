@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02175_TheChangeInGlobalRankings
+    public interface ILC_00002175_TheChangeInGlobalRankings
     {
         public void PrintSolution();
     }

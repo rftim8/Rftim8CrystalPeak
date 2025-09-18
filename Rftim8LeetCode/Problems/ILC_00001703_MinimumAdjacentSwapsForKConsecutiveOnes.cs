@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01703_MinimumAdjacentSwapsForKConsecutiveOnes
+    public interface ILC_00001703_MinimumAdjacentSwapsForKConsecutiveOnes
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00385_MiniParser
+    public interface ILC_00000385_MiniParser
     {
         public void PrintSolution();
     }

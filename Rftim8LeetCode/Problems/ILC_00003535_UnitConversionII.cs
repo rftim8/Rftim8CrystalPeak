@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03535_UnitConversionII
+    public interface ILC_00003535_UnitConversionII
     {
         public void PrintSolution();
     }

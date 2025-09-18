@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00965_UnivaluedBinaryTree
+    public interface ILC_00000965_UnivaluedBinaryTree
     {
         public void PrintSolution();
     }

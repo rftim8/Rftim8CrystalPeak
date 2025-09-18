@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00539_MinimumTimeDifference
+    public interface ILC_00000539_MinimumTimeDifference
     {
         public void PrintSolution();
     }

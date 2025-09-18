@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01479_SalesByDayOfTheWeek : I_01479_SalesByDayOfTheWeek
+    public class LC_00001479_SalesByDayOfTheWeek : ILC_00001479_SalesByDayOfTheWeek
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01479_SalesByDayOfTheWeek()
+        public LC_00001479_SalesByDayOfTheWeek()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01479_SalesByDayOfTheWeek));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001479_SalesByDayOfTheWeek));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01479_SalesByDayOfTheWeek(IHost host)
+        public LC_00001479_SalesByDayOfTheWeek(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01479_SalesByDayOfTheWeek));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001479_SalesByDayOfTheWeek));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00923_3SumWithMultiplicity
+    public interface ILC_00000923_3SumWithMultiplicity
     {
         public void PrintSolution();
     }

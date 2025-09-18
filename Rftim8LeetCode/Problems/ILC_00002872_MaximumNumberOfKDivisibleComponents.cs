@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02872_MaximumNumberOfKDivisibleComponents
+    public interface ILC_00002872_MaximumNumberOfKDivisibleComponents
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02990_LoanTypes
+    public interface ILC_00002990_LoanTypes
     {
         public void PrintSolution();
     }

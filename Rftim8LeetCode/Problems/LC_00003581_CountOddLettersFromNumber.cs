@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03581_CountOddLettersFromNumber : I_03581_CountOddLettersFromNumber
+    public class LC_00003581_CountOddLettersFromNumber : ILC_00003581_CountOddLettersFromNumber
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03581_CountOddLettersFromNumber()
+        public LC_00003581_CountOddLettersFromNumber()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03581_CountOddLettersFromNumber));
-            Input = [.. RftResource._03581_CountOddLettersFromNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003581_CountOddLettersFromNumber));
+            Input = [.. RftResource.LC_00003581_CountOddLettersFromNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03581_CountOddLettersFromNumber(IHost host)
+        public LC_00003581_CountOddLettersFromNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03581_CountOddLettersFromNumber));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003581_CountOddLettersFromNumber));
             DataCollector();
         }
 

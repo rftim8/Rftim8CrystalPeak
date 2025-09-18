@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00505_TheMazeII : I_00505_TheMazeII
+    public class LC_00000505_TheMazeII : ILC_00000505_TheMazeII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00505_TheMazeII()
+        public LC_00000505_TheMazeII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00505_TheMazeII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000505_TheMazeII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00505_TheMazeII(IHost host)
+        public LC_00000505_TheMazeII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00505_TheMazeII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000505_TheMazeII));
         }
 
         public void PrintSolution()

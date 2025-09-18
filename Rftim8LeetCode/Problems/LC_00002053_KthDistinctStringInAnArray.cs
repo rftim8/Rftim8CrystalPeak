@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02053_KthDistinctStringInAnArray : I_02053_KthDistinctStringInAnArray
+    public class LC_00002053_KthDistinctStringInAnArray : ILC_00002053_KthDistinctStringInAnArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02053_KthDistinctStringInAnArray()
+        public LC_00002053_KthDistinctStringInAnArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02053_KthDistinctStringInAnArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002053_KthDistinctStringInAnArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02053_KthDistinctStringInAnArray(IHost host)
+        public LC_00002053_KthDistinctStringInAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02053_KthDistinctStringInAnArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002053_KthDistinctStringInAnArray));
         }
 
         public void PrintSolution()

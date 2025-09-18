@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00472_ConcatenatedWords
+    public interface ILC_00000472_ConcatenatedWords
     {
         public void PrintSolution();
     }

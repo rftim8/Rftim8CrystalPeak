@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01842_NextPalindromeUsingSameDigits
+    public interface ILC_00001842_NextPalindromeUsingSameDigits
     {
         public void PrintSolution();
     }

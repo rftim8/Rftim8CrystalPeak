@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02954_CountTheNumberOfInfectionSequences
+    public interface ILC_00002954_CountTheNumberOfInfectionSequences
     {
         public void PrintSolution();
     }

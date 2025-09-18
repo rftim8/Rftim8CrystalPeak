@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01414_FindTheMinimumNumberOfFibonacciNumbersWhoseSumIsK
+    public interface ILC_00001414_FindTheMinimumNumberOfFibonacciNumbersWhoseSumIsK
     {
         public void PrintSolution();
     }

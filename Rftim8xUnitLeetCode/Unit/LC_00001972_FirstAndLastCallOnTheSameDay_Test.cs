@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01972_FirstAndLastCallOnTheSameDay_Test
+    public class LC_00001972_FirstAndLastCallOnTheSameDay_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01972_FirstAndLastCallOnTheSameDay))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01972_FirstAndLastCallOnTheSameDay))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01972_FirstAndLastCallOnTheSameDay))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001972_FirstAndLastCallOnTheSameDay))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001972_FirstAndLastCallOnTheSameDay))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001972_FirstAndLastCallOnTheSameDay))![1]);
 
-        public static TheoryData<List<string>, int> _01972_FirstAndLastCallOnTheSameDayPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001972_FirstAndLastCallOnTheSameDayPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01972_FirstAndLastCallOnTheSameDayPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001972_FirstAndLastCallOnTheSameDayPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01972_FirstAndLastCallOnTheSameDayPartOne_Data))]
+        [MemberData(nameof(LC_00001972_FirstAndLastCallOnTheSameDayPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01972_FirstAndLastCallOnTheSameDay.PartOne_Test(a0);
+            int actual = LC_00001972_FirstAndLastCallOnTheSameDay.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01972_FirstAndLastCallOnTheSameDayPartTwo_Data))]
+        [MemberData(nameof(LC_00001972_FirstAndLastCallOnTheSameDayPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01972_FirstAndLastCallOnTheSameDay.PartTwo_Test(a0);
+            int actual = LC_00001972_FirstAndLastCallOnTheSameDay.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

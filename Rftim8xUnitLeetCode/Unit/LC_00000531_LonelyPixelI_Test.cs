@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00531_LonelyPixelI_Test
+    public class LC_00000531_LonelyPixelI_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00531_LonelyPixelI))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00531_LonelyPixelI))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00531_LonelyPixelI))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000531_LonelyPixelI))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000531_LonelyPixelI))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000531_LonelyPixelI))![1]);
 
-        public static TheoryData<List<string>, int> _00531_LonelyPixelIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000531_LonelyPixelIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00531_LonelyPixelIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000531_LonelyPixelIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00531_LonelyPixelIPartOne_Data))]
+        [MemberData(nameof(LC_00000531_LonelyPixelIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00531_LonelyPixelI.PartOne_Test(a0);
+            int actual = LC_00000531_LonelyPixelI.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00531_LonelyPixelIPartTwo_Data))]
+        [MemberData(nameof(LC_00000531_LonelyPixelIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00531_LonelyPixelI.PartTwo_Test(a0);
+            int actual = LC_00000531_LonelyPixelI.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02495_NumberOfSubarraysHavingEvenProduct
+    public interface ILC_00002495_NumberOfSubarraysHavingEvenProduct
     {
         public void PrintSolution();
     }

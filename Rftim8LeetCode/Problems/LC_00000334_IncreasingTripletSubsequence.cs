@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00334_IncreasingTripletSubsequence : I_00334_IncreasingTripletSubsequence
+    public class LC_00000334_IncreasingTripletSubsequence : ILC_00000334_IncreasingTripletSubsequence
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00334_IncreasingTripletSubsequence()
+        public LC_00000334_IncreasingTripletSubsequence()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00334_IncreasingTripletSubsequence));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000334_IncreasingTripletSubsequence));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00334_IncreasingTripletSubsequence(IHost host)
+        public LC_00000334_IncreasingTripletSubsequence(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00334_IncreasingTripletSubsequence));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000334_IncreasingTripletSubsequence));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01002_FindCommonCharacters
+    public interface ILC_00001002_FindCommonCharacters
     {
         public void PrintSolution();
     }

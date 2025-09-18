@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02300_SuccessfulPairsOfSpellsAndPotions
+    public interface ILC_00002300_SuccessfulPairsOfSpellsAndPotions
     {
         public void PrintSolution();
     }

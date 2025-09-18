@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02443_SumOfNumberAndItsReverse
+    public interface ILC_00002443_SumOfNumberAndItsReverse
     {
         public void PrintSolution();
     }

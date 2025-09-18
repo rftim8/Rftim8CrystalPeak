@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02501_LongestSquareStreakInAnArray
+    public interface ILC_00002501_LongestSquareStreakInAnArray
     {
         public void PrintSolution();
     }

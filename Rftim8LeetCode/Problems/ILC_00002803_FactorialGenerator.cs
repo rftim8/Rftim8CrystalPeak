@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02803_FactorialGenerator
+    public interface ILC_00002803_FactorialGenerator
     {
         public void PrintSolution();
     }

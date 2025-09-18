@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01780_CheckIfNumberIsASumOfPowersOfThree
+    public interface ILC_00001780_CheckIfNumberIsASumOfPowersOfThree
     {
         public void PrintSolution();
     }

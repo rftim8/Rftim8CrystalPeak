@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02413_SmallestEvenMultiple
+    public interface ILC_00002413_SmallestEvenMultiple
     {
         public void PrintSolution();
     }

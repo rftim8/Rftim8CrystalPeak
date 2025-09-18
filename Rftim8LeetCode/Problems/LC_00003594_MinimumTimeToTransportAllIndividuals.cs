@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03594_MinimumTimeToTransportAllIndividuals : I_03594_MinimumTimeToTransportAllIndividuals
+    public class LC_00003594_MinimumTimeToTransportAllIndividuals : ILC_00003594_MinimumTimeToTransportAllIndividuals
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03594_MinimumTimeToTransportAllIndividuals()
+        public LC_00003594_MinimumTimeToTransportAllIndividuals()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03594_MinimumTimeToTransportAllIndividuals));
-            Input = [.. RftResource._03594_MinimumTimeToTransportAllIndividuals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003594_MinimumTimeToTransportAllIndividuals));
+            Input = [.. RftResource.LC_00003594_MinimumTimeToTransportAllIndividuals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03594_MinimumTimeToTransportAllIndividuals(IHost host)
+        public LC_00003594_MinimumTimeToTransportAllIndividuals(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03594_MinimumTimeToTransportAllIndividuals));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003594_MinimumTimeToTransportAllIndividuals));
             DataCollector();
         }
 

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01555_BankAccountSummary
+    public interface ILC_00001555_BankAccountSummary
     {
         public void PrintSolution();
     }

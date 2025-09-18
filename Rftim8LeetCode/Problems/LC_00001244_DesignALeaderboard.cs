@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01244_DesignALeaderboard : I_01244_DesignALeaderboard
+    public class LC_00001244_DesignALeaderboard : ILC_00001244_DesignALeaderboard
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01244_DesignALeaderboard()
+        public LC_00001244_DesignALeaderboard()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01244_DesignALeaderboard));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001244_DesignALeaderboard));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01244_DesignALeaderboard(IHost host)
+        public LC_00001244_DesignALeaderboard(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01244_DesignALeaderboard));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001244_DesignALeaderboard));
         }
 
         public void PrintSolution()

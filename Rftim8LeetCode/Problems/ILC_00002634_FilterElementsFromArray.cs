@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02634_FilterElementsFromArray
+    public interface ILC_00002634_FilterElementsFromArray
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02342_MaxSumOfAPairWithEqualSumOfDigits : I_02342_MaxSumOfAPairWithEqualSumOfDigits
+    public class LC_00002342_MaxSumOfAPairWithEqualSumOfDigits : ILC_00002342_MaxSumOfAPairWithEqualSumOfDigits
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02342_MaxSumOfAPairWithEqualSumOfDigits()
+        public LC_00002342_MaxSumOfAPairWithEqualSumOfDigits()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02342_MaxSumOfAPairWithEqualSumOfDigits));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002342_MaxSumOfAPairWithEqualSumOfDigits));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02342_MaxSumOfAPairWithEqualSumOfDigits(IHost host)
+        public LC_00002342_MaxSumOfAPairWithEqualSumOfDigits(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02342_MaxSumOfAPairWithEqualSumOfDigits));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002342_MaxSumOfAPairWithEqualSumOfDigits));
         }
 
         public void PrintSolution()

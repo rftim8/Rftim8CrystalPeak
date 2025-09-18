@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01806_MinimumNumberOfOperationsToReinitializeAPermutation
+    public interface ILC_00001806_MinimumNumberOfOperationsToReinitializeAPermutation
     {
         public void PrintSolution();
     }

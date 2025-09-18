@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02989_ClassPerformance
+    public interface ILC_00002989_ClassPerformance
     {
         public void PrintSolution();
     }

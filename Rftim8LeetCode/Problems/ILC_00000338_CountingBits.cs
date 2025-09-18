@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00338_CountingBits
+    public interface ILC_00000338_CountingBits
     {
         public void PrintSolution();
     }

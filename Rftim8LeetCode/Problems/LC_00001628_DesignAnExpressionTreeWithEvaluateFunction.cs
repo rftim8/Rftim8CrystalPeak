@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01628_DesignAnExpressionTreeWithEvaluateFunction : I_01628_DesignAnExpressionTreeWithEvaluateFunction
+    public class LC_00001628_DesignAnExpressionTreeWithEvaluateFunction : ILC_00001628_DesignAnExpressionTreeWithEvaluateFunction
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01628_DesignAnExpressionTreeWithEvaluateFunction()
+        public LC_00001628_DesignAnExpressionTreeWithEvaluateFunction()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01628_DesignAnExpressionTreeWithEvaluateFunction));
-            Input = [.. RftResource._01628_DesignAnExpressionTreeWithEvaluateFunction_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001628_DesignAnExpressionTreeWithEvaluateFunction));
+            Input = [.. RftResource.LC_00001628_DesignAnExpressionTreeWithEvaluateFunction_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01628_DesignAnExpressionTreeWithEvaluateFunction(IHost host)
+        public LC_00001628_DesignAnExpressionTreeWithEvaluateFunction(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01628_DesignAnExpressionTreeWithEvaluateFunction));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001628_DesignAnExpressionTreeWithEvaluateFunction));
             DataCollector();
         }
 

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00106_ConstructBinaryTreeFromInorderAndPostorderTraversal : I_00106_ConstructBinaryTreeFromInorderAndPostorderTraversal
+    public class LC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal : ILC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00106_ConstructBinaryTreeFromInorderAndPostorderTraversal()
+        public LC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00106_ConstructBinaryTreeFromInorderAndPostorderTraversal));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00106_ConstructBinaryTreeFromInorderAndPostorderTraversal(IHost host)
+        public LC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00106_ConstructBinaryTreeFromInorderAndPostorderTraversal));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000106_ConstructBinaryTreeFromInorderAndPostorderTraversal));
         }
 
         public void PrintSolution()

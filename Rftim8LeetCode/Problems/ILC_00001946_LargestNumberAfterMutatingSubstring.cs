@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01946_LargestNumberAfterMutatingSubstring
+    public interface ILC_00001946_LargestNumberAfterMutatingSubstring
     {
         public void PrintSolution();
     }

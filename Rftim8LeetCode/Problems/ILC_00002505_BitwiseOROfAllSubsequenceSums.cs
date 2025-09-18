@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02505_BitwiseOROfAllSubsequenceSums
+    public interface ILC_00002505_BitwiseOROfAllSubsequenceSums
     {
         public void PrintSolution();
     }

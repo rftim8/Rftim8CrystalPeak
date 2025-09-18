@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01616_SplitTwoStringsToMakePalindrome
+    public interface ILC_00001616_SplitTwoStringsToMakePalindrome
     {
         public void PrintSolution();
     }

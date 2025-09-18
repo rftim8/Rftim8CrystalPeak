@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00314_BinaryTreeVerticalOrderTraversal
+    public interface ILC_00000314_BinaryTreeVerticalOrderTraversal
     {
         public void PrintSolution();
     }

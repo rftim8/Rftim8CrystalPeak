@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03102_MinimizeManhattanDistances
+    public interface ILC_00003102_MinimizeManhattanDistances
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02108_FindFirstPalindromicStringInTheArray
+    public interface ILC_00002108_FindFirstPalindromicStringInTheArray
     {
         public void PrintSolution();
     }

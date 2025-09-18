@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02585_NumberOfWaysToEarnPoints
+    public interface ILC_00002585_NumberOfWaysToEarnPoints
     {
         public void PrintSolution();
     }

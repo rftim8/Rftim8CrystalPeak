@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01116_PrintZeroEvenOdd
+    public interface ILC_00001116_PrintZeroEvenOdd
     {
         public void PrintSolution();
     }

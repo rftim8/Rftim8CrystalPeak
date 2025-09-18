@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01870_MinimumSpeedToArriveOnTime
+    public interface ILC_00001870_MinimumSpeedToArriveOnTime
     {
         public void PrintSolution();
     }

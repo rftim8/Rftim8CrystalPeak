@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02427_NumberOfCommonFactors
+    public interface ILC_00002427_NumberOfCommonFactors
     {
         public void PrintSolution();
     }

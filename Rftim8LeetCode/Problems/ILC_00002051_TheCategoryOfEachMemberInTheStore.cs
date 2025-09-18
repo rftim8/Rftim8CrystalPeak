@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02051_TheCategoryOfEachMemberInTheStore
+    public interface ILC_00002051_TheCategoryOfEachMemberInTheStore
     {
         public void PrintSolution();
     }

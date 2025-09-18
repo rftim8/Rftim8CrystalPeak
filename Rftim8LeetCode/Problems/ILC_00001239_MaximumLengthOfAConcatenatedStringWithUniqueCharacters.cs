@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01239_MaximumLengthOfAConcatenatedStringWithUniqueCharacters
+    public interface ILC_00001239_MaximumLengthOfAConcatenatedStringWithUniqueCharacters
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02983_PalindromeRearrangementQueries
+    public interface ILC_00002983_PalindromeRearrangementQueries
     {
         public void PrintSolution();
     }

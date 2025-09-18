@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03154_FindNumberOfWaysToReachTheKthStair
+    public interface ILC_00003154_FindNumberOfWaysToReachTheKthStair
     {
         public void PrintSolution();
     }

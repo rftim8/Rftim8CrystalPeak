@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03308_FindTopPerformingDriver
+    public interface ILC_00003308_FindTopPerformingDriver
     {
         public void PrintSolution();
     }

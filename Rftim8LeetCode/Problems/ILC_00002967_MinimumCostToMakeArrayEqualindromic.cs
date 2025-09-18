@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02967_MinimumCostToMakeArrayEqualindromic
+    public interface ILC_00002967_MinimumCostToMakeArrayEqualindromic
     {
         public void PrintSolution();
     }

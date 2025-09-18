@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00379_DesignPhoneDirectory
+    public interface ILC_00000379_DesignPhoneDirectory
     {
         public void PrintSolution();
     }

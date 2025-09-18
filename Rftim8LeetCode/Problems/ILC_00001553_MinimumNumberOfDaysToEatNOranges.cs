@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01553_MinimumNumberOfDaysToEatNOranges
+    public interface ILC_00001553_MinimumNumberOfDaysToEatNOranges
     {
         public void PrintSolution();
     }

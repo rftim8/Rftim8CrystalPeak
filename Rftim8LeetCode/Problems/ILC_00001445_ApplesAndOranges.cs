@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01445_ApplesAndOranges
+    public interface ILC_00001445_ApplesAndOranges
     {
         public void PrintSolution();
     }

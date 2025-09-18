@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01952_ThreeDivisors
+    public interface ILC_00001952_ThreeDivisors
     {
         public void PrintSolution();
     }

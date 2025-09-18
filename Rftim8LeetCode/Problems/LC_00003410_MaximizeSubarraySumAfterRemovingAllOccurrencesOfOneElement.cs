@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement : I_03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement
+    public class LC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement : ILC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement()
+        public LC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement));
-            Input = [.. RftResource._03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement));
+            Input = [.. RftResource.LC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement(IHost host)
+        public LC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003410_MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement));
             DataCollector();
         }
 

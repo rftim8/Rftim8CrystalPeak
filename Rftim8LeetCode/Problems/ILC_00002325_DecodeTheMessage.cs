@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02325_DecodeTheMessage
+    public interface ILC_00002325_DecodeTheMessage
     {
         public void PrintSolution();
     }

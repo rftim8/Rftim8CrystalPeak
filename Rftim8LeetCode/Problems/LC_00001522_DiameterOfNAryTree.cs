@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01522_DiameterOfNAryTree : I_01522_DiameterOfNAryTree
+    public class LC_00001522_DiameterOfNAryTree : ILC_00001522_DiameterOfNAryTree
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01522_DiameterOfNAryTree()
+        public LC_00001522_DiameterOfNAryTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01522_DiameterOfNAryTree));
-            Input = [.. RftResource._01522_DiameterOfNAryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001522_DiameterOfNAryTree));
+            Input = [.. RftResource.LC_00001522_DiameterOfNAryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01522_DiameterOfNAryTree(IHost host)
+        public LC_00001522_DiameterOfNAryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01522_DiameterOfNAryTree));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001522_DiameterOfNAryTree));
             DataCollector();
         }
 

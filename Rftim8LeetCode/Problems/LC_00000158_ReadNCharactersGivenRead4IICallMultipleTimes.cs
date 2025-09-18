@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00158_ReadNCharactersGivenRead4IICallMultipleTimes : I_00158_ReadNCharactersGivenRead4IICallMultipleTimes
+    public class LC_00000158_ReadNCharactersGivenRead4IICallMultipleTimes : ILC_00000158_ReadNCharactersGivenRead4IICallMultipleTimes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00158_ReadNCharactersGivenRead4IICallMultipleTimes()
+        public LC_00000158_ReadNCharactersGivenRead4IICallMultipleTimes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00158_ReadNCharactersGivenRead4IICallMultipleTimes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000158_ReadNCharactersGivenRead4IICallMultipleTimes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00158_ReadNCharactersGivenRead4IICallMultipleTimes(IHost host)
+        public LC_00000158_ReadNCharactersGivenRead4IICallMultipleTimes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00158_ReadNCharactersGivenRead4IICallMultipleTimes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000158_ReadNCharactersGivenRead4IICallMultipleTimes));
         }
 
         public void PrintSolution()

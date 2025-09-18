@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03184_CountPairsThatFormACompleteDayI : I_03184_CountPairsThatFormACompleteDayI
+    public class LC_00003184_CountPairsThatFormACompleteDayI : ILC_00003184_CountPairsThatFormACompleteDayI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03184_CountPairsThatFormACompleteDayI()
+        public LC_00003184_CountPairsThatFormACompleteDayI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03184_CountPairsThatFormACompleteDayI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003184_CountPairsThatFormACompleteDayI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03184_CountPairsThatFormACompleteDayI(IHost host)
+        public LC_00003184_CountPairsThatFormACompleteDayI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03184_CountPairsThatFormACompleteDayI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003184_CountPairsThatFormACompleteDayI));
         }
 
         public void PrintSolution()

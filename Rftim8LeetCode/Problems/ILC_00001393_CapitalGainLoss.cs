@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01393_CapitalGainLoss
+    public interface ILC_00001393_CapitalGainLoss
     {
         public void PrintSolution();
     }

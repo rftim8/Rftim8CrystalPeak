@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01781_SumOfBeautyOfAllSubstrings
+    public interface ILC_00001781_SumOfBeautyOfAllSubstrings
     {
         public void PrintSolution();
     }

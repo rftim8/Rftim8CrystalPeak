@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01899_MergeTripletsToFormTargetTriplet
+    public interface ILC_00001899_MergeTripletsToFormTargetTriplet
     {
         public void PrintSolution();
     }

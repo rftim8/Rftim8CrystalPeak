@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01288_RemoveCoveredIntervals
+    public interface ILC_00001288_RemoveCoveredIntervals
     {
         public void PrintSolution();
     }

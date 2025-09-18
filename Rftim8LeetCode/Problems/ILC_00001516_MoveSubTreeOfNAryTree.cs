@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01516_MoveSubTreeOfNAryTree
+    public interface ILC_00001516_MoveSubTreeOfNAryTree
     {
         public void PrintSolution();
     }

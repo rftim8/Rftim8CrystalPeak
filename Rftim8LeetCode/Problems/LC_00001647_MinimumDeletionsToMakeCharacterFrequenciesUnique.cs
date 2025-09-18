@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01647_MinimumDeletionsToMakeCharacterFrequenciesUnique : I_01647_MinimumDeletionsToMakeCharacterFrequenciesUnique
+    public class LC_00001647_MinimumDeletionsToMakeCharacterFrequenciesUnique : ILC_00001647_MinimumDeletionsToMakeCharacterFrequenciesUnique
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01647_MinimumDeletionsToMakeCharacterFrequenciesUnique()
+        public LC_00001647_MinimumDeletionsToMakeCharacterFrequenciesUnique()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01647_MinimumDeletionsToMakeCharacterFrequenciesUnique));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001647_MinimumDeletionsToMakeCharacterFrequenciesUnique));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01647_MinimumDeletionsToMakeCharacterFrequenciesUnique(IHost host)
+        public LC_00001647_MinimumDeletionsToMakeCharacterFrequenciesUnique(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01647_MinimumDeletionsToMakeCharacterFrequenciesUnique));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001647_MinimumDeletionsToMakeCharacterFrequenciesUnique));
         }
 
         public void PrintSolution()

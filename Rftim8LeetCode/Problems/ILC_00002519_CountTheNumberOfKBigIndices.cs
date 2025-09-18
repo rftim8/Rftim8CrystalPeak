@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02519_CountTheNumberOfKBigIndices
+    public interface ILC_00002519_CountTheNumberOfKBigIndices
     {
         public void PrintSolution();
     }

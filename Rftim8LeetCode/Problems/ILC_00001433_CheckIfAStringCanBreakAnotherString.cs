@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01433_CheckIfAStringCanBreakAnotherString
+    public interface ILC_00001433_CheckIfAStringCanBreakAnotherString
     {
         public void PrintSolution();
     }

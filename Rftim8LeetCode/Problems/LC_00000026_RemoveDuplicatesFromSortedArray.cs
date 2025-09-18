@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00026_RemoveDuplicatesFromSortedArray : I_00026_RemoveDuplicatesFromSortedArray
+    public class LC_00000026_RemoveDuplicatesFromSortedArray : ILC_00000026_RemoveDuplicatesFromSortedArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00026_RemoveDuplicatesFromSortedArray()
+        public LC_00000026_RemoveDuplicatesFromSortedArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00026_RemoveDuplicatesFromSortedArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000026_RemoveDuplicatesFromSortedArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00026_RemoveDuplicatesFromSortedArray(IHost host)
+        public LC_00000026_RemoveDuplicatesFromSortedArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00026_RemoveDuplicatesFromSortedArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000026_RemoveDuplicatesFromSortedArray));
         }
 
         public void PrintSolution()

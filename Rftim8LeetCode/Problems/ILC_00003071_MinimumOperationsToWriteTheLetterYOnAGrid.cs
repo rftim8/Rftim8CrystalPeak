@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03071_MinimumOperationsToWriteTheLetterYOnAGrid
+    public interface ILC_00003071_MinimumOperationsToWriteTheLetterYOnAGrid
     {
         public void PrintSolution();
     }

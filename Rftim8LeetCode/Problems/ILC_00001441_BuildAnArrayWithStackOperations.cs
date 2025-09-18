@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01441_BuildAnArrayWithStackOperations
+    public interface ILC_00001441_BuildAnArrayWithStackOperations
     {
         public void PrintSolution();
     }

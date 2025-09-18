@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01037_ValidBoomerang
+    public interface ILC_00001037_ValidBoomerang
     {
         public void PrintSolution();
     }

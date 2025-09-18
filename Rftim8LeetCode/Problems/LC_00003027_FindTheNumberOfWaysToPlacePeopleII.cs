@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03027_FindTheNumberOfWaysToPlacePeopleII : I_03027_FindTheNumberOfWaysToPlacePeopleII
+    public class LC_00003027_FindTheNumberOfWaysToPlacePeopleII : ILC_00003027_FindTheNumberOfWaysToPlacePeopleII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03027_FindTheNumberOfWaysToPlacePeopleII()
+        public LC_00003027_FindTheNumberOfWaysToPlacePeopleII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03027_FindTheNumberOfWaysToPlacePeopleII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003027_FindTheNumberOfWaysToPlacePeopleII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03027_FindTheNumberOfWaysToPlacePeopleII(IHost host)
+        public LC_00003027_FindTheNumberOfWaysToPlacePeopleII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03027_FindTheNumberOfWaysToPlacePeopleII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003027_FindTheNumberOfWaysToPlacePeopleII));
         }
 
         public void PrintSolution()

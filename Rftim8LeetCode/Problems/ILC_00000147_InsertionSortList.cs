@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00147_InsertionSortList
+    public interface ILC_00000147_InsertionSortList
     {
         public void PrintSolution();
     }

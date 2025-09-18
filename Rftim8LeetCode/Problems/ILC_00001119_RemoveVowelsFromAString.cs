@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01119_RemoveVowelsFromAString
+    public interface ILC_00001119_RemoveVowelsFromAString
     {
         public void PrintSolution();
     }

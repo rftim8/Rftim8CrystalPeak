@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01169_InvalidTransactions
+    public interface ILC_00001169_InvalidTransactions
     {
         public void PrintSolution();
     }

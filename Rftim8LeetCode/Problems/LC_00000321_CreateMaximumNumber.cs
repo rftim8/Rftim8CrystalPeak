@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00321_CreateMaximumNumber : I_00321_CreateMaximumNumber
+    public class LC_00000321_CreateMaximumNumber : ILC_00000321_CreateMaximumNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00321_CreateMaximumNumber()
+        public LC_00000321_CreateMaximumNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00321_CreateMaximumNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000321_CreateMaximumNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00321_CreateMaximumNumber(IHost host)
+        public LC_00000321_CreateMaximumNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00321_CreateMaximumNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000321_CreateMaximumNumber));
         }
 
         public void PrintSolution()

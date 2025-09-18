@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02545_SortTheStudentsByTheirKthScore : I_02545_SortTheStudentsByTheirKthScore
+    public class LC_00002545_SortTheStudentsByTheirKthScore : ILC_00002545_SortTheStudentsByTheirKthScore
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02545_SortTheStudentsByTheirKthScore()
+        public LC_00002545_SortTheStudentsByTheirKthScore()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02545_SortTheStudentsByTheirKthScore));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002545_SortTheStudentsByTheirKthScore));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02545_SortTheStudentsByTheirKthScore(IHost host)
+        public LC_00002545_SortTheStudentsByTheirKthScore(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02545_SortTheStudentsByTheirKthScore));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002545_SortTheStudentsByTheirKthScore));
         }
 
         public void PrintSolution()

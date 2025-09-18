@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02669_CountArtistOccurrencesOnSpotifyRankingList
+    public interface ILC_00002669_CountArtistOccurrencesOnSpotifyRankingList
     {
         public void PrintSolution();
     }

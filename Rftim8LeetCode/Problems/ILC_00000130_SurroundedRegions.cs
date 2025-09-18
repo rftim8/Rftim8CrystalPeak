@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00130_SurroundedRegions
+    public interface ILC_00000130_SurroundedRegions
     {
         public void PrintSolution();
     }

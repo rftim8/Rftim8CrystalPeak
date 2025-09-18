@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03063_LinkedListFrequency
+    public interface ILC_00003063_LinkedListFrequency
     {
         public void PrintSolution();
     }

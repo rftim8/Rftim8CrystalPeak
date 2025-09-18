@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02843_CountSymmetricIntegers
+    public interface ILC_00002843_CountSymmetricIntegers
     {
         public void PrintSolution();
     }

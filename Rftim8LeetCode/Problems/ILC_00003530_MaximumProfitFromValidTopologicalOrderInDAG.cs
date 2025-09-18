@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03530_MaximumProfitFromValidTopologicalOrderInDAG
+    public interface ILC_00003530_MaximumProfitFromValidTopologicalOrderInDAG
     {
         public void PrintSolution();
     }

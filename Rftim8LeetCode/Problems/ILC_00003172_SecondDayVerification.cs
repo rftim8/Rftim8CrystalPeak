@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03172_SecondDayVerification
+    public interface ILC_00003172_SecondDayVerification
     {
         public void PrintSolution();
     }

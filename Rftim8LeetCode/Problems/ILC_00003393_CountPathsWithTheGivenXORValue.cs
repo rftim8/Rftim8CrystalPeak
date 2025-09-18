@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03393_CountPathsWithTheGivenXORValue
+    public interface ILC_00003393_CountPathsWithTheGivenXORValue
     {
         public void PrintSolution();
     }

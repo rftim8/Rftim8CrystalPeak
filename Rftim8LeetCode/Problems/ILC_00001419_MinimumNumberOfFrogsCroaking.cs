@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01419_MinimumNumberOfFrogsCroaking
+    public interface ILC_00001419_MinimumNumberOfFrogsCroaking
     {
         public void PrintSolution();
     }

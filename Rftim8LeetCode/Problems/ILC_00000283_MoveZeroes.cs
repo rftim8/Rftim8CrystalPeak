@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00283_MoveZeroes
+    public interface ILC_00000283_MoveZeroes
     {
         public void PrintSolution();
     }

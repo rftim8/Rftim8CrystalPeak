@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00618_StudentsReportByGeography
+    public interface ILC_00000618_StudentsReportByGeography
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01170_CompareStringsByFrequencyOfTheSmallestCharacter
+    public interface ILC_00001170_CompareStringsByFrequencyOfTheSmallestCharacter
     {
         public void PrintSolution();
     }

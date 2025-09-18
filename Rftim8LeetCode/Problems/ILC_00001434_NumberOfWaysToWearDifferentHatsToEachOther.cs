@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01434_NumberOfWaysToWearDifferentHatsToEachOther
+    public interface ILC_00001434_NumberOfWaysToWearDifferentHatsToEachOther
     {
         public void PrintSolution();
     }

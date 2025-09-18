@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03297_CountSubstringsThatCanBeRearrangedToContainAStringI
+    public interface ILC_00003297_CountSubstringsThatCanBeRearrangedToContainAStringI
     {
         public void PrintSolution();
     }

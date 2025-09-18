@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01659_MaximizeGridHappiness
+    public interface ILC_00001659_MaximizeGridHappiness
     {
         public void PrintSolution();
     }

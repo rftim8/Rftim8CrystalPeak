@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03422_MinimumOperationsToMakeSubarrayElementsEqual : I_03422_MinimumOperationsToMakeSubarrayElementsEqual
+    public class LC_00003422_MinimumOperationsToMakeSubarrayElementsEqual : ILC_00003422_MinimumOperationsToMakeSubarrayElementsEqual
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03422_MinimumOperationsToMakeSubarrayElementsEqual()
+        public LC_00003422_MinimumOperationsToMakeSubarrayElementsEqual()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03422_MinimumOperationsToMakeSubarrayElementsEqual));
-            Input = [.. RftResource._03422_MinimumOperationsToMakeSubarrayElementsEqual_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003422_MinimumOperationsToMakeSubarrayElementsEqual));
+            Input = [.. RftResource.LC_00003422_MinimumOperationsToMakeSubarrayElementsEqual_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03422_MinimumOperationsToMakeSubarrayElementsEqual(IHost host)
+        public LC_00003422_MinimumOperationsToMakeSubarrayElementsEqual(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03422_MinimumOperationsToMakeSubarrayElementsEqual));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003422_MinimumOperationsToMakeSubarrayElementsEqual));
             DataCollector();
         }
 

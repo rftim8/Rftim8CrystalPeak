@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01001_GridIllumination
+    public interface ILC_00001001_GridIllumination
     {
         public void PrintSolution();
     }

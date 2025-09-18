@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01448_CountGoodNodesInBinaryTree
+    public interface ILC_00001448_CountGoodNodesInBinaryTree
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00124_BinaryTreeMaximumPathSum
+    public interface ILC_00000124_BinaryTreeMaximumPathSum
     {
         public void PrintSolution();
     }

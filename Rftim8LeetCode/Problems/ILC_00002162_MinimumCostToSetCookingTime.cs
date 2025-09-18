@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02162_MinimumCostToSetCookingTime
+    public interface ILC_00002162_MinimumCostToSetCookingTime
     {
         public void PrintSolution();
     }

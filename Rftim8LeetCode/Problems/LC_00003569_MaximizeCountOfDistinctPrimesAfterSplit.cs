@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03569_MaximizeCountOfDistinctPrimesAfterSplit : I_03569_MaximizeCountOfDistinctPrimesAfterSplit
+    public class LC_00003569_MaximizeCountOfDistinctPrimesAfterSplit : ILC_00003569_MaximizeCountOfDistinctPrimesAfterSplit
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03569_MaximizeCountOfDistinctPrimesAfterSplit()
+        public LC_00003569_MaximizeCountOfDistinctPrimesAfterSplit()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03569_MaximizeCountOfDistinctPrimesAfterSplit));
-            Input = [.. RftResource._03569_MaximizeCountOfDistinctPrimesAfterSplit_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003569_MaximizeCountOfDistinctPrimesAfterSplit));
+            Input = [.. RftResource.LC_00003569_MaximizeCountOfDistinctPrimesAfterSplit_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03569_MaximizeCountOfDistinctPrimesAfterSplit(IHost host)
+        public LC_00003569_MaximizeCountOfDistinctPrimesAfterSplit(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03569_MaximizeCountOfDistinctPrimesAfterSplit));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003569_MaximizeCountOfDistinctPrimesAfterSplit));
             DataCollector();
         }
 

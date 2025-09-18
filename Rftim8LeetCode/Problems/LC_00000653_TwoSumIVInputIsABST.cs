@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00653_TwoSumIVInputIsABST : I_00653_TwoSumIVInputIsABST
+    public class LC_00000653_TwoSumIVInputIsABST : ILC_00000653_TwoSumIVInputIsABST
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00653_TwoSumIVInputIsABST()
+        public LC_00000653_TwoSumIVInputIsABST()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00653_TwoSumIVInputIsABST));
-            Input = [.. RftResource._00653_TwoSumIVInputIsABST_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000653_TwoSumIVInputIsABST));
+            Input = [.. RftResource.LC_00000653_TwoSumIVInputIsABST_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00653_TwoSumIVInputIsABST(IHost host)
+        public LC_00000653_TwoSumIVInputIsABST(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00653_TwoSumIVInputIsABST));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000653_TwoSumIVInputIsABST));
             DataCollector();
         }
 

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00552_StudentAttendanceRecordII
+    public interface ILC_00000552_StudentAttendanceRecordII
     {
         public void PrintSolution();
     }

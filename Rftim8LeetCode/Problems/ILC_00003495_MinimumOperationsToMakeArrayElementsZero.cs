@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03495_MinimumOperationsToMakeArrayElementsZero
+    public interface ILC_00003495_MinimumOperationsToMakeArrayElementsZero
     {
         public void PrintSolution();
     }

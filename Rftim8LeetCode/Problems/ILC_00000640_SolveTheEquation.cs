@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00640_SolveTheEquation
+    public interface ILC_00000640_SolveTheEquation
     {
         public void PrintSolution();
     }

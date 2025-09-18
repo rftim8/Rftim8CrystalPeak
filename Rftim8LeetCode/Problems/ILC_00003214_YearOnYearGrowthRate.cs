@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03214_YearOnYearGrowthRate
+    public interface ILC_00003214_YearOnYearGrowthRate
     {
         public void PrintSolution();
     }

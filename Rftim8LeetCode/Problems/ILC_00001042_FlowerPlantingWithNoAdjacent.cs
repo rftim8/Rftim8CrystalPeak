@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01042_FlowerPlantingWithNoAdjacent
+    public interface ILC_00001042_FlowerPlantingWithNoAdjacent
     {
         public void PrintSolution();
     }

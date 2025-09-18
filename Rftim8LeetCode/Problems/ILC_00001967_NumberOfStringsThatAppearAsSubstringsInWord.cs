@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01967_NumberOfStringsThatAppearAsSubstringsInWord
+    public interface ILC_00001967_NumberOfStringsThatAppearAsSubstringsInWord
     {
         public void PrintSolution();
     }

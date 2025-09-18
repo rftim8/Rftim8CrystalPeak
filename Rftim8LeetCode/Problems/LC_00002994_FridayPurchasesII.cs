@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02994_FridayPurchasesII : I_02994_FridayPurchasesII
+    public class LC_00002994_FridayPurchasesII : ILC_00002994_FridayPurchasesII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02994_FridayPurchasesII()
+        public LC_00002994_FridayPurchasesII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02994_FridayPurchasesII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002994_FridayPurchasesII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02994_FridayPurchasesII(IHost host)
+        public LC_00002994_FridayPurchasesII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02994_FridayPurchasesII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002994_FridayPurchasesII));
         }
 
         public void PrintSolution()

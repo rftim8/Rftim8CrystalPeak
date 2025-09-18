@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01733_MinimumNumberOfPeopleToTeach
+    public interface ILC_00001733_MinimumNumberOfPeopleToTeach
     {
         public void PrintSolution();
     }

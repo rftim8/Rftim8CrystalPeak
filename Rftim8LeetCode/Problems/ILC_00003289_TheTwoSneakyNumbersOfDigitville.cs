@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03289_TheTwoSneakyNumbersOfDigitville
+    public interface ILC_00003289_TheTwoSneakyNumbersOfDigitville
     {
         public void PrintSolution();
     }

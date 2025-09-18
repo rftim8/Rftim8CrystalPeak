@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03228_MaximumNumberOfOperationsToMoveOnesToTheEnd
+    public interface ILC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd
     {
         public void PrintSolution();
     }

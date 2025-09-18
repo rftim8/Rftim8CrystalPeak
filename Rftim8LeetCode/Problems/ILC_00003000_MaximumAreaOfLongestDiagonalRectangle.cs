@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03000_MaximumAreaOfLongestDiagonalRectangle
+    public interface ILC_00003000_MaximumAreaOfLongestDiagonalRectangle
     {
         public void PrintSolution();
     }

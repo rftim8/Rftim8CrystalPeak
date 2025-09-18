@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01861_RotatingTheBox
+    public interface ILC_00001861_RotatingTheBox
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02219_MaximumSumScoreOfArray
+    public interface ILC_00002219_MaximumSumScoreOfArray
     {
         public void PrintSolution();
     }

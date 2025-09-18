@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00979_DistributeCoinsInBinaryTree
+    public interface ILC_00000979_DistributeCoinsInBinaryTree
     {
         public void PrintSolution();
     }

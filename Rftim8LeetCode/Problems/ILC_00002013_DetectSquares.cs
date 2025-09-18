@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02013_DetectSquares
+    public interface ILC_00002013_DetectSquares
     {
         public void PrintSolution();
     }

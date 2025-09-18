@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02143_ChooseNumbersFromTwoArraysInRange
+    public interface ILC_00002143_ChooseNumbersFromTwoArraysInRange
     {
         public void PrintSolution();
     }

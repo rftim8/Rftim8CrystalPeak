@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01476_SubrectangleQueries
+    public interface ILC_00001476_SubrectangleQueries
     {
         public void PrintSolution();
     }

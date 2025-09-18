@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00403_FrogJump
+    public interface ILC_00000403_FrogJump
     {
         public void PrintSolution();
     }

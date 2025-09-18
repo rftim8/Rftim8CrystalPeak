@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00891_SumOfSubsequenceWidths
+    public interface ILC_00000891_SumOfSubsequenceWidths
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00962_MaximumWidthRamp
+    public interface ILC_00000962_MaximumWidthRamp
     {
         public void PrintSolution();
     }

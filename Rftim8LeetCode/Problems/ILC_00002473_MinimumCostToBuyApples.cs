@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02473_MinimumCostToBuyApples
+    public interface ILC_00002473_MinimumCostToBuyApples
     {
         public void PrintSolution();
     }

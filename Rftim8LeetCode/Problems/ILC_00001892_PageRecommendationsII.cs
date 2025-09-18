@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01892_PageRecommendationsII
+    public interface ILC_00001892_PageRecommendationsII
     {
         public void PrintSolution();
     }

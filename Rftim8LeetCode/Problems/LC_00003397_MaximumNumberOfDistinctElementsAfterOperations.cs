@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03397_MaximumNumberOfDistinctElementsAfterOperations : I_03397_MaximumNumberOfDistinctElementsAfterOperations
+    public class LC_00003397_MaximumNumberOfDistinctElementsAfterOperations : ILC_00003397_MaximumNumberOfDistinctElementsAfterOperations
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03397_MaximumNumberOfDistinctElementsAfterOperations()
+        public LC_00003397_MaximumNumberOfDistinctElementsAfterOperations()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03397_MaximumNumberOfDistinctElementsAfterOperations));
-            Input = [.. RftResource._03397_MaximumNumberOfDistinctElementsAfterOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003397_MaximumNumberOfDistinctElementsAfterOperations));
+            Input = [.. RftResource.LC_00003397_MaximumNumberOfDistinctElementsAfterOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03397_MaximumNumberOfDistinctElementsAfterOperations(IHost host)
+        public LC_00003397_MaximumNumberOfDistinctElementsAfterOperations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03397_MaximumNumberOfDistinctElementsAfterOperations));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003397_MaximumNumberOfDistinctElementsAfterOperations));
             DataCollector();
         }
 

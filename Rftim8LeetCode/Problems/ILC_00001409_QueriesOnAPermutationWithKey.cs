@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01409_QueriesOnAPermutationWithKey
+    public interface ILC_00001409_QueriesOnAPermutationWithKey
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00459_RepeatedSubstringPattern
+    public interface ILC_00000459_RepeatedSubstringPattern
     {
         public void PrintSolution();
     }

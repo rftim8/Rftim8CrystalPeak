@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02305_FairDistributionOfCookies
+    public interface ILC_00002305_FairDistributionOfCookies
     {
         public void PrintSolution();
     }

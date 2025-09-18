@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00813_LargestSumOfAverages
+    public interface ILC_00000813_LargestSumOfAverages
     {
         public void PrintSolution();
     }

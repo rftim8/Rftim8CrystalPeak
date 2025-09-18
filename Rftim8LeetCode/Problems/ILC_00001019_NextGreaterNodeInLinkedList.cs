@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01019_NextGreaterNodeInLinkedList
+    public interface ILC_00001019_NextGreaterNodeInLinkedList
     {
         public void PrintSolution();
     }

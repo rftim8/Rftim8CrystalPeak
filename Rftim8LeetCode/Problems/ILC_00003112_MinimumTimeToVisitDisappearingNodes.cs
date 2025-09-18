@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03112_MinimumTimeToVisitDisappearingNodes
+    public interface ILC_00003112_MinimumTimeToVisitDisappearingNodes
     {
         public void PrintSolution();
     }

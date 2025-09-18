@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00302_SmallestRectangleEnclosingBlackPixels : I_00302_SmallestRectangleEnclosingBlackPixels
+    public class LC_00000302_SmallestRectangleEnclosingBlackPixels : ILC_00000302_SmallestRectangleEnclosingBlackPixels
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00302_SmallestRectangleEnclosingBlackPixels()
+        public LC_00000302_SmallestRectangleEnclosingBlackPixels()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00302_SmallestRectangleEnclosingBlackPixels));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000302_SmallestRectangleEnclosingBlackPixels));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00302_SmallestRectangleEnclosingBlackPixels(IHost host)
+        public LC_00000302_SmallestRectangleEnclosingBlackPixels(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00302_SmallestRectangleEnclosingBlackPixels));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000302_SmallestRectangleEnclosingBlackPixels));
         }
 
         public void PrintSolution()

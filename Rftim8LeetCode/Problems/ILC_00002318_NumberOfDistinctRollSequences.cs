@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02318_NumberOfDistinctRollSequences
+    public interface ILC_00002318_NumberOfDistinctRollSequences
     {
         public void PrintSolution();
     }

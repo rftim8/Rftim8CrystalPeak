@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00744_FindSmallestLetterGreaterThanTarget : I_00744_FindSmallestLetterGreaterThanTarget
+    public class LC_00000744_FindSmallestLetterGreaterThanTarget : ILC_00000744_FindSmallestLetterGreaterThanTarget
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00744_FindSmallestLetterGreaterThanTarget()
+        public LC_00000744_FindSmallestLetterGreaterThanTarget()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00744_FindSmallestLetterGreaterThanTarget));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000744_FindSmallestLetterGreaterThanTarget));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00744_FindSmallestLetterGreaterThanTarget(IHost host)
+        public LC_00000744_FindSmallestLetterGreaterThanTarget(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00744_FindSmallestLetterGreaterThanTarget));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000744_FindSmallestLetterGreaterThanTarget));
         }
 
         public void PrintSolution()

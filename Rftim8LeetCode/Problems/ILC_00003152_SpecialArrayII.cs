@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03152_SpecialArrayII
+    public interface ILC_00003152_SpecialArrayII
     {
         public void PrintSolution();
     }

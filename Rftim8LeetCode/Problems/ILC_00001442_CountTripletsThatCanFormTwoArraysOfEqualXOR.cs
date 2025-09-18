@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01442_CountTripletsThatCanFormTwoArraysOfEqualXOR
+    public interface ILC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR
     {
         public void PrintSolution();
     }

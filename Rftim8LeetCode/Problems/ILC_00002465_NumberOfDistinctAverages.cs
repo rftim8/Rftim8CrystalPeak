@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02465_NumberOfDistinctAverages
+    public interface ILC_00002465_NumberOfDistinctAverages
     {
         public void PrintSolution();
     }

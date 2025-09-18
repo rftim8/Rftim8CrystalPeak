@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03323_MinimizeConnectedGroupsByInsertingInterval
+    public interface ILC_00003323_MinimizeConnectedGroupsByInsertingInterval
     {
         public void PrintSolution();
     }

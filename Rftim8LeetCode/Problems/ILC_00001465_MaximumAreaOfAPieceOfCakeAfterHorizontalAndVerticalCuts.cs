@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01465_MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts
+    public interface ILC_00001465_MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts
     {
         public void PrintSolution();
     }

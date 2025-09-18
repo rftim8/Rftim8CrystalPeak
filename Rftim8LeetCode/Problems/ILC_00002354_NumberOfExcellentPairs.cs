@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02354_NumberOfExcellentPairs
+    public interface ILC_00002354_NumberOfExcellentPairs
     {
         public void PrintSolution();
     }

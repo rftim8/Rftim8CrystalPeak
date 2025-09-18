@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00973_KClosestPointsToOrigin
+    public interface ILC_00000973_KClosestPointsToOrigin
     {
         public void PrintSolution();
     }

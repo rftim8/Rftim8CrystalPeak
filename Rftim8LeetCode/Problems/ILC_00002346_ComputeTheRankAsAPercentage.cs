@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02346_ComputeTheRankAsAPercentage
+    public interface ILC_00002346_ComputeTheRankAsAPercentage
     {
         public void PrintSolution();
     }

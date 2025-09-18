@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01317_ConvertIntegerToTheSumOfTwoNoZeroIntegers
+    public interface ILC_00001317_ConvertIntegerToTheSumOfTwoNoZeroIntegers
     {
         public void PrintSolution();
     }

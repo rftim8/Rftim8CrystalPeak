@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02155_AllDivisionsWithTheHighestScoreOfABinaryArray
+    public interface ILC_00002155_AllDivisionsWithTheHighestScoreOfABinaryArray
     {
         public void PrintSolution();
     }

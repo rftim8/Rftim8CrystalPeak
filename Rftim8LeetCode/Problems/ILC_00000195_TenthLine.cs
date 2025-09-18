@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00195_TenthLine
+    public interface ILC_00000195_TenthLine
     {
         public void PrintSolution();
     }

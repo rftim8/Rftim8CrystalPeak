@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00449_SerializeAndDeserializeBST : I_00449_SerializeAndDeserializeBST
+    public class LC_00000449_SerializeAndDeserializeBST : ILC_00000449_SerializeAndDeserializeBST
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00449_SerializeAndDeserializeBST()
+        public LC_00000449_SerializeAndDeserializeBST()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00449_SerializeAndDeserializeBST));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000449_SerializeAndDeserializeBST));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00449_SerializeAndDeserializeBST(IHost host)
+        public LC_00000449_SerializeAndDeserializeBST(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00449_SerializeAndDeserializeBST));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000449_SerializeAndDeserializeBST));
         }
 
         public void PrintSolution()

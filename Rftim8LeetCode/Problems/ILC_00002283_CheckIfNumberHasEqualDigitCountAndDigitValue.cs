@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02283_CheckIfNumberHasEqualDigitCountAndDigitValue
+    public interface ILC_00002283_CheckIfNumberHasEqualDigitCountAndDigitValue
     {
         public void PrintSolution();
     }

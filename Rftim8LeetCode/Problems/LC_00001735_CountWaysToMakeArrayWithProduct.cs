@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01735_CountWaysToMakeArrayWithProduct : I_01735_CountWaysToMakeArrayWithProduct
+    public class LC_00001735_CountWaysToMakeArrayWithProduct : ILC_00001735_CountWaysToMakeArrayWithProduct
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01735_CountWaysToMakeArrayWithProduct()
+        public LC_00001735_CountWaysToMakeArrayWithProduct()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01735_CountWaysToMakeArrayWithProduct));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001735_CountWaysToMakeArrayWithProduct));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01735_CountWaysToMakeArrayWithProduct(IHost host)
+        public LC_00001735_CountWaysToMakeArrayWithProduct(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01735_CountWaysToMakeArrayWithProduct));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001735_CountWaysToMakeArrayWithProduct));
         }
 
         public void PrintSolution()

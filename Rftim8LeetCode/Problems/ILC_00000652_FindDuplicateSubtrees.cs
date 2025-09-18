@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00652_FindDuplicateSubtrees
+    public interface ILC_00000652_FindDuplicateSubtrees
     {
         public void PrintSolution();
     }

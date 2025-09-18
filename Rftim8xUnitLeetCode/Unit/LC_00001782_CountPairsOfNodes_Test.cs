@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01782_CountPairsOfNodes_Test
+    public class LC_00001782_CountPairsOfNodes_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01782_CountPairsOfNodes))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01782_CountPairsOfNodes))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01782_CountPairsOfNodes))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001782_CountPairsOfNodes))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001782_CountPairsOfNodes))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001782_CountPairsOfNodes))![1]);
 
-        public static TheoryData<List<string>, int> _01782_CountPairsOfNodesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001782_CountPairsOfNodesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01782_CountPairsOfNodesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001782_CountPairsOfNodesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01782_CountPairsOfNodesPartOne_Data))]
+        [MemberData(nameof(LC_00001782_CountPairsOfNodesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01782_CountPairsOfNodes.PartOne_Test(a0);
+            int actual = LC_00001782_CountPairsOfNodes.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01782_CountPairsOfNodesPartTwo_Data))]
+        [MemberData(nameof(LC_00001782_CountPairsOfNodesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01782_CountPairsOfNodes.PartTwo_Test(a0);
+            int actual = LC_00001782_CountPairsOfNodes.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

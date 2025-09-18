@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00831_MaskingPersonalInformation
+    public interface ILC_00000831_MaskingPersonalInformation
     {
         public void PrintSolution();
     }

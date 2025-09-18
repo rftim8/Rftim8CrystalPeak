@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02197_ReplaceNonCoprimeNumbersInArray : I_02197_ReplaceNonCoprimeNumbersInArray
+    public class LC_00002197_ReplaceNonCoprimeNumbersInArray : ILC_00002197_ReplaceNonCoprimeNumbersInArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02197_ReplaceNonCoprimeNumbersInArray()
+        public LC_00002197_ReplaceNonCoprimeNumbersInArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02197_ReplaceNonCoprimeNumbersInArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002197_ReplaceNonCoprimeNumbersInArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02197_ReplaceNonCoprimeNumbersInArray(IHost host)
+        public LC_00002197_ReplaceNonCoprimeNumbersInArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02197_ReplaceNonCoprimeNumbersInArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002197_ReplaceNonCoprimeNumbersInArray));
         }
 
         public void PrintSolution()

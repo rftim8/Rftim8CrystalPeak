@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00692_TopKFrequentWords
+    public interface ILC_00000692_TopKFrequentWords
     {
         public void PrintSolution();
     }

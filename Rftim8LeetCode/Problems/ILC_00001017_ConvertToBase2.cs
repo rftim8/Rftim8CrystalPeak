@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01017_ConvertToBase2
+    public interface ILC_00001017_ConvertToBase2
     {
         public void PrintSolution();
     }

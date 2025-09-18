@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01980_FindUniqueBinaryString
+    public interface ILC_00001980_FindUniqueBinaryString
     {
         public void PrintSolution();
     }

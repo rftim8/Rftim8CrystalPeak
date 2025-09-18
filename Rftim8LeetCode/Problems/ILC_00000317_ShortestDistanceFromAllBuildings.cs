@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00317_ShortestDistanceFromAllBuildings
+    public interface ILC_00000317_ShortestDistanceFromAllBuildings
     {
         public void PrintSolution();
     }

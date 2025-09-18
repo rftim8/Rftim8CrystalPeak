@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02837_TotalTraveledDistance_Test
+    public class LC_00002837_TotalTraveledDistance_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02837_TotalTraveledDistance))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02837_TotalTraveledDistance))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02837_TotalTraveledDistance))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002837_TotalTraveledDistance))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002837_TotalTraveledDistance))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002837_TotalTraveledDistance))![1]);
 
-        public static TheoryData<List<string>, int> _02837_TotalTraveledDistancePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002837_TotalTraveledDistancePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02837_TotalTraveledDistancePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002837_TotalTraveledDistancePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02837_TotalTraveledDistancePartOne_Data))]
+        [MemberData(nameof(LC_00002837_TotalTraveledDistancePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02837_TotalTraveledDistance.PartOne_Test(a0);
+            int actual = LC_00002837_TotalTraveledDistance.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02837_TotalTraveledDistancePartTwo_Data))]
+        [MemberData(nameof(LC_00002837_TotalTraveledDistancePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02837_TotalTraveledDistance.PartTwo_Test(a0);
+            int actual = LC_00002837_TotalTraveledDistance.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

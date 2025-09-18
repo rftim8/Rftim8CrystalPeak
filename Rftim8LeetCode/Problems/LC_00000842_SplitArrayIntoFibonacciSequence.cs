@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00842_SplitArrayIntoFibonacciSequence : I_00842_SplitArrayIntoFibonacciSequence
+    public class LC_00000842_SplitArrayIntoFibonacciSequence : ILC_00000842_SplitArrayIntoFibonacciSequence
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00842_SplitArrayIntoFibonacciSequence()
+        public LC_00000842_SplitArrayIntoFibonacciSequence()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00842_SplitArrayIntoFibonacciSequence));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000842_SplitArrayIntoFibonacciSequence));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00842_SplitArrayIntoFibonacciSequence(IHost host)
+        public LC_00000842_SplitArrayIntoFibonacciSequence(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00842_SplitArrayIntoFibonacciSequence));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000842_SplitArrayIntoFibonacciSequence));
         }
 
         public void PrintSolution()

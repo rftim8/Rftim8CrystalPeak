@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00163_MissingRanges
+    public interface ILC_00000163_MissingRanges
     {
         public void PrintSolution();
     }

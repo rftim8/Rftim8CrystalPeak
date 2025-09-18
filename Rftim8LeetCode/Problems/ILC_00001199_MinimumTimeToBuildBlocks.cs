@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01199_MinimumTimeToBuildBlocks
+    public interface ILC_00001199_MinimumTimeToBuildBlocks
     {
         public void PrintSolution();
     }

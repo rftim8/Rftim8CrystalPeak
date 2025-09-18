@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02717_SemiOrderedPermutation
+    public interface ILC_00002717_SemiOrderedPermutation
     {
         public void PrintSolution();
     }

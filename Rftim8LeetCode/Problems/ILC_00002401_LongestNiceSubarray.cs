@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02401_LongestNiceSubarray
+    public interface ILC_00002401_LongestNiceSubarray
     {
         public void PrintSolution();
     }

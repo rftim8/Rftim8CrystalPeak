@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01798_MaximumNumberOfConsecutiveValuesYouCanMake
+    public interface ILC_00001798_MaximumNumberOfConsecutiveValuesYouCanMake
     {
         public void PrintSolution();
     }

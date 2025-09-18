@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00786_KthSmallestPrimeFraction
+    public interface ILC_00000786_KthSmallestPrimeFraction
     {
         public void PrintSolution();
     }

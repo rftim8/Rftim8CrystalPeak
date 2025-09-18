@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03396_MinimumNumberOfOperationsToMakeElementsInArrayDistinct
+    public interface ILC_00003396_MinimumNumberOfOperationsToMakeElementsInArrayDistinct
     {
         public void PrintSolution();
     }

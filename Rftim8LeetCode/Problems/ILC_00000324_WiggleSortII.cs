@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00324_WiggleSortII
+    public interface ILC_00000324_WiggleSortII
     {
         public void PrintSolution();
     }

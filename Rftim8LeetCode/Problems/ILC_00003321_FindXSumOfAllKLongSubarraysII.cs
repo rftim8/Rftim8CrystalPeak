@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03321_FindXSumOfAllKLongSubarraysII
+    public interface ILC_00003321_FindXSumOfAllKLongSubarraysII
     {
         public void PrintSolution();
     }

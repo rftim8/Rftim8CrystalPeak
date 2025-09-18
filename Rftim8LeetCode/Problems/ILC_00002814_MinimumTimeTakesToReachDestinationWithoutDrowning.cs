@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02814_MinimumTimeTakesToReachDestinationWithoutDrowning
+    public interface ILC_00002814_MinimumTimeTakesToReachDestinationWithoutDrowning
     {
         public void PrintSolution();
     }

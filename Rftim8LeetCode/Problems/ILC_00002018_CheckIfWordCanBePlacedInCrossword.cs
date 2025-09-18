@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02018_CheckIfWordCanBePlacedInCrossword
+    public interface ILC_00002018_CheckIfWordCanBePlacedInCrossword
     {
         public void PrintSolution();
     }

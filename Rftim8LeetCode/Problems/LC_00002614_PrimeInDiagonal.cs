@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02614_PrimeInDiagonal : I_02614_PrimeInDiagonal
+    public class LC_00002614_PrimeInDiagonal : ILC_00002614_PrimeInDiagonal
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02614_PrimeInDiagonal()
+        public LC_00002614_PrimeInDiagonal()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02614_PrimeInDiagonal));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002614_PrimeInDiagonal));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02614_PrimeInDiagonal(IHost host)
+        public LC_00002614_PrimeInDiagonal(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02614_PrimeInDiagonal));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002614_PrimeInDiagonal));
         }
 
         public void PrintSolution()

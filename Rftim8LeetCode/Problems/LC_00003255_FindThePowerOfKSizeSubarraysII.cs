@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03255_FindThePowerOfKSizeSubarraysII : I_03255_FindThePowerOfKSizeSubarraysII
+    public class LC_00003255_FindThePowerOfKSizeSubarraysII : ILC_00003255_FindThePowerOfKSizeSubarraysII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03255_FindThePowerOfKSizeSubarraysII()
+        public LC_00003255_FindThePowerOfKSizeSubarraysII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03255_FindThePowerOfKSizeSubarraysII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003255_FindThePowerOfKSizeSubarraysII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03255_FindThePowerOfKSizeSubarraysII(IHost host)
+        public LC_00003255_FindThePowerOfKSizeSubarraysII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03255_FindThePowerOfKSizeSubarraysII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003255_FindThePowerOfKSizeSubarraysII));
         }
 
         public void PrintSolution()

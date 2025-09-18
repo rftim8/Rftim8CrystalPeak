@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01821_FindCustomersWithPositiveRevenueThisYear
+    public interface ILC_00001821_FindCustomersWithPositiveRevenueThisYear
     {
         public void PrintSolution();
     }

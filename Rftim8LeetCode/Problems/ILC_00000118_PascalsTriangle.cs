@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00118_PascalsTriangle
+    public interface ILC_00000118_PascalsTriangle
     {
         public void PrintSolution();
     }

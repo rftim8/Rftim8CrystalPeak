@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01034_ColoringABorder
+    public interface ILC_00001034_ColoringABorder
     {
         public void PrintSolution();
     }

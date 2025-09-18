@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01716_CalculateMoneyInLeetcodeBank_Test
+    public class LC_00001716_CalculateMoneyInLeetcodeBank_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01716_CalculateMoneyInLeetcodeBank))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01716_CalculateMoneyInLeetcodeBank))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01716_CalculateMoneyInLeetcodeBank))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001716_CalculateMoneyInLeetcodeBank))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001716_CalculateMoneyInLeetcodeBank))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001716_CalculateMoneyInLeetcodeBank))![1]);
 
-        public static TheoryData<List<string>, int> _01716_CalculateMoneyInLeetcodeBankPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001716_CalculateMoneyInLeetcodeBankPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01716_CalculateMoneyInLeetcodeBankPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001716_CalculateMoneyInLeetcodeBankPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01716_CalculateMoneyInLeetcodeBankPartOne_Data))]
+        [MemberData(nameof(LC_00001716_CalculateMoneyInLeetcodeBankPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01716_CalculateMoneyInLeetcodeBank.PartOne_Test(a0);
+            int actual = LC_00001716_CalculateMoneyInLeetcodeBank.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01716_CalculateMoneyInLeetcodeBankPartTwo_Data))]
+        [MemberData(nameof(LC_00001716_CalculateMoneyInLeetcodeBankPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01716_CalculateMoneyInLeetcodeBank.PartTwo_Test(a0);
+            int actual = LC_00001716_CalculateMoneyInLeetcodeBank.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

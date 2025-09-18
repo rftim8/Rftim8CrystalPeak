@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03184_CountPairsThatFormACompleteDayI
+    public interface ILC_00003184_CountPairsThatFormACompleteDayI
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01209_RemoveAllAdjacentDuplicatesInStringII
+    public interface ILC_00001209_RemoveAllAdjacentDuplicatesInStringII
     {
         public void PrintSolution();
     }

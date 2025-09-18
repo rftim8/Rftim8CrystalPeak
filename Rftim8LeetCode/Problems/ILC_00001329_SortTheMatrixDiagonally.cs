@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01329_SortTheMatrixDiagonally
+    public interface ILC_00001329_SortTheMatrixDiagonally
     {
         public void PrintSolution();
     }

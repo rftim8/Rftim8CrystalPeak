@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03447_AssignElementsToGroupsWithConstraints
+    public interface ILC_00003447_AssignElementsToGroupsWithConstraints
     {
         public void PrintSolution();
     }

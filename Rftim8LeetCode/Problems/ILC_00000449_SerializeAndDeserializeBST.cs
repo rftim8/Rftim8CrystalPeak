@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00449_SerializeAndDeserializeBST
+    public interface ILC_00000449_SerializeAndDeserializeBST
     {
         public void PrintSolution();
     }

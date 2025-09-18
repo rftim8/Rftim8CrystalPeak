@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01544_MakeTheStringGreat : I_01544_MakeTheStringGreat
+    public class LC_00001544_MakeTheStringGreat : ILC_00001544_MakeTheStringGreat
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01544_MakeTheStringGreat()
+        public LC_00001544_MakeTheStringGreat()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01544_MakeTheStringGreat));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001544_MakeTheStringGreat));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01544_MakeTheStringGreat(IHost host)
+        public LC_00001544_MakeTheStringGreat(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01544_MakeTheStringGreat));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001544_MakeTheStringGreat));
         }
 
         public void PrintSolution()

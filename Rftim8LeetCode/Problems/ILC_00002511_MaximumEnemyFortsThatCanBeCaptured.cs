@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02511_MaximumEnemyFortsThatCanBeCaptured
+    public interface ILC_00002511_MaximumEnemyFortsThatCanBeCaptured
     {
         public void PrintSolution();
     }

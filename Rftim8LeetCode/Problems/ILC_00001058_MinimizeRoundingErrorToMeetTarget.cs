@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01058_MinimizeRoundingErrorToMeetTarget
+    public interface ILC_00001058_MinimizeRoundingErrorToMeetTarget
     {
         public void PrintSolution();
     }

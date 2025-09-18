@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00840_MagicSquaresInGrid
+    public interface ILC_00000840_MagicSquaresInGrid
     {
         public void PrintSolution();
     }

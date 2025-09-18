@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03486_LongestSpecialPathII
+    public interface ILC_00003486_LongestSpecialPathII
     {
         public void PrintSolution();
     }

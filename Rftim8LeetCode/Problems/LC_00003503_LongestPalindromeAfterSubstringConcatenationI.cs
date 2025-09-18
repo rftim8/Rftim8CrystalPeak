@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03503_LongestPalindromeAfterSubstringConcatenationI : I_03503_LongestPalindromeAfterSubstringConcatenationI
+    public class LC_00003503_LongestPalindromeAfterSubstringConcatenationI : ILC_00003503_LongestPalindromeAfterSubstringConcatenationI
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03503_LongestPalindromeAfterSubstringConcatenationI()
+        public LC_00003503_LongestPalindromeAfterSubstringConcatenationI()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03503_LongestPalindromeAfterSubstringConcatenationI));
-            Input = [.. RftResource._03503_LongestPalindromeAfterSubstringConcatenationI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003503_LongestPalindromeAfterSubstringConcatenationI));
+            Input = [.. RftResource.LC_00003503_LongestPalindromeAfterSubstringConcatenationI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03503_LongestPalindromeAfterSubstringConcatenationI(IHost host)
+        public LC_00003503_LongestPalindromeAfterSubstringConcatenationI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03503_LongestPalindromeAfterSubstringConcatenationI));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003503_LongestPalindromeAfterSubstringConcatenationI));
             DataCollector();
         }
 

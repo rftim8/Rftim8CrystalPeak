@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02527_FindXorBeautyOfArray : I_02527_FindXorBeautyOfArray
+    public class LC_00002527_FindXorBeautyOfArray : ILC_00002527_FindXorBeautyOfArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02527_FindXorBeautyOfArray()
+        public LC_00002527_FindXorBeautyOfArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02527_FindXorBeautyOfArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002527_FindXorBeautyOfArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02527_FindXorBeautyOfArray(IHost host)
+        public LC_00002527_FindXorBeautyOfArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02527_FindXorBeautyOfArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002527_FindXorBeautyOfArray));
         }
 
         public void PrintSolution()

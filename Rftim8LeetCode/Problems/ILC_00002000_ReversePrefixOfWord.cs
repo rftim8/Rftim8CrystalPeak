@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02000_ReversePrefixOfWord
+    public interface ILC_00002000_ReversePrefixOfWord
     {
         public void PrintSolution();
     }

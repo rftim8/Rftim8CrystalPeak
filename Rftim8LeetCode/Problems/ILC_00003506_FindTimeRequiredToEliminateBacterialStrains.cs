@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03506_FindTimeRequiredToEliminateBacterialStrains
+    public interface ILC_00003506_FindTimeRequiredToEliminateBacterialStrains
     {
         public void PrintSolution();
     }

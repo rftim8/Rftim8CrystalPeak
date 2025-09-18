@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00844_BackspaceStringCompare
+    public interface ILC_00000844_BackspaceStringCompare
     {
         public void PrintSolution();
     }

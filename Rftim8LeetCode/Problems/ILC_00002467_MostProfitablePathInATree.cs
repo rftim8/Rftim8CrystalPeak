@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02467_MostProfitablePathInATree
+    public interface ILC_00002467_MostProfitablePathInATree
     {
         public void PrintSolution();
     }

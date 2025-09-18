@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02281_SumOfTotalStrengthOfWizards
+    public interface ILC_00002281_SumOfTotalStrengthOfWizards
     {
         public void PrintSolution();
     }

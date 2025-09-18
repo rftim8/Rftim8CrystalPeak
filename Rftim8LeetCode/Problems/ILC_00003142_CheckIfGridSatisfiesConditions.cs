@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03142_CheckIfGridSatisfiesConditions
+    public interface ILC_00003142_CheckIfGridSatisfiesConditions
     {
         public void PrintSolution();
     }

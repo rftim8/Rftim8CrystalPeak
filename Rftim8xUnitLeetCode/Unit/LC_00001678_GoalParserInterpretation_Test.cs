@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01678_GoalParserInterpretation_Test
+    public class LC_00001678_GoalParserInterpretation_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01678_GoalParserInterpretation))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01678_GoalParserInterpretation))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01678_GoalParserInterpretation))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001678_GoalParserInterpretation))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001678_GoalParserInterpretation))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001678_GoalParserInterpretation))![1]);
 
-        public static TheoryData<List<string>, int> _01678_GoalParserInterpretationPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001678_GoalParserInterpretationPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01678_GoalParserInterpretationPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001678_GoalParserInterpretationPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01678_GoalParserInterpretationPartOne_Data))]
+        [MemberData(nameof(LC_00001678_GoalParserInterpretationPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01678_GoalParserInterpretation.PartOne_Test(a0);
+            int actual = LC_00001678_GoalParserInterpretation.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01678_GoalParserInterpretationPartTwo_Data))]
+        [MemberData(nameof(LC_00001678_GoalParserInterpretationPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01678_GoalParserInterpretation.PartTwo_Test(a0);
+            int actual = LC_00001678_GoalParserInterpretation.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

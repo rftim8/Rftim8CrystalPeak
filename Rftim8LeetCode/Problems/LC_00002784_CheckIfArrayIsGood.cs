@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02784_CheckIfArrayIsGood : I_02784_CheckIfArrayIsGood
+    public class LC_00002784_CheckIfArrayIsGood : ILC_00002784_CheckIfArrayIsGood
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02784_CheckIfArrayIsGood()
+        public LC_00002784_CheckIfArrayIsGood()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02784_CheckIfArrayIsGood));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002784_CheckIfArrayIsGood));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02784_CheckIfArrayIsGood(IHost host)
+        public LC_00002784_CheckIfArrayIsGood(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02784_CheckIfArrayIsGood));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002784_CheckIfArrayIsGood));
         }
 
         public void PrintSolution()

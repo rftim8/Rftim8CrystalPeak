@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01722_MinimizeHammingDistanceAfterSwapOperations
+    public interface ILC_00001722_MinimizeHammingDistanceAfterSwapOperations
     {
         public void PrintSolution();
     }

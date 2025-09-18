@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00382_LinkedListRandomNode : I_00382_LinkedListRandomNode
+    public class LC_00000382_LinkedListRandomNode : ILC_00000382_LinkedListRandomNode
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00382_LinkedListRandomNode()
+        public LC_00000382_LinkedListRandomNode()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00382_LinkedListRandomNode));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000382_LinkedListRandomNode));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00382_LinkedListRandomNode(IHost host)
+        public LC_00000382_LinkedListRandomNode(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00382_LinkedListRandomNode));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000382_LinkedListRandomNode));
         }
 
         public void PrintSolution()

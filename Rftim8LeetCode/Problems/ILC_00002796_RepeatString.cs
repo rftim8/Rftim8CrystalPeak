@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02796_RepeatString
+    public interface ILC_00002796_RepeatString
     {
         public void PrintSolution();
     }

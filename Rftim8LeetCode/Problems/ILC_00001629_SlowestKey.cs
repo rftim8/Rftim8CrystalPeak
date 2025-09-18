@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01629_SlowestKey
+    public interface ILC_00001629_SlowestKey
     {
         public void PrintSolution();
     }

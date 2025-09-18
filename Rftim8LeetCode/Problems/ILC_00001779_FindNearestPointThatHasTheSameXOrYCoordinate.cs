@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01779_FindNearestPointThatHasTheSameXOrYCoordinate
+    public interface ILC_00001779_FindNearestPointThatHasTheSameXOrYCoordinate
     {
         public void PrintSolution();
     }

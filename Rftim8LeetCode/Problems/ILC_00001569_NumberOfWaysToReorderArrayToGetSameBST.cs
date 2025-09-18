@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01569_NumberOfWaysToReorderArrayToGetSameBST
+    public interface ILC_00001569_NumberOfWaysToReorderArrayToGetSameBST
     {
         public void PrintSolution();
     }

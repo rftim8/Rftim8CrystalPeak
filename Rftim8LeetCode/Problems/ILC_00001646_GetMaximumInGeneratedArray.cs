@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01646_GetMaximumInGeneratedArray
+    public interface ILC_00001646_GetMaximumInGeneratedArray
     {
         public void PrintSolution();
     }

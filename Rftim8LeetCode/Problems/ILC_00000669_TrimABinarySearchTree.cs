@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00669_TrimABinarySearchTree
+    public interface ILC_00000669_TrimABinarySearchTree
     {
         public void PrintSolution();
     }

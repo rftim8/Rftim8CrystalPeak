@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00751_IPToCIDR
+    public interface ILC_00000751_IPToCIDR
     {
         public void PrintSolution();
     }

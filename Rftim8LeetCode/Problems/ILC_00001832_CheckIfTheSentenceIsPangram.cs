@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01832_CheckIfTheSentenceIsPangram
+    public interface ILC_00001832_CheckIfTheSentenceIsPangram
     {
         public void PrintSolution();
     }

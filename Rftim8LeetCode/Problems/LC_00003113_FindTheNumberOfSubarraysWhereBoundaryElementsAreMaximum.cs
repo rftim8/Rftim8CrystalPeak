@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum : I_03113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum
+    public class LC_00003113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum : ILC_00003113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum()
+        public LC_00003113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum(IHost host)
+        public LC_00003113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003113_FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum));
         }
 
         public void PrintSolution()

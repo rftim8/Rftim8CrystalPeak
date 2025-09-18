@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03475_DNAPatternRecognition
+    public interface ILC_00003475_DNAPatternRecognition
     {
         public void PrintSolution();
     }

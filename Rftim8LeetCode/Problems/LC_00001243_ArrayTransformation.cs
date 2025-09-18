@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01243_ArrayTransformation : I_01243_ArrayTransformation
+    public class LC_00001243_ArrayTransformation : ILC_00001243_ArrayTransformation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01243_ArrayTransformation()
+        public LC_00001243_ArrayTransformation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01243_ArrayTransformation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001243_ArrayTransformation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01243_ArrayTransformation(IHost host)
+        public LC_00001243_ArrayTransformation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01243_ArrayTransformation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001243_ArrayTransformation));
         }
 
         public void PrintSolution()

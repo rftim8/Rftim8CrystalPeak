@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02388_ChangeNullValuesInATableToThePreviousValue
+    public interface ILC_00002388_ChangeNullValuesInATableToThePreviousValue
     {
         public void PrintSolution();
     }

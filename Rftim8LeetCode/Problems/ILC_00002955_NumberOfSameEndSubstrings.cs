@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02955_NumberOfSameEndSubstrings
+    public interface ILC_00002955_NumberOfSameEndSubstrings
     {
         public void PrintSolution();
     }

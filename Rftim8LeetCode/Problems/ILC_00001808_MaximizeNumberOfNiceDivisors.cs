@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01808_MaximizeNumberOfNiceDivisors
+    public interface ILC_00001808_MaximizeNumberOfNiceDivisors
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02651_CalculateDelayedArrivalTime : I_02651_CalculateDelayedArrivalTime
+    public class LC_00002651_CalculateDelayedArrivalTime : ILC_00002651_CalculateDelayedArrivalTime
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02651_CalculateDelayedArrivalTime()
+        public LC_00002651_CalculateDelayedArrivalTime()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02651_CalculateDelayedArrivalTime));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002651_CalculateDelayedArrivalTime));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02651_CalculateDelayedArrivalTime(IHost host)
+        public LC_00002651_CalculateDelayedArrivalTime(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02651_CalculateDelayedArrivalTime));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002651_CalculateDelayedArrivalTime));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02791_CountPathsThatCanFormAPalindromeInATree
+    public interface ILC_00002791_CountPathsThatCanFormAPalindromeInATree
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02659_MakeArrayEmpty
+    public interface ILC_00002659_MakeArrayEmpty
     {
         public void PrintSolution();
     }

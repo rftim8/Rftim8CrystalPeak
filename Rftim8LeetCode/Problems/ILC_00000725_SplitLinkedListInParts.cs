@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00725_SplitLinkedListInParts
+    public interface ILC_00000725_SplitLinkedListInParts
     {
         public void PrintSolution();
     }

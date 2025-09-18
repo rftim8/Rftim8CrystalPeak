@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01290_ConvertBinaryNumberInALinkedListToInteger
+    public interface ILC_00001290_ConvertBinaryNumberInALinkedListToInteger
     {
         public void PrintSolution();
     }

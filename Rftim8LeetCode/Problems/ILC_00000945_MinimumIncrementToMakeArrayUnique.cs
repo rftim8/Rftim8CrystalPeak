@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00945_MinimumIncrementToMakeArrayUnique
+    public interface ILC_00000945_MinimumIncrementToMakeArrayUnique
     {
         public void PrintSolution();
     }

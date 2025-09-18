@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00748_ShortestCompletingWord
+    public interface ILC_00000748_ShortestCompletingWord
     {
         public void PrintSolution();
     }

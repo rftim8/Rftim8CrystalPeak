@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03224_MinimumArrayChangesToMakeDifferencesEqual
+    public interface ILC_00003224_MinimumArrayChangesToMakeDifferencesEqual
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00811_SubdomainVisitCount
+    public interface ILC_00000811_SubdomainVisitCount
     {
         public void PrintSolution();
     }

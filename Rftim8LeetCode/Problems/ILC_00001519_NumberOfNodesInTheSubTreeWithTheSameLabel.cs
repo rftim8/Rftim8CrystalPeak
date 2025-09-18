@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01519_NumberOfNodesInTheSubTreeWithTheSameLabel
+    public interface ILC_00001519_NumberOfNodesInTheSubTreeWithTheSameLabel
     {
         public void PrintSolution();
     }

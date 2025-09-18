@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02720_PopularityPercentage
+    public interface ILC_00002720_PopularityPercentage
     {
         public void PrintSolution();
     }

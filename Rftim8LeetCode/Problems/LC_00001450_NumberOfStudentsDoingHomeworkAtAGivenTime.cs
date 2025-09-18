@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01450_NumberOfStudentsDoingHomeworkAtAGivenTime : I_01450_NumberOfStudentsDoingHomeworkAtAGivenTime
+    public class LC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime : ILC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01450_NumberOfStudentsDoingHomeworkAtAGivenTime()
+        public LC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01450_NumberOfStudentsDoingHomeworkAtAGivenTime));
-            Input = [.. RftResource._01450_NumberOfStudentsDoingHomeworkAtAGivenTime_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime));
+            Input = [.. RftResource.LC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01450_NumberOfStudentsDoingHomeworkAtAGivenTime(IHost host)
+        public LC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01450_NumberOfStudentsDoingHomeworkAtAGivenTime));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime));
             DataCollector();
         }
 

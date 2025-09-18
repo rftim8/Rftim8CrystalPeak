@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02474_CustomersWithStrictlyIncreasingPurchases
+    public interface ILC_00002474_CustomersWithStrictlyIncreasingPurchases
     {
         public void PrintSolution();
     }

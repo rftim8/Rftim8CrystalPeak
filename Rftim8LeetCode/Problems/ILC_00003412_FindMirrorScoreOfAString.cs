@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03412_FindMirrorScoreOfAString
+    public interface ILC_00003412_FindMirrorScoreOfAString
     {
         public void PrintSolution();
     }

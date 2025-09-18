@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02770_MaximumNumberOfJumpsToReachTheLastIndex : I_02770_MaximumNumberOfJumpsToReachTheLastIndex
+    public class LC_00002770_MaximumNumberOfJumpsToReachTheLastIndex : ILC_00002770_MaximumNumberOfJumpsToReachTheLastIndex
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02770_MaximumNumberOfJumpsToReachTheLastIndex()
+        public LC_00002770_MaximumNumberOfJumpsToReachTheLastIndex()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02770_MaximumNumberOfJumpsToReachTheLastIndex));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002770_MaximumNumberOfJumpsToReachTheLastIndex));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02770_MaximumNumberOfJumpsToReachTheLastIndex(IHost host)
+        public LC_00002770_MaximumNumberOfJumpsToReachTheLastIndex(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02770_MaximumNumberOfJumpsToReachTheLastIndex));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002770_MaximumNumberOfJumpsToReachTheLastIndex));
         }
 
         public void PrintSolution()

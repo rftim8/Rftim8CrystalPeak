@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03349_AdjacentIncreasingSubarraysDetectionI : I_03349_AdjacentIncreasingSubarraysDetectionI
+    public class LC_00003349_AdjacentIncreasingSubarraysDetectionI : ILC_00003349_AdjacentIncreasingSubarraysDetectionI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03349_AdjacentIncreasingSubarraysDetectionI()
+        public LC_00003349_AdjacentIncreasingSubarraysDetectionI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03349_AdjacentIncreasingSubarraysDetectionI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003349_AdjacentIncreasingSubarraysDetectionI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03349_AdjacentIncreasingSubarraysDetectionI(IHost host)
+        public LC_00003349_AdjacentIncreasingSubarraysDetectionI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03349_AdjacentIncreasingSubarraysDetectionI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003349_AdjacentIncreasingSubarraysDetectionI));
         }
 
         public void PrintSolution()

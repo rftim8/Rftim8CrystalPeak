@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00578_GetHighestAnswerRateQuestion : I_00578_GetHighestAnswerRateQuestion
+    public class LC_00000578_GetHighestAnswerRateQuestion : ILC_00000578_GetHighestAnswerRateQuestion
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00578_GetHighestAnswerRateQuestion()
+        public LC_00000578_GetHighestAnswerRateQuestion()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00578_GetHighestAnswerRateQuestion));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000578_GetHighestAnswerRateQuestion));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00578_GetHighestAnswerRateQuestion(IHost host)
+        public LC_00000578_GetHighestAnswerRateQuestion(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00578_GetHighestAnswerRateQuestion));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000578_GetHighestAnswerRateQuestion));
         }
 
         public void PrintSolution()

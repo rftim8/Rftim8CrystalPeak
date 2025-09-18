@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00875_KokoEatingBananas
+    public interface ILC_00000875_KokoEatingBananas
     {
         public void PrintSolution();
     }

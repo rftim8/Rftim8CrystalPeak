@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02695_ArrayWrapper
+    public interface ILC_00002695_ArrayWrapper
     {
         public void PrintSolution();
     }

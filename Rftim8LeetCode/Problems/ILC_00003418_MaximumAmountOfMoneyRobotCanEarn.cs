@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03418_MaximumAmountOfMoneyRobotCanEarn
+    public interface ILC_00003418_MaximumAmountOfMoneyRobotCanEarn
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02126_DestroyingAsteroids : I_02126_DestroyingAsteroids
+    public class LC_00002126_DestroyingAsteroids : ILC_00002126_DestroyingAsteroids
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02126_DestroyingAsteroids()
+        public LC_00002126_DestroyingAsteroids()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02126_DestroyingAsteroids));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002126_DestroyingAsteroids));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02126_DestroyingAsteroids(IHost host)
+        public LC_00002126_DestroyingAsteroids(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02126_DestroyingAsteroids));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002126_DestroyingAsteroids));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02729_CheckIfTheNumberIsFascinating : I_02729_CheckIfTheNumberIsFascinating
+    public class LC_00002729_CheckIfTheNumberIsFascinating : ILC_00002729_CheckIfTheNumberIsFascinating
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02729_CheckIfTheNumberIsFascinating()
+        public LC_00002729_CheckIfTheNumberIsFascinating()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02729_CheckIfTheNumberIsFascinating));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002729_CheckIfTheNumberIsFascinating));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02729_CheckIfTheNumberIsFascinating(IHost host)
+        public LC_00002729_CheckIfTheNumberIsFascinating(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02729_CheckIfTheNumberIsFascinating));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002729_CheckIfTheNumberIsFascinating));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02727_IsObjectEmpty : I_02727_IsObjectEmpty
+    public class LC_00002727_IsObjectEmpty : ILC_00002727_IsObjectEmpty
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02727_IsObjectEmpty()
+        public LC_00002727_IsObjectEmpty()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02727_IsObjectEmpty));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002727_IsObjectEmpty));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02727_IsObjectEmpty(IHost host)
+        public LC_00002727_IsObjectEmpty(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02727_IsObjectEmpty));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002727_IsObjectEmpty));
         }
 
         public void PrintSolution()

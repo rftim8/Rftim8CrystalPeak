@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01655_DistributeRepeatingIntegers
+    public interface ILC_00001655_DistributeRepeatingIntegers
     {
         public void PrintSolution();
     }

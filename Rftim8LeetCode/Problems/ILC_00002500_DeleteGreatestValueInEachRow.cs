@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02500_DeleteGreatestValueInEachRow
+    public interface ILC_00002500_DeleteGreatestValueInEachRow
     {
         public void PrintSolution();
     }

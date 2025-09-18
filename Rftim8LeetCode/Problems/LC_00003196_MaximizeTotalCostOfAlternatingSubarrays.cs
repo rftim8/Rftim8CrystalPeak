@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03196_MaximizeTotalCostOfAlternatingSubarrays : I_03196_MaximizeTotalCostOfAlternatingSubarrays
+    public class LC_00003196_MaximizeTotalCostOfAlternatingSubarrays : ILC_00003196_MaximizeTotalCostOfAlternatingSubarrays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03196_MaximizeTotalCostOfAlternatingSubarrays()
+        public LC_00003196_MaximizeTotalCostOfAlternatingSubarrays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03196_MaximizeTotalCostOfAlternatingSubarrays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003196_MaximizeTotalCostOfAlternatingSubarrays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03196_MaximizeTotalCostOfAlternatingSubarrays(IHost host)
+        public LC_00003196_MaximizeTotalCostOfAlternatingSubarrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03196_MaximizeTotalCostOfAlternatingSubarrays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003196_MaximizeTotalCostOfAlternatingSubarrays));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01013_PartitionArrayIntoThreePartsWithEqualSum
+    public interface ILC_00001013_PartitionArrayIntoThreePartsWithEqualSum
     {
         public void PrintSolution();
     }

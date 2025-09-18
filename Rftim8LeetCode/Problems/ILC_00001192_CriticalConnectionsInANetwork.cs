@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01192_CriticalConnectionsInANetwork
+    public interface ILC_00001192_CriticalConnectionsInANetwork
     {
         public void PrintSolution();
     }

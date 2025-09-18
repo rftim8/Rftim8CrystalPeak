@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00918_MaximumSumCircularSubarray : I_00918_MaximumSumCircularSubarray
+    public class LC_00000918_MaximumSumCircularSubarray : ILC_00000918_MaximumSumCircularSubarray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00918_MaximumSumCircularSubarray()
+        public LC_00000918_MaximumSumCircularSubarray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00918_MaximumSumCircularSubarray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000918_MaximumSumCircularSubarray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00918_MaximumSumCircularSubarray(IHost host)
+        public LC_00000918_MaximumSumCircularSubarray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00918_MaximumSumCircularSubarray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000918_MaximumSumCircularSubarray));
         }
 
         public void PrintSolution()

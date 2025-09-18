@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02963_CountTheNumberOfGoodPartitions
+    public interface ILC_00002963_CountTheNumberOfGoodPartitions
     {
         public void PrintSolution();
     }

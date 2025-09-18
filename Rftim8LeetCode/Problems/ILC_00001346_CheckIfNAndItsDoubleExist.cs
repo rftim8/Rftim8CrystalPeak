@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01346_CheckIfNAndItsDoubleExist
+    public interface ILC_00001346_CheckIfNAndItsDoubleExist
     {
         public void PrintSolution();
     }

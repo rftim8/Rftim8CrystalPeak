@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01942_TheNumberOfTheSmallestUnoccupiedChair
+    public interface ILC_00001942_TheNumberOfTheSmallestUnoccupiedChair
     {
         public void PrintSolution();
     }

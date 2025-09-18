@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03229_MinimumOperationsToMakeArrayEqualToTarget
+    public interface ILC_00003229_MinimumOperationsToMakeArrayEqualToTarget
     {
         public void PrintSolution();
     }

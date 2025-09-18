@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03476_MaximizeProfitFromTaskAssignment
+    public interface ILC_00003476_MaximizeProfitFromTaskAssignment
     {
         public void PrintSolution();
     }

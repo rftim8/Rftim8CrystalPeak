@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02086_MinimumNumberOfFoodBucketsToFeedTheHamsters
+    public interface ILC_00002086_MinimumNumberOfFoodBucketsToFeedTheHamsters
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02691_ImmutabilityHelper
+    public interface ILC_00002691_ImmutabilityHelper
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01966_BinarySearchableNumbersInAnUnsortedArray
+    public interface ILC_00001966_BinarySearchableNumbersInAnUnsortedArray
     {
         public void PrintSolution();
     }

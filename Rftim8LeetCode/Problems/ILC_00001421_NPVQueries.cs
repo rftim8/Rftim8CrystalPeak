@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01421_NPVQueries
+    public interface ILC_00001421_NPVQueries
     {
         public void PrintSolution();
     }

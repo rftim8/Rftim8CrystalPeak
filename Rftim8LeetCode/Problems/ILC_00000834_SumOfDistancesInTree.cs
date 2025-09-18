@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00834_SumOfDistancesInTree
+    public interface ILC_00000834_SumOfDistancesInTree
     {
         public void PrintSolution();
     }

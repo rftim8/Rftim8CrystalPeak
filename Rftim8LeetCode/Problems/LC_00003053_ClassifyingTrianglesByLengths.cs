@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03053_ClassifyingTrianglesByLengths : I_03053_ClassifyingTrianglesByLengths
+    public class LC_00003053_ClassifyingTrianglesByLengths : ILC_00003053_ClassifyingTrianglesByLengths
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03053_ClassifyingTrianglesByLengths()
+        public LC_00003053_ClassifyingTrianglesByLengths()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03053_ClassifyingTrianglesByLengths));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003053_ClassifyingTrianglesByLengths));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03053_ClassifyingTrianglesByLengths(IHost host)
+        public LC_00003053_ClassifyingTrianglesByLengths(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03053_ClassifyingTrianglesByLengths));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003053_ClassifyingTrianglesByLengths));
         }
 
         public void PrintSolution()

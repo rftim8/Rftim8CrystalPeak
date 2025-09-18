@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01224_MaximumEqualFrequency
+    public interface ILC_00001224_MaximumEqualFrequency
     {
         public void PrintSolution();
     }

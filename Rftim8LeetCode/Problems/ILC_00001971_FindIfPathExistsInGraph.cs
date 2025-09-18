@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01971_FindIfPathExistsInGraph
+    public interface ILC_00001971_FindIfPathExistsInGraph
     {
         public void PrintSolution();
     }

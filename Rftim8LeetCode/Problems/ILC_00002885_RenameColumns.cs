@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02885_RenameColumns
+    public interface ILC_00002885_RenameColumns
     {
         public void PrintSolution();
     }

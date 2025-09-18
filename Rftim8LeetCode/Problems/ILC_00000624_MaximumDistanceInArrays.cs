@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00624_MaximumDistanceInArrays
+    public interface ILC_00000624_MaximumDistanceInArrays
     {
         public void PrintSolution();
     }

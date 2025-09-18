@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01677_ProductsWorthOverInvoices
+    public interface ILC_00001677_ProductsWorthOverInvoices
     {
         public void PrintSolution();
     }

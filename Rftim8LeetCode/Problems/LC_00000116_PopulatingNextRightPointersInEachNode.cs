@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00116_PopulatingNextRightPointersInEachNode : I_00116_PopulatingNextRightPointersInEachNode
+    public class LC_00000116_PopulatingNextRightPointersInEachNode : ILC_00000116_PopulatingNextRightPointersInEachNode
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00116_PopulatingNextRightPointersInEachNode()
+        public LC_00000116_PopulatingNextRightPointersInEachNode()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00116_PopulatingNextRightPointersInEachNode));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000116_PopulatingNextRightPointersInEachNode));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00116_PopulatingNextRightPointersInEachNode(IHost host)
+        public LC_00000116_PopulatingNextRightPointersInEachNode(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00116_PopulatingNextRightPointersInEachNode));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000116_PopulatingNextRightPointersInEachNode));
         }
 
         public void PrintSolution()

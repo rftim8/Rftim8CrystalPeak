@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03280_ConvertDateToBinary : I_03280_ConvertDateToBinary
+    public class LC_00003280_ConvertDateToBinary : ILC_00003280_ConvertDateToBinary
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03280_ConvertDateToBinary()
+        public LC_00003280_ConvertDateToBinary()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03280_ConvertDateToBinary));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003280_ConvertDateToBinary));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03280_ConvertDateToBinary(IHost host)
+        public LC_00003280_ConvertDateToBinary(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03280_ConvertDateToBinary));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003280_ConvertDateToBinary));
         }
 
         public void PrintSolution()

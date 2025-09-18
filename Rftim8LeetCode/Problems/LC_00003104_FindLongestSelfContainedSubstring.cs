@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03104_FindLongestSelfContainedSubstring : I_03104_FindLongestSelfContainedSubstring
+    public class LC_00003104_FindLongestSelfContainedSubstring : ILC_00003104_FindLongestSelfContainedSubstring
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03104_FindLongestSelfContainedSubstring()
+        public LC_00003104_FindLongestSelfContainedSubstring()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03104_FindLongestSelfContainedSubstring));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003104_FindLongestSelfContainedSubstring));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03104_FindLongestSelfContainedSubstring(IHost host)
+        public LC_00003104_FindLongestSelfContainedSubstring(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03104_FindLongestSelfContainedSubstring));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003104_FindLongestSelfContainedSubstring));
         }
 
         public void PrintSolution()

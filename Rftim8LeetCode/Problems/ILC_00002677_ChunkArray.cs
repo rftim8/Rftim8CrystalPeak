@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02677_ChunkArray
+    public interface ILC_00002677_ChunkArray
     {
         public void PrintSolution();
     }

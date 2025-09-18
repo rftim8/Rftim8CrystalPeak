@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01545_FindKthBitInNthBinaryString
+    public interface ILC_00001545_FindKthBitInNthBinaryString
     {
         public void PrintSolution();
     }

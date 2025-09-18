@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03547_MaximumSumOfEdgeValuesInAGraph
+    public interface ILC_00003547_MaximumSumOfEdgeValuesInAGraph
     {
         public void PrintSolution();
     }

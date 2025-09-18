@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02416_SumOfPrefixScoresOfStrings
+    public interface ILC_00002416_SumOfPrefixScoresOfStrings
     {
         public void PrintSolution();
     }

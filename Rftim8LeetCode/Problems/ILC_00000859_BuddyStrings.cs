@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00859_BuddyStrings
+    public interface ILC_00000859_BuddyStrings
     {
         public void PrintSolution();
     }

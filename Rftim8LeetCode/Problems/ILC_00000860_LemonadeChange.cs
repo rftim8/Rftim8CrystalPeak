@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00860_LemonadeChange
+    public interface ILC_00000860_LemonadeChange
     {
         public void PrintSolution();
     }

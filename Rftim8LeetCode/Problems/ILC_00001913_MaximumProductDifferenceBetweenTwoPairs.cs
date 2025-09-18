@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01913_MaximumProductDifferenceBetweenTwoPairs
+    public interface ILC_00001913_MaximumProductDifferenceBetweenTwoPairs
     {
         public void PrintSolution();
     }

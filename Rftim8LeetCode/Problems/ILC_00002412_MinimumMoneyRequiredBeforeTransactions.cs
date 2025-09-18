@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02412_MinimumMoneyRequiredBeforeTransactions
+    public interface ILC_00002412_MinimumMoneyRequiredBeforeTransactions
     {
         public void PrintSolution();
     }

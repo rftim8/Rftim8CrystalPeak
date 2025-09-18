@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03036_NumberOfSubarraysThatMatchAPatternII
+    public interface ILC_00003036_NumberOfSubarraysThatMatchAPatternII
     {
         public void PrintSolution();
     }

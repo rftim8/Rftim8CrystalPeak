@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01501_CountriesYouCanSafelyInvestIn
+    public interface ILC_00001501_CountriesYouCanSafelyInvestIn
     {
         public void PrintSolution();
     }

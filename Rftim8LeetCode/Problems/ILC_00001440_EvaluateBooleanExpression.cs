@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01440_EvaluateBooleanExpression
+    public interface ILC_00001440_EvaluateBooleanExpression
     {
         public void PrintSolution();
     }

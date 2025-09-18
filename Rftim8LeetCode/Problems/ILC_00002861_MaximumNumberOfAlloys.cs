@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02861_MaximumNumberOfAlloys
+    public interface ILC_00002861_MaximumNumberOfAlloys
     {
         public void PrintSolution();
     }

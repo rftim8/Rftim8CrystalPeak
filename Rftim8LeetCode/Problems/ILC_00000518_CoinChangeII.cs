@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00518_CoinChangeII
+    public interface ILC_00000518_CoinChangeII
     {
         public void PrintSolution();
     }

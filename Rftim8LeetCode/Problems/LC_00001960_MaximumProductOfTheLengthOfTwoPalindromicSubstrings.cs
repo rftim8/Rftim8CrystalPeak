@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings : I_01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings
+    public class LC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings : ILC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings()
+        public LC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings(IHost host)
+        public LC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00872_LeafSimilarTrees
+    public interface ILC_00000872_LeafSimilarTrees
     {
         public void PrintSolution();
     }

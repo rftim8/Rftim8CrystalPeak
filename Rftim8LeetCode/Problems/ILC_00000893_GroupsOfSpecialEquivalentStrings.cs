@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00893_GroupsOfSpecialEquivalentStrings
+    public interface ILC_00000893_GroupsOfSpecialEquivalentStrings
     {
         public void PrintSolution();
     }

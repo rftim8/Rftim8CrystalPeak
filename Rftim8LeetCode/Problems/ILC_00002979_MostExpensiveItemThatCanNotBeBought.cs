@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02979_MostExpensiveItemThatCanNotBeBought
+    public interface ILC_00002979_MostExpensiveItemThatCanNotBeBought
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02512_RewardTopKStudents
+    public interface ILC_00002512_RewardTopKStudents
     {
         public void PrintSolution();
     }

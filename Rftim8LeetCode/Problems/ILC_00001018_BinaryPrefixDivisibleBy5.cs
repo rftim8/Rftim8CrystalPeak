@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01018_BinaryPrefixDivisibleBy5
+    public interface ILC_00001018_BinaryPrefixDivisibleBy5
     {
         public void PrintSolution();
     }

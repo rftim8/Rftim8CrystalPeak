@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03049_EarliestSecondToMarkIndicesII : I_03049_EarliestSecondToMarkIndicesII
+    public class LC_00003049_EarliestSecondToMarkIndicesII : ILC_00003049_EarliestSecondToMarkIndicesII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03049_EarliestSecondToMarkIndicesII()
+        public LC_00003049_EarliestSecondToMarkIndicesII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03049_EarliestSecondToMarkIndicesII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003049_EarliestSecondToMarkIndicesII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03049_EarliestSecondToMarkIndicesII(IHost host)
+        public LC_00003049_EarliestSecondToMarkIndicesII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03049_EarliestSecondToMarkIndicesII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003049_EarliestSecondToMarkIndicesII));
         }
 
         public void PrintSolution()

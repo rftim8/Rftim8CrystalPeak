@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00183_CustomersWhoNeverOrder : I_00183_CustomersWhoNeverOrder
+    public class LC_00000183_CustomersWhoNeverOrder : ILC_00000183_CustomersWhoNeverOrder
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00183_CustomersWhoNeverOrder()
+        public LC_00000183_CustomersWhoNeverOrder()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00183_CustomersWhoNeverOrder));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000183_CustomersWhoNeverOrder));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00183_CustomersWhoNeverOrder(IHost host)
+        public LC_00000183_CustomersWhoNeverOrder(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00183_CustomersWhoNeverOrder));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000183_CustomersWhoNeverOrder));
         }
 
         public void PrintSolution()

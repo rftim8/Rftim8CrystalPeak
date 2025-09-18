@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01402_ReducingDishes : I_01402_ReducingDishes
+    public class LC_00001402_ReducingDishes : ILC_00001402_ReducingDishes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01402_ReducingDishes()
+        public LC_00001402_ReducingDishes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01402_ReducingDishes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001402_ReducingDishes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01402_ReducingDishes(IHost host)
+        public LC_00001402_ReducingDishes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01402_ReducingDishes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001402_ReducingDishes));
         }
 
         public void PrintSolution()

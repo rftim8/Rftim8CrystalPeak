@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02034_StockPriceFluctuation : I_02034_StockPriceFluctuation
+    public class LC_00002034_StockPriceFluctuation : ILC_00002034_StockPriceFluctuation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02034_StockPriceFluctuation()
+        public LC_00002034_StockPriceFluctuation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02034_StockPriceFluctuation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002034_StockPriceFluctuation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02034_StockPriceFluctuation(IHost host)
+        public LC_00002034_StockPriceFluctuation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02034_StockPriceFluctuation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002034_StockPriceFluctuation));
         }
 
         public void PrintSolution()

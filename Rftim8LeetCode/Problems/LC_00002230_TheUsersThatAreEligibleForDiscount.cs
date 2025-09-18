@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02230_TheUsersThatAreEligibleForDiscount : I_02230_TheUsersThatAreEligibleForDiscount
+    public class LC_00002230_TheUsersThatAreEligibleForDiscount : ILC_00002230_TheUsersThatAreEligibleForDiscount
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02230_TheUsersThatAreEligibleForDiscount()
+        public LC_00002230_TheUsersThatAreEligibleForDiscount()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02230_TheUsersThatAreEligibleForDiscount));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002230_TheUsersThatAreEligibleForDiscount));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02230_TheUsersThatAreEligibleForDiscount(IHost host)
+        public LC_00002230_TheUsersThatAreEligibleForDiscount(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02230_TheUsersThatAreEligibleForDiscount));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002230_TheUsersThatAreEligibleForDiscount));
         }
 
         public void PrintSolution()

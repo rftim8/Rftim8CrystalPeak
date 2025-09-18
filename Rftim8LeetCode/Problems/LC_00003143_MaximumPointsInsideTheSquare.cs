@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03143_MaximumPointsInsideTheSquare : I_03143_MaximumPointsInsideTheSquare
+    public class LC_00003143_MaximumPointsInsideTheSquare : ILC_00003143_MaximumPointsInsideTheSquare
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03143_MaximumPointsInsideTheSquare()
+        public LC_00003143_MaximumPointsInsideTheSquare()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03143_MaximumPointsInsideTheSquare));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003143_MaximumPointsInsideTheSquare));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03143_MaximumPointsInsideTheSquare(IHost host)
+        public LC_00003143_MaximumPointsInsideTheSquare(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03143_MaximumPointsInsideTheSquare));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003143_MaximumPointsInsideTheSquare));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00113_PathSumII
+    public interface ILC_00000113_PathSumII
     {
         public void PrintSolution();
     }

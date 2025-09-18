@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01092_ShortestCommonSupersequence
+    public interface ILC_00001092_ShortestCommonSupersequence
     {
         public void PrintSolution();
     }

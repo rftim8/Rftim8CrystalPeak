@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03171_FindSubarrayWithBitwiseORClosestToK : I_03171_FindSubarrayWithBitwiseORClosestToK
+    public class LC_00003171_FindSubarrayWithBitwiseORClosestToK : ILC_00003171_FindSubarrayWithBitwiseORClosestToK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03171_FindSubarrayWithBitwiseORClosestToK()
+        public LC_00003171_FindSubarrayWithBitwiseORClosestToK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03171_FindSubarrayWithBitwiseORClosestToK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003171_FindSubarrayWithBitwiseORClosestToK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03171_FindSubarrayWithBitwiseORClosestToK(IHost host)
+        public LC_00003171_FindSubarrayWithBitwiseORClosestToK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03171_FindSubarrayWithBitwiseORClosestToK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003171_FindSubarrayWithBitwiseORClosestToK));
         }
 
         public void PrintSolution()

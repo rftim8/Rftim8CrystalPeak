@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03388_CountBeautifulSplitsInAnArray : I_03388_CountBeautifulSplitsInAnArray
+    public class LC_00003388_CountBeautifulSplitsInAnArray : ILC_00003388_CountBeautifulSplitsInAnArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03388_CountBeautifulSplitsInAnArray()
+        public LC_00003388_CountBeautifulSplitsInAnArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03388_CountBeautifulSplitsInAnArray));
-            Input = [.. RftResource._03388_CountBeautifulSplitsInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003388_CountBeautifulSplitsInAnArray));
+            Input = [.. RftResource.LC_00003388_CountBeautifulSplitsInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03388_CountBeautifulSplitsInAnArray(IHost host)
+        public LC_00003388_CountBeautifulSplitsInAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03388_CountBeautifulSplitsInAnArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003388_CountBeautifulSplitsInAnArray));
             DataCollector();
         }
 

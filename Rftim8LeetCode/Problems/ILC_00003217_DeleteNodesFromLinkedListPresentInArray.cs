@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03217_DeleteNodesFromLinkedListPresentInArray
+    public interface ILC_00003217_DeleteNodesFromLinkedListPresentInArray
     {
         public void PrintSolution();
     }

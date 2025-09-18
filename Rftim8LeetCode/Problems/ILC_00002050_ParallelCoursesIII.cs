@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02050_ParallelCoursesIII
+    public interface ILC_00002050_ParallelCoursesIII
     {
         public void PrintSolution();
     }

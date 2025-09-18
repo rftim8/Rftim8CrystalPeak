@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01951_AllThePairsWithTheMaximumNumberOfCommonFollowers
+    public interface ILC_00001951_AllThePairsWithTheMaximumNumberOfCommonFollowers
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00093_RestoreIPAddresses
+    public interface ILC_00000093_RestoreIPAddresses
     {
         public void PrintSolution();
     }

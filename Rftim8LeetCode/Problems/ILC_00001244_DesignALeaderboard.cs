@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01244_DesignALeaderboard
+    public interface ILC_00001244_DesignALeaderboard
     {
         public void PrintSolution();
     }

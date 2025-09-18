@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00782_TransformToChessboard
+    public interface ILC_00000782_TransformToChessboard
     {
         public void PrintSolution();
     }

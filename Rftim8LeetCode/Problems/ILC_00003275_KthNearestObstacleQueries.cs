@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03275_KthNearestObstacleQueries
+    public interface ILC_00003275_KthNearestObstacleQueries
     {
         public void PrintSolution();
     }

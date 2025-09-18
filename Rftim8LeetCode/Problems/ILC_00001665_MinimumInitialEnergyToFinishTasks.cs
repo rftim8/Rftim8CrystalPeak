@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01665_MinimumInitialEnergyToFinishTasks
+    public interface ILC_00001665_MinimumInitialEnergyToFinishTasks
     {
         public void PrintSolution();
     }

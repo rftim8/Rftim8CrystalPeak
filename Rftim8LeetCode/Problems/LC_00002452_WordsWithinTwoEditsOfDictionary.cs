@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02452_WordsWithinTwoEditsOfDictionary : I_02452_WordsWithinTwoEditsOfDictionary
+    public class LC_00002452_WordsWithinTwoEditsOfDictionary : ILC_00002452_WordsWithinTwoEditsOfDictionary
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02452_WordsWithinTwoEditsOfDictionary()
+        public LC_00002452_WordsWithinTwoEditsOfDictionary()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02452_WordsWithinTwoEditsOfDictionary));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002452_WordsWithinTwoEditsOfDictionary));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02452_WordsWithinTwoEditsOfDictionary(IHost host)
+        public LC_00002452_WordsWithinTwoEditsOfDictionary(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02452_WordsWithinTwoEditsOfDictionary));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002452_WordsWithinTwoEditsOfDictionary));
         }
 
         public void PrintSolution()

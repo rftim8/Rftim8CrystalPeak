@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02781_LengthOfTheLongestValidSubstring
+    public interface ILC_00002781_LengthOfTheLongestValidSubstring
     {
         public void PrintSolution();
     }

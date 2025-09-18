@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01840_MaximumBuildingHeight
+    public interface ILC_00001840_MaximumBuildingHeight
     {
         public void PrintSolution();
     }

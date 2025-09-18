@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02119_ANumberAfterADoubleReversal
+    public interface ILC_00002119_ANumberAfterADoubleReversal
     {
         public void PrintSolution();
     }

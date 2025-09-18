@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03575_MaximumGoodSubtreeScore
+    public interface ILC_00003575_MaximumGoodSubtreeScore
     {
         public void PrintSolution();
     }

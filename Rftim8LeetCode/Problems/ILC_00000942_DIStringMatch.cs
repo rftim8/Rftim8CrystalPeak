@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00942_DIStringMatch
+    public interface ILC_00000942_DIStringMatch
     {
         public void PrintSolution();
     }

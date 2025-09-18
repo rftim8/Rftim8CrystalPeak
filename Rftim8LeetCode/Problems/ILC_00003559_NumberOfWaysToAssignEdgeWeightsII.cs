@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03559_NumberOfWaysToAssignEdgeWeightsII
+    public interface ILC_00003559_NumberOfWaysToAssignEdgeWeightsII
     {
         public void PrintSolution();
     }

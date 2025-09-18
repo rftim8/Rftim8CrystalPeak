@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02875_MinimumSizeSubarrayInInfiniteArray
+    public interface ILC_00002875_MinimumSizeSubarrayInInfiniteArray
     {
         public void PrintSolution();
     }

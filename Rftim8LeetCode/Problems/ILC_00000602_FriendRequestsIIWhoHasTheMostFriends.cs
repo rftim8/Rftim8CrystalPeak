@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00602_FriendRequestsIIWhoHasTheMostFriends
+    public interface ILC_00000602_FriendRequestsIIWhoHasTheMostFriends
     {
         public void PrintSolution();
     }

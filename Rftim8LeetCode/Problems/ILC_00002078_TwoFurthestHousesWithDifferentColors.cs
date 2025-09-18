@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02078_TwoFurthestHousesWithDifferentColors
+    public interface ILC_00002078_TwoFurthestHousesWithDifferentColors
     {
         public void PrintSolution();
     }

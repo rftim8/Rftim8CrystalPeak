@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01790_CheckIfOneStringSwapCanMakeStringsEqual
+    public interface ILC_00001790_CheckIfOneStringSwapCanMakeStringsEqual
     {
         public void PrintSolution();
     }

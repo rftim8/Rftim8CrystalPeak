@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01216_ValidPalindromeIII
+    public interface ILC_00001216_ValidPalindromeIII
     {
         public void PrintSolution();
     }

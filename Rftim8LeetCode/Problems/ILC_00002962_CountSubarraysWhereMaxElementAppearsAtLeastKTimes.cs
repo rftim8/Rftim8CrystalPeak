@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02962_CountSubarraysWhereMaxElementAppearsAtLeastKTimes
+    public interface ILC_00002962_CountSubarraysWhereMaxElementAppearsAtLeastKTimes
     {
         public void PrintSolution();
     }

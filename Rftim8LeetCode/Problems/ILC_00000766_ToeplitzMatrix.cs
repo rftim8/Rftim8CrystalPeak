@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00766_ToeplitzMatrix
+    public interface ILC_00000766_ToeplitzMatrix
     {
         public void PrintSolution();
     }

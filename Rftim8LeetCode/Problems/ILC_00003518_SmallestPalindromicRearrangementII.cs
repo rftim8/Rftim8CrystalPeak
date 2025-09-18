@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03518_SmallestPalindromicRearrangementII
+    public interface ILC_00003518_SmallestPalindromicRearrangementII
     {
         public void PrintSolution();
     }

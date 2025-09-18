@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01538_GuessTheMajorityInAHiddenArray
+    public interface ILC_00001538_GuessTheMajorityInAHiddenArray
     {
         public void PrintSolution();
     }

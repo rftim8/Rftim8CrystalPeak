@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00475_Heaters
+    public interface ILC_00000475_Heaters
     {
         public void PrintSolution();
     }

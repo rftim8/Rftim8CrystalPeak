@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02616_MinimizeTheMaximumDifferenceOfPairs
+    public interface ILC_00002616_MinimizeTheMaximumDifferenceOfPairs
     {
         public void PrintSolution();
     }

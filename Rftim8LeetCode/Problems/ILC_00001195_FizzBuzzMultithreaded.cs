@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01195_FizzBuzzMultithreaded
+    public interface ILC_00001195_FizzBuzzMultithreaded
     {
         public void PrintSolution();
     }

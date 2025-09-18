@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01776_CarFleetII
+    public interface ILC_00001776_CarFleetII
     {
         public void PrintSolution();
     }

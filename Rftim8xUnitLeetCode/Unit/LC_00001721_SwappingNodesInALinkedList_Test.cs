@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01721_SwappingNodesInALinkedList_Test
+    public class LC_00001721_SwappingNodesInALinkedList_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01721_SwappingNodesInALinkedList))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01721_SwappingNodesInALinkedList))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01721_SwappingNodesInALinkedList))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001721_SwappingNodesInALinkedList))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001721_SwappingNodesInALinkedList))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001721_SwappingNodesInALinkedList))![1]);
 
-        public static TheoryData<List<string>, int> _01721_SwappingNodesInALinkedListPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001721_SwappingNodesInALinkedListPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01721_SwappingNodesInALinkedListPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001721_SwappingNodesInALinkedListPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01721_SwappingNodesInALinkedListPartOne_Data))]
+        [MemberData(nameof(LC_00001721_SwappingNodesInALinkedListPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01721_SwappingNodesInALinkedList.PartOne_Test(a0);
+            int actual = LC_00001721_SwappingNodesInALinkedList.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01721_SwappingNodesInALinkedListPartTwo_Data))]
+        [MemberData(nameof(LC_00001721_SwappingNodesInALinkedListPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01721_SwappingNodesInALinkedList.PartTwo_Test(a0);
+            int actual = LC_00001721_SwappingNodesInALinkedList.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

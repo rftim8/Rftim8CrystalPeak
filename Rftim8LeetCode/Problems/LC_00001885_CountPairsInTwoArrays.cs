@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01885_CountPairsInTwoArrays : I_01885_CountPairsInTwoArrays
+    public class LC_00001885_CountPairsInTwoArrays : ILC_00001885_CountPairsInTwoArrays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01885_CountPairsInTwoArrays()
+        public LC_00001885_CountPairsInTwoArrays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01885_CountPairsInTwoArrays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001885_CountPairsInTwoArrays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01885_CountPairsInTwoArrays(IHost host)
+        public LC_00001885_CountPairsInTwoArrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01885_CountPairsInTwoArrays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001885_CountPairsInTwoArrays));
         }
 
         public void PrintSolution()

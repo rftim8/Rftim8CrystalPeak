@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03081_ReplaceQuestionMarksInStringToMinimizeItsValue
+    public interface ILC_00003081_ReplaceQuestionMarksInStringToMinimizeItsValue
     {
         public void PrintSolution();
     }

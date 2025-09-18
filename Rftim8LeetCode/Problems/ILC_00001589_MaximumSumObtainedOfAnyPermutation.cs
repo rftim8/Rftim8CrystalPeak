@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01589_MaximumSumObtainedOfAnyPermutation
+    public interface ILC_00001589_MaximumSumObtainedOfAnyPermutation
     {
         public void PrintSolution();
     }

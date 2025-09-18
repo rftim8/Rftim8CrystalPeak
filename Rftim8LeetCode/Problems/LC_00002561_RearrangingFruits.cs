@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02561_RearrangingFruits : I_02561_RearrangingFruits
+    public class LC_00002561_RearrangingFruits : ILC_00002561_RearrangingFruits
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02561_RearrangingFruits()
+        public LC_00002561_RearrangingFruits()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02561_RearrangingFruits));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002561_RearrangingFruits));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02561_RearrangingFruits(IHost host)
+        public LC_00002561_RearrangingFruits(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02561_RearrangingFruits));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002561_RearrangingFruits));
         }
 
         public void PrintSolution()

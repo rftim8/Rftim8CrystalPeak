@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01250_CheckIfItIsAGoodArray
+    public interface ILC_00001250_CheckIfItIsAGoodArray
     {
         public void PrintSolution();
     }

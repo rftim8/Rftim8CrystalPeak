@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00871_MinimumNumberOfRefuelingStops : I_00871_MinimumNumberOfRefuelingStops
+    public class LC_00000871_MinimumNumberOfRefuelingStops : ILC_00000871_MinimumNumberOfRefuelingStops
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00871_MinimumNumberOfRefuelingStops()
+        public LC_00000871_MinimumNumberOfRefuelingStops()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00871_MinimumNumberOfRefuelingStops));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000871_MinimumNumberOfRefuelingStops));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00871_MinimumNumberOfRefuelingStops(IHost host)
+        public LC_00000871_MinimumNumberOfRefuelingStops(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00871_MinimumNumberOfRefuelingStops));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000871_MinimumNumberOfRefuelingStops));
         }
 
         public void PrintSolution()

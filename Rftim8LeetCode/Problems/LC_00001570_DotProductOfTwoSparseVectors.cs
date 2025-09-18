@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01570_DotProductOfTwoSparseVectors : I_01570_DotProductOfTwoSparseVectors
+    public class LC_00001570_DotProductOfTwoSparseVectors : ILC_00001570_DotProductOfTwoSparseVectors
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01570_DotProductOfTwoSparseVectors()
+        public LC_00001570_DotProductOfTwoSparseVectors()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01570_DotProductOfTwoSparseVectors));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001570_DotProductOfTwoSparseVectors));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01570_DotProductOfTwoSparseVectors(IHost host)
+        public LC_00001570_DotProductOfTwoSparseVectors(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01570_DotProductOfTwoSparseVectors));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001570_DotProductOfTwoSparseVectors));
         }
 
         public void PrintSolution()

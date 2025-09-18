@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00296_BestMeetingPoint : I_00296_BestMeetingPoint
+    public class LC_00000296_BestMeetingPoint : ILC_00000296_BestMeetingPoint
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00296_BestMeetingPoint()
+        public LC_00000296_BestMeetingPoint()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00296_BestMeetingPoint));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000296_BestMeetingPoint));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00296_BestMeetingPoint(IHost host)
+        public LC_00000296_BestMeetingPoint(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00296_BestMeetingPoint));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000296_BestMeetingPoint));
         }
 
         public void PrintSolution()

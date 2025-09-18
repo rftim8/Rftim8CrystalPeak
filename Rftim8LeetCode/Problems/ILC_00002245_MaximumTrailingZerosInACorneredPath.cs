@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02245_MaximumTrailingZerosInACorneredPath
+    public interface ILC_00002245_MaximumTrailingZerosInACorneredPath
     {
         public void PrintSolution();
     }

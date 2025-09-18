@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02678_NumberOfSeniorCitizens : I_02678_NumberOfSeniorCitizens
+    public class LC_00002678_NumberOfSeniorCitizens : ILC_00002678_NumberOfSeniorCitizens
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02678_NumberOfSeniorCitizens()
+        public LC_00002678_NumberOfSeniorCitizens()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02678_NumberOfSeniorCitizens));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002678_NumberOfSeniorCitizens));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02678_NumberOfSeniorCitizens(IHost host)
+        public LC_00002678_NumberOfSeniorCitizens(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02678_NumberOfSeniorCitizens));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002678_NumberOfSeniorCitizens));
         }
 
         public void PrintSolution()

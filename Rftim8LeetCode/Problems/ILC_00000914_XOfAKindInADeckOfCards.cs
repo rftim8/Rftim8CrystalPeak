@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00914_XOfAKindInADeckOfCards
+    public interface ILC_00000914_XOfAKindInADeckOfCards
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02601_PrimeSubtractionOperation : I_02601_PrimeSubtractionOperation
+    public class LC_00002601_PrimeSubtractionOperation : ILC_00002601_PrimeSubtractionOperation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02601_PrimeSubtractionOperation()
+        public LC_00002601_PrimeSubtractionOperation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02601_PrimeSubtractionOperation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002601_PrimeSubtractionOperation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02601_PrimeSubtractionOperation(IHost host)
+        public LC_00002601_PrimeSubtractionOperation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02601_PrimeSubtractionOperation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002601_PrimeSubtractionOperation));
         }
 
         public void PrintSolution()

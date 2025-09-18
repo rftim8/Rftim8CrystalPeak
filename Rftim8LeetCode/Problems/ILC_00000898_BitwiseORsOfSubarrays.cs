@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00898_BitwiseORsOfSubarrays
+    public interface ILC_00000898_BitwiseORsOfSubarrays
     {
         public void PrintSolution();
     }

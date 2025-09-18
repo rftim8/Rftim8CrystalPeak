@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01750_MinimumLengthOfStringAfterDeletingSimilarEnds
+    public interface ILC_00001750_MinimumLengthOfStringAfterDeletingSimilarEnds
     {
         public void PrintSolution();
     }

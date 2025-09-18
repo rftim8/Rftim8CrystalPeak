@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02054_TwoBestNonOverlappingEvents
+    public interface ILC_00002054_TwoBestNonOverlappingEvents
     {
         public void PrintSolution();
     }

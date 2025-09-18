@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02713_MaximumStrictlyIncreasingCellsInAMatrix : I_02713_MaximumStrictlyIncreasingCellsInAMatrix
+    public class LC_00002713_MaximumStrictlyIncreasingCellsInAMatrix : ILC_00002713_MaximumStrictlyIncreasingCellsInAMatrix
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02713_MaximumStrictlyIncreasingCellsInAMatrix()
+        public LC_00002713_MaximumStrictlyIncreasingCellsInAMatrix()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02713_MaximumStrictlyIncreasingCellsInAMatrix));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002713_MaximumStrictlyIncreasingCellsInAMatrix));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02713_MaximumStrictlyIncreasingCellsInAMatrix(IHost host)
+        public LC_00002713_MaximumStrictlyIncreasingCellsInAMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02713_MaximumStrictlyIncreasingCellsInAMatrix));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002713_MaximumStrictlyIncreasingCellsInAMatrix));
         }
 
         public void PrintSolution()

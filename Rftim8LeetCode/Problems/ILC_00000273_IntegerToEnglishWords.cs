@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00273_IntegerToEnglishWords
+    public interface ILC_00000273_IntegerToEnglishWords
     {
         public void PrintSolution();
     }

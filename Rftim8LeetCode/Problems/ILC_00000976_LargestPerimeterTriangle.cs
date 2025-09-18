@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00976_LargestPerimeterTriangle
+    public interface ILC_00000976_LargestPerimeterTriangle
     {
         public void PrintSolution();
     }

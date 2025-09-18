@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00048_RotateImage
+    public interface ILC_00000048_RotateImage
     {
         public void PrintSolution();
     }

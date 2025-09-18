@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02493_DivideNodesIntoTheMaximumNumberOfGroups
+    public interface ILC_00002493_DivideNodesIntoTheMaximumNumberOfGroups
     {
         public void PrintSolution();
     }

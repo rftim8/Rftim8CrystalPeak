@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01043_PartitionArrayForMaximumSum
+    public interface ILC_00001043_PartitionArrayForMaximumSum
     {
         public void PrintSolution();
     }

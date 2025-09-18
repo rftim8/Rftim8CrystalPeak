@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02812_FindTheSafestPathInAGrid : I_02812_FindTheSafestPathInAGrid
+    public class LC_00002812_FindTheSafestPathInAGrid : ILC_00002812_FindTheSafestPathInAGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02812_FindTheSafestPathInAGrid()
+        public LC_00002812_FindTheSafestPathInAGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02812_FindTheSafestPathInAGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002812_FindTheSafestPathInAGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02812_FindTheSafestPathInAGrid(IHost host)
+        public LC_00002812_FindTheSafestPathInAGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02812_FindTheSafestPathInAGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002812_FindTheSafestPathInAGrid));
         }
 
         public void PrintSolution()

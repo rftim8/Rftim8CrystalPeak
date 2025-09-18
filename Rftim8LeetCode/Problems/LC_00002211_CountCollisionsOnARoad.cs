@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02211_CountCollisionsOnARoad : I_02211_CountCollisionsOnARoad
+    public class LC_00002211_CountCollisionsOnARoad : ILC_00002211_CountCollisionsOnARoad
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02211_CountCollisionsOnARoad()
+        public LC_00002211_CountCollisionsOnARoad()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02211_CountCollisionsOnARoad));
-            Input = [.. RftResource._02211_CountCollisionsOnARoad_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002211_CountCollisionsOnARoad));
+            Input = [.. RftResource.LC_00002211_CountCollisionsOnARoad_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02211_CountCollisionsOnARoad(IHost host)
+        public LC_00002211_CountCollisionsOnARoad(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02211_CountCollisionsOnARoad));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002211_CountCollisionsOnARoad));
             DataCollector();
         }
 

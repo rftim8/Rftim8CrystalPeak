@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02115_FindAllPossibleRecipesFromGivenSupplies
+    public interface ILC_00002115_FindAllPossibleRecipesFromGivenSupplies
     {
         public void PrintSolution();
     }

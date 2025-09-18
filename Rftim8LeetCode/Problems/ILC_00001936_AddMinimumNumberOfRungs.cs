@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01936_AddMinimumNumberOfRungs
+    public interface ILC_00001936_AddMinimumNumberOfRungs
     {
         public void PrintSolution();
     }

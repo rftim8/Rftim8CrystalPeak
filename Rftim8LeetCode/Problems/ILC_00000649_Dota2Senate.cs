@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00649_Dota2Senate
+    public interface ILC_00000649_Dota2Senate
     {
         public void PrintSolution();
     }

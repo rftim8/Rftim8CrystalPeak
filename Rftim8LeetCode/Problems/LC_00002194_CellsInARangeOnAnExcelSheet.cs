@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02194_CellsInARangeOnAnExcelSheet : I_02194_CellsInARangeOnAnExcelSheet
+    public class LC_00002194_CellsInARangeOnAnExcelSheet : ILC_00002194_CellsInARangeOnAnExcelSheet
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02194_CellsInARangeOnAnExcelSheet()
+        public LC_00002194_CellsInARangeOnAnExcelSheet()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02194_CellsInARangeOnAnExcelSheet));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002194_CellsInARangeOnAnExcelSheet));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02194_CellsInARangeOnAnExcelSheet(IHost host)
+        public LC_00002194_CellsInARangeOnAnExcelSheet(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02194_CellsInARangeOnAnExcelSheet));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002194_CellsInARangeOnAnExcelSheet));
         }
 
         public void PrintSolution()

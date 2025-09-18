@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00358_RearrangeStringKDistanceApart
+    public interface ILC_00000358_RearrangeStringKDistanceApart
     {
         public void PrintSolution();
     }

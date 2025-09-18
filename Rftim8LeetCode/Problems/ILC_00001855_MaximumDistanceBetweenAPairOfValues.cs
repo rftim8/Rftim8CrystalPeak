@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01855_MaximumDistanceBetweenAPairOfValues
+    public interface ILC_00001855_MaximumDistanceBetweenAPairOfValues
     {
         public void PrintSolution();
     }

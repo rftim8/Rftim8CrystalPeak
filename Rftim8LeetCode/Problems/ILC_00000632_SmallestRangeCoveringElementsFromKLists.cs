@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00632_SmallestRangeCoveringElementsFromKLists
+    public interface ILC_00000632_SmallestRangeCoveringElementsFromKLists
     {
         public void PrintSolution();
     }

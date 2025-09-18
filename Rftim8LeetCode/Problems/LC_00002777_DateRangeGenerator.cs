@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02777_DateRangeGenerator : I_02777_DateRangeGenerator
+    public class LC_00002777_DateRangeGenerator : ILC_00002777_DateRangeGenerator
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02777_DateRangeGenerator()
+        public LC_00002777_DateRangeGenerator()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02777_DateRangeGenerator));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002777_DateRangeGenerator));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02777_DateRangeGenerator(IHost host)
+        public LC_00002777_DateRangeGenerator(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02777_DateRangeGenerator));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002777_DateRangeGenerator));
         }
 
         public void PrintSolution()

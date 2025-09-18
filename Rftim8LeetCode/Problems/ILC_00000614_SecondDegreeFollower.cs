@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00614_SecondDegreeFollower
+    public interface ILC_00000614_SecondDegreeFollower
     {
         public void PrintSolution();
     }

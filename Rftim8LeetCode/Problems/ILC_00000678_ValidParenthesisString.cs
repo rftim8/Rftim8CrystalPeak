@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00678_ValidParenthesisString
+    public interface ILC_00000678_ValidParenthesisString
     {
         public void PrintSolution();
     }

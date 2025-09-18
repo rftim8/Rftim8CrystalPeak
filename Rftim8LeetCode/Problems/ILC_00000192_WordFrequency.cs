@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00192_WordFrequency
+    public interface ILC_00000192_WordFrequency
     {
         public void PrintSolution();
     }

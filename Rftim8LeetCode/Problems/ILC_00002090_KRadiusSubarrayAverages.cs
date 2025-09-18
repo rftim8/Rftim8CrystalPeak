@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02090_KRadiusSubarrayAverages
+    public interface ILC_00002090_KRadiusSubarrayAverages
     {
         public void PrintSolution();
     }

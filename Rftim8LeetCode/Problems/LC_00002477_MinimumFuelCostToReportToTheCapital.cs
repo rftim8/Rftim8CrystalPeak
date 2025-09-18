@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02477_MinimumFuelCostToReportToTheCapital : I_02477_MinimumFuelCostToReportToTheCapital
+    public class LC_00002477_MinimumFuelCostToReportToTheCapital : ILC_00002477_MinimumFuelCostToReportToTheCapital
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02477_MinimumFuelCostToReportToTheCapital()
+        public LC_00002477_MinimumFuelCostToReportToTheCapital()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02477_MinimumFuelCostToReportToTheCapital));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002477_MinimumFuelCostToReportToTheCapital));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02477_MinimumFuelCostToReportToTheCapital(IHost host)
+        public LC_00002477_MinimumFuelCostToReportToTheCapital(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02477_MinimumFuelCostToReportToTheCapital));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002477_MinimumFuelCostToReportToTheCapital));
         }
 
         public void PrintSolution()

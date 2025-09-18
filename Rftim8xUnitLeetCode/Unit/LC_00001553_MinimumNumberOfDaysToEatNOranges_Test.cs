@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01553_MinimumNumberOfDaysToEatNOranges_Test
+    public class LC_00001553_MinimumNumberOfDaysToEatNOranges_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01553_MinimumNumberOfDaysToEatNOranges))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01553_MinimumNumberOfDaysToEatNOranges))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01553_MinimumNumberOfDaysToEatNOranges))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001553_MinimumNumberOfDaysToEatNOranges))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001553_MinimumNumberOfDaysToEatNOranges))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001553_MinimumNumberOfDaysToEatNOranges))![1]);
 
-        public static TheoryData<List<string>, int> _01553_MinimumNumberOfDaysToEatNOrangesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001553_MinimumNumberOfDaysToEatNOrangesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01553_MinimumNumberOfDaysToEatNOrangesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001553_MinimumNumberOfDaysToEatNOrangesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01553_MinimumNumberOfDaysToEatNOrangesPartOne_Data))]
+        [MemberData(nameof(LC_00001553_MinimumNumberOfDaysToEatNOrangesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01553_MinimumNumberOfDaysToEatNOranges.PartOne_Test(a0);
+            int actual = LC_00001553_MinimumNumberOfDaysToEatNOranges.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01553_MinimumNumberOfDaysToEatNOrangesPartTwo_Data))]
+        [MemberData(nameof(LC_00001553_MinimumNumberOfDaysToEatNOrangesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01553_MinimumNumberOfDaysToEatNOranges.PartTwo_Test(a0);
+            int actual = LC_00001553_MinimumNumberOfDaysToEatNOranges.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

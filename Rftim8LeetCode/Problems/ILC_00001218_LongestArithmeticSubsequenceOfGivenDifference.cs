@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01218_LongestArithmeticSubsequenceOfGivenDifference
+    public interface ILC_00001218_LongestArithmeticSubsequenceOfGivenDifference
     {
         public void PrintSolution();
     }

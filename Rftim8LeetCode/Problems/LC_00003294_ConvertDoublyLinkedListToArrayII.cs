@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03294_ConvertDoublyLinkedListToArrayII : I_03294_ConvertDoublyLinkedListToArrayII
+    public class LC_00003294_ConvertDoublyLinkedListToArrayII : ILC_00003294_ConvertDoublyLinkedListToArrayII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03294_ConvertDoublyLinkedListToArrayII()
+        public LC_00003294_ConvertDoublyLinkedListToArrayII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03294_ConvertDoublyLinkedListToArrayII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003294_ConvertDoublyLinkedListToArrayII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03294_ConvertDoublyLinkedListToArrayII(IHost host)
+        public LC_00003294_ConvertDoublyLinkedListToArrayII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03294_ConvertDoublyLinkedListToArrayII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003294_ConvertDoublyLinkedListToArrayII));
         }
 
         public void PrintSolution()

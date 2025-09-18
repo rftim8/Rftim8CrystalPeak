@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02527_FindXorBeautyOfArray
+    public interface ILC_00002527_FindXorBeautyOfArray
     {
         public void PrintSolution();
     }

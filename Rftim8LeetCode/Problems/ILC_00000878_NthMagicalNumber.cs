@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00878_NthMagicalNumber
+    public interface ILC_00000878_NthMagicalNumber
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01534_CountGoodTriplets
+    public interface ILC_00001534_CountGoodTriplets
     {
         public void PrintSolution();
     }

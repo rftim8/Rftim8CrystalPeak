@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03514_NumberOfUniqueXORTripletsII
+    public interface ILC_00003514_NumberOfUniqueXORTripletsII
     {
         public void PrintSolution();
     }

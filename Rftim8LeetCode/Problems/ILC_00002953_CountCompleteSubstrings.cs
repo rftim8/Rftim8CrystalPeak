@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02953_CountCompleteSubstrings
+    public interface ILC_00002953_CountCompleteSubstrings
     {
         public void PrintSolution();
     }

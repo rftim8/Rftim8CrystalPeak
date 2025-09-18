@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02528_MaximizeTheMinimumPoweredCity
+    public interface ILC_00002528_MaximizeTheMinimumPoweredCity
     {
         public void PrintSolution();
     }

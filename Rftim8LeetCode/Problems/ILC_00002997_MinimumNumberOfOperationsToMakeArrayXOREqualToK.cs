@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK
+    public interface ILC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00646_MaximumLengthOfPairChain
+    public interface ILC_00000646_MaximumLengthOfPairChain
     {
         public void PrintSolution();
     }

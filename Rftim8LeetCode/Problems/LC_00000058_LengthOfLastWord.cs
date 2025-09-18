@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00058_LengthOfLastWord : I_00058_LengthOfLastWord
+    public class LC_00000058_LengthOfLastWord : ILC_00000058_LengthOfLastWord
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00058_LengthOfLastWord()
+        public LC_00000058_LengthOfLastWord()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00058_LengthOfLastWord));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000058_LengthOfLastWord));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00058_LengthOfLastWord(IHost host)
+        public LC_00000058_LengthOfLastWord(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00058_LengthOfLastWord));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000058_LengthOfLastWord));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02628_JSONDeepEqual : I_02628_JSONDeepEqual
+    public class LC_00002628_JSONDeepEqual : ILC_00002628_JSONDeepEqual
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02628_JSONDeepEqual()
+        public LC_00002628_JSONDeepEqual()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02628_JSONDeepEqual));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002628_JSONDeepEqual));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02628_JSONDeepEqual(IHost host)
+        public LC_00002628_JSONDeepEqual(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02628_JSONDeepEqual));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002628_JSONDeepEqual));
         }
 
         public void PrintSolution()

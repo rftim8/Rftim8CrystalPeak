@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03406_FindTheLexicographicallyLargestStringFromTheBoxII
+    public interface ILC_00003406_FindTheLexicographicallyLargestStringFromTheBoxII
     {
         public void PrintSolution();
     }

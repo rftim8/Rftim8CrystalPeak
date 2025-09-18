@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02859_SumOfValuesAtIndicesWithKSetBits
+    public interface ILC_00002859_SumOfValuesAtIndicesWithKSetBits
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01128_NumberOfEquivalentDominoPairs : I_01128_NumberOfEquivalentDominoPairs
+    public class LC_00001128_NumberOfEquivalentDominoPairs : ILC_00001128_NumberOfEquivalentDominoPairs
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01128_NumberOfEquivalentDominoPairs()
+        public LC_00001128_NumberOfEquivalentDominoPairs()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01128_NumberOfEquivalentDominoPairs));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001128_NumberOfEquivalentDominoPairs));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01128_NumberOfEquivalentDominoPairs(IHost host)
+        public LC_00001128_NumberOfEquivalentDominoPairs(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01128_NumberOfEquivalentDominoPairs));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001128_NumberOfEquivalentDominoPairs));
         }
 
         public void PrintSolution()

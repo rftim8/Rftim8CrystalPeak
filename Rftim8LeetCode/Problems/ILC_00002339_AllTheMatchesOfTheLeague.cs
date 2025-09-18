@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02339_AllTheMatchesOfTheLeague
+    public interface ILC_00002339_AllTheMatchesOfTheLeague
     {
         public void PrintSolution();
     }

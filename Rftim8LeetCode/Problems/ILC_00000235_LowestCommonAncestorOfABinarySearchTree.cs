@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00235_LowestCommonAncestorOfABinarySearchTree
+    public interface ILC_00000235_LowestCommonAncestorOfABinarySearchTree
     {
         public void PrintSolution();
     }

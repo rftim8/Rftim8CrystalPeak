@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02716_MinimizeStringLength
+    public interface ILC_00002716_MinimizeStringLength
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02017_GridGame : I_02017_GridGame
+    public class LC_00002017_GridGame : ILC_00002017_GridGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02017_GridGame()
+        public LC_00002017_GridGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02017_GridGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002017_GridGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02017_GridGame(IHost host)
+        public LC_00002017_GridGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02017_GridGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002017_GridGame));
         }
 
         public void PrintSolution()

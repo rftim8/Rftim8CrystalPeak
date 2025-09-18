@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03190_FindMinimumOperationsToMakeAllElementsDivisibleByThree_Test
+    public class LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThree_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03190_FindMinimumOperationsToMakeAllElementsDivisibleByThree))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03190_FindMinimumOperationsToMakeAllElementsDivisibleByThree))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03190_FindMinimumOperationsToMakeAllElementsDivisibleByThree))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThree))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThree))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThree))![1]);
 
-        public static TheoryData<List<string>, int> _03190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartOne_Data))]
+        [MemberData(nameof(LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03190_FindMinimumOperationsToMakeAllElementsDivisibleByThree.PartOne_Test(a0);
+            int actual = LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThree.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartTwo_Data))]
+        [MemberData(nameof(LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThreePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03190_FindMinimumOperationsToMakeAllElementsDivisibleByThree.PartTwo_Test(a0);
+            int actual = LC_00003190_FindMinimumOperationsToMakeAllElementsDivisibleByThree.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

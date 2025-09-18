@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02232_MinimizeResultByAddingParenthesesToExpression : I_02232_MinimizeResultByAddingParenthesesToExpression
+    public class LC_00002232_MinimizeResultByAddingParenthesesToExpression : ILC_00002232_MinimizeResultByAddingParenthesesToExpression
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02232_MinimizeResultByAddingParenthesesToExpression()
+        public LC_00002232_MinimizeResultByAddingParenthesesToExpression()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02232_MinimizeResultByAddingParenthesesToExpression));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002232_MinimizeResultByAddingParenthesesToExpression));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02232_MinimizeResultByAddingParenthesesToExpression(IHost host)
+        public LC_00002232_MinimizeResultByAddingParenthesesToExpression(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02232_MinimizeResultByAddingParenthesesToExpression));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002232_MinimizeResultByAddingParenthesesToExpression));
         }
 
         public void PrintSolution()

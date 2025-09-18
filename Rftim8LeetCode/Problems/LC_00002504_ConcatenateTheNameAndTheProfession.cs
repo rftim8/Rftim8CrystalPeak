@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02504_ConcatenateTheNameAndTheProfession : I_02504_ConcatenateTheNameAndTheProfession
+    public class LC_00002504_ConcatenateTheNameAndTheProfession : ILC_00002504_ConcatenateTheNameAndTheProfession
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02504_ConcatenateTheNameAndTheProfession()
+        public LC_00002504_ConcatenateTheNameAndTheProfession()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02504_ConcatenateTheNameAndTheProfession));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002504_ConcatenateTheNameAndTheProfession));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02504_ConcatenateTheNameAndTheProfession(IHost host)
+        public LC_00002504_ConcatenateTheNameAndTheProfession(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02504_ConcatenateTheNameAndTheProfession));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002504_ConcatenateTheNameAndTheProfession));
         }
 
         public void PrintSolution()

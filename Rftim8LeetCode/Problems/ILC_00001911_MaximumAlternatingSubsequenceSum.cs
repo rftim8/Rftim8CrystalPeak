@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01911_MaximumAlternatingSubsequenceSum
+    public interface ILC_00001911_MaximumAlternatingSubsequenceSum
     {
         public void PrintSolution();
     }

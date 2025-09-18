@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03299_SumOfConsecutiveSubsequences
+    public interface ILC_00003299_SumOfConsecutiveSubsequences
     {
         public void PrintSolution();
     }

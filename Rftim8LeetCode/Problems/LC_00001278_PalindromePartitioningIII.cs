@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01278_PalindromePartitioningIII : I_01278_PalindromePartitioningIII
+    public class LC_00001278_PalindromePartitioningIII : ILC_00001278_PalindromePartitioningIII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01278_PalindromePartitioningIII()
+        public LC_00001278_PalindromePartitioningIII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01278_PalindromePartitioningIII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001278_PalindromePartitioningIII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01278_PalindromePartitioningIII(IHost host)
+        public LC_00001278_PalindromePartitioningIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01278_PalindromePartitioningIII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001278_PalindromePartitioningIII));
         }
 
         public void PrintSolution()

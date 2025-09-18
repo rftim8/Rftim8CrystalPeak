@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02219_MaximumSumScoreOfArray : I_02219_MaximumSumScoreOfArray
+    public class LC_00002219_MaximumSumScoreOfArray : ILC_00002219_MaximumSumScoreOfArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02219_MaximumSumScoreOfArray()
+        public LC_00002219_MaximumSumScoreOfArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02219_MaximumSumScoreOfArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002219_MaximumSumScoreOfArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02219_MaximumSumScoreOfArray(IHost host)
+        public LC_00002219_MaximumSumScoreOfArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02219_MaximumSumScoreOfArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002219_MaximumSumScoreOfArray));
         }
 
         public void PrintSolution()

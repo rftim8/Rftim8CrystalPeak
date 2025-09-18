@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02256_MinimumAverageDifference
+    public interface ILC_00002256_MinimumAverageDifference
     {
         public void PrintSolution();
     }

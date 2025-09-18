@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03149_FindTheMinimumCostArrayPermutation
+    public interface ILC_00003149_FindTheMinimumCostArrayPermutation
     {
         public void PrintSolution();
     }

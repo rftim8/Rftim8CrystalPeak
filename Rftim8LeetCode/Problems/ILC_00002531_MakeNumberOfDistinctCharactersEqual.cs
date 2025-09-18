@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02531_MakeNumberOfDistinctCharactersEqual
+    public interface ILC_00002531_MakeNumberOfDistinctCharactersEqual
     {
         public void PrintSolution();
     }

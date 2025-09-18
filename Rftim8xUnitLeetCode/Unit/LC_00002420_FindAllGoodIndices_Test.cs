@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02420_FindAllGoodIndices_Test
+    public class LC_00002420_FindAllGoodIndices_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02420_FindAllGoodIndices))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02420_FindAllGoodIndices))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02420_FindAllGoodIndices))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002420_FindAllGoodIndices))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002420_FindAllGoodIndices))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002420_FindAllGoodIndices))![1]);
 
-        public static TheoryData<List<string>, int> _02420_FindAllGoodIndicesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002420_FindAllGoodIndicesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02420_FindAllGoodIndicesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002420_FindAllGoodIndicesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02420_FindAllGoodIndicesPartOne_Data))]
+        [MemberData(nameof(LC_00002420_FindAllGoodIndicesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02420_FindAllGoodIndices.PartOne_Test(a0);
+            int actual = LC_00002420_FindAllGoodIndices.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02420_FindAllGoodIndicesPartTwo_Data))]
+        [MemberData(nameof(LC_00002420_FindAllGoodIndicesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02420_FindAllGoodIndices.PartTwo_Test(a0);
+            int actual = LC_00002420_FindAllGoodIndices.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

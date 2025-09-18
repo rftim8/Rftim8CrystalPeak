@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02948_MakeLexicographicallySmallestArrayBySwappingElements
+    public interface ILC_00002948_MakeLexicographicallySmallestArrayBySwappingElements
     {
         public void PrintSolution();
     }

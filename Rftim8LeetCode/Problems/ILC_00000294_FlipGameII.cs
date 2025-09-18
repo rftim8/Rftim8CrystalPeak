@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00294_FlipGameII
+    public interface ILC_00000294_FlipGameII
     {
         public void PrintSolution();
     }

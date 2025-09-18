@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01396_DesignUndergroundSystem
+    public interface ILC_00001396_DesignUndergroundSystem
     {
         public void PrintSolution();
     }

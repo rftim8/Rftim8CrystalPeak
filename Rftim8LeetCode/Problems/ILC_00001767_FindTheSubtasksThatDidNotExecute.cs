@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01767_FindTheSubtasksThatDidNotExecute
+    public interface ILC_00001767_FindTheSubtasksThatDidNotExecute
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00453_MinimumMovesToEqualArrayElements
+    public interface ILC_00000453_MinimumMovesToEqualArrayElements
     {
         public void PrintSolution();
     }

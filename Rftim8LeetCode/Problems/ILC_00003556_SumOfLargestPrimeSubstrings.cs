@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03556_SumOfLargestPrimeSubstrings
+    public interface ILC_00003556_SumOfLargestPrimeSubstrings
     {
         public void PrintSolution();
     }

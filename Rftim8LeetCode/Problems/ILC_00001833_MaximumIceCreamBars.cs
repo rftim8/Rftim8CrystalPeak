@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01833_MaximumIceCreamBars
+    public interface ILC_00001833_MaximumIceCreamBars
     {
         public void PrintSolution();
     }

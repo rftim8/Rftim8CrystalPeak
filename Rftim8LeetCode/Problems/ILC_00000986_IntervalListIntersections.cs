@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00986_IntervalListIntersections
+    public interface ILC_00000986_IntervalListIntersections
     {
         public void PrintSolution();
     }

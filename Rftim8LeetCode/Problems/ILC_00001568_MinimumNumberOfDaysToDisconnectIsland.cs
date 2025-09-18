@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01568_MinimumNumberOfDaysToDisconnectIsland
+    public interface ILC_00001568_MinimumNumberOfDaysToDisconnectIsland
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00072_EditDistance : I_00072_EditDistance
+    public class LC_00000072_EditDistance : ILC_00000072_EditDistance
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00072_EditDistance()
+        public LC_00000072_EditDistance()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00072_EditDistance));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000072_EditDistance));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00072_EditDistance(IHost host)
+        public LC_00000072_EditDistance(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00072_EditDistance));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000072_EditDistance));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03175_FindTheFirstPlayerToWinKGamesInARow : I_03175_FindTheFirstPlayerToWinKGamesInARow
+    public class LC_00003175_FindTheFirstPlayerToWinKGamesInARow : ILC_00003175_FindTheFirstPlayerToWinKGamesInARow
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03175_FindTheFirstPlayerToWinKGamesInARow()
+        public LC_00003175_FindTheFirstPlayerToWinKGamesInARow()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03175_FindTheFirstPlayerToWinKGamesInARow));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003175_FindTheFirstPlayerToWinKGamesInARow));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03175_FindTheFirstPlayerToWinKGamesInARow(IHost host)
+        public LC_00003175_FindTheFirstPlayerToWinKGamesInARow(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03175_FindTheFirstPlayerToWinKGamesInARow));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003175_FindTheFirstPlayerToWinKGamesInARow));
         }
 
         public void PrintSolution()

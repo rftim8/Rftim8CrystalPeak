@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01567_MaximumLengthOfSubarrayWithPositiveProduct : I_01567_MaximumLengthOfSubarrayWithPositiveProduct
+    public class LC_00001567_MaximumLengthOfSubarrayWithPositiveProduct : ILC_00001567_MaximumLengthOfSubarrayWithPositiveProduct
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01567_MaximumLengthOfSubarrayWithPositiveProduct()
+        public LC_00001567_MaximumLengthOfSubarrayWithPositiveProduct()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01567_MaximumLengthOfSubarrayWithPositiveProduct));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001567_MaximumLengthOfSubarrayWithPositiveProduct));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01567_MaximumLengthOfSubarrayWithPositiveProduct(IHost host)
+        public LC_00001567_MaximumLengthOfSubarrayWithPositiveProduct(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01567_MaximumLengthOfSubarrayWithPositiveProduct));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001567_MaximumLengthOfSubarrayWithPositiveProduct));
         }
 
         public void PrintSolution()

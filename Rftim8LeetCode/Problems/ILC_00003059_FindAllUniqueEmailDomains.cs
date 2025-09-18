@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03059_FindAllUniqueEmailDomains
+    public interface ILC_00003059_FindAllUniqueEmailDomains
     {
         public void PrintSolution();
     }

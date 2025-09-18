@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00079_WordSearch
+    public interface ILC_00000079_WordSearch
     {
         public void PrintSolution();
     }

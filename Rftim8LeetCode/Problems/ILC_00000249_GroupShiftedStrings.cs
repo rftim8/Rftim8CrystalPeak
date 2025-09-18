@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00249_GroupShiftedStrings
+    public interface ILC_00000249_GroupShiftedStrings
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03544_SubtreeInversionSum : I_03544_SubtreeInversionSum
+    public class LC_00003544_SubtreeInversionSum : ILC_00003544_SubtreeInversionSum
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03544_SubtreeInversionSum()
+        public LC_00003544_SubtreeInversionSum()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03544_SubtreeInversionSum));
-            Input = [.. RftResource._03544_SubtreeInversionSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003544_SubtreeInversionSum));
+            Input = [.. RftResource.LC_00003544_SubtreeInversionSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03544_SubtreeInversionSum(IHost host)
+        public LC_00003544_SubtreeInversionSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03544_SubtreeInversionSum));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003544_SubtreeInversionSum));
             DataCollector();
         }
 

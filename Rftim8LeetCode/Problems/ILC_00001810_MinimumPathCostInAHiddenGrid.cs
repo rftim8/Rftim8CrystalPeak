@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01810_MinimumPathCostInAHiddenGrid
+    public interface ILC_00001810_MinimumPathCostInAHiddenGrid
     {
         public void PrintSolution();
     }

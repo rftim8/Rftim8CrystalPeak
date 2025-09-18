@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01004_MaxConsecutiveOnesIII
+    public interface ILC_00001004_MaxConsecutiveOnesIII
     {
         public void PrintSolution();
     }

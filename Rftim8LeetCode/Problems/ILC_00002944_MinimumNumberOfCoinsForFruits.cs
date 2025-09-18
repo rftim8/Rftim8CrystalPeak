@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02944_MinimumNumberOfCoinsForFruits
+    public interface ILC_00002944_MinimumNumberOfCoinsForFruits
     {
         public void PrintSolution();
     }

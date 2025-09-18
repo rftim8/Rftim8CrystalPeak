@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02043_SimpleBankSystem
+    public interface ILC_00002043_SimpleBankSystem
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00226_InvertBinaryTree : I_00226_InvertBinaryTree
+    public class LC_00000226_InvertBinaryTree : ILC_00000226_InvertBinaryTree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00226_InvertBinaryTree()
+        public LC_00000226_InvertBinaryTree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00226_InvertBinaryTree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000226_InvertBinaryTree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00226_InvertBinaryTree(IHost host)
+        public LC_00000226_InvertBinaryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00226_InvertBinaryTree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000226_InvertBinaryTree));
         }
 
         public void PrintSolution()

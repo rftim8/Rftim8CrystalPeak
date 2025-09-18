@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01513_NumberOfSubstringsWithOnly1s
+    public interface ILC_00001513_NumberOfSubstringsWithOnly1s
     {
         public void PrintSolution();
     }

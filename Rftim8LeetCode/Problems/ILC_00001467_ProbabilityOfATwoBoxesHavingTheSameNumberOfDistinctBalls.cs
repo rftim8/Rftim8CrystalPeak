@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01467_ProbabilityOfATwoBoxesHavingTheSameNumberOfDistinctBalls
+    public interface ILC_00001467_ProbabilityOfATwoBoxesHavingTheSameNumberOfDistinctBalls
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00577_EmployeeBonus
+    public interface ILC_00000577_EmployeeBonus
     {
         public void PrintSolution();
     }

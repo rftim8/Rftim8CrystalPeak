@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01999_SmallestGreaterMultipleMadeOfTwoDigits
+    public interface ILC_00001999_SmallestGreaterMultipleMadeOfTwoDigits
     {
         public void PrintSolution();
     }

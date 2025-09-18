@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02034_StockPriceFluctuation
+    public interface ILC_00002034_StockPriceFluctuation
     {
         public void PrintSolution();
     }

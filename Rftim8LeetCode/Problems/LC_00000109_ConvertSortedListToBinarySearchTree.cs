@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00109_ConvertSortedListToBinarySearchTree : I_00109_ConvertSortedListToBinarySearchTree
+    public class LC_00000109_ConvertSortedListToBinarySearchTree : ILC_00000109_ConvertSortedListToBinarySearchTree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00109_ConvertSortedListToBinarySearchTree()
+        public LC_00000109_ConvertSortedListToBinarySearchTree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00109_ConvertSortedListToBinarySearchTree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000109_ConvertSortedListToBinarySearchTree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00109_ConvertSortedListToBinarySearchTree(IHost host)
+        public LC_00000109_ConvertSortedListToBinarySearchTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00109_ConvertSortedListToBinarySearchTree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000109_ConvertSortedListToBinarySearchTree));
         }
 
         public void PrintSolution()

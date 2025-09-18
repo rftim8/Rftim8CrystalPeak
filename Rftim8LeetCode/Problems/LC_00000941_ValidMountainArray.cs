@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00941_ValidMountainArray : I_00941_ValidMountainArray
+    public class LC_00000941_ValidMountainArray : ILC_00000941_ValidMountainArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00941_ValidMountainArray()
+        public LC_00000941_ValidMountainArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00941_ValidMountainArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000941_ValidMountainArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00941_ValidMountainArray(IHost host)
+        public LC_00000941_ValidMountainArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00941_ValidMountainArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000941_ValidMountainArray));
         }
 
         public void PrintSolution()

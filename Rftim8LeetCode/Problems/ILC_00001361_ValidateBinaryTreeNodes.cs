@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01361_ValidateBinaryTreeNodes
+    public interface ILC_00001361_ValidateBinaryTreeNodes
     {
         public void PrintSolution();
     }

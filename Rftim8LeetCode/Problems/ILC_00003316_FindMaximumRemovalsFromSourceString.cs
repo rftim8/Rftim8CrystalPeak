@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03316_FindMaximumRemovalsFromSourceString
+    public interface ILC_00003316_FindMaximumRemovalsFromSourceString
     {
         public void PrintSolution();
     }

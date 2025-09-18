@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00580_CountStudentNumberInDepartments
+    public interface ILC_00000580_CountStudentNumberInDepartments
     {
         public void PrintSolution();
     }

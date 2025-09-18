@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01040_MovingStonesUntilConsecutiveII
+    public interface ILC_00001040_MovingStonesUntilConsecutiveII
     {
         public void PrintSolution();
     }

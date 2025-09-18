@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02003_SmallestMissingGeneticValueInEachSubtree
+    public interface ILC_00002003_SmallestMissingGeneticValueInEachSubtree
     {
         public void PrintSolution();
     }

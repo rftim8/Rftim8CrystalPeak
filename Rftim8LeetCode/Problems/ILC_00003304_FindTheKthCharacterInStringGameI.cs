@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03304_FindTheKthCharacterInStringGameI
+    public interface ILC_00003304_FindTheKthCharacterInStringGameI
     {
         public void PrintSolution();
     }

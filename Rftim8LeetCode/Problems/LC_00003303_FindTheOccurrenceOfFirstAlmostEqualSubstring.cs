@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03303_FindTheOccurrenceOfFirstAlmostEqualSubstring : I_03303_FindTheOccurrenceOfFirstAlmostEqualSubstring
+    public class LC_00003303_FindTheOccurrenceOfFirstAlmostEqualSubstring : ILC_00003303_FindTheOccurrenceOfFirstAlmostEqualSubstring
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03303_FindTheOccurrenceOfFirstAlmostEqualSubstring()
+        public LC_00003303_FindTheOccurrenceOfFirstAlmostEqualSubstring()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03303_FindTheOccurrenceOfFirstAlmostEqualSubstring));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003303_FindTheOccurrenceOfFirstAlmostEqualSubstring));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03303_FindTheOccurrenceOfFirstAlmostEqualSubstring(IHost host)
+        public LC_00003303_FindTheOccurrenceOfFirstAlmostEqualSubstring(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03303_FindTheOccurrenceOfFirstAlmostEqualSubstring));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003303_FindTheOccurrenceOfFirstAlmostEqualSubstring));
         }
 
         public void PrintSolution()

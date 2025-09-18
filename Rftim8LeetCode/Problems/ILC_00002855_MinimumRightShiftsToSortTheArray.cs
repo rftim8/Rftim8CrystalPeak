@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02855_MinimumRightShiftsToSortTheArray
+    public interface ILC_00002855_MinimumRightShiftsToSortTheArray
     {
         public void PrintSolution();
     }

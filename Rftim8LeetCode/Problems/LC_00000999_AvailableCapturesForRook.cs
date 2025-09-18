@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00999_AvailableCapturesForRook : I_00999_AvailableCapturesForRook
+    public class LC_00000999_AvailableCapturesForRook : ILC_00000999_AvailableCapturesForRook
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00999_AvailableCapturesForRook()
+        public LC_00000999_AvailableCapturesForRook()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00999_AvailableCapturesForRook));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000999_AvailableCapturesForRook));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00999_AvailableCapturesForRook(IHost host)
+        public LC_00000999_AvailableCapturesForRook(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00999_AvailableCapturesForRook));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000999_AvailableCapturesForRook));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02972_CountTheNumberOfIncremovableSubarraysII
+    public interface ILC_00002972_CountTheNumberOfIncremovableSubarraysII
     {
         public void PrintSolution();
     }

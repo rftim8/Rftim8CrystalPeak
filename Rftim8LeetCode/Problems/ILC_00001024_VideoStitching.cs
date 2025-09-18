@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01024_VideoStitching
+    public interface ILC_00001024_VideoStitching
     {
         public void PrintSolution();
     }

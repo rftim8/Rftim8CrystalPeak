@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02026_LowQualityProblems_Test
+    public class LC_00002026_LowQualityProblems_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02026_LowQualityProblems))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02026_LowQualityProblems))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02026_LowQualityProblems))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002026_LowQualityProblems))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002026_LowQualityProblems))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002026_LowQualityProblems))![1]);
 
-        public static TheoryData<List<string>, int> _02026_LowQualityProblemsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002026_LowQualityProblemsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02026_LowQualityProblemsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002026_LowQualityProblemsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02026_LowQualityProblemsPartOne_Data))]
+        [MemberData(nameof(LC_00002026_LowQualityProblemsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02026_LowQualityProblems.PartOne_Test(a0);
+            int actual = LC_00002026_LowQualityProblems.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02026_LowQualityProblemsPartTwo_Data))]
+        [MemberData(nameof(LC_00002026_LowQualityProblemsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02026_LowQualityProblems.PartTwo_Test(a0);
+            int actual = LC_00002026_LowQualityProblems.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00597_FriendRequestsIOverallAcceptanceRate
+    public interface ILC_00000597_FriendRequestsIOverallAcceptanceRate
     {
         public void PrintSolution();
     }

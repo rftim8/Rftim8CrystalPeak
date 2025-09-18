@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01939_UsersThatActivelyRequestConfirmationMessages
+    public interface ILC_00001939_UsersThatActivelyRequestConfirmationMessages
     {
         public void PrintSolution();
     }

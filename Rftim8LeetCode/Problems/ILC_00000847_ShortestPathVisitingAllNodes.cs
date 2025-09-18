@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00847_ShortestPathVisitingAllNodes
+    public interface ILC_00000847_ShortestPathVisitingAllNodes
     {
         public void PrintSolution();
     }

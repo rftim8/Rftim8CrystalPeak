@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03326_MinimumDivisionOperationsToMakeArrayNonDecreasing
+    public interface ILC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02439_MinimizeMaximumOfArray
+    public interface ILC_00002439_MinimizeMaximumOfArray
     {
         public void PrintSolution();
     }

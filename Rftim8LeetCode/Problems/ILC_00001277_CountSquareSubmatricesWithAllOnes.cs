@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01277_CountSquareSubmatricesWithAllOnes
+    public interface ILC_00001277_CountSquareSubmatricesWithAllOnes
     {
         public void PrintSolution();
     }

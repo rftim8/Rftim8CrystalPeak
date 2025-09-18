@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03100_WaterBottlesII
+    public interface ILC_00003100_WaterBottlesII
     {
         public void PrintSolution();
     }

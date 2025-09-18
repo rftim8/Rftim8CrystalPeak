@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01468_CalculateSalaries
+    public interface ILC_00001468_CalculateSalaries
     {
         public void PrintSolution();
     }

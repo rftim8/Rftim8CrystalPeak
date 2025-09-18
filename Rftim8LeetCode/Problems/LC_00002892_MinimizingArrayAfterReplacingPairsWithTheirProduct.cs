@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02892_MinimizingArrayAfterReplacingPairsWithTheirProduct : I_02892_MinimizingArrayAfterReplacingPairsWithTheirProduct
+    public class LC_00002892_MinimizingArrayAfterReplacingPairsWithTheirProduct : ILC_00002892_MinimizingArrayAfterReplacingPairsWithTheirProduct
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02892_MinimizingArrayAfterReplacingPairsWithTheirProduct()
+        public LC_00002892_MinimizingArrayAfterReplacingPairsWithTheirProduct()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02892_MinimizingArrayAfterReplacingPairsWithTheirProduct));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002892_MinimizingArrayAfterReplacingPairsWithTheirProduct));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02892_MinimizingArrayAfterReplacingPairsWithTheirProduct(IHost host)
+        public LC_00002892_MinimizingArrayAfterReplacingPairsWithTheirProduct(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02892_MinimizingArrayAfterReplacingPairsWithTheirProduct));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002892_MinimizingArrayAfterReplacingPairsWithTheirProduct));
         }
 
         public void PrintSolution()

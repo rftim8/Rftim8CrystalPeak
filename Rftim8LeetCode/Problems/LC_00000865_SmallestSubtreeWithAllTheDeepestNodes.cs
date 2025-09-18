@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00865_SmallestSubtreeWithAllTheDeepestNodes : I_00865_SmallestSubtreeWithAllTheDeepestNodes
+    public class LC_00000865_SmallestSubtreeWithAllTheDeepestNodes : ILC_00000865_SmallestSubtreeWithAllTheDeepestNodes
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00865_SmallestSubtreeWithAllTheDeepestNodes()
+        public LC_00000865_SmallestSubtreeWithAllTheDeepestNodes()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00865_SmallestSubtreeWithAllTheDeepestNodes));
-            Input = [.. RftResource._00865_SmallestSubtreeWithAllTheDeepestNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000865_SmallestSubtreeWithAllTheDeepestNodes));
+            Input = [.. RftResource.LC_00000865_SmallestSubtreeWithAllTheDeepestNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00865_SmallestSubtreeWithAllTheDeepestNodes(IHost host)
+        public LC_00000865_SmallestSubtreeWithAllTheDeepestNodes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00865_SmallestSubtreeWithAllTheDeepestNodes));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000865_SmallestSubtreeWithAllTheDeepestNodes));
             DataCollector();
         }
 

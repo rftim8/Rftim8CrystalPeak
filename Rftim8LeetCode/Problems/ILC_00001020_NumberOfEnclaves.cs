@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01020_NumberOfEnclaves
+    public interface ILC_00001020_NumberOfEnclaves
     {
         public void PrintSolution();
     }

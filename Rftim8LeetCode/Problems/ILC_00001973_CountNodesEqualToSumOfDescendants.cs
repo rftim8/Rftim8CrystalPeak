@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01973_CountNodesEqualToSumOfDescendants
+    public interface ILC_00001973_CountNodesEqualToSumOfDescendants
     {
         public void PrintSolution();
     }

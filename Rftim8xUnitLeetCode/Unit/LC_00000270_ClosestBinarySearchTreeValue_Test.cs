@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00270_ClosestBinarySearchTreeValue_Test
+    public class LC_00000270_ClosestBinarySearchTreeValue_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00270_ClosestBinarySearchTreeValue))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00270_ClosestBinarySearchTreeValue))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00270_ClosestBinarySearchTreeValue))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000270_ClosestBinarySearchTreeValue))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000270_ClosestBinarySearchTreeValue))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000270_ClosestBinarySearchTreeValue))![1]);
 
-        public static TheoryData<List<string>, int> _00270_ClosestBinarySearchTreeValuePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000270_ClosestBinarySearchTreeValuePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00270_ClosestBinarySearchTreeValuePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000270_ClosestBinarySearchTreeValuePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00270_ClosestBinarySearchTreeValuePartOne_Data))]
+        [MemberData(nameof(LC_00000270_ClosestBinarySearchTreeValuePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00270_ClosestBinarySearchTreeValue.PartOne_Test(a0);
+            int actual = LC_00000270_ClosestBinarySearchTreeValue.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00270_ClosestBinarySearchTreeValuePartTwo_Data))]
+        [MemberData(nameof(LC_00000270_ClosestBinarySearchTreeValuePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00270_ClosestBinarySearchTreeValue.PartTwo_Test(a0);
+            int actual = LC_00000270_ClosestBinarySearchTreeValue.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

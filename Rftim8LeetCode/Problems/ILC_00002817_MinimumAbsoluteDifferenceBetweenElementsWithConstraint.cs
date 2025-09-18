@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02817_MinimumAbsoluteDifferenceBetweenElementsWithConstraint
+    public interface ILC_00002817_MinimumAbsoluteDifferenceBetweenElementsWithConstraint
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02250_CountNumberOfRectanglesContainingEachPoint
+    public interface ILC_00002250_CountNumberOfRectanglesContainingEachPoint
     {
         public void PrintSolution();
     }

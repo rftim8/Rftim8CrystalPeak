@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01010_PairsOfSongsWithTotalDurationsDivisibleBy60 : I_01010_PairsOfSongsWithTotalDurationsDivisibleBy60
+    public class LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60 : ILC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01010_PairsOfSongsWithTotalDurationsDivisibleBy60()
+        public LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60));
-            Input = [.. RftResource._01010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60));
+            Input = [.. RftResource.LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01010_PairsOfSongsWithTotalDurationsDivisibleBy60(IHost host)
+        public LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01010_PairsOfSongsWithTotalDurationsDivisibleBy60));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60));
             DataCollector();
         }
 

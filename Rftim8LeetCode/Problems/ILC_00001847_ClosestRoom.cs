@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01847_ClosestRoom
+    public interface ILC_00001847_ClosestRoom
     {
         public void PrintSolution();
     }

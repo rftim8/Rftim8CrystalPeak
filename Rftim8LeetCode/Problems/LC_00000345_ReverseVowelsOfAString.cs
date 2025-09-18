@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00345_ReverseVowelsOfAString : I_00345_ReverseVowelsOfAString
+    public class LC_00000345_ReverseVowelsOfAString : ILC_00000345_ReverseVowelsOfAString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00345_ReverseVowelsOfAString()
+        public LC_00000345_ReverseVowelsOfAString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00345_ReverseVowelsOfAString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000345_ReverseVowelsOfAString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00345_ReverseVowelsOfAString(IHost host)
+        public LC_00000345_ReverseVowelsOfAString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00345_ReverseVowelsOfAString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000345_ReverseVowelsOfAString));
         }
 
         public void PrintSolution()

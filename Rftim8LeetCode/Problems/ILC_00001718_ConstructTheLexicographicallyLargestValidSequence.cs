@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01718_ConstructTheLexicographicallyLargestValidSequence
+    public interface ILC_00001718_ConstructTheLexicographicallyLargestValidSequence
     {
         public void PrintSolution();
     }

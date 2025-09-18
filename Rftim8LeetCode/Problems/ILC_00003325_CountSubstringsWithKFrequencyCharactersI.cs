@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03325_CountSubstringsWithKFrequencyCharactersI
+    public interface ILC_00003325_CountSubstringsWithKFrequencyCharactersI
     {
         public void PrintSolution();
     }

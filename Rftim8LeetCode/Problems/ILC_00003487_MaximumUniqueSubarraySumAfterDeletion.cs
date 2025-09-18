@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03487_MaximumUniqueSubarraySumAfterDeletion
+    public interface ILC_00003487_MaximumUniqueSubarraySumAfterDeletion
     {
         public void PrintSolution();
     }

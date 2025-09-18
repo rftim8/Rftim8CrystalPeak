@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00701_InsertIntoABinarySearchTree
+    public interface ILC_00000701_InsertIntoABinarySearchTree
     {
         public void PrintSolution();
     }

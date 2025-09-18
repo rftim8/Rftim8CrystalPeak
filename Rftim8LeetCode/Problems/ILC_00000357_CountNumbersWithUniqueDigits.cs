@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00357_CountNumbersWithUniqueDigits
+    public interface ILC_00000357_CountNumbersWithUniqueDigits
     {
         public void PrintSolution();
     }

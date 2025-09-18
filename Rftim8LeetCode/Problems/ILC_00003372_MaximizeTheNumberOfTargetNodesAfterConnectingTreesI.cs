@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI
+    public interface ILC_00003372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI
     {
         public void PrintSolution();
     }

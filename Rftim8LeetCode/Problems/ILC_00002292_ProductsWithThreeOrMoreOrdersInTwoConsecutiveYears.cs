@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears
+    public interface ILC_00002292_ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02080_RangeFrequencyQueries : I_02080_RangeFrequencyQueries
+    public class LC_00002080_RangeFrequencyQueries : ILC_00002080_RangeFrequencyQueries
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02080_RangeFrequencyQueries()
+        public LC_00002080_RangeFrequencyQueries()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02080_RangeFrequencyQueries));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002080_RangeFrequencyQueries));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02080_RangeFrequencyQueries(IHost host)
+        public LC_00002080_RangeFrequencyQueries(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02080_RangeFrequencyQueries));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002080_RangeFrequencyQueries));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01914_CyclicallyRotatingAGrid
+    public interface ILC_00001914_CyclicallyRotatingAGrid
     {
         public void PrintSolution();
     }

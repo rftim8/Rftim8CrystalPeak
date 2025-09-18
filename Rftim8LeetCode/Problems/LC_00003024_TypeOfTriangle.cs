@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03024_TypeOfTriangle : I_03024_TypeOfTriangle
+    public class LC_00003024_TypeOfTriangle : ILC_00003024_TypeOfTriangle
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03024_TypeOfTriangle()
+        public LC_00003024_TypeOfTriangle()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03024_TypeOfTriangle));
-            Input = [.. RftResource._03024_TypeOfTriangle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003024_TypeOfTriangle));
+            Input = [.. RftResource.LC_00003024_TypeOfTriangle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03024_TypeOfTriangle(IHost host)
+        public LC_00003024_TypeOfTriangle(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03024_TypeOfTriangle));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003024_TypeOfTriangle));
             DataCollector();
         }
 

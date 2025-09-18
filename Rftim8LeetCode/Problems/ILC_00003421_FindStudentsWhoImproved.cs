@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03421_FindStudentsWhoImproved
+    public interface ILC_00003421_FindStudentsWhoImproved
     {
         public void PrintSolution();
     }

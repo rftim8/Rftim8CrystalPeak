@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02621_Sleep
+    public interface ILC_00002621_Sleep
     {
         public void PrintSolution();
     }

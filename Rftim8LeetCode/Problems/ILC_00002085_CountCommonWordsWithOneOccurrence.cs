@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02085_CountCommonWordsWithOneOccurrence
+    public interface ILC_00002085_CountCommonWordsWithOneOccurrence
     {
         public void PrintSolution();
     }

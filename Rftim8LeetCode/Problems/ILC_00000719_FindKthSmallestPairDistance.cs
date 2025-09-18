@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00719_FindKthSmallestPairDistance
+    public interface ILC_00000719_FindKthSmallestPairDistance
     {
         public void PrintSolution();
     }

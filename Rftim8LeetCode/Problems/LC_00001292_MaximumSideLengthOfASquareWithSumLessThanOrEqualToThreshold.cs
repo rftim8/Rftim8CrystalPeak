@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold : I_01292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold
+    public class LC_00001292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold : ILC_00001292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold()
+        public LC_00001292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold(IHost host)
+        public LC_00001292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001292_MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold));
         }
 
         public void PrintSolution()

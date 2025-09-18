@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01181_BeforeAndAfterPuzzle
+    public interface ILC_00001181_BeforeAndAfterPuzzle
     {
         public void PrintSolution();
     }

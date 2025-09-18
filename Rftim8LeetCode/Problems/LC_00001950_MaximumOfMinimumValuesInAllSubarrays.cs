@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01950_MaximumOfMinimumValuesInAllSubarrays : I_01950_MaximumOfMinimumValuesInAllSubarrays
+    public class LC_00001950_MaximumOfMinimumValuesInAllSubarrays : ILC_00001950_MaximumOfMinimumValuesInAllSubarrays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01950_MaximumOfMinimumValuesInAllSubarrays()
+        public LC_00001950_MaximumOfMinimumValuesInAllSubarrays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01950_MaximumOfMinimumValuesInAllSubarrays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001950_MaximumOfMinimumValuesInAllSubarrays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01950_MaximumOfMinimumValuesInAllSubarrays(IHost host)
+        public LC_00001950_MaximumOfMinimumValuesInAllSubarrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01950_MaximumOfMinimumValuesInAllSubarrays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001950_MaximumOfMinimumValuesInAllSubarrays));
         }
 
         public void PrintSolution()

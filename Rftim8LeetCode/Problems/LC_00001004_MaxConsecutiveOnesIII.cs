@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01004_MaxConsecutiveOnesIII : I_01004_MaxConsecutiveOnesIII
+    public class LC_00001004_MaxConsecutiveOnesIII : ILC_00001004_MaxConsecutiveOnesIII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01004_MaxConsecutiveOnesIII()
+        public LC_00001004_MaxConsecutiveOnesIII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01004_MaxConsecutiveOnesIII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001004_MaxConsecutiveOnesIII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01004_MaxConsecutiveOnesIII(IHost host)
+        public LC_00001004_MaxConsecutiveOnesIII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01004_MaxConsecutiveOnesIII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001004_MaxConsecutiveOnesIII));
         }
 
         public void PrintSolution()

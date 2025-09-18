@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00783_MinimumDistanceBetweenBSTNodes
+    public interface ILC_00000783_MinimumDistanceBetweenBSTNodes
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02125_NumberOfLaserBeamsInABank : I_02125_NumberOfLaserBeamsInABank
+    public class LC_00002125_NumberOfLaserBeamsInABank : ILC_00002125_NumberOfLaserBeamsInABank
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02125_NumberOfLaserBeamsInABank()
+        public LC_00002125_NumberOfLaserBeamsInABank()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02125_NumberOfLaserBeamsInABank));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002125_NumberOfLaserBeamsInABank));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02125_NumberOfLaserBeamsInABank(IHost host)
+        public LC_00002125_NumberOfLaserBeamsInABank(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02125_NumberOfLaserBeamsInABank));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002125_NumberOfLaserBeamsInABank));
         }
 
         public void PrintSolution()

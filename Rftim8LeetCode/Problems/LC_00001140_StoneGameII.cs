@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01140_StoneGameII : I_01140_StoneGameII
+    public class LC_00001140_StoneGameII : ILC_00001140_StoneGameII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01140_StoneGameII()
+        public LC_00001140_StoneGameII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01140_StoneGameII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001140_StoneGameII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01140_StoneGameII(IHost host)
+        public LC_00001140_StoneGameII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01140_StoneGameII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001140_StoneGameII));
         }
 
         public void PrintSolution()

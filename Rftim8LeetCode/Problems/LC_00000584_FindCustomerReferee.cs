@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00584_FindCustomerReferee : I_00584_FindCustomerReferee
+    public class LC_00000584_FindCustomerReferee : ILC_00000584_FindCustomerReferee
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00584_FindCustomerReferee()
+        public LC_00000584_FindCustomerReferee()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00584_FindCustomerReferee));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000584_FindCustomerReferee));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00584_FindCustomerReferee(IHost host)
+        public LC_00000584_FindCustomerReferee(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00584_FindCustomerReferee));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000584_FindCustomerReferee));
         }
 
         public void PrintSolution()

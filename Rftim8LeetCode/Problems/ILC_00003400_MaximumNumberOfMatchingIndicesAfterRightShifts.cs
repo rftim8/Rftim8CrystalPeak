@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03400_MaximumNumberOfMatchingIndicesAfterRightShifts
+    public interface ILC_00003400_MaximumNumberOfMatchingIndicesAfterRightShifts
     {
         public void PrintSolution();
     }

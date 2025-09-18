@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02711_DifferenceOfNumberOfDistinctValuesOnDiagonals
+    public interface ILC_00002711_DifferenceOfNumberOfDistinctValuesOnDiagonals
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01029_TwoCityScheduling
+    public interface ILC_00001029_TwoCityScheduling
     {
         public void PrintSolution();
     }

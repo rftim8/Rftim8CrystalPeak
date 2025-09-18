@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00594_LongestHarmoniousSubsequence
+    public interface ILC_00000594_LongestHarmoniousSubsequence
     {
         public void PrintSolution();
     }

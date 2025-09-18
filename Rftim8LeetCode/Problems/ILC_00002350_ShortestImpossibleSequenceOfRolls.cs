@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02350_ShortestImpossibleSequenceOfRolls
+    public interface ILC_00002350_ShortestImpossibleSequenceOfRolls
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01543_FixProductNameFormat
+    public interface ILC_00001543_FixProductNameFormat
     {
         public void PrintSolution();
     }

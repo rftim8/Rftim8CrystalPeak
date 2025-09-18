@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02591_DistributeMoneyToMaximumChildren
+    public interface ILC_00002591_DistributeMoneyToMaximumChildren
     {
         public void PrintSolution();
     }

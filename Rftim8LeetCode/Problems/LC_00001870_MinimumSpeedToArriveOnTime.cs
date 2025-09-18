@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01870_MinimumSpeedToArriveOnTime : I_01870_MinimumSpeedToArriveOnTime
+    public class LC_00001870_MinimumSpeedToArriveOnTime : ILC_00001870_MinimumSpeedToArriveOnTime
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01870_MinimumSpeedToArriveOnTime()
+        public LC_00001870_MinimumSpeedToArriveOnTime()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01870_MinimumSpeedToArriveOnTime));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001870_MinimumSpeedToArriveOnTime));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01870_MinimumSpeedToArriveOnTime(IHost host)
+        public LC_00001870_MinimumSpeedToArriveOnTime(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01870_MinimumSpeedToArriveOnTime));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001870_MinimumSpeedToArriveOnTime));
         }
 
         public void PrintSolution()

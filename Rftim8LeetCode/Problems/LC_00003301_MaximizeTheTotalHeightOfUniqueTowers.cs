@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03301_MaximizeTheTotalHeightOfUniqueTowers : I_03301_MaximizeTheTotalHeightOfUniqueTowers
+    public class LC_00003301_MaximizeTheTotalHeightOfUniqueTowers : ILC_00003301_MaximizeTheTotalHeightOfUniqueTowers
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03301_MaximizeTheTotalHeightOfUniqueTowers()
+        public LC_00003301_MaximizeTheTotalHeightOfUniqueTowers()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03301_MaximizeTheTotalHeightOfUniqueTowers));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003301_MaximizeTheTotalHeightOfUniqueTowers));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03301_MaximizeTheTotalHeightOfUniqueTowers(IHost host)
+        public LC_00003301_MaximizeTheTotalHeightOfUniqueTowers(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03301_MaximizeTheTotalHeightOfUniqueTowers));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003301_MaximizeTheTotalHeightOfUniqueTowers));
         }
 
         public void PrintSolution()

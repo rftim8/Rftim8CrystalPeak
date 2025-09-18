@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03006_FindBeautifulIndicesInTheGivenArrayI
+    public interface ILC_00003006_FindBeautifulIndicesInTheGivenArrayI
     {
         public void PrintSolution();
     }

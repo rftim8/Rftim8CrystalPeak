@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03284_SumOfConsecutiveSubarrays : I_03284_SumOfConsecutiveSubarrays
+    public class LC_00003284_SumOfConsecutiveSubarrays : ILC_00003284_SumOfConsecutiveSubarrays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03284_SumOfConsecutiveSubarrays()
+        public LC_00003284_SumOfConsecutiveSubarrays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03284_SumOfConsecutiveSubarrays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003284_SumOfConsecutiveSubarrays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03284_SumOfConsecutiveSubarrays(IHost host)
+        public LC_00003284_SumOfConsecutiveSubarrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03284_SumOfConsecutiveSubarrays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003284_SumOfConsecutiveSubarrays));
         }
 
         public void PrintSolution()

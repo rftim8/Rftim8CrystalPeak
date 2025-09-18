@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02694_EventEmitter
+    public interface ILC_00002694_EventEmitter
     {
         public void PrintSolution();
     }

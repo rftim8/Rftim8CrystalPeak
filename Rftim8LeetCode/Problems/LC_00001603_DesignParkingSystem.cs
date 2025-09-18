@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01603_DesignParkingSystem : I_01603_DesignParkingSystem
+    public class LC_00001603_DesignParkingSystem : ILC_00001603_DesignParkingSystem
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01603_DesignParkingSystem()
+        public LC_00001603_DesignParkingSystem()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01603_DesignParkingSystem));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001603_DesignParkingSystem));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01603_DesignParkingSystem(IHost host)
+        public LC_00001603_DesignParkingSystem(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01603_DesignParkingSystem));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001603_DesignParkingSystem));
         }
 
         public void PrintSolution()

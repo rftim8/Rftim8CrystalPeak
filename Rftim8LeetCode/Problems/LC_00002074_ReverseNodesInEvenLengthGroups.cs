@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02074_ReverseNodesInEvenLengthGroups : I_02074_ReverseNodesInEvenLengthGroups
+    public class LC_00002074_ReverseNodesInEvenLengthGroups : ILC_00002074_ReverseNodesInEvenLengthGroups
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02074_ReverseNodesInEvenLengthGroups()
+        public LC_00002074_ReverseNodesInEvenLengthGroups()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02074_ReverseNodesInEvenLengthGroups));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002074_ReverseNodesInEvenLengthGroups));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02074_ReverseNodesInEvenLengthGroups(IHost host)
+        public LC_00002074_ReverseNodesInEvenLengthGroups(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02074_ReverseNodesInEvenLengthGroups));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002074_ReverseNodesInEvenLengthGroups));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01416_RestoreTheArray : I_01416_RestoreTheArray
+    public class LC_00001416_RestoreTheArray : ILC_00001416_RestoreTheArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01416_RestoreTheArray()
+        public LC_00001416_RestoreTheArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01416_RestoreTheArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001416_RestoreTheArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01416_RestoreTheArray(IHost host)
+        public LC_00001416_RestoreTheArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01416_RestoreTheArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001416_RestoreTheArray));
         }
 
         public void PrintSolution()

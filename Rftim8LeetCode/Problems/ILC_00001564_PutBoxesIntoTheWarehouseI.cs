@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01564_PutBoxesIntoTheWarehouseI
+    public interface ILC_00001564_PutBoxesIntoTheWarehouseI
     {
         public void PrintSolution();
     }

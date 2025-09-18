@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02429_MinimizeXOR
+    public interface ILC_00002429_MinimizeXOR
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01665_MinimumInitialEnergyToFinishTasks_Test
+    public class LC_00001665_MinimumInitialEnergyToFinishTasks_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01665_MinimumInitialEnergyToFinishTasks))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01665_MinimumInitialEnergyToFinishTasks))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01665_MinimumInitialEnergyToFinishTasks))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001665_MinimumInitialEnergyToFinishTasks))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001665_MinimumInitialEnergyToFinishTasks))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001665_MinimumInitialEnergyToFinishTasks))![1]);
 
-        public static TheoryData<List<string>, int> _01665_MinimumInitialEnergyToFinishTasksPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001665_MinimumInitialEnergyToFinishTasksPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01665_MinimumInitialEnergyToFinishTasksPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001665_MinimumInitialEnergyToFinishTasksPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01665_MinimumInitialEnergyToFinishTasksPartOne_Data))]
+        [MemberData(nameof(LC_00001665_MinimumInitialEnergyToFinishTasksPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01665_MinimumInitialEnergyToFinishTasks.PartOne_Test(a0);
+            int actual = LC_00001665_MinimumInitialEnergyToFinishTasks.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01665_MinimumInitialEnergyToFinishTasksPartTwo_Data))]
+        [MemberData(nameof(LC_00001665_MinimumInitialEnergyToFinishTasksPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01665_MinimumInitialEnergyToFinishTasks.PartTwo_Test(a0);
+            int actual = LC_00001665_MinimumInitialEnergyToFinishTasks.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

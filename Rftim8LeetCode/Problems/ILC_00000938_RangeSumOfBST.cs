@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00938_RangeSumOfBST
+    public interface ILC_00000938_RangeSumOfBST
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00569_MedianEmployeeSalary : I_00569_MedianEmployeeSalary
+    public class LC_00000569_MedianEmployeeSalary : ILC_00000569_MedianEmployeeSalary
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00569_MedianEmployeeSalary()
+        public LC_00000569_MedianEmployeeSalary()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00569_MedianEmployeeSalary));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000569_MedianEmployeeSalary));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00569_MedianEmployeeSalary(IHost host)
+        public LC_00000569_MedianEmployeeSalary(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00569_MedianEmployeeSalary));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000569_MedianEmployeeSalary));
         }
 
         public void PrintSolution()

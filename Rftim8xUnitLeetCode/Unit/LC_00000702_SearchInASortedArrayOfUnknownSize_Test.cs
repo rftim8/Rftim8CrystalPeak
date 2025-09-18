@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00702_SearchInASortedArrayOfUnknownSize_Test
+    public class LC_00000702_SearchInASortedArrayOfUnknownSize_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00702_SearchInASortedArrayOfUnknownSize))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00702_SearchInASortedArrayOfUnknownSize))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00702_SearchInASortedArrayOfUnknownSize))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000702_SearchInASortedArrayOfUnknownSize))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000702_SearchInASortedArrayOfUnknownSize))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000702_SearchInASortedArrayOfUnknownSize))![1]);
 
-        public static TheoryData<List<string>, int> _00702_SearchInASortedArrayOfUnknownSizePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000702_SearchInASortedArrayOfUnknownSizePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00702_SearchInASortedArrayOfUnknownSizePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000702_SearchInASortedArrayOfUnknownSizePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00702_SearchInASortedArrayOfUnknownSizePartOne_Data))]
+        [MemberData(nameof(LC_00000702_SearchInASortedArrayOfUnknownSizePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00702_SearchInASortedArrayOfUnknownSize.PartOne_Test(a0);
+            int actual = LC_00000702_SearchInASortedArrayOfUnknownSize.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00702_SearchInASortedArrayOfUnknownSizePartTwo_Data))]
+        [MemberData(nameof(LC_00000702_SearchInASortedArrayOfUnknownSizePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00702_SearchInASortedArrayOfUnknownSize.PartTwo_Test(a0);
+            int actual = LC_00000702_SearchInASortedArrayOfUnknownSize.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

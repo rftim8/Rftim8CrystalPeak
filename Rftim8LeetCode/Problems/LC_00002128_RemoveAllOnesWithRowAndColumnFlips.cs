@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02128_RemoveAllOnesWithRowAndColumnFlips : I_02128_RemoveAllOnesWithRowAndColumnFlips
+    public class LC_00002128_RemoveAllOnesWithRowAndColumnFlips : ILC_00002128_RemoveAllOnesWithRowAndColumnFlips
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02128_RemoveAllOnesWithRowAndColumnFlips()
+        public LC_00002128_RemoveAllOnesWithRowAndColumnFlips()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02128_RemoveAllOnesWithRowAndColumnFlips));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002128_RemoveAllOnesWithRowAndColumnFlips));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02128_RemoveAllOnesWithRowAndColumnFlips(IHost host)
+        public LC_00002128_RemoveAllOnesWithRowAndColumnFlips(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02128_RemoveAllOnesWithRowAndColumnFlips));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002128_RemoveAllOnesWithRowAndColumnFlips));
         }
 
         public void PrintSolution()

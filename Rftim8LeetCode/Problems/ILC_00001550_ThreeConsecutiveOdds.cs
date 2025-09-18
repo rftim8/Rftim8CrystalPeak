@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01550_ThreeConsecutiveOdds
+    public interface ILC_00001550_ThreeConsecutiveOdds
     {
         public void PrintSolution();
     }

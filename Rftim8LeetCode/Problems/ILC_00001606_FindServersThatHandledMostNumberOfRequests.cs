@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01606_FindServersThatHandledMostNumberOfRequests
+    public interface ILC_00001606_FindServersThatHandledMostNumberOfRequests
     {
         public void PrintSolution();
     }

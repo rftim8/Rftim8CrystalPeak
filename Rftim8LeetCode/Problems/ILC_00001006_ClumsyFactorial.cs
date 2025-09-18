@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01006_ClumsyFactorial
+    public interface ILC_00001006_ClumsyFactorial
     {
         public void PrintSolution();
     }

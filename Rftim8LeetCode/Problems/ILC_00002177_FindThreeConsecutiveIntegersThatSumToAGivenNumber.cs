@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber
+    public interface ILC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber
     {
         public void PrintSolution();
     }

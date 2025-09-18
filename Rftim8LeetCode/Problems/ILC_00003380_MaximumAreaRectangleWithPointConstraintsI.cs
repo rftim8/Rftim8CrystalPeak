@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03380_MaximumAreaRectangleWithPointConstraintsI
+    public interface ILC_00003380_MaximumAreaRectangleWithPointConstraintsI
     {
         public void PrintSolution();
     }

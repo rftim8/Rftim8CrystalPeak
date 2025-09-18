@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01365_HowManyNumbersAreSmallerThanTheCurrentNumber_Test
+    public class LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01365_HowManyNumbersAreSmallerThanTheCurrentNumber))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01365_HowManyNumbersAreSmallerThanTheCurrentNumber))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01365_HowManyNumbersAreSmallerThanTheCurrentNumber))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber))![1]);
 
-        public static TheoryData<List<string>, int> _01365_HowManyNumbersAreSmallerThanTheCurrentNumberPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumberPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01365_HowManyNumbersAreSmallerThanTheCurrentNumberPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumberPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01365_HowManyNumbersAreSmallerThanTheCurrentNumberPartOne_Data))]
+        [MemberData(nameof(LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumberPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01365_HowManyNumbersAreSmallerThanTheCurrentNumber.PartOne_Test(a0);
+            int actual = LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01365_HowManyNumbersAreSmallerThanTheCurrentNumberPartTwo_Data))]
+        [MemberData(nameof(LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumberPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01365_HowManyNumbersAreSmallerThanTheCurrentNumber.PartTwo_Test(a0);
+            int actual = LC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

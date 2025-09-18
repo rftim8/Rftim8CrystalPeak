@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03482_AnalyzeOrganizationHierarchy
+    public interface ILC_00003482_AnalyzeOrganizationHierarchy
     {
         public void PrintSolution();
     }

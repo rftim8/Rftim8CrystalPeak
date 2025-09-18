@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01907_CountSalaryCategories
+    public interface ILC_00001907_CountSalaryCategories
     {
         public void PrintSolution();
     }

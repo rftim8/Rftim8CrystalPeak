@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01238_CircularPermutationInBinaryRepresentation
+    public interface ILC_00001238_CircularPermutationInBinaryRepresentation
     {
         public void PrintSolution();
     }

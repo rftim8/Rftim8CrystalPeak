@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02096_StepByStepDirectionsFromABinaryTreeNodeToAnother
+    public interface ILC_00002096_StepByStepDirectionsFromABinaryTreeNodeToAnother
     {
         public void PrintSolution();
     }

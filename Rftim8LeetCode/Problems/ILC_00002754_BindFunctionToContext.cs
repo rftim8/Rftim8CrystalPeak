@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02754_BindFunctionToContext
+    public interface ILC_00002754_BindFunctionToContext
     {
         public void PrintSolution();
     }

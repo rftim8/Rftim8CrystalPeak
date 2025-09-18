@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00521_LongestUncommonSubsequenceI : I_00521_LongestUncommonSubsequenceI
+    public class LC_00000521_LongestUncommonSubsequenceI : ILC_00000521_LongestUncommonSubsequenceI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00521_LongestUncommonSubsequenceI()
+        public LC_00000521_LongestUncommonSubsequenceI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00521_LongestUncommonSubsequenceI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000521_LongestUncommonSubsequenceI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00521_LongestUncommonSubsequenceI(IHost host)
+        public LC_00000521_LongestUncommonSubsequenceI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00521_LongestUncommonSubsequenceI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000521_LongestUncommonSubsequenceI));
         }
 
         public void PrintSolution()

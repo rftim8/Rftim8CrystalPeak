@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02901_LongestUnequalAdjacentGroupsSubsequenceII
+    public interface ILC_00002901_LongestUnequalAdjacentGroupsSubsequenceII
     {
         public void PrintSolution();
     }

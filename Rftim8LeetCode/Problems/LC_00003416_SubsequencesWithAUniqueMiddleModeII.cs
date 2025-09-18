@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03416_SubsequencesWithAUniqueMiddleModeII : I_03416_SubsequencesWithAUniqueMiddleModeII
+    public class LC_00003416_SubsequencesWithAUniqueMiddleModeII : ILC_00003416_SubsequencesWithAUniqueMiddleModeII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03416_SubsequencesWithAUniqueMiddleModeII()
+        public LC_00003416_SubsequencesWithAUniqueMiddleModeII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03416_SubsequencesWithAUniqueMiddleModeII));
-            Input = [.. RftResource._03416_SubsequencesWithAUniqueMiddleModeII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003416_SubsequencesWithAUniqueMiddleModeII));
+            Input = [.. RftResource.LC_00003416_SubsequencesWithAUniqueMiddleModeII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03416_SubsequencesWithAUniqueMiddleModeII(IHost host)
+        public LC_00003416_SubsequencesWithAUniqueMiddleModeII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03416_SubsequencesWithAUniqueMiddleModeII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003416_SubsequencesWithAUniqueMiddleModeII));
             DataCollector();
         }
 

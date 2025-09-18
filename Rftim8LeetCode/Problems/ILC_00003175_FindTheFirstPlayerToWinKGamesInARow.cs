@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03175_FindTheFirstPlayerToWinKGamesInARow
+    public interface ILC_00003175_FindTheFirstPlayerToWinKGamesInARow
     {
         public void PrintSolution();
     }

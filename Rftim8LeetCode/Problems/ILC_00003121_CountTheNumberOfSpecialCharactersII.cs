@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03121_CountTheNumberOfSpecialCharactersII
+    public interface ILC_00003121_CountTheNumberOfSpecialCharactersII
     {
         public void PrintSolution();
     }

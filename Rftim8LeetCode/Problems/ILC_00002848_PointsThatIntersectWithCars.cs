@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02848_PointsThatIntersectWithCars
+    public interface ILC_00002848_PointsThatIntersectWithCars
     {
         public void PrintSolution();
     }

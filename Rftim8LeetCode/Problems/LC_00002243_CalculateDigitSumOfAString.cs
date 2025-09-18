@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02243_CalculateDigitSumOfAString : I_02243_CalculateDigitSumOfAString
+    public class LC_00002243_CalculateDigitSumOfAString : ILC_00002243_CalculateDigitSumOfAString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02243_CalculateDigitSumOfAString()
+        public LC_00002243_CalculateDigitSumOfAString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02243_CalculateDigitSumOfAString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002243_CalculateDigitSumOfAString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02243_CalculateDigitSumOfAString(IHost host)
+        public LC_00002243_CalculateDigitSumOfAString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02243_CalculateDigitSumOfAString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002243_CalculateDigitSumOfAString));
         }
 
         public void PrintSolution()

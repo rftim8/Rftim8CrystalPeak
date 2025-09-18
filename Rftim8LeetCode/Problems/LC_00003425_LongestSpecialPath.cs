@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03425_LongestSpecialPath : I_03425_LongestSpecialPath
+    public class LC_00003425_LongestSpecialPath : ILC_00003425_LongestSpecialPath
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03425_LongestSpecialPath()
+        public LC_00003425_LongestSpecialPath()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03425_LongestSpecialPath));
-            Input = [.. RftResource._03425_LongestSpecialPath_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003425_LongestSpecialPath));
+            Input = [.. RftResource.LC_00003425_LongestSpecialPath_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03425_LongestSpecialPath(IHost host)
+        public LC_00003425_LongestSpecialPath(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03425_LongestSpecialPath));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003425_LongestSpecialPath));
             DataCollector();
         }
 

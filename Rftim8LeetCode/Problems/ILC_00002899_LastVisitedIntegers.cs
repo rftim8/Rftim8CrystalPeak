@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02899_LastVisitedIntegers
+    public interface ILC_00002899_LastVisitedIntegers
     {
         public void PrintSolution();
     }

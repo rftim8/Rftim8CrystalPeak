@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03136_ValidWord : I_03136_ValidWord
+    public class LC_00003136_ValidWord : ILC_00003136_ValidWord
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03136_ValidWord()
+        public LC_00003136_ValidWord()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03136_ValidWord));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003136_ValidWord));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03136_ValidWord(IHost host)
+        public LC_00003136_ValidWord(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03136_ValidWord));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003136_ValidWord));
         }
 
         public void PrintSolution()

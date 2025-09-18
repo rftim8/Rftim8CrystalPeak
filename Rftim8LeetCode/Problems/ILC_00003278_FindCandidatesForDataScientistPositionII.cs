@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03278_FindCandidatesForDataScientistPositionII
+    public interface ILC_00003278_FindCandidatesForDataScientistPositionII
     {
         public void PrintSolution();
     }

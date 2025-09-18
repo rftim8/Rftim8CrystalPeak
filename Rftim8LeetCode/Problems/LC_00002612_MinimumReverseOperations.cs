@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02612_MinimumReverseOperations : I_02612_MinimumReverseOperations
+    public class LC_00002612_MinimumReverseOperations : ILC_00002612_MinimumReverseOperations
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02612_MinimumReverseOperations()
+        public LC_00002612_MinimumReverseOperations()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02612_MinimumReverseOperations));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002612_MinimumReverseOperations));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02612_MinimumReverseOperations(IHost host)
+        public LC_00002612_MinimumReverseOperations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02612_MinimumReverseOperations));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002612_MinimumReverseOperations));
         }
 
         public void PrintSolution()

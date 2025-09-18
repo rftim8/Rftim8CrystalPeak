@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03027_FindTheNumberOfWaysToPlacePeopleII
+    public interface ILC_00003027_FindTheNumberOfWaysToPlacePeopleII
     {
         public void PrintSolution();
     }

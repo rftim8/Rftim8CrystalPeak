@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01425_ConstrainedSubsequenceSum
+    public interface ILC_00001425_ConstrainedSubsequenceSum
     {
         public void PrintSolution();
     }

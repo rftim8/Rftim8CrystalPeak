@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01896_MinimumCostToChangeTheFinalValueOfExpression : I_01896_MinimumCostToChangeTheFinalValueOfExpression
+    public class LC_00001896_MinimumCostToChangeTheFinalValueOfExpression : ILC_00001896_MinimumCostToChangeTheFinalValueOfExpression
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01896_MinimumCostToChangeTheFinalValueOfExpression()
+        public LC_00001896_MinimumCostToChangeTheFinalValueOfExpression()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01896_MinimumCostToChangeTheFinalValueOfExpression));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001896_MinimumCostToChangeTheFinalValueOfExpression));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01896_MinimumCostToChangeTheFinalValueOfExpression(IHost host)
+        public LC_00001896_MinimumCostToChangeTheFinalValueOfExpression(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01896_MinimumCostToChangeTheFinalValueOfExpression));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001896_MinimumCostToChangeTheFinalValueOfExpression));
         }
 
         public void PrintSolution()

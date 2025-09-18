@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03259_MaximumEnergyBoostFromTwoDrinks : I_03259_MaximumEnergyBoostFromTwoDrinks
+    public class LC_00003259_MaximumEnergyBoostFromTwoDrinks : ILC_00003259_MaximumEnergyBoostFromTwoDrinks
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03259_MaximumEnergyBoostFromTwoDrinks()
+        public LC_00003259_MaximumEnergyBoostFromTwoDrinks()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03259_MaximumEnergyBoostFromTwoDrinks));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003259_MaximumEnergyBoostFromTwoDrinks));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03259_MaximumEnergyBoostFromTwoDrinks(IHost host)
+        public LC_00003259_MaximumEnergyBoostFromTwoDrinks(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03259_MaximumEnergyBoostFromTwoDrinks));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003259_MaximumEnergyBoostFromTwoDrinks));
         }
 
         public void PrintSolution()

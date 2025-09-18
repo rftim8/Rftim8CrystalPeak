@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03552_GridTeleportationTraversal
+    public interface ILC_00003552_GridTeleportationTraversal
     {
         public void PrintSolution();
     }

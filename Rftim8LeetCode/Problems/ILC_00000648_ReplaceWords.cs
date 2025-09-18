@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00648_ReplaceWords
+    public interface ILC_00000648_ReplaceWords
     {
         public void PrintSolution();
     }

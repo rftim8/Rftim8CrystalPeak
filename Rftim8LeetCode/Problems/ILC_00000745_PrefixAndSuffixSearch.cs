@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00745_PrefixAndSuffixSearch
+    public interface ILC_00000745_PrefixAndSuffixSearch
     {
         public void PrintSolution();
     }

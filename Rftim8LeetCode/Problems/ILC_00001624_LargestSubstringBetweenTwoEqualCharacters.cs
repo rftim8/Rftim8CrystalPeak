@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01624_LargestSubstringBetweenTwoEqualCharacters
+    public interface ILC_00001624_LargestSubstringBetweenTwoEqualCharacters
     {
         public void PrintSolution();
     }

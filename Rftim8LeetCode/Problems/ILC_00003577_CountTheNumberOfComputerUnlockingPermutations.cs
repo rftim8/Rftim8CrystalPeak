@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03577_CountTheNumberOfComputerUnlockingPermutations
+    public interface ILC_00003577_CountTheNumberOfComputerUnlockingPermutations
     {
         public void PrintSolution();
     }

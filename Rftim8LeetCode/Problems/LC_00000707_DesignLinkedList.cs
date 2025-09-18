@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00707_DesignLinkedList : I_00707_DesignLinkedList
+    public class LC_00000707_DesignLinkedList : ILC_00000707_DesignLinkedList
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00707_DesignLinkedList()
+        public LC_00000707_DesignLinkedList()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00707_DesignLinkedList));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000707_DesignLinkedList));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00707_DesignLinkedList(IHost host)
+        public LC_00000707_DesignLinkedList(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00707_DesignLinkedList));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000707_DesignLinkedList));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01099_TwoSumLessThanK
+    public interface ILC_00001099_TwoSumLessThanK
     {
         public void PrintSolution();
     }

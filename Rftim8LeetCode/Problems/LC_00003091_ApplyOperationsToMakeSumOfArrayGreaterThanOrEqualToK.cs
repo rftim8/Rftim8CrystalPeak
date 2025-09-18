@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK : I_03091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK
+    public class LC_00003091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK : ILC_00003091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK()
+        public LC_00003091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK(IHost host)
+        public LC_00003091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003091_ApplyOperationsToMakeSumOfArrayGreaterThanOrEqualToK));
         }
 
         public void PrintSolution()

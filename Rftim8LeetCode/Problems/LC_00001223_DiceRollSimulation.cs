@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01223_DiceRollSimulation : I_01223_DiceRollSimulation
+    public class LC_00001223_DiceRollSimulation : ILC_00001223_DiceRollSimulation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01223_DiceRollSimulation()
+        public LC_00001223_DiceRollSimulation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01223_DiceRollSimulation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001223_DiceRollSimulation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01223_DiceRollSimulation(IHost host)
+        public LC_00001223_DiceRollSimulation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01223_DiceRollSimulation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001223_DiceRollSimulation));
         }
 
         public void PrintSolution()

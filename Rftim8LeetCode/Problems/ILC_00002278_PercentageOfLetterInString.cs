@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02278_PercentageOfLetterInString
+    public interface ILC_00002278_PercentageOfLetterInString
     {
         public void PrintSolution();
     }

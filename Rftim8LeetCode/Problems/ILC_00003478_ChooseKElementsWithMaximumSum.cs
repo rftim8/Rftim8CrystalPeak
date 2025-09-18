@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03478_ChooseKElementsWithMaximumSum
+    public interface ILC_00003478_ChooseKElementsWithMaximumSum
     {
         public void PrintSolution();
     }

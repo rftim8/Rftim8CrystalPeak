@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00108_ConvertSortedArrayToBinarySearchTree
+    public interface ILC_00000108_ConvertSortedArrayToBinarySearchTree
     {
         public void PrintSolution();
     }

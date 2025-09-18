@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03309_MaximumPossibleNumberByBinaryConcatenation
+    public interface ILC_00003309_MaximumPossibleNumberByBinaryConcatenation
     {
         public void PrintSolution();
     }

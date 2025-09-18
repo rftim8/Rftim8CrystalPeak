@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03451_FindInvalidIPAddresses
+    public interface ILC_00003451_FindInvalidIPAddresses
     {
         public void PrintSolution();
     }

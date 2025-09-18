@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01979_FindGreatestCommonDivisorOfArray
+    public interface ILC_00001979_FindGreatestCommonDivisorOfArray
     {
         public void PrintSolution();
     }

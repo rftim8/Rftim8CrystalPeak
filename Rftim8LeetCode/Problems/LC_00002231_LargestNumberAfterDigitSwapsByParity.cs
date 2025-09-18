@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02231_LargestNumberAfterDigitSwapsByParity : I_02231_LargestNumberAfterDigitSwapsByParity
+    public class LC_00002231_LargestNumberAfterDigitSwapsByParity : ILC_00002231_LargestNumberAfterDigitSwapsByParity
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02231_LargestNumberAfterDigitSwapsByParity()
+        public LC_00002231_LargestNumberAfterDigitSwapsByParity()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02231_LargestNumberAfterDigitSwapsByParity));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002231_LargestNumberAfterDigitSwapsByParity));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02231_LargestNumberAfterDigitSwapsByParity(IHost host)
+        public LC_00002231_LargestNumberAfterDigitSwapsByParity(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02231_LargestNumberAfterDigitSwapsByParity));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002231_LargestNumberAfterDigitSwapsByParity));
         }
 
         public void PrintSolution()

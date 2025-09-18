@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00035_SearchInsertPosition : I_00035_SearchInsertPosition
+    public class LC_00000035_SearchInsertPosition : ILC_00000035_SearchInsertPosition
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00035_SearchInsertPosition()
+        public LC_00000035_SearchInsertPosition()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00035_SearchInsertPosition));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000035_SearchInsertPosition));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00035_SearchInsertPosition(IHost host)
+        public LC_00000035_SearchInsertPosition(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00035_SearchInsertPosition));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000035_SearchInsertPosition));
         }
 
         public void PrintSolution()

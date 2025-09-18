@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02361_MinimumCostsUsingTheTrainLine : I_02361_MinimumCostsUsingTheTrainLine
+    public class LC_00002361_MinimumCostsUsingTheTrainLine : ILC_00002361_MinimumCostsUsingTheTrainLine
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02361_MinimumCostsUsingTheTrainLine()
+        public LC_00002361_MinimumCostsUsingTheTrainLine()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02361_MinimumCostsUsingTheTrainLine));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002361_MinimumCostsUsingTheTrainLine));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02361_MinimumCostsUsingTheTrainLine(IHost host)
+        public LC_00002361_MinimumCostsUsingTheTrainLine(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02361_MinimumCostsUsingTheTrainLine));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002361_MinimumCostsUsingTheTrainLine));
         }
 
         public void PrintSolution()

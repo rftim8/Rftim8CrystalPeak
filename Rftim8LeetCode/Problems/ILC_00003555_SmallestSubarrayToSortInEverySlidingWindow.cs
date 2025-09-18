@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03555_SmallestSubarrayToSortInEverySlidingWindow
+    public interface ILC_00003555_SmallestSubarrayToSortInEverySlidingWindow
     {
         public void PrintSolution();
     }

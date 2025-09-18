@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01171_RemoveZeroSumConsecutiveNodesFromLinkedList
+    public interface ILC_00001171_RemoveZeroSumConsecutiveNodesFromLinkedList
     {
         public void PrintSolution();
     }

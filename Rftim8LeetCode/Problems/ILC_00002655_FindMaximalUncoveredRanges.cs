@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02655_FindMaximalUncoveredRanges
+    public interface ILC_00002655_FindMaximalUncoveredRanges
     {
         public void PrintSolution();
     }

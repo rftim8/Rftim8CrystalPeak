@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03585_FindWeightedMedianNodeInTree
+    public interface ILC_00003585_FindWeightedMedianNodeInTree
     {
         public void PrintSolution();
     }

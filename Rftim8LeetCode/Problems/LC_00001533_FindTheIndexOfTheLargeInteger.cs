@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01533_FindTheIndexOfTheLargeInteger : I_01533_FindTheIndexOfTheLargeInteger
+    public class LC_00001533_FindTheIndexOfTheLargeInteger : ILC_00001533_FindTheIndexOfTheLargeInteger
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01533_FindTheIndexOfTheLargeInteger()
+        public LC_00001533_FindTheIndexOfTheLargeInteger()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01533_FindTheIndexOfTheLargeInteger));
-            Input = [.. RftResource._01533_FindTheIndexOfTheLargeInteger_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001533_FindTheIndexOfTheLargeInteger));
+            Input = [.. RftResource.LC_00001533_FindTheIndexOfTheLargeInteger_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01533_FindTheIndexOfTheLargeInteger(IHost host)
+        public LC_00001533_FindTheIndexOfTheLargeInteger(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01533_FindTheIndexOfTheLargeInteger));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001533_FindTheIndexOfTheLargeInteger));
             DataCollector();
         }
 

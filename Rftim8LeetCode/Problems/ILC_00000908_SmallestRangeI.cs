@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00908_SmallestRangeI
+    public interface ILC_00000908_SmallestRangeI
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -14,7 +14,7 @@ namespace Rftim8LeetCode.Problems
 
         public _01253_ReconstructATwoRowBinaryMatrix()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01253_ReconstructA2RowBinaryMatrix));
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001253_ReconstructA2RowBinaryMatrix));
             Input = [.. RftResource._01253_ReconstructATwoRowBinaryMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }

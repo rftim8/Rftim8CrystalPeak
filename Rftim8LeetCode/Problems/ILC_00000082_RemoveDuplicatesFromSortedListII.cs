@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00082_RemoveDuplicatesFromSortedListII
+    public interface ILC_00000082_RemoveDuplicatesFromSortedListII
     {
         public void PrintSolution();
     }

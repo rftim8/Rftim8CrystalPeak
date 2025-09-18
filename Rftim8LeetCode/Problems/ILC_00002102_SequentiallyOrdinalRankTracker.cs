@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02102_SequentiallyOrdinalRankTracker
+    public interface ILC_00002102_SequentiallyOrdinalRankTracker
     {
         public void PrintSolution();
     }

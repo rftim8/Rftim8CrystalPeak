@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01901_FindAPeakElementII
+    public interface ILC_00001901_FindAPeakElementII
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03550_SmallestIndexWithDigitSumEqualToIndex : I_03550_SmallestIndexWithDigitSumEqualToIndex
+    public class LC_00003550_SmallestIndexWithDigitSumEqualToIndex : ILC_00003550_SmallestIndexWithDigitSumEqualToIndex
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03550_SmallestIndexWithDigitSumEqualToIndex()
+        public LC_00003550_SmallestIndexWithDigitSumEqualToIndex()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03550_SmallestIndexWithDigitSumEqualToIndex));
-            Input = [.. RftResource._03550_SmallestIndexWithDigitSumEqualToIndex_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003550_SmallestIndexWithDigitSumEqualToIndex));
+            Input = [.. RftResource.LC_00003550_SmallestIndexWithDigitSumEqualToIndex_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03550_SmallestIndexWithDigitSumEqualToIndex(IHost host)
+        public LC_00003550_SmallestIndexWithDigitSumEqualToIndex(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03550_SmallestIndexWithDigitSumEqualToIndex));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003550_SmallestIndexWithDigitSumEqualToIndex));
             DataCollector();
         }
 

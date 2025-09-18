@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03341_FindMinimumTimeToReachLastRoomI : I_03341_FindMinimumTimeToReachLastRoomI
+    public class LC_00003341_FindMinimumTimeToReachLastRoomI : ILC_00003341_FindMinimumTimeToReachLastRoomI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03341_FindMinimumTimeToReachLastRoomI()
+        public LC_00003341_FindMinimumTimeToReachLastRoomI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03341_FindMinimumTimeToReachLastRoomI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003341_FindMinimumTimeToReachLastRoomI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03341_FindMinimumTimeToReachLastRoomI(IHost host)
+        public LC_00003341_FindMinimumTimeToReachLastRoomI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03341_FindMinimumTimeToReachLastRoomI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003341_FindMinimumTimeToReachLastRoomI));
         }
 
         public void PrintSolution()

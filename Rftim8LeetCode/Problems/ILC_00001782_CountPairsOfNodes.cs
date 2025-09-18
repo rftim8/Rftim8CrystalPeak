@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01782_CountPairsOfNodes
+    public interface ILC_00001782_CountPairsOfNodes
     {
         public void PrintSolution();
     }

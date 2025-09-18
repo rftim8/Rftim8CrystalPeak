@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00901_OnlineStockSpan : I_00901_OnlineStockSpan
+    public class LC_00000901_OnlineStockSpan : ILC_00000901_OnlineStockSpan
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00901_OnlineStockSpan()
+        public LC_00000901_OnlineStockSpan()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00901_OnlineStockSpan));
-            Input = [.. RftResource._00901_OnlineStockSpan_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000901_OnlineStockSpan));
+            Input = [.. RftResource.LC_00000901_OnlineStockSpan_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00901_OnlineStockSpan(IHost host)
+        public LC_00000901_OnlineStockSpan(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00901_OnlineStockSpan));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000901_OnlineStockSpan));
             DataCollector();
         }
 

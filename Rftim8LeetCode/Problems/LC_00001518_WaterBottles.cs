@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01518_WaterBottles : I_01518_WaterBottles
+    public class LC_00001518_WaterBottles : ILC_00001518_WaterBottles
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01518_WaterBottles()
+        public LC_00001518_WaterBottles()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01518_WaterBottles));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001518_WaterBottles));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01518_WaterBottles(IHost host)
+        public LC_00001518_WaterBottles(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01518_WaterBottles));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001518_WaterBottles));
         }
 
         public void PrintSolution()

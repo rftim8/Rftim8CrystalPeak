@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01662_CheckIfTwoStringArraysAreEquivalent
+    public interface ILC_00001662_CheckIfTwoStringArraysAreEquivalent
     {
         public void PrintSolution();
     }

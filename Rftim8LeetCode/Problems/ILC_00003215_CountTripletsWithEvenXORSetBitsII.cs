@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03215_CountTripletsWithEvenXORSetBitsII
+    public interface ILC_00003215_CountTripletsWithEvenXORSetBitsII
     {
         public void PrintSolution();
     }

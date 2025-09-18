@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00716_MaxStack
+    public interface ILC_00000716_MaxStack
     {
         public void PrintSolution();
     }

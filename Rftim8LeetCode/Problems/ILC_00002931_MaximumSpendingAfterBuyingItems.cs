@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02931_MaximumSpendingAfterBuyingItems
+    public interface ILC_00002931_MaximumSpendingAfterBuyingItems
     {
         public void PrintSolution();
     }

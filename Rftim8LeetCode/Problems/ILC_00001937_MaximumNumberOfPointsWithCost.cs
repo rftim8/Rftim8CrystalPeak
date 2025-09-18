@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01937_MaximumNumberOfPointsWithCost
+    public interface ILC_00001937_MaximumNumberOfPointsWithCost
     {
         public void PrintSolution();
     }

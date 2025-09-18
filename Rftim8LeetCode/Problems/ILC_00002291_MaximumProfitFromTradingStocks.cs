@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02291_MaximumProfitFromTradingStocks
+    public interface ILC_00002291_MaximumProfitFromTradingStocks
     {
         public void PrintSolution();
     }

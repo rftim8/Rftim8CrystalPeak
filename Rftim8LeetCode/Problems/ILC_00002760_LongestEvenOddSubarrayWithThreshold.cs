@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02760_LongestEvenOddSubarrayWithThreshold
+    public interface ILC_00002760_LongestEvenOddSubarrayWithThreshold
     {
         public void PrintSolution();
     }

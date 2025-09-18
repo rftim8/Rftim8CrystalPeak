@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02650_DesignCancellableFunction
+    public interface ILC_00002650_DesignCancellableFunction
     {
         public void PrintSolution();
     }

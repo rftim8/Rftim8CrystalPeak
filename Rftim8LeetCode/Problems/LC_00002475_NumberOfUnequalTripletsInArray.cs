@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02475_NumberOfUnequalTripletsInArray : I_02475_NumberOfUnequalTripletsInArray
+    public class LC_00002475_NumberOfUnequalTripletsInArray : ILC_00002475_NumberOfUnequalTripletsInArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02475_NumberOfUnequalTripletsInArray()
+        public LC_00002475_NumberOfUnequalTripletsInArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02475_NumberOfUnequalTripletsInArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002475_NumberOfUnequalTripletsInArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02475_NumberOfUnequalTripletsInArray(IHost host)
+        public LC_00002475_NumberOfUnequalTripletsInArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02475_NumberOfUnequalTripletsInArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002475_NumberOfUnequalTripletsInArray));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02386_FindTheKSumOfAnArray
+    public interface ILC_00002386_FindTheKSumOfAnArray
     {
         public void PrintSolution();
     }

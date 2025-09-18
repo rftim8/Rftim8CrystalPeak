@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02432_TheEmployeeThatWorkedOnTheLongestTask : I_02432_TheEmployeeThatWorkedOnTheLongestTask
+    public class LC_00002432_TheEmployeeThatWorkedOnTheLongestTask : ILC_00002432_TheEmployeeThatWorkedOnTheLongestTask
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02432_TheEmployeeThatWorkedOnTheLongestTask()
+        public LC_00002432_TheEmployeeThatWorkedOnTheLongestTask()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02432_TheEmployeeThatWorkedOnTheLongestTask));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002432_TheEmployeeThatWorkedOnTheLongestTask));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02432_TheEmployeeThatWorkedOnTheLongestTask(IHost host)
+        public LC_00002432_TheEmployeeThatWorkedOnTheLongestTask(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02432_TheEmployeeThatWorkedOnTheLongestTask));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002432_TheEmployeeThatWorkedOnTheLongestTask));
         }
 
         public void PrintSolution()

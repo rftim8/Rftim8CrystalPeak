@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01997_FirstDayWhereYouHaveBeenInAllTheRooms : I_01997_FirstDayWhereYouHaveBeenInAllTheRooms
+    public class LC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms : ILC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01997_FirstDayWhereYouHaveBeenInAllTheRooms()
+        public LC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01997_FirstDayWhereYouHaveBeenInAllTheRooms));
-            Input = [.. RftResource._01997_FirstDayWhereYouHaveBeenInAllTheRooms_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms));
+            Input = [.. RftResource.LC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01997_FirstDayWhereYouHaveBeenInAllTheRooms(IHost host)
+        public LC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01997_FirstDayWhereYouHaveBeenInAllTheRooms));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001997_FirstDayWhereYouHaveBeenInAllTheRooms));
             DataCollector();
         }
 

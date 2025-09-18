@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00439_TernaryExpressionParser
+    public interface ILC_00000439_TernaryExpressionParser
     {
         public void PrintSolution();
     }

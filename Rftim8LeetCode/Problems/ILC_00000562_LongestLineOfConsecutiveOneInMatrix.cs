@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00562_LongestLineOfConsecutiveOneInMatrix
+    public interface ILC_00000562_LongestLineOfConsecutiveOneInMatrix
     {
         public void PrintSolution();
     }

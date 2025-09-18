@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03502_MinimumCostToReachEveryPosition : I_03502_MinimumCostToReachEveryPosition
+    public class LC_00003502_MinimumCostToReachEveryPosition : ILC_00003502_MinimumCostToReachEveryPosition
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03502_MinimumCostToReachEveryPosition()
+        public LC_00003502_MinimumCostToReachEveryPosition()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03502_MinimumCostToReachEveryPosition));
-            Input = [.. RftResource._03502_MinimumCostToReachEveryPosition_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003502_MinimumCostToReachEveryPosition));
+            Input = [.. RftResource.LC_00003502_MinimumCostToReachEveryPosition_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03502_MinimumCostToReachEveryPosition(IHost host)
+        public LC_00003502_MinimumCostToReachEveryPosition(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03502_MinimumCostToReachEveryPosition));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003502_MinimumCostToReachEveryPosition));
             DataCollector();
         }
 

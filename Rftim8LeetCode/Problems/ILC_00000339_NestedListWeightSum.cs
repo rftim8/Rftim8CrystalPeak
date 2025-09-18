@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00339_NestedListWeightSum
+    public interface ILC_00000339_NestedListWeightSum
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01219_PathWithMaximumGold : I_01219_PathWithMaximumGold
+    public class LC_00001219_PathWithMaximumGold : ILC_00001219_PathWithMaximumGold
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01219_PathWithMaximumGold()
+        public LC_00001219_PathWithMaximumGold()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01219_PathWithMaximumGold));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001219_PathWithMaximumGold));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01219_PathWithMaximumGold(IHost host)
+        public LC_00001219_PathWithMaximumGold(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01219_PathWithMaximumGold));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001219_PathWithMaximumGold));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02795_ParallelExecutionOfPromisesForIndividualResultsRetrieval
+    public interface ILC_00002795_ParallelExecutionOfPromisesForIndividualResultsRetrieval
     {
         public void PrintSolution();
     }

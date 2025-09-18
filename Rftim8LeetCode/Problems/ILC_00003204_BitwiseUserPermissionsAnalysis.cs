@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03204_BitwiseUserPermissionsAnalysis
+    public interface ILC_00003204_BitwiseUserPermissionsAnalysis
     {
         public void PrintSolution();
     }

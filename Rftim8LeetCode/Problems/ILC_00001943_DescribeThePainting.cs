@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01943_DescribeThePainting
+    public interface ILC_00001943_DescribeThePainting
     {
         public void PrintSolution();
     }

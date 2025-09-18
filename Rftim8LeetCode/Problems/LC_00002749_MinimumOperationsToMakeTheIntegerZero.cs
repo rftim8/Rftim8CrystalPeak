@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02749_MinimumOperationsToMakeTheIntegerZero : I_02749_MinimumOperationsToMakeTheIntegerZero
+    public class LC_00002749_MinimumOperationsToMakeTheIntegerZero : ILC_00002749_MinimumOperationsToMakeTheIntegerZero
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02749_MinimumOperationsToMakeTheIntegerZero()
+        public LC_00002749_MinimumOperationsToMakeTheIntegerZero()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02749_MinimumOperationsToMakeTheIntegerZero));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002749_MinimumOperationsToMakeTheIntegerZero));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02749_MinimumOperationsToMakeTheIntegerZero(IHost host)
+        public LC_00002749_MinimumOperationsToMakeTheIntegerZero(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02749_MinimumOperationsToMakeTheIntegerZero));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002749_MinimumOperationsToMakeTheIntegerZero));
         }
 
         public void PrintSolution()

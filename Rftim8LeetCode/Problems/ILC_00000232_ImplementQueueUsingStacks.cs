@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00232_ImplementQueueUsingStacks
+    public interface ILC_00000232_ImplementQueueUsingStacks
     {
         public void PrintSolution();
     }

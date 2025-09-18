@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00980_UniquePathsIII
+    public interface ILC_00000980_UniquePathsIII
     {
         public void PrintSolution();
     }

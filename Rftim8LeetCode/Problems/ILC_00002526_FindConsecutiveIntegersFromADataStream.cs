@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02526_FindConsecutiveIntegersFromADataStream
+    public interface ILC_00002526_FindConsecutiveIntegersFromADataStream
     {
         public void PrintSolution();
     }

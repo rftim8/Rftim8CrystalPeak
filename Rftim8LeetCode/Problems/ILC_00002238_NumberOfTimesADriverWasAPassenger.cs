@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02238_NumberOfTimesADriverWasAPassenger
+    public interface ILC_00002238_NumberOfTimesADriverWasAPassenger
     {
         public void PrintSolution();
     }

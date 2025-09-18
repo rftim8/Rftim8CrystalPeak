@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02192_AllAncestorsOfANodeInADirectedAcyclicGraph
+    public interface ILC_00002192_AllAncestorsOfANodeInADirectedAcyclicGraph
     {
         public void PrintSolution();
     }

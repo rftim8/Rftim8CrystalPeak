@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02193_MinimumNumberOfMovesToMakePalindrome
+    public interface ILC_00002193_MinimumNumberOfMovesToMakePalindrome
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01133_LargestUniqueNumber
+    public interface ILC_00001133_LargestUniqueNumber
     {
         public void PrintSolution();
     }

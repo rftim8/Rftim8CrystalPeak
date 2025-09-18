@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00968_BinaryTreeCameras : I_00968_BinaryTreeCameras
+    public class LC_00000968_BinaryTreeCameras : ILC_00000968_BinaryTreeCameras
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00968_BinaryTreeCameras()
+        public LC_00000968_BinaryTreeCameras()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00968_BinaryTreeCameras));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000968_BinaryTreeCameras));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00968_BinaryTreeCameras(IHost host)
+        public LC_00000968_BinaryTreeCameras(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00968_BinaryTreeCameras));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000968_BinaryTreeCameras));
         }
 
         public void PrintSolution()

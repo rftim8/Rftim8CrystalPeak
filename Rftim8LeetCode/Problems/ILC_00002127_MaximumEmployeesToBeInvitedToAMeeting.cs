@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02127_MaximumEmployeesToBeInvitedToAMeeting
+    public interface ILC_00002127_MaximumEmployeesToBeInvitedToAMeeting
     {
         public void PrintSolution();
     }

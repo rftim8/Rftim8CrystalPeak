@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00191_NumberOf1Bits
+    public interface ILC_00000191_NumberOf1Bits
     {
         public void PrintSolution();
     }

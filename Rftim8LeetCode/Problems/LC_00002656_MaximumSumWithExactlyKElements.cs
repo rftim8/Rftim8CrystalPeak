@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02656_MaximumSumWithExactlyKElements : I_02656_MaximumSumWithExactlyKElements
+    public class LC_00002656_MaximumSumWithExactlyKElements : ILC_00002656_MaximumSumWithExactlyKElements
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02656_MaximumSumWithExactlyKElements()
+        public LC_00002656_MaximumSumWithExactlyKElements()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02656_MaximumSumWithExactlyKElements));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002656_MaximumSumWithExactlyKElements));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02656_MaximumSumWithExactlyKElements(IHost host)
+        public LC_00002656_MaximumSumWithExactlyKElements(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02656_MaximumSumWithExactlyKElements));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002656_MaximumSumWithExactlyKElements));
         }
 
         public void PrintSolution()

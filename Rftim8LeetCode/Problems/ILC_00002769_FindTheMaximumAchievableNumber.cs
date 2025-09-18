@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02769_FindTheMaximumAchievableNumber
+    public interface ILC_00002769_FindTheMaximumAchievableNumber
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03299_SumOfConsecutiveSubsequences : I_03299_SumOfConsecutiveSubsequences
+    public class LC_00003299_SumOfConsecutiveSubsequences : ILC_00003299_SumOfConsecutiveSubsequences
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03299_SumOfConsecutiveSubsequences()
+        public LC_00003299_SumOfConsecutiveSubsequences()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03299_SumOfConsecutiveSubsequences));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003299_SumOfConsecutiveSubsequences));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03299_SumOfConsecutiveSubsequences(IHost host)
+        public LC_00003299_SumOfConsecutiveSubsequences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03299_SumOfConsecutiveSubsequences));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003299_SumOfConsecutiveSubsequences));
         }
 
         public void PrintSolution()

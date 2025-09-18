@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02856_MinimumArrayLengthAfterPairRemovals : I_02856_MinimumArrayLengthAfterPairRemovals
+    public class LC_00002856_MinimumArrayLengthAfterPairRemovals : ILC_00002856_MinimumArrayLengthAfterPairRemovals
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02856_MinimumArrayLengthAfterPairRemovals()
+        public LC_00002856_MinimumArrayLengthAfterPairRemovals()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02856_MinimumArrayLengthAfterPairRemovals));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002856_MinimumArrayLengthAfterPairRemovals));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02856_MinimumArrayLengthAfterPairRemovals(IHost host)
+        public LC_00002856_MinimumArrayLengthAfterPairRemovals(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02856_MinimumArrayLengthAfterPairRemovals));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002856_MinimumArrayLengthAfterPairRemovals));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01992_FindAllGroupsOfFarmland
+    public interface ILC_00001992_FindAllGroupsOfFarmland
     {
         public void PrintSolution();
     }

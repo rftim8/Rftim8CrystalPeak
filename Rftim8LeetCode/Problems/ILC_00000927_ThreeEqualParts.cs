@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00927_ThreeEqualParts
+    public interface ILC_00000927_ThreeEqualParts
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02239_FindClosestNumberToZero : I_02239_FindClosestNumberToZero
+    public class LC_00002239_FindClosestNumberToZero : ILC_00002239_FindClosestNumberToZero
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02239_FindClosestNumberToZero()
+        public LC_00002239_FindClosestNumberToZero()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02239_FindClosestNumberToZero));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002239_FindClosestNumberToZero));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02239_FindClosestNumberToZero(IHost host)
+        public LC_00002239_FindClosestNumberToZero(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02239_FindClosestNumberToZero));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002239_FindClosestNumberToZero));
         }
 
         public void PrintSolution()

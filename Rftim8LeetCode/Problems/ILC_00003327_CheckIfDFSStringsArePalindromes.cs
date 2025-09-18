@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03327_CheckIfDFSStringsArePalindromes
+    public interface ILC_00003327_CheckIfDFSStringsArePalindromes
     {
         public void PrintSolution();
     }

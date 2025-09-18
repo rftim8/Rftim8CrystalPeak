@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01536_MinimumSwapsToArrangeABinaryGrid
+    public interface ILC_00001536_MinimumSwapsToArrangeABinaryGrid
     {
         public void PrintSolution();
     }

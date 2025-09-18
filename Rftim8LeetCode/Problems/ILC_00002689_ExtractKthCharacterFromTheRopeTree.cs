@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02689_ExtractKthCharacterFromTheRopeTree
+    public interface ILC_00002689_ExtractKthCharacterFromTheRopeTree
     {
         public void PrintSolution();
     }

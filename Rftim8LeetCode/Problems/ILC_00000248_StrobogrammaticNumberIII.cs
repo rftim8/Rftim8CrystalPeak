@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00248_StrobogrammaticNumberIII
+    public interface ILC_00000248_StrobogrammaticNumberIII
     {
         public void PrintSolution();
     }

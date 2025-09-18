@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01531_StringCompressionII
+    public interface ILC_00001531_StringCompressionII
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01261_FindElementsInAContaminatedBinaryTree
+    public interface ILC_00001261_FindElementsInAContaminatedBinaryTree
     {
         public void PrintSolution();
     }

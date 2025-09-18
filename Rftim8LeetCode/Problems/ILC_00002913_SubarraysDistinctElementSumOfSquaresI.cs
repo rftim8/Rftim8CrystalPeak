@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02913_SubarraysDistinctElementSumOfSquaresI
+    public interface ILC_00002913_SubarraysDistinctElementSumOfSquaresI
     {
         public void PrintSolution();
     }

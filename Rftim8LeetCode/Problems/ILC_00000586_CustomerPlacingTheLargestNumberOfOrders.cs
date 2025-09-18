@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00586_CustomerPlacingTheLargestNumberOfOrders
+    public interface ILC_00000586_CustomerPlacingTheLargestNumberOfOrders
     {
         public void PrintSolution();
     }

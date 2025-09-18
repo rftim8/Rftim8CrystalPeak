@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03043_FindTheLengthOfTheLongestCommonPrefix
+    public interface ILC_00003043_FindTheLengthOfTheLongestCommonPrefix
     {
         public void PrintSolution();
     }

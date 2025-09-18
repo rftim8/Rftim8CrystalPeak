@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00428_SerializeAndDeserializeNaryTree
+    public interface ILC_00000428_SerializeAndDeserializeNaryTree
     {
         public void PrintSolution();
     }

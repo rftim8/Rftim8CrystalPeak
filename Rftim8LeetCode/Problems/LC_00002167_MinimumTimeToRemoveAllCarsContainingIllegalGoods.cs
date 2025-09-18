@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02167_MinimumTimeToRemoveAllCarsContainingIllegalGoods : I_02167_MinimumTimeToRemoveAllCarsContainingIllegalGoods
+    public class LC_00002167_MinimumTimeToRemoveAllCarsContainingIllegalGoods : ILC_00002167_MinimumTimeToRemoveAllCarsContainingIllegalGoods
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02167_MinimumTimeToRemoveAllCarsContainingIllegalGoods()
+        public LC_00002167_MinimumTimeToRemoveAllCarsContainingIllegalGoods()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02167_MinimumTimeToRemoveAllCarsContainingIllegalGoods));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002167_MinimumTimeToRemoveAllCarsContainingIllegalGoods));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02167_MinimumTimeToRemoveAllCarsContainingIllegalGoods(IHost host)
+        public LC_00002167_MinimumTimeToRemoveAllCarsContainingIllegalGoods(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02167_MinimumTimeToRemoveAllCarsContainingIllegalGoods));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002167_MinimumTimeToRemoveAllCarsContainingIllegalGoods));
         }
 
         public void PrintSolution()

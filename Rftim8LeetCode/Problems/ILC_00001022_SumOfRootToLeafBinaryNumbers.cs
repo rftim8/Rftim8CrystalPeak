@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01022_SumOfRootToLeafBinaryNumbers
+    public interface ILC_00001022_SumOfRootToLeafBinaryNumbers
     {
         public void PrintSolution();
     }

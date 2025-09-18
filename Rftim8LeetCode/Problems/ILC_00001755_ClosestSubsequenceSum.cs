@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01755_ClosestSubsequenceSum
+    public interface ILC_00001755_ClosestSubsequenceSum
     {
         public void PrintSolution();
     }

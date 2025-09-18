@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01341_MovieRating
+    public interface ILC_00001341_MovieRating
     {
         public void PrintSolution();
     }

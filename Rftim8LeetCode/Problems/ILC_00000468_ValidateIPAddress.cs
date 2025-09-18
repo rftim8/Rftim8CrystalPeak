@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00468_ValidateIPAddress
+    public interface ILC_00000468_ValidateIPAddress
     {
         public void PrintSolution();
     }

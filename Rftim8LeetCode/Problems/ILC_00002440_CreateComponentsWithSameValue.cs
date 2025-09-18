@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02440_CreateComponentsWithSameValue
+    public interface ILC_00002440_CreateComponentsWithSameValue
     {
         public void PrintSolution();
     }

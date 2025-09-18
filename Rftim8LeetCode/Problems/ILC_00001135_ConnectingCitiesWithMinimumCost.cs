@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01135_ConnectingCitiesWithMinimumCost
+    public interface ILC_00001135_ConnectingCitiesWithMinimumCost
     {
         public void PrintSolution();
     }

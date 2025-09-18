@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02207_MaximizeNumberOfSubsequencesInAString
+    public interface ILC_00002207_MaximizeNumberOfSubsequencesInAString
     {
         public void PrintSolution();
     }

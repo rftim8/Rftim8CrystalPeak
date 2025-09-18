@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02973_FindNumberOfCoinsToPlaceInTreeNodes
+    public interface ILC_00002973_FindNumberOfCoinsToPlaceInTreeNodes
     {
         public void PrintSolution();
     }

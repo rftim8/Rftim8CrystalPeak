@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01485_CloneBinaryTreeWithRandomPointer
+    public interface ILC_00001485_CloneBinaryTreeWithRandomPointer
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01257_SmallestCommonRegion : I_01257_SmallestCommonRegion
+    public class LC_00001257_SmallestCommonRegion : ILC_00001257_SmallestCommonRegion
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01257_SmallestCommonRegion()
+        public LC_00001257_SmallestCommonRegion()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01257_SmallestCommonRegion));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001257_SmallestCommonRegion));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01257_SmallestCommonRegion(IHost host)
+        public LC_00001257_SmallestCommonRegion(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01257_SmallestCommonRegion));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001257_SmallestCommonRegion));
         }
 
         public void PrintSolution()

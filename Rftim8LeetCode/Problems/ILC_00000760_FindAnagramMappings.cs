@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00760_FindAnagramMappings
+    public interface ILC_00000760_FindAnagramMappings
     {
         public void PrintSolution();
     }

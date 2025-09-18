@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01303_FindTheTeamSize
+    public interface ILC_00001303_FindTheTeamSize
     {
         public void PrintSolution();
     }

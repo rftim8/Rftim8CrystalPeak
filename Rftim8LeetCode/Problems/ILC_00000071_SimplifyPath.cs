@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00071_SimplifyPath
+    public interface ILC_00000071_SimplifyPath
     {
         public void PrintSolution();
     }

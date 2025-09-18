@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01089_DuplicateZeros
+    public interface ILC_00001089_DuplicateZeros
     {
         public void PrintSolution();
     }

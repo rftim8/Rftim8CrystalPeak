@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02052_MinimumCostToSeparateSentenceIntoRows : I_02052_MinimumCostToSeparateSentenceIntoRows
+    public class LC_00002052_MinimumCostToSeparateSentenceIntoRows : ILC_00002052_MinimumCostToSeparateSentenceIntoRows
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02052_MinimumCostToSeparateSentenceIntoRows()
+        public LC_00002052_MinimumCostToSeparateSentenceIntoRows()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02052_MinimumCostToSeparateSentenceIntoRows));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002052_MinimumCostToSeparateSentenceIntoRows));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02052_MinimumCostToSeparateSentenceIntoRows(IHost host)
+        public LC_00002052_MinimumCostToSeparateSentenceIntoRows(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02052_MinimumCostToSeparateSentenceIntoRows));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002052_MinimumCostToSeparateSentenceIntoRows));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00010_RegularExpressionMatching : I_00010_RegularExpressionMatching
+    public class LC_00000010_RegularExpressionMatching : ILC_00000010_RegularExpressionMatching
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00010_RegularExpressionMatching()
+        public LC_00000010_RegularExpressionMatching()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00010_RegularExpressionMatching));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000010_RegularExpressionMatching));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00010_RegularExpressionMatching(IHost host)
+        public LC_00000010_RegularExpressionMatching(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00010_RegularExpressionMatching));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000010_RegularExpressionMatching));
         }
 
         public void PrintSolution()

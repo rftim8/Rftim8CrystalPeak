@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00081_SearchInRotatedSortedArrayII : I_00081_SearchInRotatedSortedArrayII
+    public class LC_00000081_SearchInRotatedSortedArrayII : ILC_00000081_SearchInRotatedSortedArrayII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00081_SearchInRotatedSortedArrayII()
+        public LC_00000081_SearchInRotatedSortedArrayII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00081_SearchInRotatedSortedArrayII));
-            Input = [.. RftResource._00081_SearchInRotatedSortedArrayII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000081_SearchInRotatedSortedArrayII));
+            Input = [.. RftResource.LC_00000081_SearchInRotatedSortedArrayII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00081_SearchInRotatedSortedArrayII(IHost host)
+        public LC_00000081_SearchInRotatedSortedArrayII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00081_SearchInRotatedSortedArrayII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000081_SearchInRotatedSortedArrayII));
             DataCollector();
         }
 

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01771_MaximizePalindromeLengthFromSubsequences
+    public interface ILC_00001771_MaximizePalindromeLengthFromSubsequences
     {
         public void PrintSolution();
     }

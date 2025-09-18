@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01134_ArmstrongNumber
+    public interface ILC_00001134_ArmstrongNumber
     {
         public void PrintSolution();
     }

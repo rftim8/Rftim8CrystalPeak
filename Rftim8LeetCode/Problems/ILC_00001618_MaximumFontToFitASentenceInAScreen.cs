@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01618_MaximumFontToFitASentenceInAScreen
+    public interface ILC_00001618_MaximumFontToFitASentenceInAScreen
     {
         public void PrintSolution();
     }

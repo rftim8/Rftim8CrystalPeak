@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03077_MaximumStrengthOfKDisjointSubarrays : I_03077_MaximumStrengthOfKDisjointSubarrays
+    public class LC_00003077_MaximumStrengthOfKDisjointSubarrays : ILC_00003077_MaximumStrengthOfKDisjointSubarrays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03077_MaximumStrengthOfKDisjointSubarrays()
+        public LC_00003077_MaximumStrengthOfKDisjointSubarrays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03077_MaximumStrengthOfKDisjointSubarrays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003077_MaximumStrengthOfKDisjointSubarrays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03077_MaximumStrengthOfKDisjointSubarrays(IHost host)
+        public LC_00003077_MaximumStrengthOfKDisjointSubarrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03077_MaximumStrengthOfKDisjointSubarrays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003077_MaximumStrengthOfKDisjointSubarrays));
         }
 
         public void PrintSolution()

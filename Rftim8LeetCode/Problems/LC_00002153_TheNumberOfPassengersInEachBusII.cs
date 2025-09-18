@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02153_TheNumberOfPassengersInEachBusII : I_02153_TheNumberOfPassengersInEachBusII
+    public class LC_00002153_TheNumberOfPassengersInEachBusII : ILC_00002153_TheNumberOfPassengersInEachBusII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02153_TheNumberOfPassengersInEachBusII()
+        public LC_00002153_TheNumberOfPassengersInEachBusII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02153_TheNumberOfPassengersInEachBusII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002153_TheNumberOfPassengersInEachBusII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02153_TheNumberOfPassengersInEachBusII(IHost host)
+        public LC_00002153_TheNumberOfPassengersInEachBusII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02153_TheNumberOfPassengersInEachBusII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002153_TheNumberOfPassengersInEachBusII));
         }
 
         public void PrintSolution()

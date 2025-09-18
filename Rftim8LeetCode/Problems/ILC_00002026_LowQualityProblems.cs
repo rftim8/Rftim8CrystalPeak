@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02026_LowQualityProblems
+    public interface ILC_00002026_LowQualityProblems
     {
         public void PrintSolution();
     }

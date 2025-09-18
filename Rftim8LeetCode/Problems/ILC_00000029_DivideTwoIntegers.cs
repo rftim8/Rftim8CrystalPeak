@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00029_DivideTwoIntegers
+    public interface ILC_00000029_DivideTwoIntegers
     {
         public void PrintSolution();
     }

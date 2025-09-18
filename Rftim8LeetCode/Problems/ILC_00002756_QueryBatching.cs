@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02756_QueryBatching
+    public interface ILC_00002756_QueryBatching
     {
         public void PrintSolution();
     }

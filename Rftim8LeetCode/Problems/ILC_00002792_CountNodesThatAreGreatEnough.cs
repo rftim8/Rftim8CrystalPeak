@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02792_CountNodesThatAreGreatEnough
+    public interface ILC_00002792_CountNodesThatAreGreatEnough
     {
         public void PrintSolution();
     }

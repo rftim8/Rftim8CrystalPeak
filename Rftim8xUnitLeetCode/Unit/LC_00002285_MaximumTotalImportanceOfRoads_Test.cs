@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02285_MaximumTotalImportanceOfRoads_Test
+    public class LC_00002285_MaximumTotalImportanceOfRoads_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02285_MaximumTotalImportanceOfRoads))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02285_MaximumTotalImportanceOfRoads))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02285_MaximumTotalImportanceOfRoads))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002285_MaximumTotalImportanceOfRoads))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002285_MaximumTotalImportanceOfRoads))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002285_MaximumTotalImportanceOfRoads))![1]);
 
-        public static TheoryData<List<string>, int> _02285_MaximumTotalImportanceOfRoadsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002285_MaximumTotalImportanceOfRoadsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02285_MaximumTotalImportanceOfRoadsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002285_MaximumTotalImportanceOfRoadsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02285_MaximumTotalImportanceOfRoadsPartOne_Data))]
+        [MemberData(nameof(LC_00002285_MaximumTotalImportanceOfRoadsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02285_MaximumTotalImportanceOfRoads.PartOne_Test(a0);
+            int actual = LC_00002285_MaximumTotalImportanceOfRoads.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02285_MaximumTotalImportanceOfRoadsPartTwo_Data))]
+        [MemberData(nameof(LC_00002285_MaximumTotalImportanceOfRoadsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02285_MaximumTotalImportanceOfRoads.PartTwo_Test(a0);
+            int actual = LC_00002285_MaximumTotalImportanceOfRoads.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

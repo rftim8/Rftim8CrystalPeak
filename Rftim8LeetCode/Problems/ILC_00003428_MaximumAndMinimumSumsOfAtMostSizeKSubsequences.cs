@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03428_MaximumAndMinimumSumsOfAtMostSizeKSubsequences
+    public interface ILC_00003428_MaximumAndMinimumSumsOfAtMostSizeKSubsequences
     {
         public void PrintSolution();
     }

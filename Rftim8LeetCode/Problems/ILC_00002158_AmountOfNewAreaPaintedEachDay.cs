@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02158_AmountOfNewAreaPaintedEachDay
+    public interface ILC_00002158_AmountOfNewAreaPaintedEachDay
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03055_TopPercentileFraud
+    public interface ILC_00003055_TopPercentileFraud
     {
         public void PrintSolution();
     }

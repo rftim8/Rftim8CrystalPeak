@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02410_MaximumMatchingOfPlayersWithTrainers
+    public interface ILC_00002410_MaximumMatchingOfPlayersWithTrainers
     {
         public void PrintSolution();
     }

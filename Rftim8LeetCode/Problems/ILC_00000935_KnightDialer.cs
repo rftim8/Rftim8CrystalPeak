@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00935_KnightDialer
+    public interface ILC_00000935_KnightDialer
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00807_MaxIncreaseToKeepCitySkyline
+    public interface ILC_00000807_MaxIncreaseToKeepCitySkyline
     {
         public void PrintSolution();
     }

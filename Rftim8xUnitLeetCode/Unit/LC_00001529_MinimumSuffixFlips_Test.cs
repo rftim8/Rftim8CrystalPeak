@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01529_MinimumSuffixFlips_Test
+    public class LC_00001529_MinimumSuffixFlips_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01529_MinimumSuffixFlips))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01529_MinimumSuffixFlips))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01529_MinimumSuffixFlips))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001529_MinimumSuffixFlips))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001529_MinimumSuffixFlips))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001529_MinimumSuffixFlips))![1]);
 
-        public static TheoryData<List<string>, int> _01529_MinimumSuffixFlipsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001529_MinimumSuffixFlipsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01529_MinimumSuffixFlipsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001529_MinimumSuffixFlipsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01529_MinimumSuffixFlipsPartOne_Data))]
+        [MemberData(nameof(LC_00001529_MinimumSuffixFlipsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01529_MinimumSuffixFlips.PartOne_Test(a0);
+            int actual = LC_00001529_MinimumSuffixFlips.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01529_MinimumSuffixFlipsPartTwo_Data))]
+        [MemberData(nameof(LC_00001529_MinimumSuffixFlipsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01529_MinimumSuffixFlips.PartTwo_Test(a0);
+            int actual = LC_00001529_MinimumSuffixFlips.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

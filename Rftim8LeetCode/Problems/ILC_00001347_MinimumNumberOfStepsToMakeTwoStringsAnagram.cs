@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01347_MinimumNumberOfStepsToMakeTwoStringsAnagram
+    public interface ILC_00001347_MinimumNumberOfStepsToMakeTwoStringsAnagram
     {
         public void PrintSolution();
     }

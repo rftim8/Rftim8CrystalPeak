@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00932_BeautifulArray : I_00932_BeautifulArray
+    public class LC_00000932_BeautifulArray : ILC_00000932_BeautifulArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00932_BeautifulArray()
+        public LC_00000932_BeautifulArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00932_BeautifulArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000932_BeautifulArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00932_BeautifulArray(IHost host)
+        public LC_00000932_BeautifulArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00932_BeautifulArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000932_BeautifulArray));
         }
 
         public void PrintSolution()

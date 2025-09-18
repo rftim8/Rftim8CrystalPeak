@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03550_SmallestIndexWithDigitSumEqualToIndex
+    public interface ILC_00003550_SmallestIndexWithDigitSumEqualToIndex
     {
         public void PrintSolution();
     }

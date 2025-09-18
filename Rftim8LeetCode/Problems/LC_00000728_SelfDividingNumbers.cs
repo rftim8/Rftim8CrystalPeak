@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00728_SelfDividingNumbers : I_00728_SelfDividingNumbers
+    public class LC_00000728_SelfDividingNumbers : ILC_00000728_SelfDividingNumbers
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00728_SelfDividingNumbers()
+        public LC_00000728_SelfDividingNumbers()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00728_SelfDividingNumbers));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000728_SelfDividingNumbers));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00728_SelfDividingNumbers(IHost host)
+        public LC_00000728_SelfDividingNumbers(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00728_SelfDividingNumbers));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000728_SelfDividingNumbers));
         }
 
         public void PrintSolution()

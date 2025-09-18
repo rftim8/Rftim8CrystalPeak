@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00600_NonnegativeIntegersWithoutConsecutiveOnes
+    public interface ILC_00000600_NonnegativeIntegersWithoutConsecutiveOnes
     {
         public void PrintSolution();
     }

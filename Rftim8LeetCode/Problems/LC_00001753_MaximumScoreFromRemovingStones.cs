@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01753_MaximumScoreFromRemovingStones : I_01753_MaximumScoreFromRemovingStones
+    public class LC_00001753_MaximumScoreFromRemovingStones : ILC_00001753_MaximumScoreFromRemovingStones
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01753_MaximumScoreFromRemovingStones()
+        public LC_00001753_MaximumScoreFromRemovingStones()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01753_MaximumScoreFromRemovingStones));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001753_MaximumScoreFromRemovingStones));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01753_MaximumScoreFromRemovingStones(IHost host)
+        public LC_00001753_MaximumScoreFromRemovingStones(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01753_MaximumScoreFromRemovingStones));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001753_MaximumScoreFromRemovingStones));
         }
 
         public void PrintSolution()

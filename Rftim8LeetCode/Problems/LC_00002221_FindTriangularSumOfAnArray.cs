@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02221_FindTriangularSumOfAnArray : I_02221_FindTriangularSumOfAnArray
+    public class LC_00002221_FindTriangularSumOfAnArray : ILC_00002221_FindTriangularSumOfAnArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02221_FindTriangularSumOfAnArray()
+        public LC_00002221_FindTriangularSumOfAnArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02221_FindTriangularSumOfAnArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002221_FindTriangularSumOfAnArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02221_FindTriangularSumOfAnArray(IHost host)
+        public LC_00002221_FindTriangularSumOfAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02221_FindTriangularSumOfAnArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002221_FindTriangularSumOfAnArray));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02762_ContinuousSubarrays
+    public interface ILC_00002762_ContinuousSubarrays
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01356_SortIntegersByTheNumberOf1Bits
+    public interface ILC_00001356_SortIntegersByTheNumberOf1Bits
     {
         public void PrintSolution();
     }

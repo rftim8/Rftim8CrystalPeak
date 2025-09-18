@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02789_LargestElementInAnArrayAfterMergeOperations
+    public interface ILC_00002789_LargestElementInAnArrayAfterMergeOperations
     {
         public void PrintSolution();
     }

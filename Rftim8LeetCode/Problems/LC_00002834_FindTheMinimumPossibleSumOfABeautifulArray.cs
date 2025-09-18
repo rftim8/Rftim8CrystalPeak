@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02834_FindTheMinimumPossibleSumOfABeautifulArray : I_02834_FindTheMinimumPossibleSumOfABeautifulArray
+    public class LC_00002834_FindTheMinimumPossibleSumOfABeautifulArray : ILC_00002834_FindTheMinimumPossibleSumOfABeautifulArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02834_FindTheMinimumPossibleSumOfABeautifulArray()
+        public LC_00002834_FindTheMinimumPossibleSumOfABeautifulArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02834_FindTheMinimumPossibleSumOfABeautifulArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002834_FindTheMinimumPossibleSumOfABeautifulArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02834_FindTheMinimumPossibleSumOfABeautifulArray(IHost host)
+        public LC_00002834_FindTheMinimumPossibleSumOfABeautifulArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02834_FindTheMinimumPossibleSumOfABeautifulArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002834_FindTheMinimumPossibleSumOfABeautifulArray));
         }
 
         public void PrintSolution()

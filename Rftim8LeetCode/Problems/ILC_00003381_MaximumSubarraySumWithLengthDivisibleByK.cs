@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03381_MaximumSubarraySumWithLengthDivisibleByK
+    public interface ILC_00003381_MaximumSubarraySumWithLengthDivisibleByK
     {
         public void PrintSolution();
     }

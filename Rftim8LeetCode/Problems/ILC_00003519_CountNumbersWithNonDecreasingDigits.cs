@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03519_CountNumbersWithNonDecreasingDigits
+    public interface ILC_00003519_CountNumbersWithNonDecreasingDigits
     {
         public void PrintSolution();
     }

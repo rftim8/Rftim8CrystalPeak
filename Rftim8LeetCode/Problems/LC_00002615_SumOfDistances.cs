@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02615_SumOfDistances : I_02615_SumOfDistances
+    public class LC_00002615_SumOfDistances : ILC_00002615_SumOfDistances
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02615_SumOfDistances()
+        public LC_00002615_SumOfDistances()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02615_SumOfDistances));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002615_SumOfDistances));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02615_SumOfDistances(IHost host)
+        public LC_00002615_SumOfDistances(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02615_SumOfDistances));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002615_SumOfDistances));
         }
 
         public void PrintSolution()

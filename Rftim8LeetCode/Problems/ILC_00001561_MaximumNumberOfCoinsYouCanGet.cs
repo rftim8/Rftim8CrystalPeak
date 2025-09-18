@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01561_MaximumNumberOfCoinsYouCanGet
+    public interface ILC_00001561_MaximumNumberOfCoinsYouCanGet
     {
         public void PrintSolution();
     }

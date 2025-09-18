@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01707_MaximumXORWithAnElementFromArray
+    public interface ILC_00001707_MaximumXORWithAnElementFromArray
     {
         public void PrintSolution();
     }

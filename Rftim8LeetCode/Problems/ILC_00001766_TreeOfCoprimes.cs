@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01766_TreeOfCoprimes
+    public interface ILC_00001766_TreeOfCoprimes
     {
         public void PrintSolution();
     }

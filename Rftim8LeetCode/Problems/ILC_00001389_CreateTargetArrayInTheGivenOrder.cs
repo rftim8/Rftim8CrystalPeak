@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01389_CreateTargetArrayInTheGivenOrder
+    public interface ILC_00001389_CreateTargetArrayInTheGivenOrder
     {
         public void PrintSolution();
     }

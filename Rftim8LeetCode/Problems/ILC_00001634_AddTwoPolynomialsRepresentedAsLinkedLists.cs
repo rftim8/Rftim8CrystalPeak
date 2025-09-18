@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01634_AddTwoPolynomialsRepresentedAsLinkedLists
+    public interface ILC_00001634_AddTwoPolynomialsRepresentedAsLinkedLists
     {
         public void PrintSolution();
     }

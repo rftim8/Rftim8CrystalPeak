@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01496_PathCrossing : I_01496_PathCrossing
+    public class LC_00001496_PathCrossing : ILC_00001496_PathCrossing
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01496_PathCrossing()
+        public LC_00001496_PathCrossing()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01496_PathCrossing));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001496_PathCrossing));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01496_PathCrossing(IHost host)
+        public LC_00001496_PathCrossing(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01496_PathCrossing));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001496_PathCrossing));
         }
 
         public void PrintSolution()

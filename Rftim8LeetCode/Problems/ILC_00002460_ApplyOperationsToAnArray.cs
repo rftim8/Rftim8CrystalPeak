@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02460_ApplyOperationsToAnArray
+    public interface ILC_00002460_ApplyOperationsToAnArray
     {
         public void PrintSolution();
     }

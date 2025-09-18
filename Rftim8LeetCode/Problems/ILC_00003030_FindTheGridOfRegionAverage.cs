@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03030_FindTheGridOfRegionAverage
+    public interface ILC_00003030_FindTheGridOfRegionAverage
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02005_SubtreeRemovalGameWithFibonacciTree
+    public interface ILC_00002005_SubtreeRemovalGameWithFibonacciTree
     {
         public void PrintSolution();
     }

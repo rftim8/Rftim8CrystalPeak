@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01773_CountItemsMatchingARule
+    public interface ILC_00001773_CountItemsMatchingARule
     {
         public void PrintSolution();
     }

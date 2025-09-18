@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00749_ContainVirus
+    public interface ILC_00000749_ContainVirus
     {
         public void PrintSolution();
     }

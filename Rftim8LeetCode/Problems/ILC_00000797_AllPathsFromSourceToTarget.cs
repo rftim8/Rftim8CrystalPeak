@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00797_AllPathsFromSourceToTarget
+    public interface ILC_00000797_AllPathsFromSourceToTarget
     {
         public void PrintSolution();
     }

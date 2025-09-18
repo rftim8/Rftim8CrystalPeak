@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01927_SumGame : I_01927_SumGame
+    public class LC_00001927_SumGame : ILC_00001927_SumGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01927_SumGame()
+        public LC_00001927_SumGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01927_SumGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001927_SumGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01927_SumGame(IHost host)
+        public LC_00001927_SumGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01927_SumGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001927_SumGame));
         }
 
         public void PrintSolution()

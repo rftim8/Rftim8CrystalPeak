@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03537_FillASpecialGrid : I_03537_FillASpecialGrid
+    public class LC_00003537_FillASpecialGrid : ILC_00003537_FillASpecialGrid
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03537_FillASpecialGrid()
+        public LC_00003537_FillASpecialGrid()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03537_FillASpecialGrid));
-            Input = [.. RftResource._03537_FillASpecialGrid_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003537_FillASpecialGrid));
+            Input = [.. RftResource.LC_00003537_FillASpecialGrid_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03537_FillASpecialGrid(IHost host)
+        public LC_00003537_FillASpecialGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03537_FillASpecialGrid));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003537_FillASpecialGrid));
             DataCollector();
         }
 

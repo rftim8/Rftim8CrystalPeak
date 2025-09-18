@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01716_CalculateMoneyInLeetcodeBank
+    public interface ILC_00001716_CalculateMoneyInLeetcodeBank
     {
         public void PrintSolution();
     }

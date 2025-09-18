@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02785_SortVowelsInAString : I_02785_SortVowelsInAString
+    public class LC_00002785_SortVowelsInAString : ILC_00002785_SortVowelsInAString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02785_SortVowelsInAString()
+        public LC_00002785_SortVowelsInAString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02785_SortVowelsInAString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002785_SortVowelsInAString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02785_SortVowelsInAString(IHost host)
+        public LC_00002785_SortVowelsInAString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02785_SortVowelsInAString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002785_SortVowelsInAString));
         }
 
         public void PrintSolution()

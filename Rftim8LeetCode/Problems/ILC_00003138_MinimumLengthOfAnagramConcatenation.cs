@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03138_MinimumLengthOfAnagramConcatenation
+    public interface ILC_00003138_MinimumLengthOfAnagramConcatenation
     {
         public void PrintSolution();
     }

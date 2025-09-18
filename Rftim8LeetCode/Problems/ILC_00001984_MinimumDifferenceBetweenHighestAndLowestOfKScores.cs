@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01984_MinimumDifferenceBetweenHighestAndLowestOfKScores
+    public interface ILC_00001984_MinimumDifferenceBetweenHighestAndLowestOfKScores
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02531_MakeNumberOfDistinctCharactersEqual : I_02531_MakeNumberOfDistinctCharactersEqual
+    public class LC_00002531_MakeNumberOfDistinctCharactersEqual : ILC_00002531_MakeNumberOfDistinctCharactersEqual
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02531_MakeNumberOfDistinctCharactersEqual()
+        public LC_00002531_MakeNumberOfDistinctCharactersEqual()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02531_MakeNumberOfDistinctCharactersEqual));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002531_MakeNumberOfDistinctCharactersEqual));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02531_MakeNumberOfDistinctCharactersEqual(IHost host)
+        public LC_00002531_MakeNumberOfDistinctCharactersEqual(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02531_MakeNumberOfDistinctCharactersEqual));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002531_MakeNumberOfDistinctCharactersEqual));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02349_DesignANumberContainerSystem
+    public interface ILC_00002349_DesignANumberContainerSystem
     {
         public void PrintSolution();
     }

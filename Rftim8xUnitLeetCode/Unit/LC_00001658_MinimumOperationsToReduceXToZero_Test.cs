@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01658_MinimumOperationsToReduceXToZero_Test
+    public class LC_00001658_MinimumOperationsToReduceXToZero_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01658_MinimumOperationsToReduceXToZero))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01658_MinimumOperationsToReduceXToZero))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01658_MinimumOperationsToReduceXToZero))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001658_MinimumOperationsToReduceXToZero))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001658_MinimumOperationsToReduceXToZero))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001658_MinimumOperationsToReduceXToZero))![1]);
 
-        public static TheoryData<List<string>, int> _01658_MinimumOperationsToReduceXToZeroPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001658_MinimumOperationsToReduceXToZeroPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01658_MinimumOperationsToReduceXToZeroPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001658_MinimumOperationsToReduceXToZeroPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01658_MinimumOperationsToReduceXToZeroPartOne_Data))]
+        [MemberData(nameof(LC_00001658_MinimumOperationsToReduceXToZeroPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01658_MinimumOperationsToReduceXToZero.PartOne_Test(a0);
+            int actual = LC_00001658_MinimumOperationsToReduceXToZero.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01658_MinimumOperationsToReduceXToZeroPartTwo_Data))]
+        [MemberData(nameof(LC_00001658_MinimumOperationsToReduceXToZeroPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01658_MinimumOperationsToReduceXToZero.PartTwo_Test(a0);
+            int actual = LC_00001658_MinimumOperationsToReduceXToZero.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

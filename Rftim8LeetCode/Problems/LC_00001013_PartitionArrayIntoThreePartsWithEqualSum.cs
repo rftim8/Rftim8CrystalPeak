@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01013_PartitionArrayIntoThreePartsWithEqualSum : I_01013_PartitionArrayIntoThreePartsWithEqualSum
+    public class LC_00001013_PartitionArrayIntoThreePartsWithEqualSum : ILC_00001013_PartitionArrayIntoThreePartsWithEqualSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01013_PartitionArrayIntoThreePartsWithEqualSum()
+        public LC_00001013_PartitionArrayIntoThreePartsWithEqualSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01013_PartitionArrayIntoThreePartsWithEqualSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001013_PartitionArrayIntoThreePartsWithEqualSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01013_PartitionArrayIntoThreePartsWithEqualSum(IHost host)
+        public LC_00001013_PartitionArrayIntoThreePartsWithEqualSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01013_PartitionArrayIntoThreePartsWithEqualSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001013_PartitionArrayIntoThreePartsWithEqualSum));
         }
 
         public void PrintSolution()

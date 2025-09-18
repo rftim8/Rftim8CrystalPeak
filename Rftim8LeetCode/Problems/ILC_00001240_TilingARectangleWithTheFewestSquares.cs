@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01240_TilingARectangleWithTheFewestSquares
+    public interface ILC_00001240_TilingARectangleWithTheFewestSquares
     {
         public void PrintSolution();
     }

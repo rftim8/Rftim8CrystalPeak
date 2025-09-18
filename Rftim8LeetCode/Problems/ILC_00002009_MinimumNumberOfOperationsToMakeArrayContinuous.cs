@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02009_MinimumNumberOfOperationsToMakeArrayContinuous
+    public interface ILC_00002009_MinimumNumberOfOperationsToMakeArrayContinuous
     {
         public void PrintSolution();
     }

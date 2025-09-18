@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03230_CustomerPurchasingBehaviorAnalysis
+    public interface ILC_00003230_CustomerPurchasingBehaviorAnalysis
     {
         public void PrintSolution();
     }

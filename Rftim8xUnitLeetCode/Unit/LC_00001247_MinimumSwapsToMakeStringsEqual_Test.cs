@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01247_MinimumSwapsToMakeStringsEqual_Test
+    public class LC_00001247_MinimumSwapsToMakeStringsEqual_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01247_MinimumSwapsToMakeStringsEqual))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01247_MinimumSwapsToMakeStringsEqual))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01247_MinimumSwapsToMakeStringsEqual))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001247_MinimumSwapsToMakeStringsEqual))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001247_MinimumSwapsToMakeStringsEqual))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001247_MinimumSwapsToMakeStringsEqual))![1]);
 
-        public static TheoryData<List<string>, int> _01247_MinimumSwapsToMakeStringsEqualPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001247_MinimumSwapsToMakeStringsEqualPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01247_MinimumSwapsToMakeStringsEqualPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001247_MinimumSwapsToMakeStringsEqualPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01247_MinimumSwapsToMakeStringsEqualPartOne_Data))]
+        [MemberData(nameof(LC_00001247_MinimumSwapsToMakeStringsEqualPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01247_MinimumSwapsToMakeStringsEqual.PartOne_Test(a0);
+            int actual = LC_00001247_MinimumSwapsToMakeStringsEqual.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01247_MinimumSwapsToMakeStringsEqualPartTwo_Data))]
+        [MemberData(nameof(LC_00001247_MinimumSwapsToMakeStringsEqualPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01247_MinimumSwapsToMakeStringsEqual.PartTwo_Test(a0);
+            int actual = LC_00001247_MinimumSwapsToMakeStringsEqual.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

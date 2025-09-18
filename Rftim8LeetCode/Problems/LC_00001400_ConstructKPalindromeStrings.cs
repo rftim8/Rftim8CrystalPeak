@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01400_ConstructKPalindromeStrings : I_01400_ConstructKPalindromeStrings
+    public class LC_00001400_ConstructKPalindromeStrings : ILC_00001400_ConstructKPalindromeStrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01400_ConstructKPalindromeStrings()
+        public LC_00001400_ConstructKPalindromeStrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01400_ConstructKPalindromeStrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001400_ConstructKPalindromeStrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01400_ConstructKPalindromeStrings(IHost host)
+        public LC_00001400_ConstructKPalindromeStrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01400_ConstructKPalindromeStrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001400_ConstructKPalindromeStrings));
         }
 
         public void PrintSolution()

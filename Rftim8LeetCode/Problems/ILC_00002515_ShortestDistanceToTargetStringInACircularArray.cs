@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02515_ShortestDistanceToTargetStringInACircularArray
+    public interface ILC_00002515_ShortestDistanceToTargetStringInACircularArray
     {
         public void PrintSolution();
     }

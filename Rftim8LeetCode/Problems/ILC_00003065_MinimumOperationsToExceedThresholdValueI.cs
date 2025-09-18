@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03065_MinimumOperationsToExceedThresholdValueI
+    public interface ILC_00003065_MinimumOperationsToExceedThresholdValueI
     {
         public void PrintSolution();
     }

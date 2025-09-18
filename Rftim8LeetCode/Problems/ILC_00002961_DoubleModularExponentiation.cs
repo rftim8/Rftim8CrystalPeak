@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02961_DoubleModularExponentiation
+    public interface ILC_00002961_DoubleModularExponentiation
     {
         public void PrintSolution();
     }

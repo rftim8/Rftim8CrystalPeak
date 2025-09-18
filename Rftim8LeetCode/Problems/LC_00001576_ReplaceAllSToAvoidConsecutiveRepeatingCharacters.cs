@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters : I_01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters
+    public class LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters : ILC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters()
+        public LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters));
-            Input = [.. RftResource._01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters));
+            Input = [.. RftResource.LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters(IHost host)
+        public LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters));
             DataCollector();
         }
 

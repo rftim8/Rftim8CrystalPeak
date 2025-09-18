@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02118_BuildTheEquation
+    public interface ILC_00002118_BuildTheEquation
     {
         public void PrintSolution();
     }

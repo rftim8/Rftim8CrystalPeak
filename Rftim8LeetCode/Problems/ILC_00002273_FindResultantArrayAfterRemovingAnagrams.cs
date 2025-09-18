@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02273_FindResultantArrayAfterRemovingAnagrams
+    public interface ILC_00002273_FindResultantArrayAfterRemovingAnagrams
     {
         public void PrintSolution();
     }

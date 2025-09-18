@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01302_DeepestLeavesSum
+    public interface ILC_00001302_DeepestLeavesSum
     {
         public void PrintSolution();
     }

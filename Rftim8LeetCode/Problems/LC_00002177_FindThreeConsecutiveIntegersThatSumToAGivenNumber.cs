@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber : I_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber
+    public class LC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber : ILC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber()
+        public LC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber));
-            Input = [.. RftResource._02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber));
+            Input = [.. RftResource.LC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber(IHost host)
+        public LC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02177_FindThreeConsecutiveIntegersThatSumToAGivenNumber));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002177_FindThreeConsecutiveIntegersThatSumToAGivenNumber));
             DataCollector();
         }
 

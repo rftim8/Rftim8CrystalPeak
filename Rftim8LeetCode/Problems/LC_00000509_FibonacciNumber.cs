@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00509_FibonacciNumber : I_00509_FibonacciNumber
+    public class LC_00000509_FibonacciNumber : ILC_00000509_FibonacciNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00509_FibonacciNumber()
+        public LC_00000509_FibonacciNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00509_FibonacciNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000509_FibonacciNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00509_FibonacciNumber(IHost host)
+        public LC_00000509_FibonacciNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00509_FibonacciNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000509_FibonacciNumber));
         }
 
         public void PrintSolution()

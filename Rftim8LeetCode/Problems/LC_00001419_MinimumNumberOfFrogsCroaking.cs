@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01419_MinimumNumberOfFrogsCroaking : I_01419_MinimumNumberOfFrogsCroaking
+    public class LC_00001419_MinimumNumberOfFrogsCroaking : ILC_00001419_MinimumNumberOfFrogsCroaking
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01419_MinimumNumberOfFrogsCroaking()
+        public LC_00001419_MinimumNumberOfFrogsCroaking()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01419_MinimumNumberOfFrogsCroaking));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001419_MinimumNumberOfFrogsCroaking));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01419_MinimumNumberOfFrogsCroaking(IHost host)
+        public LC_00001419_MinimumNumberOfFrogsCroaking(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01419_MinimumNumberOfFrogsCroaking));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001419_MinimumNumberOfFrogsCroaking));
         }
 
         public void PrintSolution()

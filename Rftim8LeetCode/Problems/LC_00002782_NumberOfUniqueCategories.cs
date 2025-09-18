@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02782_NumberOfUniqueCategories : I_02782_NumberOfUniqueCategories
+    public class LC_00002782_NumberOfUniqueCategories : ILC_00002782_NumberOfUniqueCategories
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02782_NumberOfUniqueCategories()
+        public LC_00002782_NumberOfUniqueCategories()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02782_NumberOfUniqueCategories));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002782_NumberOfUniqueCategories));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02782_NumberOfUniqueCategories(IHost host)
+        public LC_00002782_NumberOfUniqueCategories(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02782_NumberOfUniqueCategories));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002782_NumberOfUniqueCategories));
         }
 
         public void PrintSolution()

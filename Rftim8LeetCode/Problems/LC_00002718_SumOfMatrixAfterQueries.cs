@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02718_SumOfMatrixAfterQueries : I_02718_SumOfMatrixAfterQueries
+    public class LC_00002718_SumOfMatrixAfterQueries : ILC_00002718_SumOfMatrixAfterQueries
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02718_SumOfMatrixAfterQueries()
+        public LC_00002718_SumOfMatrixAfterQueries()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02718_SumOfMatrixAfterQueries));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002718_SumOfMatrixAfterQueries));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02718_SumOfMatrixAfterQueries(IHost host)
+        public LC_00002718_SumOfMatrixAfterQueries(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02718_SumOfMatrixAfterQueries));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002718_SumOfMatrixAfterQueries));
         }
 
         public void PrintSolution()

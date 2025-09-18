@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02065_MaximumPathQualityOfAGraph
+    public interface ILC_00002065_MaximumPathQualityOfAGraph
     {
         public void PrintSolution();
     }

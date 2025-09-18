@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02367_NumberOfArithmeticTriplets
+    public interface ILC_00002367_NumberOfArithmeticTriplets
     {
         public void PrintSolution();
     }

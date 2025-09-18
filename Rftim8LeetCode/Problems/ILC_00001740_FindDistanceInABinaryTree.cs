@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01740_FindDistanceInABinaryTree
+    public interface ILC_00001740_FindDistanceInABinaryTree
     {
         public void PrintSolution();
     }

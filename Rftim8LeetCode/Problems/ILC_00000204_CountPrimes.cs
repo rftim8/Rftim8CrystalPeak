@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00204_CountPrimes
+    public interface ILC_00000204_CountPrimes
     {
         public void PrintSolution();
     }

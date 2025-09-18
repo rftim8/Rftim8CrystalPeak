@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02209_MinimumWhiteTilesAfterCoveringWithCarpets_Test
+    public class LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpets_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02209_MinimumWhiteTilesAfterCoveringWithCarpets))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02209_MinimumWhiteTilesAfterCoveringWithCarpets))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02209_MinimumWhiteTilesAfterCoveringWithCarpets))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpets))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpets))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpets))![1]);
 
-        public static TheoryData<List<string>, int> _02209_MinimumWhiteTilesAfterCoveringWithCarpetsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpetsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02209_MinimumWhiteTilesAfterCoveringWithCarpetsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpetsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02209_MinimumWhiteTilesAfterCoveringWithCarpetsPartOne_Data))]
+        [MemberData(nameof(LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpetsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02209_MinimumWhiteTilesAfterCoveringWithCarpets.PartOne_Test(a0);
+            int actual = LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpets.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02209_MinimumWhiteTilesAfterCoveringWithCarpetsPartTwo_Data))]
+        [MemberData(nameof(LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpetsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02209_MinimumWhiteTilesAfterCoveringWithCarpets.PartTwo_Test(a0);
+            int actual = LC_00002209_MinimumWhiteTilesAfterCoveringWithCarpets.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

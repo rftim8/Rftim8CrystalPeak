@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01723_FindMinimumTimeToFinishAllJobs : I_01723_FindMinimumTimeToFinishAllJobs
+    public class LC_00001723_FindMinimumTimeToFinishAllJobs : ILC_00001723_FindMinimumTimeToFinishAllJobs
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01723_FindMinimumTimeToFinishAllJobs()
+        public LC_00001723_FindMinimumTimeToFinishAllJobs()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01723_FindMinimumTimeToFinishAllJobs));
-            Input = [.. RftResource._01723_FindMinimumTimeToFinishAllJobs_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001723_FindMinimumTimeToFinishAllJobs));
+            Input = [.. RftResource.LC_00001723_FindMinimumTimeToFinishAllJobs_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01723_FindMinimumTimeToFinishAllJobs(IHost host)
+        public LC_00001723_FindMinimumTimeToFinishAllJobs(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01723_FindMinimumTimeToFinishAllJobs));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001723_FindMinimumTimeToFinishAllJobs));
             DataCollector();
         }
 

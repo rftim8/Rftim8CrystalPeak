@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03074_AppleRedistributionIntoBoxes
+    public interface ILC_00003074_AppleRedistributionIntoBoxes
     {
         public void PrintSolution();
     }

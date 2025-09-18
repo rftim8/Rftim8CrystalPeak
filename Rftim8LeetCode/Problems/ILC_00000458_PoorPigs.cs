@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00458_PoorPigs
+    public interface ILC_00000458_PoorPigs
     {
         public void PrintSolution();
     }

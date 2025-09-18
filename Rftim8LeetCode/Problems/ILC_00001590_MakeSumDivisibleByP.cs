@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01590_MakeSumDivisibleByP
+    public interface ILC_00001590_MakeSumDivisibleByP
     {
         public void PrintSolution();
     }

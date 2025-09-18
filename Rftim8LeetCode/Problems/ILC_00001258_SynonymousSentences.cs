@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01258_SynonymousSentences
+    public interface ILC_00001258_SynonymousSentences
     {
         public void PrintSolution();
     }

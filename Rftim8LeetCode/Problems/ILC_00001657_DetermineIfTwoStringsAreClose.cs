@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01657_DetermineIfTwoStringsAreClose
+    public interface ILC_00001657_DetermineIfTwoStringsAreClose
     {
         public void PrintSolution();
     }

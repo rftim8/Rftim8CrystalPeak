@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00324_WiggleSortII : I_00324_WiggleSortII
+    public class LC_00000324_WiggleSortII : ILC_00000324_WiggleSortII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00324_WiggleSortII()
+        public LC_00000324_WiggleSortII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00324_WiggleSortII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000324_WiggleSortII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00324_WiggleSortII(IHost host)
+        public LC_00000324_WiggleSortII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00324_WiggleSortII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000324_WiggleSortII));
         }
 
         public void PrintSolution()

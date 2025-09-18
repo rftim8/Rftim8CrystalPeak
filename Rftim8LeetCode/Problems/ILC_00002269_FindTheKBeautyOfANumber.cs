@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02269_FindTheKBeautyOfANumber
+    public interface ILC_00002269_FindTheKBeautyOfANumber
     {
         public void PrintSolution();
     }

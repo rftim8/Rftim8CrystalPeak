@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03579_MinimumStepsToConvertStringWithOperations
+    public interface ILC_00003579_MinimumStepsToConvertStringWithOperations
     {
         public void PrintSolution();
     }

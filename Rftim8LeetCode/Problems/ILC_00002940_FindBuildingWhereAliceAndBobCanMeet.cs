@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02940_FindBuildingWhereAliceAndBobCanMeet
+    public interface ILC_00002940_FindBuildingWhereAliceAndBobCanMeet
     {
         public void PrintSolution();
     }

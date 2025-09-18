@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00535_EncodeAndDecodeTinyURL
+    public interface ILC_00000535_EncodeAndDecodeTinyURL
     {
         public void PrintSolution();
     }

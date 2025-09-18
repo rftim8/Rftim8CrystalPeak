@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01416_RestoreTheArray
+    public interface ILC_00001416_RestoreTheArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01080_InsufficientNodesInRootToLeafPaths
+    public interface ILC_00001080_InsufficientNodesInRootToLeafPaths
     {
         public void PrintSolution();
     }

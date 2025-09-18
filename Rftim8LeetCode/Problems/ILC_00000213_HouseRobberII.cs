@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00213_HouseRobberII
+    public interface ILC_00000213_HouseRobberII
     {
         public void PrintSolution();
     }

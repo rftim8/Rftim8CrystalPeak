@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01184_DistanceBetweenBusStops
+    public interface ILC_00001184_DistanceBetweenBusStops
     {
         public void PrintSolution();
     }

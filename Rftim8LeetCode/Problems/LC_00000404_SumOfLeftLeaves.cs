@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00404_SumOfLeftLeaves : I_00404_SumOfLeftLeaves
+    public class LC_00000404_SumOfLeftLeaves : ILC_00000404_SumOfLeftLeaves
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00404_SumOfLeftLeaves()
+        public LC_00000404_SumOfLeftLeaves()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00404_SumOfLeftLeaves));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000404_SumOfLeftLeaves));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00404_SumOfLeftLeaves(IHost host)
+        public LC_00000404_SumOfLeftLeaves(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00404_SumOfLeftLeaves));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000404_SumOfLeftLeaves));
         }
 
         public void PrintSolution()

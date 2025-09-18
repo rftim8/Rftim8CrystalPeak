@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03079_FindTheSumOfEncryptedIntegers
+    public interface ILC_00003079_FindTheSumOfEncryptedIntegers
     {
         public void PrintSolution();
     }

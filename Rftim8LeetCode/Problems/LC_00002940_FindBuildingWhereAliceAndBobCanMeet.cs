@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02940_FindBuildingWhereAliceAndBobCanMeet : I_02940_FindBuildingWhereAliceAndBobCanMeet
+    public class LC_00002940_FindBuildingWhereAliceAndBobCanMeet : ILC_00002940_FindBuildingWhereAliceAndBobCanMeet
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02940_FindBuildingWhereAliceAndBobCanMeet()
+        public LC_00002940_FindBuildingWhereAliceAndBobCanMeet()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02940_FindBuildingWhereAliceAndBobCanMeet));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002940_FindBuildingWhereAliceAndBobCanMeet));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02940_FindBuildingWhereAliceAndBobCanMeet(IHost host)
+        public LC_00002940_FindBuildingWhereAliceAndBobCanMeet(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02940_FindBuildingWhereAliceAndBobCanMeet));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002940_FindBuildingWhereAliceAndBobCanMeet));
         }
 
         public void PrintSolution()

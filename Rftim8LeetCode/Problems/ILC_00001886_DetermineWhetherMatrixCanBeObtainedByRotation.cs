@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01886_DetermineWhetherMatrixCanBeObtainedByRotation
+    public interface ILC_00001886_DetermineWhetherMatrixCanBeObtainedByRotation
     {
         public void PrintSolution();
     }

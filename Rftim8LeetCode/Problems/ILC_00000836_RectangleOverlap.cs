@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00836_RectangleOverlap
+    public interface ILC_00000836_RectangleOverlap
     {
         public void PrintSolution();
     }

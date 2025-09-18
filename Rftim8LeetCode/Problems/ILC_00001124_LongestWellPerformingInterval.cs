@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01124_LongestWellPerformingInterval
+    public interface ILC_00001124_LongestWellPerformingInterval
     {
         public void PrintSolution();
     }

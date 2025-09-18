@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02132_StampingTheGrid
+    public interface ILC_00002132_StampingTheGrid
     {
         public void PrintSolution();
     }

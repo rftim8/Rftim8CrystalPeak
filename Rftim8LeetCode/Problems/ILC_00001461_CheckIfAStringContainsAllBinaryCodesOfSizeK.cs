@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01461_CheckIfAStringContainsAllBinaryCodesOfSizeK
+    public interface ILC_00001461_CheckIfAStringContainsAllBinaryCodesOfSizeK
     {
         public void PrintSolution();
     }

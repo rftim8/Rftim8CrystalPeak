@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00119_PascalsTriangleII : I_00119_PascalsTriangleII
+    public class LC_00000119_PascalsTriangleII : ILC_00000119_PascalsTriangleII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00119_PascalsTriangleII()
+        public LC_00000119_PascalsTriangleII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00119_PascalsTriangleII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000119_PascalsTriangleII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00119_PascalsTriangleII(IHost host)
+        public LC_00000119_PascalsTriangleII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00119_PascalsTriangleII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000119_PascalsTriangleII));
         }
 
         public void PrintSolution()

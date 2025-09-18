@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00098_ValidateBinarySearchTre : I_00098_ValidateBinarySearchTre
+    public class LC_00000098_ValidateBinarySearchTre : ILC_00000098_ValidateBinarySearchTre
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00098_ValidateBinarySearchTre()
+        public LC_00000098_ValidateBinarySearchTre()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00098_ValidateBinarySearchTre));
-            Input = [.. RftResource._00098_ValidateBinarySearchTre_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000098_ValidateBinarySearchTre));
+            Input = [.. RftResource.LC_00000098_ValidateBinarySearchTre_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00098_ValidateBinarySearchTre(IHost host)
+        public LC_00000098_ValidateBinarySearchTre(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00098_ValidateBinarySearchTre));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000098_ValidateBinarySearchTre));
             DataCollector();
         }
 

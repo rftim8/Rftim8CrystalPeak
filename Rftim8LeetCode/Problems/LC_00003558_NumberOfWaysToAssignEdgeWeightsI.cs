@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03558_NumberOfWaysToAssignEdgeWeightsI : I_03558_NumberOfWaysToAssignEdgeWeightsI
+    public class LC_00003558_NumberOfWaysToAssignEdgeWeightsI : ILC_00003558_NumberOfWaysToAssignEdgeWeightsI
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03558_NumberOfWaysToAssignEdgeWeightsI()
+        public LC_00003558_NumberOfWaysToAssignEdgeWeightsI()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03558_NumberOfWaysToAssignEdgeWeightsI));
-            Input = [.. RftResource._03558_NumberOfWaysToAssignEdgeWeightsI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003558_NumberOfWaysToAssignEdgeWeightsI));
+            Input = [.. RftResource.LC_00003558_NumberOfWaysToAssignEdgeWeightsI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03558_NumberOfWaysToAssignEdgeWeightsI(IHost host)
+        public LC_00003558_NumberOfWaysToAssignEdgeWeightsI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03558_NumberOfWaysToAssignEdgeWeightsI));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003558_NumberOfWaysToAssignEdgeWeightsI));
             DataCollector();
         }
 

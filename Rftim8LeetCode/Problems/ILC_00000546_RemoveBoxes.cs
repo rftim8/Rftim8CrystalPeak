@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00546_RemoveBoxes
+    public interface ILC_00000546_RemoveBoxes
     {
         public void PrintSolution();
     }

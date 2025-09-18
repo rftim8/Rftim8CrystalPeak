@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02578_SplitWithMinimumSum
+    public interface ILC_00002578_SplitWithMinimumSum
     {
         public void PrintSolution();
     }

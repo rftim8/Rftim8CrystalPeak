@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03031_MinimumTimeToRevertWordToInitialStateII
+    public interface ILC_00003031_MinimumTimeToRevertWordToInitialStateII
     {
         public void PrintSolution();
     }

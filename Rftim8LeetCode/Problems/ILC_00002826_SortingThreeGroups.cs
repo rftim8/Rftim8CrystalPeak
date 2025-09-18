@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02826_SortingThreeGroups
+    public interface ILC_00002826_SortingThreeGroups
     {
         public void PrintSolution();
     }

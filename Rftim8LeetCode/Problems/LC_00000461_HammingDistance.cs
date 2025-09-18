@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00461_HammingDistance : I_00461_HammingDistance
+    public class LC_00000461_HammingDistance : ILC_00000461_HammingDistance
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00461_HammingDistance()
+        public LC_00000461_HammingDistance()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00461_HammingDistance));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000461_HammingDistance));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00461_HammingDistance(IHost host)
+        public LC_00000461_HammingDistance(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00461_HammingDistance));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000461_HammingDistance));
         }
 
         public void PrintSolution()

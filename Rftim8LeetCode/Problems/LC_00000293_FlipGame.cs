@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00293_FlipGame : I_00293_FlipGame
+    public class LC_00000293_FlipGame : ILC_00000293_FlipGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00293_FlipGame()
+        public LC_00000293_FlipGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00293_FlipGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000293_FlipGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00293_FlipGame(IHost host)
+        public LC_00000293_FlipGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00293_FlipGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000293_FlipGame));
         }
 
         public void PrintSolution()

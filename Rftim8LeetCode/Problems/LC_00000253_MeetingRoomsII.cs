@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00253_MeetingRoomsII : I_00253_MeetingRoomsII
+    public class LC_00000253_MeetingRoomsII : ILC_00000253_MeetingRoomsII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00253_MeetingRoomsII()
+        public LC_00000253_MeetingRoomsII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00253_MeetingRoomsII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000253_MeetingRoomsII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00253_MeetingRoomsII(IHost host)
+        public LC_00000253_MeetingRoomsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00253_MeetingRoomsII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000253_MeetingRoomsII));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02036_MaximumAlternatingSubarraySum
+    public interface ILC_00002036_MaximumAlternatingSubarraySum
     {
         public void PrintSolution();
     }

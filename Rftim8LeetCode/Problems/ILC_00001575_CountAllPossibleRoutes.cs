@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01575_CountAllPossibleRoutes
+    public interface ILC_00001575_CountAllPossibleRoutes
     {
         public void PrintSolution();
     }

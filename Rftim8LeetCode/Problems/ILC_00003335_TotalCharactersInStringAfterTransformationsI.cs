@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03335_TotalCharactersInStringAfterTransformationsI
+    public interface ILC_00003335_TotalCharactersInStringAfterTransformationsI
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01700_NumberOfStudentsUnableToEatLunch
+    public interface ILC_00001700_NumberOfStudentsUnableToEatLunch
     {
         public void PrintSolution();
     }

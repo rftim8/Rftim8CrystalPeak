@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02435_PathsInMatrixWhoseSumIsDivisibleByK
+    public interface ILC_00002435_PathsInMatrixWhoseSumIsDivisibleByK
     {
         public void PrintSolution();
     }

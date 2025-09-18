@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02549_CountDistinctNumbersOnBoard
+    public interface ILC_00002549_CountDistinctNumbersOnBoard
     {
         public void PrintSolution();
     }

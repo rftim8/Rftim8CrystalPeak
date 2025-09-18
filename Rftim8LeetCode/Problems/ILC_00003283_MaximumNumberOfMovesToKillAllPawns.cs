@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03283_MaximumNumberOfMovesToKillAllPawns
+    public interface ILC_00003283_MaximumNumberOfMovesToKillAllPawns
     {
         public void PrintSolution();
     }

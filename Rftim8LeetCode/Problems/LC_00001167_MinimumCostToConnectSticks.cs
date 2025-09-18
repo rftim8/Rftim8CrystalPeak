@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01167_MinimumCostToConnectSticks : I_01167_MinimumCostToConnectSticks
+    public class LC_00001167_MinimumCostToConnectSticks : ILC_00001167_MinimumCostToConnectSticks
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01167_MinimumCostToConnectSticks()
+        public LC_00001167_MinimumCostToConnectSticks()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01167_MinimumCostToConnectSticks));
-            Input = [.. RftResource._01167_MinimumCostToConnectSticks_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001167_MinimumCostToConnectSticks));
+            Input = [.. RftResource.LC_00001167_MinimumCostToConnectSticks_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01167_MinimumCostToConnectSticks(IHost host)
+        public LC_00001167_MinimumCostToConnectSticks(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01167_MinimumCostToConnectSticks));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001167_MinimumCostToConnectSticks));
             DataCollector();
         }
 

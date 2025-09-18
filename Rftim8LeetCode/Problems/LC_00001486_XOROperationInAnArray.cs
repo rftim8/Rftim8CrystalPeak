@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01486_XOROperationInAnArray : I_01486_XOROperationInAnArray
+    public class LC_00001486_XOROperationInAnArray : ILC_00001486_XOROperationInAnArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01486_XOROperationInAnArray()
+        public LC_00001486_XOROperationInAnArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01486_XOROperationInAnArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001486_XOROperationInAnArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01486_XOROperationInAnArray(IHost host)
+        public LC_00001486_XOROperationInAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01486_XOROperationInAnArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001486_XOROperationInAnArray));
         }
 
         public void PrintSolution()

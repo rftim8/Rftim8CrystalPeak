@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00567_PermutationInString
+    public interface ILC_00000567_PermutationInString
     {
         public void PrintSolution();
     }

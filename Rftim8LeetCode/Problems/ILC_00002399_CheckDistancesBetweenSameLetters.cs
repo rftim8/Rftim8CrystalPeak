@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02399_CheckDistancesBetweenSameLetters
+    public interface ILC_00002399_CheckDistancesBetweenSameLetters
     {
         public void PrintSolution();
     }

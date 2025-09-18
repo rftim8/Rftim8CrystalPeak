@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02131_LongestPalindromeByConcatenatingTwoLetterWords
+    public interface ILC_00002131_LongestPalindromeByConcatenatingTwoLetterWords
     {
         public void PrintSolution();
     }

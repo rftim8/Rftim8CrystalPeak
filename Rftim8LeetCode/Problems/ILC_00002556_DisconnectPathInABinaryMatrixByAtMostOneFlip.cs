@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02556_DisconnectPathInABinaryMatrixByAtMostOneFlip
+    public interface ILC_00002556_DisconnectPathInABinaryMatrixByAtMostOneFlip
     {
         public void PrintSolution();
     }

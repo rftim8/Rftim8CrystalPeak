@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02459_SortArrayByMovingItemsToEmptySpace : I_02459_SortArrayByMovingItemsToEmptySpace
+    public class LC_00002459_SortArrayByMovingItemsToEmptySpace : ILC_00002459_SortArrayByMovingItemsToEmptySpace
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02459_SortArrayByMovingItemsToEmptySpace()
+        public LC_00002459_SortArrayByMovingItemsToEmptySpace()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02459_SortArrayByMovingItemsToEmptySpace));
-            Input = [.. RftResource._02459_SortArrayByMovingItemsToEmptySpace_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002459_SortArrayByMovingItemsToEmptySpace));
+            Input = [.. RftResource.LC_00002459_SortArrayByMovingItemsToEmptySpace_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02459_SortArrayByMovingItemsToEmptySpace(IHost host)
+        public LC_00002459_SortArrayByMovingItemsToEmptySpace(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02459_SortArrayByMovingItemsToEmptySpace));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002459_SortArrayByMovingItemsToEmptySpace));
             DataCollector();
         }
 

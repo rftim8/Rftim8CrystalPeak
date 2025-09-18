@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02774_ArrayUpperBound
+    public interface ILC_00002774_ArrayUpperBound
     {
         public void PrintSolution();
     }

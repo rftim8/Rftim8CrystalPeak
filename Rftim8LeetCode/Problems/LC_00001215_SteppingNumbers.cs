@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01215_SteppingNumbers : I_01215_SteppingNumbers
+    public class LC_00001215_SteppingNumbers : ILC_00001215_SteppingNumbers
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01215_SteppingNumbers()
+        public LC_00001215_SteppingNumbers()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01215_SteppingNumbers));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001215_SteppingNumbers));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01215_SteppingNumbers(IHost host)
+        public LC_00001215_SteppingNumbers(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01215_SteppingNumbers));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001215_SteppingNumbers));
         }
 
         public void PrintSolution()

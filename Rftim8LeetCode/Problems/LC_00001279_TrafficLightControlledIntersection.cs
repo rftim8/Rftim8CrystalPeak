@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01279_TrafficLightControlledIntersection : I_01279_TrafficLightControlledIntersection
+    public class LC_00001279_TrafficLightControlledIntersection : ILC_00001279_TrafficLightControlledIntersection
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01279_TrafficLightControlledIntersection()
+        public LC_00001279_TrafficLightControlledIntersection()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01279_TrafficLightControlledIntersection));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001279_TrafficLightControlledIntersection));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01279_TrafficLightControlledIntersection(IHost host)
+        public LC_00001279_TrafficLightControlledIntersection(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01279_TrafficLightControlledIntersection));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001279_TrafficLightControlledIntersection));
         }
 
         public void PrintSolution()

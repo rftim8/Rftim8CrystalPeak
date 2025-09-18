@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK : I_02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK
+    public class LC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK : ILC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK()
+        public LC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK(IHost host)
+        public LC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02997_MinimumNumberOfOperationsToMakeArrayXOREqualToK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002997_MinimumNumberOfOperationsToMakeArrayXOREqualToK));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01888_MinimumNumberOfFlipsToMakeTheBinaryStringAlternating
+    public interface ILC_00001888_MinimumNumberOfFlipsToMakeTheBinaryStringAlternating
     {
         public void PrintSolution();
     }

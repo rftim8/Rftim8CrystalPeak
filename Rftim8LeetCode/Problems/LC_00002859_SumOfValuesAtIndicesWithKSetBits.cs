@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02859_SumOfValuesAtIndicesWithKSetBits : I_02859_SumOfValuesAtIndicesWithKSetBits
+    public class LC_00002859_SumOfValuesAtIndicesWithKSetBits : ILC_00002859_SumOfValuesAtIndicesWithKSetBits
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02859_SumOfValuesAtIndicesWithKSetBits()
+        public LC_00002859_SumOfValuesAtIndicesWithKSetBits()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02859_SumOfValuesAtIndicesWithKSetBits));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002859_SumOfValuesAtIndicesWithKSetBits));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02859_SumOfValuesAtIndicesWithKSetBits(IHost host)
+        public LC_00002859_SumOfValuesAtIndicesWithKSetBits(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02859_SumOfValuesAtIndicesWithKSetBits));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002859_SumOfValuesAtIndicesWithKSetBits));
         }
 
         public void PrintSolution()

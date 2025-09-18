@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02107_NumberOfUniqueFlavorsAfterSharingKCandies
+    public interface ILC_00002107_NumberOfUniqueFlavorsAfterSharingKCandies
     {
         public void PrintSolution();
     }

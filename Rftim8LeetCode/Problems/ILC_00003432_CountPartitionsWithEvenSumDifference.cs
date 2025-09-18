@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03432_CountPartitionsWithEvenSumDifference
+    public interface ILC_00003432_CountPartitionsWithEvenSumDifference
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03440_RescheduleMeetingsForMaximumFreeTimeII : I_03440_RescheduleMeetingsForMaximumFreeTimeII
+    public class LC_00003440_RescheduleMeetingsForMaximumFreeTimeII : ILC_00003440_RescheduleMeetingsForMaximumFreeTimeII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03440_RescheduleMeetingsForMaximumFreeTimeII()
+        public LC_00003440_RescheduleMeetingsForMaximumFreeTimeII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03440_RescheduleMeetingsForMaximumFreeTimeII));
-            Input = [.. RftResource._03440_RescheduleMeetingsForMaximumFreeTimeII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003440_RescheduleMeetingsForMaximumFreeTimeII));
+            Input = [.. RftResource.LC_00003440_RescheduleMeetingsForMaximumFreeTimeII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03440_RescheduleMeetingsForMaximumFreeTimeII(IHost host)
+        public LC_00003440_RescheduleMeetingsForMaximumFreeTimeII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03440_RescheduleMeetingsForMaximumFreeTimeII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003440_RescheduleMeetingsForMaximumFreeTimeII));
             DataCollector();
         }
 

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00950_RevealCardsInIncreasingOrder_Test
+    public class LC_00000950_RevealCardsInIncreasingOrder_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00950_RevealCardsInIncreasingOrder))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00950_RevealCardsInIncreasingOrder))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00950_RevealCardsInIncreasingOrder))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000950_RevealCardsInIncreasingOrder))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000950_RevealCardsInIncreasingOrder))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000950_RevealCardsInIncreasingOrder))![1]);
 
-        public static TheoryData<List<string>, int> _00950_RevealCardsInIncreasingOrderPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000950_RevealCardsInIncreasingOrderPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00950_RevealCardsInIncreasingOrderPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000950_RevealCardsInIncreasingOrderPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00950_RevealCardsInIncreasingOrderPartOne_Data))]
+        [MemberData(nameof(LC_00000950_RevealCardsInIncreasingOrderPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00950_RevealCardsInIncreasingOrder.PartOne_Test(a0);
+            int actual = LC_00000950_RevealCardsInIncreasingOrder.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00950_RevealCardsInIncreasingOrderPartTwo_Data))]
+        [MemberData(nameof(LC_00000950_RevealCardsInIncreasingOrderPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00950_RevealCardsInIncreasingOrder.PartTwo_Test(a0);
+            int actual = LC_00000950_RevealCardsInIncreasingOrder.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

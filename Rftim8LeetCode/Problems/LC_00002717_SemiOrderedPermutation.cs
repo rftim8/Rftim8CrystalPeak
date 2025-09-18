@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02717_SemiOrderedPermutation : I_02717_SemiOrderedPermutation
+    public class LC_00002717_SemiOrderedPermutation : ILC_00002717_SemiOrderedPermutation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02717_SemiOrderedPermutation()
+        public LC_00002717_SemiOrderedPermutation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02717_SemiOrderedPermutation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002717_SemiOrderedPermutation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02717_SemiOrderedPermutation(IHost host)
+        public LC_00002717_SemiOrderedPermutation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02717_SemiOrderedPermutation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002717_SemiOrderedPermutation));
         }
 
         public void PrintSolution()

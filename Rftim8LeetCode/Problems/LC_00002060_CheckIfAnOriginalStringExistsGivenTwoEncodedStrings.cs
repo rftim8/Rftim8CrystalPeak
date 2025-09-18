@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings : I_02060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings
+    public class LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings : ILC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings()
+        public LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings(IHost host)
+        public LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings));
         }
 
         public void PrintSolution()

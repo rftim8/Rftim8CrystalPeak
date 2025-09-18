@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03064_GuessTheNumberUsingBitwiseQuestionsI
+    public interface ILC_00003064_GuessTheNumberUsingBitwiseQuestionsI
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00196_DeleteDuplicateEmails : I_00196_DeleteDuplicateEmails
+    public class LC_00000196_DeleteDuplicateEmails : ILC_00000196_DeleteDuplicateEmails
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00196_DeleteDuplicateEmails()
+        public LC_00000196_DeleteDuplicateEmails()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00196_DeleteDuplicateEmails));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000196_DeleteDuplicateEmails));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00196_DeleteDuplicateEmails(IHost host)
+        public LC_00000196_DeleteDuplicateEmails(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00196_DeleteDuplicateEmails));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000196_DeleteDuplicateEmails));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01322_AdsPerformance
+    public interface ILC_00001322_AdsPerformance
     {
         public void PrintSolution();
     }

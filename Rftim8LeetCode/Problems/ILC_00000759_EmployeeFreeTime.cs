@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00759_EmployeeFreeTime
+    public interface ILC_00000759_EmployeeFreeTime
     {
         public void PrintSolution();
     }

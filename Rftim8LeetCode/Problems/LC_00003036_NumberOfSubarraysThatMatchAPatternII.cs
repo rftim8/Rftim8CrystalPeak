@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03036_NumberOfSubarraysThatMatchAPatternII : I_03036_NumberOfSubarraysThatMatchAPatternII
+    public class LC_00003036_NumberOfSubarraysThatMatchAPatternII : ILC_00003036_NumberOfSubarraysThatMatchAPatternII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03036_NumberOfSubarraysThatMatchAPatternII()
+        public LC_00003036_NumberOfSubarraysThatMatchAPatternII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03036_NumberOfSubarraysThatMatchAPatternII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003036_NumberOfSubarraysThatMatchAPatternII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03036_NumberOfSubarraysThatMatchAPatternII(IHost host)
+        public LC_00003036_NumberOfSubarraysThatMatchAPatternII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03036_NumberOfSubarraysThatMatchAPatternII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003036_NumberOfSubarraysThatMatchAPatternII));
         }
 
         public void PrintSolution()

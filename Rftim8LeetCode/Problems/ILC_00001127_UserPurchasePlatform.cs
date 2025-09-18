@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01127_UserPurchasePlatform
+    public interface ILC_00001127_UserPurchasePlatform
     {
         public void PrintSolution();
     }

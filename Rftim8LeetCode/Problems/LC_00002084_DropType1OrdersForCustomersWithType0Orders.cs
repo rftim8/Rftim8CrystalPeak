@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02084_DropType1OrdersForCustomersWithType0Orders : I_02084_DropType1OrdersForCustomersWithType0Orders
+    public class LC_00002084_DropType1OrdersForCustomersWithType0Orders : ILC_00002084_DropType1OrdersForCustomersWithType0Orders
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02084_DropType1OrdersForCustomersWithType0Orders()
+        public LC_00002084_DropType1OrdersForCustomersWithType0Orders()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02084_DropType1OrdersForCustomersWithType0Orders));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002084_DropType1OrdersForCustomersWithType0Orders));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02084_DropType1OrdersForCustomersWithType0Orders(IHost host)
+        public LC_00002084_DropType1OrdersForCustomersWithType0Orders(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02084_DropType1OrdersForCustomersWithType0Orders));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002084_DropType1OrdersForCustomersWithType0Orders));
         }
 
         public void PrintSolution()

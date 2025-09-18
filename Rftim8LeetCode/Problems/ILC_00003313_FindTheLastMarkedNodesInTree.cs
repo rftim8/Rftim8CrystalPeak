@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03313_FindTheLastMarkedNodesInTree
+    public interface ILC_00003313_FindTheLastMarkedNodesInTree
     {
         public void PrintSolution();
     }

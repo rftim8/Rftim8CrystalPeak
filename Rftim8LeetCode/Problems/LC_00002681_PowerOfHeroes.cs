@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02681_PowerOfHeroes : I_02681_PowerOfHeroes
+    public class LC_00002681_PowerOfHeroes : ILC_00002681_PowerOfHeroes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02681_PowerOfHeroes()
+        public LC_00002681_PowerOfHeroes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02681_PowerOfHeroes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002681_PowerOfHeroes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02681_PowerOfHeroes(IHost host)
+        public LC_00002681_PowerOfHeroes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02681_PowerOfHeroes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002681_PowerOfHeroes));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03464_MaximizeTheDistanceBetweenPointsOnASquare
+    public interface ILC_00003464_MaximizeTheDistanceBetweenPointsOnASquare
     {
         public void PrintSolution();
     }

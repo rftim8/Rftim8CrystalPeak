@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03013_DivideAnArrayIntoSubarraysWithMinimumCostII
+    public interface ILC_00003013_DivideAnArrayIntoSubarraysWithMinimumCostII
     {
         public void PrintSolution();
     }

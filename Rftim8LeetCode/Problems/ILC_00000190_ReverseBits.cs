@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00190_ReverseBits
+    public interface ILC_00000190_ReverseBits
     {
         public void PrintSolution();
     }

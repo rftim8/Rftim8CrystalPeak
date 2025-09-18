@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00170_TwoSumIIIDataStructureDesign
+    public interface ILC_00000170_TwoSumIIIDataStructureDesign
     {
         public void PrintSolution();
     }

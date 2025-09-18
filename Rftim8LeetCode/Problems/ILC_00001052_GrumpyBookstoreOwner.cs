@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01052_GrumpyBookstoreOwner
+    public interface ILC_00001052_GrumpyBookstoreOwner
     {
         public void PrintSolution();
     }

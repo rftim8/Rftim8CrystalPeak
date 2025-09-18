@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01852_DistinctNumbersInEachSubarray
+    public interface ILC_00001852_DistinctNumbersInEachSubarray
     {
         public void PrintSolution();
     }

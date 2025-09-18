@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03189_MinimumMovesToGetAPeacefulBoard : I_03189_MinimumMovesToGetAPeacefulBoard
+    public class LC_00003189_MinimumMovesToGetAPeacefulBoard : ILC_00003189_MinimumMovesToGetAPeacefulBoard
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03189_MinimumMovesToGetAPeacefulBoard()
+        public LC_00003189_MinimumMovesToGetAPeacefulBoard()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03189_MinimumMovesToGetAPeacefulBoard));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003189_MinimumMovesToGetAPeacefulBoard));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03189_MinimumMovesToGetAPeacefulBoard(IHost host)
+        public LC_00003189_MinimumMovesToGetAPeacefulBoard(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03189_MinimumMovesToGetAPeacefulBoard));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003189_MinimumMovesToGetAPeacefulBoard));
         }
 
         public void PrintSolution()

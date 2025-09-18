@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03277_MaximumXORScoreSubarrayQueries
+    public interface ILC_00003277_MaximumXORScoreSubarrayQueries
     {
         public void PrintSolution();
     }

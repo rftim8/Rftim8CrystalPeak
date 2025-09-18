@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02568_MinimumImpossibleOR
+    public interface ILC_00002568_MinimumImpossibleOR
     {
         public void PrintSolution();
     }

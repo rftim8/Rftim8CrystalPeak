@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03056_SnapsAnalysis : I_03056_SnapsAnalysis
+    public class LC_00003056_SnapsAnalysis : ILC_00003056_SnapsAnalysis
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03056_SnapsAnalysis()
+        public LC_00003056_SnapsAnalysis()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03056_SnapsAnalysis));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003056_SnapsAnalysis));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03056_SnapsAnalysis(IHost host)
+        public LC_00003056_SnapsAnalysis(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03056_SnapsAnalysis));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003056_SnapsAnalysis));
         }
 
         public void PrintSolution()

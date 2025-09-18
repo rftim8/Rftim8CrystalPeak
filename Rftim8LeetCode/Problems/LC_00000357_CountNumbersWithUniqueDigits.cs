@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00357_CountNumbersWithUniqueDigits : I_00357_CountNumbersWithUniqueDigits
+    public class LC_00000357_CountNumbersWithUniqueDigits : ILC_00000357_CountNumbersWithUniqueDigits
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00357_CountNumbersWithUniqueDigits()
+        public LC_00000357_CountNumbersWithUniqueDigits()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00357_CountNumbersWithUniqueDigits));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000357_CountNumbersWithUniqueDigits));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00357_CountNumbersWithUniqueDigits(IHost host)
+        public LC_00000357_CountNumbersWithUniqueDigits(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00357_CountNumbersWithUniqueDigits));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000357_CountNumbersWithUniqueDigits));
         }
 
         public void PrintSolution()

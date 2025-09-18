@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02133_CheckIfEveryRowAndColumnContainsAllNumbers
+    public interface ILC_00002133_CheckIfEveryRowAndColumnContainsAllNumbers
     {
         public void PrintSolution();
     }

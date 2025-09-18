@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00168_ExcelSheetColumnTitle
+    public interface ILC_00000168_ExcelSheetColumnTitle
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00967_NumbersWithSameConsecutiveDifferences
+    public interface ILC_00000967_NumbersWithSameConsecutiveDifferences
     {
         public void PrintSolution();
     }

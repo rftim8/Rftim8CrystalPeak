@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03217_DeleteNodesFromLinkedListPresentInArray : I_03217_DeleteNodesFromLinkedListPresentInArray
+    public class LC_00003217_DeleteNodesFromLinkedListPresentInArray : ILC_00003217_DeleteNodesFromLinkedListPresentInArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03217_DeleteNodesFromLinkedListPresentInArray()
+        public LC_00003217_DeleteNodesFromLinkedListPresentInArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03217_DeleteNodesFromLinkedListPresentInArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003217_DeleteNodesFromLinkedListPresentInArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03217_DeleteNodesFromLinkedListPresentInArray(IHost host)
+        public LC_00003217_DeleteNodesFromLinkedListPresentInArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03217_DeleteNodesFromLinkedListPresentInArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003217_DeleteNodesFromLinkedListPresentInArray));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00768_MaxChunksToMakeSortedII : I_00768_MaxChunksToMakeSortedII
+    public class LC_00000768_MaxChunksToMakeSortedII : ILC_00000768_MaxChunksToMakeSortedII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00768_MaxChunksToMakeSortedII()
+        public LC_00000768_MaxChunksToMakeSortedII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00768_MaxChunksToMakeSortedII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000768_MaxChunksToMakeSortedII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00768_MaxChunksToMakeSortedII(IHost host)
+        public LC_00000768_MaxChunksToMakeSortedII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00768_MaxChunksToMakeSortedII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000768_MaxChunksToMakeSortedII));
         }
 
         public void PrintSolution()

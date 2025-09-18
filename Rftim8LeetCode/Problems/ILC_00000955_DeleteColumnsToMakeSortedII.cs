@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00955_DeleteColumnsToMakeSortedII
+    public interface ILC_00000955_DeleteColumnsToMakeSortedII
     {
         public void PrintSolution();
     }

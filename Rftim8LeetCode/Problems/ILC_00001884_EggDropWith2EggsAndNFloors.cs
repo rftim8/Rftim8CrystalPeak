@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01884_EggDropWith2EggsAndNFloors
+    public interface ILC_00001884_EggDropWith2EggsAndNFloors
     {
         public void PrintSolution();
     }

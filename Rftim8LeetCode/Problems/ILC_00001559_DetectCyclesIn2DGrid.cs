@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01559_DetectCyclesIn2DGrid
+    public interface ILC_00001559_DetectCyclesIn2DGrid
     {
         public void PrintSolution();
     }

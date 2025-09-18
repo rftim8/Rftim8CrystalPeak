@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01313_DecompressRunLengthEncodedList
+    public interface ILC_00001313_DecompressRunLengthEncodedList
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01753_MaximumScoreFromRemovingStones
+    public interface ILC_00001753_MaximumScoreFromRemovingStones
     {
         public void PrintSolution();
     }

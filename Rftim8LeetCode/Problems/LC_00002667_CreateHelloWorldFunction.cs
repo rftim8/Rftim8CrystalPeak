@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02667_CreateHelloWorldFunction : I_02667_CreateHelloWorldFunction
+    public class LC_00002667_CreateHelloWorldFunction : ILC_00002667_CreateHelloWorldFunction
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02667_CreateHelloWorldFunction()
+        public LC_00002667_CreateHelloWorldFunction()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02667_CreateHelloWorldFunction));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002667_CreateHelloWorldFunction));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02667_CreateHelloWorldFunction(IHost host)
+        public LC_00002667_CreateHelloWorldFunction(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02667_CreateHelloWorldFunction));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002667_CreateHelloWorldFunction));
         }
 
         public void PrintSolution()

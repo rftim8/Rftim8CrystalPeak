@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01334_FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance
+    public interface ILC_00001334_FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance
     {
         public void PrintSolution();
     }

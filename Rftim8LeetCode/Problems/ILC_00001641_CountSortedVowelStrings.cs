@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01641_CountSortedVowelStrings
+    public interface ILC_00001641_CountSortedVowelStrings
     {
         public void PrintSolution();
     }

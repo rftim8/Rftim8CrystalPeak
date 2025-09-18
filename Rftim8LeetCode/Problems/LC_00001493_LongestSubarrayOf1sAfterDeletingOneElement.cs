@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01493_LongestSubarrayOf1sAfterDeletingOneElement : I_01493_LongestSubarrayOf1sAfterDeletingOneElement
+    public class LC_00001493_LongestSubarrayOf1sAfterDeletingOneElement : ILC_00001493_LongestSubarrayOf1sAfterDeletingOneElement
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01493_LongestSubarrayOf1sAfterDeletingOneElement()
+        public LC_00001493_LongestSubarrayOf1sAfterDeletingOneElement()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01493_LongestSubarrayOf1sAfterDeletingOneElement));
-            Input = [.. RftResource._01493_LongestSubarrayOf1sAfterDeletingOneElement_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001493_LongestSubarrayOf1sAfterDeletingOneElement));
+            Input = [.. RftResource.LC_00001493_LongestSubarrayOf1sAfterDeletingOneElement_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01493_LongestSubarrayOf1sAfterDeletingOneElement(IHost host)
+        public LC_00001493_LongestSubarrayOf1sAfterDeletingOneElement(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01493_LongestSubarrayOf1sAfterDeletingOneElement));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001493_LongestSubarrayOf1sAfterDeletingOneElement));
             DataCollector();
         }
 

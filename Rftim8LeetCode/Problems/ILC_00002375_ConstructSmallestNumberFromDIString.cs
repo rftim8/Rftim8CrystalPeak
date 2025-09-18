@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02375_ConstructSmallestNumberFromDIString
+    public interface ILC_00002375_ConstructSmallestNumberFromDIString
     {
         public void PrintSolution();
     }

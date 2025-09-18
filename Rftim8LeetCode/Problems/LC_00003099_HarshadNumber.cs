@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03099_HarshadNumber : I_03099_HarshadNumber
+    public class LC_00003099_HarshadNumber : ILC_00003099_HarshadNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03099_HarshadNumber()
+        public LC_00003099_HarshadNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03099_HarshadNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003099_HarshadNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03099_HarshadNumber(IHost host)
+        public LC_00003099_HarshadNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03099_HarshadNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003099_HarshadNumber));
         }
 
         public void PrintSolution()

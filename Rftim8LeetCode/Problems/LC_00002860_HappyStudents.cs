@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02860_HappyStudents : I_02860_HappyStudents
+    public class LC_00002860_HappyStudents : ILC_00002860_HappyStudents
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02860_HappyStudents()
+        public LC_00002860_HappyStudents()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02860_HappyStudents));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002860_HappyStudents));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02860_HappyStudents(IHost host)
+        public LC_00002860_HappyStudents(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02860_HappyStudents));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002860_HappyStudents));
         }
 
         public void PrintSolution()

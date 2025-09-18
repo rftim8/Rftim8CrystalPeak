@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03515_ShortestPathInAWeightedTree : I_03515_ShortestPathInAWeightedTree
+    public class LC_00003515_ShortestPathInAWeightedTree : ILC_00003515_ShortestPathInAWeightedTree
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03515_ShortestPathInAWeightedTree()
+        public LC_00003515_ShortestPathInAWeightedTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03515_ShortestPathInAWeightedTree));
-            Input = [.. RftResource._03515_ShortestPathInAWeightedTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003515_ShortestPathInAWeightedTree));
+            Input = [.. RftResource.LC_00003515_ShortestPathInAWeightedTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03515_ShortestPathInAWeightedTree(IHost host)
+        public LC_00003515_ShortestPathInAWeightedTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03515_ShortestPathInAWeightedTree));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003515_ShortestPathInAWeightedTree));
             DataCollector();
         }
 

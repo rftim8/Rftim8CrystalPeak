@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02996_SmallestMissingIntegerGreaterThanSequentialPrefixSum
+    public interface ILC_00002996_SmallestMissingIntegerGreaterThanSequentialPrefixSum
     {
         public void PrintSolution();
     }

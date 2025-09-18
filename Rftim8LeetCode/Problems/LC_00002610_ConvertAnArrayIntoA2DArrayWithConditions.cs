@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02610_ConvertAnArrayIntoA2DArrayWithConditions : I_02610_ConvertAnArrayIntoA2DArrayWithConditions
+    public class LC_00002610_ConvertAnArrayIntoA2DArrayWithConditions : ILC_00002610_ConvertAnArrayIntoA2DArrayWithConditions
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02610_ConvertAnArrayIntoA2DArrayWithConditions()
+        public LC_00002610_ConvertAnArrayIntoA2DArrayWithConditions()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02610_ConvertAnArrayIntoA2DArrayWithConditions));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002610_ConvertAnArrayIntoA2DArrayWithConditions));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02610_ConvertAnArrayIntoA2DArrayWithConditions(IHost host)
+        public LC_00002610_ConvertAnArrayIntoA2DArrayWithConditions(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02610_ConvertAnArrayIntoA2DArrayWithConditions));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002610_ConvertAnArrayIntoA2DArrayWithConditions));
         }
 
         public void PrintSolution()

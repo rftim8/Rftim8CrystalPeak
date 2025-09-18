@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00958_CheckCompletenessOfABinaryTree
+    public interface ILC_00000958_CheckCompletenessOfABinaryTree
     {
         public void PrintSolution();
     }

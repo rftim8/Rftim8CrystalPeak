@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00166_FractionToRecurringDecimal
+    public interface ILC_00000166_FractionToRecurringDecimal
     {
         public void PrintSolution();
     }

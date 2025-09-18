@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03507_MinimumPairRemovalToSortArrayI : I_03507_MinimumPairRemovalToSortArrayI
+    public class LC_00003507_MinimumPairRemovalToSortArrayI : ILC_00003507_MinimumPairRemovalToSortArrayI
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03507_MinimumPairRemovalToSortArrayI()
+        public LC_00003507_MinimumPairRemovalToSortArrayI()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03507_MinimumPairRemovalToSortArrayI));
-            Input = [.. RftResource._03507_MinimumPairRemovalToSortArrayI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003507_MinimumPairRemovalToSortArrayI));
+            Input = [.. RftResource.LC_00003507_MinimumPairRemovalToSortArrayI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03507_MinimumPairRemovalToSortArrayI(IHost host)
+        public LC_00003507_MinimumPairRemovalToSortArrayI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03507_MinimumPairRemovalToSortArrayI));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003507_MinimumPairRemovalToSortArrayI));
             DataCollector();
         }
 

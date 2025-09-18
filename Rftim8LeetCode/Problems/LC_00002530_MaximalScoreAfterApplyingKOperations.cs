@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02530_MaximalScoreAfterApplyingKOperations : I_02530_MaximalScoreAfterApplyingKOperations
+    public class LC_00002530_MaximalScoreAfterApplyingKOperations : ILC_00002530_MaximalScoreAfterApplyingKOperations
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02530_MaximalScoreAfterApplyingKOperations()
+        public LC_00002530_MaximalScoreAfterApplyingKOperations()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02530_MaximalScoreAfterApplyingKOperations));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002530_MaximalScoreAfterApplyingKOperations));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02530_MaximalScoreAfterApplyingKOperations(IHost host)
+        public LC_00002530_MaximalScoreAfterApplyingKOperations(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02530_MaximalScoreAfterApplyingKOperations));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002530_MaximalScoreAfterApplyingKOperations));
         }
 
         public void PrintSolution()

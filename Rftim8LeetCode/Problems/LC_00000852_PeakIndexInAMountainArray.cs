@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00852_PeakIndexInAMountainArray : I_00852_PeakIndexInAMountainArray
+    public class LC_00000852_PeakIndexInAMountainArray : ILC_00000852_PeakIndexInAMountainArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00852_PeakIndexInAMountainArray()
+        public LC_00000852_PeakIndexInAMountainArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00852_PeakIndexInAMountainArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000852_PeakIndexInAMountainArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00852_PeakIndexInAMountainArray(IHost host)
+        public LC_00000852_PeakIndexInAMountainArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00852_PeakIndexInAMountainArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000852_PeakIndexInAMountainArray));
         }
 
         public void PrintSolution()

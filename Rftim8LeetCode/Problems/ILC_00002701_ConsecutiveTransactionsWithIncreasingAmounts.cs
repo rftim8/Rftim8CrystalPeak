@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02701_ConsecutiveTransactionsWithIncreasingAmounts
+    public interface ILC_00002701_ConsecutiveTransactionsWithIncreasingAmounts
     {
         public void PrintSolution();
     }

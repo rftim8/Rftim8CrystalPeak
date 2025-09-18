@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01336_NumberOfTransactionsPerVisit
+    public interface ILC_00001336_NumberOfTransactionsPerVisit
     {
         public void PrintSolution();
     }

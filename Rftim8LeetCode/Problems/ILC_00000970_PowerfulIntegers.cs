@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00970_PowerfulIntegers
+    public interface ILC_00000970_PowerfulIntegers
     {
         public void PrintSolution();
     }

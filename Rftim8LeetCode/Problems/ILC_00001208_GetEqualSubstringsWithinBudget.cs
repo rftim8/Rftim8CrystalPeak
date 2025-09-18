@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01208_GetEqualSubstringsWithinBudget
+    public interface ILC_00001208_GetEqualSubstringsWithinBudget
     {
         public void PrintSolution();
     }

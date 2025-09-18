@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02682_FindTheLosersOfTheCircularGame
+    public interface ILC_00002682_FindTheLosersOfTheCircularGame
     {
         public void PrintSolution();
     }

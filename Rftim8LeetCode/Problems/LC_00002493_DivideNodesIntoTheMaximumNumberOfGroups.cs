@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02493_DivideNodesIntoTheMaximumNumberOfGroups : I_02493_DivideNodesIntoTheMaximumNumberOfGroups
+    public class LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups : ILC_00002493_DivideNodesIntoTheMaximumNumberOfGroups
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02493_DivideNodesIntoTheMaximumNumberOfGroups()
+        public LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02493_DivideNodesIntoTheMaximumNumberOfGroups));
-            Input = [.. RftResource._02493_DivideNodesIntoTheMaximumNumberOfGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups));
+            Input = [.. RftResource.LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02493_DivideNodesIntoTheMaximumNumberOfGroups(IHost host)
+        public LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02493_DivideNodesIntoTheMaximumNumberOfGroups));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups));
             DataCollector();
         }
 

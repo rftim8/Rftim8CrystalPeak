@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02249_CountLatticePointsInsideACircle
+    public interface ILC_00002249_CountLatticePointsInsideACircle
     {
         public void PrintSolution();
     }

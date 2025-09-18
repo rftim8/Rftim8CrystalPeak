@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00730_CountDifferentPalindromicSubsequences
+    public interface ILC_00000730_CountDifferentPalindromicSubsequences
     {
         public void PrintSolution();
     }

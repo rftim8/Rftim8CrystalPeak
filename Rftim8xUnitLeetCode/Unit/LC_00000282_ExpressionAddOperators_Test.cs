@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00282_ExpressionAddOperators_Test
+    public class LC_00000282_ExpressionAddOperators_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00282_ExpressionAddOperators))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00282_ExpressionAddOperators))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00282_ExpressionAddOperators))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000282_ExpressionAddOperators))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000282_ExpressionAddOperators))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000282_ExpressionAddOperators))![1]);
 
-        public static TheoryData<List<string>, int> _00282_ExpressionAddOperatorsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000282_ExpressionAddOperatorsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00282_ExpressionAddOperatorsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000282_ExpressionAddOperatorsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00282_ExpressionAddOperatorsPartOne_Data))]
+        [MemberData(nameof(LC_00000282_ExpressionAddOperatorsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00282_ExpressionAddOperators.PartOne_Test(a0);
+            int actual = LC_00000282_ExpressionAddOperators.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00282_ExpressionAddOperatorsPartTwo_Data))]
+        [MemberData(nameof(LC_00000282_ExpressionAddOperatorsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00282_ExpressionAddOperators.PartTwo_Test(a0);
+            int actual = LC_00000282_ExpressionAddOperators.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

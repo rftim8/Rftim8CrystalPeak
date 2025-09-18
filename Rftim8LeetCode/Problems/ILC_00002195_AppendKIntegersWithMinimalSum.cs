@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02195_AppendKIntegersWithMinimalSum
+    public interface ILC_00002195_AppendKIntegersWithMinimalSum
     {
         public void PrintSolution();
     }

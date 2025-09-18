@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03505_MinimumOperationsToMakeElementsWithinKSubarraysEqual
+    public interface ILC_00003505_MinimumOperationsToMakeElementsWithinKSubarraysEqual
     {
         public void PrintSolution();
     }

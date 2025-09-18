@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01822_SignOfTheProductOfAnArray_Test
+    public class LC_00001822_SignOfTheProductOfAnArray_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01822_SignOfTheProductOfAnArray))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01822_SignOfTheProductOfAnArray))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01822_SignOfTheProductOfAnArray))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001822_SignOfTheProductOfAnArray))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001822_SignOfTheProductOfAnArray))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001822_SignOfTheProductOfAnArray))![1]);
 
-        public static TheoryData<List<string>, int> _01822_SignOfTheProductOfAnArrayPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001822_SignOfTheProductOfAnArrayPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01822_SignOfTheProductOfAnArrayPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001822_SignOfTheProductOfAnArrayPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01822_SignOfTheProductOfAnArrayPartOne_Data))]
+        [MemberData(nameof(LC_00001822_SignOfTheProductOfAnArrayPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01822_SignOfTheProductOfAnArray.PartOne_Test(a0);
+            int actual = LC_00001822_SignOfTheProductOfAnArray.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01822_SignOfTheProductOfAnArrayPartTwo_Data))]
+        [MemberData(nameof(LC_00001822_SignOfTheProductOfAnArrayPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01822_SignOfTheProductOfAnArray.PartTwo_Test(a0);
+            int actual = LC_00001822_SignOfTheProductOfAnArray.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

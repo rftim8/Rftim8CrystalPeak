@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01424_DiagonalTraverseII
+    public interface ILC_00001424_DiagonalTraverseII
     {
         public void PrintSolution();
     }

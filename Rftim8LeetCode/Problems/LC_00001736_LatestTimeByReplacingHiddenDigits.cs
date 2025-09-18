@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01736_LatestTimeByReplacingHiddenDigits : I_01736_LatestTimeByReplacingHiddenDigits
+    public class LC_00001736_LatestTimeByReplacingHiddenDigits : ILC_00001736_LatestTimeByReplacingHiddenDigits
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01736_LatestTimeByReplacingHiddenDigits()
+        public LC_00001736_LatestTimeByReplacingHiddenDigits()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01736_LatestTimeByReplacingHiddenDigits));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001736_LatestTimeByReplacingHiddenDigits));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01736_LatestTimeByReplacingHiddenDigits(IHost host)
+        public LC_00001736_LatestTimeByReplacingHiddenDigits(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01736_LatestTimeByReplacingHiddenDigits));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001736_LatestTimeByReplacingHiddenDigits));
         }
 
         public void PrintSolution()

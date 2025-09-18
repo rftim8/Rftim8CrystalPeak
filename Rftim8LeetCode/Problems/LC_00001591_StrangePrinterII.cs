@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01591_StrangePrinterII : I_01591_StrangePrinterII
+    public class LC_00001591_StrangePrinterII : ILC_00001591_StrangePrinterII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01591_StrangePrinterII()
+        public LC_00001591_StrangePrinterII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01591_StrangePrinterII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001591_StrangePrinterII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01591_StrangePrinterII(IHost host)
+        public LC_00001591_StrangePrinterII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01591_StrangePrinterII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001591_StrangePrinterII));
         }
 
         public void PrintSolution()

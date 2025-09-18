@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01540_CanConvertStringInKMoves
+    public interface ILC_00001540_CanConvertStringInKMoves
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00702_SearchInASortedArrayOfUnknownSize : I_00702_SearchInASortedArrayOfUnknownSize
+    public class LC_00000702_SearchInASortedArrayOfUnknownSize : ILC_00000702_SearchInASortedArrayOfUnknownSize
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00702_SearchInASortedArrayOfUnknownSize()
+        public LC_00000702_SearchInASortedArrayOfUnknownSize()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00702_SearchInASortedArrayOfUnknownSize));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000702_SearchInASortedArrayOfUnknownSize));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00702_SearchInASortedArrayOfUnknownSize(IHost host)
+        public LC_00000702_SearchInASortedArrayOfUnknownSize(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00702_SearchInASortedArrayOfUnknownSize));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000702_SearchInASortedArrayOfUnknownSize));
         }
 
         public void PrintSolution()

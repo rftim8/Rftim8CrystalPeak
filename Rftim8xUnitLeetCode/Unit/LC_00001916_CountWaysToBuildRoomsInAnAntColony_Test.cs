@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01916_CountWaysToBuildRoomsInAnAntColony_Test
+    public class LC_00001916_CountWaysToBuildRoomsInAnAntColony_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01916_CountWaysToBuildRoomsInAnAntColony))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01916_CountWaysToBuildRoomsInAnAntColony))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01916_CountWaysToBuildRoomsInAnAntColony))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001916_CountWaysToBuildRoomsInAnAntColony))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001916_CountWaysToBuildRoomsInAnAntColony))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001916_CountWaysToBuildRoomsInAnAntColony))![1]);
 
-        public static TheoryData<List<string>, int> _01916_CountWaysToBuildRoomsInAnAntColonyPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001916_CountWaysToBuildRoomsInAnAntColonyPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01916_CountWaysToBuildRoomsInAnAntColonyPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001916_CountWaysToBuildRoomsInAnAntColonyPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01916_CountWaysToBuildRoomsInAnAntColonyPartOne_Data))]
+        [MemberData(nameof(LC_00001916_CountWaysToBuildRoomsInAnAntColonyPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01916_CountWaysToBuildRoomsInAnAntColony.PartOne_Test(a0);
+            int actual = LC_00001916_CountWaysToBuildRoomsInAnAntColony.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01916_CountWaysToBuildRoomsInAnAntColonyPartTwo_Data))]
+        [MemberData(nameof(LC_00001916_CountWaysToBuildRoomsInAnAntColonyPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01916_CountWaysToBuildRoomsInAnAntColony.PartTwo_Test(a0);
+            int actual = LC_00001916_CountWaysToBuildRoomsInAnAntColony.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

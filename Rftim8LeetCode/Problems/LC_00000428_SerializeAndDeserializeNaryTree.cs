@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00428_SerializeAndDeserializeNaryTree : I_00428_SerializeAndDeserializeNaryTree
+    public class LC_00000428_SerializeAndDeserializeNaryTree : ILC_00000428_SerializeAndDeserializeNaryTree
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00428_SerializeAndDeserializeNaryTree()
+        public LC_00000428_SerializeAndDeserializeNaryTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00428_SerializeAndDeserializeNaryTree));
-            Input = [.. RftResource._00428_SerializeAndDeserializeNaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000428_SerializeAndDeserializeNaryTree));
+            Input = [.. RftResource.LC_00000428_SerializeAndDeserializeNaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00428_SerializeAndDeserializeNaryTree(IHost host)
+        public LC_00000428_SerializeAndDeserializeNaryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00428_SerializeAndDeserializeNaryTree));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000428_SerializeAndDeserializeNaryTree));
             DataCollector();
         }
 

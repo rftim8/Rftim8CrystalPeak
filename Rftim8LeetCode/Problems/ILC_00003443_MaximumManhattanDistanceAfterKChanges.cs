@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03443_MaximumManhattanDistanceAfterKChanges
+    public interface ILC_00003443_MaximumManhattanDistanceAfterKChanges
     {
         public void PrintSolution();
     }

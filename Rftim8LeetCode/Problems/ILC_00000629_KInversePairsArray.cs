@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00629_KInversePairsArray
+    public interface ILC_00000629_KInversePairsArray
     {
         public void PrintSolution();
     }

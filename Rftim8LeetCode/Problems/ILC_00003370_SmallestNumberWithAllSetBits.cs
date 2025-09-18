@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03370_SmallestNumberWithAllSetBits
+    public interface ILC_00003370_SmallestNumberWithAllSetBits
     {
         public void PrintSolution();
     }

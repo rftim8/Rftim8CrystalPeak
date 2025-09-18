@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00422_ValidWordSquare
+    public interface ILC_00000422_ValidWordSquare
     {
         public void PrintSolution();
     }

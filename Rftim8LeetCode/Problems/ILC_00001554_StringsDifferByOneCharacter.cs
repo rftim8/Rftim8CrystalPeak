@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01554_StringsDifferByOneCharacter
+    public interface ILC_00001554_StringsDifferByOneCharacter
     {
         public void PrintSolution();
     }

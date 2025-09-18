@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01094_CarPooling
+    public interface ILC_00001094_CarPooling
     {
         public void PrintSolution();
     }

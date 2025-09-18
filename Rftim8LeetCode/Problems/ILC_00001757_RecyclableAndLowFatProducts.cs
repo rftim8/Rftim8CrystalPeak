@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01757_RecyclableAndLowFatProducts
+    public interface ILC_00001757_RecyclableAndLowFatProducts
     {
         public void PrintSolution();
     }

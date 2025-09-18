@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00818_RaceCar : I_00818_RaceCar
+    public class LC_00000818_RaceCar : ILC_00000818_RaceCar
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00818_RaceCar()
+        public LC_00000818_RaceCar()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00818_RaceCar));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000818_RaceCar));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00818_RaceCar(IHost host)
+        public LC_00000818_RaceCar(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00818_RaceCar));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000818_RaceCar));
         }
 
         public void PrintSolution()

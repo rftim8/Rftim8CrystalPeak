@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00621_TaskScheduler : I_00621_TaskScheduler
+    public class LC_00000621_TaskScheduler : ILC_00000621_TaskScheduler
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00621_TaskScheduler()
+        public LC_00000621_TaskScheduler()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00621_TaskScheduler));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000621_TaskScheduler));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00621_TaskScheduler(IHost host)
+        public LC_00000621_TaskScheduler(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00621_TaskScheduler));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000621_TaskScheduler));
         }
 
         public void PrintSolution()

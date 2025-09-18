@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02196_CreateBinaryTreeFromDescriptions_Test
+    public class LC_00002196_CreateBinaryTreeFromDescriptions_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02196_CreateBinaryTreeFromDescriptions))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02196_CreateBinaryTreeFromDescriptions))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02196_CreateBinaryTreeFromDescriptions))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002196_CreateBinaryTreeFromDescriptions))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002196_CreateBinaryTreeFromDescriptions))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002196_CreateBinaryTreeFromDescriptions))![1]);
 
-        public static TheoryData<List<string>, int> _02196_CreateBinaryTreeFromDescriptionsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002196_CreateBinaryTreeFromDescriptionsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02196_CreateBinaryTreeFromDescriptionsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002196_CreateBinaryTreeFromDescriptionsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02196_CreateBinaryTreeFromDescriptionsPartOne_Data))]
+        [MemberData(nameof(LC_00002196_CreateBinaryTreeFromDescriptionsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02196_CreateBinaryTreeFromDescriptions.PartOne_Test(a0);
+            int actual = LC_00002196_CreateBinaryTreeFromDescriptions.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02196_CreateBinaryTreeFromDescriptionsPartTwo_Data))]
+        [MemberData(nameof(LC_00002196_CreateBinaryTreeFromDescriptionsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02196_CreateBinaryTreeFromDescriptions.PartTwo_Test(a0);
+            int actual = LC_00002196_CreateBinaryTreeFromDescriptions.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

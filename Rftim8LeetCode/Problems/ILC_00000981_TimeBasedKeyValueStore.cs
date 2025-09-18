@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00981_TimeBasedKeyValueStore
+    public interface ILC_00000981_TimeBasedKeyValueStore
     {
         public void PrintSolution();
     }

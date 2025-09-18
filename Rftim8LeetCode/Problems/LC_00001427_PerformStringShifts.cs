@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01427_PerformStringShifts : I_01427_PerformStringShifts
+    public class LC_00001427_PerformStringShifts : ILC_00001427_PerformStringShifts
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01427_PerformStringShifts()
+        public LC_00001427_PerformStringShifts()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01427_PerformStringShifts));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001427_PerformStringShifts));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01427_PerformStringShifts(IHost host)
+        public LC_00001427_PerformStringShifts(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01427_PerformStringShifts));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001427_PerformStringShifts));
         }
 
         public void PrintSolution()

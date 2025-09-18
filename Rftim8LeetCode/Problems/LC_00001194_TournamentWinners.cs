@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01194_TournamentWinners : I_01194_TournamentWinners
+    public class LC_00001194_TournamentWinners : ILC_00001194_TournamentWinners
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01194_TournamentWinners()
+        public LC_00001194_TournamentWinners()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01194_TournamentWinners));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001194_TournamentWinners));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01194_TournamentWinners(IHost host)
+        public LC_00001194_TournamentWinners(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01194_TournamentWinners));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001194_TournamentWinners));
         }
 
         public void PrintSolution()

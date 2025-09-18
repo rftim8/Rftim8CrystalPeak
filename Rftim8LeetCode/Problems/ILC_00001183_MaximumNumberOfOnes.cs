@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01183_MaximumNumberOfOnes
+    public interface ILC_00001183_MaximumNumberOfOnes
     {
         public void PrintSolution();
     }

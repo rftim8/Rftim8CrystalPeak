@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02103_RingsAndRods : I_02103_RingsAndRods
+    public class LC_00002103_RingsAndRods : ILC_00002103_RingsAndRods
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02103_RingsAndRods()
+        public LC_00002103_RingsAndRods()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02103_RingsAndRods));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002103_RingsAndRods));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02103_RingsAndRods(IHost host)
+        public LC_00002103_RingsAndRods(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02103_RingsAndRods));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002103_RingsAndRods));
         }
 
         public void PrintSolution()

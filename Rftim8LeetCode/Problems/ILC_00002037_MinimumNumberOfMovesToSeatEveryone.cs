@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02037_MinimumNumberOfMovesToSeatEveryone
+    public interface ILC_00002037_MinimumNumberOfMovesToSeatEveryone
     {
         public void PrintSolution();
     }

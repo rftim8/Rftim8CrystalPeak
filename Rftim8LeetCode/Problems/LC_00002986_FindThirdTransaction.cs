@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02986_FindThirdTransaction : I_02986_FindThirdTransaction
+    public class LC_00002986_FindThirdTransaction : ILC_00002986_FindThirdTransaction
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02986_FindThirdTransaction()
+        public LC_00002986_FindThirdTransaction()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02986_FindThirdTransaction));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002986_FindThirdTransaction));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02986_FindThirdTransaction(IHost host)
+        public LC_00002986_FindThirdTransaction(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02986_FindThirdTransaction));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002986_FindThirdTransaction));
         }
 
         public void PrintSolution()

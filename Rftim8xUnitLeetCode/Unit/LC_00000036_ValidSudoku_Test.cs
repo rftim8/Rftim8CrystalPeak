@@ -1,17 +1,17 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8Convoy.Services.Static.Generic;
 using Rftim8LeetCode.Problems;
 using Xunit.Abstractions;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00036_ValidSudoku_Test(ITestOutputHelper testOutputHelper)
+    public class LC_00000036_ValidSudoku_Test(ITestOutputHelper testOutputHelper)
     {
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00036_ValidSudoku))!;
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000036_ValidSudoku))!;
         private static readonly List<char[][]> Boards = [];
         private static readonly List<bool> Results = [];
 
-        public static TheoryData<List<char[][]>, List<bool>> _00036_ValidSudokuPartOne_Input =>
+        public static TheoryData<List<char[][]>, List<bool>> LC_00000036_ValidSudokuPartOne_Input =>
             new()
             {
                 { Boards, Results }
@@ -43,7 +43,7 @@ namespace Rftim8xUnitLeetCode.Unit
         }
 
         [Theory]
-        [MemberData(nameof(_00036_ValidSudokuPartOne_Input))]
+        [MemberData(nameof(LC_00000036_ValidSudokuPartOne_Input))]
         public void RftPartOne(List<char[][]> boards, List<bool> results)
         {
             // Arrange
@@ -54,7 +54,7 @@ namespace Rftim8xUnitLeetCode.Unit
             for (int i = 0; i < boards.Count; i++)
             {
                 // Act
-                bool actual = _00036_ValidSudoku.PartOne_Test(boards[i]);
+                bool actual = LC_00000036_ValidSudoku.PartOne_Test(boards[i]);
 
                 // Assert
                 Assert.Equal(results[i], actual);

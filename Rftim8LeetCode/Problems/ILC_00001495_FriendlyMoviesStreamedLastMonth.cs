@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01495_FriendlyMoviesStreamedLastMonth
+    public interface ILC_00001495_FriendlyMoviesStreamedLastMonth
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01217_MinimumCostToMoveChipsToTheSamePosition
+    public interface ILC_00001217_MinimumCostToMoveChipsToTheSamePosition
     {
         public void PrintSolution();
     }

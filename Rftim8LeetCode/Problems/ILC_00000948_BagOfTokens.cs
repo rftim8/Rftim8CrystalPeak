@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00948_BagOfTokens
+    public interface ILC_00000948_BagOfTokens
     {
         public void PrintSolution();
     }

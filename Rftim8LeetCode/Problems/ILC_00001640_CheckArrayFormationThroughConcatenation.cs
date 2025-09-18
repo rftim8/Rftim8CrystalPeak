@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01640_CheckArrayFormationThroughConcatenation
+    public interface ILC_00001640_CheckArrayFormationThroughConcatenation
     {
         public void PrintSolution();
     }

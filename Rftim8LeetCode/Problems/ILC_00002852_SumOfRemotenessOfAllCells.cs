@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02852_SumOfRemotenessOfAllCells
+    public interface ILC_00002852_SumOfRemotenessOfAllCells
     {
         public void PrintSolution();
     }

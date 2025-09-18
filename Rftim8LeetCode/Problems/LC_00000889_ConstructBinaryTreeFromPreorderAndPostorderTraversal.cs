@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal : I_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal
+    public class LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal : ILC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal()
+        public LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal));
-            Input = [.. RftResource._00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal));
+            Input = [.. RftResource.LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal(IHost host)
+        public LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00889_ConstructBinaryTreeFromPreorderAndPostorderTraversal));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal));
             DataCollector();
         }
 

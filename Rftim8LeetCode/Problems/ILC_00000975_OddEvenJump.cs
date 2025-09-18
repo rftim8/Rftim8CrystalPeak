@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00975_OddEvenJump
+    public interface ILC_00000975_OddEvenJump
     {
         public void PrintSolution();
     }

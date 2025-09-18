@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02633_ConvertObjectToJSONString
+    public interface ILC_00002633_ConvertObjectToJSONString
     {
         public void PrintSolution();
     }

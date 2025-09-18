@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03491_PhoneNumberPrefix
+    public interface ILC_00003491_PhoneNumberPrefix
     {
         public void PrintSolution();
     }

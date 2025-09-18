@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03171_FindSubarrayWithBitwiseORClosestToK
+    public interface ILC_00003171_FindSubarrayWithBitwiseORClosestToK
     {
         public void PrintSolution();
     }

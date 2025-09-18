@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02485_FindThePivotInteger : I_02485_FindThePivotInteger
+    public class LC_00002485_FindThePivotInteger : ILC_00002485_FindThePivotInteger
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02485_FindThePivotInteger()
+        public LC_00002485_FindThePivotInteger()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02485_FindThePivotInteger));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002485_FindThePivotInteger));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02485_FindThePivotInteger(IHost host)
+        public LC_00002485_FindThePivotInteger(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02485_FindThePivotInteger));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002485_FindThePivotInteger));
         }
 
         public void PrintSolution()

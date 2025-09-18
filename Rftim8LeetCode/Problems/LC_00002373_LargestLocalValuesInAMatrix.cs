@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02373_LargestLocalValuesInAMatrix : I_02373_LargestLocalValuesInAMatrix
+    public class LC_00002373_LargestLocalValuesInAMatrix : ILC_00002373_LargestLocalValuesInAMatrix
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02373_LargestLocalValuesInAMatrix()
+        public LC_00002373_LargestLocalValuesInAMatrix()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02373_LargestLocalValuesInAMatrix));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002373_LargestLocalValuesInAMatrix));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02373_LargestLocalValuesInAMatrix(IHost host)
+        public LC_00002373_LargestLocalValuesInAMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02373_LargestLocalValuesInAMatrix));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002373_LargestLocalValuesInAMatrix));
         }
 
         public void PrintSolution()

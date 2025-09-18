@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01241_NumberOfCommentsPerPost
+    public interface ILC_00001241_NumberOfCommentsPerPost
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01666_ChangeTheRootOfABinaryTree
+    public interface ILC_00001666_ChangeTheRootOfABinaryTree
     {
         public void PrintSolution();
     }

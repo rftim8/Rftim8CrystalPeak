@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01118_NumberOfDaysInAMonth_Test
+    public class LC_00001118_NumberOfDaysInAMonth_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01118_NumberOfDaysInAMonth))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01118_NumberOfDaysInAMonth))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01118_NumberOfDaysInAMonth))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001118_NumberOfDaysInAMonth))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001118_NumberOfDaysInAMonth))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001118_NumberOfDaysInAMonth))![1]);
 
-        public static TheoryData<List<string>, int> _01118_NumberOfDaysInAMonthPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001118_NumberOfDaysInAMonthPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01118_NumberOfDaysInAMonthPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001118_NumberOfDaysInAMonthPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01118_NumberOfDaysInAMonthPartOne_Data))]
+        [MemberData(nameof(LC_00001118_NumberOfDaysInAMonthPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01118_NumberOfDaysInAMonth.PartOne_Test(a0);
+            int actual = LC_00001118_NumberOfDaysInAMonth.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01118_NumberOfDaysInAMonthPartTwo_Data))]
+        [MemberData(nameof(LC_00001118_NumberOfDaysInAMonthPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01118_NumberOfDaysInAMonth.PartTwo_Test(a0);
+            int actual = LC_00001118_NumberOfDaysInAMonth.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

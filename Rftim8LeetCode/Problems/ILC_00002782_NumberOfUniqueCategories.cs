@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02782_NumberOfUniqueCategories
+    public interface ILC_00002782_NumberOfUniqueCategories
     {
         public void PrintSolution();
     }

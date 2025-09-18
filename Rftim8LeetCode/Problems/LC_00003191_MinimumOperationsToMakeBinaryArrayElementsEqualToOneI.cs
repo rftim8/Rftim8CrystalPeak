@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI : I_03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI
+    public class LC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI : ILC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI()
+        public LC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI(IHost host)
+        public LC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003191_MinimumOperationsToMakeBinaryArrayElementsEqualToOneI));
         }
 
         public void PrintSolution()

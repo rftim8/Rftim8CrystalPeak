@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01251_AverageSellingPrice
+    public interface ILC_00001251_AverageSellingPrice
     {
         public void PrintSolution();
     }

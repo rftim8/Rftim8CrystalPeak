@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00818_RaceCar_Test
+    public class LC_00000818_RaceCar_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00818_RaceCar))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00818_RaceCar))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00818_RaceCar))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000818_RaceCar))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000818_RaceCar))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000818_RaceCar))![1]);
 
-        public static TheoryData<List<string>, int> _00818_RaceCarPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000818_RaceCarPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00818_RaceCarPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000818_RaceCarPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00818_RaceCarPartOne_Data))]
+        [MemberData(nameof(LC_00000818_RaceCarPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00818_RaceCar.PartOne_Test(a0);
+            int actual = LC_00000818_RaceCar.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00818_RaceCarPartTwo_Data))]
+        [MemberData(nameof(LC_00000818_RaceCarPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00818_RaceCar.PartTwo_Test(a0);
+            int actual = LC_00000818_RaceCar.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02265_CountNodesEqualToAverageOfSubtree
+    public interface ILC_00002265_CountNodesEqualToAverageOfSubtree
     {
         public void PrintSolution();
     }

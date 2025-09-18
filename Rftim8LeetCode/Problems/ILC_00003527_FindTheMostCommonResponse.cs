@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03527_FindTheMostCommonResponse
+    public interface ILC_00003527_FindTheMostCommonResponse
     {
         public void PrintSolution();
     }

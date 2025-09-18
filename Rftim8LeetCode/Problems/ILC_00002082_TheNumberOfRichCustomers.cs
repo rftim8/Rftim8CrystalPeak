@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02082_TheNumberOfRichCustomers
+    public interface ILC_00002082_TheNumberOfRichCustomers
     {
         public void PrintSolution();
     }

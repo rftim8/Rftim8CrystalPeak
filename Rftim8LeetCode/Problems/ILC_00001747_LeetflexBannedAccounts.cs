@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01747_LeetflexBannedAccounts
+    public interface ILC_00001747_LeetflexBannedAccounts
     {
         public void PrintSolution();
     }

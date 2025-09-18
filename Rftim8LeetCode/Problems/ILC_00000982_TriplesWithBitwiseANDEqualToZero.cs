@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00982_TriplesWithBitwiseANDEqualToZero
+    public interface ILC_00000982_TriplesWithBitwiseANDEqualToZero
     {
         public void PrintSolution();
     }

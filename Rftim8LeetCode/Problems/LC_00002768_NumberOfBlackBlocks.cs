@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02768_NumberOfBlackBlocks : I_02768_NumberOfBlackBlocks
+    public class LC_00002768_NumberOfBlackBlocks : ILC_00002768_NumberOfBlackBlocks
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02768_NumberOfBlackBlocks()
+        public LC_00002768_NumberOfBlackBlocks()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02768_NumberOfBlackBlocks));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002768_NumberOfBlackBlocks));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02768_NumberOfBlackBlocks(IHost host)
+        public LC_00002768_NumberOfBlackBlocks(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02768_NumberOfBlackBlocks));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002768_NumberOfBlackBlocks));
         }
 
         public void PrintSolution()

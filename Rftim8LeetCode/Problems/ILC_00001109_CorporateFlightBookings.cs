@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01109_CorporateFlightBookings
+    public interface ILC_00001109_CorporateFlightBookings
     {
         public void PrintSolution();
     }

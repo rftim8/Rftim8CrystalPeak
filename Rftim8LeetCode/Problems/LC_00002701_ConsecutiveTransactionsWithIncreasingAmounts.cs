@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02701_ConsecutiveTransactionsWithIncreasingAmounts : I_02701_ConsecutiveTransactionsWithIncreasingAmounts
+    public class LC_00002701_ConsecutiveTransactionsWithIncreasingAmounts : ILC_00002701_ConsecutiveTransactionsWithIncreasingAmounts
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02701_ConsecutiveTransactionsWithIncreasingAmounts()
+        public LC_00002701_ConsecutiveTransactionsWithIncreasingAmounts()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02701_ConsecutiveTransactionsWithIncreasingAmounts));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002701_ConsecutiveTransactionsWithIncreasingAmounts));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02701_ConsecutiveTransactionsWithIncreasingAmounts(IHost host)
+        public LC_00002701_ConsecutiveTransactionsWithIncreasingAmounts(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02701_ConsecutiveTransactionsWithIncreasingAmounts));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002701_ConsecutiveTransactionsWithIncreasingAmounts));
         }
 
         public void PrintSolution()

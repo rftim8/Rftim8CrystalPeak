@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00601_HumanTrafficOfStadium
+    public interface ILC_00000601_HumanTrafficOfStadium
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02032_TwoOutOfThree
+    public interface ILC_00002032_TwoOutOfThree
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00884_UncommonWordsFromTwoSentences : I_00884_UncommonWordsFromTwoSentences
+    public class LC_00000884_UncommonWordsFromTwoSentences : ILC_00000884_UncommonWordsFromTwoSentences
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00884_UncommonWordsFromTwoSentences()
+        public LC_00000884_UncommonWordsFromTwoSentences()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00884_UncommonWordsFromTwoSentences));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000884_UncommonWordsFromTwoSentences));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00884_UncommonWordsFromTwoSentences(IHost host)
+        public LC_00000884_UncommonWordsFromTwoSentences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00884_UncommonWordsFromTwoSentences));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000884_UncommonWordsFromTwoSentences));
         }
 
         public void PrintSolution()

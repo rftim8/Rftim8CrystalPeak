@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02234_MaximumTotalBeautyOfTheGardens : I_02234_MaximumTotalBeautyOfTheGardens
+    public class LC_00002234_MaximumTotalBeautyOfTheGardens : ILC_00002234_MaximumTotalBeautyOfTheGardens
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02234_MaximumTotalBeautyOfTheGardens()
+        public LC_00002234_MaximumTotalBeautyOfTheGardens()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02234_MaximumTotalBeautyOfTheGardens));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002234_MaximumTotalBeautyOfTheGardens));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02234_MaximumTotalBeautyOfTheGardens(IHost host)
+        public LC_00002234_MaximumTotalBeautyOfTheGardens(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02234_MaximumTotalBeautyOfTheGardens));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002234_MaximumTotalBeautyOfTheGardens));
         }
 
         public void PrintSolution()

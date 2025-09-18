@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02558_TakeGiftsFromTheRichestPile
+    public interface ILC_00002558_TakeGiftsFromTheRichestPile
     {
         public void PrintSolution();
     }

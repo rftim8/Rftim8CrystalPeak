@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01653_MinimumDeletionsToMakeStringBalanced
+    public interface ILC_00001653_MinimumDeletionsToMakeStringBalanced
     {
         public void PrintSolution();
     }

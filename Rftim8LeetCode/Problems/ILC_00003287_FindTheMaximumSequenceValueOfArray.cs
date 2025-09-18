@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03287_FindTheMaximumSequenceValueOfArray
+    public interface ILC_00003287_FindTheMaximumSequenceValueOfArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01905_CountSubIslands
+    public interface ILC_00001905_CountSubIslands
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01814_CountNicePairsInAnArray
+    public interface ILC_00001814_CountNicePairsInAnArray
     {
         public void PrintSolution();
     }

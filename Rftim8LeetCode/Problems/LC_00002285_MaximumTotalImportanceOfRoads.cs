@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02285_MaximumTotalImportanceOfRoads : I_02285_MaximumTotalImportanceOfRoads
+    public class LC_00002285_MaximumTotalImportanceOfRoads : ILC_00002285_MaximumTotalImportanceOfRoads
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02285_MaximumTotalImportanceOfRoads()
+        public LC_00002285_MaximumTotalImportanceOfRoads()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02285_MaximumTotalImportanceOfRoads));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002285_MaximumTotalImportanceOfRoads));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02285_MaximumTotalImportanceOfRoads(IHost host)
+        public LC_00002285_MaximumTotalImportanceOfRoads(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02285_MaximumTotalImportanceOfRoads));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002285_MaximumTotalImportanceOfRoads));
         }
 
         public void PrintSolution()

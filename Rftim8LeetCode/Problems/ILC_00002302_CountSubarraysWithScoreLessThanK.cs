@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02302_CountSubarraysWithScoreLessThanK
+    public interface ILC_00002302_CountSubarraysWithScoreLessThanK
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03256_MaximumValueSumByPlacingThreeRooksI
+    public interface ILC_00003256_MaximumValueSumByPlacingThreeRooksI
     {
         public void PrintSolution();
     }

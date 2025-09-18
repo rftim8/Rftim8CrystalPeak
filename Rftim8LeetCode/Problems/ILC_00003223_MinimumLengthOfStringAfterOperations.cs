@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03223_MinimumLengthOfStringAfterOperations
+    public interface ILC_00003223_MinimumLengthOfStringAfterOperations
     {
         public void PrintSolution();
     }

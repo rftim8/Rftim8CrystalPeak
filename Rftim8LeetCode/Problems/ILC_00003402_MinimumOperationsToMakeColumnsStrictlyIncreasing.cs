@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03402_MinimumOperationsToMakeColumnsStrictlyIncreasing
+    public interface ILC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing
     {
         public void PrintSolution();
     }

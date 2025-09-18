@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03494_FindTheMinimumAmountOfTimeToBrewPotions
+    public interface ILC_00003494_FindTheMinimumAmountOfTimeToBrewPotions
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02068_CheckWhetherTwoStringsAreAlmostEquivalent : I_02068_CheckWhetherTwoStringsAreAlmostEquivalent
+    public class LC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent : ILC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02068_CheckWhetherTwoStringsAreAlmostEquivalent()
+        public LC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02068_CheckWhetherTwoStringsAreAlmostEquivalent));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02068_CheckWhetherTwoStringsAreAlmostEquivalent(IHost host)
+        public LC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02068_CheckWhetherTwoStringsAreAlmostEquivalent));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent));
         }
 
         public void PrintSolution()

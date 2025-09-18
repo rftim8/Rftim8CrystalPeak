@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00829_ConsecutiveNumbersSum : I_00829_ConsecutiveNumbersSum
+    public class LC_00000829_ConsecutiveNumbersSum : ILC_00000829_ConsecutiveNumbersSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00829_ConsecutiveNumbersSum()
+        public LC_00000829_ConsecutiveNumbersSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00829_ConsecutiveNumbersSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000829_ConsecutiveNumbersSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00829_ConsecutiveNumbersSum(IHost host)
+        public LC_00000829_ConsecutiveNumbersSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00829_ConsecutiveNumbersSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000829_ConsecutiveNumbersSum));
         }
 
         public void PrintSolution()

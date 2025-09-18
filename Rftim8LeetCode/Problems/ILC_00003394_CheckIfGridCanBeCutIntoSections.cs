@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03394_CheckIfGridCanBeCutIntoSections
+    public interface ILC_00003394_CheckIfGridCanBeCutIntoSections
     {
         public void PrintSolution();
     }

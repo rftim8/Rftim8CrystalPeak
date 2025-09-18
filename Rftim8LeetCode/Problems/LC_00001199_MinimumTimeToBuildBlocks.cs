@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01199_MinimumTimeToBuildBlocks : I_01199_MinimumTimeToBuildBlocks
+    public class LC_00001199_MinimumTimeToBuildBlocks : ILC_00001199_MinimumTimeToBuildBlocks
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01199_MinimumTimeToBuildBlocks()
+        public LC_00001199_MinimumTimeToBuildBlocks()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01199_MinimumTimeToBuildBlocks));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001199_MinimumTimeToBuildBlocks));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01199_MinimumTimeToBuildBlocks(IHost host)
+        public LC_00001199_MinimumTimeToBuildBlocks(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01199_MinimumTimeToBuildBlocks));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001199_MinimumTimeToBuildBlocks));
         }
 
         public void PrintSolution()

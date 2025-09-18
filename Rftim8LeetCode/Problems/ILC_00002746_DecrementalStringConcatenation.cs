@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02746_DecrementalStringConcatenation
+    public interface ILC_00002746_DecrementalStringConcatenation
     {
         public void PrintSolution();
     }

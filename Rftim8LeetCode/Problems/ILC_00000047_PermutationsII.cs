@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00047_PermutationsII
+    public interface ILC_00000047_PermutationsII
     {
         public void PrintSolution();
     }

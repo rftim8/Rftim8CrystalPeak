@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02846_MinimumEdgeWeightEquilibriumQueriesInATree
+    public interface ILC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree
     {
         public void PrintSolution();
     }

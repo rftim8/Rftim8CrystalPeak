@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01388_PizzaWith3nSlices
+    public interface ILC_00001388_PizzaWith3nSlices
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03423_MaximumDifferenceBetweenAdjacentElementsInACircularArray
+    public interface ILC_00003423_MaximumDifferenceBetweenAdjacentElementsInACircularArray
     {
         public void PrintSolution();
     }

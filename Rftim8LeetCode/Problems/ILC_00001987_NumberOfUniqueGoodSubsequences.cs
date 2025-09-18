@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01987_NumberOfUniqueGoodSubsequences
+    public interface ILC_00001987_NumberOfUniqueGoodSubsequences
     {
         public void PrintSolution();
     }

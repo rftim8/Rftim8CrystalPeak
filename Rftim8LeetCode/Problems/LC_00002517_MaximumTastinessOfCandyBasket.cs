@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02517_MaximumTastinessOfCandyBasket : I_02517_MaximumTastinessOfCandyBasket
+    public class LC_00002517_MaximumTastinessOfCandyBasket : ILC_00002517_MaximumTastinessOfCandyBasket
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02517_MaximumTastinessOfCandyBasket()
+        public LC_00002517_MaximumTastinessOfCandyBasket()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02517_MaximumTastinessOfCandyBasket));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002517_MaximumTastinessOfCandyBasket));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02517_MaximumTastinessOfCandyBasket(IHost host)
+        public LC_00002517_MaximumTastinessOfCandyBasket(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02517_MaximumTastinessOfCandyBasket));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002517_MaximumTastinessOfCandyBasket));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01548_TheMostSimilarPathInAGraph
+    public interface ILC_00001548_TheMostSimilarPathInAGraph
     {
         public void PrintSolution();
     }

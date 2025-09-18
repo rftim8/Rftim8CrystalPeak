@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03253_ConstructStringWithMinimumCost0
+    public interface ILC_00003253_ConstructStringWithMinimumCost0
     {
         public void PrintSolution();
     }

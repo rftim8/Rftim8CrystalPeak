@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00998_MaximumBinaryTreeII
+    public interface ILC_00000998_MaximumBinaryTreeII
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01848_MinimumDistanceToTheTargetElement
+    public interface ILC_00001848_MinimumDistanceToTheTargetElement
     {
         public void PrintSolution();
     }

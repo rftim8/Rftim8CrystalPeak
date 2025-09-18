@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03329_CountSubstringsWithKFrequencyCharactersII : I_03329_CountSubstringsWithKFrequencyCharactersII
+    public class LC_00003329_CountSubstringsWithKFrequencyCharactersII : ILC_00003329_CountSubstringsWithKFrequencyCharactersII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03329_CountSubstringsWithKFrequencyCharactersII()
+        public LC_00003329_CountSubstringsWithKFrequencyCharactersII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03329_CountSubstringsWithKFrequencyCharactersII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003329_CountSubstringsWithKFrequencyCharactersII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03329_CountSubstringsWithKFrequencyCharactersII(IHost host)
+        public LC_00003329_CountSubstringsWithKFrequencyCharactersII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03329_CountSubstringsWithKFrequencyCharactersII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003329_CountSubstringsWithKFrequencyCharactersII));
         }
 
         public void PrintSolution()

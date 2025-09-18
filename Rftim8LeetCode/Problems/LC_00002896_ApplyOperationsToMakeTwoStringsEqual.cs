@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02896_ApplyOperationsToMakeTwoStringsEqual : I_02896_ApplyOperationsToMakeTwoStringsEqual
+    public class LC_00002896_ApplyOperationsToMakeTwoStringsEqual : ILC_00002896_ApplyOperationsToMakeTwoStringsEqual
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02896_ApplyOperationsToMakeTwoStringsEqual()
+        public LC_00002896_ApplyOperationsToMakeTwoStringsEqual()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02896_ApplyOperationsToMakeTwoStringsEqual));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002896_ApplyOperationsToMakeTwoStringsEqual));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02896_ApplyOperationsToMakeTwoStringsEqual(IHost host)
+        public LC_00002896_ApplyOperationsToMakeTwoStringsEqual(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02896_ApplyOperationsToMakeTwoStringsEqual));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002896_ApplyOperationsToMakeTwoStringsEqual));
         }
 
         public void PrintSolution()

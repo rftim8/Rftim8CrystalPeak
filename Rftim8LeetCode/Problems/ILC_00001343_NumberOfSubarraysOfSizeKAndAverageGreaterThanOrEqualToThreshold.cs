@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01343_NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold
+    public interface ILC_00001343_NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold
     {
         public void PrintSolution();
     }

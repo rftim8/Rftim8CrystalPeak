@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02140_SolvingQuestionsWithBrainpower
+    public interface ILC_00002140_SolvingQuestionsWithBrainpower
     {
         public void PrintSolution();
     }

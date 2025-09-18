@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00686_RepeatedStringMatch : I_00686_RepeatedStringMatch
+    public class LC_00000686_RepeatedStringMatch : ILC_00000686_RepeatedStringMatch
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00686_RepeatedStringMatch()
+        public LC_00000686_RepeatedStringMatch()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00686_RepeatedStringMatch));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000686_RepeatedStringMatch));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00686_RepeatedStringMatch(IHost host)
+        public LC_00000686_RepeatedStringMatch(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00686_RepeatedStringMatch));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000686_RepeatedStringMatch));
         }
 
         public void PrintSolution()

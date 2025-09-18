@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01426_CountingElements
+    public interface ILC_00001426_CountingElements
     {
         public void PrintSolution();
     }

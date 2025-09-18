@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03148_MaximumDifferenceScoreInAGrid
+    public interface ILC_00003148_MaximumDifferenceScoreInAGrid
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02583_KthLargestSumInABinaryTree
+    public interface ILC_00002583_KthLargestSumInABinaryTree
     {
         public void PrintSolution();
     }

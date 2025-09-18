@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00478_GenerateRandomPointInACircle
+    public interface ILC_00000478_GenerateRandomPointInACircle
     {
         public void PrintSolution();
     }

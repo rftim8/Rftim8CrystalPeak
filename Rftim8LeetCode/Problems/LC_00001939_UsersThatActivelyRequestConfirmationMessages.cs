@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01939_UsersThatActivelyRequestConfirmationMessages : I_01939_UsersThatActivelyRequestConfirmationMessages
+    public class LC_00001939_UsersThatActivelyRequestConfirmationMessages : ILC_00001939_UsersThatActivelyRequestConfirmationMessages
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01939_UsersThatActivelyRequestConfirmationMessages()
+        public LC_00001939_UsersThatActivelyRequestConfirmationMessages()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01939_UsersThatActivelyRequestConfirmationMessages));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001939_UsersThatActivelyRequestConfirmationMessages));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01939_UsersThatActivelyRequestConfirmationMessages(IHost host)
+        public LC_00001939_UsersThatActivelyRequestConfirmationMessages(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01939_UsersThatActivelyRequestConfirmationMessages));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001939_UsersThatActivelyRequestConfirmationMessages));
         }
 
         public void PrintSolution()

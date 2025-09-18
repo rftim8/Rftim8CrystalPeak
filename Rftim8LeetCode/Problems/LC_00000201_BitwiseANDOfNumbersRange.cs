@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00201_BitwiseANDOfNumbersRange : I_00201_BitwiseANDOfNumbersRange
+    public class LC_00000201_BitwiseANDOfNumbersRange : ILC_00000201_BitwiseANDOfNumbersRange
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00201_BitwiseANDOfNumbersRange()
+        public LC_00000201_BitwiseANDOfNumbersRange()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00201_BitwiseANDOfNumbersRange));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000201_BitwiseANDOfNumbersRange));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00201_BitwiseANDOfNumbersRange(IHost host)
+        public LC_00000201_BitwiseANDOfNumbersRange(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00201_BitwiseANDOfNumbersRange));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000201_BitwiseANDOfNumbersRange));
         }
 
         public void PrintSolution()

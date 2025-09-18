@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02323_FindMinimumTimeToFinishAllJobsII
+    public interface ILC_00002323_FindMinimumTimeToFinishAllJobsII
     {
         public void PrintSolution();
     }

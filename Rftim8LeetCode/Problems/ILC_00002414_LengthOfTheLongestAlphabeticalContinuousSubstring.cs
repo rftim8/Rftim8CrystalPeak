@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02414_LengthOfTheLongestAlphabeticalContinuousSubstring
+    public interface ILC_00002414_LengthOfTheLongestAlphabeticalContinuousSubstring
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03228_MaximumNumberOfOperationsToMoveOnesToTheEnd_Test
+    public class LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03228_MaximumNumberOfOperationsToMoveOnesToTheEnd))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03228_MaximumNumberOfOperationsToMoveOnesToTheEnd))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03228_MaximumNumberOfOperationsToMoveOnesToTheEnd))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd))![1]);
 
-        public static TheoryData<List<string>, int> _03228_MaximumNumberOfOperationsToMoveOnesToTheEndPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEndPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03228_MaximumNumberOfOperationsToMoveOnesToTheEndPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEndPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03228_MaximumNumberOfOperationsToMoveOnesToTheEndPartOne_Data))]
+        [MemberData(nameof(LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEndPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03228_MaximumNumberOfOperationsToMoveOnesToTheEnd.PartOne_Test(a0);
+            int actual = LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03228_MaximumNumberOfOperationsToMoveOnesToTheEndPartTwo_Data))]
+        [MemberData(nameof(LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEndPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03228_MaximumNumberOfOperationsToMoveOnesToTheEnd.PartTwo_Test(a0);
+            int actual = LC_00003228_MaximumNumberOfOperationsToMoveOnesToTheEnd.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

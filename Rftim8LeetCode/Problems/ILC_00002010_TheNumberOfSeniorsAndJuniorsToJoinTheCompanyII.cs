@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02010_TheNumberOfSeniorsAndJuniorsToJoinTheCompanyII
+    public interface ILC_00002010_TheNumberOfSeniorsAndJuniorsToJoinTheCompanyII
     {
         public void PrintSolution();
     }

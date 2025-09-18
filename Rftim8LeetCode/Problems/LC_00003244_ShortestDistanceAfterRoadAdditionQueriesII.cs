@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03244_ShortestDistanceAfterRoadAdditionQueriesII : I_03244_ShortestDistanceAfterRoadAdditionQueriesII
+    public class LC_00003244_ShortestDistanceAfterRoadAdditionQueriesII : ILC_00003244_ShortestDistanceAfterRoadAdditionQueriesII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03244_ShortestDistanceAfterRoadAdditionQueriesII()
+        public LC_00003244_ShortestDistanceAfterRoadAdditionQueriesII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03244_ShortestDistanceAfterRoadAdditionQueriesII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003244_ShortestDistanceAfterRoadAdditionQueriesII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03244_ShortestDistanceAfterRoadAdditionQueriesII(IHost host)
+        public LC_00003244_ShortestDistanceAfterRoadAdditionQueriesII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03244_ShortestDistanceAfterRoadAdditionQueriesII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003244_ShortestDistanceAfterRoadAdditionQueriesII));
         }
 
         public void PrintSolution()

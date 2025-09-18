@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02019_TheScoreOfStudentsSolvingMathExpression : I_02019_TheScoreOfStudentsSolvingMathExpression
+    public class LC_00002019_TheScoreOfStudentsSolvingMathExpression : ILC_00002019_TheScoreOfStudentsSolvingMathExpression
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02019_TheScoreOfStudentsSolvingMathExpression()
+        public LC_00002019_TheScoreOfStudentsSolvingMathExpression()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02019_TheScoreOfStudentsSolvingMathExpression));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002019_TheScoreOfStudentsSolvingMathExpression));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02019_TheScoreOfStudentsSolvingMathExpression(IHost host)
+        public LC_00002019_TheScoreOfStudentsSolvingMathExpression(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02019_TheScoreOfStudentsSolvingMathExpression));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002019_TheScoreOfStudentsSolvingMathExpression));
         }
 
         public void PrintSolution()

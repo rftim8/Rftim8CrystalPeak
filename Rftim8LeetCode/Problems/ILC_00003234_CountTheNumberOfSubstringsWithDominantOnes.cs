@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03234_CountTheNumberOfSubstringsWithDominantOnes
+    public interface ILC_00003234_CountTheNumberOfSubstringsWithDominantOnes
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01691_MaximumHeightByStackingCuboids
+    public interface ILC_00001691_MaximumHeightByStackingCuboids
     {
         public void PrintSolution();
     }

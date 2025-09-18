@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01873_CalculateSpecialBonus
+    public interface ILC_00001873_CalculateSpecialBonus
     {
         public void PrintSolution();
     }

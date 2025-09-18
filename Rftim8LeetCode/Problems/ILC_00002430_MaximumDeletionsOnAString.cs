@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02430_MaximumDeletionsOnAString
+    public interface ILC_00002430_MaximumDeletionsOnAString
     {
         public void PrintSolution();
     }

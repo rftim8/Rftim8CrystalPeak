@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02906_ConstructProductMatrix
+    public interface ILC_00002906_ConstructProductMatrix
     {
         public void PrintSolution();
     }

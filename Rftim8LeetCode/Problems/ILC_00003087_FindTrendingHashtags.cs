@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03087_FindTrendingHashtags
+    public interface ILC_00003087_FindTrendingHashtags
     {
         public void PrintSolution();
     }

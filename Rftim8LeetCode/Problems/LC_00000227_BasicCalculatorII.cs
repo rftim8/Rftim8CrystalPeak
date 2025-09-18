@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00227_BasicCalculatorII : I_00227_BasicCalculatorII
+    public class LC_00000227_BasicCalculatorII : ILC_00000227_BasicCalculatorII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00227_BasicCalculatorII()
+        public LC_00000227_BasicCalculatorII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00227_BasicCalculatorII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000227_BasicCalculatorII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00227_BasicCalculatorII(IHost host)
+        public LC_00000227_BasicCalculatorII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00227_BasicCalculatorII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000227_BasicCalculatorII));
         }
 
         public void PrintSolution()

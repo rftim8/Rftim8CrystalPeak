@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03242_DesignNeighborSumService
+    public interface ILC_00003242_DesignNeighborSumService
     {
         public void PrintSolution();
     }

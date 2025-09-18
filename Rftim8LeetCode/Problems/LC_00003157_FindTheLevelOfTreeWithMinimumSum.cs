@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03157_FindTheLevelOfTreeWithMinimumSum : I_03157_FindTheLevelOfTreeWithMinimumSum
+    public class LC_00003157_FindTheLevelOfTreeWithMinimumSum : ILC_00003157_FindTheLevelOfTreeWithMinimumSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03157_FindTheLevelOfTreeWithMinimumSum()
+        public LC_00003157_FindTheLevelOfTreeWithMinimumSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03157_FindTheLevelOfTreeWithMinimumSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003157_FindTheLevelOfTreeWithMinimumSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03157_FindTheLevelOfTreeWithMinimumSum(IHost host)
+        public LC_00003157_FindTheLevelOfTreeWithMinimumSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03157_FindTheLevelOfTreeWithMinimumSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003157_FindTheLevelOfTreeWithMinimumSum));
         }
 
         public void PrintSolution()

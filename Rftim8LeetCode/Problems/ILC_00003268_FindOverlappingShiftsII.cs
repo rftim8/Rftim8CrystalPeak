@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03268_FindOverlappingShiftsII
+    public interface ILC_00003268_FindOverlappingShiftsII
     {
         public void PrintSolution();
     }

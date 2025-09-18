@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03237_AltAndTabSimulation : I_03237_AltAndTabSimulation
+    public class LC_00003237_AltAndTabSimulation : ILC_00003237_AltAndTabSimulation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03237_AltAndTabSimulation()
+        public LC_00003237_AltAndTabSimulation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03237_AltAndTabSimulation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003237_AltAndTabSimulation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03237_AltAndTabSimulation(IHost host)
+        public LC_00003237_AltAndTabSimulation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03237_AltAndTabSimulation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003237_AltAndTabSimulation));
         }
 
         public void PrintSolution()

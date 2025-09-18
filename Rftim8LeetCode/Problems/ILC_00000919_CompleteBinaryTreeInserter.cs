@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00919_CompleteBinaryTreeInserter
+    public interface ILC_00000919_CompleteBinaryTreeInserter
     {
         public void PrintSolution();
     }

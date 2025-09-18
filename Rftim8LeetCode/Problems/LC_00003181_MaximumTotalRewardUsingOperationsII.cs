@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03181_MaximumTotalRewardUsingOperationsII : I_03181_MaximumTotalRewardUsingOperationsII
+    public class LC_00003181_MaximumTotalRewardUsingOperationsII : ILC_00003181_MaximumTotalRewardUsingOperationsII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03181_MaximumTotalRewardUsingOperationsII()
+        public LC_00003181_MaximumTotalRewardUsingOperationsII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03181_MaximumTotalRewardUsingOperationsII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003181_MaximumTotalRewardUsingOperationsII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03181_MaximumTotalRewardUsingOperationsII(IHost host)
+        public LC_00003181_MaximumTotalRewardUsingOperationsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03181_MaximumTotalRewardUsingOperationsII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003181_MaximumTotalRewardUsingOperationsII));
         }
 
         public void PrintSolution()

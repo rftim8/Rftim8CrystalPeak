@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00115_DistinctSubsequences
+    public interface ILC_00000115_DistinctSubsequences
     {
         public void PrintSolution();
     }

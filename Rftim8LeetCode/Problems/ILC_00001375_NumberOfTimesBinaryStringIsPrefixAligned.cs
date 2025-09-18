@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01375_NumberOfTimesBinaryStringIsPrefixAligned
+    public interface ILC_00001375_NumberOfTimesBinaryStringIsPrefixAligned
     {
         public void PrintSolution();
     }

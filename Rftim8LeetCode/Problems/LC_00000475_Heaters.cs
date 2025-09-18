@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00475_Heaters : I_00475_Heaters
+    public class LC_00000475_Heaters : ILC_00000475_Heaters
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00475_Heaters()
+        public LC_00000475_Heaters()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00475_Heaters));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000475_Heaters));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00475_Heaters(IHost host)
+        public LC_00000475_Heaters(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00475_Heaters));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000475_Heaters));
         }
 
         public void PrintSolution()

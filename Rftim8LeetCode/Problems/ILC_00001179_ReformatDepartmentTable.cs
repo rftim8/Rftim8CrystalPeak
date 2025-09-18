@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01179_ReformatDepartmentTable
+    public interface ILC_00001179_ReformatDepartmentTable
     {
         public void PrintSolution();
     }

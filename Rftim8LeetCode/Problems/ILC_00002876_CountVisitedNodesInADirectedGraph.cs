@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02876_CountVisitedNodesInADirectedGraph
+    public interface ILC_00002876_CountVisitedNodesInADirectedGraph
     {
         public void PrintSolution();
     }

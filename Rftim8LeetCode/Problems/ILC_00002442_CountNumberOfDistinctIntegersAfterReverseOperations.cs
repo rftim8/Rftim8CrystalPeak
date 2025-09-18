@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02442_CountNumberOfDistinctIntegersAfterReverseOperations
+    public interface ILC_00002442_CountNumberOfDistinctIntegersAfterReverseOperations
     {
         public void PrintSolution();
     }

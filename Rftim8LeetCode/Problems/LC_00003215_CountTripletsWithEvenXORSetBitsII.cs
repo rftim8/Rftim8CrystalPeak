@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03215_CountTripletsWithEvenXORSetBitsII : I_03215_CountTripletsWithEvenXORSetBitsII
+    public class LC_00003215_CountTripletsWithEvenXORSetBitsII : ILC_00003215_CountTripletsWithEvenXORSetBitsII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03215_CountTripletsWithEvenXORSetBitsII()
+        public LC_00003215_CountTripletsWithEvenXORSetBitsII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03215_CountTripletsWithEvenXORSetBitsII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003215_CountTripletsWithEvenXORSetBitsII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03215_CountTripletsWithEvenXORSetBitsII(IHost host)
+        public LC_00003215_CountTripletsWithEvenXORSetBitsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03215_CountTripletsWithEvenXORSetBitsII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003215_CountTripletsWithEvenXORSetBitsII));
         }
 
         public void PrintSolution()

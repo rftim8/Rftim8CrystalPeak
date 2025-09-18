@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01225_ReportContiguousDates
+    public interface ILC_00001225_ReportContiguousDates
     {
         public void PrintSolution();
     }

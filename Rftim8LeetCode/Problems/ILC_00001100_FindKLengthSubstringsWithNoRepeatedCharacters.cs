@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01100_FindKLengthSubstringsWithNoRepeatedCharacters
+    public interface ILC_00001100_FindKLengthSubstringsWithNoRepeatedCharacters
     {
         public void PrintSolution();
     }

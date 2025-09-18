@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01056_ConfusingNumber
+    public interface ILC_00001056_ConfusingNumber
     {
         public void PrintSolution();
     }

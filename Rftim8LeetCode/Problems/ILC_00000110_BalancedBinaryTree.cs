@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00110_BalancedBinaryTree
+    public interface ILC_00000110_BalancedBinaryTree
     {
         public void PrintSolution();
     }

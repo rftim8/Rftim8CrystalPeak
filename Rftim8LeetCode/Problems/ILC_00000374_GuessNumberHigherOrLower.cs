@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00374_GuessNumberHigherOrLower
+    public interface ILC_00000374_GuessNumberHigherOrLower
     {
         public void PrintSolution();
     }

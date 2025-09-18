@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00554_BrickWall
+    public interface ILC_00000554_BrickWall
     {
         public void PrintSolution();
     }

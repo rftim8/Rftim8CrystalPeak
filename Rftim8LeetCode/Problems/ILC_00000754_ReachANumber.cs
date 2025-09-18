@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00754_ReachANumber
+    public interface ILC_00000754_ReachANumber
     {
         public void PrintSolution();
     }

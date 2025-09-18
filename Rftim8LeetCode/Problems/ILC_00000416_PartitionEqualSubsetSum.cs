@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00416_PartitionEqualSubsetSum
+    public interface ILC_00000416_PartitionEqualSubsetSum
     {
         public void PrintSolution();
     }

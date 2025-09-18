@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03417_ZigzagGridTraversalWithSkip
+    public interface ILC_00003417_ZigzagGridTraversalWithSkip
     {
         public void PrintSolution();
     }

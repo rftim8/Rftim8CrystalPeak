@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00138_CopyListWithRandomPointer
+    public interface ILC_00000138_CopyListWithRandomPointer
     {
         public void PrintSolution();
     }

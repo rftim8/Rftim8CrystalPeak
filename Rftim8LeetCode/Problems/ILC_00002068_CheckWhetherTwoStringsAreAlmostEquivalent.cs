@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02068_CheckWhetherTwoStringsAreAlmostEquivalent
+    public interface ILC_00002068_CheckWhetherTwoStringsAreAlmostEquivalent
     {
         public void PrintSolution();
     }

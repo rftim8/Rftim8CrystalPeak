@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02878_GetTheSizeOfADataFrame_Test
+    public class LC_00002878_GetTheSizeOfADataFrame_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02878_GetTheSizeOfADataFrame))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02878_GetTheSizeOfADataFrame))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02878_GetTheSizeOfADataFrame))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002878_GetTheSizeOfADataFrame))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002878_GetTheSizeOfADataFrame))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002878_GetTheSizeOfADataFrame))![1]);
 
-        public static TheoryData<List<string>, int> _02878_GetTheSizeOfADataFramePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002878_GetTheSizeOfADataFramePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02878_GetTheSizeOfADataFramePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002878_GetTheSizeOfADataFramePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02878_GetTheSizeOfADataFramePartOne_Data))]
+        [MemberData(nameof(LC_00002878_GetTheSizeOfADataFramePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02878_GetTheSizeOfADataFrame.PartOne_Test(a0);
+            int actual = LC_00002878_GetTheSizeOfADataFrame.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02878_GetTheSizeOfADataFramePartTwo_Data))]
+        [MemberData(nameof(LC_00002878_GetTheSizeOfADataFramePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02878_GetTheSizeOfADataFrame.PartTwo_Test(a0);
+            int actual = LC_00002878_GetTheSizeOfADataFrame.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

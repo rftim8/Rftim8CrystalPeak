@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00537_ComplexNumberMultiplication
+    public interface ILC_00000537_ComplexNumberMultiplication
     {
         public void PrintSolution();
     }

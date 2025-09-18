@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01732_FindTheHighestAltitude : I_01732_FindTheHighestAltitude
+    public class LC_00001732_FindTheHighestAltitude : ILC_00001732_FindTheHighestAltitude
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01732_FindTheHighestAltitude()
+        public LC_00001732_FindTheHighestAltitude()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01732_FindTheHighestAltitude));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001732_FindTheHighestAltitude));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01732_FindTheHighestAltitude(IHost host)
+        public LC_00001732_FindTheHighestAltitude(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01732_FindTheHighestAltitude));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001732_FindTheHighestAltitude));
         }
 
         public void PrintSolution()

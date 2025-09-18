@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03536_MaximumProductOfTwoDigits
+    public interface ILC_00003536_MaximumProductOfTwoDigits
     {
         public void PrintSolution();
     }

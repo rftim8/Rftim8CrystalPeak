@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01837_SumOfDigitsInBaseK : I_01837_SumOfDigitsInBaseK
+    public class LC_00001837_SumOfDigitsInBaseK : ILC_00001837_SumOfDigitsInBaseK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01837_SumOfDigitsInBaseK()
+        public LC_00001837_SumOfDigitsInBaseK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01837_SumOfDigitsInBaseK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001837_SumOfDigitsInBaseK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01837_SumOfDigitsInBaseK(IHost host)
+        public LC_00001837_SumOfDigitsInBaseK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01837_SumOfDigitsInBaseK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001837_SumOfDigitsInBaseK));
         }
 
         public void PrintSolution()

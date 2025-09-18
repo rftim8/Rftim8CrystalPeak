@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00823_BinaryTreesWithFactors
+    public interface ILC_00000823_BinaryTreesWithFactors
     {
         public void PrintSolution();
     }

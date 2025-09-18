@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03434_MaximumFrequencyAfterSubarrayOperation
+    public interface ILC_00003434_MaximumFrequencyAfterSubarrayOperation
     {
         public void PrintSolution();
     }

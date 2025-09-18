@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00030_SubstringWithConcatenationOfAllWords
+    public interface ILC_00000030_SubstringWithConcatenationOfAllWords
     {
         public void PrintSolution();
     }

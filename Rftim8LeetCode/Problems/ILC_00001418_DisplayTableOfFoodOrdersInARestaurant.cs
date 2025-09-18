@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01418_DisplayTableOfFoodOrdersInARestaurant
+    public interface ILC_00001418_DisplayTableOfFoodOrdersInARestaurant
     {
         public void PrintSolution();
     }

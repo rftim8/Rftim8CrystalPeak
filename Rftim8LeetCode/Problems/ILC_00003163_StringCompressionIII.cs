@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03163_StringCompressionIII
+    public interface ILC_00003163_StringCompressionIII
     {
         public void PrintSolution();
     }

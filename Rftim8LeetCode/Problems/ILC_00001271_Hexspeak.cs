@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01271_Hexspeak
+    public interface ILC_00001271_Hexspeak
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01539_KthMissingPositiveNumber
+    public interface ILC_00001539_KthMissingPositiveNumber
     {
         public void PrintSolution();
     }

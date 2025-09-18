@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00426_ConvertBinarySearchTreeToSortedDoublyLinkedList
+    public interface ILC_00000426_ConvertBinarySearchTreeToSortedDoublyLinkedList
     {
         public void PrintSolution();
     }

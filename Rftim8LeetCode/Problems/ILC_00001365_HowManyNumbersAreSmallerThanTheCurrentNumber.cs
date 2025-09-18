@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01365_HowManyNumbersAreSmallerThanTheCurrentNumber
+    public interface ILC_00001365_HowManyNumbersAreSmallerThanTheCurrentNumber
     {
         public void PrintSolution();
     }

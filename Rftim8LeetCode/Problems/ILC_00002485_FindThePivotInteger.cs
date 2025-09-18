@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02485_FindThePivotInteger
+    public interface ILC_00002485_FindThePivotInteger
     {
         public void PrintSolution();
     }

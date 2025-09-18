@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit : I_01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
+    public class LC_00001438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit : ILC_00001438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit()
+        public LC_00001438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit(IHost host)
+        public LC_00001438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit));
         }
 
         public void PrintSolution()

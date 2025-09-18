@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02938_SeparateBlackAndWhiteBalls
+    public interface ILC_00002938_SeparateBlackAndWhiteBalls
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00696_CountBinarySubstrings
+    public interface ILC_00000696_CountBinarySubstrings
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01526_MinimumNumberOfIncrementsOnSubarraysToFormATargetArray
+    public interface ILC_00001526_MinimumNumberOfIncrementsOnSubarraysToFormATargetArray
     {
         public void PrintSolution();
     }

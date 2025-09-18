@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02428_MaximumSumOfAnHourglass
+    public interface ILC_00002428_MaximumSumOfAnHourglass
     {
         public void PrintSolution();
     }

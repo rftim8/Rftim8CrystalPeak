@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01101_TheEarliestMomentWhenEveryoneBecomeFriends : I_01101_TheEarliestMomentWhenEveryoneBecomeFriends
+    public class LC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends : ILC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01101_TheEarliestMomentWhenEveryoneBecomeFriends()
+        public LC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01101_TheEarliestMomentWhenEveryoneBecomeFriends));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01101_TheEarliestMomentWhenEveryoneBecomeFriends(IHost host)
+        public LC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01101_TheEarliestMomentWhenEveryoneBecomeFriends));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends));
         }
 
         public void PrintSolution()

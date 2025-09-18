@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03587_MinimumAdjacentSwapsToAlternateParity
+    public interface ILC_00003587_MinimumAdjacentSwapsToAlternateParity
     {
         public void PrintSolution();
     }

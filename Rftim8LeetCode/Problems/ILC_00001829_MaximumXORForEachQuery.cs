@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01829_MaximumXORForEachQuery
+    public interface ILC_00001829_MaximumXORForEachQuery
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02361_MinimumCostsUsingTheTrainLine
+    public interface ILC_00002361_MinimumCostsUsingTheTrainLine
     {
         public void PrintSolution();
     }

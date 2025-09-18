@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00210_CourseScheduleII
+    public interface ILC_00000210_CourseScheduleII
     {
         public void PrintSolution();
     }

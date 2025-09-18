@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03117_MinimumSumOfValuesByDividingArray : I_03117_MinimumSumOfValuesByDividingArray
+    public class LC_00003117_MinimumSumOfValuesByDividingArray : ILC_00003117_MinimumSumOfValuesByDividingArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03117_MinimumSumOfValuesByDividingArray()
+        public LC_00003117_MinimumSumOfValuesByDividingArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03117_MinimumSumOfValuesByDividingArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003117_MinimumSumOfValuesByDividingArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03117_MinimumSumOfValuesByDividingArray(IHost host)
+        public LC_00003117_MinimumSumOfValuesByDividingArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03117_MinimumSumOfValuesByDividingArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003117_MinimumSumOfValuesByDividingArray));
         }
 
         public void PrintSolution()

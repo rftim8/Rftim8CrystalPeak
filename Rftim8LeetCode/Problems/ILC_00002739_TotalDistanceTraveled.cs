@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02739_TotalDistanceTraveled
+    public interface ILC_00002739_TotalDistanceTraveled
     {
         public void PrintSolution();
     }

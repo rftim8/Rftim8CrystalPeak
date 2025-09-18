@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01015_SmallestIntegerDivisibleByK
+    public interface ILC_00001015_SmallestIntegerDivisibleByK
     {
         public void PrintSolution();
     }

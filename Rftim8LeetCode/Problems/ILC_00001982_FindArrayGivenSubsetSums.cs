@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01982_FindArrayGivenSubsetSums
+    public interface ILC_00001982_FindArrayGivenSubsetSums
     {
         public void PrintSolution();
     }

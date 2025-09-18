@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03451_FindInvalidIPAddresses : I_03451_FindInvalidIPAddresses
+    public class LC_00003451_FindInvalidIPAddresses : ILC_00003451_FindInvalidIPAddresses
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03451_FindInvalidIPAddresses()
+        public LC_00003451_FindInvalidIPAddresses()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03451_FindInvalidIPAddresses));
-            Input = [.. RftResource._03451_FindInvalidIPAddresses_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003451_FindInvalidIPAddresses));
+            Input = [.. RftResource.LC_00003451_FindInvalidIPAddresses_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03451_FindInvalidIPAddresses(IHost host)
+        public LC_00003451_FindInvalidIPAddresses(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03451_FindInvalidIPAddresses));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003451_FindInvalidIPAddresses));
             DataCollector();
         }
 

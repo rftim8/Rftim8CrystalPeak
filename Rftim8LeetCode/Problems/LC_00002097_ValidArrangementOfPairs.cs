@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02097_ValidArrangementOfPairs : I_02097_ValidArrangementOfPairs
+    public class LC_00002097_ValidArrangementOfPairs : ILC_00002097_ValidArrangementOfPairs
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02097_ValidArrangementOfPairs()
+        public LC_00002097_ValidArrangementOfPairs()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02097_ValidArrangementOfPairs));
-            Input = [.. RftResource._02097_ValidArrangementOfPairs_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002097_ValidArrangementOfPairs));
+            Input = [.. RftResource.LC_00002097_ValidArrangementOfPairs_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02097_ValidArrangementOfPairs(IHost host)
+        public LC_00002097_ValidArrangementOfPairs(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02097_ValidArrangementOfPairs));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002097_ValidArrangementOfPairs));
             DataCollector();
         }
 

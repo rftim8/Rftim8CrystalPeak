@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01713_MinimumOperationsToMakeASubsequence
+    public interface ILC_00001713_MinimumOperationsToMakeASubsequence
     {
         public void PrintSolution();
     }

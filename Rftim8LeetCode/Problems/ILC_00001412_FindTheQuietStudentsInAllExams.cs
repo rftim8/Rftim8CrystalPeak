@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01412_FindTheQuietStudentsInAllExams
+    public interface ILC_00001412_FindTheQuietStudentsInAllExams
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00789_EscapeTheGhosts : I_00789_EscapeTheGhosts
+    public class LC_00000789_EscapeTheGhosts : ILC_00000789_EscapeTheGhosts
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00789_EscapeTheGhosts()
+        public LC_00000789_EscapeTheGhosts()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00789_EscapeTheGhosts));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000789_EscapeTheGhosts));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00789_EscapeTheGhosts(IHost host)
+        public LC_00000789_EscapeTheGhosts(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00789_EscapeTheGhosts));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000789_EscapeTheGhosts));
         }
 
         public void PrintSolution()

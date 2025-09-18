@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00284_PeekingIterator : I_00284_PeekingIterator
+    public class LC_00000284_PeekingIterator : ILC_00000284_PeekingIterator
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00284_PeekingIterator()
+        public LC_00000284_PeekingIterator()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00284_PeekingIterator));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000284_PeekingIterator));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00284_PeekingIterator(IHost host)
+        public LC_00000284_PeekingIterator(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00284_PeekingIterator));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000284_PeekingIterator));
         }
 
         public void PrintSolution()

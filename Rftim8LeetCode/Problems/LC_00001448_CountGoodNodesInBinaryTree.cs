@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01448_CountGoodNodesInBinaryTree : I_01448_CountGoodNodesInBinaryTree
+    public class LC_00001448_CountGoodNodesInBinaryTree : ILC_00001448_CountGoodNodesInBinaryTree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01448_CountGoodNodesInBinaryTree()
+        public LC_00001448_CountGoodNodesInBinaryTree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01448_CountGoodNodesInBinaryTree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001448_CountGoodNodesInBinaryTree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01448_CountGoodNodesInBinaryTree(IHost host)
+        public LC_00001448_CountGoodNodesInBinaryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01448_CountGoodNodesInBinaryTree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001448_CountGoodNodesInBinaryTree));
         }
 
         public void PrintSolution()

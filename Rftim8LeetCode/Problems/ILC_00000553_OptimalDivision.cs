@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00553_OptimalDivision
+    public interface ILC_00000553_OptimalDivision
     {
         public void PrintSolution();
     }

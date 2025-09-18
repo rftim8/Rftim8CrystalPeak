@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02873_MaximumValueOfAnOrderedTripletI_Test
+    public class LC_00002873_MaximumValueOfAnOrderedTripletI_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02873_MaximumValueOfAnOrderedTripletI))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02873_MaximumValueOfAnOrderedTripletI))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02873_MaximumValueOfAnOrderedTripletI))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002873_MaximumValueOfAnOrderedTripletI))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002873_MaximumValueOfAnOrderedTripletI))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002873_MaximumValueOfAnOrderedTripletI))![1]);
 
-        public static TheoryData<List<string>, int> _02873_MaximumValueOfAnOrderedTripletIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002873_MaximumValueOfAnOrderedTripletIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02873_MaximumValueOfAnOrderedTripletIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002873_MaximumValueOfAnOrderedTripletIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02873_MaximumValueOfAnOrderedTripletIPartOne_Data))]
+        [MemberData(nameof(LC_00002873_MaximumValueOfAnOrderedTripletIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02873_MaximumValueOfAnOrderedTripletI.PartOne_Test(a0);
+            int actual = LC_00002873_MaximumValueOfAnOrderedTripletI.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02873_MaximumValueOfAnOrderedTripletIPartTwo_Data))]
+        [MemberData(nameof(LC_00002873_MaximumValueOfAnOrderedTripletIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02873_MaximumValueOfAnOrderedTripletI.PartTwo_Test(a0);
+            int actual = LC_00002873_MaximumValueOfAnOrderedTripletI.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

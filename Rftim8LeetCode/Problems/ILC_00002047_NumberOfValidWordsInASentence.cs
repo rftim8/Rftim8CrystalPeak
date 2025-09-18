@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02047_NumberOfValidWordsInASentence
+    public interface ILC_00002047_NumberOfValidWordsInASentence
     {
         public void PrintSolution();
     }

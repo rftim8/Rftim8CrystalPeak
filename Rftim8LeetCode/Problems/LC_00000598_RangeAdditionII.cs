@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00598_RangeAdditionII : I_00598_RangeAdditionII
+    public class LC_00000598_RangeAdditionII : ILC_00000598_RangeAdditionII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00598_RangeAdditionII()
+        public LC_00000598_RangeAdditionII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00598_RangeAdditionII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000598_RangeAdditionII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00598_RangeAdditionII(IHost host)
+        public LC_00000598_RangeAdditionII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00598_RangeAdditionII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000598_RangeAdditionII));
         }
 
         public void PrintSolution()

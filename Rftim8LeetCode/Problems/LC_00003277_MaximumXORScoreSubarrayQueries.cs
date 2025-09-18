@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03277_MaximumXORScoreSubarrayQueries : I_03277_MaximumXORScoreSubarrayQueries
+    public class LC_00003277_MaximumXORScoreSubarrayQueries : ILC_00003277_MaximumXORScoreSubarrayQueries
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03277_MaximumXORScoreSubarrayQueries()
+        public LC_00003277_MaximumXORScoreSubarrayQueries()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03277_MaximumXORScoreSubarrayQueries));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003277_MaximumXORScoreSubarrayQueries));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03277_MaximumXORScoreSubarrayQueries(IHost host)
+        public LC_00003277_MaximumXORScoreSubarrayQueries(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03277_MaximumXORScoreSubarrayQueries));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003277_MaximumXORScoreSubarrayQueries));
         }
 
         public void PrintSolution()

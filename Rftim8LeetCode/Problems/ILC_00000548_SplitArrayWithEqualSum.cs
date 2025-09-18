@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00548_SplitArrayWithEqualSum
+    public interface ILC_00000548_SplitArrayWithEqualSum
     {
         public void PrintSolution();
     }

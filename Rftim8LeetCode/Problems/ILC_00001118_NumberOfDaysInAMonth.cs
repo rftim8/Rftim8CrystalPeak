@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01118_NumberOfDaysInAMonth
+    public interface ILC_00001118_NumberOfDaysInAMonth
     {
         public void PrintSolution();
     }

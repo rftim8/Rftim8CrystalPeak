@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02630_MemoizeII
+    public interface ILC_00002630_MemoizeII
     {
         public void PrintSolution();
     }

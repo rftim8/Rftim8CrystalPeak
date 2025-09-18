@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00717_1bitAnd2bitCharacters
+    public interface ILC_00000717_1bitAnd2bitCharacters
     {
         public void PrintSolution();
     }

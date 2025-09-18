@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03453_SeparateSquaresI
+    public interface ILC_00003453_SeparateSquaresI
     {
         public void PrintSolution();
     }

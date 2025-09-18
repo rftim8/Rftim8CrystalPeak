@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00003_LongestSubstringWithoutRepeatingCharacters
+    public interface ILC_00000003_LongestSubstringWithoutRepeatingCharacters
     {
         public void PrintSolution();
     }

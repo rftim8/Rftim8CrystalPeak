@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01168_OptimizeWaterDistributionInAVillage
+    public interface ILC_00001168_OptimizeWaterDistributionInAVillage
     {
         public void PrintSolution();
     }

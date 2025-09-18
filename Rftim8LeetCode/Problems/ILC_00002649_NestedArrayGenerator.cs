@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02649_NestedArrayGenerator
+    public interface ILC_00002649_NestedArrayGenerator
     {
         public void PrintSolution();
     }

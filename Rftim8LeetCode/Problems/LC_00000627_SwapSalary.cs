@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00627_SwapSalary : I_00627_SwapSalary
+    public class LC_00000627_SwapSalary : ILC_00000627_SwapSalary
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00627_SwapSalary()
+        public LC_00000627_SwapSalary()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00627_SwapSalary));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000627_SwapSalary));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00627_SwapSalary(IHost host)
+        public LC_00000627_SwapSalary(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00627_SwapSalary));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000627_SwapSalary));
         }
 
         public void PrintSolution()

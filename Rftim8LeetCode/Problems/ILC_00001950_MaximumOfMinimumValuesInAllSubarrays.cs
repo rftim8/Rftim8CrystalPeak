@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01950_MaximumOfMinimumValuesInAllSubarrays
+    public interface ILC_00001950_MaximumOfMinimumValuesInAllSubarrays
     {
         public void PrintSolution();
     }

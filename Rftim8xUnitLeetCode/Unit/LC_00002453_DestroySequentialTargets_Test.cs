@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02453_DestroySequentialTargets_Test
+    public class LC_00002453_DestroySequentialTargets_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02453_DestroySequentialTargets))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02453_DestroySequentialTargets))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02453_DestroySequentialTargets))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002453_DestroySequentialTargets))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002453_DestroySequentialTargets))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002453_DestroySequentialTargets))![1]);
 
-        public static TheoryData<List<string>, int> _02453_DestroySequentialTargetsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002453_DestroySequentialTargetsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02453_DestroySequentialTargetsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002453_DestroySequentialTargetsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02453_DestroySequentialTargetsPartOne_Data))]
+        [MemberData(nameof(LC_00002453_DestroySequentialTargetsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02453_DestroySequentialTargets.PartOne_Test(a0);
+            int actual = LC_00002453_DestroySequentialTargets.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02453_DestroySequentialTargetsPartTwo_Data))]
+        [MemberData(nameof(LC_00002453_DestroySequentialTargetsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02453_DestroySequentialTargets.PartTwo_Test(a0);
+            int actual = LC_00002453_DestroySequentialTargets.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

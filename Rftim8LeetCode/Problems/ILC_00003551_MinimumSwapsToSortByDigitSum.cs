@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03551_MinimumSwapsToSortByDigitSum
+    public interface ILC_00003551_MinimumSwapsToSortByDigitSum
     {
         public void PrintSolution();
     }

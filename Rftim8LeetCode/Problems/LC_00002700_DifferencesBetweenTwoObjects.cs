@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02700_DifferencesBetweenTwoObjects : I_02700_DifferencesBetweenTwoObjects
+    public class LC_00002700_DifferencesBetweenTwoObjects : ILC_00002700_DifferencesBetweenTwoObjects
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02700_DifferencesBetweenTwoObjects()
+        public LC_00002700_DifferencesBetweenTwoObjects()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02700_DifferencesBetweenTwoObjects));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002700_DifferencesBetweenTwoObjects));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02700_DifferencesBetweenTwoObjects(IHost host)
+        public LC_00002700_DifferencesBetweenTwoObjects(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02700_DifferencesBetweenTwoObjects));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002700_DifferencesBetweenTwoObjects));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02110_NumberOfSmoothDescentPeriodsOfAStock : I_02110_NumberOfSmoothDescentPeriodsOfAStock
+    public class LC_00002110_NumberOfSmoothDescentPeriodsOfAStock : ILC_00002110_NumberOfSmoothDescentPeriodsOfAStock
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02110_NumberOfSmoothDescentPeriodsOfAStock()
+        public LC_00002110_NumberOfSmoothDescentPeriodsOfAStock()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02110_NumberOfSmoothDescentPeriodsOfAStock));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002110_NumberOfSmoothDescentPeriodsOfAStock));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02110_NumberOfSmoothDescentPeriodsOfAStock(IHost host)
+        public LC_00002110_NumberOfSmoothDescentPeriodsOfAStock(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02110_NumberOfSmoothDescentPeriodsOfAStock));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002110_NumberOfSmoothDescentPeriodsOfAStock));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00964_LeastOperatorsToExpressNumber
+    public interface ILC_00000964_LeastOperatorsToExpressNumber
     {
         public void PrintSolution();
     }

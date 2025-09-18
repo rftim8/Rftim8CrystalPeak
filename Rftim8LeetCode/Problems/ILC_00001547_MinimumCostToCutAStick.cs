@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01547_MinimumCostToCutAStick
+    public interface ILC_00001547_MinimumCostToCutAStick
     {
         public void PrintSolution();
     }

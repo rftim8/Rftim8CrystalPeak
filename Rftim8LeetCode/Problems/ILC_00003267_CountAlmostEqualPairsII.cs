@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03267_CountAlmostEqualPairsII
+    public interface ILC_00003267_CountAlmostEqualPairsII
     {
         public void PrintSolution();
     }

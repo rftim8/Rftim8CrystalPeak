@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02094_Finding3DigitEvenNumbers
+    public interface ILC_00002094_Finding3DigitEvenNumbers
     {
         public void PrintSolution();
     }

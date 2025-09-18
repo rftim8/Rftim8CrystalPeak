@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03374_FirstLetterCapitalizationII : I_03374_FirstLetterCapitalizationII
+    public class LC_00003374_FirstLetterCapitalizationII : ILC_00003374_FirstLetterCapitalizationII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03374_FirstLetterCapitalizationII()
+        public LC_00003374_FirstLetterCapitalizationII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03374_FirstLetterCapitalizationII));
-            Input = [.. RftResource._03374_FirstLetterCapitalizationII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003374_FirstLetterCapitalizationII));
+            Input = [.. RftResource.LC_00003374_FirstLetterCapitalizationII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03374_FirstLetterCapitalizationII(IHost host)
+        public LC_00003374_FirstLetterCapitalizationII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03374_FirstLetterCapitalizationII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003374_FirstLetterCapitalizationII));
             DataCollector();
         }
 

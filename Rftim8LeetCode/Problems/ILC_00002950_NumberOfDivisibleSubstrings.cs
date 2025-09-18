@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02950_NumberOfDivisibleSubstrings
+    public interface ILC_00002950_NumberOfDivisibleSubstrings
     {
         public void PrintSolution();
     }

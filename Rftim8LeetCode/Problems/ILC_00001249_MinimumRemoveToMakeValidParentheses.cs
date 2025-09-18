@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01249_MinimumRemoveToMakeValidParentheses
+    public interface ILC_00001249_MinimumRemoveToMakeValidParentheses
     {
         public void PrintSolution();
     }

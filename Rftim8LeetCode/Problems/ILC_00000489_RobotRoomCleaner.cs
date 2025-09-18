@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00489_RobotRoomCleaner
+    public interface ILC_00000489_RobotRoomCleaner
     {
         public void PrintSolution();
     }

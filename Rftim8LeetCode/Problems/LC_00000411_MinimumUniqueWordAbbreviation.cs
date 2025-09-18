@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00411_MinimumUniqueWordAbbreviation : I_00411_MinimumUniqueWordAbbreviation
+    public class LC_00000411_MinimumUniqueWordAbbreviation : ILC_00000411_MinimumUniqueWordAbbreviation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00411_MinimumUniqueWordAbbreviation()
+        public LC_00000411_MinimumUniqueWordAbbreviation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00411_MinimumUniqueWordAbbreviation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000411_MinimumUniqueWordAbbreviation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00411_MinimumUniqueWordAbbreviation(IHost host)
+        public LC_00000411_MinimumUniqueWordAbbreviation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00411_MinimumUniqueWordAbbreviation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000411_MinimumUniqueWordAbbreviation));
         }
 
         public void PrintSolution()

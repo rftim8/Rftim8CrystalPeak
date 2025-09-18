@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02466_CountWaysToBuildGoodStrings
+    public interface ILC_00002466_CountWaysToBuildGoodStrings
     {
         public void PrintSolution();
     }

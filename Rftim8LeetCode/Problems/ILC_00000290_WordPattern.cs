@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00290_WordPattern
+    public interface ILC_00000290_WordPattern
     {
         public void PrintSolution();
     }

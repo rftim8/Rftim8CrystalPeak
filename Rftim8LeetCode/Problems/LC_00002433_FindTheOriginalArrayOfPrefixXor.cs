@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02433_FindTheOriginalArrayOfPrefixXor : I_02433_FindTheOriginalArrayOfPrefixXor
+    public class LC_00002433_FindTheOriginalArrayOfPrefixXor : ILC_00002433_FindTheOriginalArrayOfPrefixXor
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02433_FindTheOriginalArrayOfPrefixXor()
+        public LC_00002433_FindTheOriginalArrayOfPrefixXor()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02433_FindTheOriginalArrayOfPrefixXor));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002433_FindTheOriginalArrayOfPrefixXor));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02433_FindTheOriginalArrayOfPrefixXor(IHost host)
+        public LC_00002433_FindTheOriginalArrayOfPrefixXor(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02433_FindTheOriginalArrayOfPrefixXor));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002433_FindTheOriginalArrayOfPrefixXor));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02020_NumberOfAccountsThatDidNotStream : I_02020_NumberOfAccountsThatDidNotStream
+    public class LC_00002020_NumberOfAccountsThatDidNotStream : ILC_00002020_NumberOfAccountsThatDidNotStream
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02020_NumberOfAccountsThatDidNotStream()
+        public LC_00002020_NumberOfAccountsThatDidNotStream()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02020_NumberOfAccountsThatDidNotStream));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002020_NumberOfAccountsThatDidNotStream));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02020_NumberOfAccountsThatDidNotStream(IHost host)
+        public LC_00002020_NumberOfAccountsThatDidNotStream(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02020_NumberOfAccountsThatDidNotStream));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002020_NumberOfAccountsThatDidNotStream));
         }
 
         public void PrintSolution()

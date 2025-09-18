@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02300_SuccessfulPairsOfSpellsAndPotions : I_02300_SuccessfulPairsOfSpellsAndPotions
+    public class LC_00002300_SuccessfulPairsOfSpellsAndPotions : ILC_00002300_SuccessfulPairsOfSpellsAndPotions
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02300_SuccessfulPairsOfSpellsAndPotions()
+        public LC_00002300_SuccessfulPairsOfSpellsAndPotions()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02300_SuccessfulPairsOfSpellsAndPotions));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002300_SuccessfulPairsOfSpellsAndPotions));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02300_SuccessfulPairsOfSpellsAndPotions(IHost host)
+        public LC_00002300_SuccessfulPairsOfSpellsAndPotions(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02300_SuccessfulPairsOfSpellsAndPotions));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002300_SuccessfulPairsOfSpellsAndPotions));
         }
 
         public void PrintSolution()

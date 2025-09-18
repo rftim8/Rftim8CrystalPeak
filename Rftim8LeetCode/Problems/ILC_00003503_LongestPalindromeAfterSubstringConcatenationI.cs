@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03503_LongestPalindromeAfterSubstringConcatenationI
+    public interface ILC_00003503_LongestPalindromeAfterSubstringConcatenationI
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01298_MaximumCandiesYouCanGetFromBoxes
+    public interface ILC_00001298_MaximumCandiesYouCanGetFromBoxes
     {
         public void PrintSolution();
     }

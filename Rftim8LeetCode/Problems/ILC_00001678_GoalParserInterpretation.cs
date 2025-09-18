@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01678_GoalParserInterpretation
+    public interface ILC_00001678_GoalParserInterpretation
     {
         public void PrintSolution();
     }

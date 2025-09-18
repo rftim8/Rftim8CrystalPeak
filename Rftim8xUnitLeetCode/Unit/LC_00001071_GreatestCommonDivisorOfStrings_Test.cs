@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01071_GreatestCommonDivisorOfStrings_Test
+    public class LC_00001071_GreatestCommonDivisorOfStrings_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01071_GreatestCommonDivisorOfStrings))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01071_GreatestCommonDivisorOfStrings))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01071_GreatestCommonDivisorOfStrings))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001071_GreatestCommonDivisorOfStrings))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001071_GreatestCommonDivisorOfStrings))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001071_GreatestCommonDivisorOfStrings))![1]);
 
-        public static TheoryData<List<string>, int> _01071_GreatestCommonDivisorOfStringsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001071_GreatestCommonDivisorOfStringsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01071_GreatestCommonDivisorOfStringsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001071_GreatestCommonDivisorOfStringsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01071_GreatestCommonDivisorOfStringsPartOne_Data))]
+        [MemberData(nameof(LC_00001071_GreatestCommonDivisorOfStringsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01071_GreatestCommonDivisorOfStrings.PartOne_Test(a0);
+            int actual = LC_00001071_GreatestCommonDivisorOfStrings.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01071_GreatestCommonDivisorOfStringsPartTwo_Data))]
+        [MemberData(nameof(LC_00001071_GreatestCommonDivisorOfStringsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01071_GreatestCommonDivisorOfStrings.PartTwo_Test(a0);
+            int actual = LC_00001071_GreatestCommonDivisorOfStrings.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

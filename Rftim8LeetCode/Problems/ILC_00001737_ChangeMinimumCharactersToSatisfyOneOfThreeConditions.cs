@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01737_ChangeMinimumCharactersToSatisfyOneOfThreeConditions
+    public interface ILC_00001737_ChangeMinimumCharactersToSatisfyOneOfThreeConditions
     {
         public void PrintSolution();
     }

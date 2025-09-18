@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02255_CountPrefixesOfAGivenString
+    public interface ILC_00002255_CountPrefixesOfAGivenString
     {
         public void PrintSolution();
     }

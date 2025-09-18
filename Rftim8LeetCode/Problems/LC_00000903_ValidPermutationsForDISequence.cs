@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00903_ValidPermutationsForDISequence : I_00903_ValidPermutationsForDISequence
+    public class LC_00000903_ValidPermutationsForDISequence : ILC_00000903_ValidPermutationsForDISequence
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00903_ValidPermutationsForDISequence()
+        public LC_00000903_ValidPermutationsForDISequence()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00903_ValidPermutationsForDISequence));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000903_ValidPermutationsForDISequence));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00903_ValidPermutationsForDISequence(IHost host)
+        public LC_00000903_ValidPermutationsForDISequence(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00903_ValidPermutationsForDISequence));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000903_ValidPermutationsForDISequence));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02715_TimeoutCancellation : I_02715_TimeoutCancellation
+    public class LC_00002715_TimeoutCancellation : ILC_00002715_TimeoutCancellation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02715_TimeoutCancellation()
+        public LC_00002715_TimeoutCancellation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02715_TimeoutCancellation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002715_TimeoutCancellation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02715_TimeoutCancellation(IHost host)
+        public LC_00002715_TimeoutCancellation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02715_TimeoutCancellation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002715_TimeoutCancellation));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00736_ParseLispExpression : I_00736_ParseLispExpression
+    public class LC_00000736_ParseLispExpression : ILC_00000736_ParseLispExpression
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00736_ParseLispExpression()
+        public LC_00000736_ParseLispExpression()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00736_ParseLispExpression));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000736_ParseLispExpression));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00736_ParseLispExpression(IHost host)
+        public LC_00000736_ParseLispExpression(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00736_ParseLispExpression));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000736_ParseLispExpression));
         }
 
         public void PrintSolution()

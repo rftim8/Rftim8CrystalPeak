@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01815_MaximumNumberOfGroupsGettingFreshDonuts
+    public interface ILC_00001815_MaximumNumberOfGroupsGettingFreshDonuts
     {
         public void PrintSolution();
     }

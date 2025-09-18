@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02385_AmountOfTimeForBinaryTreeToBeInfected : I_02385_AmountOfTimeForBinaryTreeToBeInfected
+    public class LC_00002385_AmountOfTimeForBinaryTreeToBeInfected : ILC_00002385_AmountOfTimeForBinaryTreeToBeInfected
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02385_AmountOfTimeForBinaryTreeToBeInfected()
+        public LC_00002385_AmountOfTimeForBinaryTreeToBeInfected()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02385_AmountOfTimeForBinaryTreeToBeInfected));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002385_AmountOfTimeForBinaryTreeToBeInfected));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02385_AmountOfTimeForBinaryTreeToBeInfected(IHost host)
+        public LC_00002385_AmountOfTimeForBinaryTreeToBeInfected(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02385_AmountOfTimeForBinaryTreeToBeInfected));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002385_AmountOfTimeForBinaryTreeToBeInfected));
         }
 
         public void PrintSolution()

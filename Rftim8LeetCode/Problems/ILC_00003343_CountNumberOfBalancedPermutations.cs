@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03343_CountNumberOfBalancedPermutations
+    public interface ILC_00003343_CountNumberOfBalancedPermutations
     {
         public void PrintSolution();
     }

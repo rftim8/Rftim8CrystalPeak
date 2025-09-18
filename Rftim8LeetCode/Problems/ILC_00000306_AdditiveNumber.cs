@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00306_AdditiveNumber
+    public interface ILC_00000306_AdditiveNumber
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01628_DesignAnExpressionTreeWithEvaluateFunction
+    public interface ILC_00001628_DesignAnExpressionTreeWithEvaluateFunction
     {
         public void PrintSolution();
     }

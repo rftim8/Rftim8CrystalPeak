@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00917_ReverseOnlyLetters
+    public interface ILC_00000917_ReverseOnlyLetters
     {
         public void PrintSolution();
     }

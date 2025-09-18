@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01015_SmallestIntegerDivisibleByK : I_01015_SmallestIntegerDivisibleByK
+    public class LC_00001015_SmallestIntegerDivisibleByK : ILC_00001015_SmallestIntegerDivisibleByK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01015_SmallestIntegerDivisibleByK()
+        public LC_00001015_SmallestIntegerDivisibleByK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01015_SmallestIntegerDivisibleByK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001015_SmallestIntegerDivisibleByK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01015_SmallestIntegerDivisibleByK(IHost host)
+        public LC_00001015_SmallestIntegerDivisibleByK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01015_SmallestIntegerDivisibleByK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001015_SmallestIntegerDivisibleByK));
         }
 
         public void PrintSolution()

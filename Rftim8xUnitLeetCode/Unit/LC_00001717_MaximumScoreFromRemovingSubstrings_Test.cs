@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01717_MaximumScoreFromRemovingSubstrings_Test
+    public class LC_00001717_MaximumScoreFromRemovingSubstrings_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01717_MaximumScoreFromRemovingSubstrings))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01717_MaximumScoreFromRemovingSubstrings))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01717_MaximumScoreFromRemovingSubstrings))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001717_MaximumScoreFromRemovingSubstrings))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001717_MaximumScoreFromRemovingSubstrings))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001717_MaximumScoreFromRemovingSubstrings))![1]);
 
-        public static TheoryData<List<string>, int> _01717_MaximumScoreFromRemovingSubstringsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001717_MaximumScoreFromRemovingSubstringsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01717_MaximumScoreFromRemovingSubstringsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001717_MaximumScoreFromRemovingSubstringsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01717_MaximumScoreFromRemovingSubstringsPartOne_Data))]
+        [MemberData(nameof(LC_00001717_MaximumScoreFromRemovingSubstringsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01717_MaximumScoreFromRemovingSubstrings.PartOne_Test(a0);
+            int actual = LC_00001717_MaximumScoreFromRemovingSubstrings.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01717_MaximumScoreFromRemovingSubstringsPartTwo_Data))]
+        [MemberData(nameof(LC_00001717_MaximumScoreFromRemovingSubstringsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01717_MaximumScoreFromRemovingSubstrings.PartTwo_Test(a0);
+            int actual = LC_00001717_MaximumScoreFromRemovingSubstrings.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

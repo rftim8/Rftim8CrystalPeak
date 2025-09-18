@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02431_MaximizeTotalTastinessOfPurchasedFruits
+    public interface ILC_00002431_MaximizeTotalTastinessOfPurchasedFruits
     {
         public void PrintSolution();
     }

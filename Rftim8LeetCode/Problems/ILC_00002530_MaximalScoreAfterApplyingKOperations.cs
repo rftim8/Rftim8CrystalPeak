@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02530_MaximalScoreAfterApplyingKOperations
+    public interface ILC_00002530_MaximalScoreAfterApplyingKOperations
     {
         public void PrintSolution();
     }

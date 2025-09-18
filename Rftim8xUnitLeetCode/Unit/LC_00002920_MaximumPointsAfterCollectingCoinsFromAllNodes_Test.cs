@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02920_MaximumPointsAfterCollectingCoinsFromAllNodes_Test
+    public class LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02920_MaximumPointsAfterCollectingCoinsFromAllNodes))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02920_MaximumPointsAfterCollectingCoinsFromAllNodes))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02920_MaximumPointsAfterCollectingCoinsFromAllNodes))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes))![1]);
 
-        public static TheoryData<List<string>, int> _02920_MaximumPointsAfterCollectingCoinsFromAllNodesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02920_MaximumPointsAfterCollectingCoinsFromAllNodesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02920_MaximumPointsAfterCollectingCoinsFromAllNodesPartOne_Data))]
+        [MemberData(nameof(LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02920_MaximumPointsAfterCollectingCoinsFromAllNodes.PartOne_Test(a0);
+            int actual = LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02920_MaximumPointsAfterCollectingCoinsFromAllNodesPartTwo_Data))]
+        [MemberData(nameof(LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02920_MaximumPointsAfterCollectingCoinsFromAllNodes.PartTwo_Test(a0);
+            int actual = LC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

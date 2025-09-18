@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01878_GetBiggestThreeRhombusSumsInAGrid
+    public interface ILC_00001878_GetBiggestThreeRhombusSumsInAGrid
     {
         public void PrintSolution();
     }

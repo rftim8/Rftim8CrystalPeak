@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03233_FindTheCountOfNumbersWhichAreNotSpecial : I_03233_FindTheCountOfNumbersWhichAreNotSpecial
+    public class LC_00003233_FindTheCountOfNumbersWhichAreNotSpecial : ILC_00003233_FindTheCountOfNumbersWhichAreNotSpecial
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03233_FindTheCountOfNumbersWhichAreNotSpecial()
+        public LC_00003233_FindTheCountOfNumbersWhichAreNotSpecial()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03233_FindTheCountOfNumbersWhichAreNotSpecial));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003233_FindTheCountOfNumbersWhichAreNotSpecial));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03233_FindTheCountOfNumbersWhichAreNotSpecial(IHost host)
+        public LC_00003233_FindTheCountOfNumbersWhichAreNotSpecial(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03233_FindTheCountOfNumbersWhichAreNotSpecial));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003233_FindTheCountOfNumbersWhichAreNotSpecial));
         }
 
         public void PrintSolution()

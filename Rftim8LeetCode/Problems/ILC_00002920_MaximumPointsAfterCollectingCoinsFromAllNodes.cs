@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02920_MaximumPointsAfterCollectingCoinsFromAllNodes
+    public interface ILC_00002920_MaximumPointsAfterCollectingCoinsFromAllNodes
     {
         public void PrintSolution();
     }

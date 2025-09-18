@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03326_MinimumDivisionOperationsToMakeArrayNonDecreasing : I_03326_MinimumDivisionOperationsToMakeArrayNonDecreasing
+    public class LC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing : ILC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03326_MinimumDivisionOperationsToMakeArrayNonDecreasing()
+        public LC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03326_MinimumDivisionOperationsToMakeArrayNonDecreasing));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03326_MinimumDivisionOperationsToMakeArrayNonDecreasing(IHost host)
+        public LC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03326_MinimumDivisionOperationsToMakeArrayNonDecreasing));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003326_MinimumDivisionOperationsToMakeArrayNonDecreasing));
         }
 
         public void PrintSolution()

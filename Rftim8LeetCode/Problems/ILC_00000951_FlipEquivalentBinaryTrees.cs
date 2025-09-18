@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00951_FlipEquivalentBinaryTrees
+    public interface ILC_00000951_FlipEquivalentBinaryTrees
     {
         public void PrintSolution();
     }

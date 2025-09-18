@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03539_FindSumOfArrayProductOfMagicalSequences : I_03539_FindSumOfArrayProductOfMagicalSequences
+    public class LC_00003539_FindSumOfArrayProductOfMagicalSequences : ILC_00003539_FindSumOfArrayProductOfMagicalSequences
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03539_FindSumOfArrayProductOfMagicalSequences()
+        public LC_00003539_FindSumOfArrayProductOfMagicalSequences()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03539_FindSumOfArrayProductOfMagicalSequences));
-            Input = [.. RftResource._03539_FindSumOfArrayProductOfMagicalSequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003539_FindSumOfArrayProductOfMagicalSequences));
+            Input = [.. RftResource.LC_00003539_FindSumOfArrayProductOfMagicalSequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03539_FindSumOfArrayProductOfMagicalSequences(IHost host)
+        public LC_00003539_FindSumOfArrayProductOfMagicalSequences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03539_FindSumOfArrayProductOfMagicalSequences));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003539_FindSumOfArrayProductOfMagicalSequences));
             DataCollector();
         }
 

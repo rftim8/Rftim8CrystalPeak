@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01859_SortingTheSentence
+    public interface ILC_00001859_SortingTheSentence
     {
         public void PrintSolution();
     }

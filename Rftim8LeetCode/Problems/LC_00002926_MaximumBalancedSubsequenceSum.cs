@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02926_MaximumBalancedSubsequenceSum : I_02926_MaximumBalancedSubsequenceSum
+    public class LC_00002926_MaximumBalancedSubsequenceSum : ILC_00002926_MaximumBalancedSubsequenceSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02926_MaximumBalancedSubsequenceSum()
+        public LC_00002926_MaximumBalancedSubsequenceSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02926_MaximumBalancedSubsequenceSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002926_MaximumBalancedSubsequenceSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02926_MaximumBalancedSubsequenceSum(IHost host)
+        public LC_00002926_MaximumBalancedSubsequenceSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02926_MaximumBalancedSubsequenceSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002926_MaximumBalancedSubsequenceSum));
         }
 
         public void PrintSolution()

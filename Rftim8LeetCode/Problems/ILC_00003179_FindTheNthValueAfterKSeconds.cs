@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03179_FindTheNthValueAfterKSeconds
+    public interface ILC_00003179_FindTheNthValueAfterKSeconds
     {
         public void PrintSolution();
     }

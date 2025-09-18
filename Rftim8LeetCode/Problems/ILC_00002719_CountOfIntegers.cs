@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02719_CountOfIntegers
+    public interface ILC_00002719_CountOfIntegers
     {
         public void PrintSolution();
     }

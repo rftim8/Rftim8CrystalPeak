@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00642_DesignSearchAutocompleteSystem
+    public interface ILC_00000642_DesignSearchAutocompleteSystem
     {
         public void PrintSolution();
     }

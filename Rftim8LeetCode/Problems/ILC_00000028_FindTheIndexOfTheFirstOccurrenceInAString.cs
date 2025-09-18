@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00028_FindTheIndexOfTheFirstOccurrenceInAString
+    public interface ILC_00000028_FindTheIndexOfTheFirstOccurrenceInAString
     {
         public void PrintSolution();
     }

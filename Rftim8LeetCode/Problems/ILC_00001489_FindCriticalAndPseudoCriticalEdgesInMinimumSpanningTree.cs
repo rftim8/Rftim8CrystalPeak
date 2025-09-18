@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01489_FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree
+    public interface ILC_00001489_FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree
     {
         public void PrintSolution();
     }

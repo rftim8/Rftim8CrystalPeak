@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,17 +6,17 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00036_ValidSudoku : I_00036_ValidSudoku
+    public class LC_00000036_ValidSudoku : ILC_00000036_ValidSudoku
     {
         #region Static
         private readonly List<string>? Input;
         private readonly List<char[][]>? boards = [];
         private readonly List<bool>? results = [];
 
-        public _00036_ValidSudoku()
+        public LC_00000036_ValidSudoku()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(_00036_ValidSudoku));
-            Input = [.. RftResource._00036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000036_ValidSudoku));
+            Input = [.. RftResource.LC_00000036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -106,10 +106,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00036_ValidSudoku(IHost host)
+        public LC_00000036_ValidSudoku(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00036_ValidSudoku));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000036_ValidSudoku));
             DataCollector();
         }
 

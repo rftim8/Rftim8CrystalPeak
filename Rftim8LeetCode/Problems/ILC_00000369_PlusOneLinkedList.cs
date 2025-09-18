@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00369_PlusOneLinkedList
+    public interface ILC_00000369_PlusOneLinkedList
     {
         public void PrintSolution();
     }

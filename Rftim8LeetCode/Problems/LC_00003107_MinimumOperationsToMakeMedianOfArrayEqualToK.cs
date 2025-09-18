@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03107_MinimumOperationsToMakeMedianOfArrayEqualToK : I_03107_MinimumOperationsToMakeMedianOfArrayEqualToK
+    public class LC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK : ILC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03107_MinimumOperationsToMakeMedianOfArrayEqualToK()
+        public LC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03107_MinimumOperationsToMakeMedianOfArrayEqualToK));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03107_MinimumOperationsToMakeMedianOfArrayEqualToK(IHost host)
+        public LC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03107_MinimumOperationsToMakeMedianOfArrayEqualToK));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003107_MinimumOperationsToMakeMedianOfArrayEqualToK));
         }
 
         public void PrintSolution()

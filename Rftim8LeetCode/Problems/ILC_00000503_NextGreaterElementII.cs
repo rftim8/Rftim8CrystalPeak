@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00503_NextGreaterElementII
+    public interface ILC_00000503_NextGreaterElementII
     {
         public void PrintSolution();
     }

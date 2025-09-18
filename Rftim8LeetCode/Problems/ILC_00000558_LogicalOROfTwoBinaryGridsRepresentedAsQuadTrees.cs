@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00558_LogicalOROfTwoBinaryGridsRepresentedAsQuadTrees
+    public interface ILC_00000558_LogicalOROfTwoBinaryGridsRepresentedAsQuadTrees
     {
         public void PrintSolution();
     }

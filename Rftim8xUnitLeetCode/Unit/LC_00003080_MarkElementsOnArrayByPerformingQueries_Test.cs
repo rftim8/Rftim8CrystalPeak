@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03080_MarkElementsOnArrayByPerformingQueries_Test
+    public class LC_00003080_MarkElementsOnArrayByPerformingQueries_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03080_MarkElementsOnArrayByPerformingQueries))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03080_MarkElementsOnArrayByPerformingQueries))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03080_MarkElementsOnArrayByPerformingQueries))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003080_MarkElementsOnArrayByPerformingQueries))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003080_MarkElementsOnArrayByPerformingQueries))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003080_MarkElementsOnArrayByPerformingQueries))![1]);
 
-        public static TheoryData<List<string>, int> _03080_MarkElementsOnArrayByPerformingQueriesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003080_MarkElementsOnArrayByPerformingQueriesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03080_MarkElementsOnArrayByPerformingQueriesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003080_MarkElementsOnArrayByPerformingQueriesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03080_MarkElementsOnArrayByPerformingQueriesPartOne_Data))]
+        [MemberData(nameof(LC_00003080_MarkElementsOnArrayByPerformingQueriesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03080_MarkElementsOnArrayByPerformingQueries.PartOne_Test(a0);
+            int actual = LC_00003080_MarkElementsOnArrayByPerformingQueries.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03080_MarkElementsOnArrayByPerformingQueriesPartTwo_Data))]
+        [MemberData(nameof(LC_00003080_MarkElementsOnArrayByPerformingQueriesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03080_MarkElementsOnArrayByPerformingQueries.PartTwo_Test(a0);
+            int actual = LC_00003080_MarkElementsOnArrayByPerformingQueries.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03591_CheckIfAnyElementHasPrimeFrequency
+    public interface ILC_00003591_CheckIfAnyElementHasPrimeFrequency
     {
         public void PrintSolution();
     }

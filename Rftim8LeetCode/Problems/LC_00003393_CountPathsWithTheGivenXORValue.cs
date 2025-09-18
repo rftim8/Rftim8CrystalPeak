@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03393_CountPathsWithTheGivenXORValue : I_03393_CountPathsWithTheGivenXORValue
+    public class LC_00003393_CountPathsWithTheGivenXORValue : ILC_00003393_CountPathsWithTheGivenXORValue
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03393_CountPathsWithTheGivenXORValue()
+        public LC_00003393_CountPathsWithTheGivenXORValue()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03393_CountPathsWithTheGivenXORValue));
-            Input = [.. RftResource._03393_CountPathsWithTheGivenXORValue_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003393_CountPathsWithTheGivenXORValue));
+            Input = [.. RftResource.LC_00003393_CountPathsWithTheGivenXORValue_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03393_CountPathsWithTheGivenXORValue(IHost host)
+        public LC_00003393_CountPathsWithTheGivenXORValue(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03393_CountPathsWithTheGivenXORValue));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003393_CountPathsWithTheGivenXORValue));
             DataCollector();
         }
 

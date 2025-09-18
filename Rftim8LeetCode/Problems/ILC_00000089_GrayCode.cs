@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00089_GrayCode
+    public interface ILC_00000089_GrayCode
     {
         public void PrintSolution();
     }

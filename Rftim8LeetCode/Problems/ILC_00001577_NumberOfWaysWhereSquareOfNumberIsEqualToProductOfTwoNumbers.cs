@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01577_NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers
+    public interface ILC_00001577_NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers
     {
         public void PrintSolution();
     }

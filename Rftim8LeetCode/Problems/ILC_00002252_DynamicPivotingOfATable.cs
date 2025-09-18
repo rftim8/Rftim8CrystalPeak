@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02252_DynamicPivotingOfATable
+    public interface ILC_00002252_DynamicPivotingOfATable
     {
         public void PrintSolution();
     }

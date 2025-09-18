@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01275_FindWinnerOnATicTacToeGame
+    public interface ILC_00001275_FindWinnerOnATicTacToeGame
     {
         public void PrintSolution();
     }

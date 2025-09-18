@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00151_ReverseWordsInAString
+    public interface ILC_00000151_ReverseWordsInAString
     {
         public void PrintSolution();
     }

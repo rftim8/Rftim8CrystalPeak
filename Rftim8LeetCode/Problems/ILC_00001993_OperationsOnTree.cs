@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01993_OperationsOnTree
+    public interface ILC_00001993_OperationsOnTree
     {
         public void PrintSolution();
     }

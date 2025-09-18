@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01706_WhereWillTheBallFall
+    public interface ILC_00001706_WhereWillTheBallFall
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01718_ConstructTheLexicographicallyLargestValidSequence_Test
+    public class LC_00001718_ConstructTheLexicographicallyLargestValidSequence_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01718_ConstructTheLexicographicallyLargestValidSequence))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01718_ConstructTheLexicographicallyLargestValidSequence))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01718_ConstructTheLexicographicallyLargestValidSequence))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001718_ConstructTheLexicographicallyLargestValidSequence))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001718_ConstructTheLexicographicallyLargestValidSequence))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001718_ConstructTheLexicographicallyLargestValidSequence))![1]);
 
-        public static TheoryData<List<string>, int> _01718_ConstructTheLexicographicallyLargestValidSequencePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001718_ConstructTheLexicographicallyLargestValidSequencePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01718_ConstructTheLexicographicallyLargestValidSequencePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001718_ConstructTheLexicographicallyLargestValidSequencePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01718_ConstructTheLexicographicallyLargestValidSequencePartOne_Data))]
+        [MemberData(nameof(LC_00001718_ConstructTheLexicographicallyLargestValidSequencePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01718_ConstructTheLexicographicallyLargestValidSequence.PartOne_Test(a0);
+            int actual = LC_00001718_ConstructTheLexicographicallyLargestValidSequence.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01718_ConstructTheLexicographicallyLargestValidSequencePartTwo_Data))]
+        [MemberData(nameof(LC_00001718_ConstructTheLexicographicallyLargestValidSequencePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01718_ConstructTheLexicographicallyLargestValidSequence.PartTwo_Test(a0);
+            int actual = LC_00001718_ConstructTheLexicographicallyLargestValidSequence.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

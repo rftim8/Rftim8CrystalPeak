@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01283_FindTheSmallestDivisorGivenAThreshold
+    public interface ILC_00001283_FindTheSmallestDivisorGivenAThreshold
     {
         public void PrintSolution();
     }

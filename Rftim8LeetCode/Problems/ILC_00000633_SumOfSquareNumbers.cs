@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00633_SumOfSquareNumbers
+    public interface ILC_00000633_SumOfSquareNumbers
     {
         public void PrintSolution();
     }

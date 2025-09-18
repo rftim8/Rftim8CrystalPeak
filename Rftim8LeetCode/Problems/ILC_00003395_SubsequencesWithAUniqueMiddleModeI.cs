@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03395_SubsequencesWithAUniqueMiddleModeI
+    public interface ILC_00003395_SubsequencesWithAUniqueMiddleModeI
     {
         public void PrintSolution();
     }

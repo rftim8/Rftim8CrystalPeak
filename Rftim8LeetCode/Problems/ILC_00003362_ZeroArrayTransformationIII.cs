@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03362_ZeroArrayTransformationIII
+    public interface ILC_00003362_ZeroArrayTransformationIII
     {
         public void PrintSolution();
     }

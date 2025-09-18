@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00599_MinimumIndexSumOfTwoLists
+    public interface ILC_00000599_MinimumIndexSumOfTwoLists
     {
         public void PrintSolution();
     }

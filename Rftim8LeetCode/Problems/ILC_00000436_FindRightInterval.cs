@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00436_FindRightInterval
+    public interface ILC_00000436_FindRightInterval
     {
         public void PrintSolution();
     }

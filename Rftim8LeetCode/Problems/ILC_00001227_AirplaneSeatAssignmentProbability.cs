@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01227_AirplaneSeatAssignmentProbability
+    public interface ILC_00001227_AirplaneSeatAssignmentProbability
     {
         public void PrintSolution();
     }

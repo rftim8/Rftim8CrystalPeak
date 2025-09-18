@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00878_NthMagicalNumber : I_00878_NthMagicalNumber
+    public class LC_00000878_NthMagicalNumber : ILC_00000878_NthMagicalNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00878_NthMagicalNumber()
+        public LC_00000878_NthMagicalNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00878_NthMagicalNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000878_NthMagicalNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00878_NthMagicalNumber(IHost host)
+        public LC_00000878_NthMagicalNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00878_NthMagicalNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000878_NthMagicalNumber));
         }
 
         public void PrintSolution()

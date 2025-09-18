@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00334_IncreasingTripletSubsequence
+    public interface ILC_00000334_IncreasingTripletSubsequence
     {
         public void PrintSolution();
     }

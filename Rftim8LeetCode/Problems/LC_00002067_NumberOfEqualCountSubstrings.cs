@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02067_NumberOfEqualCountSubstrings : I_02067_NumberOfEqualCountSubstrings
+    public class LC_00002067_NumberOfEqualCountSubstrings : ILC_00002067_NumberOfEqualCountSubstrings
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02067_NumberOfEqualCountSubstrings()
+        public LC_00002067_NumberOfEqualCountSubstrings()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02067_NumberOfEqualCountSubstrings));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002067_NumberOfEqualCountSubstrings));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02067_NumberOfEqualCountSubstrings(IHost host)
+        public LC_00002067_NumberOfEqualCountSubstrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02067_NumberOfEqualCountSubstrings));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002067_NumberOfEqualCountSubstrings));
         }
 
         public void PrintSolution()

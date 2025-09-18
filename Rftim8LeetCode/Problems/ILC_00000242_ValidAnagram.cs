@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00242_ValidAnagram
+    public interface ILC_00000242_ValidAnagram
     {
         public void PrintSolution();
     }

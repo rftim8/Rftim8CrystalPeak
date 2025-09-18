@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02052_MinimumCostToSeparateSentenceIntoRows
+    public interface ILC_00002052_MinimumCostToSeparateSentenceIntoRows
     {
         public void PrintSolution();
     }

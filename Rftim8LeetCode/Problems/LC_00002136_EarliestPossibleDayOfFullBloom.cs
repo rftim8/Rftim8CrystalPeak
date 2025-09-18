@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02136_EarliestPossibleDayOfFullBloom : I_02136_EarliestPossibleDayOfFullBloom
+    public class LC_00002136_EarliestPossibleDayOfFullBloom : ILC_00002136_EarliestPossibleDayOfFullBloom
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02136_EarliestPossibleDayOfFullBloom()
+        public LC_00002136_EarliestPossibleDayOfFullBloom()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02136_EarliestPossibleDayOfFullBloom));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002136_EarliestPossibleDayOfFullBloom));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02136_EarliestPossibleDayOfFullBloom(IHost host)
+        public LC_00002136_EarliestPossibleDayOfFullBloom(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02136_EarliestPossibleDayOfFullBloom));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002136_EarliestPossibleDayOfFullBloom));
         }
 
         public void PrintSolution()

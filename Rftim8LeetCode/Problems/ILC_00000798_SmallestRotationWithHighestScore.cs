@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00798_SmallestRotationWithHighestScore
+    public interface ILC_00000798_SmallestRotationWithHighestScore
     {
         public void PrintSolution();
     }

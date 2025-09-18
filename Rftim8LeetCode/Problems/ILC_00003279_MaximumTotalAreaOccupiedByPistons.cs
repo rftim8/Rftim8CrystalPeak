@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03279_MaximumTotalAreaOccupiedByPistons
+    public interface ILC_00003279_MaximumTotalAreaOccupiedByPistons
     {
         public void PrintSolution();
     }

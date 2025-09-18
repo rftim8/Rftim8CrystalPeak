@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01839_LongestSubstringOfAllVowelsInOrder
+    public interface ILC_00001839_LongestSubstringOfAllVowelsInOrder
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01556_ThousandSeparator
+    public interface ILC_00001556_ThousandSeparator
     {
         public void PrintSolution();
     }

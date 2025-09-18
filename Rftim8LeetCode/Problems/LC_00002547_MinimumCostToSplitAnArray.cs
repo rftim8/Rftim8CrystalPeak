@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02547_MinimumCostToSplitAnArray : I_02547_MinimumCostToSplitAnArray
+    public class LC_00002547_MinimumCostToSplitAnArray : ILC_00002547_MinimumCostToSplitAnArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02547_MinimumCostToSplitAnArray()
+        public LC_00002547_MinimumCostToSplitAnArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02547_MinimumCostToSplitAnArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002547_MinimumCostToSplitAnArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02547_MinimumCostToSplitAnArray(IHost host)
+        public LC_00002547_MinimumCostToSplitAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02547_MinimumCostToSplitAnArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002547_MinimumCostToSplitAnArray));
         }
 
         public void PrintSolution()

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00767_ReorganizeString : I_00767_ReorganizeString
+    public class LC_00000767_ReorganizeString : ILC_00000767_ReorganizeString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00767_ReorganizeString()
+        public LC_00000767_ReorganizeString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00767_ReorganizeString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000767_ReorganizeString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00767_ReorganizeString(IHost host)
+        public LC_00000767_ReorganizeString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00767_ReorganizeString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000767_ReorganizeString));
         }
 
         public void PrintSolution()

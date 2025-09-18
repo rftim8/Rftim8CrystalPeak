@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03426_ManhattanDistancesOfAllArrangementsOfPieces : I_03426_ManhattanDistancesOfAllArrangementsOfPieces
+    public class LC_00003426_ManhattanDistancesOfAllArrangementsOfPieces : ILC_00003426_ManhattanDistancesOfAllArrangementsOfPieces
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03426_ManhattanDistancesOfAllArrangementsOfPieces()
+        public LC_00003426_ManhattanDistancesOfAllArrangementsOfPieces()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03426_ManhattanDistancesOfAllArrangementsOfPieces));
-            Input = [.. RftResource._03426_ManhattanDistancesOfAllArrangementsOfPieces_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003426_ManhattanDistancesOfAllArrangementsOfPieces));
+            Input = [.. RftResource.LC_00003426_ManhattanDistancesOfAllArrangementsOfPieces_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03426_ManhattanDistancesOfAllArrangementsOfPieces(IHost host)
+        public LC_00003426_ManhattanDistancesOfAllArrangementsOfPieces(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03426_ManhattanDistancesOfAllArrangementsOfPieces));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003426_ManhattanDistancesOfAllArrangementsOfPieces));
             DataCollector();
         }
 

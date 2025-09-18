@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00996_NumberOfSquarefulArrays
+    public interface ILC_00000996_NumberOfSquarefulArrays
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01201_UglyNumberIII
+    public interface ILC_00001201_UglyNumberIII
     {
         public void PrintSolution();
     }

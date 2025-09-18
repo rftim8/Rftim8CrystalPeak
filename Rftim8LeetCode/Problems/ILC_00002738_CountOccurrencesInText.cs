@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02738_CountOccurrencesInText
+    public interface ILC_00002738_CountOccurrencesInText
     {
         public void PrintSolution();
     }

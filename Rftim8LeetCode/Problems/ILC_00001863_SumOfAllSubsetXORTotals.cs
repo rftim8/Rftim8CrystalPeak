@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01863_SumOfAllSubsetXORTotals
+    public interface ILC_00001863_SumOfAllSubsetXORTotals
     {
         public void PrintSolution();
     }

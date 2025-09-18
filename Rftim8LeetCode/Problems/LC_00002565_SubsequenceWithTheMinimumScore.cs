@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02565_SubsequenceWithTheMinimumScore : I_02565_SubsequenceWithTheMinimumScore
+    public class LC_00002565_SubsequenceWithTheMinimumScore : ILC_00002565_SubsequenceWithTheMinimumScore
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02565_SubsequenceWithTheMinimumScore()
+        public LC_00002565_SubsequenceWithTheMinimumScore()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02565_SubsequenceWithTheMinimumScore));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002565_SubsequenceWithTheMinimumScore));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02565_SubsequenceWithTheMinimumScore(IHost host)
+        public LC_00002565_SubsequenceWithTheMinimumScore(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02565_SubsequenceWithTheMinimumScore));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002565_SubsequenceWithTheMinimumScore));
         }
 
         public void PrintSolution()

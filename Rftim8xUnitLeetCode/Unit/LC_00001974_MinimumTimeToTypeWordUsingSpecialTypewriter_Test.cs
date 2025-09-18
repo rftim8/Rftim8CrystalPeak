@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01974_MinimumTimeToTypeWordUsingSpecialTypewriter_Test
+    public class LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriter_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01974_MinimumTimeToTypeWordUsingSpecialTypewriter))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01974_MinimumTimeToTypeWordUsingSpecialTypewriter))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01974_MinimumTimeToTypeWordUsingSpecialTypewriter))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriter))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriter))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriter))![1]);
 
-        public static TheoryData<List<string>, int> _01974_MinimumTimeToTypeWordUsingSpecialTypewriterPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriterPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01974_MinimumTimeToTypeWordUsingSpecialTypewriterPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriterPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01974_MinimumTimeToTypeWordUsingSpecialTypewriterPartOne_Data))]
+        [MemberData(nameof(LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriterPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01974_MinimumTimeToTypeWordUsingSpecialTypewriter.PartOne_Test(a0);
+            int actual = LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriter.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01974_MinimumTimeToTypeWordUsingSpecialTypewriterPartTwo_Data))]
+        [MemberData(nameof(LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriterPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01974_MinimumTimeToTypeWordUsingSpecialTypewriter.PartTwo_Test(a0);
+            int actual = LC_00001974_MinimumTimeToTypeWordUsingSpecialTypewriter.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

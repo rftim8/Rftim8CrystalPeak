@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00278_FirstBadVersion
+    public interface ILC_00000278_FirstBadVersion
     {
         public void PrintSolution();
     }

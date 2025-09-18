@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02245_MaximumTrailingZerosInACorneredPath : I_02245_MaximumTrailingZerosInACorneredPath
+    public class LC_00002245_MaximumTrailingZerosInACorneredPath : ILC_00002245_MaximumTrailingZerosInACorneredPath
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02245_MaximumTrailingZerosInACorneredPath()
+        public LC_00002245_MaximumTrailingZerosInACorneredPath()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02245_MaximumTrailingZerosInACorneredPath));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002245_MaximumTrailingZerosInACorneredPath));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02245_MaximumTrailingZerosInACorneredPath(IHost host)
+        public LC_00002245_MaximumTrailingZerosInACorneredPath(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02245_MaximumTrailingZerosInACorneredPath));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002245_MaximumTrailingZerosInACorneredPath));
         }
 
         public void PrintSolution()

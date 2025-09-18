@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03311_Construct2DGridMatchingGraphLayout : I_03311_Construct2DGridMatchingGraphLayout
+    public class LC_00003311_Construct2DGridMatchingGraphLayout : ILC_00003311_Construct2DGridMatchingGraphLayout
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03311_Construct2DGridMatchingGraphLayout()
+        public LC_00003311_Construct2DGridMatchingGraphLayout()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03311_Construct2DGridMatchingGraphLayout));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003311_Construct2DGridMatchingGraphLayout));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03311_Construct2DGridMatchingGraphLayout(IHost host)
+        public LC_00003311_Construct2DGridMatchingGraphLayout(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03311_Construct2DGridMatchingGraphLayout));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003311_Construct2DGridMatchingGraphLayout));
         }
 
         public void PrintSolution()

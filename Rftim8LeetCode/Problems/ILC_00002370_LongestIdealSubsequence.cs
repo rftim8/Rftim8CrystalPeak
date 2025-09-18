@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02370_LongestIdealSubsequence
+    public interface ILC_00002370_LongestIdealSubsequence
     {
         public void PrintSolution();
     }

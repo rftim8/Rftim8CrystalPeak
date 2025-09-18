@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00676_ImplementMagicDictionary
+    public interface ILC_00000676_ImplementMagicDictionary
     {
         public void PrintSolution();
     }

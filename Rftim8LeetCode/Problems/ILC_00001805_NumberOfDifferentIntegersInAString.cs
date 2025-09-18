@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01805_NumberOfDifferentIntegersInAString
+    public interface ILC_00001805_NumberOfDifferentIntegersInAString
     {
         public void PrintSolution();
     }

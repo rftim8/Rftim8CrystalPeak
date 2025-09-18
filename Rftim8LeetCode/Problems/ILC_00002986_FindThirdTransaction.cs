@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02986_FindThirdTransaction
+    public interface ILC_00002986_FindThirdTransaction
     {
         public void PrintSolution();
     }

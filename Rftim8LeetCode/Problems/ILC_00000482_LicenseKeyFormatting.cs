@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00482_LicenseKeyFormatting
+    public interface ILC_00000482_LicenseKeyFormatting
     {
         public void PrintSolution();
     }

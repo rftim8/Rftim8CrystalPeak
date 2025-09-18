@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02046_SortLinkedListAlreadySortedUsingAbsoluteValues
+    public interface ILC_00002046_SortLinkedListAlreadySortedUsingAbsoluteValues
     {
         public void PrintSolution();
     }

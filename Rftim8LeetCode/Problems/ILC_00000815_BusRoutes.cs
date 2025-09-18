@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00815_BusRoutes
+    public interface ILC_00000815_BusRoutes
     {
         public void PrintSolution();
     }

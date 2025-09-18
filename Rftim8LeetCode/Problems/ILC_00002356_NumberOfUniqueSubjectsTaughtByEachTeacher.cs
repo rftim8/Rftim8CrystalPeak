@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02356_NumberOfUniqueSubjectsTaughtByEachTeacher
+    public interface ILC_00002356_NumberOfUniqueSubjectsTaughtByEachTeacher
     {
         public void PrintSolution();
     }

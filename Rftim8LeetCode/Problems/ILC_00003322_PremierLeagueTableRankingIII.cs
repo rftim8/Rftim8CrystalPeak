@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03322_PremierLeagueTableRankingIII
+    public interface ILC_00003322_PremierLeagueTableRankingIII
     {
         public void PrintSolution();
     }

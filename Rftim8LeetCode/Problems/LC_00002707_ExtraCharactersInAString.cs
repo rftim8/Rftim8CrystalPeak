@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02707_ExtraCharactersInAString : I_02707_ExtraCharactersInAString
+    public class LC_00002707_ExtraCharactersInAString : ILC_00002707_ExtraCharactersInAString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02707_ExtraCharactersInAString()
+        public LC_00002707_ExtraCharactersInAString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02707_ExtraCharactersInAString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002707_ExtraCharactersInAString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02707_ExtraCharactersInAString(IHost host)
+        public LC_00002707_ExtraCharactersInAString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02707_ExtraCharactersInAString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002707_ExtraCharactersInAString));
         }
 
         public void PrintSolution()

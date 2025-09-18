@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02210_CountHillsAndValleysInAnArray
+    public interface ILC_00002210_CountHillsAndValleysInAnArray
     {
         public void PrintSolution();
     }

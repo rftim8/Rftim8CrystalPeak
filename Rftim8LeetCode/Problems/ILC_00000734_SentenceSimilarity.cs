@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00734_SentenceSimilarity
+    public interface ILC_00000734_SentenceSimilarity
     {
         public void PrintSolution();
     }

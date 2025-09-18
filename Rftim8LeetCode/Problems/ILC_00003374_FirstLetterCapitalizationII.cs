@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03374_FirstLetterCapitalizationII
+    public interface ILC_00003374_FirstLetterCapitalizationII
     {
         public void PrintSolution();
     }

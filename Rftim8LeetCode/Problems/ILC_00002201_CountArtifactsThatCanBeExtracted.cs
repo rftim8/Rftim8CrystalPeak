@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02201_CountArtifactsThatCanBeExtracted
+    public interface ILC_00002201_CountArtifactsThatCanBeExtracted
     {
         public void PrintSolution();
     }

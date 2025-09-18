@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01459_RectanglesArea
+    public interface ILC_00001459_RectanglesArea
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02708_MaximumStrengthOfAGroup
+    public interface ILC_00002708_MaximumStrengthOfAGroup
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00229_MajorityElementII
+    public interface ILC_00000229_MajorityElementII
     {
         public void PrintSolution();
     }

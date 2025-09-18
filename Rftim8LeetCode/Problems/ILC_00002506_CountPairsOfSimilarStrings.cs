@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02506_CountPairsOfSimilarStrings
+    public interface ILC_00002506_CountPairsOfSimilarStrings
     {
         public void PrintSolution();
     }

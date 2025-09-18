@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03445_MaximumDifferenceBetweenEvenAndOddFrequencyII
+    public interface ILC_00003445_MaximumDifferenceBetweenEvenAndOddFrequencyII
     {
         public void PrintSolution();
     }

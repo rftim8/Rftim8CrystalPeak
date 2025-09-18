@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00069_Sqrtx
+    public interface ILC_00000069_Sqrtx
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02443_SumOfNumberAndItsReverse : I_02443_SumOfNumberAndItsReverse
+    public class LC_00002443_SumOfNumberAndItsReverse : ILC_00002443_SumOfNumberAndItsReverse
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02443_SumOfNumberAndItsReverse()
+        public LC_00002443_SumOfNumberAndItsReverse()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02443_SumOfNumberAndItsReverse));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002443_SumOfNumberAndItsReverse));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02443_SumOfNumberAndItsReverse(IHost host)
+        public LC_00002443_SumOfNumberAndItsReverse(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02443_SumOfNumberAndItsReverse));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002443_SumOfNumberAndItsReverse));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00282_ExpressionAddOperators
+    public interface ILC_00000282_ExpressionAddOperators
     {
         public void PrintSolution();
     }

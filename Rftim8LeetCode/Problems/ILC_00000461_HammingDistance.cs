@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00461_HammingDistance
+    public interface ILC_00000461_HammingDistance
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02480_FormAChemicalBond
+    public interface ILC_00002480_FormAChemicalBond
     {
         public void PrintSolution();
     }

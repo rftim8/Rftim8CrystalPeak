@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02815_MaxPairSumInAnArray_Test
+    public class LC_00002815_MaxPairSumInAnArray_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02815_MaxPairSumInAnArray))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02815_MaxPairSumInAnArray))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02815_MaxPairSumInAnArray))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002815_MaxPairSumInAnArray))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002815_MaxPairSumInAnArray))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002815_MaxPairSumInAnArray))![1]);
 
-        public static TheoryData<List<string>, int> _02815_MaxPairSumInAnArrayPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002815_MaxPairSumInAnArrayPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02815_MaxPairSumInAnArrayPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002815_MaxPairSumInAnArrayPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02815_MaxPairSumInAnArrayPartOne_Data))]
+        [MemberData(nameof(LC_00002815_MaxPairSumInAnArrayPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02815_MaxPairSumInAnArray.PartOne_Test(a0);
+            int actual = LC_00002815_MaxPairSumInAnArray.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02815_MaxPairSumInAnArrayPartTwo_Data))]
+        [MemberData(nameof(LC_00002815_MaxPairSumInAnArrayPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02815_MaxPairSumInAnArray.PartTwo_Test(a0);
+            int actual = LC_00002815_MaxPairSumInAnArray.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

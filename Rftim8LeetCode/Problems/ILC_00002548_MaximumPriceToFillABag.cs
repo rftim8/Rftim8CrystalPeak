@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02548_MaximumPriceToFillABag
+    public interface ILC_00002548_MaximumPriceToFillABag
     {
         public void PrintSolution();
     }

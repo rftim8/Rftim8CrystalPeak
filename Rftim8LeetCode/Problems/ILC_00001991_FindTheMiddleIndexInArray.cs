@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01991_FindTheMiddleIndexInArray
+    public interface ILC_00001991_FindTheMiddleIndexInArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01121_DivideArrayIntoIncreasingSequences
+    public interface ILC_00001121_DivideArrayIntoIncreasingSequences
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01828_QueriesOnNumberOfPointsInsideACircle : I_01828_QueriesOnNumberOfPointsInsideACircle
+    public class LC_00001828_QueriesOnNumberOfPointsInsideACircle : ILC_00001828_QueriesOnNumberOfPointsInsideACircle
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01828_QueriesOnNumberOfPointsInsideACircle()
+        public LC_00001828_QueriesOnNumberOfPointsInsideACircle()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01828_QueriesOnNumberOfPointsInsideACircle));
-            Input = [.. RftResource._01828_QueriesOnNumberOfPointsInsideACircle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001828_QueriesOnNumberOfPointsInsideACircle));
+            Input = [.. RftResource.LC_00001828_QueriesOnNumberOfPointsInsideACircle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01828_QueriesOnNumberOfPointsInsideACircle(IHost host)
+        public LC_00001828_QueriesOnNumberOfPointsInsideACircle(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01828_QueriesOnNumberOfPointsInsideACircle));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001828_QueriesOnNumberOfPointsInsideACircle));
             DataCollector();
         }
 

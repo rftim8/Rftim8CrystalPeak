@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00832_FlippingAnImage
+    public interface ILC_00000832_FlippingAnImage
     {
         public void PrintSolution();
     }

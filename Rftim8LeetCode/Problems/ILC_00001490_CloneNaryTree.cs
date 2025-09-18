@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01490_CloneNaryTree
+    public interface ILC_00001490_CloneNaryTree
     {
         public void PrintSolution();
     }

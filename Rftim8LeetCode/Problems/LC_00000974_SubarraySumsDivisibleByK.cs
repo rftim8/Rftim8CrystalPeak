@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00974_SubarraySumsDivisibleByK : I_00974_SubarraySumsDivisibleByK
+    public class LC_00000974_SubarraySumsDivisibleByK : ILC_00000974_SubarraySumsDivisibleByK
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00974_SubarraySumsDivisibleByK()
+        public LC_00000974_SubarraySumsDivisibleByK()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00974_SubarraySumsDivisibleByK));
-            Input = [.. RftResource._00974_SubarraySumsDivisibleByK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000974_SubarraySumsDivisibleByK));
+            Input = [.. RftResource.LC_00000974_SubarraySumsDivisibleByK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00974_SubarraySumsDivisibleByK(IHost host)
+        public LC_00000974_SubarraySumsDivisibleByK(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00974_SubarraySumsDivisibleByK));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000974_SubarraySumsDivisibleByK));
             DataCollector();
         }
 

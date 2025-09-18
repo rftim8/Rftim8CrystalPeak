@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03090_MaximumLengthSubstringWithTwoOccurrences
+    public interface ILC_00003090_MaximumLengthSubstringWithTwoOccurrences
     {
         public void PrintSolution();
     }

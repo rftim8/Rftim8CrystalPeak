@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00906_SuperPalindromes : I_00906_SuperPalindromes
+    public class LC_00000906_SuperPalindromes : ILC_00000906_SuperPalindromes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00906_SuperPalindromes()
+        public LC_00000906_SuperPalindromes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00906_SuperPalindromes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000906_SuperPalindromes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00906_SuperPalindromes(IHost host)
+        public LC_00000906_SuperPalindromes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00906_SuperPalindromes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000906_SuperPalindromes));
         }
 
         public void PrintSolution()

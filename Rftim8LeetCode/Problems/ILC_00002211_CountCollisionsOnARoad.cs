@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02211_CountCollisionsOnARoad
+    public interface ILC_00002211_CountCollisionsOnARoad
     {
         public void PrintSolution();
     }

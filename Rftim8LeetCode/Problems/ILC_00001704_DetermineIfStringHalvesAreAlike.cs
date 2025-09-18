@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01704_DetermineIfStringHalvesAreAlike
+    public interface ILC_00001704_DetermineIfStringHalvesAreAlike
     {
         public void PrintSolution();
     }

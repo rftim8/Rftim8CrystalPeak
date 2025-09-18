@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03354_MakeArrayElementsEqualToZero
+    public interface ILC_00003354_MakeArrayElementsEqualToZero
     {
         public void PrintSolution();
     }

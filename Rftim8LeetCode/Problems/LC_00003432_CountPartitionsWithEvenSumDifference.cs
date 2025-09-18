@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03432_CountPartitionsWithEvenSumDifference : I_03432_CountPartitionsWithEvenSumDifference
+    public class LC_00003432_CountPartitionsWithEvenSumDifference : ILC_00003432_CountPartitionsWithEvenSumDifference
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03432_CountPartitionsWithEvenSumDifference()
+        public LC_00003432_CountPartitionsWithEvenSumDifference()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03432_CountPartitionsWithEvenSumDifference));
-            Input = [.. RftResource._03432_CountPartitionsWithEvenSumDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003432_CountPartitionsWithEvenSumDifference));
+            Input = [.. RftResource.LC_00003432_CountPartitionsWithEvenSumDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03432_CountPartitionsWithEvenSumDifference(IHost host)
+        public LC_00003432_CountPartitionsWithEvenSumDifference(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03432_CountPartitionsWithEvenSumDifference));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003432_CountPartitionsWithEvenSumDifference));
             DataCollector();
         }
 

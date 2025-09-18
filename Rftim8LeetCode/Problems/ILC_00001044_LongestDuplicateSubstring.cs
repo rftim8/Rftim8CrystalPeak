@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01044_LongestDuplicateSubstring
+    public interface ILC_00001044_LongestDuplicateSubstring
     {
         public void PrintSolution();
     }

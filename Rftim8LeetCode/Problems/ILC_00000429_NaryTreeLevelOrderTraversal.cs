@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00429_NaryTreeLevelOrderTraversal
+    public interface ILC_00000429_NaryTreeLevelOrderTraversal
     {
         public void PrintSolution();
     }

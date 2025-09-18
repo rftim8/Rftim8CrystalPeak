@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01191_KConcatenationMaximumSum : I_01191_KConcatenationMaximumSum
+    public class LC_00001191_KConcatenationMaximumSum : ILC_00001191_KConcatenationMaximumSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01191_KConcatenationMaximumSum()
+        public LC_00001191_KConcatenationMaximumSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01191_KConcatenationMaximumSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001191_KConcatenationMaximumSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01191_KConcatenationMaximumSum(IHost host)
+        public LC_00001191_KConcatenationMaximumSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01191_KConcatenationMaximumSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001191_KConcatenationMaximumSum));
         }
 
         public void PrintSolution()

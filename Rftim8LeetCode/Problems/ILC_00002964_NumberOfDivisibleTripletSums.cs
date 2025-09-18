@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02964_NumberOfDivisibleTripletSums
+    public interface ILC_00002964_NumberOfDivisibleTripletSums
     {
         public void PrintSolution();
     }

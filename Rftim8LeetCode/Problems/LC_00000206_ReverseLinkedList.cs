@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00206_ReverseLinkedList : I_00206_ReverseLinkedList
+    public class LC_00000206_ReverseLinkedList : ILC_00000206_ReverseLinkedList
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00206_ReverseLinkedList()
+        public LC_00000206_ReverseLinkedList()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00206_ReverseLinkedList));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000206_ReverseLinkedList));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00206_ReverseLinkedList(IHost host)
+        public LC_00000206_ReverseLinkedList(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00206_ReverseLinkedList));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000206_ReverseLinkedList));
         }
 
         public void PrintSolution()

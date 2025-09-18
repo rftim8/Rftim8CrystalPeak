@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01450_NumberOfStudentsDoingHomeworkAtAGivenTime
+    public interface ILC_00001450_NumberOfStudentsDoingHomeworkAtAGivenTime
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01681_MinimumIncompatibility
+    public interface ILC_00001681_MinimumIncompatibility
     {
         public void PrintSolution();
     }

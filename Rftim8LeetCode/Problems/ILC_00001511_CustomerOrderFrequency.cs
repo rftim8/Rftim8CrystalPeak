@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01511_CustomerOrderFrequency
+    public interface ILC_00001511_CustomerOrderFrequency
     {
         public void PrintSolution();
     }

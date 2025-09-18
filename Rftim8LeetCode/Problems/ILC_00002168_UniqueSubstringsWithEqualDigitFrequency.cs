@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02168_UniqueSubstringsWithEqualDigitFrequency
+    public interface ILC_00002168_UniqueSubstringsWithEqualDigitFrequency
     {
         public void PrintSolution();
     }

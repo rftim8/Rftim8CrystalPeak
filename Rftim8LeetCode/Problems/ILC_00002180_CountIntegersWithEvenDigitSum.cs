@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02180_CountIntegersWithEvenDigitSum
+    public interface ILC_00002180_CountIntegersWithEvenDigitSum
     {
         public void PrintSolution();
     }

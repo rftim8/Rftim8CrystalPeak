@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02001_NumberOfPairsOfInterchangeableRectangles
+    public interface ILC_00002001_NumberOfPairsOfInterchangeableRectangles
     {
         public void PrintSolution();
     }

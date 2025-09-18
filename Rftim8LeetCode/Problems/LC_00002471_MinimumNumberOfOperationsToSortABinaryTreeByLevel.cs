@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel : I_02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel
+    public class LC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel : ILC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel()
+        public LC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel));
-            Input = [.. RftResource._02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel));
+            Input = [.. RftResource.LC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel(IHost host)
+        public LC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02471_MinimumNumberOfOperationsToSortABinaryTreeByLevel));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002471_MinimumNumberOfOperationsToSortABinaryTreeByLevel));
             DataCollector();
         }
 

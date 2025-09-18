@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00562_LongestLineOfConsecutiveOneInMatrix_Test
+    public class LC_00000562_LongestLineOfConsecutiveOneInMatrix_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00562_LongestLineOfConsecutiveOneInMatrix))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00562_LongestLineOfConsecutiveOneInMatrix))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00562_LongestLineOfConsecutiveOneInMatrix))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrix))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrix))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrix))![1]);
 
-        public static TheoryData<List<string>, int> _00562_LongestLineOfConsecutiveOneInMatrixPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000562_LongestLineOfConsecutiveOneInMatrixPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00562_LongestLineOfConsecutiveOneInMatrixPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000562_LongestLineOfConsecutiveOneInMatrixPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00562_LongestLineOfConsecutiveOneInMatrixPartOne_Data))]
+        [MemberData(nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrixPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00562_LongestLineOfConsecutiveOneInMatrix.PartOne_Test(a0);
+            int actual = LC_00000562_LongestLineOfConsecutiveOneInMatrix.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00562_LongestLineOfConsecutiveOneInMatrixPartTwo_Data))]
+        [MemberData(nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrixPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00562_LongestLineOfConsecutiveOneInMatrix.PartTwo_Test(a0);
+            int actual = LC_00000562_LongestLineOfConsecutiveOneInMatrix.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

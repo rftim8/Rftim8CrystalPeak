@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00584_FindCustomerReferee
+    public interface ILC_00000584_FindCustomerReferee
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03469_FindMinimumCostToRemoveArrayElements
+    public interface ILC_00003469_FindMinimumCostToRemoveArrayElements
     {
         public void PrintSolution();
     }

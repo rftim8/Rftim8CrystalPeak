@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02370_LongestIdealSubsequence : I_02370_LongestIdealSubsequence
+    public class LC_00002370_LongestIdealSubsequence : ILC_00002370_LongestIdealSubsequence
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02370_LongestIdealSubsequence()
+        public LC_00002370_LongestIdealSubsequence()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02370_LongestIdealSubsequence));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002370_LongestIdealSubsequence));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02370_LongestIdealSubsequence(IHost host)
+        public LC_00002370_LongestIdealSubsequence(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02370_LongestIdealSubsequence));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002370_LongestIdealSubsequence));
         }
 
         public void PrintSolution()

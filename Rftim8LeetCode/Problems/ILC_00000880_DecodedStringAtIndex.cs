@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00880_DecodedStringAtIndex
+    public interface ILC_00000880_DecodedStringAtIndex
     {
         public void PrintSolution();
     }

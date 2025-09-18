@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings
+    public interface ILC_00001960_MaximumProductOfTheLengthOfTwoPalindromicSubstrings
     {
         public void PrintSolution();
     }

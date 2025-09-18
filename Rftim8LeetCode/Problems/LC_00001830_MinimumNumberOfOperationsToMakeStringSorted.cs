@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01830_MinimumNumberOfOperationsToMakeStringSorted : I_01830_MinimumNumberOfOperationsToMakeStringSorted
+    public class LC_00001830_MinimumNumberOfOperationsToMakeStringSorted : ILC_00001830_MinimumNumberOfOperationsToMakeStringSorted
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01830_MinimumNumberOfOperationsToMakeStringSorted()
+        public LC_00001830_MinimumNumberOfOperationsToMakeStringSorted()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01830_MinimumNumberOfOperationsToMakeStringSorted));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001830_MinimumNumberOfOperationsToMakeStringSorted));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01830_MinimumNumberOfOperationsToMakeStringSorted(IHost host)
+        public LC_00001830_MinimumNumberOfOperationsToMakeStringSorted(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01830_MinimumNumberOfOperationsToMakeStringSorted));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001830_MinimumNumberOfOperationsToMakeStringSorted));
         }
 
         public void PrintSolution()

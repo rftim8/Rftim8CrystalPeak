@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02543_CheckIfPointIsReachable : I_02543_CheckIfPointIsReachable
+    public class LC_00002543_CheckIfPointIsReachable : ILC_00002543_CheckIfPointIsReachable
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02543_CheckIfPointIsReachable()
+        public LC_00002543_CheckIfPointIsReachable()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02543_CheckIfPointIsReachable));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002543_CheckIfPointIsReachable));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02543_CheckIfPointIsReachable(IHost host)
+        public LC_00002543_CheckIfPointIsReachable(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02543_CheckIfPointIsReachable));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002543_CheckIfPointIsReachable));
         }
 
         public void PrintSolution()

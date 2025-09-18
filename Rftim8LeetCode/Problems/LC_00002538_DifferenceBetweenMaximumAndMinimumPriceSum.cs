@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02538_DifferenceBetweenMaximumAndMinimumPriceSum : I_02538_DifferenceBetweenMaximumAndMinimumPriceSum
+    public class LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum : ILC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02538_DifferenceBetweenMaximumAndMinimumPriceSum()
+        public LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSum));
-            Input = [.. RftResource._02538_DifferenceBetweenMaximumAndMinimumPriceSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum));
+            Input = [.. RftResource.LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02538_DifferenceBetweenMaximumAndMinimumPriceSum(IHost host)
+        public LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02538_DifferenceBetweenMaximumAndMinimumPriceSum));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum));
             DataCollector();
         }
 

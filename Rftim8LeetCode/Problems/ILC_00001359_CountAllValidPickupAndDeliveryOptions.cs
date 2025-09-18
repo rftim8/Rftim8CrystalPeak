@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01359_CountAllValidPickupAndDeliveryOptions
+    public interface ILC_00001359_CountAllValidPickupAndDeliveryOptions
     {
         public void PrintSolution();
     }

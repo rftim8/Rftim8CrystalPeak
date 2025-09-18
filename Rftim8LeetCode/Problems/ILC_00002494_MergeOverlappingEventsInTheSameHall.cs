@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02494_MergeOverlappingEventsInTheSameHall
+    public interface ILC_00002494_MergeOverlappingEventsInTheSameHall
     {
         public void PrintSolution();
     }

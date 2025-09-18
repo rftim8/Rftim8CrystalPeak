@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01986_MinimumNumberOfWorkSessionsToFinishTheTasks
+    public interface ILC_00001986_MinimumNumberOfWorkSessionsToFinishTheTasks
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02607_MakeKSubarraySumsEqual
+    public interface ILC_00002607_MakeKSubarraySumsEqual
     {
         public void PrintSolution();
     }

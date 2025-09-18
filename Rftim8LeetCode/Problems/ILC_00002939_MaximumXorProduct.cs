@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02939_MaximumXorProduct
+    public interface ILC_00002939_MaximumXorProduct
     {
         public void PrintSolution();
     }

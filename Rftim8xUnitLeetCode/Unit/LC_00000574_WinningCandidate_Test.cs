@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00574_WinningCandidate_Test
+    public class LC_00000574_WinningCandidate_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00574_WinningCandidate))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00574_WinningCandidate))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00574_WinningCandidate))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000574_WinningCandidate))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000574_WinningCandidate))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000574_WinningCandidate))![1]);
 
-        public static TheoryData<List<string>, int> _00574_WinningCandidatePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000574_WinningCandidatePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00574_WinningCandidatePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000574_WinningCandidatePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00574_WinningCandidatePartOne_Data))]
+        [MemberData(nameof(LC_00000574_WinningCandidatePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00574_WinningCandidate.PartOne_Test(a0);
+            int actual = LC_00000574_WinningCandidate.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00574_WinningCandidatePartTwo_Data))]
+        [MemberData(nameof(LC_00000574_WinningCandidatePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00574_WinningCandidate.PartTwo_Test(a0);
+            int actual = LC_00000574_WinningCandidate.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

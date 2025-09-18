@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01749_MaximumAbsoluteSumOfAnySubarray
+    public interface ILC_00001749_MaximumAbsoluteSumOfAnySubarray
     {
         public void PrintSolution();
     }

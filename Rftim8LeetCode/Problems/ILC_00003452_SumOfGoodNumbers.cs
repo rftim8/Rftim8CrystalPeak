@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03452_SumOfGoodNumbers
+    public interface ILC_00003452_SumOfGoodNumbers
     {
         public void PrintSolution();
     }

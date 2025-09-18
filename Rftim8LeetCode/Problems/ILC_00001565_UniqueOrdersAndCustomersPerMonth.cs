@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01565_UniqueOrdersAndCustomersPerMonth
+    public interface ILC_00001565_UniqueOrdersAndCustomersPerMonth
     {
         public void PrintSolution();
     }

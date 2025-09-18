@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01237_FindPositiveIntegerSolutionForAGivenEquation : I_01237_FindPositiveIntegerSolutionForAGivenEquation
+    public class LC_00001237_FindPositiveIntegerSolutionForAGivenEquation : ILC_00001237_FindPositiveIntegerSolutionForAGivenEquation
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01237_FindPositiveIntegerSolutionForAGivenEquation()
+        public LC_00001237_FindPositiveIntegerSolutionForAGivenEquation()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01237_FindPositiveIntegerSolutionForAGivenEquation));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001237_FindPositiveIntegerSolutionForAGivenEquation));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01237_FindPositiveIntegerSolutionForAGivenEquation(IHost host)
+        public LC_00001237_FindPositiveIntegerSolutionForAGivenEquation(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01237_FindPositiveIntegerSolutionForAGivenEquation));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001237_FindPositiveIntegerSolutionForAGivenEquation));
         }
 
         public void PrintSolution()

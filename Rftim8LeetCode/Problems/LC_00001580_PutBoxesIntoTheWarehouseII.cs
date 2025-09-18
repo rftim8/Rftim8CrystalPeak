@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01580_PutBoxesIntoTheWarehouseII : I_01580_PutBoxesIntoTheWarehouseII
+    public class LC_00001580_PutBoxesIntoTheWarehouseII : ILC_00001580_PutBoxesIntoTheWarehouseII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01580_PutBoxesIntoTheWarehouseII()
+        public LC_00001580_PutBoxesIntoTheWarehouseII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01580_PutBoxesIntoTheWarehouseII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001580_PutBoxesIntoTheWarehouseII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01580_PutBoxesIntoTheWarehouseII(IHost host)
+        public LC_00001580_PutBoxesIntoTheWarehouseII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01580_PutBoxesIntoTheWarehouseII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001580_PutBoxesIntoTheWarehouseII));
         }
 
         public void PrintSolution()

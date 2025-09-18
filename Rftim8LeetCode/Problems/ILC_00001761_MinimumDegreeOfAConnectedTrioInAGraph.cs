@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01761_MinimumDegreeOfAConnectedTrioInAGraph
+    public interface ILC_00001761_MinimumDegreeOfAConnectedTrioInAGraph
     {
         public void PrintSolution();
     }

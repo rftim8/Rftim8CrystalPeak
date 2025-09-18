@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02324_ProductSalesAnalysisIV : I_02324_ProductSalesAnalysisIV
+    public class LC_00002324_ProductSalesAnalysisIV : ILC_00002324_ProductSalesAnalysisIV
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02324_ProductSalesAnalysisIV()
+        public LC_00002324_ProductSalesAnalysisIV()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02324_ProductSalesAnalysisIV));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002324_ProductSalesAnalysisIV));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02324_ProductSalesAnalysisIV(IHost host)
+        public LC_00002324_ProductSalesAnalysisIV(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02324_ProductSalesAnalysisIV));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002324_ProductSalesAnalysisIV));
         }
 
         public void PrintSolution()

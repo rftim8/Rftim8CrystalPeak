@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03047_FindTheLargestAreaOfSquareInsideTwoRectangles
+    public interface ILC_00003047_FindTheLargestAreaOfSquareInsideTwoRectangles
     {
         public void PrintSolution();
     }

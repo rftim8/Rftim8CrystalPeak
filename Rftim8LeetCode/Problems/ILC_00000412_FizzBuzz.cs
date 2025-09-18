@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00412_FizzBuzz
+    public interface ILC_00000412_FizzBuzz
     {
         public void PrintSolution();
     }

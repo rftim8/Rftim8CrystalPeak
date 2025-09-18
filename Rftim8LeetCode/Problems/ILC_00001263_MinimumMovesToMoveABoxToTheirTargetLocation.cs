@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01263_MinimumMovesToMoveABoxToTheirTargetLocation
+    public interface ILC_00001263_MinimumMovesToMoveABoxToTheirTargetLocation
     {
         public void PrintSolution();
     }

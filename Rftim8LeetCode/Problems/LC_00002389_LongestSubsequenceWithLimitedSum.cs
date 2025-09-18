@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02389_LongestSubsequenceWithLimitedSum : I_02389_LongestSubsequenceWithLimitedSum
+    public class LC_00002389_LongestSubsequenceWithLimitedSum : ILC_00002389_LongestSubsequenceWithLimitedSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02389_LongestSubsequenceWithLimitedSum()
+        public LC_00002389_LongestSubsequenceWithLimitedSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02389_LongestSubsequenceWithLimitedSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002389_LongestSubsequenceWithLimitedSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02389_LongestSubsequenceWithLimitedSum(IHost host)
+        public LC_00002389_LongestSubsequenceWithLimitedSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02389_LongestSubsequenceWithLimitedSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002389_LongestSubsequenceWithLimitedSum));
         }
 
         public void PrintSolution()

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02751_RobotCollisions_Test
+    public class LC_00002751_RobotCollisions_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02751_RobotCollisions))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02751_RobotCollisions))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02751_RobotCollisions))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002751_RobotCollisions))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002751_RobotCollisions))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002751_RobotCollisions))![1]);
 
-        public static TheoryData<List<string>, int> _02751_RobotCollisionsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002751_RobotCollisionsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02751_RobotCollisionsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002751_RobotCollisionsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02751_RobotCollisionsPartOne_Data))]
+        [MemberData(nameof(LC_00002751_RobotCollisionsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02751_RobotCollisions.PartOne_Test(a0);
+            int actual = LC_00002751_RobotCollisions.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02751_RobotCollisionsPartTwo_Data))]
+        [MemberData(nameof(LC_00002751_RobotCollisionsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02751_RobotCollisions.PartTwo_Test(a0);
+            int actual = LC_00002751_RobotCollisions.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

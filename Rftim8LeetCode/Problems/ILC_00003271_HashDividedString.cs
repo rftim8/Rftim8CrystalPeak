@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03271_HashDividedString
+    public interface ILC_00003271_HashDividedString
     {
         public void PrintSolution();
     }

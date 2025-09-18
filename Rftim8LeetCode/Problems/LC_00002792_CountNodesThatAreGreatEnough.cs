@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02792_CountNodesThatAreGreatEnough : I_02792_CountNodesThatAreGreatEnough
+    public class LC_00002792_CountNodesThatAreGreatEnough : ILC_00002792_CountNodesThatAreGreatEnough
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02792_CountNodesThatAreGreatEnough()
+        public LC_00002792_CountNodesThatAreGreatEnough()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02792_CountNodesThatAreGreatEnough));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002792_CountNodesThatAreGreatEnough));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02792_CountNodesThatAreGreatEnough(IHost host)
+        public LC_00002792_CountNodesThatAreGreatEnough(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02792_CountNodesThatAreGreatEnough));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002792_CountNodesThatAreGreatEnough));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03361_ShiftDistanceBetweenTwoStrings
+    public interface ILC_00003361_ShiftDistanceBetweenTwoStrings
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02083_SubstringsThatBeginAndEndWithTheSameLetter : I_02083_SubstringsThatBeginAndEndWithTheSameLetter
+    public class LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter : ILC_00002083_SubstringsThatBeginAndEndWithTheSameLetter
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02083_SubstringsThatBeginAndEndWithTheSameLetter()
+        public LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02083_SubstringsThatBeginAndEndWithTheSameLetter));
-            Input = [.. RftResource._02083_SubstringsThatBeginAndEndWithTheSameLetter_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter));
+            Input = [.. RftResource.LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02083_SubstringsThatBeginAndEndWithTheSameLetter(IHost host)
+        public LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02083_SubstringsThatBeginAndEndWithTheSameLetter));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter));
             DataCollector();
         }
 

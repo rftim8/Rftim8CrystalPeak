@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02316_CountUnreachablePairsOfNodesInAnUndirectedGraph
+    public interface ILC_00002316_CountUnreachablePairsOfNodesInAnUndirectedGraph
     {
         public void PrintSolution();
     }

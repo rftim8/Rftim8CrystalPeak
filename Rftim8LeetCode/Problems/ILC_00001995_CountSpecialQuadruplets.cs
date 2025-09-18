@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01995_CountSpecialQuadruplets
+    public interface ILC_00001995_CountSpecialQuadruplets
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01073_AddingTwoNegabinaryNumbers
+    public interface ILC_00001073_AddingTwoNegabinaryNumbers
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01530_NumberOfGoodLeafNodesPairs
+    public interface ILC_00001530_NumberOfGoodLeafNodesPairs
     {
         public void PrintSolution();
     }

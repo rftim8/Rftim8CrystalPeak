@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03386_ButtonWithLongestPushTime
+    public interface ILC_00003386_ButtonWithLongestPushTime
     {
         public void PrintSolution();
     }

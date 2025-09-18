@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03045_CountPrefixAndSuffixPairsII
+    public interface ILC_00003045_CountPrefixAndSuffixPairsII
     {
         public void PrintSolution();
     }

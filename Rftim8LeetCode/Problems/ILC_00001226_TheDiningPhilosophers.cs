@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01226_TheDiningPhilosophers
+    public interface ILC_00001226_TheDiningPhilosophers
     {
         public void PrintSolution();
     }

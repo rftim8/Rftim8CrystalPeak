@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03180_MaximumTotalRewardUsingOperationsI_Test
+    public class LC_00003180_MaximumTotalRewardUsingOperationsI_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03180_MaximumTotalRewardUsingOperationsI))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03180_MaximumTotalRewardUsingOperationsI))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03180_MaximumTotalRewardUsingOperationsI))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003180_MaximumTotalRewardUsingOperationsI))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003180_MaximumTotalRewardUsingOperationsI))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003180_MaximumTotalRewardUsingOperationsI))![1]);
 
-        public static TheoryData<List<string>, int> _03180_MaximumTotalRewardUsingOperationsIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003180_MaximumTotalRewardUsingOperationsIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03180_MaximumTotalRewardUsingOperationsIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003180_MaximumTotalRewardUsingOperationsIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03180_MaximumTotalRewardUsingOperationsIPartOne_Data))]
+        [MemberData(nameof(LC_00003180_MaximumTotalRewardUsingOperationsIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03180_MaximumTotalRewardUsingOperationsI.PartOne_Test(a0);
+            int actual = LC_00003180_MaximumTotalRewardUsingOperationsI.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03180_MaximumTotalRewardUsingOperationsIPartTwo_Data))]
+        [MemberData(nameof(LC_00003180_MaximumTotalRewardUsingOperationsIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03180_MaximumTotalRewardUsingOperationsI.PartTwo_Test(a0);
+            int actual = LC_00003180_MaximumTotalRewardUsingOperationsI.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

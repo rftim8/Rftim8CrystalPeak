@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00319_BulbSwitcher
+    public interface ILC_00000319_BulbSwitcher
     {
         public void PrintSolution();
     }

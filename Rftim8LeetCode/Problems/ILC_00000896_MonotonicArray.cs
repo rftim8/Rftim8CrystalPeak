@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00896_MonotonicArray
+    public interface ILC_00000896_MonotonicArray
     {
         public void PrintSolution();
     }

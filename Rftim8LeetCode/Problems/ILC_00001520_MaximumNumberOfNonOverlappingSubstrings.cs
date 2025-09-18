@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01520_MaximumNumberOfNonOverlappingSubstrings
+    public interface ILC_00001520_MaximumNumberOfNonOverlappingSubstrings
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02461_MaximumSumOfDistinctSubarraysWithLengthK
+    public interface ILC_00002461_MaximumSumOfDistinctSubarraysWithLengthK
     {
         public void PrintSolution();
     }

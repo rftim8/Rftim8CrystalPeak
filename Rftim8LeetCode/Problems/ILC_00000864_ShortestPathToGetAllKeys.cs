@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00864_ShortestPathToGetAllKeys
+    public interface ILC_00000864_ShortestPathToGetAllKeys
     {
         public void PrintSolution();
     }

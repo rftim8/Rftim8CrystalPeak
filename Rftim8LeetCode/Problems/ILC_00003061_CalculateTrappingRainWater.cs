@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03061_CalculateTrappingRainWater
+    public interface ILC_00003061_CalculateTrappingRainWater
     {
         public void PrintSolution();
     }

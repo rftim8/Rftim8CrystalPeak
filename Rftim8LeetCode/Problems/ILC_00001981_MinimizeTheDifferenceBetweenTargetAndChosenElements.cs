@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01981_MinimizeTheDifferenceBetweenTargetAndChosenElements
+    public interface ILC_00001981_MinimizeTheDifferenceBetweenTargetAndChosenElements
     {
         public void PrintSolution();
     }

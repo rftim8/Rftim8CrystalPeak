@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02397_MaximumRowsCoveredByColumns
+    public interface ILC_00002397_MaximumRowsCoveredByColumns
     {
         public void PrintSolution();
     }

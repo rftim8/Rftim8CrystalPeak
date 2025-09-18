@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00205_IsomorphicStrings
+    public interface ILC_00000205_IsomorphicStrings
     {
         public void PrintSolution();
     }

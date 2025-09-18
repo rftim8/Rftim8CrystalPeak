@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02722_JoinTwoArraysByID
+    public interface ILC_00002722_JoinTwoArraysByID
     {
         public void PrintSolution();
     }

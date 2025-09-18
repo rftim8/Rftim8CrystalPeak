@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02680_MaximumOR_Test
+    public class LC_00002680_MaximumOR_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02680_MaximumOR))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02680_MaximumOR))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02680_MaximumOR))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002680_MaximumOR))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002680_MaximumOR))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002680_MaximumOR))![1]);
 
-        public static TheoryData<List<string>, int> _02680_MaximumORPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002680_MaximumORPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02680_MaximumORPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002680_MaximumORPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02680_MaximumORPartOne_Data))]
+        [MemberData(nameof(LC_00002680_MaximumORPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02680_MaximumOR.PartOne_Test(a0);
+            int actual = LC_00002680_MaximumOR.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02680_MaximumORPartTwo_Data))]
+        [MemberData(nameof(LC_00002680_MaximumORPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02680_MaximumOR.PartTwo_Test(a0);
+            int actual = LC_00002680_MaximumOR.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

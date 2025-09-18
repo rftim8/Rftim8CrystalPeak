@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03545_MinimumDeletionsForAtMostKDistinctCharacters : I_03545_MinimumDeletionsForAtMostKDistinctCharacters
+    public class LC_00003545_MinimumDeletionsForAtMostKDistinctCharacters : ILC_00003545_MinimumDeletionsForAtMostKDistinctCharacters
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03545_MinimumDeletionsForAtMostKDistinctCharacters()
+        public LC_00003545_MinimumDeletionsForAtMostKDistinctCharacters()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03545_MinimumDeletionsForAtMostKDistinctCharacters));
-            Input = [.. RftResource._03545_MinimumDeletionsForAtMostKDistinctCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003545_MinimumDeletionsForAtMostKDistinctCharacters));
+            Input = [.. RftResource.LC_00003545_MinimumDeletionsForAtMostKDistinctCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03545_MinimumDeletionsForAtMostKDistinctCharacters(IHost host)
+        public LC_00003545_MinimumDeletionsForAtMostKDistinctCharacters(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03545_MinimumDeletionsForAtMostKDistinctCharacters));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003545_MinimumDeletionsForAtMostKDistinctCharacters));
             DataCollector();
         }
 

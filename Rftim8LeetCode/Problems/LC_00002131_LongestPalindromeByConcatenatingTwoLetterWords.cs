@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02131_LongestPalindromeByConcatenatingTwoLetterWords : I_02131_LongestPalindromeByConcatenatingTwoLetterWords
+    public class LC_00002131_LongestPalindromeByConcatenatingTwoLetterWords : ILC_00002131_LongestPalindromeByConcatenatingTwoLetterWords
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02131_LongestPalindromeByConcatenatingTwoLetterWords()
+        public LC_00002131_LongestPalindromeByConcatenatingTwoLetterWords()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02131_LongestPalindromeByConcatenatingTwoLetterWords));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002131_LongestPalindromeByConcatenatingTwoLetterWords));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02131_LongestPalindromeByConcatenatingTwoLetterWords(IHost host)
+        public LC_00002131_LongestPalindromeByConcatenatingTwoLetterWords(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02131_LongestPalindromeByConcatenatingTwoLetterWords));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002131_LongestPalindromeByConcatenatingTwoLetterWords));
         }
 
         public void PrintSolution()

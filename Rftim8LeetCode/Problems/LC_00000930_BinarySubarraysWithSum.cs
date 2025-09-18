@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00930_BinarySubarraysWithSum : I_00930_BinarySubarraysWithSum
+    public class LC_00000930_BinarySubarraysWithSum : ILC_00000930_BinarySubarraysWithSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00930_BinarySubarraysWithSum()
+        public LC_00000930_BinarySubarraysWithSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00930_BinarySubarraysWithSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000930_BinarySubarraysWithSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00930_BinarySubarraysWithSum(IHost host)
+        public LC_00000930_BinarySubarraysWithSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00930_BinarySubarraysWithSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000930_BinarySubarraysWithSum));
         }
 
         public void PrintSolution()

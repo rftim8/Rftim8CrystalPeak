@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03087_FindTrendingHashtags : I_03087_FindTrendingHashtags
+    public class LC_00003087_FindTrendingHashtags : ILC_00003087_FindTrendingHashtags
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03087_FindTrendingHashtags()
+        public LC_00003087_FindTrendingHashtags()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03087_FindTrendingHashtags));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003087_FindTrendingHashtags));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03087_FindTrendingHashtags(IHost host)
+        public LC_00003087_FindTrendingHashtags(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03087_FindTrendingHashtags));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003087_FindTrendingHashtags));
         }
 
         public void PrintSolution()

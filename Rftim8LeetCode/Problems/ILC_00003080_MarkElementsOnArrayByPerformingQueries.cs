@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03080_MarkElementsOnArrayByPerformingQueries
+    public interface ILC_00003080_MarkElementsOnArrayByPerformingQueries
     {
         public void PrintSolution();
     }

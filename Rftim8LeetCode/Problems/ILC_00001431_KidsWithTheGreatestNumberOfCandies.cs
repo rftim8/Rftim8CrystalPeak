@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01431_KidsWithTheGreatestNumberOfCandies
+    public interface ILC_00001431_KidsWithTheGreatestNumberOfCandies
     {
         public void PrintSolution();
     }

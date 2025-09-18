@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02881_CreateANewColumn
+    public interface ILC_00002881_CreateANewColumn
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01435_CreateASessionBarChart
+    public interface ILC_00001435_CreateASessionBarChart
     {
         public void PrintSolution();
     }

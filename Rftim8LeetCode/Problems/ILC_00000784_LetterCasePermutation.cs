@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00784_LetterCasePermutation
+    public interface ILC_00000784_LetterCasePermutation
     {
         public void PrintSolution();
     }

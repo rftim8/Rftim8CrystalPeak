@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01101_TheEarliestMomentWhenEveryoneBecomeFriends
+    public interface ILC_00001101_TheEarliestMomentWhenEveryoneBecomeFriends
     {
         public void PrintSolution();
     }

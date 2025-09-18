@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02995_ViewersTurnedStreamers
+    public interface ILC_00002995_ViewersTurnedStreamers
     {
         public void PrintSolution();
     }

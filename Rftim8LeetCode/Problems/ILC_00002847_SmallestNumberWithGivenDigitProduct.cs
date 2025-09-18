@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02847_SmallestNumberWithGivenDigitProduct
+    public interface ILC_00002847_SmallestNumberWithGivenDigitProduct
     {
         public void PrintSolution();
     }

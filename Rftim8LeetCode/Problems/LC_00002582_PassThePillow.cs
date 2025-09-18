@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02582_PassThePillow : I_02582_PassThePillow
+    public class LC_00002582_PassThePillow : ILC_00002582_PassThePillow
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02582_PassThePillow()
+        public LC_00002582_PassThePillow()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02582_PassThePillow));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002582_PassThePillow));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02582_PassThePillow(IHost host)
+        public LC_00002582_PassThePillow(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02582_PassThePillow));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002582_PassThePillow));
         }
 
         public void PrintSolution()

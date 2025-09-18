@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03567_MinimumAbsoluteDifferenceInSlidingSubmatrix
+    public interface ILC_00003567_MinimumAbsoluteDifferenceInSlidingSubmatrix
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00729_MyCalendarI
+    public interface ILC_00000729_MyCalendarI
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02115_FindAllPossibleRecipesFromGivenSupplies_Test
+    public class LC_00002115_FindAllPossibleRecipesFromGivenSupplies_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02115_FindAllPossibleRecipesFromGivenSupplies))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02115_FindAllPossibleRecipesFromGivenSupplies))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02115_FindAllPossibleRecipesFromGivenSupplies))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002115_FindAllPossibleRecipesFromGivenSupplies))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002115_FindAllPossibleRecipesFromGivenSupplies))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002115_FindAllPossibleRecipesFromGivenSupplies))![1]);
 
-        public static TheoryData<List<string>, int> _02115_FindAllPossibleRecipesFromGivenSuppliesPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002115_FindAllPossibleRecipesFromGivenSuppliesPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02115_FindAllPossibleRecipesFromGivenSuppliesPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002115_FindAllPossibleRecipesFromGivenSuppliesPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02115_FindAllPossibleRecipesFromGivenSuppliesPartOne_Data))]
+        [MemberData(nameof(LC_00002115_FindAllPossibleRecipesFromGivenSuppliesPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02115_FindAllPossibleRecipesFromGivenSupplies.PartOne_Test(a0);
+            int actual = LC_00002115_FindAllPossibleRecipesFromGivenSupplies.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02115_FindAllPossibleRecipesFromGivenSuppliesPartTwo_Data))]
+        [MemberData(nameof(LC_00002115_FindAllPossibleRecipesFromGivenSuppliesPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02115_FindAllPossibleRecipesFromGivenSupplies.PartTwo_Test(a0);
+            int actual = LC_00002115_FindAllPossibleRecipesFromGivenSupplies.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00400_NthDigit
+    public interface ILC_00000400_NthDigit
     {
         public void PrintSolution();
     }

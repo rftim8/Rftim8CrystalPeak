@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00576_OutOfBoundaryPaths_Test
+    public class LC_00000576_OutOfBoundaryPaths_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00576_OutOfBoundaryPaths))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00576_OutOfBoundaryPaths))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00576_OutOfBoundaryPaths))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000576_OutOfBoundaryPaths))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000576_OutOfBoundaryPaths))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000576_OutOfBoundaryPaths))![1]);
 
-        public static TheoryData<List<string>, int> _00576_OutOfBoundaryPathsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000576_OutOfBoundaryPathsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00576_OutOfBoundaryPathsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000576_OutOfBoundaryPathsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00576_OutOfBoundaryPathsPartOne_Data))]
+        [MemberData(nameof(LC_00000576_OutOfBoundaryPathsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00576_OutOfBoundaryPaths.PartOne_Test(a0);
+            int actual = LC_00000576_OutOfBoundaryPaths.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00576_OutOfBoundaryPathsPartTwo_Data))]
+        [MemberData(nameof(LC_00000576_OutOfBoundaryPathsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00576_OutOfBoundaryPaths.PartTwo_Test(a0);
+            int actual = LC_00000576_OutOfBoundaryPaths.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

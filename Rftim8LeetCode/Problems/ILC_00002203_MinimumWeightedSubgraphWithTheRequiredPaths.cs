@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02203_MinimumWeightedSubgraphWithTheRequiredPaths
+    public interface ILC_00002203_MinimumWeightedSubgraphWithTheRequiredPaths
     {
         public void PrintSolution();
     }

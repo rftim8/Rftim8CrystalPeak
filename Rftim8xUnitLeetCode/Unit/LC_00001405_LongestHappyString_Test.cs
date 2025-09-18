@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01405_LongestHappyString_Test
+    public class LC_00001405_LongestHappyString_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01405_LongestHappyString))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01405_LongestHappyString))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01405_LongestHappyString))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001405_LongestHappyString))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001405_LongestHappyString))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001405_LongestHappyString))![1]);
 
-        public static TheoryData<List<string>, int> _01405_LongestHappyStringPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001405_LongestHappyStringPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01405_LongestHappyStringPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001405_LongestHappyStringPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01405_LongestHappyStringPartOne_Data))]
+        [MemberData(nameof(LC_00001405_LongestHappyStringPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01405_LongestHappyString.PartOne_Test(a0);
+            int actual = LC_00001405_LongestHappyString.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01405_LongestHappyStringPartTwo_Data))]
+        [MemberData(nameof(LC_00001405_LongestHappyStringPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01405_LongestHappyString.PartTwo_Test(a0);
+            int actual = LC_00001405_LongestHappyString.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

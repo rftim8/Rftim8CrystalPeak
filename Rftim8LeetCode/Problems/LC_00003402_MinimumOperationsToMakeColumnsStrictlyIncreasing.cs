@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03402_MinimumOperationsToMakeColumnsStrictlyIncreasing : I_03402_MinimumOperationsToMakeColumnsStrictlyIncreasing
+    public class LC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing : ILC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03402_MinimumOperationsToMakeColumnsStrictlyIncreasing()
+        public LC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03402_MinimumOperationsToMakeColumnsStrictlyIncreasing));
-            Input = [.. RftResource._03402_MinimumOperationsToMakeColumnsStrictlyIncreasing_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing));
+            Input = [.. RftResource.LC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03402_MinimumOperationsToMakeColumnsStrictlyIncreasing(IHost host)
+        public LC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03402_MinimumOperationsToMakeColumnsStrictlyIncreasing));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003402_MinimumOperationsToMakeColumnsStrictlyIncreasing));
             DataCollector();
         }
 

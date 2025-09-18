@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03017_CountTheNumberOfHousesAtACertainDistanceII_Test
+    public class LC_00003017_CountTheNumberOfHousesAtACertainDistanceII_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03017_CountTheNumberOfHousesAtACertainDistanceII))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03017_CountTheNumberOfHousesAtACertainDistanceII))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03017_CountTheNumberOfHousesAtACertainDistanceII))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003017_CountTheNumberOfHousesAtACertainDistanceII))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003017_CountTheNumberOfHousesAtACertainDistanceII))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003017_CountTheNumberOfHousesAtACertainDistanceII))![1]);
 
-        public static TheoryData<List<string>, int> _03017_CountTheNumberOfHousesAtACertainDistanceIIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003017_CountTheNumberOfHousesAtACertainDistanceIIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03017_CountTheNumberOfHousesAtACertainDistanceIIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003017_CountTheNumberOfHousesAtACertainDistanceIIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03017_CountTheNumberOfHousesAtACertainDistanceIIPartOne_Data))]
+        [MemberData(nameof(LC_00003017_CountTheNumberOfHousesAtACertainDistanceIIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03017_CountTheNumberOfHousesAtACertainDistanceII.PartOne_Test(a0);
+            int actual = LC_00003017_CountTheNumberOfHousesAtACertainDistanceII.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03017_CountTheNumberOfHousesAtACertainDistanceIIPartTwo_Data))]
+        [MemberData(nameof(LC_00003017_CountTheNumberOfHousesAtACertainDistanceIIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03017_CountTheNumberOfHousesAtACertainDistanceII.PartTwo_Test(a0);
+            int actual = LC_00003017_CountTheNumberOfHousesAtACertainDistanceII.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

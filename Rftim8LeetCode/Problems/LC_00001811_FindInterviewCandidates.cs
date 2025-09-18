@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01811_FindInterviewCandidates : I_01811_FindInterviewCandidates
+    public class LC_00001811_FindInterviewCandidates : ILC_00001811_FindInterviewCandidates
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01811_FindInterviewCandidates()
+        public LC_00001811_FindInterviewCandidates()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01811_FindInterviewCandidates));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001811_FindInterviewCandidates));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01811_FindInterviewCandidates(IHost host)
+        public LC_00001811_FindInterviewCandidates(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01811_FindInterviewCandidates));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001811_FindInterviewCandidates));
         }
 
         public void PrintSolution()

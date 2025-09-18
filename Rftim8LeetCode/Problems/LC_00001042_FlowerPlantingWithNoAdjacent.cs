@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01042_FlowerPlantingWithNoAdjacent : I_01042_FlowerPlantingWithNoAdjacent
+    public class LC_00001042_FlowerPlantingWithNoAdjacent : ILC_00001042_FlowerPlantingWithNoAdjacent
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01042_FlowerPlantingWithNoAdjacent()
+        public LC_00001042_FlowerPlantingWithNoAdjacent()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01042_FlowerPlantingWithNoAdjacent));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001042_FlowerPlantingWithNoAdjacent));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01042_FlowerPlantingWithNoAdjacent(IHost host)
+        public LC_00001042_FlowerPlantingWithNoAdjacent(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01042_FlowerPlantingWithNoAdjacent));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001042_FlowerPlantingWithNoAdjacent));
         }
 
         public void PrintSolution()

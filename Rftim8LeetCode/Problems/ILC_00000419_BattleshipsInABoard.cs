@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00419_BattleshipsInABoard
+    public interface ILC_00000419_BattleshipsInABoard
     {
         public void PrintSolution();
     }

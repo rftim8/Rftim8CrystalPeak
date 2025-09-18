@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02807_InsertGreatestCommonDivisorsInLinkedList : I_02807_InsertGreatestCommonDivisorsInLinkedList
+    public class LC_00002807_InsertGreatestCommonDivisorsInLinkedList : ILC_00002807_InsertGreatestCommonDivisorsInLinkedList
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02807_InsertGreatestCommonDivisorsInLinkedList()
+        public LC_00002807_InsertGreatestCommonDivisorsInLinkedList()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02807_InsertGreatestCommonDivisorsInLinkedList));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002807_InsertGreatestCommonDivisorsInLinkedList));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02807_InsertGreatestCommonDivisorsInLinkedList(IHost host)
+        public LC_00002807_InsertGreatestCommonDivisorsInLinkedList(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02807_InsertGreatestCommonDivisorsInLinkedList));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002807_InsertGreatestCommonDivisorsInLinkedList));
         }
 
         public void PrintSolution()

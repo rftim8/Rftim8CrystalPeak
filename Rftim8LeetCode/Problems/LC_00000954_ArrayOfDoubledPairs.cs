@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00954_ArrayOfDoubledPairs : I_00954_ArrayOfDoubledPairs
+    public class LC_00000954_ArrayOfDoubledPairs : ILC_00000954_ArrayOfDoubledPairs
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00954_ArrayOfDoubledPairs()
+        public LC_00000954_ArrayOfDoubledPairs()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00954_ArrayOfDoubledPairs));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000954_ArrayOfDoubledPairs));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00954_ArrayOfDoubledPairs(IHost host)
+        public LC_00000954_ArrayOfDoubledPairs(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00954_ArrayOfDoubledPairs));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000954_ArrayOfDoubledPairs));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02811_CheckIfItIsPossibleToSplitArray
+    public interface ILC_00002811_CheckIfItIsPossibleToSplitArray
     {
         public void PrintSolution();
     }

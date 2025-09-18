@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03408_DesignTaskManager
+    public interface ILC_00003408_DesignTaskManager
     {
         public void PrintSolution();
     }

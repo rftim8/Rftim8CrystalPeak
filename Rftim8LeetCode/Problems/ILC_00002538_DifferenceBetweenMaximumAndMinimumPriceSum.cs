@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02538_DifferenceBetweenMaximumAndMinimumPriceSum
+    public interface ILC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum
     {
         public void PrintSolution();
     }

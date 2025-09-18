@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits_Test
+    public class LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits))![1]);
 
-        public static TheoryData<List<string>, int> _01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartOne_Data))]
+        [MemberData(nameof(LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.PartOne_Test(a0);
+            int actual = LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartTwo_Data))]
+        [MemberData(nameof(LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigitsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.PartTwo_Test(a0);
+            int actual = LC_00001505_MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01400_ConstructKPalindromeStrings
+    public interface ILC_00001400_ConstructKPalindromeStrings
     {
         public void PrintSolution();
     }

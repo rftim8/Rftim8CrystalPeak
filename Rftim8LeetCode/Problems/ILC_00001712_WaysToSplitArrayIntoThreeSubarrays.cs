@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01712_WaysToSplitArrayIntoThreeSubarrays
+    public interface ILC_00001712_WaysToSplitArrayIntoThreeSubarrays
     {
         public void PrintSolution();
     }

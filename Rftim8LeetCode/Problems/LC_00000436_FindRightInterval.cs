@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00436_FindRightInterval : I_00436_FindRightInterval
+    public class LC_00000436_FindRightInterval : ILC_00000436_FindRightInterval
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00436_FindRightInterval()
+        public LC_00000436_FindRightInterval()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00436_FindRightInterval));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000436_FindRightInterval));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00436_FindRightInterval(IHost host)
+        public LC_00000436_FindRightInterval(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00436_FindRightInterval));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000436_FindRightInterval));
         }
 
         public void PrintSolution()

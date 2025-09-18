@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01598_CrawlerLogFolder
+    public interface ILC_00001598_CrawlerLogFolder
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00524_LongestWordInDictionaryThroughDeleting
+    public interface ILC_00000524_LongestWordInDictionaryThroughDeleting
     {
         public void PrintSolution();
     }

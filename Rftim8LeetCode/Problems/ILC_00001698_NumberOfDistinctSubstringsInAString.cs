@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01698_NumberOfDistinctSubstringsInAString
+    public interface ILC_00001698_NumberOfDistinctSubstringsInAString
     {
         public void PrintSolution();
     }

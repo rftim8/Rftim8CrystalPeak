@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01785_MinimumElementsToAddToFormAGivenSum
+    public interface ILC_00001785_MinimumElementsToAddToFormAGivenSum
     {
         public void PrintSolution();
     }

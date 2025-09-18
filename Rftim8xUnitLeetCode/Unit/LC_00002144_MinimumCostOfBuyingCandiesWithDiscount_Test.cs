@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02144_MinimumCostOfBuyingCandiesWithDiscount_Test
+    public class LC_00002144_MinimumCostOfBuyingCandiesWithDiscount_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02144_MinimumCostOfBuyingCandiesWithDiscount))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02144_MinimumCostOfBuyingCandiesWithDiscount))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02144_MinimumCostOfBuyingCandiesWithDiscount))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002144_MinimumCostOfBuyingCandiesWithDiscount))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002144_MinimumCostOfBuyingCandiesWithDiscount))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002144_MinimumCostOfBuyingCandiesWithDiscount))![1]);
 
-        public static TheoryData<List<string>, int> _02144_MinimumCostOfBuyingCandiesWithDiscountPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002144_MinimumCostOfBuyingCandiesWithDiscountPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02144_MinimumCostOfBuyingCandiesWithDiscountPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002144_MinimumCostOfBuyingCandiesWithDiscountPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02144_MinimumCostOfBuyingCandiesWithDiscountPartOne_Data))]
+        [MemberData(nameof(LC_00002144_MinimumCostOfBuyingCandiesWithDiscountPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02144_MinimumCostOfBuyingCandiesWithDiscount.PartOne_Test(a0);
+            int actual = LC_00002144_MinimumCostOfBuyingCandiesWithDiscount.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02144_MinimumCostOfBuyingCandiesWithDiscountPartTwo_Data))]
+        [MemberData(nameof(LC_00002144_MinimumCostOfBuyingCandiesWithDiscountPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02144_MinimumCostOfBuyingCandiesWithDiscount.PartTwo_Test(a0);
+            int actual = LC_00002144_MinimumCostOfBuyingCandiesWithDiscount.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

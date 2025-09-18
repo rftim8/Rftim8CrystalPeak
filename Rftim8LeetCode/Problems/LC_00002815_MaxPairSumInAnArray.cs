@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02815_MaxPairSumInAnArray : I_02815_MaxPairSumInAnArray
+    public class LC_00002815_MaxPairSumInAnArray : ILC_00002815_MaxPairSumInAnArray
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02815_MaxPairSumInAnArray()
+        public LC_00002815_MaxPairSumInAnArray()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02815_MaxPairSumInAnArray));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002815_MaxPairSumInAnArray));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02815_MaxPairSumInAnArray(IHost host)
+        public LC_00002815_MaxPairSumInAnArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02815_MaxPairSumInAnArray));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002815_MaxPairSumInAnArray));
         }
 
         public void PrintSolution()

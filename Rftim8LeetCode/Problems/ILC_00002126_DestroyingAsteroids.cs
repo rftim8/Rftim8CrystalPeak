@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02126_DestroyingAsteroids
+    public interface ILC_00002126_DestroyingAsteroids
     {
         public void PrintSolution();
     }

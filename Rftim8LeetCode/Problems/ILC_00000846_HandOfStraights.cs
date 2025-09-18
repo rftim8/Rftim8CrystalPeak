@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00846_HandOfStraights
+    public interface ILC_00000846_HandOfStraights
     {
         public void PrintSolution();
     }

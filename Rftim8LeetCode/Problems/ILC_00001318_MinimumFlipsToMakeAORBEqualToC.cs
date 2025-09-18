@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01318_MinimumFlipsToMakeAORBEqualToC
+    public interface ILC_00001318_MinimumFlipsToMakeAORBEqualToC
     {
         public void PrintSolution();
     }

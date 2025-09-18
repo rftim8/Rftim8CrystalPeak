@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01407_TopTravellers
+    public interface ILC_00001407_TopTravellers
     {
         public void PrintSolution();
     }

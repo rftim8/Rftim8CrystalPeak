@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02819_MinimumRelativeLossAfterBuyingChocolates
+    public interface ILC_00002819_MinimumRelativeLossAfterBuyingChocolates
     {
         public void PrintSolution();
     }

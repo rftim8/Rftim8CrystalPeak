@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01129_ShortestPathWithAlternatingColors
+    public interface ILC_00001129_ShortestPathWithAlternatingColors
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02915_LengthOfTheLongestSubsequenceThatSumsToTarget
+    public interface ILC_00002915_LengthOfTheLongestSubsequenceThatSumsToTarget
     {
         public void PrintSolution();
     }

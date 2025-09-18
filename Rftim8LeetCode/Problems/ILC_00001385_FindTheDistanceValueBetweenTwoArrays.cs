@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01385_FindTheDistanceValueBetweenTwoArrays
+    public interface ILC_00001385_FindTheDistanceValueBetweenTwoArrays
     {
         public void PrintSolution();
     }

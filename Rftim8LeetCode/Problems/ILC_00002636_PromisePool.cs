@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02636_PromisePool
+    public interface ILC_00002636_PromisePool
     {
         public void PrintSolution();
     }

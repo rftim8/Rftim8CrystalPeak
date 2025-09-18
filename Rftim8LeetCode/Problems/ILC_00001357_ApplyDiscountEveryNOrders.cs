@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01357_ApplyDiscountEveryNOrders
+    public interface ILC_00001357_ApplyDiscountEveryNOrders
     {
         public void PrintSolution();
     }

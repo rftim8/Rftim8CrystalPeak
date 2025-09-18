@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01442_CountTripletsThatCanFormTwoArraysOfEqualXOR : I_01442_CountTripletsThatCanFormTwoArraysOfEqualXOR
+    public class LC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR : ILC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01442_CountTripletsThatCanFormTwoArraysOfEqualXOR()
+        public LC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01442_CountTripletsThatCanFormTwoArraysOfEqualXOR));
-            Input = [.. RftResource._01442_CountTripletsThatCanFormTwoArraysOfEqualXOR_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR));
+            Input = [.. RftResource.LC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01442_CountTripletsThatCanFormTwoArraysOfEqualXOR(IHost host)
+        public LC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01442_CountTripletsThatCanFormTwoArraysOfEqualXOR));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001442_CountTripletsThatCanFormTwoArraysOfEqualXOR));
             DataCollector();
         }
 

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00174_DungeonGame : I_00174_DungeonGame
+    public class LC_00000174_DungeonGame : ILC_00000174_DungeonGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00174_DungeonGame()
+        public LC_00000174_DungeonGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00174_DungeonGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000174_DungeonGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00174_DungeonGame(IHost host)
+        public LC_00000174_DungeonGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00174_DungeonGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000174_DungeonGame));
         }
 
         public void PrintSolution()

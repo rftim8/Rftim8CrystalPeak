@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03006_FindBeautifulIndicesInTheGivenArrayI : I_03006_FindBeautifulIndicesInTheGivenArrayI
+    public class LC_00003006_FindBeautifulIndicesInTheGivenArrayI : ILC_00003006_FindBeautifulIndicesInTheGivenArrayI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03006_FindBeautifulIndicesInTheGivenArrayI()
+        public LC_00003006_FindBeautifulIndicesInTheGivenArrayI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03006_FindBeautifulIndicesInTheGivenArrayI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003006_FindBeautifulIndicesInTheGivenArrayI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03006_FindBeautifulIndicesInTheGivenArrayI(IHost host)
+        public LC_00003006_FindBeautifulIndicesInTheGivenArrayI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03006_FindBeautifulIndicesInTheGivenArrayI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003006_FindBeautifulIndicesInTheGivenArrayI));
         }
 
         public void PrintSolution()

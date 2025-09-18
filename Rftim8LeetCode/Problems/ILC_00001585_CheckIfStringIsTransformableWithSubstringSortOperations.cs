@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01585_CheckIfStringIsTransformableWithSubstringSortOperations
+    public interface ILC_00001585_CheckIfStringIsTransformableWithSubstringSortOperations
     {
         public void PrintSolution();
     }

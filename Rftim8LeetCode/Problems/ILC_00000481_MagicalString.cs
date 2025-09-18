@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00481_MagicalString
+    public interface ILC_00000481_MagicalString
     {
         public void PrintSolution();
     }

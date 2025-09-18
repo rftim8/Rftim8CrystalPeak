@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02169_CountOperationsToObtainZero : I_02169_CountOperationsToObtainZero
+    public class LC_00002169_CountOperationsToObtainZero : ILC_00002169_CountOperationsToObtainZero
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02169_CountOperationsToObtainZero()
+        public LC_00002169_CountOperationsToObtainZero()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02169_CountOperationsToObtainZero));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002169_CountOperationsToObtainZero));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02169_CountOperationsToObtainZero(IHost host)
+        public LC_00002169_CountOperationsToObtainZero(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02169_CountOperationsToObtainZero));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002169_CountOperationsToObtainZero));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00479_LargestPalindromeProduct
+    public interface ILC_00000479_LargestPalindromeProduct
     {
         public void PrintSolution();
     }

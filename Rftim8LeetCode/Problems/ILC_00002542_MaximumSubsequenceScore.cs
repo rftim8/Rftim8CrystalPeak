@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02542_MaximumSubsequenceScore
+    public interface ILC_00002542_MaximumSubsequenceScore
     {
         public void PrintSolution();
     }

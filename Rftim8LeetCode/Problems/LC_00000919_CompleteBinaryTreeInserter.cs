@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00919_CompleteBinaryTreeInserter : I_00919_CompleteBinaryTreeInserter
+    public class LC_00000919_CompleteBinaryTreeInserter : ILC_00000919_CompleteBinaryTreeInserter
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00919_CompleteBinaryTreeInserter()
+        public LC_00000919_CompleteBinaryTreeInserter()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00919_CompleteBinaryTreeInserter));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000919_CompleteBinaryTreeInserter));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00919_CompleteBinaryTreeInserter(IHost host)
+        public LC_00000919_CompleteBinaryTreeInserter(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00919_CompleteBinaryTreeInserter));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000919_CompleteBinaryTreeInserter));
         }
 
         public void PrintSolution()

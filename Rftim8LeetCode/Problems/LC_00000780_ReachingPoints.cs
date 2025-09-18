@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00780_ReachingPoints : I_00780_ReachingPoints
+    public class LC_00000780_ReachingPoints : ILC_00000780_ReachingPoints
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00780_ReachingPoints()
+        public LC_00000780_ReachingPoints()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00780_ReachingPoints));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000780_ReachingPoints));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00780_ReachingPoints(IHost host)
+        public LC_00000780_ReachingPoints(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00780_ReachingPoints));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000780_ReachingPoints));
         }
 
         public void PrintSolution()

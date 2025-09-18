@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03440_RescheduleMeetingsForMaximumFreeTimeII
+    public interface ILC_00003440_RescheduleMeetingsForMaximumFreeTimeII
     {
         public void PrintSolution();
     }

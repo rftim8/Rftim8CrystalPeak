@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00810_ChalkboardXORGame
+    public interface ILC_00000810_ChalkboardXORGame
     {
         public void PrintSolution();
     }

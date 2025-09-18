@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01231_DivideChocolate
+    public interface ILC_00001231_DivideChocolate
     {
         public void PrintSolution();
     }

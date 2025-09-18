@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03132_FindTheIntegerAddedToArrayII : I_03132_FindTheIntegerAddedToArrayII
+    public class LC_00003132_FindTheIntegerAddedToArrayII : ILC_00003132_FindTheIntegerAddedToArrayII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03132_FindTheIntegerAddedToArrayII()
+        public LC_00003132_FindTheIntegerAddedToArrayII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03132_FindTheIntegerAddedToArrayII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003132_FindTheIntegerAddedToArrayII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03132_FindTheIntegerAddedToArrayII(IHost host)
+        public LC_00003132_FindTheIntegerAddedToArrayII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03132_FindTheIntegerAddedToArrayII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003132_FindTheIntegerAddedToArrayII));
         }
 
         public void PrintSolution()

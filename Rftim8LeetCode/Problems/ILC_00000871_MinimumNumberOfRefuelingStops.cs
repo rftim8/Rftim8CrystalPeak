@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00871_MinimumNumberOfRefuelingStops
+    public interface ILC_00000871_MinimumNumberOfRefuelingStops
     {
         public void PrintSolution();
     }

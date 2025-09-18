@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01295_FindNumbersWithEvenNumberOfDigits
+    public interface ILC_00001295_FindNumbersWithEvenNumberOfDigits
     {
         public void PrintSolution();
     }

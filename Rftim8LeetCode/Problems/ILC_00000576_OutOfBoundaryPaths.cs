@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00576_OutOfBoundaryPaths
+    public interface ILC_00000576_OutOfBoundaryPaths
     {
         public void PrintSolution();
     }

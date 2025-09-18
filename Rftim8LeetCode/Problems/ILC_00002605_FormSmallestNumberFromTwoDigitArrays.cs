@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02605_FormSmallestNumberFromTwoDigitArrays
+    public interface ILC_00002605_FormSmallestNumberFromTwoDigitArrays
     {
         public void PrintSolution();
     }

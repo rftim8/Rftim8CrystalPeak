@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03508_ImplementRouter
+    public interface ILC_00003508_ImplementRouter
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01623_AllValidTripletsThatCanRepresentACountry
+    public interface ILC_00001623_AllValidTripletsThatCanRepresentACountry
     {
         public void PrintSolution();
     }

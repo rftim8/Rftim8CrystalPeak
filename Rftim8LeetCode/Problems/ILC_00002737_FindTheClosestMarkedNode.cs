@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02737_FindTheClosestMarkedNode
+    public interface ILC_00002737_FindTheClosestMarkedNode
     {
         public void PrintSolution();
     }

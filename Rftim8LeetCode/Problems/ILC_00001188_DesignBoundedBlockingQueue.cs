@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01188_DesignBoundedBlockingQueue
+    public interface ILC_00001188_DesignBoundedBlockingQueue
     {
         public void PrintSolution();
     }

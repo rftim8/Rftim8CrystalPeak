@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01371_FindTheLongestSubstringContainingVowelsInEvenCounts
+    public interface ILC_00001371_FindTheLongestSubstringContainingVowelsInEvenCounts
     {
         public void PrintSolution();
     }

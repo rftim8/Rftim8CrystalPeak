@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00057_InsertInterval
+    public interface ILC_00000057_InsertInterval
     {
         public void PrintSolution();
     }

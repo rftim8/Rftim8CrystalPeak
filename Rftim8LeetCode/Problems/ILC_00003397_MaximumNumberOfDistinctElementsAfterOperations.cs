@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03397_MaximumNumberOfDistinctElementsAfterOperations
+    public interface ILC_00003397_MaximumNumberOfDistinctElementsAfterOperations
     {
         public void PrintSolution();
     }

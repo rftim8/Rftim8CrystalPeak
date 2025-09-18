@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01599_MaximumProfitOfOperatingACentennialWheel
+    public interface ILC_00001599_MaximumProfitOfOperatingACentennialWheel
     {
         public void PrintSolution();
     }

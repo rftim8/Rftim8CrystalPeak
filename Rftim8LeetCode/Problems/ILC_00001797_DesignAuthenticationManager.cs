@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01797_DesignAuthenticationManager
+    public interface ILC_00001797_DesignAuthenticationManager
     {
         public void PrintSolution();
     }

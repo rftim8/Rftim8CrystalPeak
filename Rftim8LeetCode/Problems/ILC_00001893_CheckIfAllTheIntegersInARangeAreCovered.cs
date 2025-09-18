@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01893_CheckIfAllTheIntegersInARangeAreCovered
+    public interface ILC_00001893_CheckIfAllTheIntegersInARangeAreCovered
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03387_MaximizeAmountAfterTwoDaysOfConversions
+    public interface ILC_00003387_MaximizeAmountAfterTwoDaysOfConversions
     {
         public void PrintSolution();
     }

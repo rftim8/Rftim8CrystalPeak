@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01762_BuildingsWithAnOceanView
+    public interface ILC_00001762_BuildingsWithAnOceanView
     {
         public void PrintSolution();
     }

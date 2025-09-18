@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03444_MinimumIncrementsForTargetMultiplesInAnArray
+    public interface ILC_00003444_MinimumIncrementsForTargetMultiplesInAnArray
     {
         public void PrintSolution();
     }

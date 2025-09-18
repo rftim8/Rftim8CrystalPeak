@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02462_TotalCostToHireKWorkers : I_02462_TotalCostToHireKWorkers
+    public class LC_00002462_TotalCostToHireKWorkers : ILC_00002462_TotalCostToHireKWorkers
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02462_TotalCostToHireKWorkers()
+        public LC_00002462_TotalCostToHireKWorkers()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02462_TotalCostToHireKWorkers));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002462_TotalCostToHireKWorkers));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02462_TotalCostToHireKWorkers(IHost host)
+        public LC_00002462_TotalCostToHireKWorkers(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02462_TotalCostToHireKWorkers));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002462_TotalCostToHireKWorkers));
         }
 
         public void PrintSolution()

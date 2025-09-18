@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03180_MaximumTotalRewardUsingOperationsI
+    public interface ILC_00003180_MaximumTotalRewardUsingOperationsI
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01070_ProductSalesAnalysisIII_Test
+    public class LC_00001070_ProductSalesAnalysisIII_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01070_ProductSalesAnalysisIII))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01070_ProductSalesAnalysisIII))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01070_ProductSalesAnalysisIII))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001070_ProductSalesAnalysisIII))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001070_ProductSalesAnalysisIII))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001070_ProductSalesAnalysisIII))![1]);
 
-        public static TheoryData<List<string>, int> _01070_ProductSalesAnalysisIIIPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001070_ProductSalesAnalysisIIIPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01070_ProductSalesAnalysisIIIPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001070_ProductSalesAnalysisIIIPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01070_ProductSalesAnalysisIIIPartOne_Data))]
+        [MemberData(nameof(LC_00001070_ProductSalesAnalysisIIIPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01070_ProductSalesAnalysisIII.PartOne_Test(a0);
+            int actual = LC_00001070_ProductSalesAnalysisIII.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01070_ProductSalesAnalysisIIIPartTwo_Data))]
+        [MemberData(nameof(LC_00001070_ProductSalesAnalysisIIIPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01070_ProductSalesAnalysisIII.PartTwo_Test(a0);
+            int actual = LC_00001070_ProductSalesAnalysisIII.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

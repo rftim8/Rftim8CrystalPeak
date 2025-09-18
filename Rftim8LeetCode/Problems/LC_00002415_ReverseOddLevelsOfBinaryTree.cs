@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02415_ReverseOddLevelsOfBinaryTree : I_02415_ReverseOddLevelsOfBinaryTree
+    public class LC_00002415_ReverseOddLevelsOfBinaryTree : ILC_00002415_ReverseOddLevelsOfBinaryTree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02415_ReverseOddLevelsOfBinaryTree()
+        public LC_00002415_ReverseOddLevelsOfBinaryTree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02415_ReverseOddLevelsOfBinaryTree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002415_ReverseOddLevelsOfBinaryTree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02415_ReverseOddLevelsOfBinaryTree(IHost host)
+        public LC_00002415_ReverseOddLevelsOfBinaryTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02415_ReverseOddLevelsOfBinaryTree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002415_ReverseOddLevelsOfBinaryTree));
         }
 
         public void PrintSolution()

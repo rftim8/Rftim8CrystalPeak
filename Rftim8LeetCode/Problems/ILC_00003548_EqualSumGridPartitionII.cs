@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03548_EqualSumGridPartitionII
+    public interface ILC_00003548_EqualSumGridPartitionII
     {
         public void PrintSolution();
     }

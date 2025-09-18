@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02049_CountNodesWithTheHighestScore
+    public interface ILC_00002049_CountNodesWithTheHighestScore
     {
         public void PrintSolution();
     }

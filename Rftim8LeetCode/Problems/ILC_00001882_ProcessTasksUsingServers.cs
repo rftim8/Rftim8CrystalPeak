@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01882_ProcessTasksUsingServers
+    public interface ILC_00001882_ProcessTasksUsingServers
     {
         public void PrintSolution();
     }

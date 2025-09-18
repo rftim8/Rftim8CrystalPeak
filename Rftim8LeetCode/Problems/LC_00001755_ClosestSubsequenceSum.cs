@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01755_ClosestSubsequenceSum : I_01755_ClosestSubsequenceSum
+    public class LC_00001755_ClosestSubsequenceSum : ILC_00001755_ClosestSubsequenceSum
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01755_ClosestSubsequenceSum()
+        public LC_00001755_ClosestSubsequenceSum()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01755_ClosestSubsequenceSum));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001755_ClosestSubsequenceSum));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01755_ClosestSubsequenceSum(IHost host)
+        public LC_00001755_ClosestSubsequenceSum(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01755_ClosestSubsequenceSum));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001755_ClosestSubsequenceSum));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00620_NotBoringMovies
+    public interface ILC_00000620_NotBoringMovies
     {
         public void PrintSolution();
     }

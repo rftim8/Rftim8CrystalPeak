@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01649_CreateSortedArrayThroughInstructions
+    public interface ILC_00001649_CreateSortedArrayThroughInstructions
     {
         public void PrintSolution();
     }

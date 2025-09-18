@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02404_MostFrequentEvenElement
+    public interface ILC_00002404_MostFrequentEvenElement
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01182_ShortestDistanceToTargetColor
+    public interface ILC_00001182_ShortestDistanceToTargetColor
     {
         public void PrintSolution();
     }

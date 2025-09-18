@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03512_MinimumOperationsToMakeArraySumDivisibleByK
+    public interface ILC_00003512_MinimumOperationsToMakeArraySumDivisibleByK
     {
         public void PrintSolution();
     }

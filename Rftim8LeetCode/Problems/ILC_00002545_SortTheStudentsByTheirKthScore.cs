@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02545_SortTheStudentsByTheirKthScore
+    public interface ILC_00002545_SortTheStudentsByTheirKthScore
     {
         public void PrintSolution();
     }

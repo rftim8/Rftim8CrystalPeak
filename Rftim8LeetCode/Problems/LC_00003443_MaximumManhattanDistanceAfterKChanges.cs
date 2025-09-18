@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03443_MaximumManhattanDistanceAfterKChanges : I_03443_MaximumManhattanDistanceAfterKChanges
+    public class LC_00003443_MaximumManhattanDistanceAfterKChanges : ILC_00003443_MaximumManhattanDistanceAfterKChanges
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03443_MaximumManhattanDistanceAfterKChanges()
+        public LC_00003443_MaximumManhattanDistanceAfterKChanges()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03443_MaximumManhattanDistanceAfterKChanges));
-            Input = [.. RftResource._03443_MaximumManhattanDistanceAfterKChanges_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003443_MaximumManhattanDistanceAfterKChanges));
+            Input = [.. RftResource.LC_00003443_MaximumManhattanDistanceAfterKChanges_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03443_MaximumManhattanDistanceAfterKChanges(IHost host)
+        public LC_00003443_MaximumManhattanDistanceAfterKChanges(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03443_MaximumManhattanDistanceAfterKChanges));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003443_MaximumManhattanDistanceAfterKChanges));
             DataCollector();
         }
 

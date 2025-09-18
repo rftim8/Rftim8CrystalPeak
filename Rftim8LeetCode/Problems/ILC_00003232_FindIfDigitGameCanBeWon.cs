@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03232_FindIfDigitGameCanBeWon
+    public interface ILC_00003232_FindIfDigitGameCanBeWon
     {
         public void PrintSolution();
     }

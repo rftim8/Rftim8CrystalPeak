@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01721_SwappingNodesInALinkedList : I_01721_SwappingNodesInALinkedList
+    public class LC_00001721_SwappingNodesInALinkedList : ILC_00001721_SwappingNodesInALinkedList
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01721_SwappingNodesInALinkedList()
+        public LC_00001721_SwappingNodesInALinkedList()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01721_SwappingNodesInALinkedList));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001721_SwappingNodesInALinkedList));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01721_SwappingNodesInALinkedList(IHost host)
+        public LC_00001721_SwappingNodesInALinkedList(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01721_SwappingNodesInALinkedList));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001721_SwappingNodesInALinkedList));
         }
 
         public void PrintSolution()

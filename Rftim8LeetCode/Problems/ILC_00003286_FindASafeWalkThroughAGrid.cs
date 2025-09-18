@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03286_FindASafeWalkThroughAGrid
+    public interface ILC_00003286_FindASafeWalkThroughAGrid
     {
         public void PrintSolution();
     }

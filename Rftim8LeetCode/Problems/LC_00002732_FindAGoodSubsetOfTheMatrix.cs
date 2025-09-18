@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02732_FindAGoodSubsetOfTheMatrix : I_02732_FindAGoodSubsetOfTheMatrix
+    public class LC_00002732_FindAGoodSubsetOfTheMatrix : ILC_00002732_FindAGoodSubsetOfTheMatrix
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02732_FindAGoodSubsetOfTheMatrix()
+        public LC_00002732_FindAGoodSubsetOfTheMatrix()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02732_FindAGoodSubsetOfTheMatrix));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002732_FindAGoodSubsetOfTheMatrix));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02732_FindAGoodSubsetOfTheMatrix(IHost host)
+        public LC_00002732_FindAGoodSubsetOfTheMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02732_FindAGoodSubsetOfTheMatrix));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002732_FindAGoodSubsetOfTheMatrix));
         }
 
         public void PrintSolution()

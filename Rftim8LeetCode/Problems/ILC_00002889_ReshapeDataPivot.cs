@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02889_ReshapeDataPivot
+    public interface ILC_00002889_ReshapeDataPivot
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03220_OddAndEvenTransactions
+    public interface ILC_00003220_OddAndEvenTransactions
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01583_CountUnhappyFriends
+    public interface ILC_00001583_CountUnhappyFriends
     {
         public void PrintSolution();
     }

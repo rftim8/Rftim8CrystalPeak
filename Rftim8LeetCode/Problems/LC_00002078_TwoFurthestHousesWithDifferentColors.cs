@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02078_TwoFurthestHousesWithDifferentColors : I_02078_TwoFurthestHousesWithDifferentColors
+    public class LC_00002078_TwoFurthestHousesWithDifferentColors : ILC_00002078_TwoFurthestHousesWithDifferentColors
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02078_TwoFurthestHousesWithDifferentColors()
+        public LC_00002078_TwoFurthestHousesWithDifferentColors()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02078_TwoFurthestHousesWithDifferentColors));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002078_TwoFurthestHousesWithDifferentColors));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02078_TwoFurthestHousesWithDifferentColors(IHost host)
+        public LC_00002078_TwoFurthestHousesWithDifferentColors(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02078_TwoFurthestHousesWithDifferentColors));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002078_TwoFurthestHousesWithDifferentColors));
         }
 
         public void PrintSolution()

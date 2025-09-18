@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00796_RotateString
+    public interface ILC_00000796_RotateString
     {
         public void PrintSolution();
     }

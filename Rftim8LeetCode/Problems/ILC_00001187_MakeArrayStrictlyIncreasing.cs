@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01187_MakeArrayStrictlyIncreasing
+    public interface ILC_00001187_MakeArrayStrictlyIncreasing
     {
         public void PrintSolution();
     }

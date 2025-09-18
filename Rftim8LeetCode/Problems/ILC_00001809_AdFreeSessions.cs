@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01809_AdFreeSessions
+    public interface ILC_00001809_AdFreeSessions
     {
         public void PrintSolution();
     }

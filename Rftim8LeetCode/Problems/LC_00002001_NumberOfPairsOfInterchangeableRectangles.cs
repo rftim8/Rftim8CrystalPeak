@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02001_NumberOfPairsOfInterchangeableRectangles : I_02001_NumberOfPairsOfInterchangeableRectangles
+    public class LC_00002001_NumberOfPairsOfInterchangeableRectangles : ILC_00002001_NumberOfPairsOfInterchangeableRectangles
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02001_NumberOfPairsOfInterchangeableRectangles()
+        public LC_00002001_NumberOfPairsOfInterchangeableRectangles()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02001_NumberOfPairsOfInterchangeableRectangles));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002001_NumberOfPairsOfInterchangeableRectangles));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02001_NumberOfPairsOfInterchangeableRectangles(IHost host)
+        public LC_00002001_NumberOfPairsOfInterchangeableRectangles(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02001_NumberOfPairsOfInterchangeableRectangles));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002001_NumberOfPairsOfInterchangeableRectangles));
         }
 
         public void PrintSolution()

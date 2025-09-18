@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01190_ReverseSubstringsBetweenEachPairOfParentheses
+    public interface ILC_00001190_ReverseSubstringsBetweenEachPairOfParentheses
     {
         public void PrintSolution();
     }

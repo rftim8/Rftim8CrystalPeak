@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02794_CreateObjectFromTwoArrays
+    public interface ILC_00002794_CreateObjectFromTwoArrays
     {
         public void PrintSolution();
     }

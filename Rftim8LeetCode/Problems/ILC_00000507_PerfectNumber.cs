@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00507_PerfectNumber
+    public interface ILC_00000507_PerfectNumber
     {
         public void PrintSolution();
     }

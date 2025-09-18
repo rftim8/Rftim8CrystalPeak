@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02151_MaximumGoodPeopleBasedOnStatements
+    public interface ILC_00002151_MaximumGoodPeopleBasedOnStatements
     {
         public void PrintSolution();
     }

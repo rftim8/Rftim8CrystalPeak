@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01851_MinimumIntervalToIncludeEachQuery
+    public interface ILC_00001851_MinimumIntervalToIncludeEachQuery
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03126_ServerUtilizationTime
+    public interface ILC_00003126_ServerUtilizationTime
     {
         public void PrintSolution();
     }

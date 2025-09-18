@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03431_MinimumUnlockedIndicesToSortNums
+    public interface ILC_00003431_MinimumUnlockedIndicesToSortNums
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00287_FindTheDuplicateNumber
+    public interface ILC_00000287_FindTheDuplicateNumber
     {
         public void PrintSolution();
     }

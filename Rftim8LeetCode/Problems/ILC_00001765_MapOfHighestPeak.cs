@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01765_MapOfHighestPeak
+    public interface ILC_00001765_MapOfHighestPeak
     {
         public void PrintSolution();
     }

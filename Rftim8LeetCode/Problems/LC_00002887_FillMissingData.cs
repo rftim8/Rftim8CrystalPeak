@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02887_FillMissingData : I_02887_FillMissingData
+    public class LC_00002887_FillMissingData : ILC_00002887_FillMissingData
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02887_FillMissingData()
+        public LC_00002887_FillMissingData()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02887_FillMissingData));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002887_FillMissingData));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02887_FillMissingData(IHost host)
+        public LC_00002887_FillMissingData(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02887_FillMissingData));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002887_FillMissingData));
         }
 
         public void PrintSolution()

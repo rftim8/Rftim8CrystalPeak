@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03340_CheckBalancedString
+    public interface ILC_00003340_CheckBalancedString
     {
         public void PrintSolution();
     }

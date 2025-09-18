@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02134_MinimumSwapsToGroupAll1sTogetherII
+    public interface ILC_00002134_MinimumSwapsToGroupAll1sTogetherII
     {
         public void PrintSolution();
     }

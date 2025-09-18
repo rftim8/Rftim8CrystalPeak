@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02609_FindTheLongestBalancedSubstringOfABinaryString
+    public interface ILC_00002609_FindTheLongestBalancedSubstringOfABinaryString
     {
         public void PrintSolution();
     }

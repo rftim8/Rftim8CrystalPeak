@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01370_IncreasingDecreasingString
+    public interface ILC_00001370_IncreasingDecreasingString
     {
         public void PrintSolution();
     }

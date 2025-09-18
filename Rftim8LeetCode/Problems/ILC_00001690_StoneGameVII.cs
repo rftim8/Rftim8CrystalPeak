@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01690_StoneGameVII
+    public interface ILC_00001690_StoneGameVII
     {
         public void PrintSolution();
     }

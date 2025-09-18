@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01331_RankTransformOfAnArray
+    public interface ILC_00001331_RankTransformOfAnArray
     {
         public void PrintSolution();
     }

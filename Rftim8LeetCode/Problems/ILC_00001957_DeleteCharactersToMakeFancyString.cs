@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01957_DeleteCharactersToMakeFancyString
+    public interface ILC_00001957_DeleteCharactersToMakeFancyString
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02729_CheckIfTheNumberIsFascinating
+    public interface ILC_00002729_CheckIfTheNumberIsFascinating
     {
         public void PrintSolution();
     }

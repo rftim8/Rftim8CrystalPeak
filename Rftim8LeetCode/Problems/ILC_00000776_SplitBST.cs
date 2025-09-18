@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00776_SplitBST
+    public interface ILC_00000776_SplitBST
     {
         public void PrintSolution();
     }

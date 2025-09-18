@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03389_MinimumOperationsToMakeCharacterFrequenciesEqual
+    public interface ILC_00003389_MinimumOperationsToMakeCharacterFrequenciesEqual
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00197_RisingTemperature
+    public interface ILC_00000197_RisingTemperature
     {
         public void PrintSolution();
     }

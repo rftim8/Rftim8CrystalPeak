@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00566_ReshapeTheMatrix
+    public interface ILC_00000566_ReshapeTheMatrix
     {
         public void PrintSolution();
     }

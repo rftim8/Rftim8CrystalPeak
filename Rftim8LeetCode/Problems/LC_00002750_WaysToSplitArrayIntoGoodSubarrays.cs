@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02750_WaysToSplitArrayIntoGoodSubarrays : I_02750_WaysToSplitArrayIntoGoodSubarrays
+    public class LC_00002750_WaysToSplitArrayIntoGoodSubarrays : ILC_00002750_WaysToSplitArrayIntoGoodSubarrays
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02750_WaysToSplitArrayIntoGoodSubarrays()
+        public LC_00002750_WaysToSplitArrayIntoGoodSubarrays()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02750_WaysToSplitArrayIntoGoodSubarrays));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002750_WaysToSplitArrayIntoGoodSubarrays));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02750_WaysToSplitArrayIntoGoodSubarrays(IHost host)
+        public LC_00002750_WaysToSplitArrayIntoGoodSubarrays(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02750_WaysToSplitArrayIntoGoodSubarrays));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002750_WaysToSplitArrayIntoGoodSubarrays));
         }
 
         public void PrintSolution()

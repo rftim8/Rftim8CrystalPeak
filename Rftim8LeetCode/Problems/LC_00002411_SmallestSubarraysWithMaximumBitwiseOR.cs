@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02411_SmallestSubarraysWithMaximumBitwiseOR : I_02411_SmallestSubarraysWithMaximumBitwiseOR
+    public class LC_00002411_SmallestSubarraysWithMaximumBitwiseOR : ILC_00002411_SmallestSubarraysWithMaximumBitwiseOR
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02411_SmallestSubarraysWithMaximumBitwiseOR()
+        public LC_00002411_SmallestSubarraysWithMaximumBitwiseOR()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02411_SmallestSubarraysWithMaximumBitwiseOR));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002411_SmallestSubarraysWithMaximumBitwiseOR));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02411_SmallestSubarraysWithMaximumBitwiseOR(IHost host)
+        public LC_00002411_SmallestSubarraysWithMaximumBitwiseOR(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02411_SmallestSubarraysWithMaximumBitwiseOR));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002411_SmallestSubarraysWithMaximumBitwiseOR));
         }
 
         public void PrintSolution()

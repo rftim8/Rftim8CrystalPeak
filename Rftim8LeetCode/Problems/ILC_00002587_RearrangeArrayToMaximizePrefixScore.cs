@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02587_RearrangeArrayToMaximizePrefixScore
+    public interface ILC_00002587_RearrangeArrayToMaximizePrefixScore
     {
         public void PrintSolution();
     }

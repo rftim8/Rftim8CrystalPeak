@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02708_MaximumStrengthOfAGroup : I_02708_MaximumStrengthOfAGroup
+    public class LC_00002708_MaximumStrengthOfAGroup : ILC_00002708_MaximumStrengthOfAGroup
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02708_MaximumStrengthOfAGroup()
+        public LC_00002708_MaximumStrengthOfAGroup()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02708_MaximumStrengthOfAGroup));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002708_MaximumStrengthOfAGroup));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02708_MaximumStrengthOfAGroup(IHost host)
+        public LC_00002708_MaximumStrengthOfAGroup(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02708_MaximumStrengthOfAGroup));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002708_MaximumStrengthOfAGroup));
         }
 
         public void PrintSolution()

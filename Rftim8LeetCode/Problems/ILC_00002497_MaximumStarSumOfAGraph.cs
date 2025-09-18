@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02497_MaximumStarSumOfAGraph
+    public interface ILC_00002497_MaximumStarSumOfAGraph
     {
         public void PrintSolution();
     }

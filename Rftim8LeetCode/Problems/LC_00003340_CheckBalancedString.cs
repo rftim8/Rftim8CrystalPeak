@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03340_CheckBalancedString : I_03340_CheckBalancedString
+    public class LC_00003340_CheckBalancedString : ILC_00003340_CheckBalancedString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03340_CheckBalancedString()
+        public LC_00003340_CheckBalancedString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03340_CheckBalancedString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003340_CheckBalancedString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03340_CheckBalancedString(IHost host)
+        public LC_00003340_CheckBalancedString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03340_CheckBalancedString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003340_CheckBalancedString));
         }
 
         public void PrintSolution()

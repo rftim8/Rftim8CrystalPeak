@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01174_ImmediateFoodDeliveryII
+    public interface ILC_00001174_ImmediateFoodDeliveryII
     {
         public void PrintSolution();
     }

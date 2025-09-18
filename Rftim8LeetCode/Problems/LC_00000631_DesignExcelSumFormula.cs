@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00631_DesignExcelSumFormula : I_00631_DesignExcelSumFormula
+    public class LC_00000631_DesignExcelSumFormula : ILC_00000631_DesignExcelSumFormula
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00631_DesignExcelSumFormula()
+        public LC_00000631_DesignExcelSumFormula()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00631_DesignExcelSumFormula));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000631_DesignExcelSumFormula));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00631_DesignExcelSumFormula(IHost host)
+        public LC_00000631_DesignExcelSumFormula(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00631_DesignExcelSumFormula));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000631_DesignExcelSumFormula));
         }
 
         public void PrintSolution()

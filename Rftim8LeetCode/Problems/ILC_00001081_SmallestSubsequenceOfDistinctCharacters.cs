@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01081_SmallestSubsequenceOfDistinctCharacters
+    public interface ILC_00001081_SmallestSubsequenceOfDistinctCharacters
     {
         public void PrintSolution();
     }

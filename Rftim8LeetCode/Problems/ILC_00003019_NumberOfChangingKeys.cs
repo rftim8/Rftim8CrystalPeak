@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03019_NumberOfChangingKeys
+    public interface ILC_00003019_NumberOfChangingKeys
     {
         public void PrintSolution();
     }

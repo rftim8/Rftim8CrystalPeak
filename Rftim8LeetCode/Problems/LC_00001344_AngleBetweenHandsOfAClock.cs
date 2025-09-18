@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01344_AngleBetweenHandsOfAClock : I_01344_AngleBetweenHandsOfAClock
+    public class LC_00001344_AngleBetweenHandsOfAClock : ILC_00001344_AngleBetweenHandsOfAClock
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01344_AngleBetweenHandsOfAClock()
+        public LC_00001344_AngleBetweenHandsOfAClock()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01344_AngleBetweenHandsOfAClock));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001344_AngleBetweenHandsOfAClock));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01344_AngleBetweenHandsOfAClock(IHost host)
+        public LC_00001344_AngleBetweenHandsOfAClock(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01344_AngleBetweenHandsOfAClock));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001344_AngleBetweenHandsOfAClock));
         }
 
         public void PrintSolution()

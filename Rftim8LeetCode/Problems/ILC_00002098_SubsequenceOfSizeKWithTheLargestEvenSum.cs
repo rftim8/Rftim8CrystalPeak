@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02098_SubsequenceOfSizeKWithTheLargestEvenSum
+    public interface ILC_00002098_SubsequenceOfSizeKWithTheLargestEvenSum
     {
         public void PrintSolution();
     }

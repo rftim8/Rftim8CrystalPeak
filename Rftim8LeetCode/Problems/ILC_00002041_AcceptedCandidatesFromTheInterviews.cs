@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02041_AcceptedCandidatesFromTheInterviews
+    public interface ILC_00002041_AcceptedCandidatesFromTheInterviews
     {
         public void PrintSolution();
     }

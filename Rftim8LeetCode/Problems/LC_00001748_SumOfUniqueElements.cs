@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01748_SumOfUniqueElements : I_01748_SumOfUniqueElements
+    public class LC_00001748_SumOfUniqueElements : ILC_00001748_SumOfUniqueElements
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01748_SumOfUniqueElements()
+        public LC_00001748_SumOfUniqueElements()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01748_SumOfUniqueElements));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001748_SumOfUniqueElements));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01748_SumOfUniqueElements(IHost host)
+        public LC_00001748_SumOfUniqueElements(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01748_SumOfUniqueElements));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001748_SumOfUniqueElements));
         }
 
         public void PrintSolution()

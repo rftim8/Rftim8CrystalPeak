@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03474_LexicographicallySmallestGeneratedString
+    public interface ILC_00003474_LexicographicallySmallestGeneratedString
     {
         public void PrintSolution();
     }

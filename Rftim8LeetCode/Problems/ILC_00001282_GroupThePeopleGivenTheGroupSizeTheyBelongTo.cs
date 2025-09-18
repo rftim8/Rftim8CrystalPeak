@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01282_GroupThePeopleGivenTheGroupSizeTheyBelongTo
+    public interface ILC_00001282_GroupThePeopleGivenTheGroupSizeTheyBelongTo
     {
         public void PrintSolution();
     }

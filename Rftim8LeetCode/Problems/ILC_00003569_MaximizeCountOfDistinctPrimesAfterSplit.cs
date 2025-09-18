@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03569_MaximizeCountOfDistinctPrimesAfterSplit
+    public interface ILC_00003569_MaximizeCountOfDistinctPrimesAfterSplit
     {
         public void PrintSolution();
     }

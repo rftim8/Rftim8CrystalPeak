@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00515_FindLargestValueInEachTreeRow
+    public interface ILC_00000515_FindLargestValueInEachTreeRow
     {
         public void PrintSolution();
     }

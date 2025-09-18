@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02936_NumberOfEqualNumbersBlocks : I_02936_NumberOfEqualNumbersBlocks
+    public class LC_00002936_NumberOfEqualNumbersBlocks : ILC_00002936_NumberOfEqualNumbersBlocks
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02936_NumberOfEqualNumbersBlocks()
+        public LC_00002936_NumberOfEqualNumbersBlocks()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02936_NumberOfEqualNumbersBlocks));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002936_NumberOfEqualNumbersBlocks));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02936_NumberOfEqualNumbersBlocks(IHost host)
+        public LC_00002936_NumberOfEqualNumbersBlocks(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02936_NumberOfEqualNumbersBlocks));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002936_NumberOfEqualNumbersBlocks));
         }
 
         public void PrintSolution()

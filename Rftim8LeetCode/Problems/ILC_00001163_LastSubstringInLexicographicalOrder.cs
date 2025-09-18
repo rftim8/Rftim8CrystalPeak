@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01163_LastSubstringInLexicographicalOrder
+    public interface ILC_00001163_LastSubstringInLexicographicalOrder
     {
         public void PrintSolution();
     }

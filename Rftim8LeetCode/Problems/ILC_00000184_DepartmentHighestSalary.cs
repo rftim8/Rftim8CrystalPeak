@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00184_DepartmentHighestSalary
+    public interface ILC_00000184_DepartmentHighestSalary
     {
         public void PrintSolution();
     }

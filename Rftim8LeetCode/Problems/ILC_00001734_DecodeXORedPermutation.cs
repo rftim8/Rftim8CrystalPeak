@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01734_DecodeXORedPermutation
+    public interface ILC_00001734_DecodeXORedPermutation
     {
         public void PrintSolution();
     }

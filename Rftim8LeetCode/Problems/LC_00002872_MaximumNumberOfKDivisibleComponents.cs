@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02872_MaximumNumberOfKDivisibleComponents : I_02872_MaximumNumberOfKDivisibleComponents
+    public class LC_00002872_MaximumNumberOfKDivisibleComponents : ILC_00002872_MaximumNumberOfKDivisibleComponents
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02872_MaximumNumberOfKDivisibleComponents()
+        public LC_00002872_MaximumNumberOfKDivisibleComponents()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02872_MaximumNumberOfKDivisibleComponents));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002872_MaximumNumberOfKDivisibleComponents));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02872_MaximumNumberOfKDivisibleComponents(IHost host)
+        public LC_00002872_MaximumNumberOfKDivisibleComponents(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02872_MaximumNumberOfKDivisibleComponents));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002872_MaximumNumberOfKDivisibleComponents));
         }
 
         public void PrintSolution()

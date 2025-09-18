@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01925_CountSquareSumTriples
+    public interface ILC_00001925_CountSquareSumTriples
     {
         public void PrintSolution();
     }

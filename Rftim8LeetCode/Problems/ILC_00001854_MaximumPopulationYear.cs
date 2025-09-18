@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01854_MaximumPopulationYear
+    public interface ILC_00001854_MaximumPopulationYear
     {
         public void PrintSolution();
     }

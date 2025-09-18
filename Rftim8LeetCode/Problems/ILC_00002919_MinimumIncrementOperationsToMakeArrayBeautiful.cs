@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02919_MinimumIncrementOperationsToMakeArrayBeautiful
+    public interface ILC_00002919_MinimumIncrementOperationsToMakeArrayBeautiful
     {
         public void PrintSolution();
     }

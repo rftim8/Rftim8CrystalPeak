@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01573_NumberOfWaysToSplitAString
+    public interface ILC_00001573_NumberOfWaysToSplitAString
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00028_FindTheIndexOfTheFirstOccurrenceInAString : I_00028_FindTheIndexOfTheFirstOccurrenceInAString
+    public class LC_00000028_FindTheIndexOfTheFirstOccurrenceInAString : ILC_00000028_FindTheIndexOfTheFirstOccurrenceInAString
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00028_FindTheIndexOfTheFirstOccurrenceInAString()
+        public LC_00000028_FindTheIndexOfTheFirstOccurrenceInAString()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00028_FindTheIndexOfTheFirstOccurrenceInAString));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000028_FindTheIndexOfTheFirstOccurrenceInAString));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00028_FindTheIndexOfTheFirstOccurrenceInAString(IHost host)
+        public LC_00000028_FindTheIndexOfTheFirstOccurrenceInAString(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00028_FindTheIndexOfTheFirstOccurrenceInAString));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000028_FindTheIndexOfTheFirstOccurrenceInAString));
         }
 
         public void PrintSolution()

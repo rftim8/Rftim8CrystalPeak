@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00830_PositionsOfLargeGroups
+    public interface ILC_00000830_PositionsOfLargeGroups
     {
         public void PrintSolution();
     }

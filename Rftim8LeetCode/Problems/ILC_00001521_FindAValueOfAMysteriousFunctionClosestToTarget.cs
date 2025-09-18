@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01521_FindAValueOfAMysteriousFunctionClosestToTarget
+    public interface ILC_00001521_FindAValueOfAMysteriousFunctionClosestToTarget
     {
         public void PrintSolution();
     }

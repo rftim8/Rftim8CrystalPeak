@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03255_FindThePowerOfKSizeSubarraysII
+    public interface ILC_00003255_FindThePowerOfKSizeSubarraysII
     {
         public void PrintSolution();
     }

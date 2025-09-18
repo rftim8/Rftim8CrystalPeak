@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02745_ConstructTheLongestNewString
+    public interface ILC_00002745_ConstructTheLongestNewString
     {
         public void PrintSolution();
     }

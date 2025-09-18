@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02335_MinimumAmountOfTimeToFillCups
+    public interface ILC_00002335_MinimumAmountOfTimeToFillCups
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03545_MinimumDeletionsForAtMostKDistinctCharacters
+    public interface ILC_00003545_MinimumDeletionsForAtMostKDistinctCharacters
     {
         public void PrintSolution();
     }

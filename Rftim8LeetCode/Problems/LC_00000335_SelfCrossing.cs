@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00335_SelfCrossing : I_00335_SelfCrossing
+    public class LC_00000335_SelfCrossing : ILC_00000335_SelfCrossing
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00335_SelfCrossing()
+        public LC_00000335_SelfCrossing()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00335_SelfCrossing));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000335_SelfCrossing));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00335_SelfCrossing(IHost host)
+        public LC_00000335_SelfCrossing(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00335_SelfCrossing));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000335_SelfCrossing));
         }
 
         public void PrintSolution()

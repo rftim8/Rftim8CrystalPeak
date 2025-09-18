@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02390_RemovingStarsFromAString
+    public interface ILC_00002390_RemovingStarsFromAString
     {
         public void PrintSolution();
     }

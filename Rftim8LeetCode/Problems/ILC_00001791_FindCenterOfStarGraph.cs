@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01791_FindCenterOfStarGraph
+    public interface ILC_00001791_FindCenterOfStarGraph
     {
         public void PrintSolution();
     }

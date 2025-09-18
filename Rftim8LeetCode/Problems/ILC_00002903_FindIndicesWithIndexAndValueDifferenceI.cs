@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02903_FindIndicesWithIndexAndValueDifferenceI
+    public interface ILC_00002903_FindIndicesWithIndexAndValueDifferenceI
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03433_CountMentionsPerUser
+    public interface ILC_00003433_CountMentionsPerUser
     {
         public void PrintSolution();
     }

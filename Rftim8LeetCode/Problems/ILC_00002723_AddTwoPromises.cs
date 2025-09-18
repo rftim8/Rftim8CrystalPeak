@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02723_AddTwoPromises
+    public interface ILC_00002723_AddTwoPromises
     {
         public void PrintSolution();
     }

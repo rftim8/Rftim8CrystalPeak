@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00703_KthLargestElementInAStream
+    public interface ILC_00000703_KthLargestElementInAStream
     {
         public void PrintSolution();
     }

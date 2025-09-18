@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02540_MinimumCommonValue
+    public interface ILC_00002540_MinimumCommonValue
     {
         public void PrintSolution();
     }

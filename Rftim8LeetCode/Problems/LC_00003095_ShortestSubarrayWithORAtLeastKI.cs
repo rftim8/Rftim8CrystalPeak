@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03095_ShortestSubarrayWithORAtLeastKI : I_03095_ShortestSubarrayWithORAtLeastKI
+    public class LC_00003095_ShortestSubarrayWithORAtLeastKI : ILC_00003095_ShortestSubarrayWithORAtLeastKI
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03095_ShortestSubarrayWithORAtLeastKI()
+        public LC_00003095_ShortestSubarrayWithORAtLeastKI()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03095_ShortestSubarrayWithORAtLeastKI));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003095_ShortestSubarrayWithORAtLeastKI));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03095_ShortestSubarrayWithORAtLeastKI(IHost host)
+        public LC_00003095_ShortestSubarrayWithORAtLeastKI(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03095_ShortestSubarrayWithORAtLeastKI));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003095_ShortestSubarrayWithORAtLeastKI));
         }
 
         public void PrintSolution()

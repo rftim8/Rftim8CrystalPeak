@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01301_NumberOfPathsWithMaxScore
+    public interface ILC_00001301_NumberOfPathsWithMaxScore
     {
         public void PrintSolution();
     }

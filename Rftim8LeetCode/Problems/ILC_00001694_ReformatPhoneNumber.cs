@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01694_ReformatPhoneNumber
+    public interface ILC_00001694_ReformatPhoneNumber
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02947_CountBeautifulSubstringsI
+    public interface ILC_00002947_CountBeautifulSubstringsI
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01310_XORQueriesOfASubarray
+    public interface ILC_00001310_XORQueriesOfASubarray
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _03283_MaximumNumberOfMovesToKillAllPawns_Test
+    public class LC_00003283_MaximumNumberOfMovesToKillAllPawns_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_03283_MaximumNumberOfMovesToKillAllPawns))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03283_MaximumNumberOfMovesToKillAllPawns))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_03283_MaximumNumberOfMovesToKillAllPawns))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00003283_MaximumNumberOfMovesToKillAllPawns))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003283_MaximumNumberOfMovesToKillAllPawns))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00003283_MaximumNumberOfMovesToKillAllPawns))![1]);
 
-        public static TheoryData<List<string>, int> _03283_MaximumNumberOfMovesToKillAllPawnsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00003283_MaximumNumberOfMovesToKillAllPawnsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _03283_MaximumNumberOfMovesToKillAllPawnsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00003283_MaximumNumberOfMovesToKillAllPawnsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_03283_MaximumNumberOfMovesToKillAllPawnsPartOne_Data))]
+        [MemberData(nameof(LC_00003283_MaximumNumberOfMovesToKillAllPawnsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _03283_MaximumNumberOfMovesToKillAllPawns.PartOne_Test(a0);
+            int actual = LC_00003283_MaximumNumberOfMovesToKillAllPawns.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_03283_MaximumNumberOfMovesToKillAllPawnsPartTwo_Data))]
+        [MemberData(nameof(LC_00003283_MaximumNumberOfMovesToKillAllPawnsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _03283_MaximumNumberOfMovesToKillAllPawns.PartTwo_Test(a0);
+            int actual = LC_00003283_MaximumNumberOfMovesToKillAllPawns.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03232_FindIfDigitGameCanBeWon : I_03232_FindIfDigitGameCanBeWon
+    public class LC_00003232_FindIfDigitGameCanBeWon : ILC_00003232_FindIfDigitGameCanBeWon
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03232_FindIfDigitGameCanBeWon()
+        public LC_00003232_FindIfDigitGameCanBeWon()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03232_FindIfDigitGameCanBeWon));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003232_FindIfDigitGameCanBeWon));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03232_FindIfDigitGameCanBeWon(IHost host)
+        public LC_00003232_FindIfDigitGameCanBeWon(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03232_FindIfDigitGameCanBeWon));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003232_FindIfDigitGameCanBeWon));
         }
 
         public void PrintSolution()

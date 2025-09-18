@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00448_FindAllNumbersDisappearedInAnArray
+    public interface ILC_00000448_FindAllNumbersDisappearedInAnArray
     {
         public void PrintSolution();
     }

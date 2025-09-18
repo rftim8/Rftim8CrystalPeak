@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03292_MinimumNumberOfValidStringsToFormTargetII
+    public interface ILC_00003292_MinimumNumberOfValidStringsToFormTargetII
     {
         public void PrintSolution();
     }

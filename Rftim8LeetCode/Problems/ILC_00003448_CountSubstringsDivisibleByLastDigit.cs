@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03448_CountSubstringsDivisibleByLastDigit
+    public interface ILC_00003448_CountSubstringsDivisibleByLastDigit
     {
         public void PrintSolution();
     }

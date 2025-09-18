@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00562_LongestLineOfConsecutiveOneInMatrix : I_00562_LongestLineOfConsecutiveOneInMatrix
+    public class LC_00000562_LongestLineOfConsecutiveOneInMatrix : ILC_00000562_LongestLineOfConsecutiveOneInMatrix
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00562_LongestLineOfConsecutiveOneInMatrix()
+        public LC_00000562_LongestLineOfConsecutiveOneInMatrix()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00562_LongestLineOfConsecutiveOneInMatrix));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrix));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00562_LongestLineOfConsecutiveOneInMatrix(IHost host)
+        public LC_00000562_LongestLineOfConsecutiveOneInMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00562_LongestLineOfConsecutiveOneInMatrix));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000562_LongestLineOfConsecutiveOneInMatrix));
         }
 
         public void PrintSolution()

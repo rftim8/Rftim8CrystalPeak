@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02658_MaximumNumberOfFishInAGrid
+    public interface ILC_00002658_MaximumNumberOfFishInAGrid
     {
         public void PrintSolution();
     }

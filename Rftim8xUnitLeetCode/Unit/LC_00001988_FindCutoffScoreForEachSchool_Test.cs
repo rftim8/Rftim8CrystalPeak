@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01988_FindCutoffScoreForEachSchool_Test
+    public class LC_00001988_FindCutoffScoreForEachSchool_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01988_FindCutoffScoreForEachSchool))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01988_FindCutoffScoreForEachSchool))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01988_FindCutoffScoreForEachSchool))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001988_FindCutoffScoreForEachSchool))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001988_FindCutoffScoreForEachSchool))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001988_FindCutoffScoreForEachSchool))![1]);
 
-        public static TheoryData<List<string>, int> _01988_FindCutoffScoreForEachSchoolPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001988_FindCutoffScoreForEachSchoolPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01988_FindCutoffScoreForEachSchoolPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001988_FindCutoffScoreForEachSchoolPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01988_FindCutoffScoreForEachSchoolPartOne_Data))]
+        [MemberData(nameof(LC_00001988_FindCutoffScoreForEachSchoolPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01988_FindCutoffScoreForEachSchool.PartOne_Test(a0);
+            int actual = LC_00001988_FindCutoffScoreForEachSchool.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01988_FindCutoffScoreForEachSchoolPartTwo_Data))]
+        [MemberData(nameof(LC_00001988_FindCutoffScoreForEachSchoolPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01988_FindCutoffScoreForEachSchool.PartTwo_Test(a0);
+            int actual = LC_00001988_FindCutoffScoreForEachSchool.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

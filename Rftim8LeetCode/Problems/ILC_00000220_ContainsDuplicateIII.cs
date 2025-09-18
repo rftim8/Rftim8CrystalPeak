@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00220_ContainsDuplicateIII
+    public interface ILC_00000220_ContainsDuplicateIII
     {
         public void PrintSolution();
     }

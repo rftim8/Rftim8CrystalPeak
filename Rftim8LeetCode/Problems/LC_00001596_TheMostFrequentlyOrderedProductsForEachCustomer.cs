@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01596_TheMostFrequentlyOrderedProductsForEachCustomer : I_01596_TheMostFrequentlyOrderedProductsForEachCustomer
+    public class LC_00001596_TheMostFrequentlyOrderedProductsForEachCustomer : ILC_00001596_TheMostFrequentlyOrderedProductsForEachCustomer
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01596_TheMostFrequentlyOrderedProductsForEachCustomer()
+        public LC_00001596_TheMostFrequentlyOrderedProductsForEachCustomer()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01596_TheMostFrequentlyOrderedProductsForEachCustomer));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001596_TheMostFrequentlyOrderedProductsForEachCustomer));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01596_TheMostFrequentlyOrderedProductsForEachCustomer(IHost host)
+        public LC_00001596_TheMostFrequentlyOrderedProductsForEachCustomer(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01596_TheMostFrequentlyOrderedProductsForEachCustomer));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001596_TheMostFrequentlyOrderedProductsForEachCustomer));
         }
 
         public void PrintSolution()

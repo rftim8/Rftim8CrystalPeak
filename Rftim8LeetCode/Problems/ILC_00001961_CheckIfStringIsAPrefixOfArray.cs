@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01961_CheckIfStringIsAPrefixOfArray
+    public interface ILC_00001961_CheckIfStringIsAPrefixOfArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03231_MinimumNumberOfIncreasingSubsequenceToBeRemoved
+    public interface ILC_00003231_MinimumNumberOfIncreasingSubsequenceToBeRemoved
     {
         public void PrintSolution();
     }

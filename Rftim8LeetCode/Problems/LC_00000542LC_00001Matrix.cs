@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00542_01Matrix : I_00542_01Matrix
+    public class LC_00000542LC_00001Matrix : ILC_00000542LC_00001Matrix
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00542_01Matrix()
+        public LC_00000542LC_00001Matrix()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00542_01Matrix));
-            Input = [.. RftResource._00542_01Matrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000542LC_00001Matrix));
+            Input = [.. RftResource.LC_00000542LC_00001Matrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00542_01Matrix(IHost host)
+        public LC_00000542LC_00001Matrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00542_01Matrix));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000542LC_00001Matrix));
             DataCollector();
         }
 

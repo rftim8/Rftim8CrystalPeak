@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03502_MinimumCostToReachEveryPosition
+    public interface ILC_00003502_MinimumCostToReachEveryPosition
     {
         public void PrintSolution();
     }

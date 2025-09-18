@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03129_FindAllPossibleStableBinaryArraysI
+    public interface ILC_00003129_FindAllPossibleStableBinaryArraysI
     {
         public void PrintSolution();
     }

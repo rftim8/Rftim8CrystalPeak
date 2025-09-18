@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03077_MaximumStrengthOfKDisjointSubarrays
+    public interface ILC_00003077_MaximumStrengthOfKDisjointSubarrays
     {
         public void PrintSolution();
     }

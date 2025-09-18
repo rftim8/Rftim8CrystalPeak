@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03351_SumOfGoodSubsequences
+    public interface ILC_00003351_SumOfGoodSubsequences
     {
         public void PrintSolution();
     }

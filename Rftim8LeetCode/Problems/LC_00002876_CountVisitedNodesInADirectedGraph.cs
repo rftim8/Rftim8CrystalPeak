@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02876_CountVisitedNodesInADirectedGraph : I_02876_CountVisitedNodesInADirectedGraph
+    public class LC_00002876_CountVisitedNodesInADirectedGraph : ILC_00002876_CountVisitedNodesInADirectedGraph
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02876_CountVisitedNodesInADirectedGraph()
+        public LC_00002876_CountVisitedNodesInADirectedGraph()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02876_CountVisitedNodesInADirectedGraph));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002876_CountVisitedNodesInADirectedGraph));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02876_CountVisitedNodesInADirectedGraph(IHost host)
+        public LC_00002876_CountVisitedNodesInADirectedGraph(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02876_CountVisitedNodesInADirectedGraph));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002876_CountVisitedNodesInADirectedGraph));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03050_PizzaToppingsCostAnalysis
+    public interface ILC_00003050_PizzaToppingsCostAnalysis
     {
         public void PrintSolution();
     }

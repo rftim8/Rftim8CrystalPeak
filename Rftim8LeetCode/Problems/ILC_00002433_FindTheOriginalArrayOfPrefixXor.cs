@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02433_FindTheOriginalArrayOfPrefixXor
+    public interface ILC_00002433_FindTheOriginalArrayOfPrefixXor
     {
         public void PrintSolution();
     }

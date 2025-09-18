@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne
+    public interface ILC_00001404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne
     {
         public void PrintSolution();
     }

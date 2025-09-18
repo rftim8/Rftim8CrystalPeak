@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02902_CountOfSubMultisetsWithBoundedSum
+    public interface ILC_00002902_CountOfSubMultisetsWithBoundedSum
     {
         public void PrintSolution();
     }

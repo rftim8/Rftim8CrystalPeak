@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03259_MaximumEnergyBoostFromTwoDrinks
+    public interface ILC_00003259_MaximumEnergyBoostFromTwoDrinks
     {
         public void PrintSolution();
     }

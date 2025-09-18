@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02856_MinimumArrayLengthAfterPairRemovals
+    public interface ILC_00002856_MinimumArrayLengthAfterPairRemovals
     {
         public void PrintSolution();
     }

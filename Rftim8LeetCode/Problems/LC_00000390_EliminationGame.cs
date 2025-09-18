@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00390_EliminationGame : I_00390_EliminationGame
+    public class LC_00000390_EliminationGame : ILC_00000390_EliminationGame
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00390_EliminationGame()
+        public LC_00000390_EliminationGame()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00390_EliminationGame));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000390_EliminationGame));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00390_EliminationGame(IHost host)
+        public LC_00000390_EliminationGame(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00390_EliminationGame));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000390_EliminationGame));
         }
 
         public void PrintSolution()

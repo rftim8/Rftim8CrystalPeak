@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02237_CountPositionsOnStreetWithRequiredBrightness
+    public interface ILC_00002237_CountPositionsOnStreetWithRequiredBrightness
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00953_VerifyingAnAlienDictionary
+    public interface ILC_00000953_VerifyingAnAlienDictionary
     {
         public void PrintSolution();
     }

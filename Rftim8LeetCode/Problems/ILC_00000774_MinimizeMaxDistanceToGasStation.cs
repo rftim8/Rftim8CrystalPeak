@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00774_MinimizeMaxDistanceToGasStation
+    public interface ILC_00000774_MinimizeMaxDistanceToGasStation
     {
         public void PrintSolution();
     }

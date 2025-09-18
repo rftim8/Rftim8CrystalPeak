@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01005_MaximizeSumOfArrayAfterKNegations
+    public interface ILC_00001005_MaximizeSumOfArrayAfterKNegations
     {
         public void PrintSolution();
     }

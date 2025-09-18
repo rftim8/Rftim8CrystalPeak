@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00850_RectangleAreaII : I_00850_RectangleAreaII
+    public class LC_00000850_RectangleAreaII : ILC_00000850_RectangleAreaII
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00850_RectangleAreaII()
+        public LC_00000850_RectangleAreaII()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00850_RectangleAreaII));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000850_RectangleAreaII));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00850_RectangleAreaII(IHost host)
+        public LC_00000850_RectangleAreaII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00850_RectangleAreaII));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000850_RectangleAreaII));
         }
 
         public void PrintSolution()

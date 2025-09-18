@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02525_CategorizeBoxAccordingToCriteria
+    public interface ILC_00002525_CategorizeBoxAccordingToCriteria
     {
         public void PrintSolution();
     }

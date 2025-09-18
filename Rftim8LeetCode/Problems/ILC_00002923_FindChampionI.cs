@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02923_FindChampionI
+    public interface ILC_00002923_FindChampionI
     {
         public void PrintSolution();
     }

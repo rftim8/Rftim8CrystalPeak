@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00691_StickersToSpellWord
+    public interface ILC_00000691_StickersToSpellWord
     {
         public void PrintSolution();
     }

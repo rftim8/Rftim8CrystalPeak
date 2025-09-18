@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00580_CountStudentNumberInDepartments : I_00580_CountStudentNumberInDepartments
+    public class LC_00000580_CountStudentNumberInDepartments : ILC_00000580_CountStudentNumberInDepartments
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00580_CountStudentNumberInDepartments()
+        public LC_00000580_CountStudentNumberInDepartments()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00580_CountStudentNumberInDepartments));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000580_CountStudentNumberInDepartments));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00580_CountStudentNumberInDepartments(IHost host)
+        public LC_00000580_CountStudentNumberInDepartments(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00580_CountStudentNumberInDepartments));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000580_CountStudentNumberInDepartments));
         }
 
         public void PrintSolution()

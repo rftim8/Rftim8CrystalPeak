@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03011_FindIfArrayCanBeSorted
+    public interface ILC_00003011_FindIfArrayCanBeSorted
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00243_ShortestWordDistance
+    public interface ILC_00000243_ShortestWordDistance
     {
         public void PrintSolution();
     }

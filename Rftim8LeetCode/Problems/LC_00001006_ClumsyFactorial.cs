@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01006_ClumsyFactorial : I_01006_ClumsyFactorial
+    public class LC_00001006_ClumsyFactorial : ILC_00001006_ClumsyFactorial
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01006_ClumsyFactorial()
+        public LC_00001006_ClumsyFactorial()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01006_ClumsyFactorial));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001006_ClumsyFactorial));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01006_ClumsyFactorial(IHost host)
+        public LC_00001006_ClumsyFactorial(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01006_ClumsyFactorial));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001006_ClumsyFactorial));
         }
 
         public void PrintSolution()

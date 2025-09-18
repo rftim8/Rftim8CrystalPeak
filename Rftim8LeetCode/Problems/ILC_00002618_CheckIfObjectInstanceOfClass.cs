@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02618_CheckIfObjectInstanceOfClass
+    public interface ILC_00002618_CheckIfObjectInstanceOfClass
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01112_HighestGradeForEachStudent
+    public interface ILC_00001112_HighestGradeForEachStudent
     {
         public void PrintSolution();
     }

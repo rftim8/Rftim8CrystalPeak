@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02534_TimeTakenToCrossTheDoor
+    public interface ILC_00002534_TimeTakenToCrossTheDoor
     {
         public void PrintSolution();
     }

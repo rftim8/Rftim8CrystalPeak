@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02974_MinimumNumberGame
+    public interface ILC_00002974_MinimumNumberGame
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00490_TheMaze
+    public interface ILC_00000490_TheMaze
     {
         public void PrintSolution();
     }

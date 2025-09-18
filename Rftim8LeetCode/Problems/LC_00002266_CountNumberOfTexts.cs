@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02266_CountNumberOfTexts : I_02266_CountNumberOfTexts
+    public class LC_00002266_CountNumberOfTexts : ILC_00002266_CountNumberOfTexts
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02266_CountNumberOfTexts()
+        public LC_00002266_CountNumberOfTexts()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02266_CountNumberOfTexts));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002266_CountNumberOfTexts));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02266_CountNumberOfTexts(IHost host)
+        public LC_00002266_CountNumberOfTexts(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02266_CountNumberOfTexts));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002266_CountNumberOfTexts));
         }
 
         public void PrintSolution()

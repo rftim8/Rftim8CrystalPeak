@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01998_GCDSortOfAnArray
+    public interface ILC_00001998_GCDSortOfAnArray
     {
         public void PrintSolution();
     }

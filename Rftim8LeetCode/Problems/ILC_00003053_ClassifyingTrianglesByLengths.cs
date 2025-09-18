@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03053_ClassifyingTrianglesByLengths
+    public interface ILC_00003053_ClassifyingTrianglesByLengths
     {
         public void PrintSolution();
     }

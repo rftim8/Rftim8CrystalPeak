@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00949_LargestTimeForGivenDigits
+    public interface ILC_00000949_LargestTimeForGivenDigits
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02603_CollectCoinsInATree
+    public interface ILC_00002603_CollectCoinsInATree
     {
         public void PrintSolution();
     }

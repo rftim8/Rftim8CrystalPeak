@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00325_MaximumSizeSubarraySumEqualsK
+    public interface ILC_00000325_MaximumSizeSubarraySumEqualsK
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00694_NumberOfDistinctIslands
+    public interface ILC_00000694_NumberOfDistinctIslands
     {
         public void PrintSolution();
     }

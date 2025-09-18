@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02685_CountTheNumberOfCompleteComponents
+    public interface ILC_00002685_CountTheNumberOfCompleteComponents
     {
         public void PrintSolution();
     }

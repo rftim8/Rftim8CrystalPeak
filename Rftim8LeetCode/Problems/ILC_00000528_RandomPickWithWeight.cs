@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00528_RandomPickWithWeight
+    public interface ILC_00000528_RandomPickWithWeight
     {
         public void PrintSolution();
     }

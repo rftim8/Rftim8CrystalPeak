@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02926_MaximumBalancedSubsequenceSum
+    public interface ILC_00002926_MaximumBalancedSubsequenceSum
     {
         public void PrintSolution();
     }

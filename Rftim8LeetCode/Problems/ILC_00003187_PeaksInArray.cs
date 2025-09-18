@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03187_PeaksInArray
+    public interface ILC_00003187_PeaksInArray
     {
         public void PrintSolution();
     }

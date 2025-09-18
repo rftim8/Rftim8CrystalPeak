@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02120_ExecutionOfAllSuffixInstructionsStayingInAGrid : I_02120_ExecutionOfAllSuffixInstructionsStayingInAGrid
+    public class LC_00002120_ExecutionOfAllSuffixInstructionsStayingInAGrid : ILC_00002120_ExecutionOfAllSuffixInstructionsStayingInAGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02120_ExecutionOfAllSuffixInstructionsStayingInAGrid()
+        public LC_00002120_ExecutionOfAllSuffixInstructionsStayingInAGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02120_ExecutionOfAllSuffixInstructionsStayingInAGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002120_ExecutionOfAllSuffixInstructionsStayingInAGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02120_ExecutionOfAllSuffixInstructionsStayingInAGrid(IHost host)
+        public LC_00002120_ExecutionOfAllSuffixInstructionsStayingInAGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02120_ExecutionOfAllSuffixInstructionsStayingInAGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002120_ExecutionOfAllSuffixInstructionsStayingInAGrid));
         }
 
         public void PrintSolution()

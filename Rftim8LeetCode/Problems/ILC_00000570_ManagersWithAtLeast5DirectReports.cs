@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00570_ManagersWithAtLeast5DirectReports
+    public interface ILC_00000570_ManagersWithAtLeast5DirectReports
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03098_FindTheSumOfSubsequencePowers
+    public interface ILC_00003098_FindTheSumOfSubsequencePowers
     {
         public void PrintSolution();
     }

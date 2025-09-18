@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03237_AltAndTabSimulation
+    public interface ILC_00003237_AltAndTabSimulation
     {
         public void PrintSolution();
     }

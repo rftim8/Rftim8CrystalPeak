@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01928_MinimumCostToReachDestinationInTime
+    public interface ILC_00001928_MinimumCostToReachDestinationInTime
     {
         public void PrintSolution();
     }

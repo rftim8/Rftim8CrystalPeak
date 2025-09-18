@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03535_UnitConversionII : I_03535_UnitConversionII
+    public class LC_00003535_UnitConversionII : ILC_00003535_UnitConversionII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03535_UnitConversionII()
+        public LC_00003535_UnitConversionII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03535_UnitConversionII));
-            Input = [.. RftResource._03535_UnitConversionII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003535_UnitConversionII));
+            Input = [.. RftResource.LC_00003535_UnitConversionII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03535_UnitConversionII(IHost host)
+        public LC_00003535_UnitConversionII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03535_UnitConversionII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003535_UnitConversionII));
             DataCollector();
         }
 

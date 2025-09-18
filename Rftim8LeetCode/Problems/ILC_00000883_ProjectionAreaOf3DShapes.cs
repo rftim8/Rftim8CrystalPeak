@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00883_ProjectionAreaOf3DShapes
+    public interface ILC_00000883_ProjectionAreaOf3DShapes
     {
         public void PrintSolution();
     }

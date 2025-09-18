@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00860_LemonadeChange : I_00860_LemonadeChange
+    public class LC_00000860_LemonadeChange : ILC_00000860_LemonadeChange
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00860_LemonadeChange()
+        public LC_00000860_LemonadeChange()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00860_LemonadeChange));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000860_LemonadeChange));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00860_LemonadeChange(IHost host)
+        public LC_00000860_LemonadeChange(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00860_LemonadeChange));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000860_LemonadeChange));
         }
 
         public void PrintSolution()

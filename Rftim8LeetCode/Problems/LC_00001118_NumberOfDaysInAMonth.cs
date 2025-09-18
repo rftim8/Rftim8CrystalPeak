@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01118_NumberOfDaysInAMonth : I_01118_NumberOfDaysInAMonth
+    public class LC_00001118_NumberOfDaysInAMonth : ILC_00001118_NumberOfDaysInAMonth
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01118_NumberOfDaysInAMonth()
+        public LC_00001118_NumberOfDaysInAMonth()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01118_NumberOfDaysInAMonth));
-            Input = [.. RftResource._01118_NumberOfDaysInAMonth_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001118_NumberOfDaysInAMonth));
+            Input = [.. RftResource.LC_00001118_NumberOfDaysInAMonth_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01118_NumberOfDaysInAMonth(IHost host)
+        public LC_00001118_NumberOfDaysInAMonth(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01118_NumberOfDaysInAMonth));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001118_NumberOfDaysInAMonth));
             DataCollector();
         }
 

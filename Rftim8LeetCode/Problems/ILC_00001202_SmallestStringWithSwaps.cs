@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01202_SmallestStringWithSwaps
+    public interface ILC_00001202_SmallestStringWithSwaps
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03467_TransformArrayByParity
+    public interface ILC_00003467_TransformArrayByParity
     {
         public void PrintSolution();
     }

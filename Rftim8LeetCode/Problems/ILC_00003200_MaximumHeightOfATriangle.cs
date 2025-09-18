@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03200_MaximumHeightOfATriangle
+    public interface ILC_00003200_MaximumHeightOfATriangle
     {
         public void PrintSolution();
     }

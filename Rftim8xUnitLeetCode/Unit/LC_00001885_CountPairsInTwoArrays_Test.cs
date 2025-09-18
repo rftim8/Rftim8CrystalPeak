@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01885_CountPairsInTwoArrays_Test
+    public class LC_00001885_CountPairsInTwoArrays_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01885_CountPairsInTwoArrays))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01885_CountPairsInTwoArrays))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01885_CountPairsInTwoArrays))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001885_CountPairsInTwoArrays))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001885_CountPairsInTwoArrays))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001885_CountPairsInTwoArrays))![1]);
 
-        public static TheoryData<List<string>, int> _01885_CountPairsInTwoArraysPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001885_CountPairsInTwoArraysPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01885_CountPairsInTwoArraysPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001885_CountPairsInTwoArraysPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01885_CountPairsInTwoArraysPartOne_Data))]
+        [MemberData(nameof(LC_00001885_CountPairsInTwoArraysPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01885_CountPairsInTwoArrays.PartOne_Test(a0);
+            int actual = LC_00001885_CountPairsInTwoArrays.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01885_CountPairsInTwoArraysPartTwo_Data))]
+        [MemberData(nameof(LC_00001885_CountPairsInTwoArraysPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01885_CountPairsInTwoArrays.PartTwo_Test(a0);
+            int actual = LC_00001885_CountPairsInTwoArrays.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

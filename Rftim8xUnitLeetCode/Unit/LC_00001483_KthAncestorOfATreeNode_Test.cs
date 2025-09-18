@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01483_KthAncestorOfATreeNode_Test
+    public class LC_00001483_KthAncestorOfATreeNode_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01483_KthAncestorOfATreeNode))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01483_KthAncestorOfATreeNode))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01483_KthAncestorOfATreeNode))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00001483_KthAncestorOfATreeNode))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001483_KthAncestorOfATreeNode))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00001483_KthAncestorOfATreeNode))![1]);
 
-        public static TheoryData<List<string>, int> _01483_KthAncestorOfATreeNodePartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00001483_KthAncestorOfATreeNodePartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01483_KthAncestorOfATreeNodePartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00001483_KthAncestorOfATreeNodePartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01483_KthAncestorOfATreeNodePartOne_Data))]
+        [MemberData(nameof(LC_00001483_KthAncestorOfATreeNodePartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01483_KthAncestorOfATreeNode.PartOne_Test(a0);
+            int actual = LC_00001483_KthAncestorOfATreeNode.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01483_KthAncestorOfATreeNodePartTwo_Data))]
+        [MemberData(nameof(LC_00001483_KthAncestorOfATreeNodePartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01483_KthAncestorOfATreeNode.PartTwo_Test(a0);
+            int actual = LC_00001483_KthAncestorOfATreeNode.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

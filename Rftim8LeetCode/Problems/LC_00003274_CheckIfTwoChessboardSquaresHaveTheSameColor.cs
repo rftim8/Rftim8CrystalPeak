@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03274_CheckIfTwoChessboardSquaresHaveTheSameColor : I_03274_CheckIfTwoChessboardSquaresHaveTheSameColor
+    public class LC_00003274_CheckIfTwoChessboardSquaresHaveTheSameColor : ILC_00003274_CheckIfTwoChessboardSquaresHaveTheSameColor
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03274_CheckIfTwoChessboardSquaresHaveTheSameColor()
+        public LC_00003274_CheckIfTwoChessboardSquaresHaveTheSameColor()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03274_CheckIfTwoChessboardSquaresHaveTheSameColor));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003274_CheckIfTwoChessboardSquaresHaveTheSameColor));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03274_CheckIfTwoChessboardSquaresHaveTheSameColor(IHost host)
+        public LC_00003274_CheckIfTwoChessboardSquaresHaveTheSameColor(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03274_CheckIfTwoChessboardSquaresHaveTheSameColor));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003274_CheckIfTwoChessboardSquaresHaveTheSameColor));
         }
 
         public void PrintSolution()

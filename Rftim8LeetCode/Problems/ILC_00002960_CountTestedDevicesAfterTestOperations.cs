@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02960_CountTestedDevicesAfterTestOperations
+    public interface ILC_00002960_CountTestedDevicesAfterTestOperations
     {
         public void PrintSolution();
     }

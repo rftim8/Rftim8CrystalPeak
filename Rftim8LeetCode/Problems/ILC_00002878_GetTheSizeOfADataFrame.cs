@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02878_GetTheSizeOfADataFrame
+    public interface ILC_00002878_GetTheSizeOfADataFrame
     {
         public void PrintSolution();
     }

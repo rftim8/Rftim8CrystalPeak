@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01219_PathWithMaximumGold
+    public interface ILC_00001219_PathWithMaximumGold
     {
         public void PrintSolution();
     }

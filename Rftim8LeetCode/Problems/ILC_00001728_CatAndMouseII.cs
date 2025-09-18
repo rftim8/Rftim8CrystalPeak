@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01728_CatAndMouseII
+    public interface ILC_00001728_CatAndMouseII
     {
         public void PrintSolution();
     }

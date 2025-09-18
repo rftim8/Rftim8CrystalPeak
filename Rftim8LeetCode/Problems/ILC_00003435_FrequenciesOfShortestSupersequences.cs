@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03435_FrequenciesOfShortestSupersequences
+    public interface ILC_00003435_FrequenciesOfShortestSupersequences
     {
         public void PrintSolution();
     }

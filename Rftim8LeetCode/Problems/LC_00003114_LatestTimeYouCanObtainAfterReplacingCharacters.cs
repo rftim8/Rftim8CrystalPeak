@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03114_LatestTimeYouCanObtainAfterReplacingCharacters : I_03114_LatestTimeYouCanObtainAfterReplacingCharacters
+    public class LC_00003114_LatestTimeYouCanObtainAfterReplacingCharacters : ILC_00003114_LatestTimeYouCanObtainAfterReplacingCharacters
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03114_LatestTimeYouCanObtainAfterReplacingCharacters()
+        public LC_00003114_LatestTimeYouCanObtainAfterReplacingCharacters()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03114_LatestTimeYouCanObtainAfterReplacingCharacters));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003114_LatestTimeYouCanObtainAfterReplacingCharacters));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03114_LatestTimeYouCanObtainAfterReplacingCharacters(IHost host)
+        public LC_00003114_LatestTimeYouCanObtainAfterReplacingCharacters(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03114_LatestTimeYouCanObtainAfterReplacingCharacters));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003114_LatestTimeYouCanObtainAfterReplacingCharacters));
         }
 
         public void PrintSolution()

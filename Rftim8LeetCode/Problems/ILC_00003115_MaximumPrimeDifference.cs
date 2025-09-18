@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03115_MaximumPrimeDifference
+    public interface ILC_00003115_MaximumPrimeDifference
     {
         public void PrintSolution();
     }

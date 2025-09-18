@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00612_ShortestDistanceInAPlane
+    public interface ILC_00000612_ShortestDistanceInAPlane
     {
         public void PrintSolution();
     }

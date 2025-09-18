@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00681_NextClosestTime : I_00681_NextClosestTime
+    public class LC_00000681_NextClosestTime : ILC_00000681_NextClosestTime
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00681_NextClosestTime()
+        public LC_00000681_NextClosestTime()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00681_NextClosestTime));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000681_NextClosestTime));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00681_NextClosestTime(IHost host)
+        public LC_00000681_NextClosestTime(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00681_NextClosestTime));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000681_NextClosestTime));
         }
 
         public void PrintSolution()

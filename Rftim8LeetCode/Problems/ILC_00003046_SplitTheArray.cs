@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03046_SplitTheArray
+    public interface ILC_00003046_SplitTheArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01095_FindInMountainArray
+    public interface ILC_00001095_FindInMountainArray
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01557_MinimumNumberOfVerticesToReachAllNodes
+    public interface ILC_00001557_MinimumNumberOfVerticesToReachAllNodes
     {
         public void PrintSolution();
     }

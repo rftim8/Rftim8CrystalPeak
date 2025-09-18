@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02061_NumberOfSpacesCleaningRobotCleaned
+    public interface ILC_00002061_NumberOfSpacesCleaningRobotCleaned
     {
         public void PrintSolution();
     }

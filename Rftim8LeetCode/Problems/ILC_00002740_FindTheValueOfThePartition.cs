@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02740_FindTheValueOfThePartition
+    public interface ILC_00002740_FindTheValueOfThePartition
     {
         public void PrintSolution();
     }

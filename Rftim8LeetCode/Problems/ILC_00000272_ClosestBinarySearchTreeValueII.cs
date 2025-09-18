@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00272_ClosestBinarySearchTreeValueII
+    public interface ILC_00000272_ClosestBinarySearchTreeValueII
     {
         public void PrintSolution();
     }

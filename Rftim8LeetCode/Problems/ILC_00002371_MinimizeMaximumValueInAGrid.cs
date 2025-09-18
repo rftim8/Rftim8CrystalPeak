@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02371_MinimizeMaximumValueInAGrid
+    public interface ILC_00002371_MinimizeMaximumValueInAGrid
     {
         public void PrintSolution();
     }

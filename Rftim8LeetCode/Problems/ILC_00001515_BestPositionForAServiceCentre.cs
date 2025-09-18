@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01515_BestPositionForAServiceCentre
+    public interface ILC_00001515_BestPositionForAServiceCentre
     {
         public void PrintSolution();
     }

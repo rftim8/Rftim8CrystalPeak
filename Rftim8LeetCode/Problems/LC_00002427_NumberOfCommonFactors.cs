@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02427_NumberOfCommonFactors : I_02427_NumberOfCommonFactors
+    public class LC_00002427_NumberOfCommonFactors : ILC_00002427_NumberOfCommonFactors
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02427_NumberOfCommonFactors()
+        public LC_00002427_NumberOfCommonFactors()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02427_NumberOfCommonFactors));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002427_NumberOfCommonFactors));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02427_NumberOfCommonFactors(IHost host)
+        public LC_00002427_NumberOfCommonFactors(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02427_NumberOfCommonFactors));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002427_NumberOfCommonFactors));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01072_FlipColumnsForMaximumNumberOfEqualRows
+    public interface ILC_00001072_FlipColumnsForMaximumNumberOfEqualRows
     {
         public void PrintSolution();
     }

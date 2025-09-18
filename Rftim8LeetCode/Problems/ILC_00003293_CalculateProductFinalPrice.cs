@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03293_CalculateProductFinalPrice
+    public interface ILC_00003293_CalculateProductFinalPrice
     {
         public void PrintSolution();
     }

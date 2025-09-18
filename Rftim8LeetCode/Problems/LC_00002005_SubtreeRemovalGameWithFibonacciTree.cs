@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02005_SubtreeRemovalGameWithFibonacciTree : I_02005_SubtreeRemovalGameWithFibonacciTree
+    public class LC_00002005_SubtreeRemovalGameWithFibonacciTree : ILC_00002005_SubtreeRemovalGameWithFibonacciTree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02005_SubtreeRemovalGameWithFibonacciTree()
+        public LC_00002005_SubtreeRemovalGameWithFibonacciTree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02005_SubtreeRemovalGameWithFibonacciTree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002005_SubtreeRemovalGameWithFibonacciTree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02005_SubtreeRemovalGameWithFibonacciTree(IHost host)
+        public LC_00002005_SubtreeRemovalGameWithFibonacciTree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02005_SubtreeRemovalGameWithFibonacciTree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002005_SubtreeRemovalGameWithFibonacciTree));
         }
 
         public void PrintSolution()

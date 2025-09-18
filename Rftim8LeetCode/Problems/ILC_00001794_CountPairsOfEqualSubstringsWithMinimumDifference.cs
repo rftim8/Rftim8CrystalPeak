@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01794_CountPairsOfEqualSubstringsWithMinimumDifference
+    public interface ILC_00001794_CountPairsOfEqualSubstringsWithMinimumDifference
     {
         public void PrintSolution();
     }

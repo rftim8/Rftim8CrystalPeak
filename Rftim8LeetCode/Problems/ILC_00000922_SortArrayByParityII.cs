@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00922_SortArrayByParityII
+    public interface ILC_00000922_SortArrayByParityII
     {
         public void PrintSolution();
     }

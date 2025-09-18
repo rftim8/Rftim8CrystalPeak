@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03570_FindBooksWithNoAvailableCopies
+    public interface ILC_00003570_FindBooksWithNoAvailableCopies
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00165_CompareVersionNumbers
+    public interface ILC_00000165_CompareVersionNumbers
     {
         public void PrintSolution();
     }

@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _00493_ReversePairs_Test
+    public class LC_00000493_ReversePairs_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00493_ReversePairs))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00493_ReversePairs))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00493_ReversePairs))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000493_ReversePairs))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000493_ReversePairs))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00000493_ReversePairs))![1]);
 
-        public static TheoryData<List<string>, int> _00493_ReversePairsPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00000493_ReversePairsPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _00493_ReversePairsPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00000493_ReversePairsPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_00493_ReversePairsPartOne_Data))]
+        [MemberData(nameof(LC_00000493_ReversePairsPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _00493_ReversePairs.PartOne_Test(a0);
+            int actual = LC_00000493_ReversePairs.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_00493_ReversePairsPartTwo_Data))]
+        [MemberData(nameof(LC_00000493_ReversePairsPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _00493_ReversePairs.PartTwo_Test(a0);
+            int actual = LC_00000493_ReversePairs.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

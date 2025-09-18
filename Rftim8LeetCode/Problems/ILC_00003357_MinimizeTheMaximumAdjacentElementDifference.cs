@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03357_MinimizeTheMaximumAdjacentElementDifference
+    public interface ILC_00003357_MinimizeTheMaximumAdjacentElementDifference
     {
         public void PrintSolution();
     }

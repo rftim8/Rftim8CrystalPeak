@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01638_CountSubstringsThatDifferByOneCharacter
+    public interface ILC_00001638_CountSubstringsThatDifferByOneCharacter
     {
         public void PrintSolution();
     }

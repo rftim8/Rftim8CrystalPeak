@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02200_FindAllKDistantIndicesInAnArray
+    public interface ILC_00002200_FindAllKDistantIndicesInAnArray
     {
         public void PrintSolution();
     }

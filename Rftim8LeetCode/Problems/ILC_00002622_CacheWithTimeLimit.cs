@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02622_CacheWithTimeLimit
+    public interface ILC_00002622_CacheWithTimeLimit
     {
         public void PrintSolution();
     }

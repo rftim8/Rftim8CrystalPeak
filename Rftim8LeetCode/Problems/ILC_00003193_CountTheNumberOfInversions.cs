@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03193_CountTheNumberOfInversions
+    public interface ILC_00003193_CountTheNumberOfInversions
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01868_ProductOfTwoRunLengthEncodedArrays
+    public interface ILC_00001868_ProductOfTwoRunLengthEncodedArrays
     {
         public void PrintSolution();
     }

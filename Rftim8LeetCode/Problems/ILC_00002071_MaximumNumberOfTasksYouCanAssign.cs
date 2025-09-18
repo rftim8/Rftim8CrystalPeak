@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02071_MaximumNumberOfTasksYouCanAssign
+    public interface ILC_00002071_MaximumNumberOfTasksYouCanAssign
     {
         public void PrintSolution();
     }

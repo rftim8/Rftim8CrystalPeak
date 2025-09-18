@@ -1,44 +1,44 @@
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+﻿using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _02295_ReplaceElementsInAnArray_Test
+    public class LC_00002295_ReplaceElementsInAnArray_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_02295_ReplaceElementsInAnArray))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02295_ReplaceElementsInAnArray))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_02295_ReplaceElementsInAnArray))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002295_ReplaceElementsInAnArray))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002295_ReplaceElementsInAnArray))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(LC_00002295_ReplaceElementsInAnArray))![1]);
 
-        public static TheoryData<List<string>, int> _02295_ReplaceElementsInAnArrayPartOne_Data =>
+        public static TheoryData<List<string>, int> LC_00002295_ReplaceElementsInAnArrayPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _02295_ReplaceElementsInAnArrayPartTwo_Data =>
+        public static TheoryData<List<string>, int> LC_00002295_ReplaceElementsInAnArrayPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_02295_ReplaceElementsInAnArrayPartOne_Data))]
+        [MemberData(nameof(LC_00002295_ReplaceElementsInAnArrayPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _02295_ReplaceElementsInAnArray.PartOne_Test(a0);
+            int actual = LC_00002295_ReplaceElementsInAnArray.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_02295_ReplaceElementsInAnArrayPartTwo_Data))]
+        [MemberData(nameof(LC_00002295_ReplaceElementsInAnArrayPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _02295_ReplaceElementsInAnArray.PartTwo_Test(a0);
+            int actual = LC_00002295_ReplaceElementsInAnArray.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

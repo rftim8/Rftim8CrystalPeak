@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03420_CountNonDecreasingSubarraysAfterKOperations
+    public interface ILC_00003420_CountNonDecreasingSubarraysAfterKOperations
     {
         public void PrintSolution();
     }

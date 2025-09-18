@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02159_OrderTwoColumnsIndependently
+    public interface ILC_00002159_OrderTwoColumnsIndependently
     {
         public void PrintSolution();
     }

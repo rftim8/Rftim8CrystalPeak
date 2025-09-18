@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02998_MinimumNumberOfOperationsToMakeXAndYEqual
+    public interface ILC_00002998_MinimumNumberOfOperationsToMakeXAndYEqual
     {
         public void PrintSolution();
     }

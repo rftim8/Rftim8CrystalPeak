@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02251_NumberOfFlowersInFullBloom
+    public interface ILC_00002251_NumberOfFlowersInFullBloom
     {
         public void PrintSolution();
     }

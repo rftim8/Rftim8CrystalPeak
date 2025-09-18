@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00854_KSimilarStrings
+    public interface ILC_00000854_KSimilarStrings
     {
         public void PrintSolution();
     }

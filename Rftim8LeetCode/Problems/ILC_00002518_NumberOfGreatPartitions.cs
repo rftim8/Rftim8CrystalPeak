@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02518_NumberOfGreatPartitions
+    public interface ILC_00002518_NumberOfGreatPartitions
     {
         public void PrintSolution();
     }

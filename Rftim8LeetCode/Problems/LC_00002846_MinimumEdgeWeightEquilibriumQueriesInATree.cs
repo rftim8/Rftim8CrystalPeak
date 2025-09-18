@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02846_MinimumEdgeWeightEquilibriumQueriesInATree : I_02846_MinimumEdgeWeightEquilibriumQueriesInATree
+    public class LC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree : ILC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02846_MinimumEdgeWeightEquilibriumQueriesInATree()
+        public LC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02846_MinimumEdgeWeightEquilibriumQueriesInATree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02846_MinimumEdgeWeightEquilibriumQueriesInATree(IHost host)
+        public LC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02846_MinimumEdgeWeightEquilibriumQueriesInATree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002846_MinimumEdgeWeightEquilibriumQueriesInATree));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02666_AllowOneFunctionCall
+    public interface ILC_00002666_AllowOneFunctionCall
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01598_CrawlerLogFolder : I_01598_CrawlerLogFolder
+    public class LC_00001598_CrawlerLogFolder : ILC_00001598_CrawlerLogFolder
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01598_CrawlerLogFolder()
+        public LC_00001598_CrawlerLogFolder()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01598_CrawlerLogFolder));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001598_CrawlerLogFolder));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01598_CrawlerLogFolder(IHost host)
+        public LC_00001598_CrawlerLogFolder(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01598_CrawlerLogFolder));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001598_CrawlerLogFolder));
         }
 
         public void PrintSolution()

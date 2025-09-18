@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01620_CoordinateWithMaximumNetworkQuality
+    public interface ILC_00001620_CoordinateWithMaximumNetworkQuality
     {
         public void PrintSolution();
     }

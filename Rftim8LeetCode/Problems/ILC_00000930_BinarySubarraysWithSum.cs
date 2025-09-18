@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00930_BinarySubarraysWithSum
+    public interface ILC_00000930_BinarySubarraysWithSum
     {
         public void PrintSolution();
     }

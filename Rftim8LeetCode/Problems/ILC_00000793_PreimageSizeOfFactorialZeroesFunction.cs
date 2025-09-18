@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00793_PreimageSizeOfFactorialZeroesFunction
+    public interface ILC_00000793_PreimageSizeOfFactorialZeroesFunction
     {
         public void PrintSolution();
     }

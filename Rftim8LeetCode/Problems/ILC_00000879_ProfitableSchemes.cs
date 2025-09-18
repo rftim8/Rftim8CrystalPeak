@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00879_ProfitableSchemes
+    public interface ILC_00000879_ProfitableSchemes
     {
         public void PrintSolution();
     }

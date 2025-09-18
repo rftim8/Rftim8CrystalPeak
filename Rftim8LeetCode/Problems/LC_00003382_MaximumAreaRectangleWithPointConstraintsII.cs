@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03382_MaximumAreaRectangleWithPointConstraintsII : I_03382_MaximumAreaRectangleWithPointConstraintsII
+    public class LC_00003382_MaximumAreaRectangleWithPointConstraintsII : ILC_00003382_MaximumAreaRectangleWithPointConstraintsII
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03382_MaximumAreaRectangleWithPointConstraintsII()
+        public LC_00003382_MaximumAreaRectangleWithPointConstraintsII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03382_MaximumAreaRectangleWithPointConstraintsII));
-            Input = [.. RftResource._03382_MaximumAreaRectangleWithPointConstraintsII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003382_MaximumAreaRectangleWithPointConstraintsII));
+            Input = [.. RftResource.LC_00003382_MaximumAreaRectangleWithPointConstraintsII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03382_MaximumAreaRectangleWithPointConstraintsII(IHost host)
+        public LC_00003382_MaximumAreaRectangleWithPointConstraintsII(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03382_MaximumAreaRectangleWithPointConstraintsII));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003382_MaximumAreaRectangleWithPointConstraintsII));
             DataCollector();
         }
 

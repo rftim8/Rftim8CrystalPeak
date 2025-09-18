@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01260_Shift2DGrid
+    public interface ILC_00001260_Shift2DGrid
     {
         public void PrintSolution();
     }

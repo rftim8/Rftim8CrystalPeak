@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03040_MaximumNumberOfOperationsWithTheSameScoreII
+    public interface ILC_00003040_MaximumNumberOfOperationsWithTheSameScoreII
     {
         public void PrintSolution();
     }

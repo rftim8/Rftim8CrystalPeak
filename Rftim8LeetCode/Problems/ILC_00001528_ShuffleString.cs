@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01528_ShuffleString
+    public interface ILC_00001528_ShuffleString
     {
         public void PrintSolution();
     }

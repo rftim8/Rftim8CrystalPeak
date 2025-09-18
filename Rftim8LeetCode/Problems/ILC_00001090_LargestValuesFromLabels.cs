@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01090_LargestValuesFromLabels
+    public interface ILC_00001090_LargestValuesFromLabels
     {
         public void PrintSolution();
     }

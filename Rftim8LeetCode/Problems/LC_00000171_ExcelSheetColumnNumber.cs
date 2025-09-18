@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00171_ExcelSheetColumnNumber : I_00171_ExcelSheetColumnNumber
+    public class LC_00000171_ExcelSheetColumnNumber : ILC_00000171_ExcelSheetColumnNumber
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00171_ExcelSheetColumnNumber()
+        public LC_00000171_ExcelSheetColumnNumber()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00171_ExcelSheetColumnNumber));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000171_ExcelSheetColumnNumber));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00171_ExcelSheetColumnNumber(IHost host)
+        public LC_00000171_ExcelSheetColumnNumber(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00171_ExcelSheetColumnNumber));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000171_ExcelSheetColumnNumber));
         }
 
         public void PrintSolution()

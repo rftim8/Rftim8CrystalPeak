@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00761_SpecialBinaryString
+    public interface ILC_00000761_SpecialBinaryString
     {
         public void PrintSolution();
     }

@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03172_SecondDayVerification : I_03172_SecondDayVerification
+    public class LC_00003172_SecondDayVerification : ILC_00003172_SecondDayVerification
     {
         #region Static
         private readonly List<string>? data;
 
-        public _03172_SecondDayVerification()
+        public LC_00003172_SecondDayVerification()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03172_SecondDayVerification));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003172_SecondDayVerification));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03172_SecondDayVerification(IHost host)
+        public LC_00003172_SecondDayVerification(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_03172_SecondDayVerification));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003172_SecondDayVerification));
         }
 
         public void PrintSolution()

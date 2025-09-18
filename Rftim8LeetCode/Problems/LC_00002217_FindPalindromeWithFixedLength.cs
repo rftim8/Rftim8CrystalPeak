@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02217_FindPalindromeWithFixedLength : I_02217_FindPalindromeWithFixedLength
+    public class LC_00002217_FindPalindromeWithFixedLength : ILC_00002217_FindPalindromeWithFixedLength
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02217_FindPalindromeWithFixedLength()
+        public LC_00002217_FindPalindromeWithFixedLength()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02217_FindPalindromeWithFixedLength));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002217_FindPalindromeWithFixedLength));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02217_FindPalindromeWithFixedLength(IHost host)
+        public LC_00002217_FindPalindromeWithFixedLength(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02217_FindPalindromeWithFixedLength));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002217_FindPalindromeWithFixedLength));
         }
 
         public void PrintSolution()

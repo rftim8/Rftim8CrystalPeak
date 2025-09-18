@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03463_CheckIfDigitsAreEqualInStringAfterOperationsII
+    public interface ILC_00003463_CheckIfDigitsAreEqualInStringAfterOperationsII
     {
         public void PrintSolution();
     }

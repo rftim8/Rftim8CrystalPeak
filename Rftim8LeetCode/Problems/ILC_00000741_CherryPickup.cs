@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00741_CherryPickup
+    public interface ILC_00000741_CherryPickup
     {
         public void PrintSolution();
     }

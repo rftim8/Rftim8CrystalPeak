@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03086_MinimumMovesToPickKOnes
+    public interface ILC_00003086_MinimumMovesToPickKOnes
     {
         public void PrintSolution();
     }

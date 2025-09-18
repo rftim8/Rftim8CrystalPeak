@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02181_MergeNodesInBetweenZeros
+    public interface ILC_00002181_MergeNodesInBetweenZeros
     {
         public void PrintSolution();
     }

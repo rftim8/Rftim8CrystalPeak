@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01817_FindingTheUsersActiveMinutes : I_01817_FindingTheUsersActiveMinutes
+    public class LC_00001817_FindingTheUsersActiveMinutes : ILC_00001817_FindingTheUsersActiveMinutes
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01817_FindingTheUsersActiveMinutes()
+        public LC_00001817_FindingTheUsersActiveMinutes()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01817_FindingTheUsersActiveMinutes));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001817_FindingTheUsersActiveMinutes));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01817_FindingTheUsersActiveMinutes(IHost host)
+        public LC_00001817_FindingTheUsersActiveMinutes(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01817_FindingTheUsersActiveMinutes));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001817_FindingTheUsersActiveMinutes));
         }
 
         public void PrintSolution()

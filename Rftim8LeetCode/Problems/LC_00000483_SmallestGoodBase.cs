@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00483_SmallestGoodBase : I_00483_SmallestGoodBase
+    public class LC_00000483_SmallestGoodBase : ILC_00000483_SmallestGoodBase
     {
         #region Static
         private readonly List<string>? data;
 
-        public _00483_SmallestGoodBase()
+        public LC_00000483_SmallestGoodBase()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_00483_SmallestGoodBase));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000483_SmallestGoodBase));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00483_SmallestGoodBase(IHost host)
+        public LC_00000483_SmallestGoodBase(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_00483_SmallestGoodBase));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000483_SmallestGoodBase));
         }
 
         public void PrintSolution()

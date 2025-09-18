@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02434_UsingARobotToPrintTheLexicographicallySmallestString
+    public interface ILC_00002434_UsingARobotToPrintTheLexicographicallySmallestString
     {
         public void PrintSolution();
     }

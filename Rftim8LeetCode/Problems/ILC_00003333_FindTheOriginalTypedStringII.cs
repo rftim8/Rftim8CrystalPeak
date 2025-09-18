@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03333_FindTheOriginalTypedStringII
+    public interface ILC_00003333_FindTheOriginalTypedStringII
     {
         public void PrintSolution();
     }

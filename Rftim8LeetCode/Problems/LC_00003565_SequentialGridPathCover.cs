@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _03565_SequentialGridPathCover : I_03565_SequentialGridPathCover
+    public class LC_00003565_SequentialGridPathCover : ILC_00003565_SequentialGridPathCover
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _03565_SequentialGridPathCover()
+        public LC_00003565_SequentialGridPathCover()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_03565_SequentialGridPathCover));
-            Input = [.. RftResource._03565_SequentialGridPathCover_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003565_SequentialGridPathCover));
+            Input = [.. RftResource.LC_00003565_SequentialGridPathCover_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _03565_SequentialGridPathCover(IHost host)
+        public LC_00003565_SequentialGridPathCover(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_03565_SequentialGridPathCover));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003565_SequentialGridPathCover));
             DataCollector();
         }
 

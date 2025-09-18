@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01810_MinimumPathCostInAHiddenGrid : I_01810_MinimumPathCostInAHiddenGrid
+    public class LC_00001810_MinimumPathCostInAHiddenGrid : ILC_00001810_MinimumPathCostInAHiddenGrid
     {
         #region Static
         private readonly List<string>? data;
 
-        public _01810_MinimumPathCostInAHiddenGrid()
+        public LC_00001810_MinimumPathCostInAHiddenGrid()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_01810_MinimumPathCostInAHiddenGrid));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001810_MinimumPathCostInAHiddenGrid));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01810_MinimumPathCostInAHiddenGrid(IHost host)
+        public LC_00001810_MinimumPathCostInAHiddenGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_01810_MinimumPathCostInAHiddenGrid));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00001810_MinimumPathCostInAHiddenGrid));
         }
 
         public void PrintSolution()

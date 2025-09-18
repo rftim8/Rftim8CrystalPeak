@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02149_RearrangeArrayElementsBySign
+    public interface ILC_00002149_RearrangeArrayElementsBySign
     {
         public void PrintSolution();
     }

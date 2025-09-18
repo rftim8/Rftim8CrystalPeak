@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01717_MaximumScoreFromRemovingSubstrings
+    public interface ILC_00001717_MaximumScoreFromRemovingSubstrings
     {
         public void PrintSolution();
     }

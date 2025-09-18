@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03251_FindTheCountOfMonotonicPairsII
+    public interface ILC_00003251_FindTheCountOfMonotonicPairsII
     {
         public void PrintSolution();
     }

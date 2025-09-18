@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00381_InsertDeleteGetRandomO1DuplicatesAllowed
+    public interface ILC_00000381_InsertDeleteGetRandomO1DuplicatesAllowed
     {
         public void PrintSolution();
     }

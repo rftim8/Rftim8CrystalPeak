@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02221_FindTriangularSumOfAnArray
+    public interface ILC_00002221_FindTriangularSumOfAnArray
     {
         public void PrintSolution();
     }

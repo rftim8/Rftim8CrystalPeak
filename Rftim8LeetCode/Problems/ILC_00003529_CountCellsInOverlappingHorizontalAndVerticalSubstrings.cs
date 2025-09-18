@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03529_CountCellsInOverlappingHorizontalAndVerticalSubstrings
+    public interface ILC_00003529_CountCellsInOverlappingHorizontalAndVerticalSubstrings
     {
         public void PrintSolution();
     }

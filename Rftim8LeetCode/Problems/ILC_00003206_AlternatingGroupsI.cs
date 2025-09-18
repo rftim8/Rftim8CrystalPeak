@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03206_AlternatingGroupsI
+    public interface ILC_00003206_AlternatingGroupsI
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01245_TreeDiameter
+    public interface ILC_00001245_TreeDiameter
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01845_SeatReservationManager
+    public interface ILC_00001845_SeatReservationManager
     {
         public void PrintSolution();
     }

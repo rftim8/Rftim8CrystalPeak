@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02238_NumberOfTimesADriverWasAPassenger : I_02238_NumberOfTimesADriverWasAPassenger
+    public class LC_00002238_NumberOfTimesADriverWasAPassenger : ILC_00002238_NumberOfTimesADriverWasAPassenger
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _02238_NumberOfTimesADriverWasAPassenger()
+        public LC_00002238_NumberOfTimesADriverWasAPassenger()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02238_NumberOfTimesADriverWasAPassenger));
-            Input = [.. RftResource._02238_NumberOfTimesADriverWasAPassenger_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002238_NumberOfTimesADriverWasAPassenger));
+            Input = [.. RftResource.LC_00002238_NumberOfTimesADriverWasAPassenger_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02238_NumberOfTimesADriverWasAPassenger(IHost host)
+        public LC_00002238_NumberOfTimesADriverWasAPassenger(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_02238_NumberOfTimesADriverWasAPassenger));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002238_NumberOfTimesADriverWasAPassenger));
             DataCollector();
         }
 

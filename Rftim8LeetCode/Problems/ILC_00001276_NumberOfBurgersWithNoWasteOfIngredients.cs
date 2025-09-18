@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01276_NumberOfBurgersWithNoWasteOfIngredients
+    public interface ILC_00001276_NumberOfBurgersWithNoWasteOfIngredients
     {
         public void PrintSolution();
     }

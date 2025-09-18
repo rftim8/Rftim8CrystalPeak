@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02516_TakeKOfEachCharacterFromLeftAndRight
+    public interface ILC_00002516_TakeKOfEachCharacterFromLeftAndRight
     {
         public void PrintSolution();
     }

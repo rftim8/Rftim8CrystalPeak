@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02867_CountValidPathsInATree
+    public interface ILC_00002867_CountValidPathsInATree
     {
         public void PrintSolution();
     }

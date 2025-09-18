@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01213_IntersectionOfThreeSortedArrays
+    public interface ILC_00001213_IntersectionOfThreeSortedArrays
     {
         public void PrintSolution();
     }

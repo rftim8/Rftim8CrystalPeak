@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01894_FindTheStudentThatWillReplaceTheChalk
+    public interface ILC_00001894_FindTheStudentThatWillReplaceTheChalk
     {
         public void PrintSolution();
     }

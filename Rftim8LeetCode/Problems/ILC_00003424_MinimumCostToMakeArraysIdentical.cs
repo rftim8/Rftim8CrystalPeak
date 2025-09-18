@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_03424_MinimumCostToMakeArraysIdentical
+    public interface ILC_00003424_MinimumCostToMakeArraysIdentical
     {
         public void PrintSolution();
     }

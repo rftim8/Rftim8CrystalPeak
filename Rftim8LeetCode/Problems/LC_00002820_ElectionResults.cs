@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02820_ElectionResults : I_02820_ElectionResults
+    public class LC_00002820_ElectionResults : ILC_00002820_ElectionResults
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02820_ElectionResults()
+        public LC_00002820_ElectionResults()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02820_ElectionResults));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002820_ElectionResults));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02820_ElectionResults(IHost host)
+        public LC_00002820_ElectionResults(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02820_ElectionResults));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002820_ElectionResults));
         }
 
         public void PrintSolution()

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_02508_AddEdgesToMakeDegreesOfAllNodesEven
+    public interface ILC_00002508_AddEdgesToMakeDegreesOfAllNodesEven
     {
         public void PrintSolution();
     }

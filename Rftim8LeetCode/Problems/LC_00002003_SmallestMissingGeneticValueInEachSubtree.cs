@@ -1,4 +1,4 @@
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -6,14 +6,14 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _02003_SmallestMissingGeneticValueInEachSubtree : I_02003_SmallestMissingGeneticValueInEachSubtree
+    public class LC_00002003_SmallestMissingGeneticValueInEachSubtree : ILC_00002003_SmallestMissingGeneticValueInEachSubtree
     {
         #region Static
         private readonly List<string>? data;
 
-        public _02003_SmallestMissingGeneticValueInEachSubtree()
+        public LC_00002003_SmallestMissingGeneticValueInEachSubtree()
         {
-            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(_02003_SmallestMissingGeneticValueInEachSubtree));
+            data = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002003_SmallestMissingGeneticValueInEachSubtree));
         }
 
         /// <summary>
@@ -48,10 +48,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _02003_SmallestMissingGeneticValueInEachSubtree(IHost host)
+        public LC_00002003_SmallestMissingGeneticValueInEachSubtree(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            data = RftLeetCodeHostData.Input_Test(problemName: nameof(_02003_SmallestMissingGeneticValueInEachSubtree));
+            data = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002003_SmallestMissingGeneticValueInEachSubtree));
         }
 
         public void PrintSolution()

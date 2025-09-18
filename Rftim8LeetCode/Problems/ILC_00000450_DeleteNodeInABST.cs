@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00450_DeleteNodeInABST
+    public interface ILC_00000450_DeleteNodeInABST
     {
         public void PrintSolution();
     }

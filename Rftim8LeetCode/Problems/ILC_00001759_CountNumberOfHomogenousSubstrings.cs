@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01759_CountNumberOfHomogenousSubstrings
+    public interface ILC_00001759_CountNumberOfHomogenousSubstrings
     {
         public void PrintSolution();
     }

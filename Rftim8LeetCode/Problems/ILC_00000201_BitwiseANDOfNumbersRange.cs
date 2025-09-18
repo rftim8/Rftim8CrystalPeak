@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_00201_BitwiseANDOfNumbersRange
+    public interface ILC_00000201_BitwiseANDOfNumbersRange
     {
         public void PrintSolution();
     }

@@ -1,6 +1,6 @@
-namespace Rftim8LeetCode.Problems
+﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01484_GroupSoldProductsByTheDate
+    public interface ILC_00001484_GroupSoldProductsByTheDate
     {
         public void PrintSolution();
     }
