@@ -1,4 +1,4 @@
-﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00665_NonDecreasingArray : I_00665_NonDecreasingArray
+    public class LC_00000665_NondecreasingArray : ILC_00000665_NondecreasingArray
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00665_NonDecreasingArray()
+        public LC_00000665_NondecreasingArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000665_NonDecreasingArray));
-            Input = [.. RftResource.LC_00000665_NonDecreasingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000665_NondecreasingArray));
+            Input = [.. RftResource.LC_00000665_NondecreasingArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00665_NonDecreasingArray(IHost host)
+        public LC_00000665_NondecreasingArray(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00665_NonDecreasingArray));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000665_NondecreasingArray));
             DataCollector();
         }
 
