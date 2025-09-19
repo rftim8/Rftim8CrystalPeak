@@ -15,16 +15,7 @@ namespace Rftim8AdventOfCode.CP
             builder.Services.AddSingleton<IRftAdventOfCodeHostData, RftAdventOfCodeHostData>();
 
             #region AdventOfCode
-            builder.Services.AddSingleton<I_01_CalorieCounting, _01_CalorieCounting>();
-            builder.Services.AddSingleton<I_01_ChronalCalibration, _01_ChronalCalibration>();
-            builder.Services.AddSingleton<I_01_HistorianHysteria, _01_HistorianHysteria>();
-            builder.Services.AddSingleton<I_01_InverseCaptcha, _01_InverseCaptcha>();
-            builder.Services.AddSingleton<I_02_RedNosedReports, _02_RedNosedReports>();
-            builder.Services.AddSingleton<I_03_MullItOver, _03_MullItOver>();
-            builder.Services.AddSingleton<I_04_CeresSearch, _04_CeresSearch>();
-            builder.Services.AddSingleton<I_05_PrintQueue, _05_PrintQueue>();
-            builder.Services.AddSingleton<I_06_GuardGallivant, _06_GuardGallivant>();
-            builder.Services.AddSingleton<I_07_BridgeRepair, _07_BridgeRepair>();
+            builder.Services.AddSingleton<IAOC_00000001_Y15_NotQuiteLisp, AOC_00000001_Y15_NotQuiteLisp>();
             #endregion
 
             IHost host = builder.Build();

@@ -1,7 +1,7 @@
 ﻿using RftAPI.Services.Static.CP.AdventOfCode.Data;
 using RftCP.AdventOfCode;
 
-namespace RftCSxUnit.UnitTests.CP.AdventOfCode
+namespace Rftim8xUnitAdventOfCode.Unit
 {
     public class [x]_Test
     {

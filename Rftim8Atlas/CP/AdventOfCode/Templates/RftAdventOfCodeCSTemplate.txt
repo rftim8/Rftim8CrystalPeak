@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 using RftAPI.Services.Host.CP.AdventOfCode.Data;
 using RftAPI.Services.Static.CP.AdventOfCode.Data;
 
-namespace RftCP.AdventOfCode
+namespace Rftim8AdventOfCode.Problems
 {
     public class [x] : I[x]
     {
