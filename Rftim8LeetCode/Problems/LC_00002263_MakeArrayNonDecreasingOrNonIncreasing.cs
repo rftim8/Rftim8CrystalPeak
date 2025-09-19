@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class LC_00002263_MakeArrayNondecreasingOrNonincreasing : ILC_00002263_MakeArrayNondecreasingOrNonincreasing
+    public class LC_00002263_MakeArrayNonDecreasingOrNonIncreasing : ILC_00002263_MakeArrayNonDecreasingOrNonIncreasing
     {
         #region Static
         private readonly List<string>? Input;
 
-        public LC_00002263_MakeArrayNondecreasingOrNonincreasing()
+        public LC_00002263_MakeArrayNonDecreasingOrNonIncreasing()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002263_MakeArrayNondecreasingOrNonincreasing));
-            Input = [.. RftResource.LC_00002263_MakeArrayNondecreasingOrNonincreasing_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002263_MakeArrayNonDecreasingOrNonIncreasing));
+            Input = [.. RftLCResources.LC_00002263_MakeArrayNonDecreasingOrNonIncreasing_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public LC_00002263_MakeArrayNondecreasingOrNonincreasing(IHost host)
+        public LC_00002263_MakeArrayNonDecreasingOrNonIncreasing(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002263_MakeArrayNondecreasingOrNonincreasing));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002263_MakeArrayNonDecreasingOrNonIncreasing));
             DataCollector();
         }
 

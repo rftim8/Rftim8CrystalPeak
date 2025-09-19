@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000865_SmallestSubtreeWithAllTheDeepestNodes()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000865_SmallestSubtreeWithAllTheDeepestNodes));
-            Input = [.. RftResource.LC_00000865_SmallestSubtreeWithAllTheDeepestNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000865_SmallestSubtreeWithAllTheDeepestNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

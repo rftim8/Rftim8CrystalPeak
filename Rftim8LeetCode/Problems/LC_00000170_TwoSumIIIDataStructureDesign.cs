@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000170_TwoSumIIIDataStructureDesign()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000170_TwoSumIIIDataStructureDesign));
-            Input = [.. RftResource.LC_00000170_TwoSumIIIDataStructureDesign_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000170_TwoSumIIIDataStructureDesign_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

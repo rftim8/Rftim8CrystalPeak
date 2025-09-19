@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003620_NetworkRecoveryPathways()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003620_NetworkRecoveryPathways));
-            Input = [.. RftResource.LC_00003620_NetworkRecoveryPathways_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003620_NetworkRecoveryPathways_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

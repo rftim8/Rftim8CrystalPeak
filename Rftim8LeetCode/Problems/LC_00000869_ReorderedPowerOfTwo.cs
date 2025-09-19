@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _00869_ReorderedPowerOfTwo : I_00869_ReorderedPowerOfTwo
+    public class _00000869_ReorderedPowerOfTwo : I_00000869_ReorderedPowerOfTwo
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _00869_ReorderedPowerOfTwo()
+        public _00000869_ReorderedPowerOfTwo()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000869_ReorderedPowerOfTwo));
-            Input = [.. RftResource.LC_00000869_ReorderedPowerOfTwo_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000869_ReorderedPowerOfTwo_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _00869_ReorderedPowerOfTwo(IHost host)
+        public _00000869_ReorderedPowerOfTwo(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00869_ReorderedPowerOfTwo));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00000869_ReorderedPowerOfTwo));
             DataCollector();
         }
 

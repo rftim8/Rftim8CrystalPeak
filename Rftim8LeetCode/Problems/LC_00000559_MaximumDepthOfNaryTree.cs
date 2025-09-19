@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000559_MaximumDepthOfNaryTree()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000559_MaximumDepthOfNaryTree));
-            Input = [.. RftResource.LC_00000559_MaximumDepthOfNaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000559_MaximumDepthOfNaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001606_FindServersThatHandledMostNumberOfRequests()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001606_FindServersThatHandledMostNumberOfRequests));
-            Input = [.. RftResource.LC_00001606_FindServersThatHandledMostNumberOfRequests_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001606_FindServersThatHandledMostNumberOfRequests_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

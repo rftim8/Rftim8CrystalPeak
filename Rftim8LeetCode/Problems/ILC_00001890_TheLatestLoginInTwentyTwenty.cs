@@ -1,6 +1,6 @@
 ﻿namespace Rftim8LeetCode.Problems
 {
-    public interface I_01890_TheLatestLoginInTwentyTwenty
+    public interface ILC_00001890_TheLatestLoginInTwentyTwenty
     {
         public void PrintSolution();
     }

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003597_PartitionString()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003597_PartitionString));
-            Input = [.. RftResource.LC_00003597_PartitionString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003597_PartitionString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003575_MaximumGoodSubtreeScore()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003575_MaximumGoodSubtreeScore));
-            Input = [.. RftResource.LC_00003575_MaximumGoodSubtreeScore_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003575_MaximumGoodSubtreeScore_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

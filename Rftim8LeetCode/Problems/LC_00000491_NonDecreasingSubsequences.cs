@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class LC_00000491_NondecreasingSubsequences : ILC_00000491_NondecreasingSubsequences
+    public class LC_00000491_NonDecreasingSubsequences : ILC_00000491_NonDecreasingSubsequences
     {
         #region Static
         private readonly List<string>? Input;
 
-        public LC_00000491_NondecreasingSubsequences()
+        public LC_00000491_NonDecreasingSubsequences()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000491_NondecreasingSubsequences));
-            Input = [.. RftResource.LC_00000491_NondecreasingSubsequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000491_NonDecreasingSubsequences));
+            Input = [.. RftLCResources.LC_00000491_NonDecreasingSubsequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public LC_00000491_NondecreasingSubsequences(IHost host)
+        public LC_00000491_NonDecreasingSubsequences(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000491_NondecreasingSubsequences));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000491_NonDecreasingSubsequences));
             DataCollector();
         }
 

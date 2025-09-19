@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal));
-            Input = [.. RftResource.LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000889_ConstructBinaryTreeFromPreorderAndPostorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

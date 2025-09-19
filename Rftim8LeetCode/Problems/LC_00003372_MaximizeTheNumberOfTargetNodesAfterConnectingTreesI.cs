@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI));
-            Input = [.. RftResource.LC_00003372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

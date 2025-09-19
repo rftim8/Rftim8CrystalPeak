@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003619_CountIslandsWithTotalValueDivisibleByK()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003619_CountIslandsWithTotalValueDivisibleByK));
-            Input = [.. RftResource.LC_00003619_CountIslandsWithTotalValueDivisibleByK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003619_CountIslandsWithTotalValueDivisibleByK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

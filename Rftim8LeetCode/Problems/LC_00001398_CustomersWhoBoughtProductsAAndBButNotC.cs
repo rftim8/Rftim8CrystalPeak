@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001398_CustomersWhoBoughtProductsAAndBButNotC()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001398_CustomersWhoBoughtProductsAAndBButNotC));
-            Input = [.. RftResource.LC_00001398_CustomersWhoBoughtProductsAAndBButNotC_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001398_CustomersWhoBoughtProductsAAndBButNotC_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

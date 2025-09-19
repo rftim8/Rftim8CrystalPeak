@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60));
-            Input = [.. RftResource.LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001010_PairsOfSongsWithTotalDurationsDivisibleBy60_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

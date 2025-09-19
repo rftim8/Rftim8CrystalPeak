@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003583_CountSpecialTriplets()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003583_CountSpecialTriplets));
-            Input = [.. RftResource.LC_00003583_CountSpecialTriplets_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003583_CountSpecialTriplets_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

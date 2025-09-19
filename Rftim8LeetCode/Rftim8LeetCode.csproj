@@ -18,17 +18,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="RftResource.Designer.cs">
+	  <Compile Update="RftLCResources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
-	    <DependentUpon>RftResource.resx</DependentUpon>
+	    <DependentUpon>RftLCResources.resx</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Update="RftResource.resx">
+	  <EmbeddedResource Update="RftLCResources.resx">
 	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>RftResource.Designer.cs</LastGenOutput>
+	    <LastGenOutput>RftLCResources.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
 	</ItemGroup>
 

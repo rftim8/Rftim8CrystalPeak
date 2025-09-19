@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003544_SubtreeInversionSum()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003544_SubtreeInversionSum));
-            Input = [.. RftResource.LC_00003544_SubtreeInversionSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003544_SubtreeInversionSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000650_2KeysKeyboard()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000650_2KeysKeyboard));
-            Input = [.. RftResource.LC_00000650_2KeysKeyboard_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000650_2KeysKeyboard_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

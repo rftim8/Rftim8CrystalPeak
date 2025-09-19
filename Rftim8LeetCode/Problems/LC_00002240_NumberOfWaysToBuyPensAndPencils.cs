@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002240_NumberOfWaysToBuyPensAndPencils()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002240_NumberOfWaysToBuyPensAndPencils));
-            Input = [.. RftResource.LC_00002240_NumberOfWaysToBuyPensAndPencils_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00002240_NumberOfWaysToBuyPensAndPencils_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003666_MinimumOperationsToEqualizeBinaryString()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003666_MinimumOperationsToEqualizeBinaryString));
-            Input = [.. RftResource.LC_00003666_MinimumOperationsToEqualizeBinaryString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003666_MinimumOperationsToEqualizeBinaryString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000653_TwoSumIVInputIsABST()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000653_TwoSumIVInputIsABST));
-            Input = [.. RftResource.LC_00000653_TwoSumIVInputIsABST_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000653_TwoSumIVInputIsABST_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

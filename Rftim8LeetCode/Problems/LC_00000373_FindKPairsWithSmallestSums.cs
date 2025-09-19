@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000373_FindKPairsWithSmallestSums()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000373_FindKPairsWithSmallestSums));
-            Input = [.. RftResource.LC_00000373_FindKPairsWithSmallestSums_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000373_FindKPairsWithSmallestSums_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

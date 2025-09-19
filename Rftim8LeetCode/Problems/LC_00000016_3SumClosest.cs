@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000016_3SumClosest()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000016_3SumClosest));
-            Input = [.. RftResource.LC_00000016_3SumClosest_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000016_3SumClosest_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

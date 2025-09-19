@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003435_FrequenciesOfShortestSupersequences()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003435_FrequenciesOfShortestSupersequences));
-            Input = [.. RftResource.LC_00003435_FrequenciesOfShortestSupersequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003435_FrequenciesOfShortestSupersequences_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

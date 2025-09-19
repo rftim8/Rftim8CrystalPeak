@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001409_QueriesOnAPermutationWithKey()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001409_QueriesOnAPermutationWithKey));
-            Input = [.. RftResource.LC_00001409_QueriesOnAPermutationWithKey_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001409_QueriesOnAPermutationWithKey_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000974_SubarraySumsDivisibleByK()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000974_SubarraySumsDivisibleByK));
-            Input = [.. RftResource.LC_00000974_SubarraySumsDivisibleByK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000974_SubarraySumsDivisibleByK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

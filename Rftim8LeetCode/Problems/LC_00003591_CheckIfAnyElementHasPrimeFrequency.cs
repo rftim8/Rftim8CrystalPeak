@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003591_CheckIfAnyElementHasPrimeFrequency()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003591_CheckIfAnyElementHasPrimeFrequency));
-            Input = [.. RftResource.LC_00003591_CheckIfAnyElementHasPrimeFrequency_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003591_CheckIfAnyElementHasPrimeFrequency_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

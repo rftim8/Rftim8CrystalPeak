@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000576_OutOfBoundaryPaths()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000576_OutOfBoundaryPaths));
-            Input = [.. RftResource.LC_00000576_OutOfBoundaryPaths_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000576_OutOfBoundaryPaths_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

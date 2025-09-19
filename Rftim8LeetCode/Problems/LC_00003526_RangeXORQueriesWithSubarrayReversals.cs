@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003526_RangeXORQueriesWithSubarrayReversals()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003526_RangeXORQueriesWithSubarrayReversals));
-            Input = [.. RftResource.LC_00003526_RangeXORQueriesWithSubarrayReversals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003526_RangeXORQueriesWithSubarrayReversals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

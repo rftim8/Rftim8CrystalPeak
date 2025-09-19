@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000758_BoldWordsInString()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000758_BoldWordsInString));
-            Input = [.. RftResource.LC_00000758_BoldWordsInString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000758_BoldWordsInString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

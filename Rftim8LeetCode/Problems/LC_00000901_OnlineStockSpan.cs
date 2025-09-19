@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000901_OnlineStockSpan()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000901_OnlineStockSpan));
-            Input = [.. RftResource.LC_00000901_OnlineStockSpan_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000901_OnlineStockSpan_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

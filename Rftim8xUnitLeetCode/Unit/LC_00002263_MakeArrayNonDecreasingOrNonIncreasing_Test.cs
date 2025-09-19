@@ -1,22 +1,24 @@
-using RftAPI.Services.Static.CP.LeetCode.Data;
-using RftCP.LeetCode;
+using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+using Rftim8LeetCode.Problems;
+using Xunit.Abstractions;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class LC_00002263_MakeArrayNondecreasingOrNonincreasing_Test(ITestOutputHelper testOutputHelper)
+    public class LC_00002263_MakeArrayNonDecreasingOrNonIncreasing_Test(ITestOutputHelper testOutputHelper)
     {
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002263_MakeArrayNondecreasingOrNonincreasing))!;
-        
-        public static TheoryData<List<string>> LC_00002263_MakeArrayNondecreasingOrNonincreasingPartOne_Input =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002263_MakeArrayNonDecreasingOrNonIncreasing))!;
+        private static readonly int Expected = 0;
+
+        public static TheoryData<List<string>, int> LC_00002263_MakeArrayNonDecreasingOrNonIncreasingPartOne_Input =>
             new()
             {
-                { Input }
+                { Input, Expected }
             };
 
-        public static TheoryData<List<string>> LC_00002263_MakeArrayNondecreasingOrNonincreasingPartTwo_Input =>
+        public static TheoryData<List<string>, int> LC_00002263_MakeArrayNonDecreasingOrNonIncreasingPartTwo_Input =>
             new()
             {
-                { Input, ExpectedPartTwo }
+                { Input, Expected }
             };
 
         [Fact]
@@ -26,28 +28,28 @@ namespace Rftim8xUnitLeetCode.Unit
         }
 
         [Theory]
-        [MemberData(nameof(LC_00002263_MakeArrayNondecreasingOrNonincreasingPartOne_Input))]
+        [MemberData(nameof(LC_00002263_MakeArrayNonDecreasingOrNonIncreasingPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Arrange
             DataCollector();
 
             // Act
-            int actual = LC_00002263_MakeArrayNondecreasingOrNonincreasing.PartOne_Test(a0);
+            int actual = LC_00002263_MakeArrayNonDecreasingOrNonIncreasing.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(LC_00002263_MakeArrayNondecreasingOrNonincreasingPartTwo_Input))]
+        [MemberData(nameof(LC_00002263_MakeArrayNonDecreasingOrNonIncreasingPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Arrange
             DataCollector();
 
             // Act
-            int actual = LC_00002263_MakeArrayNondecreasingOrNonincreasing.PartTwo_Test(a0);
+            int actual = LC_00002263_MakeArrayNonDecreasingOrNonIncreasing.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

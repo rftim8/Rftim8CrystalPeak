@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002276_CountIntegersInIntervals()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002276_CountIntegersInIntervals));
-            Input = [.. RftResource.LC_00002276_CountIntegersInIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00002276_CountIntegersInIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

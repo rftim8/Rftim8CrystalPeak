@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000717_1bitAnd2bitCharacters()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000717_1bitAnd2bitCharacters));
-            Input = [.. RftResource.LC_00000717_1bitAnd2bitCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000717_1bitAnd2bitCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

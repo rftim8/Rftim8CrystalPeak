@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003535_UnitConversionII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003535_UnitConversionII));
-            Input = [.. RftResource.LC_00003535_UnitConversionII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003535_UnitConversionII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

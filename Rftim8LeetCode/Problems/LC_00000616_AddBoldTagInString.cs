@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000616_AddBoldTagInString()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000616_AddBoldTagInString));
-            Input = [.. RftResource.LC_00000616_AddBoldTagInString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000616_AddBoldTagInString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

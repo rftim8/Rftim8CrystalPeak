@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003584_MaximumProductOfFirstAndLastElementsOfASubsequence()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003584_MaximumProductOfFirstAndLastElementsOfASubsequence));
-            Input = [.. RftResource.LC_00003584_MaximumProductOfFirstAndLastElementsOfASubsequence_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003584_MaximumProductOfFirstAndLastElementsOfASubsequence_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

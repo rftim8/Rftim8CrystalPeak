@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000050_PowxN()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000050_PowxN));
-            Input = [.. RftResource.LC_00000050_PowxN_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000050_PowxN_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000590_NaryTreePostorderTraversal()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00000590_NaryTreePostorderTraversal));
-            Input = [.. RftResource.LC_00000590_NaryTreePostorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000590_NaryTreePostorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

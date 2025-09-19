@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003471_FindTheLargestAlmostMissingInteger()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003471_FindTheLargestAlmostMissingInteger));
-            Input = [.. RftResource.LC_00003471_FindTheLargestAlmostMissingInteger_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003471_FindTheLargestAlmostMissingInteger_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

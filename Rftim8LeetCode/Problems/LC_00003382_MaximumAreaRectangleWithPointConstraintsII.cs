@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003382_MaximumAreaRectangleWithPointConstraintsII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003382_MaximumAreaRectangleWithPointConstraintsII));
-            Input = [.. RftResource.LC_00003382_MaximumAreaRectangleWithPointConstraintsII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003382_MaximumAreaRectangleWithPointConstraintsII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

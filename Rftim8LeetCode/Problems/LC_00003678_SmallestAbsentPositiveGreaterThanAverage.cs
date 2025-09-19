@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003678_SmallestAbsentPositiveGreaterThanAverage()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003678_SmallestAbsentPositiveGreaterThanAverage));
-            Input = [.. RftResource.LC_00003678_SmallestAbsentPositiveGreaterThanAverage_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003678_SmallestAbsentPositiveGreaterThanAverage_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum));
-            Input = [.. RftResource.LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00002538_DifferenceBetweenMaximumAndMinimumPriceSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

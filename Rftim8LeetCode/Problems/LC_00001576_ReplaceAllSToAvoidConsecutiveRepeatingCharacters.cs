@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters));
-            Input = [.. RftResource.LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

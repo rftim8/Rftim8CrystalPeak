@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003369_DesignAnArrayStatisticsTracker()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003369_DesignAnArrayStatisticsTracker));
-            Input = [.. RftResource.LC_00003369_DesignAnArrayStatisticsTracker_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003369_DesignAnArrayStatisticsTracker_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

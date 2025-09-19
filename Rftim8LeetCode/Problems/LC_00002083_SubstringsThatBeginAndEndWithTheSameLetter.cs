@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter));
-            Input = [.. RftResource.LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00002083_SubstringsThatBeginAndEndWithTheSameLetter_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

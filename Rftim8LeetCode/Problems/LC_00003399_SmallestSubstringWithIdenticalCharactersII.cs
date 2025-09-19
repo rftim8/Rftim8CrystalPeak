@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003399_SmallestSubstringWithIdenticalCharactersII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003399_SmallestSubstringWithIdenticalCharactersII));
-            Input = [.. RftResource.LC_00003399_SmallestSubstringWithIdenticalCharactersII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003399_SmallestSubstringWithIdenticalCharactersII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

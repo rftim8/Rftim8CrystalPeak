@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001294_WeatherTypeInEachCountry()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001294_WeatherTypeInEachCountry));
-            Input = [.. RftResource.LC_00001294_WeatherTypeInEachCountry_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001294_WeatherTypeInEachCountry_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

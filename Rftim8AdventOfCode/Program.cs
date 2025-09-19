@@ -10,11 +10,11 @@ namespace Rftim8AdventOfCode
             ArgumentNullException.ThrowIfNull(args);
 
             #region Benchmarking
-            await RftBenchmark.InitBenchmark();
+            //await RftBenchmark.InitBenchmark();
             #endregion
 
             #region Hosting
-            //await CPHostMain.InitHost(args);
+            await CPHostMain.InitHost(args);
             #endregion
         }
     }

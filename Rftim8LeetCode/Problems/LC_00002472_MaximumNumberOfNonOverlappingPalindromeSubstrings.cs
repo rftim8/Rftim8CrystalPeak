@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class LC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings : ILC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings
+    public class LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings : ILC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings
     {
         #region Static
         private readonly List<string>? Input;
 
-        public LC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings()
+        public LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings));
-            Input = [.. RftResource.LC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings));
+            Input = [.. RftLCResources.LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public LC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings(IHost host)
+        public LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002472_MaximumNumberOfNonoverlappingPalindromeSubstrings));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00002472_MaximumNumberOfNonOverlappingPalindromeSubstrings));
             DataCollector();
         }
 

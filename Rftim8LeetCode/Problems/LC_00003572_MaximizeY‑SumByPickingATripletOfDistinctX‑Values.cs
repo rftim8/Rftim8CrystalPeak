@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class LC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values : ILC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values
+    public class LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues : ILC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues
     {
         #region Static
         private readonly List<string>? Input;
 
-        public LC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values()
+        public LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values));
-            Input = [.. RftResource.LC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues));
+            Input = [.. RftLCResources.LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public LC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values(IHost host)
+        public LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003572_MaximizeY‑SumByPickingATripletOfDistinctX‑Values));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00003572_MaximizeYSumByPickingATripletOfDistinctXValues));
             DataCollector();
         }
 

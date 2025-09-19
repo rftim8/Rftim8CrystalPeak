@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000036_ValidSudoku()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000036_ValidSudoku));
-            Input = [.. RftResource.LC_00000036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00000036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

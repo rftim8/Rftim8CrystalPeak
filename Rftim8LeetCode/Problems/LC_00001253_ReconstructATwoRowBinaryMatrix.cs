@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01253_ReconstructATwoRowBinaryMatrix : I_01253_ReconstructATwoRowBinaryMatrix
+    public class _00001253_ReconstructATwoRowBinaryMatrix : I_00001253_ReconstructATwoRowBinaryMatrix
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01253_ReconstructATwoRowBinaryMatrix()
+        public _00001253_ReconstructATwoRowBinaryMatrix()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001253_ReconstructA2RowBinaryMatrix));
-            Input = [.. RftResource.LC_00001253_ReconstructATwoRowBinaryMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001253_ReconstructATwoRowBinaryMatrix_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01253_ReconstructATwoRowBinaryMatrix(IHost host)
+        public _00001253_ReconstructATwoRowBinaryMatrix(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01253_ReconstructATwoRowBinaryMatrix));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_00001253_ReconstructATwoRowBinaryMatrix));
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003582_GenerateTagForVideoCaption()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003582_GenerateTagForVideoCaption));
-            Input = [.. RftResource.LC_00003582_GenerateTagForVideoCaption_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003582_GenerateTagForVideoCaption_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

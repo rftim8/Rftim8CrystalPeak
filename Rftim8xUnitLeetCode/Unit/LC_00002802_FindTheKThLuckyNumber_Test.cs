@@ -1,22 +1,24 @@
-using RftAPI.Services.Static.CP.LeetCode.Data;
-using RftCP.LeetCode;
+using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+using Rftim8LeetCode.Problems;
+using Xunit.Abstractions;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
     public class LC_00002802_FindTheKthLuckyNumber_Test(ITestOutputHelper testOutputHelper)
     {
         private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002802_FindTheKthLuckyNumber))!;
-        
-        public static TheoryData<List<string>> LC_00002802_FindTheKthLuckyNumberPartOne_Input =>
+        private static readonly int Expected = 0;
+
+        public static TheoryData<List<string>, int> LC_00002802_FindTheKthLuckyNumberPartOne_Input =>
             new()
             {
-                { Input }
+                { Input, Expected }
             };
 
-        public static TheoryData<List<string>> LC_00002802_FindTheKthLuckyNumberPartTwo_Input =>
+        public static TheoryData<List<string>, int> LC_00002802_FindTheKthLuckyNumberPartTwo_Input =>
             new()
             {
-                { Input, ExpectedPartTwo }
+                { Input, Expected }
             };
 
         [Fact]

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001333_FilterRestaurantsByVeganFriendlyPriceAndDistance()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001333_FilterRestaurantsByVeganFriendlyPriceAndDistance));
-            Input = [.. RftResource.LC_00001333_FilterRestaurantsByVeganFriendlyPriceAndDistance_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001333_FilterRestaurantsByVeganFriendlyPriceAndDistance_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

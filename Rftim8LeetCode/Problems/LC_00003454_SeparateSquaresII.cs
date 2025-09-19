@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003454_SeparateSquaresII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003454_SeparateSquaresII));
-            Input = [.. RftResource.LC_00003454_SeparateSquaresII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003454_SeparateSquaresII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

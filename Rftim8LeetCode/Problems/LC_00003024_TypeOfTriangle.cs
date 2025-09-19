@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003024_TypeOfTriangle()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003024_TypeOfTriangle));
-            Input = [.. RftResource.LC_00003024_TypeOfTriangle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003024_TypeOfTriangle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003390_LongestTeamPassStreak()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00003390_LongestTeamPassStreak));
-            Input = [.. RftResource.LC_00003390_LongestTeamPassStreak_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00003390_LongestTeamPassStreak_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

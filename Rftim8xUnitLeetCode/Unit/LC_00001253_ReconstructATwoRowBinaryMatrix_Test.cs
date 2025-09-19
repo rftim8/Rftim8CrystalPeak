@@ -3,42 +3,42 @@ using Rftim8LeetCode.Problems;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
-    public class _01253_ReconstructaTwoRowBinaryMatrix_Test
+    public class _00001253_ReconstructaTwoRowBinaryMatrix_Test
     {
         // Arrange
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_01253_ReconstructATwoRowBinaryMatrix))!;
-        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01253_ReconstructATwoRowBinaryMatrix))![0]);
-        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_01253_ReconstructATwoRowBinaryMatrix))![1]);
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(_00001253_ReconstructATwoRowBinaryMatrix))!;
+        private static readonly int ExpectedPartOne = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00001253_ReconstructATwoRowBinaryMatrix))![0]);
+        private static readonly int ExpectedPartTwo = int.Parse(RftLeetCodeStaticData.Output_Test(problemName: nameof(_00001253_ReconstructATwoRowBinaryMatrix))![1]);
 
-        public static TheoryData<List<string>, int> _01253_ReconstructATwoRowBinaryMatrixPartOne_Data =>
+        public static TheoryData<List<string>, int> _00001253_ReconstructATwoRowBinaryMatrixPartOne_Data =>
             new()
             {
                 { Input, ExpectedPartOne }
             };
 
-        public static TheoryData<List<string>, int> _01253_ReconstructATwoRowBinaryMatrixPartTwo_Data =>
+        public static TheoryData<List<string>, int> _00001253_ReconstructATwoRowBinaryMatrixPartTwo_Data =>
             new()
             {
                 { Input, ExpectedPartTwo }
             };
 
         [Theory]
-        [MemberData(nameof(_01253_ReconstructATwoRowBinaryMatrixPartOne_Data))]
+        [MemberData(nameof(_00001253_ReconstructATwoRowBinaryMatrixPartOne_Data))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Act
-            int actual = _01253_ReconstructATwoRowBinaryMatrix.PartOne_Test(a0);
+            int actual = _00001253_ReconstructATwoRowBinaryMatrix.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(_01253_ReconstructATwoRowBinaryMatrixPartTwo_Data))]
+        [MemberData(nameof(_00001253_ReconstructATwoRowBinaryMatrixPartTwo_Data))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Act
-            int actual = _01253_ReconstructATwoRowBinaryMatrix.PartTwo_Test(a0);
+            int actual = _00001253_ReconstructATwoRowBinaryMatrix.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

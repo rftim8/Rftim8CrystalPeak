@@ -1,22 +1,24 @@
-using RftAPI.Services.Static.CP.LeetCode.Data;
-using RftCP.LeetCode;
+using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+using Rftim8LeetCode.Problems;
+using Xunit.Abstractions;
 
 namespace Rftim8xUnitLeetCode.Unit
 {
     public class LC_00002289_StepsToMakeArrayNondecreasing_Test(ITestOutputHelper testOutputHelper)
     {
-        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002289_StepsToMakeArrayNondecreasing))!;
-        
-        public static TheoryData<List<string>> LC_00002289_StepsToMakeArrayNondecreasingPartOne_Input =>
+        private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00002289_StepsToMakeArrayNonDecreasing))!;
+        private static readonly int Expected = 0;
+
+        public static TheoryData<List<string>, int> LC_00002289_StepsToMakeArrayNonDecreasingPartOne_Input =>
             new()
             {
-                { Input }
+                { Input, Expected }
             };
 
-        public static TheoryData<List<string>> LC_00002289_StepsToMakeArrayNondecreasingPartTwo_Input =>
+        public static TheoryData<List<string>, int> LC_00002289_StepsToMakeArrayNonDecreasingPartTwo_Input =>
             new()
             {
-                { Input, ExpectedPartTwo }
+                { Input, Expected }
             };
 
         [Fact]
@@ -26,28 +28,28 @@ namespace Rftim8xUnitLeetCode.Unit
         }
 
         [Theory]
-        [MemberData(nameof(LC_00002289_StepsToMakeArrayNondecreasingPartOne_Input))]
+        [MemberData(nameof(LC_00002289_StepsToMakeArrayNonDecreasingPartOne_Input))]
         public void RftPartOne(List<string> a0, int expected)
         {
             // Arrange
             DataCollector();
 
             // Act
-            int actual = LC_00002289_StepsToMakeArrayNondecreasing.PartOne_Test(a0);
+            int actual = LC_00002289_StepsToMakeArrayNonDecreasing.PartOne_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [MemberData(nameof(LC_00002289_StepsToMakeArrayNondecreasingPartTwo_Input))]
+        [MemberData(nameof(LC_00002289_StepsToMakeArrayNonDecreasingPartTwo_Input))]
         public void RftPartTwo(List<string> a0, int expected)
         {
             // Arrange
             DataCollector();
 
             // Act
-            int actual = LC_00002289_StepsToMakeArrayNondecreasing.PartTwo_Test(a0);
+            int actual = LC_00002289_StepsToMakeArrayNonDecreasing.PartTwo_Test(a0);
 
             // Assert
             Assert.Equal(expected, actual);

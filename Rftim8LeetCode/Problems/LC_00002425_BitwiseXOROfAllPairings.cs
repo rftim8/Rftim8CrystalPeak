@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002425_BitwiseXOROfAllPairings()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00002425_BitwiseXOROfAllPairings));
-            Input = [.. RftResource.LC_00002425_BitwiseXOROfAllPairings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00002425_BitwiseXOROfAllPairings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 

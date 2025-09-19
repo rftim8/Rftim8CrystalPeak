@@ -15,7 +15,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001900_TheEarliestAndLatestRoundsWherePlayersCompete()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001900_TheEarliestAndLatestRoundsWherePlayersCompete));
-            Input = [.. RftResource.LC_00001900_TheEarliestAndLatestRoundsWherePlayersCompete_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. RftLCResources.LC_00001900_TheEarliestAndLatestRoundsWherePlayersCompete_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
