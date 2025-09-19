@@ -3983,5 +3983,581 @@ namespace Rftim8AdventOfCode {
                 return ResourceManager.GetString("AOC_00000022_Y22_MonkeyMap_Output", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000022_Y23_SandSlabs_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000022_Y23_SandSlabs_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000022_Y23_SandSlabs_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000022_Y23_SandSlabs_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000022_Y24_MonkeyMarket_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000022_Y24_MonkeyMarket_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000022_Y24_MonkeyMarket_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000022_Y24_MonkeyMarket_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y15_OpeningTheTuringLock_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y15_OpeningTheTuringLock_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y15_OpeningTheTuringLock_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y15_OpeningTheTuringLock_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y16_SafeCracking_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y16_SafeCracking_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y16_SafeCracking_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y16_SafeCracking_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y17_CoprocessorConflagration_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y17_CoprocessorConflagration_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y17_CoprocessorConflagration_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y17_CoprocessorConflagration_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y19_CategorySix_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y19_CategorySix_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y19_CategorySix_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y19_CategorySix_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y20_CrabCups_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y20_CrabCups_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y20_CrabCups_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y20_CrabCups_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y21_Amphipod_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y21_Amphipod_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y21_Amphipod_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y21_Amphipod_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y22_UnstableDiffusion_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y22_UnstableDiffusion_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y22_UnstableDiffusion_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y22_UnstableDiffusion_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y23_ALongWalk_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y23_ALongWalk_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y23_ALongWalk_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y23_ALongWalk_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y24_LANParty_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y24_LANParty_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000023_Y24_LANParty_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000023_Y24_LANParty_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y15_ItHangsInTheBalance_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y15_ItHangsInTheBalance_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y15_ItHangsInTheBalance_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y15_ItHangsInTheBalance_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y16_AirDuctSpelunking_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y16_AirDuctSpelunking_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y16_AirDuctSpelunking_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y16_AirDuctSpelunking_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y17_ElectromagneticMoat_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y17_ElectromagneticMoat_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y17_ElectromagneticMoat_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y17_ElectromagneticMoat_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y18_ImmuneSystemSimulator20XX_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y18_ImmuneSystemSimulator20XX_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y18_ImmuneSystemSimulator20XX_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y18_ImmuneSystemSimulator20XX_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y19_PlanetOfDiscord_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y19_PlanetOfDiscord_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y19_PlanetOfDiscord_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y19_PlanetOfDiscord_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y20_LobbyLayout_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y20_LobbyLayout_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y20_LobbyLayout_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y20_LobbyLayout_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y21_ArithmeticLogicUnit_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y21_ArithmeticLogicUnit_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y21_ArithmeticLogicUnit_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y21_ArithmeticLogicUnit_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y22_BlizzardBasin_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y22_BlizzardBasin_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y22_BlizzardBasin_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y22_BlizzardBasin_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y23_NeverTellMeTheOdds_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y23_NeverTellMeTheOdds_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y23_NeverTellMeTheOdds_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y23_NeverTellMeTheOdds_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y24_CrossedWires_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y24_CrossedWires_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000024_Y24_CrossedWires_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000024_Y24_CrossedWires_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y15_LetItSnow_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y15_LetItSnow_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y15_LetItSnow_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y15_LetItSnow_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y16_ClockSignal_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y16_ClockSignal_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y16_ClockSignal_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y16_ClockSignal_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y17_TheHaltingProblem_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y17_TheHaltingProblem_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y17_TheHaltingProblem_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y17_TheHaltingProblem_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y18_FourDimensionalAdventure_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y18_FourDimensionalAdventure_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y18_FourDimensionalAdventure_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y18_FourDimensionalAdventure_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y19_Cryostasis_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y19_Cryostasis_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y19_Cryostasis_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y19_Cryostasis_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y20_ComboBreaker_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y20_ComboBreaker_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y20_ComboBreaker_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y20_ComboBreaker_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y21_SeaCucumber_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y21_SeaCucumber_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y21_SeaCucumber_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y21_SeaCucumber_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y22_FullOfHotAir_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y22_FullOfHotAir_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y22_FullOfHotAir_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y22_FullOfHotAir_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y23_Snowverload_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y23_Snowverload_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y23_Snowverload_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y23_Snowverload_Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y24_CodeChronicle_Input {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y24_CodeChronicle_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string AOC_00000025_Y24_CodeChronicle_Output {
+            get {
+                return ResourceManager.GetString("AOC_00000025_Y24_CodeChronicle_Output", resourceCulture);
+            }
+        }
     }
 }

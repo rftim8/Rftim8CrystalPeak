@@ -1426,4 +1426,196 @@
   <data name="AOC_00000022_Y22_MonkeyMap_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AOC_00000022_Y22_MonkeyMap_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="AOC_00000022_Y23_SandSlabs_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000022_Y23_SandSlabs_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000022_Y23_SandSlabs_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000022_Y23_SandSlabs_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000022_Y24_MonkeyMarket_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000022_Y24_MonkeyMarket_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000022_Y24_MonkeyMarket_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000022_Y24_MonkeyMarket_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y15_OpeningTheTuringLock_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y15_OpeningTheTuringLock_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y15_OpeningTheTuringLock_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y15_OpeningTheTuringLock_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y16_SafeCracking_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y16_SafeCracking_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y16_SafeCracking_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y16_SafeCracking_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y17_CoprocessorConflagration_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y17_CoprocessorConflagration_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y17_CoprocessorConflagration_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y17_CoprocessorConflagration_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y18_ExperimentalEmergencyTeleportation_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y19_CategorySix_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y19_CategorySix_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y19_CategorySix_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y19_CategorySix_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y20_CrabCups_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y20_CrabCups_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y20_CrabCups_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y20_CrabCups_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y21_Amphipod_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y21_Amphipod_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y21_Amphipod_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y21_Amphipod_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y22_UnstableDiffusion_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y22_UnstableDiffusion_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y22_UnstableDiffusion_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y22_UnstableDiffusion_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y23_ALongWalk_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y23_ALongWalk_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y23_ALongWalk_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y23_ALongWalk_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y24_LANParty_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y24_LANParty_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000023_Y24_LANParty_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000023_Y24_LANParty_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y15_ItHangsInTheBalance_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y15_ItHangsInTheBalance_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y15_ItHangsInTheBalance_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y15_ItHangsInTheBalance_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y16_AirDuctSpelunking_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y16_AirDuctSpelunking_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y16_AirDuctSpelunking_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y16_AirDuctSpelunking_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y17_ElectromagneticMoat_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y17_ElectromagneticMoat_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y17_ElectromagneticMoat_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y17_ElectromagneticMoat_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y18_ImmuneSystemSimulator20XX_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y18_ImmuneSystemSimulator20XX_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y18_ImmuneSystemSimulator20XX_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y18_ImmuneSystemSimulator20XX_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y19_PlanetOfDiscord_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y19_PlanetOfDiscord_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y19_PlanetOfDiscord_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y19_PlanetOfDiscord_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y20_LobbyLayout_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y20_LobbyLayout_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y20_LobbyLayout_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y20_LobbyLayout_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y21_ArithmeticLogicUnit_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y21_ArithmeticLogicUnit_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y21_ArithmeticLogicUnit_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y21_ArithmeticLogicUnit_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y22_BlizzardBasin_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y22_BlizzardBasin_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y22_BlizzardBasin_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y22_BlizzardBasin_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y23_NeverTellMeTheOdds_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y23_NeverTellMeTheOdds_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y23_NeverTellMeTheOdds_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y23_NeverTellMeTheOdds_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y24_CrossedWires_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y24_CrossedWires_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000024_Y24_CrossedWires_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000024_Y24_CrossedWires_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y15_LetItSnow_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y15_LetItSnow_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y15_LetItSnow_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y15_LetItSnow_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y16_ClockSignal_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y16_ClockSignal_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y16_ClockSignal_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y16_ClockSignal_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y17_TheHaltingProblem_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y17_TheHaltingProblem_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y17_TheHaltingProblem_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y17_TheHaltingProblem_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y18_FourDimensionalAdventure_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y18_FourDimensionalAdventure_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y18_FourDimensionalAdventure_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y18_FourDimensionalAdventure_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y19_Cryostasis_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y19_Cryostasis_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y19_Cryostasis_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y19_Cryostasis_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y20_ComboBreaker_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y20_ComboBreaker_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y20_ComboBreaker_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y20_ComboBreaker_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y21_SeaCucumber_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y21_SeaCucumber_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y21_SeaCucumber_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y21_SeaCucumber_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y22_FullOfHotAir_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y22_FullOfHotAir_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y22_FullOfHotAir_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y22_FullOfHotAir_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y23_Snowverload_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y23_Snowverload_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y23_Snowverload_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y23_Snowverload_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y24_CodeChronicle_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y24_CodeChronicle_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AOC_00000025_Y24_CodeChronicle_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AOC_00000025_Y24_CodeChronicle_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>
