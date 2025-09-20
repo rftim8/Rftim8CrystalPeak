@@ -8734,11 +8734,11 @@
   <data name="LC_00001410_HTMLEntityParser_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\LC_00001410_HTMLEntityParser_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="LC_00001411_NumberOfWaysToPaintNx3Grid_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\LC_00001411_NumberOfWaysToPaintNx3Grid_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="LC_00001411_NumberOfWaysToPaintNxThreeGrid_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LC_00001411_NumberOfWaysToPaintNxThreeGrid_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="LC_00001411_NumberOfWaysToPaintNx3Grid_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\LC_00001411_NumberOfWaysToPaintNx3Grid_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="LC_00001411_NumberOfWaysToPaintNxThreeGrid_Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LC_00001411_NumberOfWaysToPaintNxThreeGrid_Output.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="LC_00001412_FindTheQuietStudentsInAllExams_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\LC_00001412_FindTheQuietStudentsInAllExams_Input.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

@@ -7,15 +7,15 @@ using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 namespace Rftim8LeetCode.Problems
 {
-    public class _01411_NumberOfWaysToPaintNx3Grid : I_01411_NumberOfWaysToPaintNx3Grid
+    public class _01411_NumberOfWaysToPaintNxThreeGrid : I_01411_NumberOfWaysToPaintNxThreeGrid
     {
         #region Static
         private readonly List<string>? Input;
 
-        public _01411_NumberOfWaysToPaintNx3Grid()
+        public _01411_NumberOfWaysToPaintNxThreeGrid()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001411_NumberOfWaysToPaintN3Grid));
-            Input = [.. RftLCResources.LC_00001411_NumberOfWaysToPaintNx3Grid_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = RftLeetCodeStaticData.Input_Test(testType: false, problemName: nameof(LC_00001411_NumberOfWaysToPaintNxThreeGrid));
+            Input = [.. RftLCResources.LC_00001411_NumberOfWaysToPaintNxThreeGrid_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
         }
 
@@ -56,10 +56,10 @@ namespace Rftim8LeetCode.Problems
         #region Host
         private readonly IRftLeetCodeHostData? RftLeetCodeHostData;
 
-        public _01411_NumberOfWaysToPaintNx3Grid(IHost host)
+        public _01411_NumberOfWaysToPaintNxThreeGrid(IHost host)
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
-            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01411_NumberOfWaysToPaintNx3Grid));
+            Input = RftLeetCodeHostData.Input_Test(problemName: nameof(_01411_NumberOfWaysToPaintNxThreeGrid));
             DataCollector();
         }
 

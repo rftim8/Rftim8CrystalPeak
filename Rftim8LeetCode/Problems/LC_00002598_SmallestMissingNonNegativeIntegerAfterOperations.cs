@@ -2,7 +2,6 @@ using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
-using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 
 
 namespace Rftim8LeetCode.Problems

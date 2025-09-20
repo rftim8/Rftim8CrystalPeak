@@ -25,6 +25,7 @@ inventory
 	- minikube
 
 
+-> data lake on D:
 -> new set of problems
 -> generate source files
 -> write solution
