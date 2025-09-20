@@ -14,7 +14,7 @@ namespace Rftim8LeetCode.Benchmarking
                 .AddExporter(JsonExporter.Brief));
 
             //BenchmarkRunner.Run<_00001_TwoSum>(config);
-            BenchmarkRunner.Run<LC_00000036_ValidSudoku>(config);
+            BenchmarkRunner.Run<LC_00000001_TwoSum>(config);
 
             await Task.Run(() => Console.WriteLine("Benchmark Finished Successfully!"));
         }

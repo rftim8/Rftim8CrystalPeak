@@ -25,5 +25,12 @@ inventory
 	- minikube
 
 
+-> new set of problems
+-> generate source files
+-> write solution
+-> test solution
+-> benchmark solution
 
-AdventOfCode
+
+
+

@@ -12,7 +12,7 @@ namespace Rftim8AdventOfCode.Benchmarking
             ManualConfig config = new();
             config.Add(DefaultConfig.Instance.AddExporter(JsonExporter.Brief));
 
-            BenchmarkRunner.Run<_01_CalorieCounting>(config);
+            BenchmarkRunner.Run<AOC_00000001_Y15_NotQuiteLisp>(config);
 
             await Task.Run(() => Console.WriteLine("Benchmark Finished Successfully!"));
         }
