@@ -4,7 +4,7 @@ namespace Rftim8Convoy.Services.Static.Generic
 {
     public class RftConsole
     {
-        public static string ListChar2DArrayToString(List<char[][]> chars)
+        public static string PrintChar2DArrayToString(List<char[][]> chars)
         {
             StringBuilder sb = new();
 

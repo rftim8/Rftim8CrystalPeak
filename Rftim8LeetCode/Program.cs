@@ -1,5 +1,6 @@
 ﻿using Rftim8LeetCode.Benchmarking;
 using Rftim8LeetCode.CP;
+using Rftim8LeetCode.Problems;
 
 namespace Rftim8LeetCode
 {
@@ -17,6 +18,10 @@ namespace Rftim8LeetCode
             await CPHostMain.InitHost(args);
             //await DataHostMain.InitHost(args);
             //await DotnetHostMain.InitHost(args);
+            #endregion
+
+            #region Static
+            //_ = new LC_00000036_ValidSudoku();
             #endregion
 
             //RftFileContentManager.CleanCodeForcesProblemNames();

@@ -8,12 +8,11 @@
 
         private static List<string> GetFileContentToList(bool testType, bool direction, string problemName)
         {
-            string? goBack = testType ? string.Concat(Enumerable.Repeat("..\\", 4)) : string.Concat(Enumerable.Repeat("..\\", 8));
-            string projectDir = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, goBack!));
+            string dataDir = GenericURLs.data_base_folder;
 
             string path = direction ?
-                $"{projectDir}\\Rftim8Atlas\\CP\\LeetCode\\IO\\{problemName}_Input.txt" :
-                $"{projectDir}\\Rftim8Atlas\\CP\\LeetCode\\IO\\{problemName}_Output.txt";
+                $"{dataDir}CP\\LeetCode\\IO\\{problemName}_Input.txt" :
+                $"{dataDir}CP\\LeetCode\\IO\\{problemName}_Output.txt";
 
             List<string> list = [];
 
