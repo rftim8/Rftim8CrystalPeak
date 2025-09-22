@@ -15,4 +15,12 @@
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Unit\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rftim8AdventOfCode\Rftim8AdventOfCode.csproj" />
+  </ItemGroup>
+
 </Project>

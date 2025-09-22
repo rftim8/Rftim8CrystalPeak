@@ -9,40 +9,46 @@ namespace Rftim8AdventOfCode.Problems
     public class AOC_00000007_Y16_InternetProtocolVersion7 : IAOC_00000007_Y16_InternetProtocolVersion7
     {
         #region Static
-        private readonly List<string>? data;
+        private readonly List<string>? Input = [];
+        private readonly List<char[][]>? boards = [];
+        private readonly List<bool>? results = [];
 
         public AOC_00000007_Y16_InternetProtocolVersion7()
         {
-            data = RftAdventOfCodeStaticData.Input_Test(testType: false, problemName: nameof(AOC_00000007_Y16_InternetProtocolVersion7));
+            //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000007_Y16_InternetProtocolVersion7));
+            Input = [.. AOC_Resources.AOC_00000007_Y16_InternetProtocolVersion7_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            DataCollector();
+            PrintSolution();
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        [Benchmark]
-        public int PartOne() => PartOne0(data!);
-
-        private static int PartOne0(List<string> input)
+        public void DataCollector()
         {
-            return 0;
+            int _n = int.Parse(Input![0]);
+            int _m = int.Parse(Input[1]);
+
+            for (int i = 2; i < _n * _m + 2; i += _m)
+            {
+                
+            }
         }
 
-        /// <summary>
-        ///
-        /// </summary>        
-        [Benchmark]
-        public int PartTwo() => PartTwo0(data!);
+        [ParamsSource(nameof(BoardDataSets))]
+        public char[][]? Board { get; set; }
 
-        private static int PartTwo0(List<string> input)
+        public IEnumerable<char[][]> BoardDataSets() => boards!;
+        
+        [Benchmark]
+        public bool Solution_0() => AOC_00000007_Y16_InternetProtocolVersion7_0(Board!);
+
+        private static bool AOC_00000007_Y16_InternetProtocolVersion7_0(char[][] board)
         {
-            return 0;
+            return true;
         }
         #endregion
 
         #region UnitTest
-        public static int PartOne_Test(List<string> data) => PartOne0(data);
+        public static bool Solution_0_Test(char[][] board) => AOC_00000007_Y16_InternetProtocolVersion7_0(board);
 
-        public static int PartTwo_Test(List<string> data) => PartTwo0(data);
         #endregion
 
         #region Host
@@ -51,13 +57,17 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000007_Y16_InternetProtocolVersion7(IHost host)
         {
             RftAdventOfCodeHostData = host.Services.GetRequiredService<IRftAdventOfCodeHostData>();
-            data = RftAdventOfCodeHostData.Input_Test(problemName: nameof(AOC_00000007_Y16_InternetProtocolVersion7));
+            Input = RftAdventOfCodeHostData.Input_Test(problemName: nameof(AOC_00000007_Y16_InternetProtocolVersion7));
+            DataCollector();
         }
 
         public void PrintSolution()
         {
-            Console.WriteLine(PartOne());
-            Console.WriteLine(PartTwo());
+            for (int i = 0; i < boards!.Count; i++)
+            {
+                bool actual = AOC_00000007_Y16_InternetProtocolVersion7_0(boards[i]);
+                Console.WriteLine($"Solution 0: Testcase {i + 1}: Expected = {results![i]} => Actual: {actual}");
+            }
         }
         #endregion
     }

@@ -22,17 +22,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="RftAOCResources.Designer.cs">
+    <Compile Update="AOC_Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>RftAOCResources.resx</DependentUpon>
+      <DependentUpon>AOC_Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="RftAOCResources.resx">
+    <EmbeddedResource Update="AOC_Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>RftAOCResources.Designer.cs</LastGenOutput>
+      <LastGenOutput>AOC_Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

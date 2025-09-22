@@ -8,22 +8,11 @@
 
         private static List<string> GetFileContentToList(bool testType, bool direction, string problemName)
         {
-            string path = Directory.GetCurrentDirectory();
-
-            List<int> indexes = [];
-
-            for (int i = 0; i < path.Length; i++)
-            {
-                if (path[i] == '\\')
-                    indexes.Add(i);
-            }
-
-            // true = unittest, false = benchmark
-            int subfolderLevel = testType ? 4 : 8;
+            string path = GenericURLs.data_base_folder;
 
             path = direction ?
-                $"{path[..indexes[^subfolderLevel]]}\\Rftim8Atlas\\CP\\AdventOfCode\\IO\\{problemName}_Input.txt" :
-                $"{path[..indexes[^subfolderLevel]]}\\Rftim8Atlas\\CP\\AdventOfCode\\IO\\{problemName}_Output.txt";
+                $"{path}CP\\AdventOfCode\\IO\\{problemName}_Input.txt" :
+                $"{path}CP\\AdventOfCode\\IO\\{problemName}_Output.txt";
             List<string> list = [];
 
             using (FileStream fileStream = new(path, FileMode.Open, FileAccess.Read, FileShare.None))
