@@ -23,8 +23,6 @@ namespace Rftim8LeetCode
             #region Static
             //_ = new LC_00000036_ValidSudoku();
             #endregion
-
-            //RftFileContentManager.CleanCodeForcesProblemNames();
         }
     }
 }
