@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000753_CrackingTheSafe()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000753_CrackingTheSafe));
-            Input = [.. RftLCResources.LC_00000753_CrackingTheSafe_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000753_CrackingTheSafe_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

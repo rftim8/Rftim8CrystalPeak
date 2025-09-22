@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002310_SumOfNumbersWithUnitsDigitK()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002310_SumOfNumbersWithUnitsDigitK));
-            Input = [.. RftLCResources.LC_00002310_SumOfNumbersWithUnitsDigitK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002310_SumOfNumbersWithUnitsDigitK_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

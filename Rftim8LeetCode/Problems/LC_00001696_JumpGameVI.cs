@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001696_JumpGameVI()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001696_JumpGameVI));
-            Input = [.. RftLCResources.LC_00001696_JumpGameVI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001696_JumpGameVI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

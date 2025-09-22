@@ -8,6 +8,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="NewFolder\**" />
+	  <EmbeddedResource Remove="NewFolder\**" />
+	  <None Remove="NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="BenchmarkDotNet" Version="0.15.2" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
@@ -18,17 +24,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="RftLCResources.Designer.cs">
+	  <Compile Update="LC_Resources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
-	    <DependentUpon>RftLCResources.resx</DependentUpon>
+	    <DependentUpon>LC_Resources.resx</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Update="RftLCResources.resx">
+	  <EmbeddedResource Update="LC_Resources.resx">
 	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>RftLCResources.Designer.cs</LastGenOutput>
+	    <LastGenOutput>LC_Resources.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
 	</ItemGroup>
 

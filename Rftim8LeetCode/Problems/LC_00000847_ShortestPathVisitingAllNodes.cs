@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000847_ShortestPathVisitingAllNodes()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000847_ShortestPathVisitingAllNodes));
-            Input = [.. RftLCResources.LC_00000847_ShortestPathVisitingAllNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000847_ShortestPathVisitingAllNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

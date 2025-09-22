@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="CP\LeetCode\IO\_00036_ValidSudoku_Input.txt" />
-    <None Remove="CP\LeetCode\IO\_00036_ValidSudoku_Output.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
 

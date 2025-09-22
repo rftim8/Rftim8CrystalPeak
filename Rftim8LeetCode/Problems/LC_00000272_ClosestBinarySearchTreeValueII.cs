@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000272_ClosestBinarySearchTreeValueII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000272_ClosestBinarySearchTreeValueII));
-            Input = [.. RftLCResources.LC_00000272_ClosestBinarySearchTreeValueII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000272_ClosestBinarySearchTreeValueII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

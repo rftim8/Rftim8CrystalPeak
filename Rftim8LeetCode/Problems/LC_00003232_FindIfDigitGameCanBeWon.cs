@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003232_FindIfDigitGameCanBeWon()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003232_FindIfDigitGameCanBeWon));
-            Input = [.. RftLCResources.LC_00003232_FindIfDigitGameCanBeWon_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003232_FindIfDigitGameCanBeWon_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

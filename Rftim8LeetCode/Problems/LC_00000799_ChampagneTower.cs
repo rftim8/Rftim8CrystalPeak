@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000799_ChampagneTower()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000799_ChampagneTower));
-            Input = [.. RftLCResources.LC_00000799_ChampagneTower_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000799_ChampagneTower_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

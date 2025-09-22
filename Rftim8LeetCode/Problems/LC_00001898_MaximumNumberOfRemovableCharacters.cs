@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001898_MaximumNumberOfRemovableCharacters()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001898_MaximumNumberOfRemovableCharacters));
-            Input = [.. RftLCResources.LC_00001898_MaximumNumberOfRemovableCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001898_MaximumNumberOfRemovableCharacters_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

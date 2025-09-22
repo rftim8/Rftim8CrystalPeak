@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003049_EarliestSecondToMarkIndicesII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003049_EarliestSecondToMarkIndicesII));
-            Input = [.. RftLCResources.LC_00003049_EarliestSecondToMarkIndicesII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003049_EarliestSecondToMarkIndicesII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

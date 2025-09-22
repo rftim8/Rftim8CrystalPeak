@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002333_MinimumSumOfSquaredDifference()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002333_MinimumSumOfSquaredDifference));
-            Input = [.. RftLCResources.LC_00002333_MinimumSumOfSquaredDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002333_MinimumSumOfSquaredDifference_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

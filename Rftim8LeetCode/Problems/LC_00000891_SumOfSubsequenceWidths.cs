@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000891_SumOfSubsequenceWidths()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000891_SumOfSubsequenceWidths));
-            Input = [.. RftLCResources.LC_00000891_SumOfSubsequenceWidths_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000891_SumOfSubsequenceWidths_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

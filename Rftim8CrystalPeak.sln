@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11012.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8CrystalPeak", "Rftim8CrystalPeak\Rftim8CrystalPeak.csproj", "{21EBEED0-9301-49F2-9226-9DDD0504E65F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.txt = Notes.txt
@@ -27,16 +25,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8xUnit", "Rftim8xUnit\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8Trek", "Rftim8Trek\Rftim8Trek.csproj", "{C66E3E56-33D6-4B11-B522-AC2F166FD47D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8AtCoderJP", "Rftim8AtCoderJP\Rftim8AtCoderJP.csproj", "{2DC6FFFF-01A2-463B-A5D1-C6F6802DA8F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8CodeForces", "Rftim8CodeForces\Rftim8CodeForces.csproj", "{8EAD49B4-158A-438E-A35E-4C244E8397A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8CodinGame", "Rftim8CodinGame\Rftim8CodinGame.csproj", "{D60D348C-F55A-410C-BE5F-7260C3AAB8C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8EverybodyCodes", "Rftim8EverybodyCodes\Rftim8EverybodyCodes.csproj", "{BAF521D9-2C24-4F27-BF16-A823BCED59D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8Kaggle", "Rftim8Kaggle\Rftim8Kaggle.csproj", "{35A07F8E-BB42-4F2B-9EB8-38BB4D31AF4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8Meta", "Rftim8Meta\Rftim8Meta.csproj", "{4278F559-0A9B-414A-9486-DA3F75565FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8ProjectEuler", "Rftim8ProjectEuler\Rftim8ProjectEuler.csproj", "{90435CE7-2B7D-41A2-9CE1-F4036C0BE0EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rftim8CrystalPeak", "Rftim8CrystalPeak\Rftim8CrystalPeak.csproj", "{6F7A5E1F-0191-4F51-9C7B-BF6000E5E142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{21EBEED0-9301-49F2-9226-9DDD0504E65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21EBEED0-9301-49F2-9226-9DDD0504E65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21EBEED0-9301-49F2-9226-9DDD0504E65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21EBEED0-9301-49F2-9226-9DDD0504E65F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{778F55A6-3748-48AF-94A6-638A75B96A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{778F55A6-3748-48AF-94A6-638A75B96A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{778F55A6-3748-48AF-94A6-638A75B96A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +79,38 @@ Global
 		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C66E3E56-33D6-4B11-B522-AC2F166FD47D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC6FFFF-01A2-463B-A5D1-C6F6802DA8F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC6FFFF-01A2-463B-A5D1-C6F6802DA8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC6FFFF-01A2-463B-A5D1-C6F6802DA8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC6FFFF-01A2-463B-A5D1-C6F6802DA8F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EAD49B4-158A-438E-A35E-4C244E8397A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAD49B4-158A-438E-A35E-4C244E8397A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAD49B4-158A-438E-A35E-4C244E8397A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAD49B4-158A-438E-A35E-4C244E8397A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60D348C-F55A-410C-BE5F-7260C3AAB8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60D348C-F55A-410C-BE5F-7260C3AAB8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60D348C-F55A-410C-BE5F-7260C3AAB8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60D348C-F55A-410C-BE5F-7260C3AAB8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF521D9-2C24-4F27-BF16-A823BCED59D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF521D9-2C24-4F27-BF16-A823BCED59D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF521D9-2C24-4F27-BF16-A823BCED59D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF521D9-2C24-4F27-BF16-A823BCED59D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A07F8E-BB42-4F2B-9EB8-38BB4D31AF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A07F8E-BB42-4F2B-9EB8-38BB4D31AF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A07F8E-BB42-4F2B-9EB8-38BB4D31AF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A07F8E-BB42-4F2B-9EB8-38BB4D31AF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4278F559-0A9B-414A-9486-DA3F75565FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4278F559-0A9B-414A-9486-DA3F75565FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4278F559-0A9B-414A-9486-DA3F75565FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4278F559-0A9B-414A-9486-DA3F75565FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90435CE7-2B7D-41A2-9CE1-F4036C0BE0EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90435CE7-2B7D-41A2-9CE1-F4036C0BE0EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90435CE7-2B7D-41A2-9CE1-F4036C0BE0EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90435CE7-2B7D-41A2-9CE1-F4036C0BE0EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7A5E1F-0191-4F51-9C7B-BF6000E5E142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7A5E1F-0191-4F51-9C7B-BF6000E5E142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7A5E1F-0191-4F51-9C7B-BF6000E5E142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7A5E1F-0191-4F51-9C7B-BF6000E5E142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

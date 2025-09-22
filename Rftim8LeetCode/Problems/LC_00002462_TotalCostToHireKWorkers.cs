@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002462_TotalCostToHireKWorkers()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002462_TotalCostToHireKWorkers));
-            Input = [.. RftLCResources.LC_00002462_TotalCostToHireKWorkers_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002462_TotalCostToHireKWorkers_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

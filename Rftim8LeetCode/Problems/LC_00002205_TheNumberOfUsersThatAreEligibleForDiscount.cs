@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002205_TheNumberOfUsersThatAreEligibleForDiscount()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002205_TheNumberOfUsersThatAreEligibleForDiscount));
-            Input = [.. RftLCResources.LC_00002205_TheNumberOfUsersThatAreEligibleForDiscount_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002205_TheNumberOfUsersThatAreEligibleForDiscount_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

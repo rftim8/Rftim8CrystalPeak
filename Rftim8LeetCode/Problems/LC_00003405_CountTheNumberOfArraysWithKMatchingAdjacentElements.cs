@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003405_CountTheNumberOfArraysWithKMatchingAdjacentElements()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003405_CountTheNumberOfArraysWithKMatchingAdjacentElements));
-            Input = [.. RftLCResources.LC_00003405_CountTheNumberOfArraysWithKMatchingAdjacentElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003405_CountTheNumberOfArraysWithKMatchingAdjacentElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

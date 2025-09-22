@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000117_PopulatingNextRightPointersInEachNodeII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000117_PopulatingNextRightPointersInEachNodeII));
-            Input = [.. RftLCResources.LC_00000117_PopulatingNextRightPointersInEachNodeII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000117_PopulatingNextRightPointersInEachNodeII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

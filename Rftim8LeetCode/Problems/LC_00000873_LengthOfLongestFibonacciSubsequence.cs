@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000873_LengthOfLongestFibonacciSubsequence()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000873_LengthOfLongestFibonacciSubsequence));
-            Input = [.. RftLCResources.LC_00000873_LengthOfLongestFibonacciSubsequence_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000873_LengthOfLongestFibonacciSubsequence_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

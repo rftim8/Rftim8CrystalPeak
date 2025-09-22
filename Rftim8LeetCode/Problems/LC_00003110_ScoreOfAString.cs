@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003110_ScoreOfAString()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003110_ScoreOfAString));
-            Input = [.. RftLCResources.LC_00003110_ScoreOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003110_ScoreOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

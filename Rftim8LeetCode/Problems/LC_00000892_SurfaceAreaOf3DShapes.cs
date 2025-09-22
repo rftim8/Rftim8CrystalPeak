@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000892_SurfaceAreaOf3DShapes()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000892_SurfaceAreaOf3DShapes));
-            Input = [.. RftLCResources.LC_00000892_SurfaceAreaOf3DShapes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000892_SurfaceAreaOf3DShapes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

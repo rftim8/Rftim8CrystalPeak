@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002952_MinimumNumberOfCoinsToBeAdded()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002952_MinimumNumberOfCoinsToBeAdded));
-            Input = [.. RftLCResources.LC_00002952_MinimumNumberOfCoinsToBeAdded_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002952_MinimumNumberOfCoinsToBeAdded_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

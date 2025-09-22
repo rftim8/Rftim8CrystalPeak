@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002670_FindTheDistinctDifferenceArray()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002670_FindTheDistinctDifferenceArray));
-            Input = [.. RftLCResources.LC_00002670_FindTheDistinctDifferenceArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002670_FindTheDistinctDifferenceArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

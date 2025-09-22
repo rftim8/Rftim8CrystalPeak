@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001326_MinimumNumberOfTapsToOpenToWaterAGarden()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001326_MinimumNumberOfTapsToOpenToWaterAGarden));
-            Input = [.. RftLCResources.LC_00001326_MinimumNumberOfTapsToOpenToWaterAGarden_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001326_MinimumNumberOfTapsToOpenToWaterAGarden_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

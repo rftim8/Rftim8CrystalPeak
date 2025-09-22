@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000188_BestTimeToBuyAndSellStockIV()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000188_BestTimeToBuyAndSellStockIV));
-            Input = [.. RftLCResources.LC_00000188_BestTimeToBuyAndSellStockIV_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000188_BestTimeToBuyAndSellStockIV_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

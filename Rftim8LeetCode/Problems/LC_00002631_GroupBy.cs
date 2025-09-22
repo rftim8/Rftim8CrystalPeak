@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002631_GroupBy()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002631_GroupBy));
-            Input = [.. RftLCResources.LC_00002631_GroupBy_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002631_GroupBy_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

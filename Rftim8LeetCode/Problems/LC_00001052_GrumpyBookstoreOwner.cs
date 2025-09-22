@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001052_GrumpyBookstoreOwner()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001052_GrumpyBookstoreOwner));
-            Input = [.. RftLCResources.LC_00001052_GrumpyBookstoreOwner_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001052_GrumpyBookstoreOwner_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001236_WebCrawler()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001236_WebCrawler));
-            Input = [.. RftLCResources.LC_00001236_WebCrawler_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001236_WebCrawler_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

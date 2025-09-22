@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001047_RemoveAllAdjacentDuplicatesInString()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001047_RemoveAllAdjacentDuplicatesInString));
-            Input = [.. RftLCResources.LC_00001047_RemoveAllAdjacentDuplicatesInString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001047_RemoveAllAdjacentDuplicatesInString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

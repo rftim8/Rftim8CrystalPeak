@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002851_StringTransformation()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002851_StringTransformation));
-            Input = [.. RftLCResources.LC_00002851_StringTransformation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002851_StringTransformation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

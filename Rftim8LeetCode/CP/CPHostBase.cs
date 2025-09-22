@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Rftim8Convoy.Services.Static.IO;
 using Rftim8LeetCode.Problems;
 
 namespace Rftim8LeetCode.CP
@@ -13,12 +12,6 @@ namespace Rftim8LeetCode.CP
         {
             using IServiceScope serviceScope = hostProvider.CreateScope();
             IServiceProvider serviceProvider = serviceScope.ServiceProvider;
-
-            //RftFileContentManager.GetLeetCodeProblemNames();
-            //RftFileContentManager.CreateLeetCodeDataFiles(RftFileContentManager.GetLeetCodeProblemNames());
-            //RftFileContentManager.CreateLeetCodeCodeInterfaceFiles(RftFileContentManager.GetLeetCodeProblemNames());
-            //RftFileContentManager.CreateLeetCodeCodeFiles(RftFileContentManager.GetLeetCodeProblemNames());
-            //RftFileContentManager.CreateLeetCodexUnitTestFiles(RftFileContentManager.GetLeetCodeProblemNames());
 
             #region LeetCode
             //ILC_00000001_TwoSum i_00001_TwoSum = serviceProvider.GetRequiredService<ILC_00000001_TwoSum>();

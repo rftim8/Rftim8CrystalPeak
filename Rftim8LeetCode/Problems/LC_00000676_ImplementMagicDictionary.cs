@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000676_ImplementMagicDictionary()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000676_ImplementMagicDictionary));
-            Input = [.. RftLCResources.LC_00000676_ImplementMagicDictionary_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000676_ImplementMagicDictionary_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

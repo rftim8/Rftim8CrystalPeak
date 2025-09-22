@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003344_MaximumSizedArray()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003344_MaximumSizedArray));
-            Input = [.. RftLCResources.LC_00003344_MaximumSizedArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003344_MaximumSizedArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

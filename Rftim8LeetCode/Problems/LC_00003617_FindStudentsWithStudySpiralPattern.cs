@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003617_FindStudentsWithStudySpiralPattern()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003617_FindStudentsWithStudySpiralPattern));
-            Input = [.. RftLCResources.LC_00003617_FindStudentsWithStudySpiralPattern_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003617_FindStudentsWithStudySpiralPattern_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

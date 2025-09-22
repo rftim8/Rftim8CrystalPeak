@@ -1,4 +1,3 @@
-trek
 generator
 operator
 reporter
@@ -25,6 +24,7 @@ inventory
 	- minikube
 
 
+Done:
 -> data lake on D:
 -> new set of problems
 -> generate source files

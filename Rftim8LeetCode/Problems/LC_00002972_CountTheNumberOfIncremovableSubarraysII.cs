@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002972_CountTheNumberOfIncremovableSubarraysII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002972_CountTheNumberOfIncremovableSubarraysII));
-            Input = [.. RftLCResources.LC_00002972_CountTheNumberOfIncremovableSubarraysII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002972_CountTheNumberOfIncremovableSubarraysII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

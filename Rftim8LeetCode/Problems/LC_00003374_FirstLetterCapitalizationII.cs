@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003374_FirstLetterCapitalizationII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003374_FirstLetterCapitalizationII));
-            Input = [.. RftLCResources.LC_00003374_FirstLetterCapitalizationII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003374_FirstLetterCapitalizationII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000883_ProjectionAreaOf3DShapes()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000883_ProjectionAreaOf3DShapes));
-            Input = [.. RftLCResources.LC_00000883_ProjectionAreaOf3DShapes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000883_ProjectionAreaOf3DShapes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

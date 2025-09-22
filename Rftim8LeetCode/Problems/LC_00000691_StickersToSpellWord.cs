@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000691_StickersToSpellWord()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000691_StickersToSpellWord));
-            Input = [.. RftLCResources.LC_00000691_StickersToSpellWord_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000691_StickersToSpellWord_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

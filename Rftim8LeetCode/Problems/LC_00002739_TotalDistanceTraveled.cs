@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002739_TotalDistanceTraveled()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002739_TotalDistanceTraveled));
-            Input = [.. RftLCResources.LC_00002739_TotalDistanceTraveled_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002739_TotalDistanceTraveled_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

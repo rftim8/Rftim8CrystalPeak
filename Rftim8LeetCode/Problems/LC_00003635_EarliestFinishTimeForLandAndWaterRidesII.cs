@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003635_EarliestFinishTimeForLandAndWaterRidesII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003635_EarliestFinishTimeForLandAndWaterRidesII));
-            Input = [.. RftLCResources.LC_00003635_EarliestFinishTimeForLandAndWaterRidesII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003635_EarliestFinishTimeForLandAndWaterRidesII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

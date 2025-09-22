@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002588_CountTheNumberOfBeautifulSubarrays()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002588_CountTheNumberOfBeautifulSubarrays));
-            Input = [.. RftLCResources.LC_00002588_CountTheNumberOfBeautifulSubarrays_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002588_CountTheNumberOfBeautifulSubarrays_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002345_FindingTheNumberOfVisibleMountains()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002345_FindingTheNumberOfVisibleMountains));
-            Input = [.. RftLCResources.LC_00002345_FindingTheNumberOfVisibleMountains_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002345_FindingTheNumberOfVisibleMountains_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

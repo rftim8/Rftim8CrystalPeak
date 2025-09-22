@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000905_SortArrayByParity()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000905_SortArrayByParity));
-            Input = [.. RftLCResources.LC_00000905_SortArrayByParity_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000905_SortArrayByParity_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

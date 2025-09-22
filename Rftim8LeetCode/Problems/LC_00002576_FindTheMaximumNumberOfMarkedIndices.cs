@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002576_FindTheMaximumNumberOfMarkedIndices()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002576_FindTheMaximumNumberOfMarkedIndices));
-            Input = [.. RftLCResources.LC_00002576_FindTheMaximumNumberOfMarkedIndices_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002576_FindTheMaximumNumberOfMarkedIndices_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

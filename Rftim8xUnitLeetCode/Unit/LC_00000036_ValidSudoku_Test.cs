@@ -7,47 +7,52 @@ namespace Rftim8xUnitLeetCode.Unit
     {
         // Arrange
         private static readonly List<string> Input = RftLeetCodeStaticData.Input_Test(problemName: nameof(LC_00000036_ValidSudoku))!;
+        private static readonly List<char[][]> boards = [];
+        private static readonly List<bool> results = [];
 
         [Fact]
         public void DataCollector()
         {
+            int _n = int.Parse(Input![0]);
+            int _m = int.Parse(Input[1]);
 
+            for (int i = 2; i < _n * _m + 2; i += _m)
+            {
+                char[][] board = new char[9][];
+                string test = Input[i];
+                results!.Add(bool.Parse(Input[i + 1]));
+                test = test.Replace("\"", "");
+
+                List<string> rows = [.. test.Split("],[")];
+                for (int j = 0; j < rows.Count; j++)
+                {
+                    string s = rows[j].Replace("[", "").Replace("]", "").Replace(",", "");
+                    board[j] = s.ToCharArray();
+                }
+                boards!.Add(board);
+            }
         }
 
-        public static TheoryData<string[]> Solution_0_Data =>
+        public static TheoryData<List<char[][]>, List<bool>> Solution_0_Data =>
             new()
             {
-                { Input.ToArray() }
-            };
-
-        public static TheoryData<string[]> Solution_1_Data =>
-            new()
-            {
-                { Input.ToArray() }
+                { boards, results }
             };
 
         [Theory]
         [MemberData(nameof(Solution_0_Data))]
-        public void Solution_0(string[] a0)
+        public void Solution_0(List<char[][]> a0, List<bool> expected)
         {
-            // Act
-            int expected = 0;
-            int actual = LC_00000036_ValidSudoku.Solution_0_Test([.. a0]);
+            a0 = [.. boards];
 
-            // Assert
-            Assert.Equal(expected, actual);
-        }
+            for (int i = 0; i < a0.Count; i++)
+            {
+                // Act
+                bool actual = LC_00000036_ValidSudoku.Solution_0_Test(a0[i]);
 
-        [Theory]
-        [MemberData(nameof(Solution_1_Data))]
-        public void Solution_1(string[] a0)
-        {
-            // Act
-            int expected = 0;
-            int actual = LC_00000036_ValidSudoku.Solution_1_Test([.. a0]);
-
-            // Assert
-            Assert.Equal(expected, actual);
+                // Assert
+                Assert.Equal(expected[i], actual);
+            }
         }
     }
 }

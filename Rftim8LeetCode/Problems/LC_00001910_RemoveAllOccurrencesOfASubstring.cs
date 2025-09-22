@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001910_RemoveAllOccurrencesOfASubstring()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001910_RemoveAllOccurrencesOfASubstring));
-            Input = [.. RftLCResources.LC_00001910_RemoveAllOccurrencesOfASubstring_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001910_RemoveAllOccurrencesOfASubstring_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

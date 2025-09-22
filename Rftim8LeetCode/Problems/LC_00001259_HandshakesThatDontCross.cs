@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00001259_HandshakesThatDontCross()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001259_HandshakesThatDontCross));
-            Input = [.. RftLCResources.LC_00001259_HandshakesThatDontCross_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00001259_HandshakesThatDontCross_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

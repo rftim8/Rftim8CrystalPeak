@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003225_MaximumScoreFromGridOperations()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003225_MaximumScoreFromGridOperations));
-            Input = [.. RftLCResources.LC_00003225_MaximumScoreFromGridOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003225_MaximumScoreFromGridOperations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

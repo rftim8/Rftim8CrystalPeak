@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000085_MaximalRectangle()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000085_MaximalRectangle));
-            Input = [.. RftLCResources.LC_00000085_MaximalRectangle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000085_MaximalRectangle_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

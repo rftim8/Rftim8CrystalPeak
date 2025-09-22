@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000864_ShortestPathToGetAllKeys()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000864_ShortestPathToGetAllKeys));
-            Input = [.. RftLCResources.LC_00000864_ShortestPathToGetAllKeys_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000864_ShortestPathToGetAllKeys_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

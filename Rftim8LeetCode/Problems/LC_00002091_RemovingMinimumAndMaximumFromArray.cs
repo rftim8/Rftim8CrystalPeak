@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002091_RemovingMinimumAndMaximumFromArray()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002091_RemovingMinimumAndMaximumFromArray));
-            Input = [.. RftLCResources.LC_00002091_RemovingMinimumAndMaximumFromArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002091_RemovingMinimumAndMaximumFromArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

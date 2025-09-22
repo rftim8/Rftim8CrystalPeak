@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003152_SpecialArrayII()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003152_SpecialArrayII));
-            Input = [.. RftLCResources.LC_00003152_SpecialArrayII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003152_SpecialArrayII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

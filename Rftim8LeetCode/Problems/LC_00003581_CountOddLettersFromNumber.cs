@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003581_CountOddLettersFromNumber()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003581_CountOddLettersFromNumber));
-            Input = [.. RftLCResources.LC_00003581_CountOddLettersFromNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003581_CountOddLettersFromNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

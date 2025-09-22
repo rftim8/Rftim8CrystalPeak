@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002671_FrequencyTracker()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002671_FrequencyTracker));
-            Input = [.. RftLCResources.LC_00002671_FrequencyTracker_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002671_FrequencyTracker_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

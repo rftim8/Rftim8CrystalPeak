@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002611_MiceAndCheese()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002611_MiceAndCheese));
-            Input = [.. RftLCResources.LC_00002611_MiceAndCheese_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002611_MiceAndCheese_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

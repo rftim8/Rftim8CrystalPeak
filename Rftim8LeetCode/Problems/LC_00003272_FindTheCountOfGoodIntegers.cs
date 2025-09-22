@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003272_FindTheCountOfGoodIntegers()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003272_FindTheCountOfGoodIntegers));
-            Input = [.. RftLCResources.LC_00003272_FindTheCountOfGoodIntegers_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003272_FindTheCountOfGoodIntegers_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

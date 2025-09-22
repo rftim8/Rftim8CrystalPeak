@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000893_GroupsOfSpecialEquivalentStrings()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000893_GroupsOfSpecialEquivalentStrings));
-            Input = [.. RftLCResources.LC_00000893_GroupsOfSpecialEquivalentStrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000893_GroupsOfSpecialEquivalentStrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

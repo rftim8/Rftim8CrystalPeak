@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002907_MaximumProfitableTripletsWithIncreasingPricesI()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002907_MaximumProfitableTripletsWithIncreasingPricesI));
-            Input = [.. RftLCResources.LC_00002907_MaximumProfitableTripletsWithIncreasingPricesI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002907_MaximumProfitableTripletsWithIncreasingPricesI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

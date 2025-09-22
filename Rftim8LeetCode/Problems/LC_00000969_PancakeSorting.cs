@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000969_PancakeSorting()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000969_PancakeSorting));
-            Input = [.. RftLCResources.LC_00000969_PancakeSorting_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00000969_PancakeSorting_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

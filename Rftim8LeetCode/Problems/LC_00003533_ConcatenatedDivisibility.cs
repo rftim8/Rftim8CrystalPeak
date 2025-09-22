@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00003533_ConcatenatedDivisibility()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003533_ConcatenatedDivisibility));
-            Input = [.. RftLCResources.LC_00003533_ConcatenatedDivisibility_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00003533_ConcatenatedDivisibility_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

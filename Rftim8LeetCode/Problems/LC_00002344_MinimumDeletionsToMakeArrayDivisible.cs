@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002344_MinimumDeletionsToMakeArrayDivisible()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002344_MinimumDeletionsToMakeArrayDivisible));
-            Input = [.. RftLCResources.LC_00002344_MinimumDeletionsToMakeArrayDivisible_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002344_MinimumDeletionsToMakeArrayDivisible_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

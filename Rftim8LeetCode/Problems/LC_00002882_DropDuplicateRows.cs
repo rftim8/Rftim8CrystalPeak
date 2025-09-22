@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002882_DropDuplicateRows()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002882_DropDuplicateRows));
-            Input = [.. RftLCResources.LC_00002882_DropDuplicateRows_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002882_DropDuplicateRows_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

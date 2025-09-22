@@ -16,7 +16,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00002570_MergeTwo2DArraysBySummingValues()
         {
             //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002570_MergeTwo2DArraysBySummingValues));
-            Input = [.. RftLCResources.LC_00002570_MergeTwo2DArraysBySummingValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = [.. LC_Resources.LC_00002570_MergeTwo2DArraysBySummingValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }
