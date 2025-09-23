@@ -21,19 +21,4 @@
     <ProjectReference Include="..\Rftim8Convoy\Rftim8Convoy.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="AOC_Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>AOC_Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="AOC_Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AOC_Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-
 </Project>

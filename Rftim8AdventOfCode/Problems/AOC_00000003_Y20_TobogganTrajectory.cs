@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000003_Y20_TobogganTrajectory()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000003_Y20_TobogganTrajectory));
-            Input = [.. AOC_Resources.AOC_00000003_Y20_TobogganTrajectory_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000003_Y20_TobogganTrajectory_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

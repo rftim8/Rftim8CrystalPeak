@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000010_Y16_BalanceBots()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000010_Y16_BalanceBots));
-            Input = [.. AOC_Resources.AOC_00000010_Y16_BalanceBots_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000010_Y16_BalanceBots_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

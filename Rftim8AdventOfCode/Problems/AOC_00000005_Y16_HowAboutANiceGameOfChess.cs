@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000005_Y16_HowAboutANiceGameOfChess()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000005_Y16_HowAboutANiceGameOfChess));
-            Input = [.. AOC_Resources.AOC_00000005_Y16_HowAboutANiceGameOfChess_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000005_Y16_HowAboutANiceGameOfChess_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

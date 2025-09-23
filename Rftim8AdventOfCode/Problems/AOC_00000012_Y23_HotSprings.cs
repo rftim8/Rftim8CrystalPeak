@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000012_Y23_HotSprings()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000012_Y23_HotSprings));
-            Input = [.. AOC_Resources.AOC_00000012_Y23_HotSprings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000012_Y23_HotSprings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

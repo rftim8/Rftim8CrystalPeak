@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000017_Y22_PyroclasticFlow()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000017_Y22_PyroclasticFlow));
-            Input = [.. AOC_Resources.AOC_00000017_Y22_PyroclasticFlow_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000017_Y22_PyroclasticFlow_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000024_Y18_ImmuneSystemSimulator20XX()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000024_Y18_ImmuneSystemSimulator20XX));
-            Input = [.. AOC_Resources.AOC_00000024_Y18_ImmuneSystemSimulator20XX_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000024_Y18_ImmuneSystemSimulator20XX_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

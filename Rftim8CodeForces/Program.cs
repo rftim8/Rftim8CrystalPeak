@@ -1,10 +1,20 @@
-﻿namespace Rftim8CodeForces
+﻿using Rftim8CodeForces.CP;
+
+namespace Rftim8CodeForces
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ArgumentNullException.ThrowIfNull(args);
+
+            #region Benchmarking
+            //await RftBenchmark.InitBenchmark();
+            #endregion
+
+            #region Hosting
+            await CPHostMain.InitHost(args);
+            #endregion
         }
     }
 }

@@ -15,8 +15,8 @@ namespace Rftim8AdventOfCode.Problems
 
         public AOC_00000001_Y16_NoTimeForATaxicab()
         {
-            //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000001_Y16_NoTimeForATaxicab));
-            Input = [.. AOC_Resources.AOC_00000001_Y16_NoTimeForATaxicab_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000001_Y16_NoTimeForATaxicab));
+            //Input = [.. AOC_Resources.AOC_00000001_Y16_NoTimeForATaxicab_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

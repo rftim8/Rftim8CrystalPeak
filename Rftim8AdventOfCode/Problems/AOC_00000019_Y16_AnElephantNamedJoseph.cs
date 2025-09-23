@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000019_Y16_AnElephantNamedJoseph()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000019_Y16_AnElephantNamedJoseph));
-            Input = [.. AOC_Resources.AOC_00000019_Y16_AnElephantNamedJoseph_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000019_Y16_AnElephantNamedJoseph_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000009_Y16_ExplosivesInCyberspace()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000009_Y16_ExplosivesInCyberspace));
-            Input = [.. AOC_Resources.AOC_00000009_Y16_ExplosivesInCyberspace_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000009_Y16_ExplosivesInCyberspace_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

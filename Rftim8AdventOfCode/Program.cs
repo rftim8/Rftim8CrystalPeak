@@ -1,5 +1,6 @@
 ﻿using Rftim8AdventOfCode.Benchmarking;
 using Rftim8AdventOfCode.CP;
+using Rftim8AdventOfCode.Problems;
 
 namespace Rftim8AdventOfCode
 {
@@ -9,12 +10,16 @@ namespace Rftim8AdventOfCode
         {
             ArgumentNullException.ThrowIfNull(args);
 
-            #region Benchmarking
-            //await RftBenchmark.InitBenchmark();
+            #region Static
+            //_ = new AOC_00000001_Y15_NotQuiteLisp();
             #endregion
 
             #region Hosting
             await CPHostMain.InitHost(args);
+            #endregion
+
+            #region Benchmarking
+            //await RftBenchmark.InitBenchmark();
             #endregion
         }
     }

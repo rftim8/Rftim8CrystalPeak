@@ -16,7 +16,7 @@ namespace Rftim8AdventOfCode.Problems
         public AOC_00000018_Y18_SettlersOfTheNorthPole()
         {
             //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000018_Y18_SettlersOfTheNorthPole));
-            Input = [.. AOC_Resources.AOC_00000018_Y18_SettlersOfTheNorthPole_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            //Input = [.. AOC_Resources.AOC_00000018_Y18_SettlersOfTheNorthPole_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -13,8 +13,8 @@ namespace Rftim8AdventOfCode.Problems
 
         public AOC_00000001_Y15_NotQuiteLisp()
         {
-            //Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000001_Y15_NotQuiteLisp));
-            Input = [.. AOC_Resources.AOC_00000001_Y15_NotQuiteLisp_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftAdventOfCodeStaticData.Input_Test(testType: true, problemName: nameof(AOC_00000001_Y15_NotQuiteLisp));
+            //Input = [.. AOC_Resources.AOC_00000001_Y15_NotQuiteLisp_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             PrintSolution();
         }
 
@@ -68,6 +68,7 @@ namespace Rftim8AdventOfCode.Problems
 
         #region UnitTest
         public static int Solution_0_Test(List<string> input) => AOC_00000001_Y15_NotQuiteLisp_0(input);
+
         public static int Solution_1_Test(List<string> input) => AOC_00000001_Y15_NotQuiteLisp_1(input);
         #endregion
 
