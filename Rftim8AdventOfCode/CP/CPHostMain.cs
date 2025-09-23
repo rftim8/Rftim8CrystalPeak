@@ -12,7 +12,7 @@ namespace Rftim8AdventOfCode.CP
             HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
             builder.Services.AddSingleton<ICPHostBase, CPHostBase>();
 
-            builder.Services.AddSingleton<IRftAdventOfCodeHostData, RftAdventOfCodeHostData>();
+            builder.Services.AddSingleton<IRftAtCoderJPHostData, RftAtOfCoderJPHostData>();
 
             #region AdventOfCode
             builder.Services.AddSingleton<IAOC_00000001_Y15_NotQuiteLisp, AOC_00000001_Y15_NotQuiteLisp>();

@@ -19,4 +19,9 @@
     <Folder Include="Unit\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rftim8CodeForces\Rftim8CodeForces.csproj" />
+    <ProjectReference Include="..\Rftim8Convoy\Rftim8Convoy.csproj" />
+  </ItemGroup>
+
 </Project>

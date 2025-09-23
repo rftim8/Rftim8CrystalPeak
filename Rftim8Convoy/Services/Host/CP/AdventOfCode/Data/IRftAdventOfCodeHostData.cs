@@ -1,6 +1,6 @@
 ﻿namespace Rftim8Convoy.Services.Host.CP.AdventOfCode.Data
 {
-    public interface IRftAdventOfCodeHostData
+    public interface IRftAtCoderJPHostData
     {
         public List<string>? Input_Test(bool testType = true, bool direction = true, string? problemName = null);
 

@@ -13,12 +13,6 @@ namespace Rftim8AdventOfCode.CP
             using IServiceScope serviceScope = hostProvider.CreateScope();
             IServiceProvider serviceProvider = serviceScope.ServiceProvider;
 
-            //RftFileContentManager.GetAdventOfCodeProblemNames();
-            //RftFileContentManager.CreateAdventOfCodeDataFiles(RftFileContentManager.GetAdventOfCodeProblemNames());
-            //RftFileContentManager.CreateAdventOfCodeCodeInterfaceFiles(RftFileContentManager.GetAdventOfCodeProblemNames());
-            //RftFileContentManager.CreateAdventOfCodeCodeFiles(RftFileContentManager.GetAdventOfCodeProblemNames());
-            //RftFileContentManager.CreateAdventOfCodexUnitTestFiles(RftFileContentManager.GetAdventOfCodeProblemNames());
-
             #region AdventOfCode
             IAOC_00000001_Y15_NotQuiteLisp aOC_00000001_Y15_NotQuiteLisp = serviceProvider.GetRequiredService<IAOC_00000001_Y15_NotQuiteLisp>();
             aOC_00000001_Y15_NotQuiteLisp.PrintSolution();

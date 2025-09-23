@@ -15,11 +15,11 @@ namespace Rftim8AdventOfCode
             #endregion
 
             #region Hosting
-            await CPHostMain.InitHost(args);
+            //await CPHostMain.InitHost(args);
             #endregion
 
             #region Benchmarking
-            //await RftBenchmark.InitBenchmark();
+            await RftBenchmark.InitBenchmark();
             #endregion
         }
     }

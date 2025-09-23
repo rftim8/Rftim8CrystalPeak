@@ -1,4 +1,6 @@
-﻿using Rftim8CodeForces.CP;
+﻿using Rftim8CodeForces.Benchmarking;
+using Rftim8CodeForces.CP;
+using Rftim8CodeForces.Problems;
 
 namespace Rftim8CodeForces
 {
@@ -8,12 +10,16 @@ namespace Rftim8CodeForces
         {
             ArgumentNullException.ThrowIfNull(args);
 
-            #region Benchmarking
-            //await RftBenchmark.InitBenchmark();
+            #region Static
+            //_ = new CF_00000002A_Winner();
             #endregion
 
             #region Hosting
             await CPHostMain.InitHost(args);
+            #endregion
+
+            #region Benchmarking
+            //await RftBenchmark.InitBenchmark();
             #endregion
         }
     }
