@@ -14,8 +14,8 @@ namespace Rftim8CodinGame.CP
             IServiceProvider serviceProvider = serviceScope.ServiceProvider;
 
             #region CodinGame
-            //IAOC_00000001_Y15_NotQuiteLisp aOC_00000001_Y15_NotQuiteLisp = serviceProvider.GetRequiredService<IAOC_00000001_Y15_NotQuiteLisp>();
-            //aOC_00000001_Y15_NotQuiteLisp.PrintSolution();
+            ICG_00000001_1000000000DWORLD cG_00000001_1000000000DWORLD = serviceProvider.GetRequiredService<ICG_00000001_1000000000DWORLD>();
+            cG_00000001_1000000000DWORLD.PrintSolution();
             #endregion
         }
     }

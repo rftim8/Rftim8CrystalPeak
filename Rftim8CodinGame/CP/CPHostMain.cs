@@ -12,10 +12,10 @@ namespace Rftim8CodinGame.CP
             HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
             builder.Services.AddSingleton<ICPHostBase, CPHostBase>();
 
-            //builder.Services.AddSingleton<IRftAdventOfCodeHostData, RftAdventOfCodeHostData>();
+            builder.Services.AddSingleton<IRftCodinGameHostData, RftCodinGameHostData>();
 
             #region CodinGame
-            //builder.Services.AddSingleton<IAOC_00000001_Y15_NotQuiteLisp, AOC_00000001_Y15_NotQuiteLisp>();
+            builder.Services.AddSingleton<ICG_00000001_1000000000DWORLD, CG_00000001_1000000000DWORLD>();
             #endregion
 
             IHost host = builder.Build();

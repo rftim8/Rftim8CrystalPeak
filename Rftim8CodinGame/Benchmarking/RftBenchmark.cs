@@ -12,7 +12,7 @@ namespace Rftim8CodinGame.Benchmarking
             ManualConfig config = new();
             config.Add(DefaultConfig.Instance.AddExporter(JsonExporter.Brief));
 
-            //BenchmarkRunner.Run<AOC_00000001_Y15_NotQuiteLisp>(config);
+            BenchmarkRunner.Run<CG_00000001_1000000000DWORLD>(config);
 
             await Task.Run(() => Console.WriteLine("Benchmark Finished Successfully!"));
         }
