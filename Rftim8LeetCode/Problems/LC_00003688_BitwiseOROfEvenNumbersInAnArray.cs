@@ -9,14 +9,24 @@ namespace Rftim8LeetCode.Problems
     public class LC_00003688_BitwiseOROfEvenNumbersInAnArray : ILC_00003688_BitwiseOROfEvenNumbersInAnArray
     {
         #region Static
-        private readonly List<string>? Input;
-        private readonly List<char[][]>? boards = [];
-        private readonly List<bool>? results = [];
+        private readonly List<string>? Input = [];
+        private readonly List<List<int>>? Nums = [];
+        private readonly List<int>? Results = [];
 
+        /// <summary>
+        /// You are given an integer array nums.
+        /// Return the bitwise OR of all even numbers in the array.
+        /// If there are no even numbers in nums, return 0.
+        /// 
+        /// Constraints:
+        /// 
+        /// 1 <= nums.length <= 100
+        /// 1 <= nums[i] <= 100
+        /// </summary>
         public LC_00003688_BitwiseOROfEvenNumbersInAnArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003688_BitwiseOROfEvenNumbersInAnArray));
-            Input = [.. RftLCResources.LC_00003688_BitwiseOROfEvenNumbersInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003688_BitwiseOROfEvenNumbersInAnArray));
+            //Input = [.. RftLCResources.LC_00003688_BitwiseOROfEvenNumbersInAnArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }
@@ -28,42 +38,38 @@ namespace Rftim8LeetCode.Problems
 
             for (int i = 2; i < _n * _m + 2; i += _m)
             {
-
+                Nums!.Add([.. Input[i].Replace("[", "").Replace("]", "").Split(",").Select(int.Parse)]);
+                Results!.Add(int.Parse(Input[i + 1]));
             }
         }
-
-        [ParamsSource(nameof(BoardDataSets))]
-        public char[][]? Board { get; set; }
-
-        public IEnumerable<char[][]> BoardDataSets() => boards!;
-        
-        /// <summary>
-        ///
-        /// </summary>
         [Benchmark]
-        public int Solution_0() => LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(Input!);
+        public List<int> Solution_0() => LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(Nums!);
 
-        private static int LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(List<string> input)
+        private static List<int> LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(List<List<int>> input)
         {
-            return 0;
-        }
+            List<int> results = [];
 
-        /// <summary>
-        ///
-        /// </summary>        
-        [Benchmark]
-        public int Solution_1() => LC_00003688_BitwiseOROfEvenNumbersInAnArray_1(Input!);
+            foreach (List<int> item in input)
+            {
+                int result = 0;
 
-        private static int LC_00003688_BitwiseOROfEvenNumbersInAnArray_1(List<string> input)
-        {
-            return 0;
+                foreach (int item1 in item)
+                {
+                    if (item1 % 2 == 0)
+                    {
+                        result |= item1;
+                    }
+                }
+
+                results.Add(result);
+            }
+
+            return results;
         }
         #endregion
 
         #region UnitTest
-        public static int Solution_0_Test(List<string> data) => LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(data);
-
-        public static int Solution_1_Test(List<string> data) => LC_00003688_BitwiseOROfEvenNumbersInAnArray_1(data);
+        public static List<int> Solution_0_Test(List<List<int>> data) => LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(data);
         #endregion
 
         #region Host
@@ -78,12 +84,10 @@ namespace Rftim8LeetCode.Problems
 
         public void PrintSolution()
         {
-            for (int i = 0; i < boards!.Count; i++)
+            List<int> actual = LC_00003688_BitwiseOROfEvenNumbersInAnArray_0(Nums!);
+            foreach (int item in actual)
             {
-                int actual = LC_00003688_BitwiseOROfEvenNumbersInAnArray_0([]);
-                Console.WriteLine($"Solution 0: Testcase {i + 1}: Expected = {results![i]} => Actual: {actual}");
-                actual = LC_00003688_BitwiseOROfEvenNumbersInAnArray_1([]);
-                Console.WriteLine($"Solution 1: Testcase {i + 1}: Expected = {results![i]} => Actual: {actual}");
+                Console.WriteLine(item);
             }
         }
         #endregion

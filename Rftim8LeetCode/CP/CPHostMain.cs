@@ -18,10 +18,11 @@ namespace Rftim8LeetCode.CP
 
             builder.Services.AddSingleton<ILC_00000001_TwoSum, LC_00000001_TwoSum>();
             builder.Services.AddSingleton<ILC_00000036_ValidSudoku, LC_00000036_ValidSudoku>();
+            builder.Services.AddSingleton<ILC_00003688_BitwiseOROfEvenNumbersInAnArray, LC_00003688_BitwiseOROfEvenNumbersInAnArray>();
             #endregion
 
             #region EFCore
-            
+
             #endregion
 
             IHost host = builder.Build();

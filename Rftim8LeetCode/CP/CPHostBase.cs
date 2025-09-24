@@ -13,12 +13,12 @@ namespace Rftim8LeetCode.CP
             using IServiceScope serviceScope = hostProvider.CreateScope();
             IServiceProvider serviceProvider = serviceScope.ServiceProvider;
 
-            #region LeetCode
-            //ILC_00000001_TwoSum i_00001_TwoSum = serviceProvider.GetRequiredService<ILC_00000001_TwoSum>();
-            //i_00001_TwoSum.PrintSolution();
+            #region LeetCode            
+            //ILC_00000036_ValidSudoku lC_00000036_ValidSudoku = serviceProvider.GetRequiredService<ILC_00000036_ValidSudoku>();
+            //lC_00000036_ValidSudoku.PrintSolution();
 
-            ILC_00000036_ValidSudoku lC_00000036_ValidSudoku = serviceProvider.GetRequiredService<ILC_00000036_ValidSudoku>();
-            lC_00000036_ValidSudoku.PrintSolution();
+            ILC_00003688_BitwiseOROfEvenNumbersInAnArray lC_00003688_BitwiseOROfEvenNumbersInAnArray = serviceProvider.GetRequiredService<ILC_00003688_BitwiseOROfEvenNumbersInAnArray>();
+            lC_00003688_BitwiseOROfEvenNumbersInAnArray.PrintSolution();
             #endregion
 
         }

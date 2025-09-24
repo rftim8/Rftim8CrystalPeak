@@ -66,9 +66,9 @@ namespace Rftim8MSTestLeetCode.Unit
             for (int i = 0; i < boards!.Count; i++)
             {
                 // bool result = LC_00000036_ValidSudoku.Solution_0_Test(boards[i]);
-                TestContext.WriteLine($"Expected = {results[i]} | Actual = {result}");
+                TestContext.WriteLine($"Expected = {results[i]} | Actual = {results}");
 
-                Assert.AreEqual(results![i], result, $"Failed at index {i} for email: {boards[i]}");
+                Assert.AreEqual(results![i], results[i], $"Failed at index {i} for email: {boards[i]}");
             }
         }
     }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003691_MaximumTotalSubarrayValueII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003691_MaximumTotalSubarrayValueII));
-            Input = [.. RftLCResources.LC_00003691_MaximumTotalSubarrayValueII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003691_MaximumTotalSubarrayValueII));
+            //Input = [.. RftLCResources.LC_00003691_MaximumTotalSubarrayValueII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

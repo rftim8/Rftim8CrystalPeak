@@ -9,27 +9,41 @@ namespace Rftim8MSTestLeetCode.Unit
         public TestContext TestContext { get; set; } = null!;
 
         private static readonly List<string>? Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003688_BitwiseOROfEvenNumbersInAnArray));
+        private static readonly List<List<int>>? Nums = [];
+        private static readonly List<int>? Results = [];
 
-        private static List<string> DataCollector_0()
+        private static void DataCollector_0()
         {
-            return Input!;
+            int _n = int.Parse(Input![0]);
+            int _m = int.Parse(Input[1]);
+
+            for (int i = 2; i < _n * _m + 2; i += _m)
+            {
+                Nums!.Add([.. Input[i].Replace("[", "").Replace("]", "").Split(",").Select(int.Parse)]);
+                Results!.Add(int.Parse(Input[i + 1]));
+            }
         }
 
         public static IEnumerable<object[]> Solution_0_Data()
         {
             yield return new object[]
             {
-                DataCollector_0()
+                Nums!, Results!
             };
         }
 
         [TestMethod]
         [DynamicData(nameof(Solution_0_Data))]
-        public void Solution_0(char[][] input)
+        public void Solution_0(List<List<int>> nums, List<int> results)
         {
-            // bool result = LC_00003688_BitwiseOROfEvenNumbersInAnArray.Solution_0_Test(input);
+            DataCollector_0();
 
-            //Assert.AreEqual(true, result);
+            List<int> actual = LC_00003688_BitwiseOROfEvenNumbersInAnArray.Solution_0_Test(nums);
+
+            for (int i = 0; i < actual.Count; i++)
+            {
+                Assert.AreEqual(results[i], actual[i]);
+            }
         }
     }
 }

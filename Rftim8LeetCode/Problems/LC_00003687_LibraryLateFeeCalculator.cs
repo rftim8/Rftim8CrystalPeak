@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003687_LibraryLateFeeCalculator()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003687_LibraryLateFeeCalculator));
-            Input = [.. RftLCResources.LC_00003687_LibraryLateFeeCalculator_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003687_LibraryLateFeeCalculator));
+            //Input = [.. RftLCResources.LC_00003687_LibraryLateFeeCalculator_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }
