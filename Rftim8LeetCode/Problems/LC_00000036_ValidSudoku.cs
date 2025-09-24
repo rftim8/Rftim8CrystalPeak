@@ -3,9 +3,11 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Atlas;
+using Rftim8Atlas.Models.CP;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
 using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
 using System.Data;
+using System.Text;
 
 namespace Rftim8LeetCode.Problems
 {
@@ -13,6 +15,7 @@ namespace Rftim8LeetCode.Problems
     {
         #region Static
         private static readonly SqlConnection sqlConn = new(GenericURLs.mssqlDb);
+        private readonly CPModel cPModel = new();
         private readonly List<string>? Input = [];
         private readonly List<char[][]>? boards = [];
         private readonly List<bool>? results = [];
@@ -116,6 +119,14 @@ namespace Rftim8LeetCode.Problems
         {
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
             Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000036_ValidSudoku));
+
+            cPModel.Competition = "LeetCode";
+            StringBuilder sb = new();
+            foreach (string item in Input)
+            {
+                sb.AppendLine(item);
+            }
+            cPModel.Input = sb.ToString();
             DataCollector();
             PrintTable();
         }
@@ -136,7 +147,7 @@ namespace Rftim8LeetCode.Problems
             try
             {
                 sqlConn.Open();
-                using SqlDataAdapter sqlDataAdapter = new("select * from CPModels", sqlConn);
+                using SqlDataAdapter sqlDataAdapter = new("exec spGet_CPs", sqlConn);
                 DataSet dataSet = new();
                 sqlDataAdapter.Fill(dataSet);
 

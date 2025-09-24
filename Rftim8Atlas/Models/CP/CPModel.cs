@@ -6,7 +6,7 @@ namespace Rftim8Atlas.Models.CP
     {
         public long Id { get; set; }
 
-        public string? CompetitionName { get; set; }
+        public string? Competition { get; set; }
 
         public DateTime Timestamp { get; set; } = DateTime.Now;
 
@@ -14,11 +14,12 @@ namespace Rftim8Atlas.Models.CP
 
         public int Rating { get; set; }
 
-        public string? ProblemName { get; set; }
+        public string? Problem { get; set; }
 
         public string? Description { get; set; }
 
         public string? Input { get; set; }
+        public string? Output { get; set; }
 
         public int Difficulty { get; set; }
 
