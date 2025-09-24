@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003255_FindThePowerOfKSizeSubarraysII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003255_FindThePowerOfKSizeSubarraysII));
-            Input = [.. LC_Resources.LC_00003255_FindThePowerOfKSizeSubarraysII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003255_FindThePowerOfKSizeSubarraysII));
+            //Input = [.. LC_Resources.LC_00003255_FindThePowerOfKSizeSubarraysII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

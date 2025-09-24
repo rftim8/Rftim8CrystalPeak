@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002545_SortTheStudentsByTheirKthScore()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002545_SortTheStudentsByTheirKthScore));
-            Input = [.. LC_Resources.LC_00002545_SortTheStudentsByTheirKthScore_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002545_SortTheStudentsByTheirKthScore));
+            //Input = [.. LC_Resources.LC_00002545_SortTheStudentsByTheirKthScore_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

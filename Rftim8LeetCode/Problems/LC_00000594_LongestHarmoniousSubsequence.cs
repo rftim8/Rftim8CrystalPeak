@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000594_LongestHarmoniousSubsequence()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000594_LongestHarmoniousSubsequence));
-            Input = [.. LC_Resources.LC_00000594_LongestHarmoniousSubsequence_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000594_LongestHarmoniousSubsequence));
+            //Input = [.. LC_Resources.LC_00000594_LongestHarmoniousSubsequence_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

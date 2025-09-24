@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003531_CountCoveredBuildings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003531_CountCoveredBuildings));
-            Input = [.. LC_Resources.LC_00003531_CountCoveredBuildings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003531_CountCoveredBuildings));
+            //Input = [.. LC_Resources.LC_00003531_CountCoveredBuildings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

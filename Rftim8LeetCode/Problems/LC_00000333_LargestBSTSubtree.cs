@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000333_LargestBSTSubtree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000333_LargestBSTSubtree));
-            Input = [.. LC_Resources.LC_00000333_LargestBSTSubtree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000333_LargestBSTSubtree));
+            //Input = [.. LC_Resources.LC_00000333_LargestBSTSubtree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

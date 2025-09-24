@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002113_ElementsInArrayAfterRemovingAndReplacingElements()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002113_ElementsInArrayAfterRemovingAndReplacingElements));
-            Input = [.. LC_Resources.LC_00002113_ElementsInArrayAfterRemovingAndReplacingElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002113_ElementsInArrayAfterRemovingAndReplacingElements));
+            //Input = [.. LC_Resources.LC_00002113_ElementsInArrayAfterRemovingAndReplacingElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

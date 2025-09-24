@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002175_TheChangeInGlobalRankings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002175_TheChangeInGlobalRankings));
-            Input = [.. LC_Resources.LC_00002175_TheChangeInGlobalRankings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002175_TheChangeInGlobalRankings));
+            //Input = [.. LC_Resources.LC_00002175_TheChangeInGlobalRankings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

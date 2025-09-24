@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003029_MinimumTimeToRevertWordToInitialStateI()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateI));
-            Input = [.. LC_Resources.LC_00003029_MinimumTimeToRevertWordToInitialStateI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003029_MinimumTimeToRevertWordToInitialStateI));
+            //Input = [.. LC_Resources.LC_00003029_MinimumTimeToRevertWordToInitialStateI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000608_TreeNode()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000608_TreeNode));
-            Input = [.. LC_Resources.LC_00000608_TreeNode_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000608_TreeNode));
+            //Input = [.. LC_Resources.LC_00000608_TreeNode_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

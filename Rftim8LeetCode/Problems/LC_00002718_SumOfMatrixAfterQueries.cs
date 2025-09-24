@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002718_SumOfMatrixAfterQueries()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002718_SumOfMatrixAfterQueries));
-            Input = [.. LC_Resources.LC_00002718_SumOfMatrixAfterQueries_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002718_SumOfMatrixAfterQueries));
+            //Input = [.. LC_Resources.LC_00002718_SumOfMatrixAfterQueries_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

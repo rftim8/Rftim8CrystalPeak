@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003665_TwistedMirrorPathCount()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003665_TwistedMirrorPathCount));
-            Input = [.. LC_Resources.LC_00003665_TwistedMirrorPathCount_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003665_TwistedMirrorPathCount));
+            //Input = [.. LC_Resources.LC_00003665_TwistedMirrorPathCount_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

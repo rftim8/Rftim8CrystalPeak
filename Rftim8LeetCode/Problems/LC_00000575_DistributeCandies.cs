@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000575_DistributeCandies()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000575_DistributeCandies));
-            Input = [.. LC_Resources.LC_00000575_DistributeCandies_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000575_DistributeCandies));
+            //Input = [.. LC_Resources.LC_00000575_DistributeCandies_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

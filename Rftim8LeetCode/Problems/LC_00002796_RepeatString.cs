@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002796_RepeatString()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002796_RepeatString));
-            Input = [.. LC_Resources.LC_00002796_RepeatString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002796_RepeatString));
+            //Input = [.. LC_Resources.LC_00002796_RepeatString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

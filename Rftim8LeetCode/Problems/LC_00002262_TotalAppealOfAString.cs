@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002262_TotalAppealOfAString()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002262_TotalAppealOfAString));
-            Input = [.. LC_Resources.LC_00002262_TotalAppealOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002262_TotalAppealOfAString));
+            //Input = [.. LC_Resources.LC_00002262_TotalAppealOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

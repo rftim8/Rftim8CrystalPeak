@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002028_FindMissingObservations()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002028_FindMissingObservations));
-            Input = [.. LC_Resources.LC_00002028_FindMissingObservations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002028_FindMissingObservations));
+            //Input = [.. LC_Resources.LC_00002028_FindMissingObservations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002905_FindIndicesWithIndexAndValueDifferenceII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002905_FindIndicesWithIndexAndValueDifferenceII));
-            Input = [.. LC_Resources.LC_00002905_FindIndicesWithIndexAndValueDifferenceII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002905_FindIndicesWithIndexAndValueDifferenceII));
+            //Input = [.. LC_Resources.LC_00002905_FindIndicesWithIndexAndValueDifferenceII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

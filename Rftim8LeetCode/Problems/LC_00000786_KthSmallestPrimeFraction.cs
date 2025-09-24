@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000786_KthSmallestPrimeFraction()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000786_KthSmallestPrimeFraction));
-            Input = [.. LC_Resources.LC_00000786_KthSmallestPrimeFraction_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000786_KthSmallestPrimeFraction));
+            //Input = [.. LC_Resources.LC_00000786_KthSmallestPrimeFraction_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

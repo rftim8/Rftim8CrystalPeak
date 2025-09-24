@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000366_FindLeavesOfBinaryTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000366_FindLeavesOfBinaryTree));
-            Input = [.. LC_Resources.LC_00000366_FindLeavesOfBinaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000366_FindLeavesOfBinaryTree));
+            //Input = [.. LC_Resources.LC_00000366_FindLeavesOfBinaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

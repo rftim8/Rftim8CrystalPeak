@@ -1,6 +1,5 @@
-﻿using Rftim8LeetCode.Benchmarking;
+﻿using Rftim8Atlas;
 using Rftim8LeetCode.CP;
-using Rftim8LeetCode.Problems;
 
 namespace Rftim8LeetCode
 {
@@ -10,8 +9,8 @@ namespace Rftim8LeetCode
         {
             ArgumentNullException.ThrowIfNull(args);
 
-            #region Benchmarking
-            //await RftBenchmark.InitBenchmark();
+            #region Static
+            //_ = new LC_00000036_ValidSudoku();
             #endregion
 
             #region Hosting
@@ -20,8 +19,8 @@ namespace Rftim8LeetCode
             //await DotnetHostMain.InitHost(args);
             #endregion
 
-            #region Static
-            //_ = new LC_00000036_ValidSudoku();
+            #region Benchmarking
+            //await RftBenchmark.InitBenchmark();
             #endregion
         }
     }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000675_CutOffTreesForGolfEvent()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000675_CutOffTreesForGolfEvent));
-            Input = [.. LC_Resources.LC_00000675_CutOffTreesForGolfEvent_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000675_CutOffTreesForGolfEvent));
+            //Input = [.. LC_Resources.LC_00000675_CutOffTreesForGolfEvent_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

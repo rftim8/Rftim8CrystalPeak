@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001174_ImmediateFoodDeliveryII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001174_ImmediateFoodDeliveryII));
-            Input = [.. LC_Resources.LC_00001174_ImmediateFoodDeliveryII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001174_ImmediateFoodDeliveryII));
+            //Input = [.. LC_Resources.LC_00001174_ImmediateFoodDeliveryII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002801_CountSteppingNumbersInRange()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002801_CountSteppingNumbersInRange));
-            Input = [.. LC_Resources.LC_00002801_CountSteppingNumbersInRange_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002801_CountSteppingNumbersInRange));
+            //Input = [.. LC_Resources.LC_00002801_CountSteppingNumbersInRange_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003482_AnalyzeOrganizationHierarchy()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003482_AnalyzeOrganizationHierarchy));
-            Input = [.. LC_Resources.LC_00003482_AnalyzeOrganizationHierarchy_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003482_AnalyzeOrganizationHierarchy));
+            //Input = [.. LC_Resources.LC_00003482_AnalyzeOrganizationHierarchy_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

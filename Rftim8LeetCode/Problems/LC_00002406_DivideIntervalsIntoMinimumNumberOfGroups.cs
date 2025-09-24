@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002406_DivideIntervalsIntoMinimumNumberOfGroups()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002406_DivideIntervalsIntoMinimumNumberOfGroups));
-            Input = [.. LC_Resources.LC_00002406_DivideIntervalsIntoMinimumNumberOfGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002406_DivideIntervalsIntoMinimumNumberOfGroups));
+            //Input = [.. LC_Resources.LC_00002406_DivideIntervalsIntoMinimumNumberOfGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

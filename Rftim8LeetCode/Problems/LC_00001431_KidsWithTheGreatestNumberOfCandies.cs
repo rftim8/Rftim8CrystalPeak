@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001431_KidsWithTheGreatestNumberOfCandies()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001431_KidsWithTheGreatestNumberOfCandies));
-            Input = [.. LC_Resources.LC_00001431_KidsWithTheGreatestNumberOfCandies_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001431_KidsWithTheGreatestNumberOfCandies));
+            //Input = [.. LC_Resources.LC_00001431_KidsWithTheGreatestNumberOfCandies_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

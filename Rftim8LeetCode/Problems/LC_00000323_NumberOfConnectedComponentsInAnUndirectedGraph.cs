@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000323_NumberOfConnectedComponentsInAnUndirectedGraph()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000323_NumberOfConnectedComponentsInAnUndirectedGraph));
-            Input = [.. LC_Resources.LC_00000323_NumberOfConnectedComponentsInAnUndirectedGraph_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000323_NumberOfConnectedComponentsInAnUndirectedGraph));
+            //Input = [.. LC_Resources.LC_00000323_NumberOfConnectedComponentsInAnUndirectedGraph_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

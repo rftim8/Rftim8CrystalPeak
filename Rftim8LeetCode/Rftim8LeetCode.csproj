@@ -5,6 +5,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<UserSecretsId>295b5456-c168-4de5-a84d-272a46739bfd</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -14,28 +15,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="BenchmarkDotNet" Version="0.15.2" />
+		<PackageReference Include="BenchmarkDotNet" Version="0.15.4" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
+		<PackageReference Include="Microsoft.SqlServer.Server" Version="1.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Rftim8Atlas\Rftim8Atlas.csproj" />
 		<ProjectReference Include="..\Rftim8Convoy\Rftim8Convoy.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Compile Update="LC_Resources.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>LC_Resources.resx</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Update="LC_Resources.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>LC_Resources.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
 	</ItemGroup>
 
 </Project>

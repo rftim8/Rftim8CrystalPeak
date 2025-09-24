@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000249_GroupShiftedStrings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000249_GroupShiftedStrings));
-            Input = [.. LC_Resources.LC_00000249_GroupShiftedStrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000249_GroupShiftedStrings));
+            //Input = [.. LC_Resources.LC_00000249_GroupShiftedStrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

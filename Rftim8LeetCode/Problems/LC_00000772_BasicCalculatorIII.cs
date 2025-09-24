@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000772_BasicCalculatorIII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000772_BasicCalculatorIII));
-            Input = [.. LC_Resources.LC_00000772_BasicCalculatorIII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000772_BasicCalculatorIII));
+            //Input = [.. LC_Resources.LC_00000772_BasicCalculatorIII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001511_CustomerOrderFrequency()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001511_CustomerOrderFrequency));
-            Input = [.. LC_Resources.LC_00001511_CustomerOrderFrequency_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001511_CustomerOrderFrequency));
+            //Input = [.. LC_Resources.LC_00001511_CustomerOrderFrequency_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

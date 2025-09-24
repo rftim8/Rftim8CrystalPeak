@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001611_MinimumOneBitOperationsToMakeIntegersZero()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001611_MinimumOneBitOperationsToMakeIntegersZero));
-            Input = [.. LC_Resources.LC_00001611_MinimumOneBitOperationsToMakeIntegersZero_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001611_MinimumOneBitOperationsToMakeIntegersZero));
+            //Input = [.. LC_Resources.LC_00001611_MinimumOneBitOperationsToMakeIntegersZero_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

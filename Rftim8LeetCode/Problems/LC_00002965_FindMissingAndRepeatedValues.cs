@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002965_FindMissingAndRepeatedValues()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002965_FindMissingAndRepeatedValues));
-            Input = [.. LC_Resources.LC_00002965_FindMissingAndRepeatedValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002965_FindMissingAndRepeatedValues));
+            //Input = [.. LC_Resources.LC_00002965_FindMissingAndRepeatedValues_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups));
-            Input = [.. LC_Resources.LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups));
+            //Input = [.. LC_Resources.LC_00002493_DivideNodesIntoTheMaximumNumberOfGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

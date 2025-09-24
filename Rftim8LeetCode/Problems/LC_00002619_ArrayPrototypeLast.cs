@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002619_ArrayPrototypeLast()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002619_ArrayPrototypeLast));
-            Input = [.. LC_Resources.LC_00002619_ArrayPrototypeLast_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002619_ArrayPrototypeLast));
+            //Input = [.. LC_Resources.LC_00002619_ArrayPrototypeLast_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

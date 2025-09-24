@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002343_QueryKthSmallestTrimmedNumber()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002343_QueryKthSmallestTrimmedNumber));
-            Input = [.. LC_Resources.LC_00002343_QueryKthSmallestTrimmedNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002343_QueryKthSmallestTrimmedNumber));
+            //Input = [.. LC_Resources.LC_00002343_QueryKthSmallestTrimmedNumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

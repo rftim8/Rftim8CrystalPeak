@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003595_OnceTwice()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003595_OnceTwice));
-            Input = [.. LC_Resources.LC_00003595_OnceTwice_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003595_OnceTwice));
+            //Input = [.. LC_Resources.LC_00003595_OnceTwice_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

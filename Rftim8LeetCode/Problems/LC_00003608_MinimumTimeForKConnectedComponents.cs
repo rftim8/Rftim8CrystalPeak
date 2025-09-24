@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003608_MinimumTimeForKConnectedComponents()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003608_MinimumTimeForKConnectedComponents));
-            Input = [.. LC_Resources.LC_00003608_MinimumTimeForKConnectedComponents_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003608_MinimumTimeForKConnectedComponents));
+            //Input = [.. LC_Resources.LC_00003608_MinimumTimeForKConnectedComponents_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

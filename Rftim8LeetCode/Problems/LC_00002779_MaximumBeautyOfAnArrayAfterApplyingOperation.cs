@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002779_MaximumBeautyOfAnArrayAfterApplyingOperation()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002779_MaximumBeautyOfAnArrayAfterApplyingOperation));
-            Input = [.. LC_Resources.LC_00002779_MaximumBeautyOfAnArrayAfterApplyingOperation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002779_MaximumBeautyOfAnArrayAfterApplyingOperation));
+            //Input = [.. LC_Resources.LC_00002779_MaximumBeautyOfAnArrayAfterApplyingOperation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002514_CountAnagrams()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002514_CountAnagrams));
-            Input = [.. LC_Resources.LC_00002514_CountAnagrams_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002514_CountAnagrams));
+            //Input = [.. LC_Resources.LC_00002514_CountAnagrams_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

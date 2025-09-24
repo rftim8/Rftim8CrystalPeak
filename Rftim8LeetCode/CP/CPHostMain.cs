@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
 using Rftim8LeetCode.Problems;
@@ -12,11 +13,15 @@ namespace Rftim8LeetCode.CP
             HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
             builder.Services.AddSingleton<ICPHostBase, CPHostBase>();
 
+            #region LeetCode
             builder.Services.AddSingleton<IRftLeetCodeHostData, RftLeetCodeHostData>();
 
-            #region LeetCode
             builder.Services.AddSingleton<ILC_00000001_TwoSum, LC_00000001_TwoSum>();
             builder.Services.AddSingleton<ILC_00000036_ValidSudoku, LC_00000036_ValidSudoku>();
+            #endregion
+
+            #region EFCore
+            
             #endregion
 
             IHost host = builder.Build();

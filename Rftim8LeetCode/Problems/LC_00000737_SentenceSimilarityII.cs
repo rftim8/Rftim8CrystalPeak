@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000737_SentenceSimilarityII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000737_SentenceSimilarityII));
-            Input = [.. LC_Resources.LC_00000737_SentenceSimilarityII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000737_SentenceSimilarityII));
+            //Input = [.. LC_Resources.LC_00000737_SentenceSimilarityII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

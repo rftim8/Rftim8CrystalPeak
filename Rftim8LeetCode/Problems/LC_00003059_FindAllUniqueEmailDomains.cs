@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003059_FindAllUniqueEmailDomains()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003059_FindAllUniqueEmailDomains));
-            Input = [.. LC_Resources.LC_00003059_FindAllUniqueEmailDomains_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003059_FindAllUniqueEmailDomains));
+            //Input = [.. LC_Resources.LC_00003059_FindAllUniqueEmailDomains_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002996_SmallestMissingIntegerGreaterThanSequentialPrefixSum()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002996_SmallestMissingIntegerGreaterThanSequentialPrefixSum));
-            Input = [.. LC_Resources.LC_00002996_SmallestMissingIntegerGreaterThanSequentialPrefixSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002996_SmallestMissingIntegerGreaterThanSequentialPrefixSum));
+            //Input = [.. LC_Resources.LC_00002996_SmallestMissingIntegerGreaterThanSequentialPrefixSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

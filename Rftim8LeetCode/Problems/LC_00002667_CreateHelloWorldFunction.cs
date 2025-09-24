@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002667_CreateHelloWorldFunction()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002667_CreateHelloWorldFunction));
-            Input = [.. LC_Resources.LC_00002667_CreateHelloWorldFunction_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002667_CreateHelloWorldFunction));
+            //Input = [.. LC_Resources.LC_00002667_CreateHelloWorldFunction_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

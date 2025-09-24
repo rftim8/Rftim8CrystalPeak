@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000056_MergeIntervals()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000056_MergeIntervals));
-            Input = [.. LC_Resources.LC_00000056_MergeIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000056_MergeIntervals));
+            //Input = [.. LC_Resources.LC_00000056_MergeIntervals_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

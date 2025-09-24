@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002527_FindXorBeautyOfArray()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002527_FindXorBeautyOfArray));
-            Input = [.. LC_Resources.LC_00002527_FindXorBeautyOfArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002527_FindXorBeautyOfArray));
+            //Input = [.. LC_Resources.LC_00002527_FindXorBeautyOfArray_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

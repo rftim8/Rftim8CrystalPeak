@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000382_LinkedListRandomNode()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000382_LinkedListRandomNode));
-            Input = [.. LC_Resources.LC_00000382_LinkedListRandomNode_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000382_LinkedListRandomNode));
+            //Input = [.. LC_Resources.LC_00000382_LinkedListRandomNode_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

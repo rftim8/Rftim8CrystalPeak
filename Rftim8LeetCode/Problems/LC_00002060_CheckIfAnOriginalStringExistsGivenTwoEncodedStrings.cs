@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings));
-            Input = [.. LC_Resources.LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings));
+            //Input = [.. LC_Resources.LC_00002060_CheckIfAnOriginalStringExistsGivenTwoEncodedStrings_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002148_CountElementsWithStrictlySmallerAndGreaterElements()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002148_CountElementsWithStrictlySmallerAndGreaterElements));
-            Input = [.. LC_Resources.LC_00002148_CountElementsWithStrictlySmallerAndGreaterElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002148_CountElementsWithStrictlySmallerAndGreaterElements));
+            //Input = [.. LC_Resources.LC_00002148_CountElementsWithStrictlySmallerAndGreaterElements_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

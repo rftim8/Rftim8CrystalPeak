@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001219_PathWithMaximumGold()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001219_PathWithMaximumGold));
-            Input = [.. LC_Resources.LC_00001219_PathWithMaximumGold_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001219_PathWithMaximumGold));
+            //Input = [.. LC_Resources.LC_00001219_PathWithMaximumGold_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

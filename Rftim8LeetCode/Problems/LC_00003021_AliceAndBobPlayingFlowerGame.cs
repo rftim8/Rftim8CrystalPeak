@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003021_AliceAndBobPlayingFlowerGame()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003021_AliceAndBobPlayingFlowerGame));
-            Input = [.. LC_Resources.LC_00003021_AliceAndBobPlayingFlowerGame_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003021_AliceAndBobPlayingFlowerGame));
+            //Input = [.. LC_Resources.LC_00003021_AliceAndBobPlayingFlowerGame_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

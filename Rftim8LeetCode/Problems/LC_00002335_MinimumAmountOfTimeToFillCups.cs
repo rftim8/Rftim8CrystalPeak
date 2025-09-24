@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002335_MinimumAmountOfTimeToFillCups()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002335_MinimumAmountOfTimeToFillCups));
-            Input = [.. LC_Resources.LC_00002335_MinimumAmountOfTimeToFillCups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002335_MinimumAmountOfTimeToFillCups));
+            //Input = [.. LC_Resources.LC_00002335_MinimumAmountOfTimeToFillCups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

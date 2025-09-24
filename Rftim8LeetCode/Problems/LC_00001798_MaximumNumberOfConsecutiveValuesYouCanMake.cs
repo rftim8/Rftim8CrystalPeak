@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001798_MaximumNumberOfConsecutiveValuesYouCanMake()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001798_MaximumNumberOfConsecutiveValuesYouCanMake));
-            Input = [.. LC_Resources.LC_00001798_MaximumNumberOfConsecutiveValuesYouCanMake_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001798_MaximumNumberOfConsecutiveValuesYouCanMake));
+            //Input = [.. LC_Resources.LC_00001798_MaximumNumberOfConsecutiveValuesYouCanMake_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

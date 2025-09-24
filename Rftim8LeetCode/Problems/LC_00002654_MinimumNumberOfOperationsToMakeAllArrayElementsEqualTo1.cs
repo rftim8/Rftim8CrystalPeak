@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002654_MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002654_MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1));
-            Input = [.. LC_Resources.LC_00002654_MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002654_MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1));
+            //Input = [.. LC_Resources.LC_00002654_MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

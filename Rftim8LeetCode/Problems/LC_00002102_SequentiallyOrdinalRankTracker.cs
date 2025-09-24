@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002102_SequentiallyOrdinalRankTracker()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002102_SequentiallyOrdinalRankTracker));
-            Input = [.. LC_Resources.LC_00002102_SequentiallyOrdinalRankTracker_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002102_SequentiallyOrdinalRankTracker));
+            //Input = [.. LC_Resources.LC_00002102_SequentiallyOrdinalRankTracker_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

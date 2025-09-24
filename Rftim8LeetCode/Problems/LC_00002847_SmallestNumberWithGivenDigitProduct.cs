@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002847_SmallestNumberWithGivenDigitProduct()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002847_SmallestNumberWithGivenDigitProduct));
-            Input = [.. LC_Resources.LC_00002847_SmallestNumberWithGivenDigitProduct_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002847_SmallestNumberWithGivenDigitProduct));
+            //Input = [.. LC_Resources.LC_00002847_SmallestNumberWithGivenDigitProduct_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002195_AppendKIntegersWithMinimalSum()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002195_AppendKIntegersWithMinimalSum));
-            Input = [.. LC_Resources.LC_00002195_AppendKIntegersWithMinimalSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002195_AppendKIntegersWithMinimalSum));
+            //Input = [.. LC_Resources.LC_00002195_AppendKIntegersWithMinimalSum_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002158_AmountOfNewAreaPaintedEachDay()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002158_AmountOfNewAreaPaintedEachDay));
-            Input = [.. LC_Resources.LC_00002158_AmountOfNewAreaPaintedEachDay_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002158_AmountOfNewAreaPaintedEachDay));
+            //Input = [.. LC_Resources.LC_00002158_AmountOfNewAreaPaintedEachDay_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

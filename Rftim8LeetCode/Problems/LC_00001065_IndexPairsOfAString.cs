@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001065_IndexPairsOfAString()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001065_IndexPairsOfAString));
-            Input = [.. LC_Resources.LC_00001065_IndexPairsOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001065_IndexPairsOfAString));
+            //Input = [.. LC_Resources.LC_00001065_IndexPairsOfAString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000722_RemoveComments()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000722_RemoveComments));
-            Input = [.. LC_Resources.LC_00000722_RemoveComments_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000722_RemoveComments));
+            //Input = [.. LC_Resources.LC_00000722_RemoveComments_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

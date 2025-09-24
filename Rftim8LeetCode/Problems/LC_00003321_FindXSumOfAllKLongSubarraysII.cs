@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003321_FindXSumOfAllKLongSubarraysII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003321_FindXSumOfAllKLongSubarraysII));
-            Input = [.. LC_Resources.LC_00003321_FindXSumOfAllKLongSubarraysII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003321_FindXSumOfAllKLongSubarraysII));
+            //Input = [.. LC_Resources.LC_00003321_FindXSumOfAllKLongSubarraysII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

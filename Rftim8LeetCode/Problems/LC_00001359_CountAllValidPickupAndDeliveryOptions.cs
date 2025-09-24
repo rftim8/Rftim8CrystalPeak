@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001359_CountAllValidPickupAndDeliveryOptions()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001359_CountAllValidPickupAndDeliveryOptions));
-            Input = [.. LC_Resources.LC_00001359_CountAllValidPickupAndDeliveryOptions_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001359_CountAllValidPickupAndDeliveryOptions));
+            //Input = [.. LC_Resources.LC_00001359_CountAllValidPickupAndDeliveryOptions_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

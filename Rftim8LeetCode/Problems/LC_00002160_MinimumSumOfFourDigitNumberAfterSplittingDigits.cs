@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002160_MinimumSumOfFourDigitNumberAfterSplittingDigits()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002160_MinimumSumOfFourDigitNumberAfterSplittingDigits));
-            Input = [.. LC_Resources.LC_00002160_MinimumSumOfFourDigitNumberAfterSplittingDigits_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002160_MinimumSumOfFourDigitNumberAfterSplittingDigits));
+            //Input = [.. LC_Resources.LC_00002160_MinimumSumOfFourDigitNumberAfterSplittingDigits_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

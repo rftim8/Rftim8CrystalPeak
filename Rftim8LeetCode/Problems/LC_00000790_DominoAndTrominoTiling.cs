@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000790_DominoAndTrominoTiling()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000790_DominoAndTrominoTiling));
-            Input = [.. LC_Resources.LC_00000790_DominoAndTrominoTiling_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000790_DominoAndTrominoTiling));
+            //Input = [.. LC_Resources.LC_00000790_DominoAndTrominoTiling_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

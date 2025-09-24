@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003651_MinimumCostPathWithTeleportations()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003651_MinimumCostPathWithTeleportations));
-            Input = [.. LC_Resources.LC_00003651_MinimumCostPathWithTeleportations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003651_MinimumCostPathWithTeleportations));
+            //Input = [.. LC_Resources.LC_00003651_MinimumCostPathWithTeleportations_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

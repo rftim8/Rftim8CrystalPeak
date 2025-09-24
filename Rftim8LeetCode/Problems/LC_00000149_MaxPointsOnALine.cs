@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000149_MaxPointsOnALine()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000149_MaxPointsOnALine));
-            Input = [.. LC_Resources.LC_00000149_MaxPointsOnALine_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000149_MaxPointsOnALine));
+            //Input = [.. LC_Resources.LC_00000149_MaxPointsOnALine_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

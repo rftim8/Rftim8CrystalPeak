@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002746_DecrementalStringConcatenation()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002746_DecrementalStringConcatenation));
-            Input = [.. LC_Resources.LC_00002746_DecrementalStringConcatenation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002746_DecrementalStringConcatenation));
+            //Input = [.. LC_Resources.LC_00002746_DecrementalStringConcatenation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

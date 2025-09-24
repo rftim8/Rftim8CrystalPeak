@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001277_CountSquareSubmatricesWithAllOnes()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001277_CountSquareSubmatricesWithAllOnes));
-            Input = [.. LC_Resources.LC_00001277_CountSquareSubmatricesWithAllOnes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001277_CountSquareSubmatricesWithAllOnes));
+            //Input = [.. LC_Resources.LC_00001277_CountSquareSubmatricesWithAllOnes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

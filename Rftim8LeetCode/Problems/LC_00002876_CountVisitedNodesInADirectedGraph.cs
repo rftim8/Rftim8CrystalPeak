@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002876_CountVisitedNodesInADirectedGraph()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002876_CountVisitedNodesInADirectedGraph));
-            Input = [.. LC_Resources.LC_00002876_CountVisitedNodesInADirectedGraph_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002876_CountVisitedNodesInADirectedGraph));
+            //Input = [.. LC_Resources.LC_00002876_CountVisitedNodesInADirectedGraph_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

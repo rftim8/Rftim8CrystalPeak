@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000783_MinimumDistanceBetweenBSTNodes()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000783_MinimumDistanceBetweenBSTNodes));
-            Input = [.. LC_Resources.LC_00000783_MinimumDistanceBetweenBSTNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000783_MinimumDistanceBetweenBSTNodes));
+            //Input = [.. LC_Resources.LC_00000783_MinimumDistanceBetweenBSTNodes_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

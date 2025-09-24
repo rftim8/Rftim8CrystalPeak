@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI));
-            Input = [.. LC_Resources.LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI));
+            //Input = [.. LC_Resources.LC_00003346_MaximumFrequencyOfAnElementAfterPerformingOperationsI_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

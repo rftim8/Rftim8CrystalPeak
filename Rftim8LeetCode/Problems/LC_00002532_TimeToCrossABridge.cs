@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002532_TimeToCrossABridge()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002532_TimeToCrossABridge));
-            Input = [.. LC_Resources.LC_00002532_TimeToCrossABridge_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002532_TimeToCrossABridge));
+            //Input = [.. LC_Resources.LC_00002532_TimeToCrossABridge_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

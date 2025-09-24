@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000830_PositionsOfLargeGroups()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000830_PositionsOfLargeGroups));
-            Input = [.. LC_Resources.LC_00000830_PositionsOfLargeGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000830_PositionsOfLargeGroups));
+            //Input = [.. LC_Resources.LC_00000830_PositionsOfLargeGroups_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

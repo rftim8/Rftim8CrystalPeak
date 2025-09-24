@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002669_CountArtistOccurrencesOnSpotifyRankingList()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002669_CountArtistOccurrencesOnSpotifyRankingList));
-            Input = [.. LC_Resources.LC_00002669_CountArtistOccurrencesOnSpotifyRankingList_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002669_CountArtistOccurrencesOnSpotifyRankingList));
+            //Input = [.. LC_Resources.LC_00002669_CountArtistOccurrencesOnSpotifyRankingList_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

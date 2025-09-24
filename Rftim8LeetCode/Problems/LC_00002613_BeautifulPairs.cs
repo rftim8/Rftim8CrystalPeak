@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002613_BeautifulPairs()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002613_BeautifulPairs));
-            Input = [.. LC_Resources.LC_00002613_BeautifulPairs_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002613_BeautifulPairs));
+            //Input = [.. LC_Resources.LC_00002613_BeautifulPairs_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

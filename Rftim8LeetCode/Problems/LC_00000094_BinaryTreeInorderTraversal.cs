@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000094_BinaryTreeInorderTraversal()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000094_BinaryTreeInorderTraversal));
-            Input = [.. LC_Resources.LC_00000094_BinaryTreeInorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000094_BinaryTreeInorderTraversal));
+            //Input = [.. LC_Resources.LC_00000094_BinaryTreeInorderTraversal_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002269_FindTheKBeautyOfANumber()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002269_FindTheKBeautyOfANumber));
-            Input = [.. LC_Resources.LC_00002269_FindTheKBeautyOfANumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002269_FindTheKBeautyOfANumber));
+            //Input = [.. LC_Resources.LC_00002269_FindTheKBeautyOfANumber_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

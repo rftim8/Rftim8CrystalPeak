@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003252_PremierLeagueTableRankingII()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003252_PremierLeagueTableRankingII));
-            Input = [.. LC_Resources.LC_00003252_PremierLeagueTableRankingII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003252_PremierLeagueTableRankingII));
+            //Input = [.. LC_Resources.LC_00003252_PremierLeagueTableRankingII_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

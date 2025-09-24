@@ -1,14 +1,18 @@
 using BenchmarkDotNet.Attributes;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rftim8Atlas;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
 using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+using System.Data;
 
 namespace Rftim8LeetCode.Problems
 {
     public class LC_00000036_ValidSudoku : ILC_00000036_ValidSudoku
     {
         #region Static
+        private static readonly SqlConnection sqlConn = new(GenericURLs.mssqlDb);
         private readonly List<string>? Input = [];
         private readonly List<char[][]>? boards = [];
         private readonly List<bool>? results = [];
@@ -16,7 +20,7 @@ namespace Rftim8LeetCode.Problems
         public LC_00000036_ValidSudoku()
         {
             Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000036_ValidSudoku));
-            //Input = [.. LC_Resources.LC_00000036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            ////Input = [.. LC_Resources.LC_00000036_ValidSudoku_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }
@@ -47,7 +51,7 @@ namespace Rftim8LeetCode.Problems
         public char[][]? Board { get; set; }
 
         public IEnumerable<char[][]> BoardDataSets() => boards!;
-        
+
         [Benchmark]
         public bool Solution_0() => LC_00000036_ValidSudoku_0(Board!);
 
@@ -113,6 +117,7 @@ namespace Rftim8LeetCode.Problems
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
             Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000036_ValidSudoku));
             DataCollector();
+            PrintTable();
         }
 
         public void PrintSolution()
@@ -121,6 +126,49 @@ namespace Rftim8LeetCode.Problems
             {
                 bool actual = LC_00000036_ValidSudoku_0(boards[i]);
                 Console.WriteLine($"Solution 0: Testcase {i + 1}: Expected = {results![i]} => Actual: {actual}");
+            }
+        }
+        #endregion
+
+        #region TSQL
+        private static void PrintTable()
+        {
+            try
+            {
+                sqlConn.Open();
+                using SqlDataAdapter sqlDataAdapter = new("select * from CPModels", sqlConn);
+                DataSet dataSet = new();
+                sqlDataAdapter.Fill(dataSet);
+
+                // Print DataTable as a table to the console
+                if (dataSet.Tables.Count > 0)
+                {
+                    DataTable table = dataSet.Tables[0];
+                    // Print column headers
+                    for (int col = 0; col < table.Columns.Count; col++)
+                    {
+                        Console.Write($"{table.Columns[col].ColumnName}\t");
+                    }
+                    Console.WriteLine();
+
+                    // Print rows
+                    foreach (DataRow row in table.Rows)
+                    {
+                        for (int col = 0; col < table.Columns.Count; col++)
+                        {
+                            Console.Write($"{row[col]}\t");
+                        }
+                        Console.WriteLine();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                sqlConn.Close();
             }
         }
         #endregion

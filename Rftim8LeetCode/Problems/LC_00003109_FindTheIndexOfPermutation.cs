@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003109_FindTheIndexOfPermutation()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003109_FindTheIndexOfPermutation));
-            Input = [.. LC_Resources.LC_00003109_FindTheIndexOfPermutation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003109_FindTheIndexOfPermutation));
+            //Input = [.. LC_Resources.LC_00003109_FindTheIndexOfPermutation_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

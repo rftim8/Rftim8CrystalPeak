@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000104_MaximumDepthOfBinaryTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000104_MaximumDepthOfBinaryTree));
-            Input = [.. LC_Resources.LC_00000104_MaximumDepthOfBinaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000104_MaximumDepthOfBinaryTree));
+            //Input = [.. LC_Resources.LC_00000104_MaximumDepthOfBinaryTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

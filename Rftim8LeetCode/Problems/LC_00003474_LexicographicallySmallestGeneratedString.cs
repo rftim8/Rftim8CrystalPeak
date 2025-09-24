@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00003474_LexicographicallySmallestGeneratedString()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003474_LexicographicallySmallestGeneratedString));
-            Input = [.. LC_Resources.LC_00003474_LexicographicallySmallestGeneratedString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00003474_LexicographicallySmallestGeneratedString));
+            //Input = [.. LC_Resources.LC_00003474_LexicographicallySmallestGeneratedString_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

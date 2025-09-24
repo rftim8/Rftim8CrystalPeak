@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00001540_CanConvertStringInKMoves()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001540_CanConvertStringInKMoves));
-            Input = [.. LC_Resources.LC_00001540_CanConvertStringInKMoves_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00001540_CanConvertStringInKMoves));
+            //Input = [.. LC_Resources.LC_00001540_CanConvertStringInKMoves_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

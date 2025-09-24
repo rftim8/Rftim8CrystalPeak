@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00000099_RecoverBinarySearchTree()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000099_RecoverBinarySearchTree));
-            Input = [.. LC_Resources.LC_00000099_RecoverBinarySearchTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00000099_RecoverBinarySearchTree));
+            //Input = [.. LC_Resources.LC_00000099_RecoverBinarySearchTree_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

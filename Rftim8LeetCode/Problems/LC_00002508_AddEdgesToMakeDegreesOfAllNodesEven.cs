@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002508_AddEdgesToMakeDegreesOfAllNodesEven()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002508_AddEdgesToMakeDegreesOfAllNodesEven));
-            Input = [.. LC_Resources.LC_00002508_AddEdgesToMakeDegreesOfAllNodesEven_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002508_AddEdgesToMakeDegreesOfAllNodesEven));
+            //Input = [.. LC_Resources.LC_00002508_AddEdgesToMakeDegreesOfAllNodesEven_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

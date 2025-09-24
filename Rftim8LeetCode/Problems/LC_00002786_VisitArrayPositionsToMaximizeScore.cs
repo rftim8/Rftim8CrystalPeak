@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002786_VisitArrayPositionsToMaximizeScore()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002786_VisitArrayPositionsToMaximizeScore));
-            Input = [.. LC_Resources.LC_00002786_VisitArrayPositionsToMaximizeScore_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002786_VisitArrayPositionsToMaximizeScore));
+            //Input = [.. LC_Resources.LC_00002786_VisitArrayPositionsToMaximizeScore_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

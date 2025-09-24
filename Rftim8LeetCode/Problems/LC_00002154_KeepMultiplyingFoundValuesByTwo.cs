@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002154_KeepMultiplyingFoundValuesByTwo()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002154_KeepMultiplyingFoundValuesByTwo));
-            Input = [.. LC_Resources.LC_00002154_KeepMultiplyingFoundValuesByTwo_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002154_KeepMultiplyingFoundValuesByTwo));
+            //Input = [.. LC_Resources.LC_00002154_KeepMultiplyingFoundValuesByTwo_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }

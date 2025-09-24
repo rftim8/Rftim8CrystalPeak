@@ -15,8 +15,8 @@ namespace Rftim8LeetCode.Problems
 
         public LC_00002061_NumberOfSpacesCleaningRobotCleaned()
         {
-            //Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002061_NumberOfSpacesCleaningRobotCleaned));
-            Input = [.. LC_Resources.LC_00002061_NumberOfSpacesCleaningRobotCleaned_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
+            Input = RftLeetCodeStaticData.Input_Test(testType: true, problemName: nameof(LC_00002061_NumberOfSpacesCleaningRobotCleaned));
+            //Input = [.. LC_Resources.LC_00002061_NumberOfSpacesCleaningRobotCleaned_Input.Split(["\n"], StringSplitOptions.RemoveEmptyEntries)]; // Benchmarking
             DataCollector();
             PrintSolution();
         }
