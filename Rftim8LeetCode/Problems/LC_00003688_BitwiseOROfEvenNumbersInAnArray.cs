@@ -1,8 +1,12 @@
 using BenchmarkDotNet.Attributes;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rftim8Atlas;
+using Rftim8Atlas.Models.CP;
 using Rftim8Convoy.Services.Host.CP.LeetCode.Data;
 using Rftim8Convoy.Services.Static.CP.LeetCode.Data;
+using System.Text;
 
 namespace Rftim8LeetCode.Problems
 {
@@ -13,6 +17,40 @@ namespace Rftim8LeetCode.Problems
         private readonly List<List<int>>? Nums = [];
         private readonly List<int>? Results = [];
 
+        private void SQLLog(string fileName, string solutionName)
+        {
+            CPModel cPModel = new()
+            {
+                Id = 1,
+                Competition = "Weekly Contest 468",
+                Timestamp = DateTime.Now,
+                Rank = 0,
+                Rating = 0,
+                Problem = fileName,
+                Description = @"You are given an integer array nums.
+Return the bitwise OR of all even numbers in the array.
+If there are no even numbers in nums, return 0.
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100",
+                Solution = solutionName,
+                Input = new StringBuilder().AppendLine(Input![0])
+                    .AppendLine(Input[1])
+                    .AppendLine(string.Join("\n", Nums!.Select(x => "[" + string.Join(",", x) + "]")))
+                    .ToString(),
+                Output = " ",
+                Difficulty = 100,
+                TestStatus = true,
+                Runtime = 0.0,
+                Memory = 0.0,
+                Algorithms = "Bit Manipulation, Array",
+                FilePath = Directory.GetCurrentDirectory()
+            };
+
+            _ = new GenericCPTSQL(cPModel);
+        }
         /// <summary>
         /// You are given an integer array nums.
         /// Return the bitwise OR of all even numbers in the array.
@@ -89,7 +127,10 @@ namespace Rftim8LeetCode.Problems
             {
                 Console.WriteLine(item);
             }
+
+            //SQLLog(nameof(LC_00003688_BitwiseOROfEvenNumbersInAnArray), nameof(LC_00003688_BitwiseOROfEvenNumbersInAnArray_0));
         }
         #endregion
     }
 }
+

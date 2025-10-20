@@ -19,6 +19,9 @@ namespace Rftim8LeetCode.CP
             builder.Services.AddSingleton<ILC_00000001_TwoSum, LC_00000001_TwoSum>();
             builder.Services.AddSingleton<ILC_00000036_ValidSudoku, LC_00000036_ValidSudoku>();
             builder.Services.AddSingleton<ILC_00003688_BitwiseOROfEvenNumbersInAnArray, LC_00003688_BitwiseOROfEvenNumbersInAnArray>();
+            builder.Services.AddSingleton<ILC_00003689_MaximumTotalSubarrayValueI, LC_00003689_MaximumTotalSubarrayValueI>();
+            builder.Services.AddSingleton<ILC_00003690_SplitAndMergeArrayTransformation, LC_00003690_SplitAndMergeArrayTransformation>();
+            builder.Services.AddSingleton<ILC_00003691_MaximumTotalSubarrayValueII, LC_00003691_MaximumTotalSubarrayValueII>();
             #endregion
 
             #region EFCore

@@ -8,7 +8,7 @@ namespace Rftim8Atlas.Models.CP
 
         public string? Competition { get; set; }
 
-        public DateTime Timestamp { get; set; } = DateTime.Now;
+        public DateTime Timestamp { get; set; }
 
         public int Rank { get; set; }
 
@@ -17,8 +17,11 @@ namespace Rftim8Atlas.Models.CP
         public string? Problem { get; set; }
 
         public string? Description { get; set; }
+        
+        public string? Solution { get; set; }
 
         public string? Input { get; set; }
+        
         public string? Output { get; set; }
 
         public int Difficulty { get; set; }
@@ -26,12 +29,12 @@ namespace Rftim8Atlas.Models.CP
         public bool TestStatus { get; set; }
 
         [Column(TypeName = "decimal(6,2)")]
-        public decimal Runtime { get; set; }
+        public double Runtime { get; set; }
 
         [Column(TypeName = "decimal(6,2)")]
-        public decimal Memory { get; set; }
+        public double Memory { get; set; }
 
-        public List<string>? Algorithms { get; set; }
+        public string? Algorithms { get; set; }
 
         public string? FilePath { get; set; }
     }

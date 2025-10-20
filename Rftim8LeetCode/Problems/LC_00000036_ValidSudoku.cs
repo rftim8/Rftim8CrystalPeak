@@ -14,8 +14,6 @@ namespace Rftim8LeetCode.Problems
     public class LC_00000036_ValidSudoku : ILC_00000036_ValidSudoku
     {
         #region Static
-        private static readonly SqlConnection sqlConn = new(GenericURLs.mssqlDb);
-        private readonly CPModel cPModel = new();
         private readonly List<string>? Input = [];
         private readonly List<char[][]>? boards = [];
         private readonly List<bool>? results = [];
@@ -120,15 +118,7 @@ namespace Rftim8LeetCode.Problems
             RftLeetCodeHostData = host.Services.GetRequiredService<IRftLeetCodeHostData>();
             Input = RftLeetCodeHostData.Input_Test(problemName: nameof(LC_00000036_ValidSudoku));
 
-            cPModel.Competition = "LeetCode";
-            StringBuilder sb = new();
-            foreach (string item in Input)
-            {
-                sb.AppendLine(item);
-            }
-            cPModel.Input = sb.ToString();
             DataCollector();
-            PrintTable();
         }
 
         public void PrintSolution()
@@ -137,49 +127,6 @@ namespace Rftim8LeetCode.Problems
             {
                 bool actual = LC_00000036_ValidSudoku_0(boards[i]);
                 Console.WriteLine($"Solution 0: Testcase {i + 1}: Expected = {results![i]} => Actual: {actual}");
-            }
-        }
-        #endregion
-
-        #region TSQL
-        private static void PrintTable()
-        {
-            try
-            {
-                sqlConn.Open();
-                using SqlDataAdapter sqlDataAdapter = new("exec spGet_CPs", sqlConn);
-                DataSet dataSet = new();
-                sqlDataAdapter.Fill(dataSet);
-
-                // Print DataTable as a table to the console
-                if (dataSet.Tables.Count > 0)
-                {
-                    DataTable table = dataSet.Tables[0];
-                    // Print column headers
-                    for (int col = 0; col < table.Columns.Count; col++)
-                    {
-                        Console.Write($"{table.Columns[col].ColumnName}\t");
-                    }
-                    Console.WriteLine();
-
-                    // Print rows
-                    foreach (DataRow row in table.Rows)
-                    {
-                        for (int col = 0; col < table.Columns.Count; col++)
-                        {
-                            Console.Write($"{row[col]}\t");
-                        }
-                        Console.WriteLine();
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-            finally
-            {
-                sqlConn.Close();
             }
         }
         #endregion
